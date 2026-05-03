@@ -11,7 +11,6 @@ build/
 
 # 本地测试数据
 data/articles.json
-index.html
 
 # IDE
 .vscode/
