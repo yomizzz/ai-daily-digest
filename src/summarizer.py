@@ -4,6 +4,7 @@ AI 摘要模块
 """
 import os
 from openai import OpenAI
+import httpx
 
 
 class Summarizer:
@@ -12,7 +13,8 @@ class Summarizer:
     def __init__(self, api_key: str = None):
         self.client = OpenAI(
             api_key=api_key or os.environ.get('MINIMAX_API_KEY', ''),
-            base_url="https://api.minimax.chat/v1"
+            base_url="https://api.minimax.chat/v1",
+            http_client=httpx.Client(timeout=httpx.Timeout(30.0, connect=10.0))
         )
 
     def summarize(self, article: dict) -> dict:
