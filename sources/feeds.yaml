@@ -1,39 +1,370 @@
-# RSS 订阅源配置
-# 添加你想 digest 的 RSS 源
+# HN 2025 Popular Blogs — https://gist.github.com/emschwartz/e6d2bf860ccc367fe37ff953ba6de66b
 
 rss_sources:
-  # 科技 / AI 新闻
-  - name: Hacker News
-    url: https://hnrss.org/frontpage
-    category: tech
+  - name: simonwillison.net
+    url: https://simonwillison.net/atom/everything/
+    category: blog
 
-  - name: 36kr
-    url: https://36kr.com/feed
-    category: tech
+  - name: jeffgeerling.com
+    url: https://www.jeffgeerling.com/blog.xml
+    category: blog
 
-  # 独立博客 / 开发者
-  - name: Simon Willison
-    url: https://simonwillison.net/atom.xml
-    category: dev
+  - name: seangoedecke.com
+    url: https://www.seangoedecke.com/rss.xml
+    category: blog
 
-  - name: Miguel Grinberg
+  - name: krebsonsecurity.com
+    url: https://krebsonsecurity.com/feed/
+    category: security
+
+  - name: daringfireball.net
+    url: https://daringfireball.net/feeds/main
+    category: blog
+
+  - name: ericmigi.com
+    url: https://ericmigi.com/rss.xml
+    category: blog
+
+  - name: antirez.com
+    url: http://antirez.com/rss
+    category: blog
+
+  - name: idiallo.com
+    url: https://idiallo.com/feed.rss
+    category: blog
+
+  - name: maurycyz.com
+    url: https://maurycyz.com/index.xml
+    category: blog
+
+  - name: pluralistic.net
+    url: https://pluralistic.net/feed/
+    category: blog
+
+  - name: shkspr.mobi
+    url: https://shkspr.mobi/blog/feed/
+    category: blog
+
+  - name: lcamtuf.substack.com
+    url: https://lcamtuf.substack.com/feed
+    category: blog
+
+  - name: mitchellh.com
+    url: https://mitchellh.com/feed.xml
+    category: blog
+
+  - name: dynomight.net
+    url: https://dynomight.net/feed.xml
+    category: blog
+
+  - name: utcc.utoronto.ca/~cks
+    url: https://utcc.utoronto.ca/~cks/space/blog/?atom
+    category: blog
+
+  - name: xeiaso.net
+    url: https://xeiaso.net/blog.rss
+    category: blog
+
+  - name: devblogs.microsoft.com/oldnewthing
+    url: https://devblogs.microsoft.com/oldnewthing/feed
+    category: blog
+
+  - name: righto.com
+    url: https://www.righto.com/feeds/posts/default
+    category: blog
+
+  - name: lucumr.pocoo.org
+    url: https://lucumr.pocoo.org/feed.atom
+    category: blog
+
+  - name: skyfall.dev
+    url: https://skyfall.dev/rss.xml
+    category: blog
+
+  - name: garymarcus.substack.com
+    url: https://garymarcus.substack.com/feed
+    category: blog
+
+  - name: rachelbythebay.com
+    url: https://rachelbythebay.com/w/atom.xml
+    category: blog
+
+  - name: overreacted.io
+    url: https://overreacted.io/rss.xml
+    category: blog
+
+  - name: timsh.org
+    url: https://timsh.org/rss/
+    category: blog
+
+  - name: johndcook.com
+    url: https://www.johndcook.com/blog/feed/
+    category: blog
+
+  - name: gilesthomas.com
+    url: https://gilesthomas.com/feed/rss.xml
+    category: blog
+
+  - name: matklad.github.io
+    url: https://matklad.github.io/feed.xml
+    category: blog
+
+  - name: derekthompson.org
+    url: https://www.theatlantic.com/feed/author/derek-thompson/
+    category: blog
+
+  - name: evanhahn.com
+    url: https://evanhahn.com/feed.xml
+    category: blog
+
+  - name: terriblesoftware.org
+    url: https://terriblesoftware.org/feed/
+    category: blog
+
+  - name: rakhim.exotext.com
+    url: https://rakhim.exotext.com/rss.xml
+    category: blog
+
+  - name: joanwestenberg.com
+    url: https://joanwestenberg.com/rss
+    category: blog
+
+  - name: xania.org
+    url: https://xania.org/feed
+    category: blog
+
+  - name: micahflee.com
+    url: https://micahflee.com/feed/
+    category: blog
+
+  - name: nesbitt.io
+    url: https://nesbitt.io/feed.xml
+    category: blog
+
+  - name: construction-physics.com
+    url: https://www.construction-physics.com/feed
+    category: blog
+
+  - name: tedium.co
+    url: https://feed.tedium.co/
+    category: blog
+
+  - name: susam.net
+    url: https://susam.net/feed.xml
+    category: blog
+
+  - name: entropicthoughts.com
+    url: https://entropicthoughts.com/feed.xml
+    category: blog
+
+  - name: buttondown.com/hillelwayne
+    url: https://buttondown.com/hillelwayne/rss
+    category: blog
+
+  - name: dwarkesh.com
+    url: https://www.dwarkeshpatel.com/feed
+    category: blog
+
+  - name: borretti.me
+    url: https://borretti.me/feed.xml
+    category: blog
+
+  - name: wheresyoured.at
+    url: https://www.wheresyoured.at/rss/
+    category: blog
+
+  - name: jayd.ml
+    url: https://jayd.ml/feed.xml
+    category: blog
+
+  - name: minimaxir.com
+    url: https://minimaxir.com/index.xml
+    category: blog
+
+  - name: geohot.github.io
+    url: https://geohot.github.io/blog/feed.xml
+    category: blog
+
+  - name: paulgraham.com
+    url: http://www.aaronsw.com/2002/feeds/pgessays.rss
+    category: blog
+
+  - name: filfre.net
+    url: https://www.filfre.net/feed/
+    category: blog
+
+  - name: blog.jim-nielsen.com
+    url: https://blog.jim-nielsen.com/feed.xml
+    category: blog
+
+  - name: dfarq.homeip.net
+    url: https://dfarq.homeip.net/feed/
+    category: blog
+
+  - name: jyn.dev
+    url: https://jyn.dev/atom.xml
+    category: blog
+
+  - name: geoffreylitt.com
+    url: https://www.geoffreylitt.com/feed.xml
+    category: blog
+
+  - name: downtowndougbrown.com
+    url: https://www.downtowndougbrown.com/feed/
+    category: blog
+
+  - name: brutecat.com
+    url: https://brutecat.com/rss.xml
+    category: blog
+
+  - name: eli.thegreenplace.net
+    url: https://eli.thegreenplace.net/feeds/all.atom.xml
+    category: blog
+
+  - name: abortretry.fail
+    url: https://www.abortretry.fail/feed
+    category: blog
+
+  - name: fabiensanglard.net
+    url: https://fabiensanglard.net/rss.xml
+    category: blog
+
+  - name: oldvcr.blogspot.com
+    url: https://oldvcr.blogspot.com/feeds/posts/default
+    category: blog
+
+  - name: bogdanthegeek.github.io
+    url: https://bogdanthegeek.github.io/blog/index.xml
+    category: blog
+
+  - name: hugotunius.se
+    url: https://hugotunius.se/feed.xml
+    category: blog
+
+  - name: gwern.net
+    url: https://gwern.substack.com/feed
+    category: blog
+
+  - name: berthub.eu
+    url: https://berthub.eu/articles/index.xml
+    category: blog
+
+  - name: chadnauseam.com
+    url: https://chadnauseam.com/rss.xml
+    category: blog
+
+  - name: simone.org
+    url: https://simone.org/feed/
+    category: blog
+
+  - name: it-notes.dragas.net
+    url: https://it-notes.dragas.net/feed/
+    category: blog
+
+  - name: beej.us
+    url: https://beej.us/blog/rss.xml
+    category: blog
+
+  - name: hey.paris
+    url: https://hey.paris/index.xml
+    category: blog
+
+  - name: danielwirtz.com
+    url: https://danielwirtz.com/rss.xml
+    category: blog
+
+  - name: matduggan.com
+    url: https://matduggan.com/rss/
+    category: blog
+
+  - name: refactoringenglish.com
+    url: https://refactoringenglish.com/index.xml
+    category: blog
+
+  - name: worksonmymachine.substack.com
+    url: https://worksonmymachine.substack.com/feed
+    category: blog
+
+  - name: philiplaine.com
+    url: https://philiplaine.com/index.xml
+    category: blog
+
+  - name: steveblank.com
+    url: https://steveblank.com/feed/
+    category: blog
+
+  - name: bernsteinbear.com
+    url: https://bernsteinbear.com/feed.xml
+    category: blog
+
+  - name: danieldelaney.net
+    url: https://danieldelaney.net/feed
+    category: blog
+
+  - name: troyhunt.com
+    url: https://www.troyhunt.com/rss/
+    category: blog
+
+  - name: herman.bearblog.dev
+    url: https://herman.bearblog.dev/feed/
+    category: blog
+
+  - name: tomrenner.com
+    url: https://tomrenner.com/index.xml
+    category: blog
+
+  - name: blog.pixelmelt.dev
+    url: https://blog.pixelmelt.dev/rss/
+    category: blog
+
+  - name: martinalderson.com
+    url: https://martinalderson.com/feed.xml
+    category: blog
+
+  - name: danielchasehooper.com
+    url: https://danielchasehooper.com/feed.xml
+    category: blog
+
+  - name: chiark.greenend.org.uk/~sgtatham
+    url: https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/feed.xml
+    category: blog
+
+  - name: grantslatton.com
+    url: https://grantslatton.com/rss.xml
+    category: blog
+
+  - name: experimental-history.com
+    url: https://www.experimental-history.com/feed
+    category: blog
+
+  - name: anildash.com
+    url: https://anildash.com/feed.xml
+    category: blog
+
+  - name: aresluna.org
+    url: https://aresluna.org/main.rss
+    category: blog
+
+  - name: michael.stapelberg.ch
+    url: https://michael.stapelberg.ch/feed.xml
+    category: blog
+
+  - name: miguelgrinberg.com
     url: https://blog.miguelgrinberg.com/feed
-    category: dev
+    category: blog
 
-  # 播客 RSS
-  - name: 声游者
-    url: https://feeds.example.com/podcast.xml
-    category: podcast
+  - name: keygen.sh
+    url: https://keygen.sh/blog/feed.xml
+    category: blog
 
-  # 示例：YouTube 频道 RSS (替换为你的)
-  # - name: My Favorite Channel
-  #   url: https://www.youtube.com/feeds/videos.xml?channel_id=UCxxxxx
-  #   category: video
+  - name: mjg59.dreamwidth.org
+    url: https://mjg59.dreamwidth.org/data/rss
+    category: blog
 
-# X/Twitter 搜索（需要额外方案，目前预留接口）
-# 可选：使用 RSSHub 等工具将 X 搜索转为 RSS
-x_search:
-  keywords:
-    - AI tools
-    - LLM
-    - startup
+  - name: computer.rip
+    url: https://computer.rip/rss.xml
+    category: blog
+
+  - name: tedunangst.com
+    url: https://www.tedunangst.com/flak/rss
+    category: blog
