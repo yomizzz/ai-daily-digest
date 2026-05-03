@@ -29,7 +29,7 @@ class Summarizer:
 
         try:
             response = self.client.chat.completions.create(
-                model="MiniMax-Text-01",
+                model="MiniMax-M2.7",
                 messages=[
                     {"role": "system", "content": "你是一个科技内容编辑，擅长用简洁的中文总结文章要点。"},
                     {"role": "user", "content": prompt}
