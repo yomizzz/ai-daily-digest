@@ -18,15 +18,13 @@ class RSSFetcher:
         """
         self.feeds = feeds
 
-    def fetch(self, limit_per_source: int = 20) -> List[Dict]:
+    def fetch(self, limit_per_source: int = 20, target_date: str = None) -> List[Dict]:
         """
         抓取所有 RSS 源
 
         Args:
             limit_per_source: 每个源最多取多少条
-
-        Returns:
-            文章列表，每篇包含 title, url, summary, source, category, published
+            target_date: 要过滤的日期，格式 YYYY-MM-DD，默认为昨天
         """
         articles = []
 
@@ -37,6 +35,9 @@ class RSSFetcher:
                 for entry in parsed.entries[:limit_per_source]:
                     article = self._parse_entry(entry, feed)
                     if article:
+                        # 按日期过滤
+                        if target_date and article['published'] != target_date:
+                            continue
                         articles.append(article)
 
             except Exception as e:
