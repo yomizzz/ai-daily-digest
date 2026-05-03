@@ -1,0 +1,39 @@
+# RSS 订阅源配置
+# 添加你想 digest 的 RSS 源
+
+rss_sources:
+  # 科技 / AI 新闻
+  - name: Hacker News
+    url: https://hnrss.org/frontpage
+    category: tech
+
+  - name: 36kr
+    url: https://36kr.com/feed
+    category: tech
+
+  # 独立博客 / 开发者
+  - name: Simon Willison
+    url: https://simonwillison.net/atom.xml
+    category: dev
+
+  - name: Miguel Grinberg
+    url: https://blog.miguelgrinberg.com/feed
+    category: dev
+
+  # 播客 RSS
+  - name: 声游者
+    url: https://feeds.example.com/podcast.xml
+    category: podcast
+
+  # 示例：YouTube 频道 RSS (替换为你的)
+  # - name: My Favorite Channel
+  #   url: https://www.youtube.com/feeds/videos.xml?channel_id=UCxxxxx
+  #   category: video
+
+# X/Twitter 搜索（需要额外方案，目前预留接口）
+# 可选：使用 RSSHub 等工具将 X 搜索转为 RSS
+x_search:
+  keywords:
+    - AI tools
+    - LLM
+    - startup
