@@ -57,58 +57,60 @@ class PageGenerator:
     <title>每日 AI 资讯精选</title>
     <link rel="stylesheet" href="https://unpkg.com/mvp.css">
     <style>
-        :root {{ --width: 900px; }}
-        body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }}
-        main {{ max-width: var(--width); margin: 0 auto; padding: 0 20px 40px; }}
-        .filter-bar {{
+        :root { --width: 900px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+        header { padding: 2rem 1rem 1rem; }
+        main { max-width: var(--width); margin: 0 auto; padding: 0 1rem 3rem; }
+        .filter-bar {
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
             margin-bottom: 20px;
             padding: 15px;
-            background: var(--color-surface);
-            border-radius: 10px;
-        }}
-        .filter-btn {{
+            background: var(--color-bg-secondary);
+            border-radius: var(--border-radius);
+        }
+        .filter-btn {
             padding: 8px 16px;
-            border: 1px solid var(--color-border);
-            background: var(--color-surface);
+            border: 1px solid #ccc;
+            background: var(--color-bg);
             border-radius: 20px;
             cursor: pointer;
             font-size: 0.9em;
-        }}
-        .filter-btn:hover, .filter-btn.active {{
-            background: var(--color-primary);
+            color: var(--color-text);
+        }
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--color-link);
             color: white;
-            border-color: var(--color-primary);
-        }}
-        .article-count {{ margin-left: auto; color: #666; font-size: 0.9em; }}
-        .articles {{ display: flex; flex-direction: column; gap: 15px; }}
-        .article {{ padding: 20px; margin-bottom: 15px; }}
-        .article-header {{ display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }}
-        .article-title {{ font-size: 1.1em; font-weight: 600; color: #1a1a1a; text-decoration: none; flex: 1; }}
-        .article-title:hover {{ color: var(--color-primary); }}
-        .category-tag {{
+            border-color: var(--color-link);
+        }
+        .article-count { margin-left: auto; color: var(--color-text-secondary); font-size: 0.9em; }
+        .articles { display: flex; flex-direction: column; gap: 15px; }
+        .article { padding: 20px; margin-bottom: 15px; }
+        .article-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+        .article-title { font-size: 1.1em; font-weight: 600; color: var(--color-link); text-decoration: none; flex: 1; }
+        .article-title:hover { opacity: var(--hover-brightness); }
+        .category-tag {
             padding: 4px 10px;
-            background: var(--color-secondary);
-            color: var(--color-primary);
+            background: var(--color-bg-secondary);
+            color: var(--color-secondary);
             border-radius: 12px;
             font-size: 0.75em;
             margin-left: 10px;
             white-space: nowrap;
-        }}
-        .article-meta {{ font-size: 0.85em; color: #888; margin-bottom: 10px; }}
-        .article-summary {{ color: #555; margin-bottom: 12px; font-size: 0.95em; }}
-        .article-why {{ color: var(--color-primary); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-primary); }}
-        .tags {{ margin-top: 10px; font-size: 0.8em; color: #888; }}
-        footer {{ text-align: center; padding: 30px; color: #888; font-size: 0.85em; }}
-        footer a {{ color: var(--color-primary); text-decoration: none; }}
-        @media (max-width: 600px) {{
-            .article-header {{ flex-direction: column; gap: 8px; }}
-            .category-tag {{ margin-left: 0; }}
-            .filter-bar {{ flex-direction: column; }}
-            .article-count {{ margin-left: 0; margin-top: 10px; }}
-        }}
+        }
+        .article-meta { font-size: 0.85em; color: var(--color-text-secondary); margin-bottom: 10px; }
+        .article-summary { color: var(--color-text); margin-bottom: 12px; font-size: 0.95em; }
+        .article-why { color: var(--color-link); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-link); }
+        .tags { margin-top: 10px; font-size: 0.8em; color: var(--color-text-secondary); }
+        footer { text-align: center; padding: 30px; color: var(--color-text-secondary); font-size: 0.85em; }
+        footer a { color: var(--color-link); text-decoration: none; }
+        @media (max-width: 600px) {
+            .article-header { flex-direction: column; gap: 8px; }
+            .category-tag { margin-left: 0; }
+            .filter-bar { flex-direction: column; }
+            .article-count { margin-left: 0; margin-top: 10px; }
+        }
     </style>
 </head>
 <body>
