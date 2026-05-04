@@ -55,121 +55,54 @@ class PageGenerator:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>每日 AI 资讯精选</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
     <style>
-        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }}
-        .container {{ max-width: 900px; margin: 0 auto; padding: 20px; }}
-        header {{
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            border-radius: 0 0 20px 20px;
-            margin-bottom: 30px;
-        }}
-        h1 {{ font-size: 2em; margin-bottom: 10px; }}
-        .subtitle {{ opacity: 0.9; font-size: 0.95em; }}
-        .last-updated {{ opacity: 0.8; font-size: 0.85em; margin-top: 8px; }}
+        :root {{ --width: 900px; }}
+        body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }}
+        main {{ max-width: var(--width); margin: 0 auto; padding: 0 20px 40px; }}
         .filter-bar {{
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
             margin-bottom: 20px;
             padding: 15px;
-            background: white;
+            background: var(--color-surface);
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }}
         .filter-btn {{
             padding: 8px 16px;
-            border: none;
-            background: #f0f0f0;
+            border: 1px solid var(--color-border);
+            background: var(--color-surface);
             border-radius: 20px;
             cursor: pointer;
             font-size: 0.9em;
-            transition: all 0.2s;
         }}
         .filter-btn:hover, .filter-btn.active {{
-            background: #667eea;
+            background: var(--color-primary);
             color: white;
+            border-color: var(--color-primary);
         }}
-        .article-count {{
-            margin-left: auto;
-            color: #666;
-            font-size: 0.9em;
-            display: flex;
-            align-items: center;
-        }}
+        .article-count {{ margin-left: auto; color: #666; font-size: 0.9em; }}
         .articles {{ display: flex; flex-direction: column; gap: 15px; }}
-        .article {{
-            background: white;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }}
-        .article:hover {{
-            transform: translateY(-2px);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }}
-        .article-header {{
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 12px;
-        }}
-        .article-title {{
-            font-size: 1.1em;
-            font-weight: 600;
-            color: #1a1a1a;
-            text-decoration: none;
-            flex: 1;
-        }}
-        .article-title:hover {{ color: #667eea; }}
+        .article {{ padding: 20px; margin-bottom: 15px; }}
+        .article-header {{ display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }}
+        .article-title {{ font-size: 1.1em; font-weight: 600; color: #1a1a1a; text-decoration: none; flex: 1; }}
+        .article-title:hover {{ color: var(--color-primary); }}
         .category-tag {{
             padding: 4px 10px;
-            background: #eef2ff;
-            color: #667eea;
+            background: var(--color-secondary);
+            color: var(--color-primary);
             border-radius: 12px;
             font-size: 0.75em;
             margin-left: 10px;
             white-space: nowrap;
         }}
-        .article-meta {{
-            font-size: 0.85em;
-            color: #888;
-            margin-bottom: 10px;
-        }}
-        .article-summary {{
-            color: #555;
-            margin-bottom: 12px;
-            font-size: 0.95em;
-        }}
-        .article-why {{
-            color: #007bff;
-            font-size: 0.9em;
-            padding: 8px 12px;
-            background: #f0f7ff;
-            border-radius: 8px;
-            border-left: 3px solid #007bff;
-        }}
-        .tags {{
-            margin-top: 10px;
-            font-size: 0.8em;
-            color: #888;
-        }}
-        footer {{
-            text-align: center;
-            padding: 30px;
-            color: #888;
-            font-size: 0.85em;
-        }}
-        footer a {{ color: #667eea; text-decoration: none; }}
+        .article-meta {{ font-size: 0.85em; color: #888; margin-bottom: 10px; }}
+        .article-summary {{ color: #555; margin-bottom: 12px; font-size: 0.95em; }}
+        .article-why {{ color: var(--color-primary); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-primary); }}
+        .tags {{ margin-top: 10px; font-size: 0.8em; color: #888; }}
+        footer {{ text-align: center; padding: 30px; color: #888; font-size: 0.85em; }}
+        footer a {{ color: var(--color-primary); text-decoration: none; }}
         @media (max-width: 600px) {{
             .article-header {{ flex-direction: column; gap: 8px; }}
             .category-tag {{ margin-left: 0; }}
@@ -185,7 +118,7 @@ class PageGenerator:
         <p class="last-updated">最后更新：{last_updated}</p>
     </header>
 
-    <div class="container">
+    <main>
         <div class="filter-bar">
             <button class="filter-btn active" data-filter="all">全部</button>
             {categories_html}
@@ -195,11 +128,11 @@ class PageGenerator:
         <div class="articles" id="articles">
             {articles_html}
         </div>
+    </main>
 
-        <footer>
-            <p>由 GitHub Actions + MiniMax AI 自动生成</p>
-        </footer>
-    </div>
+    <footer>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
+    </footer>
 
     <script>
         // 简单的分类过滤
