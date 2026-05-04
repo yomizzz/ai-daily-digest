@@ -1,8 +1,9 @@
 """
 AI 摘要模块
-使用 MiniMax API 生成中文摘要
+使用 MiniMax API 生成中文摘要，支持重试和速率限制处理
 """
 import os
+import time
 from openai import OpenAI
 import httpx
 
@@ -17,38 +18,52 @@ class Summarizer:
             http_client=httpx.Client(timeout=httpx.Timeout(30.0, connect=10.0))
         )
 
-    def summarize(self, article: dict) -> dict:
+    def summarize(self, article: dict, max_retries: int = 3) -> dict:
         """
-        为单篇文章生成中文摘要
+        为单篇文章生成中文摘要，支持速率限制重试
 
         Args:
             article: 包含 title, summary, source 的字典
+            max_retries: 最大重试次数
 
         Returns:
             包含 summary_zh 和 why_matters 的字典
         """
         prompt = self._build_prompt(article)
 
-        try:
-            response = self.client.chat.completions.create(
-                model="MiniMax-M2.7",
-                messages=[
-                    {"role": "system", "content": "你是一个科技内容编辑，擅长用简洁的中文总结文章要点。"},
-                    {"role": "user", "content": prompt}
-                ],
-                temperature=0.3,
-                max_tokens=500
-            )
+        for attempt in range(max_retries):
+            try:
+                response = self.client.chat.completions.create(
+                    model="MiniMax-M2.7",
+                    messages=[
+                        {"role": "system", "content": "你是一个科技内容编辑，擅长用简洁的中文总结文章要点。"},
+                        {"role": "user", "content": prompt}
+                    ],
+                    temperature=0.3,
+                    max_tokens=500
+                )
 
-            result = response.choices[0].message.content
-            return self._parse_result(result)
+                result = response.choices[0].message.content
+                return self._parse_result(result)
 
-        except Exception as e:
-            print(f"[Summarizer] API 调用失败: {e}")
-            return {
-                'summary_zh': article.get('summary', '')[:200],
-                'why_matters': '摘要生成失败，请查看原文'
-            }
+            except Exception as e:
+                error_str = str(e)
+                if '429' in error_str and attempt < max_retries - 1:
+                    wait_time = (attempt + 1) * 5  # 5, 10, 15 秒
+                    print(f"[Summarizer] 速率限制，{wait_time}秒后重试 ({attempt + 1}/{max_retries})...")
+                    time.sleep(wait_time)
+                    continue
+                print(f"[Summarizer] API 调用失败: {e}")
+                return {
+                    'summary_zh': article.get('summary', '')[:200],
+                    'why_matters': '摘要生成失败，请查看原文'
+                }
+
+        # 所有重试都失败
+        return {
+            'summary_zh': article.get('summary', '')[:200],
+            'why_matters': '摘要生成失败，请查看原文'
+        }
 
     def summarize_batch(self, articles: list) -> list:
         """
@@ -66,6 +81,9 @@ class Summarizer:
             result = self.summarize(article)
             article.update(result)
             results.append(result)
+            # 每次调用后等待 3 秒，避免触发速率限制
+            if i < len(articles) - 1:
+                time.sleep(3)
         return results
 
     def _build_prompt(self, article: dict) -> str:
