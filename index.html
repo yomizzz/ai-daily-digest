@@ -6,52 +6,55 @@
     <title>每日 AI 资讯精选</title>
     <link rel="stylesheet" href="https://unpkg.com/mvp.css">
     <style>
+
         :root { --width: 900px; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
-        main { max-width: var(--width); margin: 0 auto; padding: 0 20px 40px; }
+        header { padding: 2rem 1rem 1rem; }
+        main { max-width: var(--width); margin: 0 auto; padding: 0 1rem 3rem; }
         .filter-bar {
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
             margin-bottom: 20px;
             padding: 15px;
-            background: var(--color-surface);
-            border-radius: 10px;
+            background: var(--color-bg-secondary);
+            border-radius: var(--border-radius);
         }
         .filter-btn {
             padding: 8px 16px;
-            border: 1px solid var(--color-border);
-            background: var(--color-surface);
+            border: 1px solid #ccc;
+            background: var(--color-bg);
             border-radius: 20px;
             cursor: pointer;
             font-size: 0.9em;
+            color: var(--color-text);
         }
         .filter-btn:hover, .filter-btn.active {
-            background: var(--color-primary);
+            background: var(--color-link);
             color: white;
-            border-color: var(--color-primary);
+            border-color: var(--color-link);
         }
-        .article-count { margin-left: auto; color: #666; font-size: 0.9em; }
+        .article-count { margin-left: auto; color: var(--color-text-secondary); font-size: 0.9em; }
         .articles { display: flex; flex-direction: column; gap: 15px; }
         .article { padding: 20px; margin-bottom: 15px; }
         .article-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
-        .article-title { font-size: 1.1em; font-weight: 600; color: #1a1a1a; text-decoration: none; flex: 1; }
-        .article-title:hover { color: var(--color-primary); }
+        .article-title { font-size: 1.1em; font-weight: 600; color: var(--color-link); text-decoration: none; flex: 1; }
+        .article-title:hover { opacity: var(--hover-brightness); }
         .category-tag {
             padding: 4px 10px;
-            background: var(--color-secondary);
-            color: var(--color-primary);
+            background: var(--color-bg-secondary);
+            color: var(--color-secondary);
             border-radius: 12px;
             font-size: 0.75em;
             margin-left: 10px;
             white-space: nowrap;
         }
-        .article-meta { font-size: 0.85em; color: #888; margin-bottom: 10px; }
-        .article-summary { color: #555; margin-bottom: 12px; font-size: 0.95em; }
-        .article-why { color: var(--color-primary); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-primary); }
-        .tags { margin-top: 10px; font-size: 0.8em; color: #888; }
-        footer { text-align: center; padding: 30px; color: #888; font-size: 0.85em; }
-        footer a { color: var(--color-primary); text-decoration: none; }
+        .article-meta { font-size: 0.85em; color: var(--color-text-secondary); margin-bottom: 10px; }
+        .article-summary { color: var(--color-text); margin-bottom: 12px; font-size: 0.95em; }
+        .article-why { color: var(--color-link); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-link); }
+        .tags { margin-top: 10px; font-size: 0.8em; color: var(--color-text-secondary); }
+        footer { text-align: center; padding: 30px; color: var(--color-text-secondary); font-size: 0.85em; }
+        footer a { color: var(--color-link); text-decoration: none; }
         @media (max-width: 600px) {
             .article-header { flex-direction: column; gap: 8px; }
             .category-tag { margin-left: 0; }
@@ -64,138 +67,135 @@
     <header>
         <h1>🤖 每日 AI 资讯精选</h1>
         <p class="subtitle">自动聚合优质内容，AI 生成中文摘要</p>
-        <p class="last-updated">最后更新：2026-05-04 12:03:48</p>
+        <p class="last-updated">最后更新：2026-05-04 18:33:51</p>
     </header>
 
     <main>
         <div class="filter-bar">
             <button class="filter-btn active" data-filter="all">全部</button>
-            <button class="filter-btn" data-filter="blog">blog</button>
-            <span class="article-count">共 12 篇</span>
+<button class="filter-btn" data-filter="blog">blog</button>
+            <span class="article-count">共 13 篇</span>
         </div>
 
         <div class="articles" id="articles">
-            
-            <div class="article" data-category="blog">
-                <div class="article-header">
-                    <a href="https://oldvcr.blogspot.com/2026/05/testing-macos-on-apple-network-server.html" target="_blank" class="article-title">Testing MacOS on the Apple Network Server 2.0 ROMs</a>
-                    <span class="category-tag">blog</span>
-                </div>
-                <div class="article-meta">oldvcr.blogspot.com · 2026-05-03</div>
-                <p class="article-summary">本文讲述了作者在Apple Network Server（苹果首款纯Unix服务器）的2.0版ROM上测试MacOS的探索过程。该服务器官方仅支持IBM的AIX操作系统，作者通过深入研究各种ROM固件，尝试突破官方限制，实现MacOS的运行。这是硬件怀旧与黑客精神结合的技术冒险。</p>
-                <div class="article-why">💡 对于苹果老硬件和Unix系统历史感兴趣的读者，这是一篇展现技术执着与探索精神的精彩记录。</div>
-                <div class="tags">标签：Apple Network Server, MacOS测试, 怀旧硬件, Unix服务器</div>
-            </div>
-            <div class="article" data-category="blog">
-                <div class="article-header">
-                    <a href="https://jyn.dev/callgraph-analysis/" target="_blank" class="article-title">callgraph analysis</a>
-                    <span class="category-tag">blog</span>
-                </div>
-                <div class="article-meta">jyn.dev · 2026-05-03</div>
-                <p class="article-summary">本文探讨了如何利用调用图（callgraph）分析来编写自定义Rust lints，展示了通过静态分析Rust代码结构来实现更智能的代码质量检查。内容涵盖从基础到进阶的lint开发技巧，帮助开发者定制化自己的代码规范检查工具。</p>
-                <div class="article-why">💡 适合想要深入了解Rust lint开发机制和代码静态分析技术的开发者。</div>
-                <div class="tags">标签：Rust, Lint开发, 代码静态分析</div>
-            </div>
-            <div class="article" data-category="blog">
-                <div class="article-header">
-                    <a href="https://dfarq.homeip.net/microsofts-open-sourcing-of-86-dos-and-what-it-means/?utm_source=rss&utm_medium=rss&utm_campaign=microsofts-open-sourcing-of-86-dos-and-what-it-means" target="_blank" class="article-title">Microsoft’s open sourcing of 86-DOS and what it means</a>
-                    <span class="category-tag">blog</span>
-                </div>
-                <div class="article-meta">dfarq.homeip.net · 2026-05-03</div>
-                <p class="article-summary">2026年4月28日，微软出人意料地将86-DOS开源，这是PC DOS 1.0的直接祖先系统。86-DOS在个人电脑操作系统发展史上具有重要地位，是早期MS-DOS的前身。微软此举被社区视为对开源运动的重要贡献，也让人们重新关注早期PC操作系统发展史和相关的技术争议。</p>
-                <div class="article-why">💡 对于关注操作系统发展历史和开源软件演进过程的读者，这篇文章提供了深入的技术视角和分析。</div>
-                <div class="tags">标签：微软, 开源软件, 操作系统历史</div>
-            </div>
-            <div class="article" data-category="blog">
-                <div class="article-header">
-                    <a href="https://geohot.github.io//blog/jekyll/update/2026/05/03/punk-or-why-i-dont-stream.html" target="_blank" class="article-title">Punk, or why I don’t stream anymore</a>
-                    <span class="category-tag">blog</span>
-                </div>
-                <div class="article-meta">geohot.github.io · 2026-05-03</div>
-                <p class="article-summary">著名黑客George Hotz（geohot）在这篇文章中分享了他停止直播的原因，表达了他对当前技术圈文化和内容创作方式的反思。文章以"Punk"精神为核心，探讨了如何在科技行业中保持独立思考和真实性，拒绝随波逐流的创作模式。</p>
-                <div class="article-why">💡 如果你对黑客文化、科技圈生态或个人创作态度感兴趣，这篇文章提供了一个独特且真诚的视角。</div>
-                <div class="tags">标签：黑客文化, geohot, 科技思考</div>
-            </div>
-            <div class="article" data-category="blog">
-                <div class="article-header">
-                    <a href="https://evanhahn.com/png-cmp-is-cmp-but-for-pngs/" target="_blank" class="article-title">png-cmp: like cmp for PNGs</a>
-                    <span class="category-tag">blog</span>
-                </div>
-                <div class="article-meta">evanhahn.com · 2026-05-03</div>
-                <p class="article-summary">暂无摘要</p>
-                <div class="article-why">💡 值得一读</div>
-                
-            </div>
-            <div class="article" data-category="blog">
-                <div class="article-header">
-                    <a href="https://matklad.github.io/2026/05/03/zig-error-context.html" target="_blank" class="article-title">Minimal Viable Zig Error Contexts</a>
-                    <span class="category-tag">blog</span>
-                </div>
-                <div class="article-meta">matklad.github.io · 2026-05-03</div>
-                <p class="article-summary">本文探讨了 Zig 语言错误处理的设计哲学——仅提供最小化但足够的强类型错误码，而将错误报告的具体实现留给调用者。惯用的做法是通过 out 参数传递一个 Diagnostics 对象，需要时才生成人类可读的诊断信息，从而避免了不必要的字符串化开销。这种设计体现了 Zig 对性能控制的极致追求。</p>
-                <div class="article-why">💡 如果你想理解 Zig “少即是多”的错误处理哲学，以及如何在实践中优雅地平衡类型安全与运行时开销，这篇文章值得一读。</div>
-                <div class="tags">标签：Zig, 错误处理, 语言设计</div>
-            </div>
-            <div class="article" data-category="blog">
-                <div class="article-header">
-                    <a href="https://www.johndcook.com/blog/2026/05/03/guitar-pick/" target="_blank" class="article-title">The shape of a guitar pick</a>
-                    <span class="category-tag">blog</span>
-                </div>
-                <div class="article-meta">johndcook.com · 2026-05-03</div>
-                <p class="article-summary">文章介绍了一个有趣的数学可视化——将对数函数应用到单位圆方程上会产生什么形状。原始方程 x² + y² = 1 描绘的是标准圆形，但经过 log 变换后，其等高线呈现出类似吉他拨片的特殊形状。内容包括相关图的展示和数学解释。</p>
-                <div class="article-why">💡 展示了对数变换如何将经典圆形"变形"为吉他拨片形状，是一次简洁有趣的数学可视化探索。</div>
-                <div class="tags">标签：数学可视化，函数图像，对数变换，几何图形</div>
-            </div>
-            <div class="article" data-category="blog">
-                <div class="article-header">
-                    <a href="https://shkspr.mobi/blog/2026/05/vertically-aligning-roman-numerals-in-code/" target="_blank" class="article-title">Vertically Aligning Roman Numerals in Code</a>
-                    <span class="category-tag">blog</span>
-                </div>
-                <div class="article-meta">shkspr.mobi · 2026-05-03</div>
-                <p class="article-summary">本文介绍了一个PHP函数中罗马数字的排列问题，作者展示了包含多种罗马数字符号（如Ⅿ、ⅭⅯ、Ⅾ等）与其对应数值（1000、900、500等）的数组定义，重点探讨如何在代码中实现这些特殊Unicode罗马数字字符的垂直对齐展示。</p>
-                <div class="article-why">💡 适合需要处理罗马数字或关注代码格式美化的PHP开发者参考。</div>
-                <div class="tags">标签：PHP, 罗马数字, 代码格式化, Unicode字符</div>
-            </div>
-            <div class="article" data-category="blog">
-                <div class="article-header">
-                    <a href="https://daringfireball.net/2026/05/crimes_against_decency_need_as_much_cover-up_as_crimes_against_the_law" target="_blank" class="article-title">★ Crimes Against Decency Need as Much Cover-Up as Crimes Against the Law</a>
-                    <span class="category-tag">blog</span>
-                </div>
-                <div class="article-meta">daringfireball.net · 2026-05-03</div>
-                <p class="article-summary">Meta公司解雇了揭露其AI眼镜存在隐私问题的肯尼亚承包商，引发公众愤怒。但作者认为，愤怒是多余的——Meta出于自身利益必须这么做，就像犯罪者会掩盖自己的罪行一样，科技公司同样会掩盖损害其形象的问题。这反映了科技行业内部举报者面临的系统性困境。</p>
-                <div class="article-why">💡 深刻揭示了科技巨头处理内部举报的必然逻辑，值得思考企业责任与员工权益的边界。</div>
-                <div class="tags">标签：科技伦理、隐私保护、Meta、职场权益</div>
-            </div>
-            <div class="article" data-category="blog">
-                <div class="article-header">
-                    <a href="https://davidgelphman.wordpress.com/2013/03/29/2-letters-from-steve/" target="_blank" class="article-title">‘2 Letters From Steve’</a>
-                    <span class="category-tag">blog</span>
-                </div>
-                <div class="article-meta">daringfireball.net · 2026-05-03</div>
-                <p class="article-summary">本文介绍了David Gelphman分享的一个关于Steve Jobs的温暖故事，讲述了苹果公司早期的一些幕后交流细节。作者建议读者先阅读原文，同时提示背景信息——初代iPad于2010年1月27日的特别发布会上首次亮相。</p>
-                <div class="article-why">💡 透过两封短信展现Steve Jobs真实鲜为人知的一面，是了解苹果历史的珍贵侧面。</div>
-                <div class="tags">标签：Steve Jobs, Apple历史, 科技逸事</div>
-            </div>
-            <div class="article" data-category="blog">
-                <div class="article-header">
-                    <a href="https://seangoedecke.com/staff-engineer-archetypes/" target="_blank" class="article-title">Why I don't like the "staff engineer archetypes"</a>
-                    <span class="category-tag">blog</span>
-                </div>
-                <div class="article-meta">seangoedecke.com · 2026-05-03</div>
-                <p class="article-summary">暂无摘要</p>
-                <div class="article-why">💡 值得一读</div>
-                
-            </div>
-            <div class="article" data-category="blog">
-                <div class="article-header">
-                    <a href="https://simonwillison.net/2026/May/3/anthropic/#atom-everything" target="_blank" class="article-title">Quoting Anthropic</a>
-                    <span class="category-tag">blog</span>
-                </div>
-                <div class="article-meta">simonwillison.net · 2026-05-03</div>
-                <p class="article-summary">[文章讨论了Anthropic关于Claude谄媚性(sycophancy)的研究，该研究通过自动分类器评估模型是否表现出“说用户想听的话”的倾向，评估维度包括是否愿意push back、被挑战时维持立场、赞扬与观点优点成比例、无论对方想听什么都直言不讳等方面。]</p>
-                <div class="article-why">💡 [对于关注AI模型行为对齐和安全性的读者，这篇文章提供了来自开发者Anthropic的第一手研究视角。]</div>
-                <div class="tags">标签：[AI安全，Anthropic，Claude，模型对齐]</div>
-            </div>
+<div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="https://oldvcr.blogspot.com/2026/05/testing-macos-on-apple-network-server.html" target="_blank" class="article-title">Testing MacOS on the Apple Network Server 2.0 ROMs</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">oldvcr.blogspot.com · 2026-05-03</div>
+    <p class="article-summary">本文延续了Apple Network Server系列ROM存档的主题，详细介绍了2.0版本ROM的测试情况。Apple Network Server是Apple首款真正面向Unix市场的服务器产品，官方仅支持运行IBM AIX系统。通过对这些早期ROM的保存和测试，展示了Apple在企业级Unix服务器领域的历史探索与技术遗产。</p>
+    <div class="article-why">💡 适合对Apple早期Unix服务器历史及复古硬件保存技术感兴趣的读者。</div>
+<div class="tags">标签：Apple，Unix服务器，复古硬件，AIX，ROM存档</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="https://jyn.dev/callgraph-analysis/" target="_blank" class="article-title">callgraph analysis</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">jyn.dev · 2026-05-03</div>
+    <p class="article-summary">本文探讨了如何通过编写自定义Rust lints来改进代码质量和开发效率，重点介绍了callgraph（调用图）分析在lint开发中的应用，帮助Rust开发者实现更精准的代码检查和自动化问题发现。</p>
+    <div class="article-why">💡 适合想要深入Rust代码质量工具开发的工程师，学习如何利用callgraph技术构建更智能的lint规则。</div>
+<div class="tags">标签：Rust, Lint开发, 代码分析</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="https://dfarq.homeip.net/microsofts-open-sourcing-of-86-dos-and-what-it-means/?utm_source=rss&utm_medium=rss&utm_campaign=microsofts-open-sourcing-of-86-dos-and-what-it-means" target="_blank" class="article-title">Microsoft’s open sourcing of 86-DOS and what it means</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">dfarq.homeip.net · 2026-05-03</div>
+    <p class="article-summary">2026年4月28日，微软意外地将86-DOS开源，该系统是PC DOS 1.0的直接祖先。86-DOS的源代码公开为研究早期PC操作系统历史提供了宝贵资料，同时也将引发人们重新审视围绕PC DOS 1.0及早期MS-DOS版本的历史争议。</p>
+    <div class="article-why">💡 这篇文章为理解微软操作系统发展史和早期PC生态的争议提供了重要的历史视角。</div>
+<div class="tags">标签：微软, 86-DOS, 开源, DOS系统, 历史</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="https://blog.jim-nielsen.com/2026/small-html-pages/" target="_blank" class="article-title">Reminder: You Can Stitch Together Lots of Little HTML Pages With Navigations For Interactions</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">blog.jim-nielsen.com · 2026-05-03</div>
+    <p class="article-summary">文章分享了作者使用LLM构建网站的经验，采用“大量小HTML页面拼接”的方式（L代表Lots，L代表Little，m代表micro，s代表s），经过实践检验效果不错。虽然作者对原文中的某些细节做了调整，但核心思路始终未变——避免页面内的交互行为，改用独立页面来处理每个功能需求。</p>
+    <div class="article-why">💡 适合对AI辅助网页开发感兴趣的开发者，尤其是想探索如何利用LLM简化前端架构的实践者。</div>
+<div class="tags">标签：LLM应用，HTML页面，前端开发，网站架构</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="https://geohot.github.io//blog/jekyll/update/2026/05/03/punk-or-why-i-dont-stream.html" target="_blank" class="article-title">Punk, or why I don’t stream anymore</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">geohot.github.io · 2026-05-03</div>
+    <p class="article-summary">本文探讨了作者（Geohot）放弃直播的深层原因，结合“朋克”精神阐述了自己对创作与表达的独特理解。作者认为，当一个人成为“太阳”般的主流存在时，保持“黑色洞穴”般的反叛与独立反而更具价值。这既是对当前网络文化过度商业化、娱乐化趋势的反思，也是对创作者如何保持真实自我的追问。</p>
+    <div class="article-why">💡 一位技术天才以“朋克”视角反思网络创作与自我表达，适合对创作者心态、独立精神感兴趣的读者。</div>
+<div class="tags">标签：Punk精神, 创作反思, Geohot</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="https://evanhahn.com/png-cmp-is-cmp-but-for-pngs/" target="_blank" class="article-title">png-cmp: like cmp for PNGs</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">evanhahn.com · 2026-05-03</div>
+    <p class="article-summary">png-cmp是一个比较PNG图片是否视觉上等效的工具，灵感来自Unix的cmp命令。使用方法简单，直接传入两个PNG文件路径即可。如果图片相同程序静默退出，不同则报错。与传统cmp不同，它检查的是像素级别的视觉差异而非字节差异。</p>
+    <div class="article-why">💡 对于需要批量对比图片或验证图片处理结果一致性的开发者来说，这是一个简洁高效的命令行工具。</div>
+<div class="tags">标签：图片处理, 命令行工具, PNG, 开源工具</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="https://matklad.github.io/2026/05/03/zig-error-context.html" target="_blank" class="article-title">Minimal Viable Zig Error Contexts</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">matklad.github.io · 2026-05-03</div>
+    <p class="article-summary">Zig采用最小化但足够的错误处理机制——强类型错误码。错误报告的具体实现由开发者负责，惯用做法是通过out参数传递Diagnostics诊断对象，按需生成人类可读的字符串。这种设计将错误处理的核心逻辑与表现形式解耦，保持语言本身的简洁性。</p>
+    <div class="article-why">💡 从零到一理解Zig错误处理哲学的入门文章，短小精悍。</div>
+<div class="tags">标签：Zig, 错误处理, 编程语言设计</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="https://www.johndcook.com/blog/2026/05/03/guitar-pick/" target="_blank" class="article-title">The shape of a guitar pick</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">johndcook.com · 2026-05-03</div>
+    <p class="article-summary">文章探讨了一个有趣的数学问题——对单位圆方程 x² + y² = 1 取对数后会产生什么形状。具体分析了 (log x)² + (log y)² = 1 这类方程的等高线轮廓变化，展示了通过对数变换，原本经典的圆形轮廓会发生有趣的形变。</p>
+    <div class="article-why">💡 短小精悍的数学探索，用直观可视化展示了取对数如何改变几何形状的直觉认知。</div>
+<div class="tags">标签：数学可视化，对数变换，几何形状</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="https://shkspr.mobi/blog/2026/05/vertically-aligning-roman-numerals-in-code/" target="_blank" class="article-title">Vertically Aligning Roman Numerals in Code</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">shkspr.mobi · 2026-05-03</div>
+    <p class="article-summary">文章介绍了一个用于处理罗马数字的PHP函数，作者采用了Unicode标准字符（如Ⅿ、ⅭⅬ等）而非ASCII字母来实现罗马数字转换。文章的核心问题是这些Unicode罗马数字字符在垂直排列时存在对齐问题，因为它们与普通阿拉伯数字的宽度不同。作者探讨了如何让代码中的罗马数字列保持整齐美观，同时保持功能正确性。</p>
+    <div class="article-why">💡 对于需要在代码中展示或处理罗马数字的开发者，这篇文章提供了实用的对齐解决方案和Unicode使用技巧。</div>
+<div class="tags">标签：PHP，罗马数字，Unicode，代码排版</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="https://daringfireball.net/2026/05/crimes_against_decency_need_as_much_cover-up_as_crimes_against_the_law" target="_blank" class="article-title">★ Crimes Against Decency Need as Much Cover-Up as Crimes Against the Law</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">daringfireball.net · 2026-05-03</div>
+    <p class="article-summary">本文指出，对Meta解雇曝光AI眼镜隐私问题的肯尼亚承包商感到愤怒是无意义的，因为企业出于自身利益必然会对吹哨人采取行动。作者认为，那些敢于揭露问题的内部人士才是真正值得关注的英雄，而非施压企业本身。</p>
+    <div class="article-why">💡 文章以冷静的视角提醒我们关注企业丑闻背后的吹哨人价值。</div>
+<div class="tags">标签：Meta，隐私，AI伦理，吹哨人，企业责任</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="https://davidgelphman.wordpress.com/2013/03/29/2-letters-from-steve/" target="_blank" class="article-title">‘2 Letters From Steve’</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">daringfireball.net · 2026-05-03</div>
+    <p class="article-summary">本文讲述了David Gelphman在2013年分享的关于史蒂夫·乔布斯的两封信的故事。这两封信与苹果发布第一代iPad这一重大历史时刻密切相关，揭示了乔布斯在产品发布前后的珍贵细节。虽然文章写作时间较早，但其中的人物互动和幕后故事至今仍具有启发意义。</p>
+    <div class="article-why">💡 透过乔布斯的亲笔信件，近距离感受科技巨擘在改变世界时刻的思考与个性。</div>
+<div class="tags">标签：Steve Jobs, iPad, Apple历史</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="https://seangoedecke.com/staff-engineer-archetypes/" target="_blank" class="article-title">Why I don't like the "staff engineer archetypes"</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">seangoedecke.com · 2026-05-03</div>
+    <p class="article-summary">文章指出Will Larson的Staff engineer archetypes虽然是业内最具影响力的角色分类之一，但其将staff工程师划分为team lead、architect、solver和right hand四种原型的做法存在问题。作者认为这种分类过于简化，忽视了同一角色在不同组织中的多样性，而且“right hand”这一定义本身就模糊不清，容易让实践者产生困惑。</p>
+    <div class="article-why">💡 对Staff+级别工程师的职业发展或团队管理有参考价值，能引发关于技术角色定义的深度思考。</div>
+<div class="tags">标签：职业发展，技术领导力，工程管理</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="https://simonwillison.net/2026/May/3/anthropic/#atom-everything" target="_blank" class="article-title">Quoting Anthropic</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">simonwillison.net · 2026-05-03</div>
+    <p class="article-summary">本文介绍了一种用于检测AI谄媚行为的自动分类器，通过评估AI在被挑战时是否坚持立场、是否能根据观点价值给出适度评价、以及是否直言不讳等指标来衡量</p>
+    <div class="article-why">💡 对于关注AI诚实性和AI安全测试的读者来说，这篇文章提供了实用的评估方法和深入的技术见解。</div>
+<div class="tags">标签：AI安全，Claude，谄媚检测，AI评估</div>
+</div>
         </div>
     </main>
 
@@ -204,21 +204,18 @@
     </footer>
 
     <script>
-        // 简单的分类过滤
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const articles = document.querySelectorAll('.article');
-
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const articles = document.querySelectorAll(".article");
         filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-
+            btn.addEventListener("click", () => {
+                filterBtns.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
                 const filter = btn.dataset.filter;
                 articles.forEach(article => {
-                    if (filter === 'all' || article.dataset.category === filter) {
-                        article.style.display = 'block';
+                    if (filter === "all" || article.dataset.category === filter) {
+                        article.style.display = "block";
                     } else {
-                        article.style.display = 'none';
+                        article.style.display = "none";
                     }
                 });
             });
