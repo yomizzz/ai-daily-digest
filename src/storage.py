@@ -4,8 +4,10 @@
 """
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from typing import List, Dict
+
+SHANGHAI_TZ = timezone(timedelta(hours=8))
 
 
 class ArticleStorage:
@@ -27,7 +29,7 @@ class ArticleStorage:
 
     def _save(self) -> None:
         """保存数据到文件"""
-        self.articles['last_updated'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        self.articles['last_updated'] = datetime.now(SHANGHAI_TZ).strftime('%Y-%m-%d %H:%M:%S')
         os.makedirs(os.path.dirname(self.json_path), exist_ok=True)
         with open(self.json_path, 'w', encoding='utf-8') as f:
             json.dump(self.articles, f, ensure_ascii=False, indent=2)
@@ -56,7 +58,7 @@ class ArticleStorage:
         for article in new_articles:
             if article['url'] not in existing_urls:
                 article['id'] = len(self.articles['articles']) + 1 + added
-                article['added_at'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                article['added_at'] = datetime.now(SHANGHAI_TZ).strftime('%Y-%m-%d %H:%M:%S')
                 self.articles['articles'].insert(0, article)
                 existing_urls.add(article['url'])
                 added += 1
