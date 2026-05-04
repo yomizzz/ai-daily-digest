@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日 AI 资讯精选</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 30px;
+        }
+        h1 { font-size: 2em; margin-bottom: 10px; }
+        .subtitle { opacity: 0.9; font-size: 0.95em; }
+        .last-updated { opacity: 0.8; font-size: 0.85em; margin-top: 8px; }
+        .filter-bar {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .filter-btn {
+            padding: 8px 16px;
+            border: none;
+            background: #f0f0f0;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.2s;
+        }
+        .filter-btn:hover, .filter-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        .article-count {
+            margin-left: auto;
+            color: #666;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+        }
+        .articles { display: flex; flex-direction: column; gap: 15px; }
+        .article {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .article:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .article-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        .article-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #1a1a1a;
+            text-decoration: none;
+            flex: 1;
+        }
+        .article-title:hover { color: #667eea; }
+        .category-tag {
+            padding: 4px 10px;
+            background: #eef2ff;
+            color: #667eea;
+            border-radius: 12px;
+            font-size: 0.75em;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+        .article-meta {
+            font-size: 0.85em;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        .article-summary {
+            color: #555;
+            margin-bottom: 12px;
+            font-size: 0.95em;
+        }
+        .article-why {
+            color: #007bff;
+            font-size: 0.9em;
+            padding: 8px 12px;
+            background: #f0f7ff;
+            border-radius: 8px;
+            border-left: 3px solid #007bff;
+        }
+        .tags {
+            margin-top: 10px;
+            font-size: 0.8em;
+            color: #888;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+            font-size: 0.85em;
+        }
+        footer a { color: #667eea; text-decoration: none; }
+        @media (max-width: 600px) {
+            .article-header { flex-direction: column; gap: 8px; }
+            .category-tag { margin-left: 0; }
+            .filter-bar { flex-direction: column; }
+            .article-count { margin-left: 0; margin-top: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🤖 每日 AI 资讯精选</h1>
+        <p class="subtitle">自动聚合优质内容，AI 生成中文摘要</p>
+        <p class="last-updated">最后更新：2026-05-04 01:17:38</p>
+    </header>
+
+    <div class="container">
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="blog">blog</button>
+            <span class="article-count">共 12 篇</span>
+        </div>
+
+        <div class="articles" id="articles">
+            
+            <div class="article" data-category="blog">
+                <div class="article-header">
+                    <a href="https://oldvcr.blogspot.com/2026/05/testing-macos-on-apple-network-server.html" target="_blank" class="article-title">Testing MacOS on the Apple Network Server 2.0 ROMs</a>
+                    <span class="category-tag">blog</span>
+                </div>
+                <div class="article-meta">oldvcr.blogspot.com · 2026-05-03</div>
+                <p class="article-summary">本文介绍了在Apple Network Server（苹果公司首款真正的Unix服务器）2.0版本ROM上进行macOS测试的最新进展。Apple Network Server官方仅支持IBM的AIX系统，但爱好者们持续探索在其他操作系统上运行的可能性，这是一个持续进行的技术探索项目。</p>
+                <div class="article-why">💡 适合对苹果历史硬件和复古系统破解感兴趣的技术爱好者。</div>
+                <div class="tags">标签：Apple Network Server, macOS, 复古硬件</div>
+            </div>
+            <div class="article" data-category="blog">
+                <div class="article-header">
+                    <a href="https://jyn.dev/callgraph-analysis/" target="_blank" class="article-title">callgraph analysis</a>
+                    <span class="category-tag">blog</span>
+                </div>
+                <div class="article-meta">jyn.dev · 2026-05-03</div>
+                <p class="article-summary">本文探讨了在Rust中利用callgraph（调用图）分析来编写自定义lint的方法，展示了如何通过静态分析代码调用关系来发现潜在的代码问题，并实现自定义的代码质量检查工具。</p>
+                <div class="article-why">💡 适合Rust开发者学习如何通过静态分析提升代码质量和开发效率的实用指南。</div>
+                <div class="tags">标签：Rust, 静态分析, 代码质量</div>
+            </div>
+            <div class="article" data-category="blog">
+                <div class="article-header">
+                    <a href="https://dfarq.homeip.net/microsofts-open-sourcing-of-86-dos-and-what-it-means/?utm_source=rss&utm_medium=rss&utm_campaign=microsofts-open-sourcing-of-86-dos-and-what-it-means" target="_blank" class="article-title">Microsoft’s open sourcing of 86-DOS and what it means</a>
+                    <span class="category-tag">blog</span>
+                </div>
+                <div class="article-meta">dfarq.homeip.net · 2026-05-03</div>
+                <p class="article-summary">2026年4月28日，微软意外宣布开源86-DOS操作系统源代码。86-DOS是早期PC DOS 1.0和MS-DOS的直接祖先，对个人电脑操作系统发展史具有重要意义。此次开源为研究早期PC软件历史和操作系统演变提供了宝贵的资源。</p>
+                <div class="article-why">💡 对于关注软件历史和技术发展脉络的读者，这篇文章提供了微软开源其早期操作系统遗产的背景分析。</div>
+                <div class="tags">标签：开源软件,DOS系统,微软,操作系统历史,软件开发</div>
+            </div>
+            <div class="article" data-category="blog">
+                <div class="article-header">
+                    <a href="https://geohot.github.io//blog/jekyll/update/2026/05/03/punk-or-why-i-dont-stream.html" target="_blank" class="article-title">Punk, or why I don’t stream anymore</a>
+                    <span class="category-tag">blog</span>
+                </div>
+                <div class="article-meta">geohot.github.io · 2026-05-03</div>
+                <p class="article-summary">文章探讨了作者为何放弃直播的原因，核心围绕"Punk精神"展开——对主流流量经济、内容创作商业化的反叛。作者认为直播让创作者沦为流量附庸，而punk精神意味着独立自主、不随波逐流。文章体现了对当下互联网创作生态的批判，以及作者坚持个人原则的态度。</p>
+                <div class="article-why">💡 适合对独立精神、反叛文化和科技创作者生存现状感兴趣的读者，文风犀利且有独立思考。</div>
+                <div class="tags">标签：Punk精神, 科技创作者, 直播反思, 独立态度</div>
+            </div>
+            <div class="article" data-category="blog">
+                <div class="article-header">
+                    <a href="https://evanhahn.com/png-cmp-is-cmp-but-for-pngs/" target="_blank" class="article-title">png-cmp: like cmp for PNGs</a>
+                    <span class="category-tag">blog</span>
+                </div>
+                <div class="article-meta">evanhahn.com · 2026-05-03</div>
+                <p class="article-summary">png-cmp 是一个比较两个 PNG 图片是否视觉等效的命令行工具，灵感来自 Unix 的 cmp 命令。使用方式简单：`png-cmp a.png b.png`，图片相同时静默退出，不同时报错退出。与传统 cmp 不同，它检查的是像素级别的视觉差异而非文件二进制差异。</p>
+                <div class="article-why">💡 适合需要比较图片或做图片回归测试的开发者使用。</div>
+                <div class="tags">标签：命令行工具，图片比较，开发者工具</div>
+            </div>
+            <div class="article" data-category="blog">
+                <div class="article-header">
+                    <a href="https://matklad.github.io/2026/05/03/zig-error-context.html" target="_blank" class="article-title">Minimal Viable Zig Error Contexts</a>
+                    <span class="category-tag">blog</span>
+                </div>
+                <div class="article-meta">matklad.github.io · 2026-05-03</div>
+                <p class="article-summary">Zig 语言提供了最小且充分的错误处理机制——强类型错误码，将错误报告的设计权交给开发者。其惯用做法是传递一个 Diagnostics out parameter（诊断参数），在需要时生成人类可读的错误信息，实现零成本抽象的同时保持灵活性。</p>
+                <div class="article-why">💡 简洁明了地阐释了 Zig “少即是多”的错误处理设计哲学，适合想深入理解 Zig 语言特性的开发者阅读。</div>
+                <div class="tags">标签：Zig, 错误处理, 编程语言设计</div>
+            </div>
+            <div class="article" data-category="blog">
+                <div class="article-header">
+                    <a href="https://www.johndcook.com/blog/2026/05/03/guitar-pick/" target="_blank" class="article-title">The shape of a guitar pick</a>
+                    <span class="category-tag">blog</span>
+                </div>
+                <div class="article-meta">johndcook.com · 2026-05-03</div>
+                <p class="article-summary">文章探讨了一个有趣的数学问题——当对圆的标准方程x² + y² = 1取对数变换后，(log x)² + (log y)² = 1会呈现怎样的形状。作者通过可视化展示了不同常数项取值时的等高线轮廓，发现对数变换将圆形扭曲成类似吉他拨片的独特形状，揭示了对数函数的非线性变换特性。</p>
+                <div class="article-why">💡 这是一篇将抽象数学概念与直观几何图形结合的趣味文章，适合对数学可视化和函数变换感兴趣的读者。</div>
+                <div class="tags">标签：数学可视化,对数变换,几何形状</div>
+            </div>
+            <div class="article" data-category="blog">
+                <div class="article-header">
+                    <a href="https://shkspr.mobi/blog/2026/05/vertically-aligning-roman-numerals-in-code/" target="_blank" class="article-title">Vertically Aligning Roman Numerals in Code</a>
+                    <span class="category-tag">blog</span>
+                </div>
+                <div class="article-meta">shkspr.mobi · 2026-05-03</div>
+                <p class="article-summary">文章讨论了如何在代码中正确对齐罗马数字转换函数。作者展示了使用Unicode大写罗马数字字符（如Ⅿ、Ⅽ、Ⅾ等）来表示不同数值，并介绍了处理特殊情况（如900用Ⅽ⅏、90用ⅩC等）的方法。内容涉及PHP代码中罗马数字的数组定义与对齐显示。</p>
+                <div class="article-why">💡 简洁实用，适合需要处理罗马数字转换的开发者参考。</div>
+                <div class="tags">标签：PHP，罗马数字，Unicode，代码格式化</div>
+            </div>
+            <div class="article" data-category="blog">
+                <div class="article-header">
+                    <a href="https://daringfireball.net/2026/05/crimes_against_decency_need_as_much_cover-up_as_crimes_against_the_law" target="_blank" class="article-title">★ Crimes Against Decency Need as Much Cover-Up as Crimes Against the Law</a>
+                    <span class="category-tag">blog</span>
+                </div>
+                <div class="article-meta">daringfireball.net · 2026-05-03</div>
+                <p class="article-summary">暂无摘要</p>
+                <div class="article-why">💡 值得一读</div>
+                
+            </div>
+            <div class="article" data-category="blog">
+                <div class="article-header">
+                    <a href="https://davidgelphman.wordpress.com/2013/03/29/2-letters-from-steve/" target="_blank" class="article-title">‘2 Letters From Steve’</a>
+                    <span class="category-tag">blog</span>
+                </div>
+                <div class="article-meta">daringfireball.net · 2026-05-03</div>
+                <p class="article-summary">这篇文章分享了关于Steve Jobs与早期iPad开发相关的两封信件故事，揭示了苹果在2010年iPad发布背后的重要细节和幕后花絮，展现了Jobs在产品决策中的独特风格与坚持。</p>
+                <div class="article-why">💡 了解苹果产品发布背后真实故事，感受Jobs的远见与个性。</div>
+                <div class="tags">标签：Steve Jobs, Apple历史, iPad, 科技人物</div>
+            </div>
+            <div class="article" data-category="blog">
+                <div class="article-header">
+                    <a href="https://seangoedecke.com/staff-engineer-archetypes/" target="_blank" class="article-title">Why I don't like the "staff engineer archetypes"</a>
+                    <span class="category-tag">blog</span>
+                </div>
+                <div class="article-meta">seangoedecke.com · 2026-05-03</div>
+                <p class="article-summary">文章探讨了作者对Will Larson提出的Staff Engineer四种角色分类（团队领导、架构师、解决问题者、得力助手）的不满。作者认为这种分类方式过于简化，忽略了Staff Engineer角色的复杂性和多样性，可能导致对这一职级的误解和误用。文章呼吁重新思考技术专家的职业发展路径。</p>
+                <div class="article-why">💡 为技术从业者提供了关于职业晋升的新视角，帮助你更深入思考技术专家的成长方向。</div>
+                <div class="tags">标签：职业发展、技术管理、职场洞察</div>
+            </div>
+            <div class="article" data-category="blog">
+                <div class="article-header">
+                    <a href="https://simonwillison.net/2026/May/3/anthropic/#atom-everything" target="_blank" class="article-title">Quoting Anthropic</a>
+                    <span class="category-tag">blog</span>
+                </div>
+                <div class="article-meta">simonwillison.net · 2026-05-03</div>
+                <p class="article-summary">本文讨论了Anthropic如何评估Claude的谄媚倾向，通过自动分类器检测模型在面对挑战时是否保持立场、给出与观点价值相符的赞扬，以及无论对方想听什么都保持坦率。这一评估方法旨在确保AI助手不会为了讨好用户而放弃独立判断。</p>
+                <div class="article-why">💡 对AI对齐和模型行为评估感兴趣的人必读，揭示了AI公司如何解决“谄媚”问题的具体方法。</div>
+                <div class="tags">标签：AI对齐，Claude，Anthropic</div>
+            </div>
+        </div>
+
+        <footer>
+            <p>由 GitHub Actions + MiniMax AI 自动生成</p>
+        </footer>
+    </div>
+
+    <script>
+        // 简单的分类过滤
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const articles = document.querySelectorAll('.article');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                articles.forEach(article => {
+                    if (filter === 'all' || article.dataset.category === filter) {
+                        article.style.display = 'block';
+                    } else {
+                        article.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
