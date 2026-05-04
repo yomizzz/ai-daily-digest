@@ -4,59 +4,13 @@
 """
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from typing import List, Dict
 
+SHANGHAI_TZ = timezone(timedelta(hours=8))
 
-class PageGenerator:
-    """生成静态 HTML 页面"""
-
-    def __init__(self, json_path: str = 'data/articles.json'):
-        self.json_path = json_path
-
-    def generate(self, output_path: str = 'index.html', limit: int = 50) -> str:
-        """
-        生成 HTML 页面
-
-        Args:
-            output_path: 输出文件路径
-            limit: 最多展示文章数量
-
-        Returns:
-            输出文件路径
-        """
-        articles = self._load_articles(limit)
-        html = self._build_html(articles)
-        os.makedirs(os.path.dirname(output_path) or '.', exist_ok=True)
-        with open(output_path, 'w', encoding='utf-8') as f:
-            f.write(html)
-        return output_path
-
-    def _load_articles(self, limit: int) -> tuple:
-        """加载文章数据"""
-        if os.path.exists(self.json_path):
-            with open(self.json_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            articles = data.get('articles', [])[:limit]
-            last_updated = data.get('last_updated', '')
-            return articles, last_updated
-        return [], ''
-
-    def _build_html(self, data: tuple) -> str:
-        """构建完整 HTML"""
-        articles, last_updated = data
-
-        articles_html = self._render_articles(articles)
-        categories_html = self._render_categories(articles)
-
-        return f'''<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>每日 AI 资讯精选</title>
-    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
-    <style>
+# MVP.css 主题样式（不用 f-string 包裹，避免 CSS 大括号转义问题）
+THEME_CSS = """
         :root { --width: 900px; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
         header { padding: 2rem 1rem 1rem; }
@@ -111,54 +65,110 @@ class PageGenerator:
             .filter-bar { flex-direction: column; }
             .article-count { margin-left: 0; margin-top: 10px; }
         }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>🤖 每日 AI 资讯精选</h1>
-        <p class="subtitle">自动聚合优质内容，AI 生成中文摘要</p>
-        <p class="last-updated">最后更新：{last_updated}</p>
-    </header>
+"""
 
-    <main>
-        <div class="filter-bar">
-            <button class="filter-btn active" data-filter="all">全部</button>
-            {categories_html}
-            <span class="article-count">共 {len(articles)} 篇</span>
-        </div>
 
-        <div class="articles" id="articles">
-            {articles_html}
-        </div>
-    </main>
+class PageGenerator:
+    """生成静态 HTML 页面"""
 
-    <footer>
-        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
-    </footer>
+    def __init__(self, json_path: str = 'data/articles.json'):
+        self.json_path = json_path
 
-    <script>
-        // 简单的分类过滤
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const articles = document.querySelectorAll('.article');
+    def generate(self, output_path: str = 'index.html', limit: int = 50) -> str:
+        """
+        生成 HTML 页面
 
-        filterBtns.forEach(btn => {{
-            btn.addEventListener('click', () => {{
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+        Args:
+            output_path: 输出文件路径
+            limit: 最多展示文章数量
 
-                const filter = btn.dataset.filter;
-                articles.forEach(article => {{
-                    if (filter === 'all' || article.dataset.category === filter) {{
-                        article.style.display = 'block';
-                    }} else {{
-                        article.style.display = 'none';
-                    }}
-                }});
-            }});
-        }});
-    </script>
-</body>
-</html>'''
+        Returns:
+            输出文件路径
+        """
+        articles = self._load_articles(limit)
+        html = self._build_html(articles)
+        os.makedirs(os.path.dirname(output_path) or '.', exist_ok=True)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(html)
+        return output_path
+
+    def _load_articles(self, limit: int) -> tuple:
+        """加载文章数据"""
+        if os.path.exists(self.json_path):
+            try:
+                with open(self.json_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                articles = data.get('articles', [])[:limit]
+                last_updated = data.get('last_updated', '')
+                return articles, last_updated
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"[Storage] 加载失败: {e}")
+        return [], ''
+
+    def _build_html(self, data: tuple) -> str:
+        """构建完整 HTML"""
+        articles, last_updated = data
+
+        articles_html = self._render_articles(articles)
+        categories_html = self._render_categories(articles)
+
+        html = (
+            '<!DOCTYPE html>\n'
+            '<html lang="zh-CN">\n'
+            '<head>\n'
+            '    <meta charset="UTF-8">\n'
+            '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
+            '    <title>每日 AI 资讯精选</title>\n'
+            '    <link rel="stylesheet" href="https://unpkg.com/mvp.css">\n'
+            '    <style>\n'
+            + THEME_CSS +
+            '    </style>\n'
+            '</head>\n'
+            '<body>\n'
+            '    <header>\n'
+            '        <h1>🤖 每日 AI 资讯精选</h1>\n'
+            '        <p class="subtitle">自动聚合优质内容，AI 生成中文摘要</p>\n'
+            '        <p class="last-updated">最后更新：' + last_updated + '</p>\n'
+            '    </header>\n'
+            '\n'
+            '    <main>\n'
+            '        <div class="filter-bar">\n'
+            '            <button class="filter-btn active" data-filter="all">全部</button>\n'
+            + categories_html + '\n'
+            '            <span class="article-count">共 ' + str(len(articles)) + ' 篇</span>\n'
+            '        </div>\n'
+            '\n'
+            '        <div class="articles" id="articles">\n'
+            + articles_html + '\n'
+            '        </div>\n'
+            '    </main>\n'
+            '\n'
+            '    <footer>\n'
+            '        <p>由 GitHub Actions + MiniMax AI 自动生成</p>\n'
+            '    </footer>\n'
+            '\n'
+            '    <script>\n'
+            '        const filterBtns = document.querySelectorAll(".filter-btn");\n'
+            '        const articles = document.querySelectorAll(".article");\n'
+            '        filterBtns.forEach(btn => {\n'
+            '            btn.addEventListener("click", () => {\n'
+            '                filterBtns.forEach(b => b.classList.remove("active"));\n'
+            '                btn.classList.add("active");\n'
+            '                const filter = btn.dataset.filter;\n'
+            '                articles.forEach(article => {\n'
+            '                    if (filter === "all" || article.dataset.category === filter) {\n'
+            '                        article.style.display = "block";\n'
+            '                    } else {\n'
+            '                        article.style.display = "none";\n'
+            '                    }\n'
+            '                });\n'
+            '            });\n'
+            '        });\n'
+            '    </script>\n'
+            '</body>\n'
+            '</html>'
+        )
+        return html
 
     def _render_articles(self, articles: List[Dict]) -> str:
         """渲染文章列表"""
@@ -176,17 +186,20 @@ class PageGenerator:
             why = article.get('why_matters', '值得一读')
             tags = article.get('tags', '')
 
-            html += f'''
-            <div class="article" data-category="{category}">
-                <div class="article-header">
-                    <a href="{url}" target="_blank" class="article-title">{title}</a>
-                    <span class="category-tag">{category}</span>
-                </div>
-                <div class="article-meta">{source} {f"· {published}" if published else ""}</div>
-                <p class="article-summary">{summary}</p>
-                <div class="article-why">💡 {why}</div>
-                {f'<div class="tags">标签：{tags}</div>' if tags else ''}
-            </div>'''
+            tags_html = f'<div class="tags">标签：{tags}</div>' if tags else ''
+
+            html += (
+                '<div class="article" data-category="' + category + '">\n'
+                '    <div class="article-header">\n'
+                '        <a href="' + url + '" target="_blank" class="article-title">' + title + '</a>\n'
+                '        <span class="category-tag">' + category + '</span>\n'
+                '    </div>\n'
+                '    <div class="article-meta">' + source + (' · ' + published if published else '') + '</div>\n'
+                '    <p class="article-summary">' + summary + '</p>\n'
+                '    <div class="article-why">💡 ' + why + '</div>\n'
+                + tags_html + '\n'
+                '</div>'
+            )
 
         return html
 
@@ -195,5 +208,5 @@ class PageGenerator:
         categories = set(a.get('category', 'general') for a in articles)
         html = ''
         for cat in sorted(categories):
-            html += f'<button class="filter-btn" data-filter="{cat}">{cat}</button>'
+            html += '<button class="filter-btn" data-filter="' + cat + '">' + cat + '</button>'
         return html
