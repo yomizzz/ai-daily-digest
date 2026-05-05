@@ -5,7 +5,9 @@
 import os
 import sys
 import yaml
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
+
+SHANGHAI_TZ = timezone(timedelta(hours=8))
 
 # 添加 src 目录到 path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -45,7 +47,7 @@ def main():
     print(f"\n📡 开始抓取 {len(rss_sources)} 个 RSS 源...")
 
     # 2. 抓取 RSS（只抓昨天的文章）
-    yesterday = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
+    yesterday = (datetime.now(SHANGHAI_TZ) - timedelta(days=1)).strftime('%Y-%m-%d')
     print(f"   目标日期: {yesterday}（北京时间凌晨）")
     fetcher = RSSFetcher(rss_sources)
     articles = fetcher.fetch(limit_per_source=20, target_date=yesterday)
