@@ -74,13 +74,13 @@ class PageGenerator:
     def __init__(self, json_path: str = 'data/articles.json'):
         self.json_path = json_path
 
-    def generate(self, output_path: str = 'index.html', limit: int = 50) -> str:
+    def generate(self, output_path: str = 'index.html', limit: int = 9999) -> str:
         """
         生成 HTML 页面
 
         Args:
             output_path: 输出文件路径
-            limit: 最多展示文章数量
+            limit: 最多展示文章数量（默认 9999，足够展示所有历史内容）
 
         Returns:
             输出文件路径

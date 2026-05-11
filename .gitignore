@@ -9,8 +9,8 @@ build/
 .env
 *.env
 
-# 本地测试数据
-data/articles.json
+# 本地测试数据（已改为持久化存储，需推送到 GitHub）
+# data/articles.json
 
 # IDE
 .vscode/

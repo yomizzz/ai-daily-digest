@@ -27,6 +27,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install feedparser httpx pyyaml openai
 
+      - name: Fetch latest data from remote
+        run: |
+          # 尝试从远程拉取最新的 articles.json（支持增量累积）
+          # 如果远程存在则合并，如果不存在则创建空数据
+          mkdir -p data
+          if git ls-files data/articles.json | grep -q data/articles.json; then
+            echo "从 git 恢复历史数据..."
+            git checkout origin/main -- data/articles.json 2>/dev/null || echo "{}" > data/articles.json
+          else
+            echo "首次运行，创建空数据文件"
+            echo '{"articles": [], "last_updated": ""}' > data/articles.json
+          fi
+
       - name: Run digest pipeline
         env:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}

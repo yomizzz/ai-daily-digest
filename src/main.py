@@ -44,13 +44,12 @@ def main():
         print("[Error] 未配置 RSS 源")
         sys.exit(1)
 
-    print(f"\n📡 开始抓取 {len(rss_sources)} 个 RSS 源...")
+    print(f"\n📡 开始抓取 {len(rss_sources)} 个 RSS 源（不过滤日期，storage 自动去重）...")
 
-    # 2. 抓取 RSS（只抓昨天的文章）
-    yesterday = (datetime.now(SHANGHAI_TZ) - timedelta(days=1)).strftime('%Y-%m-%d')
-    print(f"   目标日期: {yesterday}（北京时间凌晨）")
+    # 2. 抓取 RSS（全量抓取，storage 层根据 URL 去重）
+    # 注意：每次只取各源最新 20 条，避免重复拉取过多内容
     fetcher = RSSFetcher(rss_sources)
-    articles = fetcher.fetch(limit_per_source=20, target_date=yesterday)
+    articles = fetcher.fetch(limit_per_source=20)  # 移除 target_date 限制，累积历史
     print(f"   抓取到 {len(articles)} 篇文章")
 
     if not articles:
