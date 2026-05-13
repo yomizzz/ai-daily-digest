@@ -356,3 +356,9 @@ class PageGenerator:
         # 清理空段落
         body = re.sub(r'<p>\s*</p>', '', body)
         return body
+
+
+if __name__ == '__main__':
+    gen = PageGenerator()
+    out = gen.generate('index.html')
+    print(f'Generated: {out}')
