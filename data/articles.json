@@ -1,1 +1,125 @@
-{"articles": [], "last_updated": ""}
+{
+  "articles": [
+    {
+      "title": "Hermes Agent v0.13.0 (2026.5.7) — The Tenacity Release",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.7",
+      "source": "hermes-agent",
+      "published": "2026-05-08",
+      "category": "hermes",
+      "summary_zh": "<think>用户要求我作为技术编辑，将 Hermes Agent v0.13.0 的 release notes 翻译并摘要为中文。要求：\n1. 3-5句话\n2. 只描述最重要功能\n3. 不要逐条列点\n4. 直接输出中文摘要，不要加标题或前缀\n\n让我分析这个版本的核心更新：\n\n1. Kanban 系统大幅增强 - 成为持久化的多智能体看板，新增心跳、僵尸检测、自动阻止未完成任务退出、每个任务重试、幻觉恢复等功能\n2. `/goal` 命令 - 让智能体跨轮次锁定目标（Ralph 循环）\n3. Checkpoints v2 - 重写了状态持久化，新增真实剪枝\n4. Gateway - 自动恢复中断的会话\n5. Cron 新增 `no_agent` 看门狗模式\n6. 安全更新 - 关闭 8 个 P0 问题，默认开启重定向、Discord 角色白名单改为公会级别、WhatsApp 默认拒绝陌生人、修复了 auth.json 和 MCP OAuth 的 TOCTOU 漏洞\n7. Google Chat 成为第 20 个支持平台\n8. Providers 成为可插拔接口\n9. 新增 7 个 i18n 区域设置\n\n最重要功能应该是：\n\n\n1. Kanban 持久化和增强\n2. 目标锁定机制\n3. 检查点系统的重大改进\n4. 安全问题的修复\n\n现在我需要用3-5句简洁的中文总结这些核心变化。\n</think>\n\nHermes Agent v0.13.0 发布，核心改进包括：Kanban 看板升级为持久化多智能体系统，新增心跳检测、僵尸清理和自动重试机制；`/goal` 命令实现跨会话目标锁定；Checkpoints v2 重写状态持久化并支持真实剪枝。安全方面大幅加强，默认启用重定向并修复 8 个高优先级漏洞。Google Chat 成为第 20 个支持平台，Providers 接口也改为可插拔架构。",
+      "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.12.0 (2026.4.30)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.30",
+      "source": "hermes-agent",
+      "published": "2026-05-01",
+      "category": "hermes",
+      "summary_zh": "<think>用户要求我将Hermes Agent v0.12.0的发布说明翻译并摘要为中文。要求：\n- 3-5句话\n- 只描述最重要功能\n- 不要逐条列点\n- 直接输出中文摘要，不要加标题或前缀\n\n关键信息：\n1. Curator功能 - 自动维护skill library，自己安排调度进行评级、修剪、整合\n2. 自我改进循环升级 - 审查保存内容\n3. 新增4个推理提供商\n4. 第18个消息平台支持\n5. 第19个通过Teams插件\n6. 原生集成Spotify + Google Meet\n7. ComfyUI和TouchDesigner-MCP从可选变为默认捆绑\n8. TUI冷启动时间减少约57%\n\n需要整合这些信息，用简洁的中文摘要。</think>\n\nHermes Agent v0.12.0版本新增自主Curator功能，可自动在后台对skill库进行评级、修剪和整合，大幅提升自我维护能力。新增4个推理提供商，并支持第18个消息平台及第19个通过Teams插件接入。原生集成Spotify和Google Meet，ComfyUI和TouchDesigner-MCP改为默认捆绑。TUI冷启动时间缩短约57%。",
+      "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.11.0 (2026.4.23)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.23",
+      "source": "hermes-agent",
+      "published": "2026-04-24",
+      "category": "hermes",
+      "summary_zh": "<think>这个版本是Hermes Agent v0.11.0，主要更新包括：\n1. 完整的React/Ink重写交互式CLI\n2. 可插拔的传输架构\n3. 原生AWS Bedrock支持\n4. 五个新的推理路径\n5. 第17个消息平台QQBot\n6. 大幅扩展的插件表面\n7. GPT-5.5通过Codex OAuth支持\n\n需要用简洁的中文总结为3-5句话。</think>\n\nv0.11.0 是 Interface 版本，完成交互式 CLI 的 React/Ink 重写，支持可插拔传输架构，新增原生 AWS Bedrock 支持和五个推理路径，并整合了 QQBot 作为第17个消息平台，同时大幅扩展插件能力，还支持通过 Codex OAuth 调用 GPT-5.5。该版本还合并了 v0.10.0 延迟的所有功能更新。",
+      "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.10.0 (2026.4.16)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.16",
+      "source": "hermes-agent",
+      "published": "2026-04-17",
+      "category": "hermes",
+      "summary_zh": "<think>用户要求我总结Hermes Agent v0.10.0的核心更新。\n\n关键信息：\n- 版本号：v0.10.0，日期：2026.4.16\n- 主题：Tool Gateway\n- 核心更新：付费 Nous Portal 订阅用户现在可以使用网络搜索、图片生成、文本转语音和浏览器自动化功能\n- 无需额外的 API 密钥\n\n我需要用3-5句话简洁地总结这个版本的核心内容。\n\n注意：用户要求直接输出中文摘要，不要加标题或前缀，不要逐条列点。</think>\n\n本次更新带来 Tool Gateway 功能，付费 Nous Portal 订阅用户现在可以通过现有订阅直接使用网络搜索、图片生成、文本转语音和浏览器自动化等工具，无需额外配置 API 密钥。此版本降低了用户使用高级工具的门槛，让订阅用户能够更便捷地访问完整的 AI 工具生态。",
+      "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.9.0 (v2026.4.13)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.13",
+      "source": "hermes-agent",
+      "published": "2026-04-14",
+      "category": "hermes",
+      "summary_zh": "<think>用户要求我作为技术编辑，将 Hermes Agent v0.9.0 的 release notes 翻译并摘要为中文。\n\n关键要求：\n1. 简洁的中文（3-5句话）\n2. 只描述最重要功能\n3. 不逐条列点\n4. 直接输出中文摘要，不要加标题或前缀\n\n从英文内容中提取核心更新：\n1. Hermes 扩展到移动端，支持 Termux/Android\n2. 新增 iMessage 和微信集成\n3. 为 OpenAI 和 Anthropic 提供快速模式\n4. 引入后台进程监控\n5. 推出本地 Web 控制面板\n6. 在 16 个支持的平台上进行了最深度的安全加固\n\n最重要的功能应该是：\n- 移动端支持（Termux/Android）\n- 即时通讯集成（iMessage 和微信）\n- 快速模式\n- Web 控制面板\n- 安全加固\n\n我需要将这些浓缩成 3-5 句话，描述最重要的功能。\n</think>\n\n\n\nHermes Agent v0.9.0 正式支持移动端，可在 Termux 和 Android 上运行，并新增 iMessage 和微信集成。面向 OpenAI 和 Anthropic 模型推出快速模式，提升响应效率。内置本地 Web 控制面板，方便管理代理服务。新增后台进程监控功能。作为最大规模的一次安全更新，在全部 16 个支持平台上进行了深度安全加固。",
+      "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.8.0 (v2026.4.8)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.8",
+      "source": "hermes-agent",
+      "published": "2026-04-08",
+      "category": "hermes",
+      "summary_zh": "<think>用户要求我作为技术编辑，将软件发布说明翻译并摘要为中文。要求：\n1. 简洁的中文（3-5句话）\n2. 只描述最重要功能\n3. 不要逐条列点\n4. 输出格式：直接输出中文摘要，不要加标题或前缀\n\n原始内容的关键信息：\n- 背景任务自动通知\n- Nous Portal 上免费提供 MiMo v2 Pro\n- 所有平台支持实时切换模型\n- 自优化 GPT/Codex 指导\n- 原生支持 Google AI Studio\n- 智能空闲超时\n- 审批按钮\n- MCP OAuth 2.1\n- 209 个合并的 PR，82 个已解决的问题\n\n我需要提炼最重要的功能，用3-5句话总结。</think>\n\nv2026.4.8 版本带来智能化升级，新增后台任务自动通知和智能空闲超时功能； Nous Portal 现可免费使用 MiMo v2 Pro 模型；全平台支持实时切换 AI 模型，并原生集成 Google AI Studio；新增 MCP OAuth 2.1 认证支持；同时改进了 GPT/Codex 自优化指导机制。本版本合并了 209 个 PR，解决了 82 个问题。",
+      "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.7.0 (v2026.4.3)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.3",
+      "source": "hermes-agent",
+      "published": "2026-04-04",
+      "category": "hermes",
+      "summary_zh": "<think>用户要求我作为技术编辑，将Hermes Agent v0.7.0的release notes翻译并摘要为中文。要求：\n1. 3-5句话\n2. 只描述最重要功能\n3. 不要逐条列点\n4. 直接输出中文摘要，不要加标题或前缀\n\n让我提取关键信息：\n- 版本：v2026.4.3 (Hermes Agent v0.7.0)\n- 发布日期：2026年4月3日\n- 核心主题：resilience（韧性）\n- 主要更新：\n  1. pluggable memory providers（可插拔内存存储）\n  2. credential pool rotation（凭证池轮换）\n  3. Camoflux anti-detection browser（反检测浏览器）\n  4. inline diff previews（内联差异预览）\n  5. gateway hardening across race conditions and approval routing（网关在竞态条件和审批路由方面的加固）\n  6. deep security fixes（深入的安全修复）\n  - 168 PRs\n  - 46 resolved issues\n\n我需要选择最重要的几个功能来描述，保持3-5句话，简洁准确。\n\n摘要思路：\n1. 这是Hermes Agent v0.7.0的韧性版本\n2. 新增可插拔内存存储和凭证池轮换机制\n3. 引入Camofox反检测浏览器功能\n\n\n4. 网关安全加固，支持内联差异预览\n5. 本次更新涵盖168个PR和46个问题的解决，显著提升了系统整体稳定性\n\n和安全性\n\n我确认这个版本是v2026.4.3，专注于系统韧性的重大改进，包括内存存储灵活性和安全机制优化。\n\n新增的Camofox反检测浏览器和Gateway加固显著增强了系统安全性和稳定性，通过168个Pull Request解决了46个问题。</think>\n\n本次更新大幅提升了系统韧性和安全性，新增可插拔内存存储和凭证池轮换机制，支持按需切换",
+      "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.6.0 (v2026.3.30)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.30",
+      "source": "hermes-agent",
+      "published": "2026-03-30",
+      "category": "hermes",
+      "summary_zh": "<think>用户要求我将 Hermes Agent v0.6.0 的 release notes 翻译并摘要为中文。要求：\n1. 3-5句话\n2. 只描述最重要功能\n3. 不要逐条列点\n4. 直接输出中文摘要，不要加标题或前缀\n\n核心更新内容：\n1. Profiles 功能 - 运行隔离的 agent 实例\n2. MCP server 模式\n3. Docker 容器支持\n4. fallback provider chains\n5. 两个新消息平台：飞书/Lark 和企业微信\n6. Telegram webhook 模式\n7. Slack 多工作区 OAuth\n8. 2天内95个PR和16个已解决的问题\n\n最重要的功能应该是：\n- Profiles 隔离实例（这是\"multi-instance release\"的核心理由）\n- MCP server 模式（重要集成功能）\n- 飞书和企业微信支持（新消息平台扩展）\n- Docker 容器支持（部署便利性）\n\n我来写一个简洁的摘要：\n</think>\n\nv0.6.0 带来了 Profiles 功能，支持运行多个相互隔离的 agent 实例。新增 MCP server 模式便于与外部工具集成，同时提供官方 Docker 容器简化部署。新增飞书/Lark 和企业微信两个国内主流办公平台的支持，以及 Telegram webhook 和 Slack 多工作区 OAuth 等通信集成能力。",
+      "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.5.0 (v2026.3.28)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.28",
+      "source": "hermes-agent",
+      "published": "2026-03-29",
+      "category": "hermes",
+      "summary_zh": "<think>用户要求我作为技术编辑，将软件 release notes 翻译并摘要为中文。需要：\n1. 简洁的中文（3-5句话）\n2. 只描述最重要功能\n3. 不要逐条列点\n4. 直接输出中文摘要，不要加标题或前缀\n\n核心更新内容：\n- Hermes Agent v0.5.0\n- 版本号：v2026.3.28\n- 发布日期：2026年3月28日\n\n重要功能点：\n1. Hugging Face provider - 新增Hugging Face支持\n2. /model command overhaul - 模型命令大幅改进\n3. Telegram Private Chat Topics - Telegram私密群组话题支持\n4. native Modal SDK - 原生Modal SDK集成\n5. plugin lifecycle hooks - 插件生命周期钩子\n6. tool-use enforcement for GPT models - GPT模型强制工具调用\n7. Nix flake - Nix包支持\n8. 50+ security and reliability fixes - 50多项安全和可靠性修复\n9. supply chain audit - 供应链安全审计\n\n从中提取最重要的3-5个功能点，组成流畅的摘要：\n\n这个版本是安全加固版本，主要更新包括：新增Hugging Face提供商支持并重构了模型命令、新增Telegram私密群组话题功能、集成原生Modal SDK、支持GPT模型的工具调用强制执行，同时进行了全面的供应链安全审计并修复了50多项安全和可靠性问题。\n\n检查一下：\n\n\n这个版本是安全加固版本，主要更新包括：新增Hugging Face提供商支持并重构了模型命令、新增Telegram私密群组话题功能、集成原生Modal SDK、支持GPT模型的工具调用强制执行，同时进行了全面的供应链安全审计并修复了50多项安全和可靠性问题。\n\n语言简洁明了，突出重点，涵盖核心升级，符合摘要要求。\n</think>\n\n这个版本是安全加固版本，主要更新包括：新增Hugging Face提供商并大幅改进了模型命令，新增Telegram私密群组话题支持，集成原生Modal SDK以及支持GPT",
+      "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.4.0 (v2026.3.23)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.23",
+      "source": "hermes-agent",
+      "published": "2026-03-24",
+      "category": "hermes",
+      "summary_zh": "<think>用户要求我作为技术编辑，将软件 release notes 翻译并摘要为中文。需要：\n1. 版本：v2026.3.23\n2. 内容是 Hermès Agent v0.4.0\n3. 用简洁的中文（3-5句话）总结核心更新内容\n4. 只描述最重要功能，不要逐条列点\n5. 输出格式：直接输出中文摘要，不要加标题或前缀\n\n让我分析原始内容：\n- OpenAI兼容API服务器\n- 6个新的消息适配器\n- 4个新的推理提供商\n- MCP服务器管理（带OAuth 2.1）\n- @上下文引用\n- 网关提示缓存\n- 流式传输默认启用\n- 可靠性改进（200+ bug修复）\n\n核心要点：\n1. OpenAI兼容API服务器（重要，开放性）\n2. 新增多个消息适配器和推理提供商（扩展性）\n3. MCP服务器管理+Oauth 2.1\n4. 技术改进：提示缓存、流式传输默认开启\n5. 大量bug修复\n\n我需要选择最重要的功能来总结，3-5句话：\n\n关键功能：\n- OpenAI兼容API（平台扩展的核心）\n- MCP服务器管理+OAuth 2.1（安全性提升）\n- 消息适配器和推理提供商增加（生态扩展）\n\n\n- 流式传输默认开启、性能优化\n- 可靠性改进（200+修复）\n\n中文摘要：\n\n本次更新带来了OpenAI兼容API服务器，使平台扩展更加灵活。同时新增4个推理提供商和6个消息适配器，显著丰富了生态系统。MCP服务器管理现已支持OAuth 2.1认证，并新增@上下文引用功能。流式传输已默认启用，性能大幅提升。此外，还修复了200多个问题，可靠性显著增强。</think>\n\n本次更新带来了OpenAI兼容API服务器，方便接入更多第三方工具和服务。平台新增4个推理提供商和6个消息适配器，显著扩展了生态兼容性。M",
+      "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.3.0 (v2026.3.17)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.17",
+      "source": "hermes-agent",
+      "published": "2026-03-17",
+      "category": "hermes",
+      "summary_zh": "<think>这个版本是Hermes Agent v0.3.0，代号为v2026.3.17，发布日期是2026年3月17日。核心关键词是：流式传输、插件、provider系统。\n\n主要更新点：\n1. 流式传输 - 统一实时token传递\n2. 插件架构 - 一级插件架构\n3. Provider系统重建 - 集成Vercel AI Gateway、原生Anthropic provider\n4. 智能审批机制\n5. 实时Chrome CDP浏览器连接\n6. ACP IDE集成\n7. Honcho记忆系统\n8. 语音模式\n9. 持久化shell\n10. 修复了50+跨平台bug\n\n我需要用3-5句话简洁总结，提取最重要的功能：\n\n1. 核心升级：流式传输能力、插件架构、provider系统重建\n2. AI provider支持：Vercel AI Gateway集成、原生Anthropic支持\n3. 浏览器和IDE集成：Chrome CDP实时连接、ACP IDE集成\n4. 新功能：语音模式、持久化shell、Honcho记忆\n5. 其他：智能审批、跨平台bug修复\n\n简化版中文摘要：\n这是该版本首次引入流式传输和完整插件架构，重构了provider系统以支持Vercel AI Gateway和原生Anthropic集成。新增Chrome CDP浏览器实时连接和ACP IDE集成，支持语音模式和持久化shell，并修复了跨平台50余个问题。\n\n现在调整到3-5句话。流式传输和插件架构是主要亮点，provider系统通过Vercel AI Gateway和Anthropic进行升级，同时引入了Chrome CDP实时连接、语音模式和持久化shell等新功能，并修复了大量跨平台问题。\n\n我应该精简措辞，确保整体表达清晰流畅。\n</think>\n\n本次更新带来完整的流式传输能力和全新插件架构，并重构provider系统以支持Vercel AI Gateway和原生Anthropic集成",
+      "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.2.0 (2026.3.12)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.12",
+      "source": "hermes-agent",
+      "published": "2026-03-12",
+      "category": "hermes",
+      "summary_zh": "<think>用户要求我作为技术编辑，将软件release notes翻译并摘要为中文。原文是关于Hermes Agent v0.2.0版本的发布说明。\n\n关键信息：\n- 版本号：v2026.3.12，v0.2.0\n- 发布日期：2026年3月12日\n- 这是v0.1.0之后的首次标记发布\n- 从内部小项目发展成功能完整的AI agent平台\n- 216个合并的pull requests\n- 63个贡献者\n- 解决了119个issues\n\n用户要求：\n- 简洁中文，3-5句话\n- 只描述最重要功能\n- 不要逐条列点\n- 直接输出中文摘要\n- 不要加标题或前缀\n\n我需要提炼核心信息：这是第一个正式发布版本，从v0.1.0快速成长，得益于大量社区贡献。主要亮点是规模的增长（216 PRs, 63 contributors, 119 issues）。\n\n由于原文主要是发布说明性质的，没有列出具体功能，我应该总结这个版本的重要性和规模变化。</think>\n\nHermes Agent v0.2.0正式发布，这是该项目的首个标记版本。在不到三周内，从内部小项目快速发展为功能完整的AI agent平台，离不开社区的积极参与。本次更新合并了216个pull request，由63位贡献者参与，解决了119个issues。",
+      "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    }
+  ],
+  "last_updated": "2026-05-13 23:32:14"
+}
