@@ -5,6 +5,15 @@ on:
     # 上海时间 10:00 = UTC 02:00
     - cron: '0 2 * * *'
   workflow_dispatch:
+    inputs:
+      mode:
+        description: '运行模式'
+        required: true
+        default: 'incremental'
+        type: choice
+        options:
+          - incremental
+          - initial
 
 jobs:
   build:
@@ -38,8 +47,12 @@ jobs:
           fi
 
       - name: Fetch hermes-agent releases
+        env:
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
         run: |
-          python src/hermes_updater.py
+          MODE="${{ inputs.mode || 'incremental' }}"
+          echo "运行模式: $MODE"
+          python src/hermes_updater.py "$MODE"
 
       - name: Generate hermes-updates.html
         run: |
