@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hermes Agent v0.7.0 (v2026.4.3)</title>
+    <title>The case of the hang when the user changed keyboard layouts</title>
     <link rel="stylesheet" href="https://unpkg.com/mvp.css">
     <style>
 
@@ -74,18 +74,18 @@
 </head>
 <body>
     <header>
-        <h1>Hermes Agent v0.7.0 (v2026.4.3)</h1>
-        <p><span class="category-tag">hermes</span> hermes-agent · 2026-04-04</p>
+        <h1>The case of the hang when the user changed keyboard layouts</h1>
+        <p><span class="category-tag">blog</span> devblogs.microsoft.com/oldnewthing · 2026-05-13</p>
     </header>
 
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
         <div class="detail-card">
-            <p>本版本是韧性增强版，引入了可插拔内存提供程序和凭证池轮换机制，提升了系统的灵活性和安全性。集成了Camofox反检测浏览器，增强了自动化场景下的隐蔽性。网关层面重点修复了竞态条件和审批路由问题，共修复168个PR和46个问题，安全能力显著提升。</p>
+            <p>本文讲述了开发过程中遇到的一个程序挂起问题，问题的触发条件是用户更改键盘布局。作者通过深入分析Windows消息循环和键盘消息处理机制，找到了导致程序无响应的根本原因，并给出了解决方案。案例展示了Windows编程中容易被忽视的细节。</p>
         </div>
-<div class="detail-tags">标签：Hermes Agent</div>
-        <div class="detail-why">💡 查看中文摘要与详情</div>
-        <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.3" target="_blank" class="original-link">📖 阅读英文原文 →</a>
+<div class="detail-tags">标签：Windows编程, 键盘布局, 调试案例</div>
+        <div class="detail-why">💡 典型的问题排查思路分享，适合学习Windows消息处理机制和调试技巧。</div>
+        <a href="https://devblogs.microsoft.com/oldnewthing/20260513-00/?p=112318" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>

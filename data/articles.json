@@ -622,6 +622,16 @@
       "tags": "Hermes Agent"
     },
     {
+      "title": "Hermes Agent v0.13.0 (2026.5.7) — The Tenacity Release",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.7",
+      "source": "hermes-agent",
+      "published": "2026-05-08",
+      "category": "hermes",
+      "summary_zh": "Hermes Agent v0.13.0 带来任务完成能力的重大升级：Kanban 升级为持久化多 agent 看板，支持心跳检测、僵尸进程回收和任务自动重试；新增 `/goal` 命令让 agent 跨",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Hermes Agent v0.12.0 (2026.4.30)",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.30",
       "source": "hermes-agent",
@@ -629,6 +639,16 @@
       "category": "hermes",
       "summary_zh": "Hermes Agent v0.12.0版本新增自主Curator功能，可自动在后台对skill库进行评级、修剪和整合，大幅提升自我维护能力。新增4个推理提供商，并支持第18个消息平台及第19个通过Teams插件接入。原生集成Spotify和Google Meet，ComfyUI和TouchDesigner-MCP改为默认捆绑。TUI冷启动时间缩短约57%。",
       "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.12.0 (2026.4.30)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.30",
+      "source": "hermes-agent",
+      "published": "2026-05-01",
+      "category": "hermes",
+      "summary_zh": "Hermes Agent v0.12.0 已发布，重点引入了自动化的 Curator 功能，代理可自主对技能库进行评分、清理和整合，实现了真正的自维护能力。新增四个推理提供商、第18个消息平台及 Teams 插件支持，并原生集成 Spotify 和 Google Meet。ComfyUI 和 TouchDesigner-MCP 从可选升级为默认自带，TUI 冷启动速度提升约 57%。本次更新包含 1096 次提交、550 个合并 PR，由 217 位社区贡献者协作完成。",
+      "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     },
     {
@@ -642,6 +662,16 @@
       "tags": "Hermes Agent"
     },
     {
+      "title": "Hermes Agent v0.11.0 (2026.4.23)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.23",
+      "source": "hermes-agent",
+      "published": "2026-04-24",
+      "category": "hermes",
+      "summary_zh": "本次更新是“界面版本”，核心是对交互式CLI进行了完整的React/Ink重写，并构建了底层可插拔的传输架构。新增了原生AWS Bedrock支持、五个新的推理路径，以及第17个消息平台QQBot。插件系统大幅扩展，同时新增通过Codex OAuth实现的GPT-5.5支持。此版本还包含v0.10.0推迟的全部功能。",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Hermes Agent v0.10.0 (2026.4.16)",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.16",
       "source": "hermes-agent",
@@ -649,6 +679,16 @@
       "category": "hermes",
       "summary_zh": "本次更新带来 Tool Gateway 功能，付费 Nous Portal 订阅用户现在可以通过现有订阅直接使用网络搜索、图片生成、文本转语音和浏览器自动化等工具，无需额外配置 API 密钥。此版本降低了用户使用高级工具的门槛，让订阅用户能够更便捷地访问完整的 AI 工具生态。",
       "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.10.0 (2026.4.16)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.16",
+      "source": "hermes-agent",
+      "published": "2026-04-17",
+      "category": "hermes",
+      "summary_zh": "v0.10.0版本正式发布，主要带来Tool Gateway功能。现在付费Nous Portal订阅用户无需额外配置API密钥，即可直接通过现有订阅使用网络搜索、图像生成、文本转语音和浏览器自动化等功能。",
+      "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     },
     {
@@ -662,6 +702,16 @@
       "tags": "Hermes Agent"
     },
     {
+      "title": "Hermes Agent v0.9.0 (v2026.4.13)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.13",
+      "source": "hermes-agent",
+      "published": "2026-04-14",
+      "category": "hermes",
+      "summary_zh": "这个版本主要带来了几项重要更新：Hermes 正式支持移动端，可在 Termux 和 Android 上运行；同时新增 iMessage 和微信集成，方便多平台消息处理；为 OpenAI 和 Anthropic 模型引入快速模式以提升响应速度；提供本地 Web 控制面板用于管理代理；并进行全面的安全加固，覆盖 16 个平台。这是该工具迄今为止规模最大的一次跨平台扩展。",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Hermes Agent v0.8.0 (v2026.4.8)",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.8",
       "source": "hermes-agent",
@@ -669,6 +719,16 @@
       "category": "hermes",
       "summary_zh": "v2026.4.8 版本带来智能化升级，新增后台任务自动通知和智能空闲超时功能； Nous Portal 现可免费使用 MiMo v2 Pro 模型；全平台支持实时切换 AI 模型，并原生集成 Google AI Studio；新增 MCP OAuth 2.1 认证支持；同时改进了 GPT/Codex 自优化指导机制。本版本合并了 209 个 PR，解决了 82 个问题。",
       "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.8.0 (v2026.4.8)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.8",
+      "source": "hermes-agent",
+      "published": "2026-04-08",
+      "category": "hermes",
+      "summary_zh": "版本 v2026.4.8 现已发布，带来多项重要更新：新增后台任务自动通知功能；支持全平台实时切换 AI 模型；集成 Google AI Studio 和 MCP OAuth 2.1 认证；并在 Nous Portal 免费提供 MiMo v2 Pro 模型。此次更新共合并 209 个 PR，解决 82 个问题。",
+      "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     },
     {
@@ -682,6 +742,16 @@
       "tags": "Hermes Agent"
     },
     {
+      "title": "Hermes Agent v0.7.0 (v2026.4.3)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.3",
+      "source": "hermes-agent",
+      "published": "2026-04-04",
+      "category": "hermes",
+      "summary_zh": "本版本是韧性增强版，引入了可插拔内存提供程序和凭证池轮换机制，提升了系统的灵活性和安全性。集成了Camofox反检测浏览器，增强了自动化场景下的隐蔽性。网关层面重点修复了竞态条件和审批路由问题，共修复168个PR和46个问题，安全能力显著提升。",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Hermes Agent v0.6.0 (v2026.3.30)",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.30",
       "source": "hermes-agent",
@@ -689,6 +759,16 @@
       "category": "hermes",
       "summary_zh": "v0.6.0 带来了 Profiles 功能，支持运行多个相互隔离的 agent 实例。新增 MCP server 模式便于与外部工具集成，同时提供官方 Docker 容器简化部署。新增飞书/Lark 和企业微信两个国内主流办公平台的支持，以及 Telegram webhook 和 Slack 多工作区 OAuth 等通信集成能力。",
       "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.6.0 (v2026.3.30)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.30",
+      "source": "hermes-agent",
+      "published": "2026-03-30",
+      "category": "hermes",
+      "summary_zh": "",
+      "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     },
     {
@@ -702,6 +782,16 @@
       "tags": "Hermes Agent"
     },
     {
+      "title": "Hermes Agent v0.5.0 (v2026.3.28)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.28",
+      "source": "hermes-agent",
+      "published": "2026-03-29",
+      "category": "hermes",
+      "summary_zh": "v0.5.0是一个重要的安全强化版本，带来了50多项安全和可靠性修复，并完成了全面的供应链审计。新增了Hugging Face provider支持Modal SDK原生集成，/model命令也得到全面改进。此外还支持Telegram私密群组话题、引入了插件生命周期钩子，并对GPT模型强制执行tool-use功能。",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Hermes Agent v0.4.0 (v2026.3.23)",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.23",
       "source": "hermes-agent",
@@ -709,6 +799,16 @@
       "category": "hermes",
       "summary_zh": "本次更新带来了OpenAI兼容API服务器，方便接入更多第三方工具和服务。平台新增4个推理提供商和6个消息适配器，显著扩展了生态兼容性。M",
       "why_matters": "🔗 点击查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.4.0 (v2026.3.23)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.23",
+      "source": "hermes-agent",
+      "published": "2026-03-24",
+      "category": "hermes",
+      "summary_zh": "v0.4.0 是一个重要的平台扩展版本，新增了 OpenAI 兼容 API 服务器和 4 个推理提供商，便于与现有生态集成。引入了 MCP 服务器管理功能并支持 OAuth 2.1，提升了企业级安全性与灵活性。流式传输现为默认启用，同时带来了 6 个新消息适配器。此外该版本进行了大规模可靠性优化，修复超过 200 个问题。",
+      "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     },
     {
@@ -722,6 +822,16 @@
       "tags": "Hermes Agent"
     },
     {
+      "title": "Hermes Agent v0.3.0 (v2026.3.17)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.17",
+      "source": "hermes-agent",
+      "published": "2026-03-17",
+      "category": "hermes",
+      "summary_zh": "本版本全面升级流式传输能力，实现实时token统一交付，并推出全新的插件架构系统。Provider系统重构后原生支持Vercel AI Gateway和Anthropic，还新增智能审批机制。浏览器连接能力大幅增强，支持Live Chrome CDP直接连接，同时集成ACP IDE和Honcho记忆系统。新增语音模式与持久shell功能，并修复了跨平台50余个问题。",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Hermes Agent v0.2.0 (2026.3.12)",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.12",
       "source": "hermes-agent",
@@ -730,7 +840,17 @@
       "summary_zh": "Hermes Agent v0.2.0正式发布，这是该项目的首个标记版本。在不到三周内，从内部小项目快速发展为功能完整的AI agent平台，离不开社区的积极参与。本次更新合并了216个pull request，由63位贡献者参与，解决了119个issues。",
       "why_matters": "🔗 点击查看中文摘要与详情",
       "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.2.0 (2026.3.12)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.12",
+      "source": "hermes-agent",
+      "published": "2026-03-12",
+      "category": "hermes",
+      "summary_zh": "自v0.1.0以来的首个正式版本发布，仅用两周多时间从内部项目快速发展为功能完整的AI agent平台。该版本由63位社区贡献者提交了216个pull request，解决了119个问题，标志着项目已进入成熟发展阶段。",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
     }
   ],
-  "last_updated": "2026-05-14 03:50:23"
+  "last_updated": "2026-05-14 07:44:05"
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hermes Agent v0.7.0 (v2026.4.3)</title>
+    <title>In praise of the Linux kernel netconsole (in the right circumstances)</title>
     <link rel="stylesheet" href="https://unpkg.com/mvp.css">
     <style>
 
@@ -74,18 +74,18 @@
 </head>
 <body>
     <header>
-        <h1>Hermes Agent v0.7.0 (v2026.4.3)</h1>
-        <p><span class="category-tag">hermes</span> hermes-agent · 2026-04-04</p>
+        <h1>In praise of the Linux kernel netconsole (in the right circumstances)</h1>
+        <p><span class="category-tag">blog</span> utcc.utoronto.ca/~cks · 2026-05-13</p>
     </header>
 
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
         <div class="detail-card">
-            <p>本版本是韧性增强版，引入了可插拔内存提供程序和凭证池轮换机制，提升了系统的灵活性和安全性。集成了Camofox反检测浏览器，增强了自动化场景下的隐蔽性。网关层面重点修复了竞态条件和审批路由问题，共修复168个PR和46个问题，安全能力显著提升。</p>
+            <p>Linux内核的netconsole模块能够将内核printk日志消息通过UDP传输到远程系统，作为一种远程内核控制台方案。该模块可以在系统启动时或启动后激活使用，作者在经过长期观察后对这一工具的态度有所转变，并认为在特定场景下它具有独特价值。</p>
         </div>
-<div class="detail-tags">标签：Hermes Agent</div>
-        <div class="detail-why">💡 查看中文摘要与详情</div>
-        <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.3" target="_blank" class="original-link">📖 阅读英文原文 →</a>
+<div class="detail-tags">标签：Linux, 内核调试, netconsole, 系统运维, 网络日志</div>
+        <div class="detail-why">💡 适合需要远程调试Linux系统或监控内核日志的技术人员，特别是处理远程服务器运维和内核故障诊断的场景。</div>
+        <a href="https://utcc.utoronto.ca/~cks/space/blog/linux/NetconsoleForDesktopPanics" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
