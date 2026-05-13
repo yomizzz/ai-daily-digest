@@ -308,10 +308,10 @@ class PageGenerator:
             name = release.get('name', tag_name)
             html_url = release.get('html_url', '#')
             published = release.get('published_at', '')
-            body = release.get('body', '')
+            summary_zh = release.get('summary_zh', '')
 
-            # 渲染 body（Markdown 简单转换）
-            body_html = self._render_markdown_body(body)
+            # 渲染中文摘要
+            body_html = '<p>' + summary_zh + '</p>' if summary_zh else '<p class="no-summary">暂无摘要</p>'
 
             html += (
                 '<div class="release">\n'
