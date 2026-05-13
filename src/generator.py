@@ -210,3 +210,149 @@ class PageGenerator:
         for cat in sorted(categories):
             html += '<button class="filter-btn" data-filter="' + cat + '">' + cat + '</button>'
         return html
+
+    # ─── Hermes 更新页面 ────────────────────────────────────────
+
+    def generate_hermes_updates(self, json_path: str = 'data/hermes-updates.json',
+                                 output_path: str = 'hermes-updates.html') -> str:
+        """生成 Hermes-Agent 更新记录页面"""
+        releases, last_updated = self._load_hermes_updates(json_path)
+        html = self._build_hermes_html(releases, last_updated)
+        os.makedirs(os.path.dirname(output_path) or '.', exist_ok=True)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(html)
+        return output_path
+
+    def _load_hermes_updates(self, json_path: str) -> tuple:
+        """加载 hermes 更新数据"""
+        if os.path.exists(json_path):
+            try:
+                with open(json_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                releases = data.get('releases', [])
+                last_updated = data.get('last_updated', '')
+                return releases, last_updated
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"[HermesGenerator] 加载失败: {e}")
+        return [], ''
+
+    def _build_hermes_html(self, releases: List[Dict], last_updated: str) -> str:
+        """构建 Hermes 更新页面 HTML"""
+        releases_html = self._render_hermes_releases(releases)
+
+        html = (
+            '<!DOCTYPE html>\n'
+            '<html lang="zh-CN">\n'
+            '<head>\n'
+            '    <meta charset="UTF-8">\n'
+            '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
+            '    <title>Hermes-Agent 更新记录</title>\n'
+            '    <link rel="stylesheet" href="https://unpkg.com/mvp.css">\n'
+            '    <style>\n'
+            + THEME_CSS + '\n'
+            '        .release-list { display: flex; flex-direction: column; gap: 20px; }\n'
+            '        .release { padding: 20px; margin-bottom: 0; }\n'
+            '        .release-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }\n'
+            '        .release-title { font-size: 1.1em; font-weight: 600; color: var(--color-link); text-decoration: none; }\n'
+            '        .release-title:hover { opacity: var(--hover-brightness); }\n'
+            '        .release-date { font-size: 0.85em; color: var(--color-text-secondary); white-space: nowrap; margin-left: 12px; }\n'
+            '        .release-tag { display: inline-block; padding: 3px 10px; background: var(--color-bg-secondary); '
+            'color: var(--color-secondary); border-radius: 12px; font-size: 0.75em; margin-left: 10px; }\n'
+            '        .release-body { font-size: 0.9em; color: var(--color-text); line-height: 1.6; }\n'
+            '        .release-body h2 { font-size: 1em; margin: 12px 0 6px; }\n'
+            '        .release-body p { margin: 6px 0; }\n'
+            '        .release-body code { background: var(--color-bg-secondary); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }\n'
+            '        .release-body pre { background: var(--color-bg-secondary); padding: 12px; border-radius: 8px; overflow-x: auto; }\n'
+            '        .release-body ul, .release-body ol { margin: 6px 0; padding-left: 20px; }\n'
+            '        .release-body li { margin: 4px 0; }\n'
+            '        .release-body a { color: var(--color-link); }\n'
+            '        .release-body strong { font-weight: 600; }\n'
+            '        .no-updates { text-align: center; padding: 60px 20px; color: #888; }\n'
+            '        .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; '
+            'font-size: 0.9em; }\n'
+            '        .back-link:hover { text-decoration: underline; }\n'
+            '        .release-count { color: var(--color-text-secondary); font-size: 0.9em; }\n'
+            '    </style>\n'
+            '</head>\n'
+            '<body>\n'
+            '    <header>\n'
+            '        <h1>🔄 Hermes-Agent 更新记录</h1>\n'
+            '        <p class="subtitle">自动追踪 NousResearch/hermes-agent 正式版本发布</p>\n'
+            '        <p class="last-updated">最后更新：' + last_updated + '</p>\n'
+            '    </header>\n'
+            '\n'
+            '    <main>\n'
+            '        <a href="index.html" class="back-link">← 返回日报</a>\n'
+            '        <div class="release-count">共 ' + str(len(releases)) + ' 个正式版本</div>\n'
+            '        <div class="release-list" id="releases">\n'
+            + releases_html + '\n'
+            '        </div>\n'
+            '    </main>\n'
+            '\n'
+            '    <footer>\n'
+            '        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/NousResearch/hermes-agent/releases" target="_blank">NousResearch/hermes-agent</a></p>\n'
+            '    </footer>\n'
+            '</body>\n'
+            '</html>'
+        )
+        return html
+
+    def _render_hermes_releases(self, releases: List[Dict]) -> str:
+        """渲染 releases 列表"""
+        if not releases:
+            return '<div class="no-updates">暂无更新记录</div>'
+
+        html = ''
+        for release in releases:
+            tag_name = release.get('tag_name', '')
+            name = release.get('name', tag_name)
+            html_url = release.get('html_url', '#')
+            published = release.get('published_at', '')
+            body = release.get('body', '')
+
+            # 渲染 body（Markdown 简单转换）
+            body_html = self._render_markdown_body(body)
+
+            html += (
+                '<div class="release">\n'
+                '    <div class="release-header">\n'
+                '        <div style="display:flex;align-items:center;flex-wrap:wrap;">\n'
+                '            <a href="' + html_url + '" target="_blank" class="release-title">' + name + '</a>\n'
+                '            <span class="release-tag">' + tag_name + '</span>\n'
+                '        </div>\n'
+                '        <span class="release-date">' + published + '</span>\n'
+                '    </div>\n'
+                '    <div class="release-body">' + body_html + '</div>\n'
+                '</div>'
+            )
+        return html
+
+    def _render_markdown_body(self, body: str) -> str:
+        """将 release body 的 Markdown 转为简单 HTML"""
+        import re
+        # 移除完整 changelog 区块（从 ## 🔧 ... 之后全删）只留顶部摘要
+        body = re.sub(r'\n---\n[\s\S]*', '', body)
+        # 转义 HTML
+        body = (body
+                .replace('&', '&amp;')
+                .replace('<', '&lt;')
+                .replace('>', '&gt;'))
+        # 粗体
+        body = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', body)
+        # 行内代码
+        body = re.sub(r'`([^`]+)`', r'<code>\1</code>', body)
+        # 链接
+        body = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2" target="_blank">\1</a>', body)
+        # 标题 h2
+        body = re.sub(r'^## (.+)$', r'<h2>\1</h2>', body, flags=re.MULTILINE)
+        # 标题 h3
+        body = re.sub(r'^### (.+)$', r'<h3 style="font-size:1em;margin:10px 0 4px;">\1</h3>', body, flags=re.MULTILINE)
+        # 列表
+        body = re.sub(r'^- (.+)$', r'<li>\1</li>', body, flags=re.MULTILINE)
+        body = re.sub(r'(<li>.*</li>)', r'<ul>\1</ul>', body)
+        # 换行
+        body = body.replace('\n\n', '</p><p>').replace('\n', '<br>')
+        body = '<p>' + body + '</p>'
+        # 清理空段落
+        body = re.sub(r'<p>\s*</p>', '', body)
+        return body
