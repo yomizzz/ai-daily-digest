@@ -35,16 +35,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install httpx
 
-      - name: Fetch latest data from remote
-        run: |
-          mkdir -p data hermes-updates
-          if git ls-files data/hermes-updates.json | grep -q data/hermes-updates.json; then
-            echo "从 git 恢复历史数据..."
-            git checkout origin/main -- data/hermes-updates.json 2>/dev/null || echo '{"releases":[]}' > data/hermes-updates.json
-          else
-            echo "首次运行，创建空数据文件"
-            echo '{"releases": [], "last_updated": ""}' > data/hermes-updates.json
-
       - name: Fetch and summarize hermes-agent releases
         env:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
