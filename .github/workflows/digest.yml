@@ -27,16 +27,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install feedparser httpx pyyaml openai
 
-      - name: Fetch latest data from remote
+      - name: Fetch and preserve existing data
         run: |
-          # 尝试从远程拉取最新的 articles.json（支持增量累积）
-          # 如果远程存在则合并，如果不存在则创建空数据
+          # 保留 hermes 条目（hermes_updater 维护），只允许 blog 被 main.py 刷新
           mkdir -p data
           if git ls-files data/articles.json | grep -q data/articles.json; then
-            echo "从 git 恢复历史数据..."
-            git checkout origin/main -- data/articles.json 2>/dev/null || echo "{}" > data/articles.json
+            git checkout origin/main -- data/articles.json 2>/dev/null || echo '{}' > data/articles.json
           else
-            echo "首次运行，创建空数据文件"
+            echo '{"articles": [], "last_updated": ""}' > data/articles.json
+          fi
+          # 如果 articles.json 是空的（hermes_updater 还没运行过），初始化空结构
+          if [ ! -s data/articles.json ] || [ "$(cat data/articles.json)" = "{}" ]; then
             echo '{"articles": [], "last_updated": ""}' > data/articles.json
           fi
 
