@@ -1,15 +1,17 @@
 """
 静态页面生成模块
-生成 HTML 页面展示文章列表
+生成 HTML 页面展示文章列表和详情页
 """
 import json
 import os
+import re
+import hashlib
 from datetime import datetime, timezone, timedelta
-from typing import List, Dict
+from typing import List, Dict, Optional
 
 SHANGHAI_TZ = timezone(timedelta(hours=8))
 
-# MVP.css 主题样式（不用 f-string 包裹，避免 CSS 大括号转义问题）
+# MVP.css 主题样式
 THEME_CSS = """
         :root { --width: 900px; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
@@ -54,7 +56,7 @@ THEME_CSS = """
             white-space: nowrap;
         }
         .article-meta { font-size: 0.85em; color: var(--color-text-secondary); margin-bottom: 10px; }
-        .article-summary { color: var(--color-text); margin-bottom: 12px; font-size: 0.95em; }
+        .article-summary { color: var(--color-text); margin-bottom: 12px; font-size: 0.95em; line-height: 1.6; }
         .article-why { color: var(--color-link); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-link); }
         .tags { margin-top: 10px; font-size: 0.8em; color: var(--color-text-secondary); }
         footer { text-align: center; padding: 30px; color: var(--color-text-secondary); font-size: 0.85em; }
@@ -66,6 +68,25 @@ THEME_CSS = """
             .article-count { margin-left: 0; margin-top: 10px; }
         }
 """
+
+
+def make_slug(title: str, url: str) -> str:
+    """根据标题生成 URL 安全的 slug"""
+    # 用标题拼音首字母或哈希
+    key = (title + url).encode()
+    return hashlib.md5(key).hexdigest()[:12]
+
+
+def truncate_summary(text: str, max_chars: int = 200) -> str:
+    """截断摘要到指定字符数，保持句子完整"""
+    if len(text) <= max_chars:
+        return text
+    # 尽量在句号或逗号处断句
+    cut = text[:max_chars]
+    last_punct = max(cut.rfind('。'), cut.rfind('，'), cut.rfind('；'))
+    if last_punct > max_chars * 0.6:
+        return cut[:last_punct + 1]
+    return cut + '…'
 
 
 class PageGenerator:
@@ -121,7 +142,7 @@ class PageGenerator:
             '    <title>每日 AI 资讯精选</title>\n'
             '    <link rel="stylesheet" href="https://unpkg.com/mvp.css">\n'
             '    <style>\n'
-            + THEME_CSS +
+            + THEME_CSS + '\n'
             '    </style>\n'
             '</head>\n'
             '<body>\n'
@@ -171,7 +192,7 @@ class PageGenerator:
         return html
 
     def _render_articles(self, articles: List[Dict]) -> str:
-        """渲染文章列表"""
+        """渲染文章列表（主页用截断摘要）"""
         if not articles:
             return '<p style="text-align:center;padding:40px;color:#888;">暂无内容</p>'
 
@@ -186,17 +207,24 @@ class PageGenerator:
             why = article.get('why_matters', '值得一读')
             tags = article.get('tags', '')
 
+            # 生成短 slug
+            slug = make_slug(title, url)
+            detail_url = f'detail/{slug}.html'
+
+            # 截断摘要（主页只显示3-4行）
+            short_summary = truncate_summary(summary, 200)
+
             tags_html = f'<div class="tags">标签：{tags}</div>' if tags else ''
 
             html += (
                 '<div class="article" data-category="' + category + '">\n'
                 '    <div class="article-header">\n'
-                '        <a href="' + url + '" target="_blank" class="article-title">' + title + '</a>\n'
+                '        <a href="' + detail_url + '" class="article-title">' + title + '</a>\n'
                 '        <span class="category-tag">' + category + '</span>\n'
                 '    </div>\n'
                 '    <div class="article-meta">' + source + (' · ' + published if published else '') + '</div>\n'
-                '    <p class="article-summary">' + summary + '</p>\n'
-                '    <div class="article-why">💡 ' + why + '</div>\n'
+                '    <p class="article-summary">' + short_summary + '</p>\n'
+                '    <div class="article-why">💡 <a href="' + detail_url + '" style="color:var(--color-link);text-decoration:none;">' + why + ' →</a></div>\n'
                 + tags_html + '\n'
                 '</div>'
             )
@@ -211,7 +239,84 @@ class PageGenerator:
             html += '<button class="filter-btn" data-filter="' + cat + '">' + cat + '</button>'
         return html
 
-    # ─── Hermes 更新页面 ────────────────────────────────────────
+    # ─── 文章详情页 ────────────────────────────────────────────────
+
+    def generate_all_details(self, output_dir: str = 'detail') -> List[str]:
+        """为所有文章生成详情页"""
+        articles, _ = self._load_articles(9999)
+        os.makedirs(output_dir, exist_ok=True)
+        paths = []
+        for article in articles:
+            title = article.get('title', '无标题')
+            url = article.get('url', '#')
+            slug = make_slug(title, url)
+            path = os.path.join(output_dir, f'{slug}.html')
+            html = self._build_detail_html(article, slug)
+            with open(path, 'w', encoding='utf-8') as f:
+                f.write(html)
+            paths.append(path)
+        return paths
+
+    def _build_detail_html(self, article: Dict, slug: str) -> str:
+        """构建文章详情页"""
+        title = article.get('title', '无标题')
+        url = article.get('url', '#')
+        source = article.get('source', '')
+        published = article.get('published', '')
+        category = article.get('category', 'general')
+        summary = article.get('summary_zh', article.get('summary', ''))
+        why = article.get('why_matters', '值得一读')
+        tags = article.get('tags', '')
+
+        tags_html = f'<div class="tags" style="margin-top:16px;">标签：{tags}</div>' if tags else ''
+
+        html = (
+            '<!DOCTYPE html>\n'
+            '<html lang="zh-CN">\n'
+            '<head>\n'
+            '    <meta charset="UTF-8">\n'
+            '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
+            '    <title>' + title + '</title>\n'
+            '    <link rel="stylesheet" href="https://unpkg.com/mvp.css">\n'
+            '    <style>\n'
+            + THEME_CSS + '\n'
+            '        .detail-body { line-height: 1.8; font-size: 1.05em; }\n'
+            '        .detail-meta { margin: 12px 0 20px; }\n'
+            '        .original-link { display: inline-block; margin: 20px 0; padding: 10px 20px; '
+            'background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; '
+            'font-size: 0.95em; }\n'
+            '        .original-link:hover { opacity: 0.85; }\n'
+            '        .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); '
+            'text-decoration: none; font-size: 0.9em; }\n'
+            '        .back-link:hover { text-decoration: underline; }\n'
+            '    </style>\n'
+            '</head>\n'
+            '<body>\n'
+            '    <header>\n'
+            '        <h1>' + title + '</h1>\n'
+            '        <p class="detail-meta"><span class="category-tag">' + category + '</span> '
+            + source + (' · ' + published if published else '') + '</p>\n'
+            '    </header>\n'
+            '\n'
+            '    <main>\n'
+            '        <a href="../index.html" class="back-link">← 返回日报</a>\n'
+            '        <div class="detail-body">\n'
+            '            <p class="article-summary" style="font-size:1.05em;line-height:1.8;">' + summary + '</p>\n'
+            '        </div>\n'
+            + tags_html + '\n'
+            '        <div class="article-why" style="margin-top:20px;">💡 ' + why + '</div>\n'
+            '        <a href="' + url + '" target="_blank" class="original-link">📖 阅读英文原文 →</a>\n'
+            '    </main>\n'
+            '\n'
+            '    <footer>\n'
+            '        <p>由 GitHub Actions + MiniMax AI 自动生成</p>\n'
+            '    </footer>\n'
+            '</body>\n'
+            '</html>'
+        )
+        return html
+
+    # ─── Hermes 更新页面 ──────────────────────────────────────────
 
     def generate_hermes_updates(self, json_path: str = 'data/hermes-updates.json',
                                  output_path: str = 'hermes-updates.html') -> str:
@@ -258,15 +363,8 @@ class PageGenerator:
             '        .release-date { font-size: 0.85em; color: var(--color-text-secondary); white-space: nowrap; margin-left: 12px; }\n'
             '        .release-tag { display: inline-block; padding: 3px 10px; background: var(--color-bg-secondary); '
             'color: var(--color-secondary); border-radius: 12px; font-size: 0.75em; margin-left: 10px; }\n'
-            '        .release-body { font-size: 0.9em; color: var(--color-text); line-height: 1.6; }\n'
-            '        .release-body h2 { font-size: 1em; margin: 12px 0 6px; }\n'
+            '        .release-body { font-size: 0.95em; color: var(--color-text); line-height: 1.6; }\n'
             '        .release-body p { margin: 6px 0; }\n'
-            '        .release-body code { background: var(--color-bg-secondary); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }\n'
-            '        .release-body pre { background: var(--color-bg-secondary); padding: 12px; border-radius: 8px; overflow-x: auto; }\n'
-            '        .release-body ul, .release-body ol { margin: 6px 0; padding-left: 20px; }\n'
-            '        .release-body li { margin: 4px 0; }\n'
-            '        .release-body a { color: var(--color-link); }\n'
-            '        .release-body strong { font-weight: 600; }\n'
             '        .no-updates { text-align: center; padding: 60px 20px; color: #888; }\n'
             '        .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; '
             'font-size: 0.9em; }\n'
@@ -310,8 +408,7 @@ class PageGenerator:
             published = release.get('published_at', '')
             summary_zh = release.get('summary_zh', '')
 
-            # 渲染中文摘要
-            body_html = '<p>' + summary_zh + '</p>' if summary_zh else '<p class="no-summary">暂无摘要</p>'
+            body_html = '<p style="font-size:1.05em;line-height:1.8;">' + summary_zh + '</p>' if summary_zh else '<p class="no-summary">暂无摘要</p>'
 
             html += (
                 '<div class="release">\n'
@@ -327,38 +424,15 @@ class PageGenerator:
             )
         return html
 
-    def _render_markdown_body(self, body: str) -> str:
-        """将 release body 的 Markdown 转为简单 HTML"""
-        import re
-        # 移除完整 changelog 区块（从 ## 🔧 ... 之后全删）只留顶部摘要
-        body = re.sub(r'\n---\n[\s\S]*', '', body)
-        # 转义 HTML
-        body = (body
-                .replace('&', '&amp;')
-                .replace('<', '&lt;')
-                .replace('>', '&gt;'))
-        # 粗体
-        body = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', body)
-        # 行内代码
-        body = re.sub(r'`([^`]+)`', r'<code>\1</code>', body)
-        # 链接
-        body = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2" target="_blank">\1</a>', body)
-        # 标题 h2
-        body = re.sub(r'^## (.+)$', r'<h2>\1</h2>', body, flags=re.MULTILINE)
-        # 标题 h3
-        body = re.sub(r'^### (.+)$', r'<h3 style="font-size:1em;margin:10px 0 4px;">\1</h3>', body, flags=re.MULTILINE)
-        # 列表
-        body = re.sub(r'^- (.+)$', r'<li>\1</li>', body, flags=re.MULTILINE)
-        body = re.sub(r'(<li>.*</li>)', r'<ul>\1</ul>', body)
-        # 换行
-        body = body.replace('\n\n', '</p><p>').replace('\n', '<br>')
-        body = '<p>' + body + '</p>'
-        # 清理空段落
-        body = re.sub(r'<p>\s*</p>', '', body)
-        return body
-
 
 if __name__ == '__main__':
+    import sys
     gen = PageGenerator()
     out = gen.generate('index.html')
     print(f'Generated: {out}')
+    # 同时生成所有详情页
+    detail_paths = gen.generate_all_details('detail')
+    print(f'Generated {len(detail_paths)} detail pages')
+    # 生成 hermes 更新页面
+    hermes_out = gen.generate_hermes_updates()
+    print(f'Generated: {hermes_out}')

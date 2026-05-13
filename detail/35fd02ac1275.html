@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes Agent v0.5.0 (v2026.3.28)</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <style>
+
+        :root { --width: 900px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+        header { padding: 2rem 1rem 1rem; }
+        main { max-width: var(--width); margin: 0 auto; padding: 0 1rem 3rem; }
+        .filter-bar {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: var(--color-bg-secondary);
+            border-radius: var(--border-radius);
+        }
+        .filter-btn {
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+            background: var(--color-bg);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            color: var(--color-text);
+        }
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--color-link);
+            color: white;
+            border-color: var(--color-link);
+        }
+        .article-count { margin-left: auto; color: var(--color-text-secondary); font-size: 0.9em; }
+        .articles { display: flex; flex-direction: column; gap: 15px; }
+        .article { padding: 20px; margin-bottom: 15px; }
+        .article-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+        .article-title { font-size: 1.1em; font-weight: 600; color: var(--color-link); text-decoration: none; flex: 1; }
+        .article-title:hover { opacity: var(--hover-brightness); }
+        .category-tag {
+            padding: 4px 10px;
+            background: var(--color-bg-secondary);
+            color: var(--color-secondary);
+            border-radius: 12px;
+            font-size: 0.75em;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+        .article-meta { font-size: 0.85em; color: var(--color-text-secondary); margin-bottom: 10px; }
+        .article-summary { color: var(--color-text); margin-bottom: 12px; font-size: 0.95em; line-height: 1.6; }
+        .article-why { color: var(--color-link); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-link); }
+        .tags { margin-top: 10px; font-size: 0.8em; color: var(--color-text-secondary); }
+        footer { text-align: center; padding: 30px; color: var(--color-text-secondary); font-size: 0.85em; }
+        footer a { color: var(--color-link); text-decoration: none; }
+        @media (max-width: 600px) {
+            .article-header { flex-direction: column; gap: 8px; }
+            .category-tag { margin-left: 0; }
+            .filter-bar { flex-direction: column; }
+            .article-count { margin-left: 0; margin-top: 10px; }
+        }
+
+        .detail-body { line-height: 1.8; font-size: 1.05em; }
+        .detail-meta { margin: 12px 0 20px; }
+        .original-link { display: inline-block; margin: 20px 0; padding: 10px 20px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
+        .original-link:hover { opacity: 0.85; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; font-size: 0.9em; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hermes Agent v0.5.0 (v2026.3.28)</h1>
+        <p class="detail-meta"><span class="category-tag">hermes</span> hermes-agent · 2026-03-29</p>
+    </header>
+
+    <main>
+        <a href="../index.html" class="back-link">← 返回日报</a>
+        <div class="detail-body">
+            <p class="article-summary" style="font-size:1.05em;line-height:1.8;"><think>用户要求我作为技术编辑，将软件 release notes 翻译并摘要为中文。需要：
+1. 简洁的中文（3-5句话）
+2. 只描述最重要功能
+3. 不要逐条列点
+4. 直接输出中文摘要，不要加标题或前缀
+
+核心更新内容：
+- Hermes Agent v0.5.0
+- 版本号：v2026.3.28
+- 发布日期：2026年3月28日
+
+重要功能点：
+1. Hugging Face provider - 新增Hugging Face支持
+2. /model command overhaul - 模型命令大幅改进
+3. Telegram Private Chat Topics - Telegram私密群组话题支持
+4. native Modal SDK - 原生Modal SDK集成
+5. plugin lifecycle hooks - 插件生命周期钩子
+6. tool-use enforcement for GPT models - GPT模型强制工具调用
+7. Nix flake - Nix包支持
+8. 50+ security and reliability fixes - 50多项安全和可靠性修复
+9. supply chain audit - 供应链安全审计
+
+从中提取最重要的3-5个功能点，组成流畅的摘要：
+
+这个版本是安全加固版本，主要更新包括：新增Hugging Face提供商支持并重构了模型命令、新增Telegram私密群组话题功能、集成原生Modal SDK、支持GPT模型的工具调用强制执行，同时进行了全面的供应链安全审计并修复了50多项安全和可靠性问题。
+
+检查一下：
+
+
+这个版本是安全加固版本，主要更新包括：新增Hugging Face提供商支持并重构了模型命令、新增Telegram私密群组话题功能、集成原生Modal SDK、支持GPT模型的工具调用强制执行，同时进行了全面的供应链安全审计并修复了50多项安全和可靠性问题。
+
+语言简洁明了，突出重点，涵盖核心升级，符合摘要要求。
+</think>
+
+这个版本是安全加固版本，主要更新包括：新增Hugging Face提供商并大幅改进了模型命令，新增Telegram私密群组话题支持，集成原生Modal SDK以及支持GPT</p>
+        </div>
+<div class="tags" style="margin-top:16px;">标签：Hermes Agent</div>
+        <div class="article-why" style="margin-top:20px;">💡 🔗 点击查看中文摘要与详情</div>
+        <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.28" target="_blank" class="original-link">📖 阅读英文原文 →</a>
+    </main>
+
+    <footer>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
+    </footer>
+</body>
+</html>

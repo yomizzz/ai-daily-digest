@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes Agent v0.3.0 (v2026.3.17)</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <style>
+
+        :root { --width: 900px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+        header { padding: 2rem 1rem 1rem; }
+        main { max-width: var(--width); margin: 0 auto; padding: 0 1rem 3rem; }
+        .filter-bar {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: var(--color-bg-secondary);
+            border-radius: var(--border-radius);
+        }
+        .filter-btn {
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+            background: var(--color-bg);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            color: var(--color-text);
+        }
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--color-link);
+            color: white;
+            border-color: var(--color-link);
+        }
+        .article-count { margin-left: auto; color: var(--color-text-secondary); font-size: 0.9em; }
+        .articles { display: flex; flex-direction: column; gap: 15px; }
+        .article { padding: 20px; margin-bottom: 15px; }
+        .article-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+        .article-title { font-size: 1.1em; font-weight: 600; color: var(--color-link); text-decoration: none; flex: 1; }
+        .article-title:hover { opacity: var(--hover-brightness); }
+        .category-tag {
+            padding: 4px 10px;
+            background: var(--color-bg-secondary);
+            color: var(--color-secondary);
+            border-radius: 12px;
+            font-size: 0.75em;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+        .article-meta { font-size: 0.85em; color: var(--color-text-secondary); margin-bottom: 10px; }
+        .article-summary { color: var(--color-text); margin-bottom: 12px; font-size: 0.95em; line-height: 1.6; }
+        .article-why { color: var(--color-link); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-link); }
+        .tags { margin-top: 10px; font-size: 0.8em; color: var(--color-text-secondary); }
+        footer { text-align: center; padding: 30px; color: var(--color-text-secondary); font-size: 0.85em; }
+        footer a { color: var(--color-link); text-decoration: none; }
+        @media (max-width: 600px) {
+            .article-header { flex-direction: column; gap: 8px; }
+            .category-tag { margin-left: 0; }
+            .filter-bar { flex-direction: column; }
+            .article-count { margin-left: 0; margin-top: 10px; }
+        }
+
+        .detail-body { line-height: 1.8; font-size: 1.05em; }
+        .detail-meta { margin: 12px 0 20px; }
+        .original-link { display: inline-block; margin: 20px 0; padding: 10px 20px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
+        .original-link:hover { opacity: 0.85; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; font-size: 0.9em; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hermes Agent v0.3.0 (v2026.3.17)</h1>
+        <p class="detail-meta"><span class="category-tag">hermes</span> hermes-agent · 2026-03-17</p>
+    </header>
+
+    <main>
+        <a href="../index.html" class="back-link">← 返回日报</a>
+        <div class="detail-body">
+            <p class="article-summary" style="font-size:1.05em;line-height:1.8;"><think>这个版本是Hermes Agent v0.3.0，代号为v2026.3.17，发布日期是2026年3月17日。核心关键词是：流式传输、插件、provider系统。
+
+主要更新点：
+1. 流式传输 - 统一实时token传递
+2. 插件架构 - 一级插件架构
+3. Provider系统重建 - 集成Vercel AI Gateway、原生Anthropic provider
+4. 智能审批机制
+5. 实时Chrome CDP浏览器连接
+6. ACP IDE集成
+7. Honcho记忆系统
+8. 语音模式
+9. 持久化shell
+10. 修复了50+跨平台bug
+
+我需要用3-5句话简洁总结，提取最重要的功能：
+
+1. 核心升级：流式传输能力、插件架构、provider系统重建
+2. AI provider支持：Vercel AI Gateway集成、原生Anthropic支持
+3. 浏览器和IDE集成：Chrome CDP实时连接、ACP IDE集成
+4. 新功能：语音模式、持久化shell、Honcho记忆
+5. 其他：智能审批、跨平台bug修复
+
+简化版中文摘要：
+这是该版本首次引入流式传输和完整插件架构，重构了provider系统以支持Vercel AI Gateway和原生Anthropic集成。新增Chrome CDP浏览器实时连接和ACP IDE集成，支持语音模式和持久化shell，并修复了跨平台50余个问题。
+
+现在调整到3-5句话。流式传输和插件架构是主要亮点，provider系统通过Vercel AI Gateway和Anthropic进行升级，同时引入了Chrome CDP实时连接、语音模式和持久化shell等新功能，并修复了大量跨平台问题。
+
+我应该精简措辞，确保整体表达清晰流畅。
+</think>
+
+本次更新带来完整的流式传输能力和全新插件架构，并重构provider系统以支持Vercel AI Gateway和原生Anthropic集成</p>
+        </div>
+<div class="tags" style="margin-top:16px;">标签：Hermes Agent</div>
+        <div class="article-why" style="margin-top:20px;">💡 🔗 点击查看中文摘要与详情</div>
+        <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.17" target="_blank" class="original-link">📖 阅读英文原文 →</a>
+    </main>
+
+    <footer>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
+    </footer>
+</body>
+</html>

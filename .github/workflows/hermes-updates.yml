@@ -43,6 +43,10 @@ jobs:
           echo "运行模式: $MODE"
           python src/hermes_updater.py "$MODE"
 
+      - name: Generate HTML pages
+        run: |
+          python src/generator.py
+
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"

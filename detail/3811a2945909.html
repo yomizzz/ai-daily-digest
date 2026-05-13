@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluralistic: 2024 (apart from the obvious) (11 May 2026)</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <style>
+
+        :root { --width: 900px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+        header { padding: 2rem 1rem 1rem; }
+        main { max-width: var(--width); margin: 0 auto; padding: 0 1rem 3rem; }
+        .filter-bar {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: var(--color-bg-secondary);
+            border-radius: var(--border-radius);
+        }
+        .filter-btn {
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+            background: var(--color-bg);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            color: var(--color-text);
+        }
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--color-link);
+            color: white;
+            border-color: var(--color-link);
+        }
+        .article-count { margin-left: auto; color: var(--color-text-secondary); font-size: 0.9em; }
+        .articles { display: flex; flex-direction: column; gap: 15px; }
+        .article { padding: 20px; margin-bottom: 15px; }
+        .article-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+        .article-title { font-size: 1.1em; font-weight: 600; color: var(--color-link); text-decoration: none; flex: 1; }
+        .article-title:hover { opacity: var(--hover-brightness); }
+        .category-tag {
+            padding: 4px 10px;
+            background: var(--color-bg-secondary);
+            color: var(--color-secondary);
+            border-radius: 12px;
+            font-size: 0.75em;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+        .article-meta { font-size: 0.85em; color: var(--color-text-secondary); margin-bottom: 10px; }
+        .article-summary { color: var(--color-text); margin-bottom: 12px; font-size: 0.95em; line-height: 1.6; }
+        .article-why { color: var(--color-link); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-link); }
+        .tags { margin-top: 10px; font-size: 0.8em; color: var(--color-text-secondary); }
+        footer { text-align: center; padding: 30px; color: var(--color-text-secondary); font-size: 0.85em; }
+        footer a { color: var(--color-link); text-decoration: none; }
+        @media (max-width: 600px) {
+            .article-header { flex-direction: column; gap: 8px; }
+            .category-tag { margin-left: 0; }
+            .filter-bar { flex-direction: column; }
+            .article-count { margin-left: 0; margin-top: 10px; }
+        }
+
+        .detail-body { line-height: 1.8; font-size: 1.05em; }
+        .detail-meta { margin: 12px 0 20px; }
+        .original-link { display: inline-block; margin: 20px 0; padding: 10px 20px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
+        .original-link:hover { opacity: 0.85; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; font-size: 0.9em; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pluralistic: 2024 (apart from the obvious) (11 May 2026)</h1>
+        <p class="detail-meta"><span class="category-tag">blog</span> pluralistic.net · 2026-05-11</p>
+    </header>
+
+    <main>
+        <a href="../index.html" class="back-link">← 返回日报</a>
+        <div class="detail-body">
+            <p class="article-summary" style="font-size:1.05em;line-height:1.8;">本文是Cory Doctorow的Pluralistic博客文章汇编，收录了2024年除重大事件外的科技与数字权利相关链接，涉及丹麦音乐贸易合法化、专利局同行评审争议、巴士底狱DRM抗议活动、科学教超能力话题及佛罗里达州儿科相关法律等多元内容，涵盖技术政策、网络自由与文化趣闻等多个维度。</p>
+        </div>
+<div class="tags" style="margin-top:16px;">标签：数字权利, 科技政策, 博客, DRM, 链接汇编</div>
+        <div class="article-why" style="margin-top:20px;">💡 Cory Doctorow的博客文章以独特的科技人文视角见长，链接汇编形式便于了解数字权利领域的最新动态与争议话题。</div>
+        <a href="https://pluralistic.net/2026/05/11/postmortem/" target="_blank" class="original-link">📖 阅读英文原文 →</a>
+    </main>
+
+    <footer>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
+    </footer>
+</body>
+</html>

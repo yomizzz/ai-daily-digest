@@ -188,7 +188,7 @@ def run_initial(summarizer: HermesSummarizer):
             "published": to_shanghai(r.get("published_at", "")),
             "category": "hermes",
             "summary_zh": summary,
-            "why_matters": "🔗 点击查看中文摘要与详情",
+            "why_matters": "查看中文摘要与详情",
             "tags": "Hermes Agent",
         }
         articles.append(entry)
@@ -230,7 +230,7 @@ def run_incremental(summarizer: HermesSummarizer):
             "published": to_shanghai(r.get("published_at", "")),
             "category": "hermes",
             "summary_zh": summary,
-            "why_matters": "🔗 点击查看中文摘要与详情",
+            "why_matters": "查看中文摘要与详情",
             "tags": "Hermes Agent",
         }
         articles.append(entry)
