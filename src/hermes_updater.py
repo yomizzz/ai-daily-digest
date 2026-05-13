@@ -9,39 +9,27 @@ import re
 import time
 import httpx
 from datetime import datetime, timezone, timedelta
-from typing import List, Dict, Optional
+from typing import List, Dict
 
 SHANGHAI_TZ = timezone(timedelta(hours=8))
 REPO = "NousResearch/hermes-agent"
 JSON_PATH = "data/hermes-updates.json"
+VERSIONS_DIR = "hermes-updates"  # 每个版本单独页面的目录
 
 
-# ─── MiniMax summarizer (复用项目已有 httpx) ─────────────────────────────────
+# ─── MiniMax summarizer ─────────────────────────────────────────────────────
 
 class HermesSummarizer:
-    """用 MiniMax API 摘要翻译 hermes release 内容"""
-
     def __init__(self, api_key: str = None):
         self.api_key = api_key or os.environ.get("MINIMAX_API_KEY", "")
         self.base_url = "https://api.minimax.chat/v1"
 
     def summarize_release(self, tag_name: str, body: str, max_retries: int = 3) -> str:
-        """
-        对 release body 进行中文摘要翻译
-
-        Args:
-            tag_name: 版本标签，如 v2026.5.7
-            body: 原始 release 内容（英文 Markdown）
-
-        Returns:
-            中文摘要字符串（简洁，几句话）
-        """
         if not body or not body.strip():
             return "无更新详情"
 
-        # 截取顶部摘要部分（--- 之前的核心内容）
+        # 取 --- 之前的核心摘要
         preview = re.split(r'\n---\n', body)[0].strip()
-        # 限制输入长度（API token 限制）
         if len(preview) > 3000:
             preview = preview[:3000] + "..."
 
@@ -51,7 +39,7 @@ class HermesSummarizer:
 原始内容（英文）：
 {preview}
 
-请用简洁的中文（2-4句话）总结这个版本的核心更新内容，只描述最重要功能，不要逐条列点。
+请用简洁的中文（3-5句话）总结这个版本的核心更新内容，只描述最重要功能，不要逐条列点。
 输出格式：直接输出中文摘要，不要加标题或前缀。"""
 
         for attempt in range(max_retries):
@@ -71,67 +59,216 @@ class HermesSummarizer:
                             {"role": "user", "content": prompt}
                         ],
                         "temperature": 0.3,
-                        "max_tokens": 300
+                        "max_tokens": 400
                     }
                 )
                 client.close()
                 resp.raise_for_status()
                 result = resp.json()
-                content = result["choices"][0]["message"]["content"].strip()
-                # 去除可能的引号包装
-                content = content.strip('"\'')
+                content = result["choices"][0]["message"]["content"].strip().strip('"\'')
                 return content
-
             except Exception as e:
                 if attempt < max_retries - 1:
-                    wait = (attempt + 1) * 5
-                    print(f"  [Summarizer] API 失败，{wait}秒后重试 ({attempt + 1}/{max_retries}): {e}")
-                    time.sleep(wait)
+                    time.sleep((attempt + 1) * 5)
                     continue
-                print(f"  [Summarizer] 摘要失败，跳过: {e}")
+                print(f"  [Summarizer] 摘要失败: {e}")
                 return "摘要生成失败，请查看原文"
-
         return "摘要生成失败，请查看原文"
 
 
-# ─── 版本判断 ────────────────────────────────────────────────────────────────
+# ─── 版本判断 ──────────────────────────────────────────────────────────────
 
 def is_beta_version(tag_name: str) -> bool:
-    tag_lower = tag_name.lower()
-    return bool(re.search(r'beta|b\d|rc\d', tag_lower))
-
-
-def is_official_version(tag_name: str) -> bool:
-    return not is_beta_version(tag_name)
+    return bool(re.search(r'beta|b\d|rc\d', tag_name.lower()))
 
 
 def parse_date(date_str: str) -> datetime:
-    """解析 ISO 日期字符串为 datetime（UTC）"""
     return datetime.fromisoformat(date_str.replace("Z", "+00:00"))
 
 
 def to_shanghai(date_str: str) -> str:
-    """ISO 日期 → 上海时间字符串"""
     dt = parse_date(date_str).astimezone(SHANGHAI_TZ)
     return dt.strftime("%Y-%m-%d %H:%M:%S")
 
 
 def is_within_24h(date_str: str) -> bool:
-    """判断发布时间是否在过去 24 小时内（上海时间）"""
     then = parse_date(date_str).astimezone(SHANGHAI_TZ)
     now = datetime.now(SHANGHAI_TZ)
     return (now - then).total_seconds() <= 86400
 
 
-# ─── 核心逻辑 ────────────────────────────────────────────────────────────────
+def slugify(tag: str) -> str:
+    """tag 转成安全的文件名，如 v2026.5.7 → v2026.5.7.html"""
+    return tag.lstrip('v') + ".html"  # v2026.5.7 → 2026.5.7.html
+
+
+# ─── 单个版本页面生成 ─────────────────────────────────────────────────────
+
+def generate_version_page(tag: str, name: str, summary_zh: str,
+                           html_url: str, published: str) -> str:
+    """生成单个版本的中文介绍页面"""
+    safe_tag = tag.lstrip('v')
+    filename = f"{safe_tag}.html"
+
+    THEME_CSS = """
+        :root { --width: 900px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+        header { padding: 2rem 1rem 1rem; }
+        main { max-width: var(--width); margin: 0 auto; padding: 0 1rem 3rem; }
+        .back-link { display: inline-block; margin-bottom: 24px; color: var(--color-link); text-decoration: none; font-size: 0.9em; }
+        .back-link:hover { text-decoration: underline; }
+        .version-header { margin-bottom: 24px; }
+        .version-title { font-size: 1.4em; font-weight: 600; color: var(--color-text); margin-bottom: 8px; }
+        .version-meta { font-size: 0.85em; color: var(--color-text-secondary); margin-bottom: 20px; }
+        .version-tag { display: inline-block; padding: 4px 12px; background: var(--color-bg-secondary);
+                       color: var(--color-secondary); border-radius: 16px; font-size: 0.8em; margin-left: 8px; }
+        .summary-box { background: var(--color-bg-secondary); border-radius: 12px; padding: 24px; margin-bottom: 20px; }
+        .summary-label { font-size: 0.8em; color: var(--color-text-secondary); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+        .summary-text { font-size: 1em; color: var(--color-text); line-height: 1.7; }
+        .github-link { display: inline-block; margin-top: 16px; color: var(--color-link); font-size: 0.9em; }
+        .github-link:hover { text-decoration: underline; }
+        footer { text-align: center; padding: 30px; color: var(--color-text-secondary); font-size: 0.85em; }
+        footer a { color: var(--color-link); text-decoration: none; }
+    """
+
+    html = f'''<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{name} - Hermes-Agent 更新</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <style>
+{THEME_CSS}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🔄 Hermes-Agent 更新记录</h1>
+    </header>
+    <main>
+        <a href="../hermes-updates.html" class="back-link">← 返回更新列表</a>
+        <div class="version-header">
+            <div class="version-title">
+                {name}
+                <span class="version-tag">{tag}</span>
+            </div>
+            <div class="version-meta">发布于 {published}</div>
+        </div>
+        <div class="summary-box">
+            <div class="summary-label">更新摘要</div>
+            <div class="summary-text">{summary_zh}</div>
+        </div>
+        <a href="{html_url}" target="_blank" class="github-link">
+            🔗 查看 GitHub 原始 Release 页面
+        </a>
+    </main>
+    <footer>
+        <p>数据来源：<a href="https://github.com/NousResearch/hermes-agent/releases" target="_blank">NousResearch/hermes-agent</a></p>
+    </footer>
+</body>
+</html>'''
+    return html
+
+
+def save_version_page(tag: str, name: str, summary_zh: str,
+                      html_url: str, published: str):
+    """保存单个版本页面到 hermes-updates/ 目录"""
+    safe_tag = tag.lstrip('v')
+    filename = f"{safe_tag}.html"
+    dir_path = os.path.join(VERSIONS_DIR)
+    os.makedirs(dir_path, exist_ok=True)
+    filepath = os.path.join(dir_path, filename)
+    content = generate_version_page(tag, name, summary_zh, html_url, published)
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(content)
+    return filename
+
+
+# ─── 主列表页生成 ─────────────────────────────────────────────────────────
+
+def generate_index(releases: List[Dict], last_updated: str):
+    """生成 hermes-updates.html 主列表页"""
+    THEME_CSS = """
+        :root { --width: 900px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+        header { padding: 2rem 1rem 1rem; }
+        main { max-width: var(--width); margin: 0 auto; padding: 0 1rem 3rem; }
+        .release-list { display: flex; flex-direction: column; gap: 16px; }
+        .release { padding: 20px; margin-bottom: 0; }
+        .release-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; flex-wrap: wrap; gap: 8px; }
+        .release-title { font-size: 1.05em; font-weight: 600; color: var(--color-link); text-decoration: none; }
+        .release-title:hover { opacity: 0.8; }
+        .release-date { font-size: 0.82em; color: var(--color-text-secondary); white-space: nowrap; }
+        .release-tag { display: inline-block; padding: 3px 10px; background: var(--color-bg-secondary);
+                       color: var(--color-secondary); border-radius: 12px; font-size: 0.75em; margin-left: 8px; }
+        .release-summary { font-size: 0.9em; color: var(--color-text); line-height: 1.6; margin-bottom: 8px; }
+        .no-updates { text-align: center; padding: 60px 20px; color: #888; }
+        footer { text-align: center; padding: 30px; color: var(--color-text-secondary); font-size: 0.85em; }
+        footer a { color: var(--color-link); text-decoration: none; }
+    """
+
+    releases_html = ""
+    for r in releases:
+        tag = r.get("tag_name", "")
+        name = r.get("name", tag)
+        safe_tag = tag.lstrip('v')
+        page_file = f"{safe_tag}.html"
+        published = r.get("published_at", "")
+        summary = r.get("summary_zh", "")
+
+        releases_html += f'''
+        <div class="release">
+            <div class="release-header">
+                <div>
+                    <a href="{page_file}" class="release-title">{name}</a>
+                    <span class="release-tag">{tag}</span>
+                </div>
+                <span class="release-date">{published}</span>
+            </div>
+            <div class="release-summary">{summary}</div>
+        </div>'''
+
+    if not releases_html:
+        releases_html = '<div class="no-updates">暂无更新记录</div>'
+
+    html = f'''<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes-Agent 更新记录</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <style>
+{THEME_CSS}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🔄 Hermes-Agent 更新记录</h1>
+        <p style="color:var(--color-text-secondary);font-size:0.9em;">自动追踪 NousResearch/hermes-agent 正式版本发布，每个版本均有中文摘要</p>
+        <p style="color:var(--color-text-secondary);font-size:0.85em;">最后更新：{last_updated}</p>
+    </header>
+    <main>
+        <div class="release-list">
+            {releases_html}
+        </div>
+    </main>
+    <footer>
+        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/NousResearch/hermes-agent/releases" target="_blank">NousResearch/hermes-agent</a></p>
+    </footer>
+</body>
+</html>'''
+
+    with open("hermes-updates.html", 'w', encoding='utf-8') as f:
+        f.write(html)
+
+
+# ─── GitHub API ────────────────────────────────────────────────────────────
 
 def fetch_releases_from_github(max_count: int = 50) -> List[Dict]:
-    """从 GitHub API 获取所有正式版 releases"""
     url = f"https://api.github.com/repos/{REPO}/releases"
-    headers = {
-        "Accept": "application/vnd.github+json",
-        "User-Agent": "ai-daily-digest/1.0"
-    }
+    headers = {"Accept": "application/vnd.github+json", "User-Agent": "ai-daily-digest/1.0"}
 
     all_releases = []
     page = 1
@@ -165,20 +302,19 @@ def fetch_releases_from_github(max_count: int = 50) -> List[Dict]:
     return all_releases
 
 
+# ─── 数据读写 ──────────────────────────────────────────────────────────────
+
 def load_existing() -> List[Dict]:
-    """加载本地已有记录"""
     if os.path.exists(JSON_PATH):
         try:
             with open(JSON_PATH, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            return data.get("releases", [])
+                return json.load(f).get("releases", [])
         except (json.JSONDecodeError, IOError):
             pass
     return []
 
 
 def save_updates(releases: List[Dict]):
-    """保存更新记录（追加/覆盖）"""
     os.makedirs(os.path.dirname(JSON_PATH) or ".", exist_ok=True)
     now = datetime.now(SHANGHAI_TZ).strftime("%Y-%m-%d %H:%M:%S")
     data = {"releases": releases, "last_updated": now}
@@ -186,35 +322,21 @@ def save_updates(releases: List[Dict]):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
-def get_saved_tags(releases: List[Dict]) -> set:
-    return {r.get("tag_name") for r in releases}
-
-
-# ─── 全量初始运行 ────────────────────────────────────────────────────────────
+# ─── 全量运行 ─────────────────────────────────────────────────────────────
 
 def run_initial(summarizer: HermesSummarizer):
-    """
-    初始全量运行：抓所有正式版 → 全部摘要 → 保存
-    """
-    print("[HermesUpdater] 初始全量运行，开始抓取所有正式版本...")
+    print("[HermesUpdater] 初始全量运行...")
     all_releases = fetch_releases_from_github(max_count=50)
     print(f"[HermesUpdater] 共获取 {len(all_releases)} 条正式版本")
 
-    existing = load_existing()
-    existing_tags = get_saved_tags(existing)
-    existing_dict = {r["tag_name"]: r for r in existing}
-
+    # 清空旧数据，从头摘要所有版本
+    existing: Dict[str, Dict] = {}
     new_count = 0
+
     for r in all_releases:
         tag = r.get("tag_name", "")
-        if tag in existing_tags:
-            continue  # 已存在，跳过
-
         print(f"  正在摘要: {tag}...")
-        body = r.get("body", "")
-        summary = summarizer.summarize_release(tag, body)
-        summary = summary if summary else "无更新详情"
-
+        summary = summarizer.summarize_release(tag, r.get("body", ""))
         entry = {
             "tag_name": tag,
             "name": r.get("name", tag),
@@ -223,56 +345,40 @@ def run_initial(summarizer: HermesSummarizer):
             "published_at_raw": r.get("published_at", ""),
             "summary_zh": summary,
         }
-        existing_dict[tag] = entry
+        existing[tag] = entry
         new_count += 1
-
-        # API 调用间隔，避免限速
         time.sleep(3)
 
-    # 按发布时间倒序
-    releases = sorted(existing_dict.values(),
-                     key=lambda x: x.get("published_at_raw", ""),
-                     reverse=True)
+    releases = sorted(existing.values(),
+                     key=lambda x: x.get("published_at_raw", ""), reverse=True)
 
+    for rel in releases:
+        save_version_page(rel["tag_name"], rel["name"], rel["summary_zh"],
+                          rel["html_url"], rel["published_at"])
+    generate_index(releases, datetime.now(SHANGHAI_TZ).strftime("%Y-%m-%d %H:%M:%S"))
     save_updates(releases)
-    print(f"[HermesUpdater] 完成，新增 {new_count} 条， 共 {len(releases)} 条记录")
+    print(f"[HermesUpdater] 完成，共 {len(releases)} 条记录，全部已摘要")
 
 
-# ─── 增量定时运行 ───────────────────────────────────────────────────────────
+# ─── 增量运行 ─────────────────────────────────────────────────────────────
 
 def run_incremental(summarizer: HermesSummarizer):
-    """
-    增量运行：只抓过去 24 小时内的正式版 → 摘要 → 追加
-    """
-    print("[HermesUpdater] 增量运行，开始检查过去 24 小时更新...")
+    print("[HermesUpdater] 增量运行，检查过去 24 小时...")
     all_releases = fetch_releases_from_github(max_count=50)
-
-    # 过滤过去 24 小时
     recent = [r for r in all_releases if is_within_24h(r.get("published_at", ""))]
-    print(f"[HermesUpdater] 过去 24 小时内有 {len(recent)} 个正式版本")
+    print(f"[HermesUpdater] 过去 24 小时有 {len(recent)} 个正式版本")
 
-    if not recent:
-        # 没新版本，只更新时间戳
-        existing = load_existing()
-        save_updates(existing)
-        print("[HermesUpdater] 无新版本，更新时间戳后结束")
-        return
-
-    existing = load_existing()
-    existing_tags = get_saved_tags(existing)
-
+    existing = {r["tag_name"]: r for r in load_existing()}
     new_count = 0
+
     for r in recent:
         tag = r.get("tag_name", "")
-        if tag in existing_tags:
+        if tag in existing:
             print(f"  {tag} 已存在，跳过")
             continue
 
         print(f"  正在摘要: {tag}...")
-        body = r.get("body", "")
-        summary = summarizer.summarize_release(tag, body)
-        summary = summary if summary else "无更新详情"
-
+        summary = summarizer.summarize_release(tag, r.get("body", ""))
         entry = {
             "tag_name": tag,
             "name": r.get("name", tag),
@@ -281,30 +387,34 @@ def run_incremental(summarizer: HermesSummarizer):
             "published_at_raw": r.get("published_at", ""),
             "summary_zh": summary,
         }
-        existing.append(entry)
+        existing[tag] = entry
         new_count += 1
         time.sleep(3)
 
-    # 整体按时间倒序
-    existing.sort(key=lambda x: x.get("published_at_raw", ""), reverse=True)
-    save_updates(existing)
-    print(f"[HermesUpdater] 完成，新增 {new_count} 条， 共 {len(existing)} 条记录")
+    if new_count == 0:
+        print("[HermesUpdater] 无新版本，仅更新时间戳")
+        save_updates(list(existing.values()))
+        generate_index(list(existing.values()),
+                      datetime.now(SHANGHAI_TZ).strftime("%Y-%m-%d %H:%M:%S"))
+        return
+
+    releases = sorted(existing.values(),
+                     key=lambda x: x.get("published_at_raw", ""), reverse=True)
+
+    for rel in releases:
+        save_version_page(rel["tag_name"], rel["name"], rel["summary_zh"],
+                          rel["html_url"], rel["published_at"])
+    generate_index(releases, datetime.now(SHANGHAI_TZ).strftime("%Y-%m-%d %H:%M:%S"))
+    save_updates(releases)
+    print(f"[HermesUpdater] 完成，新增 {new_count} 条，共 {len(releases)} 条记录")
 
 
-# ─── 主入口 ───────────────────────────────────────────────────────────────────
+# ─── 主入口 ────────────────────────────────────────────────────────────────
 
 def update(mode: str = "incremental"):
-    """
-    主函数
-
-    Args:
-        mode: "initial" = 全量摘要所有版本
-              "incremental" = 只处理过去 24 小时新版本
-    """
     api_key = os.environ.get("MINIMAX_API_KEY", "")
     if not api_key:
-        print("[HermesUpdater] 警告：MINIMAX_API_KEY 未设置，摘要将使用降级处理")
-
+        print("[HermesUpdater] 警告：MINIMAX_API_KEY 未设置")
     summarizer = HermesSummarizer(api_key)
 
     if mode == "initial":
@@ -315,5 +425,4 @@ def update(mode: str = "incremental"):
 
 if __name__ == "__main__":
     import sys
-    mode = sys.argv[1] if len(sys.argv) > 1 else "incremental"
-    update(mode)
+    update(sys.argv[1] if len(sys.argv) > 1 else "incremental")

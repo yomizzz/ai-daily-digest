@@ -37,33 +37,21 @@ jobs:
 
       - name: Fetch latest data from remote
         run: |
-          mkdir -p data
+          mkdir -p data hermes-updates
           if git ls-files data/hermes-updates.json | grep -q data/hermes-updates.json; then
             echo "从 git 恢复历史数据..."
             git checkout origin/main -- data/hermes-updates.json 2>/dev/null || echo '{"releases":[]}' > data/hermes-updates.json
           else
             echo "首次运行，创建空数据文件"
             echo '{"releases": [], "last_updated": ""}' > data/hermes-updates.json
-          fi
 
-      - name: Fetch hermes-agent releases
+      - name: Fetch and summarize hermes-agent releases
         env:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
         run: |
           MODE="${{ inputs.mode || 'incremental' }}"
           echo "运行模式: $MODE"
           python src/hermes_updater.py "$MODE"
-
-      - name: Generate hermes-updates.html
-        run: |
-          python -c "
-          import sys
-          sys.path.insert(0, 'src')
-          from generator import PageGenerator
-          gen = PageGenerator()
-          path = gen.generate_hermes_updates()
-          print(f'生成页面: {path}')
-          "
 
       - name: Commit and push changes
         run: |
