@@ -62,9 +62,11 @@
             .article-count { margin-left: 0; margin-top: 10px; }
         }
 
-        .detail-body { line-height: 1.8; font-size: 1.05em; }
-        .detail-meta { margin: 12px 0 20px; }
-        .original-link { display: inline-block; margin: 20px 0; padding: 10px 20px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
+        .detail-card { background: var(--color-bg-secondary); border-radius: 12px; padding: 24px; margin: 24px 0; }
+        .detail-card p { margin: 0; font-size: 1.05em; line-height: 1.8; }
+        .detail-tags { margin-top: 16px; font-size: 0.85em; color: var(--color-text-secondary); }
+        .detail-why { margin-top: 20px; font-size: 0.95em; }
+        .original-link { display: inline-block; margin-top: 20px; padding: 12px 24px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
         .original-link:hover { opacity: 0.85; }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; font-size: 0.9em; }
         .back-link:hover { text-decoration: underline; }
@@ -73,28 +75,16 @@
 <body>
     <header>
         <h1>Hermes Agent v0.10.0 (2026.4.16)</h1>
-        <p class="detail-meta"><span class="category-tag">hermes</span> hermes-agent · 2026-04-17</p>
+        <p><span class="category-tag">hermes</span> hermes-agent · 2026-04-17</p>
     </header>
 
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
-        <div class="detail-body">
-            <p class="article-summary" style="font-size:1.05em;line-height:1.8;"><think>用户要求我总结Hermes Agent v0.10.0的核心更新。
-
-关键信息：
-- 版本号：v0.10.0，日期：2026.4.16
-- 主题：Tool Gateway
-- 核心更新：付费 Nous Portal 订阅用户现在可以使用网络搜索、图片生成、文本转语音和浏览器自动化功能
-- 无需额外的 API 密钥
-
-我需要用3-5句话简洁地总结这个版本的核心内容。
-
-注意：用户要求直接输出中文摘要，不要加标题或前缀，不要逐条列点。</think>
-
-本次更新带来 Tool Gateway 功能，付费 Nous Portal 订阅用户现在可以通过现有订阅直接使用网络搜索、图片生成、文本转语音和浏览器自动化等工具，无需额外配置 API 密钥。此版本降低了用户使用高级工具的门槛，让订阅用户能够更便捷地访问完整的 AI 工具生态。</p>
+        <div class="detail-card">
+            <p>本次更新带来 Tool Gateway 功能，付费 Nous Portal 订阅用户现在可以通过现有订阅直接使用网络搜索、图片生成、文本转语音和浏览器自动化等工具，无需额外配置 API 密钥。此版本降低了用户使用高级工具的门槛，让订阅用户能够更便捷地访问完整的 AI 工具生态。</p>
         </div>
-<div class="tags" style="margin-top:16px;">标签：Hermes Agent</div>
-        <div class="article-why" style="margin-top:20px;">💡 🔗 点击查看中文摘要与详情</div>
+<div class="detail-tags">标签：Hermes Agent</div>
+        <div class="detail-why">💡 🔗 点击查看中文摘要与详情</div>
         <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.16" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 

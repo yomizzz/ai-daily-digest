@@ -62,9 +62,11 @@
             .article-count { margin-left: 0; margin-top: 10px; }
         }
 
-        .detail-body { line-height: 1.8; font-size: 1.05em; }
-        .detail-meta { margin: 12px 0 20px; }
-        .original-link { display: inline-block; margin: 20px 0; padding: 10px 20px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
+        .detail-card { background: var(--color-bg-secondary); border-radius: 12px; padding: 24px; margin: 24px 0; }
+        .detail-card p { margin: 0; font-size: 1.05em; line-height: 1.8; }
+        .detail-tags { margin-top: 16px; font-size: 0.85em; color: var(--color-text-secondary); }
+        .detail-why { margin-top: 20px; font-size: 0.95em; }
+        .original-link { display: inline-block; margin-top: 20px; padding: 12px 24px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
         .original-link:hover { opacity: 0.85; }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; font-size: 0.9em; }
         .back-link:hover { text-decoration: underline; }
@@ -73,55 +75,16 @@
 <body>
     <header>
         <h1>Hermes Agent v0.4.0 (v2026.3.23)</h1>
-        <p class="detail-meta"><span class="category-tag">hermes</span> hermes-agent · 2026-03-24</p>
+        <p><span class="category-tag">hermes</span> hermes-agent · 2026-03-24</p>
     </header>
 
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
-        <div class="detail-body">
-            <p class="article-summary" style="font-size:1.05em;line-height:1.8;"><think>用户要求我作为技术编辑，将软件 release notes 翻译并摘要为中文。需要：
-1. 版本：v2026.3.23
-2. 内容是 Hermès Agent v0.4.0
-3. 用简洁的中文（3-5句话）总结核心更新内容
-4. 只描述最重要功能，不要逐条列点
-5. 输出格式：直接输出中文摘要，不要加标题或前缀
-
-让我分析原始内容：
-- OpenAI兼容API服务器
-- 6个新的消息适配器
-- 4个新的推理提供商
-- MCP服务器管理（带OAuth 2.1）
-- @上下文引用
-- 网关提示缓存
-- 流式传输默认启用
-- 可靠性改进（200+ bug修复）
-
-核心要点：
-1. OpenAI兼容API服务器（重要，开放性）
-2. 新增多个消息适配器和推理提供商（扩展性）
-3. MCP服务器管理+Oauth 2.1
-4. 技术改进：提示缓存、流式传输默认开启
-5. 大量bug修复
-
-我需要选择最重要的功能来总结，3-5句话：
-
-关键功能：
-- OpenAI兼容API（平台扩展的核心）
-- MCP服务器管理+OAuth 2.1（安全性提升）
-- 消息适配器和推理提供商增加（生态扩展）
-
-
-- 流式传输默认开启、性能优化
-- 可靠性改进（200+修复）
-
-中文摘要：
-
-本次更新带来了OpenAI兼容API服务器，使平台扩展更加灵活。同时新增4个推理提供商和6个消息适配器，显著丰富了生态系统。MCP服务器管理现已支持OAuth 2.1认证，并新增@上下文引用功能。流式传输已默认启用，性能大幅提升。此外，还修复了200多个问题，可靠性显著增强。</think>
-
-本次更新带来了OpenAI兼容API服务器，方便接入更多第三方工具和服务。平台新增4个推理提供商和6个消息适配器，显著扩展了生态兼容性。M</p>
+        <div class="detail-card">
+            <p>本次更新带来了OpenAI兼容API服务器，方便接入更多第三方工具和服务。平台新增4个推理提供商和6个消息适配器，显著扩展了生态兼容性。M</p>
         </div>
-<div class="tags" style="margin-top:16px;">标签：Hermes Agent</div>
-        <div class="article-why" style="margin-top:20px;">💡 🔗 点击查看中文摘要与详情</div>
+<div class="detail-tags">标签：Hermes Agent</div>
+        <div class="detail-why">💡 🔗 点击查看中文摘要与详情</div>
         <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.23" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 

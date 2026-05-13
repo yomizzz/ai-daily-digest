@@ -62,9 +62,11 @@
             .article-count { margin-left: 0; margin-top: 10px; }
         }
 
-        .detail-body { line-height: 1.8; font-size: 1.05em; }
-        .detail-meta { margin: 12px 0 20px; }
-        .original-link { display: inline-block; margin: 20px 0; padding: 10px 20px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
+        .detail-card { background: var(--color-bg-secondary); border-radius: 12px; padding: 24px; margin: 24px 0; }
+        .detail-card p { margin: 0; font-size: 1.05em; line-height: 1.8; }
+        .detail-tags { margin-top: 16px; font-size: 0.85em; color: var(--color-text-secondary); }
+        .detail-why { margin-top: 20px; font-size: 0.95em; }
+        .original-link { display: inline-block; margin-top: 20px; padding: 12px 24px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
         .original-link:hover { opacity: 0.85; }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; font-size: 0.9em; }
         .back-link:hover { text-decoration: underline; }
@@ -73,41 +75,16 @@
 <body>
     <header>
         <h1>Hermes Agent v0.6.0 (v2026.3.30)</h1>
-        <p class="detail-meta"><span class="category-tag">hermes</span> hermes-agent · 2026-03-30</p>
+        <p><span class="category-tag">hermes</span> hermes-agent · 2026-03-30</p>
     </header>
 
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
-        <div class="detail-body">
-            <p class="article-summary" style="font-size:1.05em;line-height:1.8;"><think>用户要求我将 Hermes Agent v0.6.0 的 release notes 翻译并摘要为中文。要求：
-1. 3-5句话
-2. 只描述最重要功能
-3. 不要逐条列点
-4. 直接输出中文摘要，不要加标题或前缀
-
-核心更新内容：
-1. Profiles 功能 - 运行隔离的 agent 实例
-2. MCP server 模式
-3. Docker 容器支持
-4. fallback provider chains
-5. 两个新消息平台：飞书/Lark 和企业微信
-6. Telegram webhook 模式
-7. Slack 多工作区 OAuth
-8. 2天内95个PR和16个已解决的问题
-
-最重要的功能应该是：
-- Profiles 隔离实例（这是"multi-instance release"的核心理由）
-- MCP server 模式（重要集成功能）
-- 飞书和企业微信支持（新消息平台扩展）
-- Docker 容器支持（部署便利性）
-
-我来写一个简洁的摘要：
-</think>
-
-v0.6.0 带来了 Profiles 功能，支持运行多个相互隔离的 agent 实例。新增 MCP server 模式便于与外部工具集成，同时提供官方 Docker 容器简化部署。新增飞书/Lark 和企业微信两个国内主流办公平台的支持，以及 Telegram webhook 和 Slack 多工作区 OAuth 等通信集成能力。</p>
+        <div class="detail-card">
+            <p>v0.6.0 带来了 Profiles 功能，支持运行多个相互隔离的 agent 实例。新增 MCP server 模式便于与外部工具集成，同时提供官方 Docker 容器简化部署。新增飞书/Lark 和企业微信两个国内主流办公平台的支持，以及 Telegram webhook 和 Slack 多工作区 OAuth 等通信集成能力。</p>
         </div>
-<div class="tags" style="margin-top:16px;">标签：Hermes Agent</div>
-        <div class="article-why" style="margin-top:20px;">💡 🔗 点击查看中文摘要与详情</div>
+<div class="detail-tags">标签：Hermes Agent</div>
+        <div class="detail-why">💡 🔗 点击查看中文摘要与详情</div>
         <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.30" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 

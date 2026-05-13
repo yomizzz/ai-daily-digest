@@ -62,9 +62,11 @@
             .article-count { margin-left: 0; margin-top: 10px; }
         }
 
-        .detail-body { line-height: 1.8; font-size: 1.05em; }
-        .detail-meta { margin: 12px 0 20px; }
-        .original-link { display: inline-block; margin: 20px 0; padding: 10px 20px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
+        .detail-card { background: var(--color-bg-secondary); border-radius: 12px; padding: 24px; margin: 24px 0; }
+        .detail-card p { margin: 0; font-size: 1.05em; line-height: 1.8; }
+        .detail-tags { margin-top: 16px; font-size: 0.85em; color: var(--color-text-secondary); }
+        .detail-why { margin-top: 20px; font-size: 0.95em; }
+        .original-link { display: inline-block; margin-top: 20px; padding: 12px 24px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
         .original-link:hover { opacity: 0.85; }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; font-size: 0.9em; }
         .back-link:hover { text-decoration: underline; }
@@ -73,38 +75,16 @@
 <body>
     <header>
         <h1>Hermes Agent v0.2.0 (2026.3.12)</h1>
-        <p class="detail-meta"><span class="category-tag">hermes</span> hermes-agent · 2026-03-12</p>
+        <p><span class="category-tag">hermes</span> hermes-agent · 2026-03-12</p>
     </header>
 
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
-        <div class="detail-body">
-            <p class="article-summary" style="font-size:1.05em;line-height:1.8;"><think>用户要求我作为技术编辑，将软件release notes翻译并摘要为中文。原文是关于Hermes Agent v0.2.0版本的发布说明。
-
-关键信息：
-- 版本号：v2026.3.12，v0.2.0
-- 发布日期：2026年3月12日
-- 这是v0.1.0之后的首次标记发布
-- 从内部小项目发展成功能完整的AI agent平台
-- 216个合并的pull requests
-- 63个贡献者
-- 解决了119个issues
-
-用户要求：
-- 简洁中文，3-5句话
-- 只描述最重要功能
-- 不要逐条列点
-- 直接输出中文摘要
-- 不要加标题或前缀
-
-我需要提炼核心信息：这是第一个正式发布版本，从v0.1.0快速成长，得益于大量社区贡献。主要亮点是规模的增长（216 PRs, 63 contributors, 119 issues）。
-
-由于原文主要是发布说明性质的，没有列出具体功能，我应该总结这个版本的重要性和规模变化。</think>
-
-Hermes Agent v0.2.0正式发布，这是该项目的首个标记版本。在不到三周内，从内部小项目快速发展为功能完整的AI agent平台，离不开社区的积极参与。本次更新合并了216个pull request，由63位贡献者参与，解决了119个issues。</p>
+        <div class="detail-card">
+            <p>Hermes Agent v0.2.0正式发布，这是该项目的首个标记版本。在不到三周内，从内部小项目快速发展为功能完整的AI agent平台，离不开社区的积极参与。本次更新合并了216个pull request，由63位贡献者参与，解决了119个issues。</p>
         </div>
-<div class="tags" style="margin-top:16px;">标签：Hermes Agent</div>
-        <div class="article-why" style="margin-top:20px;">💡 🔗 点击查看中文摘要与详情</div>
+<div class="detail-tags">标签：Hermes Agent</div>
+        <div class="detail-why">💡 🔗 点击查看中文摘要与详情</div>
         <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.12" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 

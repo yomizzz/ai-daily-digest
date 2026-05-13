@@ -62,9 +62,11 @@
             .article-count { margin-left: 0; margin-top: 10px; }
         }
 
-        .detail-body { line-height: 1.8; font-size: 1.05em; }
-        .detail-meta { margin: 12px 0 20px; }
-        .original-link { display: inline-block; margin: 20px 0; padding: 10px 20px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
+        .detail-card { background: var(--color-bg-secondary); border-radius: 12px; padding: 24px; margin: 24px 0; }
+        .detail-card p { margin: 0; font-size: 1.05em; line-height: 1.8; }
+        .detail-tags { margin-top: 16px; font-size: 0.85em; color: var(--color-text-secondary); }
+        .detail-why { margin-top: 20px; font-size: 0.95em; }
+        .original-link { display: inline-block; margin-top: 20px; padding: 12px 24px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
         .original-link:hover { opacity: 0.85; }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; font-size: 0.9em; }
         .back-link:hover { text-decoration: underline; }
@@ -73,16 +75,16 @@
 <body>
     <header>
         <h1>proxy</h1>
-        <p class="detail-meta"><span class="category-tag">blog</span> nesbitt.io · 2026-05-11</p>
+        <p><span class="category-tag">blog</span> nesbitt.io · 2026-05-11</p>
     </header>
 
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
-        <div class="detail-body">
-            <p class="article-summary" style="font-size:1.05em;line-height:1.8;">这是一个轻量级的多生态系统缓存包代理工具，支持多种平台环境，主要用于缓存代理功能，能够帮助提升系统性能和响应速度。</p>
+        <div class="detail-card">
+            <p>这是一个轻量级的多生态系统缓存包代理工具，支持多种平台环境，主要用于缓存代理功能，能够帮助提升系统性能和响应速度。</p>
         </div>
-<div class="tags" style="margin-top:16px;">标签：缓存代理、轻量级、多平台</div>
-        <div class="article-why" style="margin-top:20px;">💡 适合需要高效缓存代理方案的开发者。</div>
+<div class="detail-tags">标签：缓存代理、轻量级、多平台</div>
+        <div class="detail-why">💡 适合需要高效缓存代理方案的开发者。</div>
         <a href="https://nesbitt.io/2026/05/11/proxy.html" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 

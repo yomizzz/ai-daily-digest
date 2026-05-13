@@ -62,9 +62,11 @@
             .article-count { margin-left: 0; margin-top: 10px; }
         }
 
-        .detail-body { line-height: 1.8; font-size: 1.05em; }
-        .detail-meta { margin: 12px 0 20px; }
-        .original-link { display: inline-block; margin: 20px 0; padding: 10px 20px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
+        .detail-card { background: var(--color-bg-secondary); border-radius: 12px; padding: 24px; margin: 24px 0; }
+        .detail-card p { margin: 0; font-size: 1.05em; line-height: 1.8; }
+        .detail-tags { margin-top: 16px; font-size: 0.85em; color: var(--color-text-secondary); }
+        .detail-why { margin-top: 20px; font-size: 0.95em; }
+        .original-link { display: inline-block; margin-top: 20px; padding: 12px 24px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
         .original-link:hover { opacity: 0.85; }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; font-size: 0.9em; }
         .back-link:hover { text-decoration: underline; }
@@ -73,45 +75,16 @@
 <body>
     <header>
         <h1>Hermes Agent v0.13.0 (2026.5.7) — The Tenacity Release</h1>
-        <p class="detail-meta"><span class="category-tag">hermes</span> hermes-agent · 2026-05-08</p>
+        <p><span class="category-tag">hermes</span> hermes-agent · 2026-05-08</p>
     </header>
 
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
-        <div class="detail-body">
-            <p class="article-summary" style="font-size:1.05em;line-height:1.8;"><think>用户要求我作为技术编辑，将 Hermes Agent v0.13.0 的 release notes 翻译并摘要为中文。要求：
-1. 3-5句话
-2. 只描述最重要功能
-3. 不要逐条列点
-4. 直接输出中文摘要，不要加标题或前缀
-
-让我分析这个版本的核心更新：
-
-1. Kanban 系统大幅增强 - 成为持久化的多智能体看板，新增心跳、僵尸检测、自动阻止未完成任务退出、每个任务重试、幻觉恢复等功能
-2. `/goal` 命令 - 让智能体跨轮次锁定目标（Ralph 循环）
-3. Checkpoints v2 - 重写了状态持久化，新增真实剪枝
-4. Gateway - 自动恢复中断的会话
-5. Cron 新增 `no_agent` 看门狗模式
-6. 安全更新 - 关闭 8 个 P0 问题，默认开启重定向、Discord 角色白名单改为公会级别、WhatsApp 默认拒绝陌生人、修复了 auth.json 和 MCP OAuth 的 TOCTOU 漏洞
-7. Google Chat 成为第 20 个支持平台
-8. Providers 成为可插拔接口
-9. 新增 7 个 i18n 区域设置
-
-最重要功能应该是：
-
-
-1. Kanban 持久化和增强
-2. 目标锁定机制
-3. 检查点系统的重大改进
-4. 安全问题的修复
-
-现在我需要用3-5句简洁的中文总结这些核心变化。
-</think>
-
-Hermes Agent v0.13.0 发布，核心改进包括：Kanban 看板升级为持久化多智能体系统，新增心跳检测、僵尸清理和自动重试机制；`/goal` 命令实现跨会话目标锁定；Checkpoints v2 重写状态持久化并支持真实剪枝。安全方面大幅加强，默认启用重定向并修复 8 个高优先级漏洞。Google Chat 成为第 20 个支持平台，Providers 接口也改为可插拔架构。</p>
+        <div class="detail-card">
+            <p>Hermes Agent v0.13.0 发布，核心改进包括：Kanban 看板升级为持久化多智能体系统，新增心跳检测、僵尸清理和自动重试机制；`/goal` 命令实现跨会话目标锁定；Checkpoints v2 重写状态持久化并支持真实剪枝。安全方面大幅加强，默认启用重定向并修复 8 个高优先级漏洞。Google Chat 成为第 20 个支持平台，Providers 接口也改为可插拔架构。</p>
         </div>
-<div class="tags" style="margin-top:16px;">标签：Hermes Agent</div>
-        <div class="article-why" style="margin-top:20px;">💡 🔗 点击查看中文摘要与详情</div>
+<div class="detail-tags">标签：Hermes Agent</div>
+        <div class="detail-why">💡 🔗 点击查看中文摘要与详情</div>
         <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.7" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 

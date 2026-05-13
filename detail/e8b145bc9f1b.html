@@ -62,9 +62,11 @@
             .article-count { margin-left: 0; margin-top: 10px; }
         }
 
-        .detail-body { line-height: 1.8; font-size: 1.05em; }
-        .detail-meta { margin: 12px 0 20px; }
-        .original-link { display: inline-block; margin: 20px 0; padding: 10px 20px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
+        .detail-card { background: var(--color-bg-secondary); border-radius: 12px; padding: 24px; margin: 24px 0; }
+        .detail-card p { margin: 0; font-size: 1.05em; line-height: 1.8; }
+        .detail-tags { margin-top: 16px; font-size: 0.85em; color: var(--color-text-secondary); }
+        .detail-why { margin-top: 20px; font-size: 0.95em; }
+        .original-link { display: inline-block; margin-top: 20px; padding: 12px 24px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
         .original-link:hover { opacity: 0.85; }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; font-size: 0.9em; }
         .back-link:hover { text-decoration: underline; }
@@ -73,16 +75,16 @@
 <body>
     <header>
         <h1>Not a Security Issue</h1>
-        <p class="detail-meta"><span class="category-tag">blog</span> nesbitt.io · 2026-05-12</p>
+        <p><span class="category-tag">blog</span> nesbitt.io · 2026-05-12</p>
     </header>
 
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
-        <div class="detail-body">
-            <p class="article-summary" style="font-size:1.05em;line-height:1.8;">本文介绍curl项目的信息披露政策如何有效地在源头过滤掉AI安全扫描器的误报。curl作为广泛使用的工具，面临着大量自动化扫描工具的检测，其披露政策通过设置合理的门槛，只关注真正有实际影响的安全问题，避免了被AI扫描器的噪音所干扰。</p>
+        <div class="detail-card">
+            <p>本文介绍curl项目的信息披露政策如何有效地在源头过滤掉AI安全扫描器的误报。curl作为广泛使用的工具，面临着大量自动化扫描工具的检测，其披露政策通过设置合理的门槛，只关注真正有实际影响的安全问题，避免了被AI扫描器的噪音所干扰。</p>
         </div>
-<div class="tags" style="margin-top:16px;">标签：安全政策，开源项目，AI工具</div>
-        <div class="article-why" style="margin-top:20px;">💡 对于安全研究者和开源维护者，了解如何设计合理的信息披露策略来应对自动化扫描工具的挑战。</div>
+<div class="detail-tags">标签：安全政策，开源项目，AI工具</div>
+        <div class="detail-why">💡 对于安全研究者和开源维护者，了解如何设计合理的信息披露策略来应对自动化扫描工具的挑战。</div>
         <a href="https://nesbitt.io/2026/05/12/not-a-security-issue.html" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 

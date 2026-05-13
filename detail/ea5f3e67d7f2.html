@@ -62,9 +62,11 @@
             .article-count { margin-left: 0; margin-top: 10px; }
         }
 
-        .detail-body { line-height: 1.8; font-size: 1.05em; }
-        .detail-meta { margin: 12px 0 20px; }
-        .original-link { display: inline-block; margin: 20px 0; padding: 10px 20px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
+        .detail-card { background: var(--color-bg-secondary); border-radius: 12px; padding: 24px; margin: 24px 0; }
+        .detail-card p { margin: 0; font-size: 1.05em; line-height: 1.8; }
+        .detail-tags { margin-top: 16px; font-size: 0.85em; color: var(--color-text-secondary); }
+        .detail-why { margin-top: 20px; font-size: 0.95em; }
+        .original-link { display: inline-block; margin-top: 20px; padding: 12px 24px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
         .original-link:hover { opacity: 0.85; }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; font-size: 0.9em; }
         .back-link:hover { text-decoration: underline; }
@@ -73,34 +75,16 @@
 <body>
     <header>
         <h1>Hermes Agent v0.12.0 (2026.4.30)</h1>
-        <p class="detail-meta"><span class="category-tag">hermes</span> hermes-agent · 2026-05-01</p>
+        <p><span class="category-tag">hermes</span> hermes-agent · 2026-05-01</p>
     </header>
 
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
-        <div class="detail-body">
-            <p class="article-summary" style="font-size:1.05em;line-height:1.8;"><think>用户要求我将Hermes Agent v0.12.0的发布说明翻译并摘要为中文。要求：
-- 3-5句话
-- 只描述最重要功能
-- 不要逐条列点
-- 直接输出中文摘要，不要加标题或前缀
-
-关键信息：
-1. Curator功能 - 自动维护skill library，自己安排调度进行评级、修剪、整合
-2. 自我改进循环升级 - 审查保存内容
-3. 新增4个推理提供商
-4. 第18个消息平台支持
-5. 第19个通过Teams插件
-6. 原生集成Spotify + Google Meet
-7. ComfyUI和TouchDesigner-MCP从可选变为默认捆绑
-8. TUI冷启动时间减少约57%
-
-需要整合这些信息，用简洁的中文摘要。</think>
-
-Hermes Agent v0.12.0版本新增自主Curator功能，可自动在后台对skill库进行评级、修剪和整合，大幅提升自我维护能力。新增4个推理提供商，并支持第18个消息平台及第19个通过Teams插件接入。原生集成Spotify和Google Meet，ComfyUI和TouchDesigner-MCP改为默认捆绑。TUI冷启动时间缩短约57%。</p>
+        <div class="detail-card">
+            <p>Hermes Agent v0.12.0版本新增自主Curator功能，可自动在后台对skill库进行评级、修剪和整合，大幅提升自我维护能力。新增4个推理提供商，并支持第18个消息平台及第19个通过Teams插件接入。原生集成Spotify和Google Meet，ComfyUI和TouchDesigner-MCP改为默认捆绑。TUI冷启动时间缩短约57%。</p>
         </div>
-<div class="tags" style="margin-top:16px;">标签：Hermes Agent</div>
-        <div class="article-why" style="margin-top:20px;">💡 🔗 点击查看中文摘要与详情</div>
+<div class="detail-tags">标签：Hermes Agent</div>
+        <div class="detail-why">💡 🔗 点击查看中文摘要与详情</div>
         <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.30" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 

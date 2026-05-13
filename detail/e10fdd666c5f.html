@@ -62,9 +62,11 @@
             .article-count { margin-left: 0; margin-top: 10px; }
         }
 
-        .detail-body { line-height: 1.8; font-size: 1.05em; }
-        .detail-meta { margin: 12px 0 20px; }
-        .original-link { display: inline-block; margin: 20px 0; padding: 10px 20px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
+        .detail-card { background: var(--color-bg-secondary); border-radius: 12px; padding: 24px; margin: 24px 0; }
+        .detail-card p { margin: 0; font-size: 1.05em; line-height: 1.8; }
+        .detail-tags { margin-top: 16px; font-size: 0.85em; color: var(--color-text-secondary); }
+        .detail-why { margin-top: 20px; font-size: 0.95em; }
+        .original-link { display: inline-block; margin-top: 20px; padding: 12px 24px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
         .original-link:hover { opacity: 0.85; }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; font-size: 0.9em; }
         .back-link:hover { text-decoration: underline; }
@@ -73,16 +75,16 @@
 <body>
     <header>
         <h1>Learning Software Architecture</h1>
-        <p class="detail-meta"><span class="category-tag">blog</span> matklad.github.io · 2026-05-12</p>
+        <p><span class="category-tag">blog</span> matklad.github.io · 2026-05-12</p>
     </header>
 
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
-        <div class="detail-body">
-            <p class="article-summary" style="font-size:1.05em;line-height:1.8;">[这是一篇来自 Rust 专家 matklad 的博客文章，作为对一位研究者物理学家的邮件回复，探讨如何学习软件架构和设计技能。文章可能分享了实用建议，帮助非科班背景的人理解软件设计的核心概念和学习方法。]</p>
+        <div class="detail-card">
+            <p>[这是一篇来自 Rust 专家 matklad 的博客文章，作为对一位研究者物理学家的邮件回复，探讨如何学习软件架构和设计技能。文章可能分享了实用建议，帮助非科班背景的人理解软件设计的核心概念和学习方法。]</p>
         </div>
-<div class="tags" style="margin-top:16px;">标签：[软件架构, 学习方法, 软件设计]</div>
-        <div class="article-why" style="margin-top:20px;">💡 [来自 Rust 社区知名专家的架构学习指南，对想要系统学习软件设计的开发者很有参考价值]</div>
+<div class="detail-tags">标签：[软件架构, 学习方法, 软件设计]</div>
+        <div class="detail-why">💡 [来自 Rust 社区知名专家的架构学习指南，对想要系统学习软件设计的开发者很有参考价值]</div>
         <a href="https://matklad.github.io/2026/05/12/software-architecture.html" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 

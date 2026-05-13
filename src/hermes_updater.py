@@ -65,6 +65,9 @@ class HermesSummarizer:
                 resp.raise_for_status()
                 result = resp.json()
                 content = result["choices"][0]["message"]["content"].strip().strip('"\'')
+                # 去掉 <think>...</think> 思考过程残留
+                import re as _re
+                content = _re.sub(r'</?think>.*?(</think>|$)', '', content, flags=_re.DOTALL).strip()
                 return content
             except Exception as e:
                 if attempt < max_retries - 1:

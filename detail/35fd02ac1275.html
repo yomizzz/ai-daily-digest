@@ -62,9 +62,11 @@
             .article-count { margin-left: 0; margin-top: 10px; }
         }
 
-        .detail-body { line-height: 1.8; font-size: 1.05em; }
-        .detail-meta { margin: 12px 0 20px; }
-        .original-link { display: inline-block; margin: 20px 0; padding: 10px 20px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
+        .detail-card { background: var(--color-bg-secondary); border-radius: 12px; padding: 24px; margin: 24px 0; }
+        .detail-card p { margin: 0; font-size: 1.05em; line-height: 1.8; }
+        .detail-tags { margin-top: 16px; font-size: 0.85em; color: var(--color-text-secondary); }
+        .detail-why { margin-top: 20px; font-size: 0.95em; }
+        .original-link { display: inline-block; margin-top: 20px; padding: 12px 24px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
         .original-link:hover { opacity: 0.85; }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; font-size: 0.9em; }
         .back-link:hover { text-decoration: underline; }
@@ -73,50 +75,16 @@
 <body>
     <header>
         <h1>Hermes Agent v0.5.0 (v2026.3.28)</h1>
-        <p class="detail-meta"><span class="category-tag">hermes</span> hermes-agent · 2026-03-29</p>
+        <p><span class="category-tag">hermes</span> hermes-agent · 2026-03-29</p>
     </header>
 
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
-        <div class="detail-body">
-            <p class="article-summary" style="font-size:1.05em;line-height:1.8;"><think>用户要求我作为技术编辑，将软件 release notes 翻译并摘要为中文。需要：
-1. 简洁的中文（3-5句话）
-2. 只描述最重要功能
-3. 不要逐条列点
-4. 直接输出中文摘要，不要加标题或前缀
-
-核心更新内容：
-- Hermes Agent v0.5.0
-- 版本号：v2026.3.28
-- 发布日期：2026年3月28日
-
-重要功能点：
-1. Hugging Face provider - 新增Hugging Face支持
-2. /model command overhaul - 模型命令大幅改进
-3. Telegram Private Chat Topics - Telegram私密群组话题支持
-4. native Modal SDK - 原生Modal SDK集成
-5. plugin lifecycle hooks - 插件生命周期钩子
-6. tool-use enforcement for GPT models - GPT模型强制工具调用
-7. Nix flake - Nix包支持
-8. 50+ security and reliability fixes - 50多项安全和可靠性修复
-9. supply chain audit - 供应链安全审计
-
-从中提取最重要的3-5个功能点，组成流畅的摘要：
-
-这个版本是安全加固版本，主要更新包括：新增Hugging Face提供商支持并重构了模型命令、新增Telegram私密群组话题功能、集成原生Modal SDK、支持GPT模型的工具调用强制执行，同时进行了全面的供应链安全审计并修复了50多项安全和可靠性问题。
-
-检查一下：
-
-
-这个版本是安全加固版本，主要更新包括：新增Hugging Face提供商支持并重构了模型命令、新增Telegram私密群组话题功能、集成原生Modal SDK、支持GPT模型的工具调用强制执行，同时进行了全面的供应链安全审计并修复了50多项安全和可靠性问题。
-
-语言简洁明了，突出重点，涵盖核心升级，符合摘要要求。
-</think>
-
-这个版本是安全加固版本，主要更新包括：新增Hugging Face提供商并大幅改进了模型命令，新增Telegram私密群组话题支持，集成原生Modal SDK以及支持GPT</p>
+        <div class="detail-card">
+            <p>这个版本是安全加固版本，主要更新包括：新增Hugging Face提供商并大幅改进了模型命令，新增Telegram私密群组话题支持，集成原生Modal SDK以及支持GPT</p>
         </div>
-<div class="tags" style="margin-top:16px;">标签：Hermes Agent</div>
-        <div class="article-why" style="margin-top:20px;">💡 🔗 点击查看中文摘要与详情</div>
+<div class="detail-tags">标签：Hermes Agent</div>
+        <div class="detail-why">💡 🔗 点击查看中文摘要与详情</div>
         <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.28" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 

@@ -62,9 +62,11 @@
             .article-count { margin-left: 0; margin-top: 10px; }
         }
 
-        .detail-body { line-height: 1.8; font-size: 1.05em; }
-        .detail-meta { margin: 12px 0 20px; }
-        .original-link { display: inline-block; margin: 20px 0; padding: 10px 20px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
+        .detail-card { background: var(--color-bg-secondary); border-radius: 12px; padding: 24px; margin: 24px 0; }
+        .detail-card p { margin: 0; font-size: 1.05em; line-height: 1.8; }
+        .detail-tags { margin-top: 16px; font-size: 0.85em; color: var(--color-text-secondary); }
+        .detail-why { margin-top: 20px; font-size: 0.95em; }
+        .original-link { display: inline-block; margin-top: 20px; padding: 12px 24px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
         .original-link:hover { opacity: 0.85; }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; font-size: 0.9em; }
         .back-link:hover { text-decoration: underline; }
@@ -73,35 +75,16 @@
 <body>
     <header>
         <h1>Hermes Agent v0.8.0 (v2026.4.8)</h1>
-        <p class="detail-meta"><span class="category-tag">hermes</span> hermes-agent · 2026-04-08</p>
+        <p><span class="category-tag">hermes</span> hermes-agent · 2026-04-08</p>
     </header>
 
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
-        <div class="detail-body">
-            <p class="article-summary" style="font-size:1.05em;line-height:1.8;"><think>用户要求我作为技术编辑，将软件发布说明翻译并摘要为中文。要求：
-1. 简洁的中文（3-5句话）
-2. 只描述最重要功能
-3. 不要逐条列点
-4. 输出格式：直接输出中文摘要，不要加标题或前缀
-
-原始内容的关键信息：
-- 背景任务自动通知
-- Nous Portal 上免费提供 MiMo v2 Pro
-- 所有平台支持实时切换模型
-- 自优化 GPT/Codex 指导
-- 原生支持 Google AI Studio
-- 智能空闲超时
-- 审批按钮
-- MCP OAuth 2.1
-- 209 个合并的 PR，82 个已解决的问题
-
-我需要提炼最重要的功能，用3-5句话总结。</think>
-
-v2026.4.8 版本带来智能化升级，新增后台任务自动通知和智能空闲超时功能； Nous Portal 现可免费使用 MiMo v2 Pro 模型；全平台支持实时切换 AI 模型，并原生集成 Google AI Studio；新增 MCP OAuth 2.1 认证支持；同时改进了 GPT/Codex 自优化指导机制。本版本合并了 209 个 PR，解决了 82 个问题。</p>
+        <div class="detail-card">
+            <p>v2026.4.8 版本带来智能化升级，新增后台任务自动通知和智能空闲超时功能； Nous Portal 现可免费使用 MiMo v2 Pro 模型；全平台支持实时切换 AI 模型，并原生集成 Google AI Studio；新增 MCP OAuth 2.1 认证支持；同时改进了 GPT/Codex 自优化指导机制。本版本合并了 209 个 PR，解决了 82 个问题。</p>
         </div>
-<div class="tags" style="margin-top:16px;">标签：Hermes Agent</div>
-        <div class="article-why" style="margin-top:20px;">💡 🔗 点击查看中文摘要与详情</div>
+<div class="detail-tags">标签：Hermes Agent</div>
+        <div class="detail-why">💡 🔗 点击查看中文摘要与详情</div>
         <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.8" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 

@@ -62,9 +62,11 @@
             .article-count { margin-left: 0; margin-top: 10px; }
         }
 
-        .detail-body { line-height: 1.8; font-size: 1.05em; }
-        .detail-meta { margin: 12px 0 20px; }
-        .original-link { display: inline-block; margin: 20px 0; padding: 10px 20px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
+        .detail-card { background: var(--color-bg-secondary); border-radius: 12px; padding: 24px; margin: 24px 0; }
+        .detail-card p { margin: 0; font-size: 1.05em; line-height: 1.8; }
+        .detail-tags { margin-top: 16px; font-size: 0.85em; color: var(--color-text-secondary); }
+        .detail-why { margin-top: 20px; font-size: 0.95em; }
+        .original-link { display: inline-block; margin-top: 20px; padding: 12px 24px; background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; font-size: 0.95em; }
         .original-link:hover { opacity: 0.85; }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; font-size: 0.9em; }
         .back-link:hover { text-decoration: underline; }
@@ -73,27 +75,16 @@
 <body>
     <header>
         <h1>Hermes Agent v0.11.0 (2026.4.23)</h1>
-        <p class="detail-meta"><span class="category-tag">hermes</span> hermes-agent · 2026-04-24</p>
+        <p><span class="category-tag">hermes</span> hermes-agent · 2026-04-24</p>
     </header>
 
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
-        <div class="detail-body">
-            <p class="article-summary" style="font-size:1.05em;line-height:1.8;"><think>这个版本是Hermes Agent v0.11.0，主要更新包括：
-1. 完整的React/Ink重写交互式CLI
-2. 可插拔的传输架构
-3. 原生AWS Bedrock支持
-4. 五个新的推理路径
-5. 第17个消息平台QQBot
-6. 大幅扩展的插件表面
-7. GPT-5.5通过Codex OAuth支持
-
-需要用简洁的中文总结为3-5句话。</think>
-
-v0.11.0 是 Interface 版本，完成交互式 CLI 的 React/Ink 重写，支持可插拔传输架构，新增原生 AWS Bedrock 支持和五个推理路径，并整合了 QQBot 作为第17个消息平台，同时大幅扩展插件能力，还支持通过 Codex OAuth 调用 GPT-5.5。该版本还合并了 v0.10.0 延迟的所有功能更新。</p>
+        <div class="detail-card">
+            <p>v0.11.0 是 Interface 版本，完成交互式 CLI 的 React/Ink 重写，支持可插拔传输架构，新增原生 AWS Bedrock 支持和五个推理路径，并整合了 QQBot 作为第17个消息平台，同时大幅扩展插件能力，还支持通过 Codex OAuth 调用 GPT-5.5。该版本还合并了 v0.10.0 延迟的所有功能更新。</p>
         </div>
-<div class="tags" style="margin-top:16px;">标签：Hermes Agent</div>
-        <div class="article-why" style="margin-top:20px;">💡 🔗 点击查看中文摘要与详情</div>
+<div class="detail-tags">标签：Hermes Agent</div>
+        <div class="detail-why">💡 🔗 点击查看中文摘要与详情</div>
         <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.23" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
