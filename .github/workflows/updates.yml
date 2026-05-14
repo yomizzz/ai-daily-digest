@@ -2,8 +2,8 @@ name: AI Daily Digest Updates
 
 on:
   schedule:
-    # 上海时间 11:00 = UTC 03:00，每日抓取过去 24 小时内的 hermes-agent 和 openclaw 更新
-    - cron: '0 3 * * *'
+    # 上海时间 10:00 = UTC 02:00，每日抓取过去 24 小时内的 hermes-agent 和 openclaw 更新
+    - cron: '0 2 * * *'
   workflow_dispatch:
     inputs:
       hermes_mode:
