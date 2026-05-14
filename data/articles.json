@@ -617,8 +617,8 @@
       "source": "hermes-agent",
       "published": "2026-05-08",
       "category": "hermes",
-      "summary_zh": "Hermes Agent v0.13.0 发布，核心改进包括：Kanban 看板升级为持久化多智能体系统，新增心跳检测、僵尸清理和自动重试机制；`/goal` 命令实现跨会话目标锁定；Checkpoints v2 重写状态持久化并支持真实剪枝。安全方面大幅加强，默认启用重定向并修复 8 个高优先级漏洞。Google Chat 成为第 20 个支持平台，Providers 接口也改为可插拔架构。",
-      "why_matters": "🔗 点击查看中文摘要与详情",
+      "summary_zh": "- **Kanban 多智能体看板**：心跳检测、任务回收、僵尸进程检测、未完成自动阻塞、每任务重试、幻觉恢复等持久化机制\n- **目标锁定**：`/goal` 命令支持跨轮次保持任务目标（Ralph 循环）\n- **Checkpoints v2**：重写状态持久化，支持真正的状态修剪\n- **Gateway 自动恢复**：重启后可自动恢复中断的会话\n- **Cron watchdog 模式**：新增 `no_agent` 看门狗模式\n- **安全修复**：关闭 8 个 P0 漏洞，重定向默认启用、Discord 角色白名单限定公会范围、WhatsApp 默认拒绝陌生人、修复认证模块 TOCTOU 漏洞\n- **Google Chat 支持**：成为第 20 个集成平台\n- **Providers 插件化**：Providers 改为可插拔架构\n- **国际化**：新增 7 个语种本地化",
+      "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     },
     {
@@ -627,8 +627,8 @@
       "source": "hermes-agent",
       "published": "2026-05-01",
       "category": "hermes",
-      "summary_zh": "Hermes Agent v0.12.0版本新增自主Curator功能，可自动在后台对skill库进行评级、修剪和整合，大幅提升自我维护能力。新增4个推理提供商，并支持第18个消息平台及第19个通过Teams插件接入。原生集成Spotify和Google Meet，ComfyUI和TouchDesigner-MCP改为默认捆绑。TUI冷启动时间缩短约57%。",
-      "why_matters": "🔗 点击查看中文摘要与详情",
+      "summary_zh": "- 新增 Curator：后台自动维护技能库，自动评估、修剪和整合\n- 自我提升循环机制大幅升级\n- 新增 4 个推理提供商\n- 新增第 18 个消息平台支持\n- 通过 Teams 插件新增第 19 个平台支持\n- 原生集成 Spotify 和 Google Meet\n- ComfyUI 和 TouchDesigner-MCP 从可选变为默认绑定\n- TUI 冷启动时间缩短约 57%",
+      "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     },
     {
@@ -637,8 +637,8 @@
       "source": "hermes-agent",
       "published": "2026-04-24",
       "category": "hermes",
-      "summary_zh": "v0.11.0 是 Interface 版本，完成交互式 CLI 的 React/Ink 重写，支持可插拔传输架构，新增原生 AWS Bedrock 支持和五个推理路径，并整合了 QQBot 作为第17个消息平台，同时大幅扩展插件能力，还支持通过 Codex OAuth 调用 GPT-5.5。该版本还合并了 v0.10.0 延迟的所有功能更新。",
-      "why_matters": "🔗 点击查看中文摘要与详情",
+      "summary_zh": "- 交互式 CLI 完成 React/Ink 重写\n- 底层引入可插拔传输架构（支持所有 provider）\n- 新增原生 AWS Bedrock 支持\n- 新增五个推理路径\n- 新增第 17 个消息平台 QQBot\n- 插件系统大幅扩展\n- 新增 GPT-5.5 支持（通过 Codex OAuth）\n- 纳入 v0.10.0 延后的所有功能更新",
+      "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     },
     {
@@ -647,8 +647,8 @@
       "source": "hermes-agent",
       "published": "2026-04-17",
       "category": "hermes",
-      "summary_zh": "本次更新带来 Tool Gateway 功能，付费 Nous Portal 订阅用户现在可以通过现有订阅直接使用网络搜索、图片生成、文本转语音和浏览器自动化等工具，无需额外配置 API 密钥。此版本降低了用户使用高级工具的门槛，让订阅用户能够更便捷地访问完整的 AI 工具生态。",
-      "why_matters": "🔗 点击查看中文摘要与详情",
+      "summary_zh": "- Tool Gateway 正式发布，付费 Nous Portal 订阅用户可直接使用网络搜索功能\n- 支持图像生成能力，可通过订阅直接调用\n- 新增文字转语音（TTS）功能集成\n- 浏览器自动化能力现已可用\n- 订阅用户无需额外申请或配置 API key，零门槛使用全部新功能\n- 统一订阅入口，降低多工具使用的管理复杂度",
+      "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     },
     {
@@ -657,8 +657,8 @@
       "source": "hermes-agent",
       "published": "2026-04-14",
       "category": "hermes",
-      "summary_zh": "Hermes Agent v0.9.0 正式支持移动端，可在 Termux 和 Android 上运行，并新增 iMessage 和微信集成。面向 OpenAI 和 Anthropic 模型推出快速模式，提升响应效率。内置本地 Web 控制面板，方便管理代理服务。新增后台进程监控功能。作为最大规模的一次安全更新，在全部 16 个支持平台上进行了深度安全加固。",
-      "why_matters": "🔗 点击查看中文摘要与详情",
+      "summary_zh": "- 新增移动端支持，正式登陆Termux/Android平台\n- 新增iMessage和WeChat通讯集成\n- 推出Fast Mode，为OpenAI和Anthropic提供加速模式\n- 引入后台进程监控功能\n- 发布本地Web仪表板，用于管理Agent\n- 完成史上最全面的安全加固，覆盖16个支持的平台",
+      "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     },
     {
@@ -667,8 +667,8 @@
       "source": "hermes-agent",
       "published": "2026-04-08",
       "category": "hermes",
-      "summary_zh": "v2026.4.8 版本带来智能化升级，新增后台任务自动通知和智能空闲超时功能； Nous Portal 现可免费使用 MiMo v2 Pro 模型；全平台支持实时切换 AI 模型，并原生集成 Google AI Studio；新增 MCP OAuth 2.1 认证支持；同时改进了 GPT/Codex 自优化指导机制。本版本合并了 209 个 PR，解决了 82 个问题。",
-      "why_matters": "🔗 点击查看中文摘要与详情",
+      "summary_zh": "- 背景任务支持自动通知功能\n- Nous Portal 平台免费提供 MiMo v2 Pro\n- 全平台支持实时切换 AI 模型\n- 集成 GPT/Codex 自主优化指导功能\n- 原生支持 Google AI Studio\n- 新增智能空闲超时机制\n- 新增审批按钮功能\n- 支持 MCP OAuth 2.1 认证协议\n- 本次更新合并 209 个 PR 并解决 82 个问题",
+      "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     },
     {
@@ -677,7 +677,7 @@
       "source": "hermes-agent",
       "published": "2026-04-04",
       "category": "hermes",
-      "summary_zh": "- 新增可插拔内存提供程序，支持灵活配置存储后端\n- 实现凭证池自动轮换机制，提升认证安全性\n- 集成 Camofox 反检测浏览器，增强自动化隐蔽性\n- 支持内联代码差异预览，优化变更审核体验\n- 网关强化修复竞态条件和审批路由漏洞\n- 完成 168 个 PR 的深度安全修复，解决 46 个问题",
+      "summary_zh": "- 新增可插拔内存提供程序，支持灵活扩展\n- 新增凭证池自动轮换机制，增强安全认证\n- 集成Camofox反检测浏览器，提升自动化隐蔽性\n- 新增内联差异预览功能，优化代码审查体验\n- 网关加固：修复竞态条件和审批路由问题\n- 深度安全修复：完成168个PR，解决46个问题",
       "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     },
@@ -687,8 +687,8 @@
       "source": "hermes-agent",
       "published": "2026-03-30",
       "category": "hermes",
-      "summary_zh": "v0.6.0 带来了 Profiles 功能，支持运行多个相互隔离的 agent 实例。新增 MCP server 模式便于与外部工具集成，同时提供官方 Docker 容器简化部署。新增飞书/Lark 和企业微信两个国内主流办公平台的支持，以及 Telegram webhook 和 Slack 多工作区 OAuth 等通信集成能力。",
-      "why_matters": "🔗 点击查看中文摘要与详情",
+      "summary_zh": "- 新增 Profiles 功能：支持运行多个相互隔离的代理实例\n- 新增 MCP 服务器模式\n- 新增 Docker 容器支持\n- 新增 fallback provider chains（备用提供商链）\n- 新增飞书（Feishu/Lark）和企业微信（WeCom）两个消息平台\n- 新增 Telegram webhook 模式\n- 新增 Slack 多工作区 OAuth 支持\n- 本次更新包含 95 个 PR 和 16 个已解决问题的合并",
+      "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     },
     {
@@ -697,7 +697,7 @@
       "source": "hermes-agent",
       "published": "2026-03-29",
       "category": "hermes",
-      "summary_zh": "- 新增 Hugging Face 提供商支持\n- 重构 /model 命令，提升模型切换体验\n- 支持 Telegram 私密聊天话题\n- 集成原生 Modal SDK\n- 新增插件生命周期钩子\n- 为 GPT 模型强制执行工具使用规范\n- 支持 Nix flake 打包方式\n- 修复 50 多项安全性和可靠性问题\n- 完成全面的供应链安全审计",
+      "summary_zh": "- 新增 Hugging Face 模型提供商支持\n- /model 命令全面重构\n- 支持 Telegram 私密群组话题\n- 原生集成 Modal SDK\n- 新增插件生命周期钩子\n- GPT 模型强制工具调用\n- 新增 Nix flake 支持\n- 修复 50+ 安全和稳定性问题\n- 完成供应链全面审计",
       "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     },
@@ -707,7 +707,7 @@
       "source": "hermes-agent",
       "published": "2026-03-24",
       "category": "hermes",
-      "summary_zh": "- 新增 OpenAI 兼容 API 服务器\n- 新增 6 个消息适配器\n- 新增 4 个推理服务提供商\n- MCP 服务器管理支持 OAuth 2.1\n- 支持 @ 上下文引用功能\n- 网关新增提示缓存功能\n- 流式传输改为默认启用\n- 可靠性优化，修复 200+ 漏洞",
+      "summary_zh": "- 新增 OpenAI 兼容 API 服务器\n- 新增 6 个消息适配器\n- 新增 4 个推理提供商\n- MCP 服务器管理支持 OAuth 2.1\n- 支持 @ 上下文引用\n- 网关新增提示缓存功能\n- 流式传输改为默认启用\n- 可靠性大幅提升，修复 200+ 个问题",
       "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     },
@@ -717,7 +717,7 @@
       "source": "hermes-agent",
       "published": "2026-03-17",
       "category": "hermes",
-      "summary_zh": "- 流式传输：支持统一的实时 token 递送\n- 插件架构：全新一流插件系统\n- 提供商系统重构：支持 Vercel AI Gateway，原生集成 Anthropic 提供商\n- 智能审批机制\n- 实时 Chrome CDP 浏览器连接\n- ACP IDE 深度集成\n- Honcho 记忆功能\n- 语音模式\n- 持久化 Shell\n- 全平台 50+ 错误修复",
+      "summary_zh": "- 流式传输支持，实现实时 token 交付\n- 全新插件架构，提供一流插件支持\n- 重建 Provider 系统，集成 Vercel AI Gateway\n- 新增原生 Anthropic Provider\n- 智能审批功能\n- 实时 Chrome CDP 浏览器连接\n- ACP IDE 集成\n- Honcho 记忆系统\n- 语音模式\n- 持久化 Shell\n- 跨平台 50+ Bug 修复",
       "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     },
@@ -727,10 +727,10 @@
       "source": "hermes-agent",
       "published": "2026-03-12",
       "category": "hermes",
-      "summary_zh": "Hermes Agent v0.2.0正式发布，这是该项目的首个标记版本。在不到三周内，从内部小项目快速发展为功能完整的AI agent平台，离不开社区的积极参与。本次更新合并了216个pull request，由63位贡献者参与，解决了119个issues。",
-      "why_matters": "🔗 点击查看中文摘要与详情",
+      "summary_zh": "- 正式发布 v0.2.0 版本，距上次 v0.1.0 预发布仅两周，实现从内部项目到完整 AI agent 平台的重大升级\n- 合并 216 个 Pull Request，来自 63 位社区贡献者\n- 解决 119 个 GitHub Issues",
+      "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
     }
   ],
-  "last_updated": "2026-05-14 11:09:17"
+  "last_updated": "2026-05-14 12:31:59"
 }
