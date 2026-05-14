@@ -287,7 +287,7 @@
     <main>
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
         <div class="detail-card">
-            <ul class="summary-list"><li>**Kanban 多智能体看板**：心跳检测、任务回收、僵尸进程检测、未完成自动阻塞、每任务重试、幻觉恢复等持久化机制</li><li>**目标锁定**：`/goal` 命令支持跨轮次保持任务目标（Ralph 循环）</li><li>**Checkpoints v2**：重写状态持久化，支持真正的状态修剪</li><li>**Gateway 自动恢复**：重启后可自动恢复中断的会话</li><li>**Cron watchdog 模式**：新增 `no_agent` 看门狗模式</li><li>**安全修复**：关闭 8 个 P0 漏洞，重定向默认启用、Discord 角色白名单限定公会范围、WhatsApp 默认拒绝陌生人、修复认证模块 TOCTOU 漏洞</li><li>**Google Chat 支持**：成为第 20 个集成平台</li><li>**Providers 插件化**：Providers 改为可插拔架构</li><li>**国际化**：新增 7 个语种本地化</li></ul>
+            <ul class="summary-list"><li>新增 Kanban 多智能体看板：包含心跳机制、任务回收、僵尸进程检测、不完整退出自动阻塞、每任务重试及幻觉恢复功能</li><li>/goal 命令支持跨对话轮次锁定目标（Ralph 循环）</li><li>检查点 v2 重写状态持久化机制，实现真实状态修剪</li><li>Gateway 新增自动恢复：服务重启后自动恢复中断的会话</li><li>Cron 新增 no_agent 看门狗模式</li><li>安全加固：关闭 8 个 P0 漏洞，包括脱敏默认启用、Discord 权限按服务器范围控制、WhatsApp 默认拒绝陌生人、修复 auth.json 和 MCP OAuth 的 TOCTOU 竞态条件</li><li>Google Chat 成为第 20 个支持的集成平台</li><li>Providers 改造为可插拔架构</li><li>新增 7 种国际化语言支持</li></ul>
         </div>
 <div class="tags">标签：Hermes Agent</div>
         <div class="detail-why">💡 查看中文摘要与详情</div>
