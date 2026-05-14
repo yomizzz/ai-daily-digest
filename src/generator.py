@@ -229,6 +229,17 @@ THEME_CSS = """
         }
         .original-link:hover { background: var(--brand-light); }
 
+        /* ── Detail Section (openclaw features/bug_fixes) ── */
+        .detail-section { margin-bottom: 28px; }
+        .detail-section-title {
+            font-family: Charter, Georgia, serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--brand);
+            margin-bottom: 10px;
+            letter-spacing: 0;
+        }
+
         .back-link {
             display: inline-block;
             margin-bottom: 16px;
@@ -500,6 +511,29 @@ class PageGenerator:
         tags = article.get('tags', '')
         tags_html = '<div class="tags">标签：' + tags + '</div>' if tags else ''
 
+        # OpenClaw 详情页：分别渲染 features 和 bug_fixes
+        features = article.get('features', '')
+        bug_fixes = article.get('bug_fixes', '')
+
+        if category == 'openclaw' and (features or bug_fixes):
+            content_html = ''
+            if features:
+                content_html += (
+                    '<div class="detail-section">\n'
+                    '    <h3 class="detail-section-title">🆕 新增功能</h3>\n'
+                    '    <div class="detail-card">' + render_summary(features) + '</div>\n'
+                    '</div>\n'
+                )
+            if bug_fixes:
+                content_html += (
+                    '<div class="detail-section">\n'
+                    '    <h3 class="detail-section-title">🐛 Bug 修复</h3>\n'
+                    '    <div class="detail-card">' + render_summary(bug_fixes) + '</div>\n'
+                    '</div>\n'
+                )
+        else:
+            content_html = '<div class="detail-card">' + render_summary(summary) + '</div>'
+
         html = (
             '<!DOCTYPE html>\n'
             '<html lang="zh-CN">\n'
@@ -520,9 +554,7 @@ class PageGenerator:
             '\n'
             '    <main>\n'
             '        <a href="javascript:history.back()" class="back-link">← 返回日报</a>\n'
-            '        <div class="detail-card">\n'
-            '            ' + render_summary(summary) + '\n'
-            '        </div>\n'
+            + content_html + '\n'
             + tags_html + '\n'
             '        <div class="detail-why">💡 ' + why + '</div>\n'
             '        <a href="' + url + '" target="_blank" class="original-link">📖 阅读英文原文 →</a>\n'
@@ -641,6 +673,129 @@ class PageGenerator:
             )
         return html
 
+    # ─── OpenClaw 更新页面 ──────────────────────────────────────────
+
+    def generate_openclaw_updates(self, json_path: str = 'data/openclaw-updates.json',
+                                  output_path: str = 'openclaw-updates.html') -> str:
+        releases, last_updated = self._load_openclaw_updates(json_path)
+        html = self._build_openclaw_html(releases, last_updated)
+        os.makedirs(os.path.dirname(output_path) or '.', exist_ok=True)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(html)
+        return output_path
+
+    def _load_openclaw_updates(self, json_path: str) -> tuple:
+        if os.path.exists(json_path):
+            try:
+                with open(json_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                releases = data.get('releases', [])
+                last_updated = data.get('last_updated', '')
+                return releases, last_updated
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"[OpenClawGenerator] 加载失败: {e}")
+        return [], ''
+
+    def _build_openclaw_html(self, releases: List[Dict], last_updated: str) -> str:
+        releases_html = self._render_openclaw_releases(releases)
+
+        html = (
+            '<!DOCTYPE html>\n'
+            '<html lang="zh-CN">\n'
+            '<head>\n'
+            '    <meta charset="UTF-8">\n'
+            '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
+            '    <title>OpenClaw 更新记录</title>\n'
+            '    <style>\n'
+            + THEME_CSS + '\n'
+            + self._openclaw_css() + '\n'
+            '    </style>\n'
+            '</head>\n'
+            '<body>\n'
+            '    <header>\n'
+            '        <h1>🦄 OpenClaw 更新记录</h1>\n'
+            '        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>\n'
+            '        <p class="last-updated">最后更新：' + last_updated + '</p>\n'
+            '    </header>\n'
+            '\n'
+            '    <main>\n'
+            '        <a href="index.html" class="back-link">← 返回日报</a>\n'
+            '        <div class="release-count">共 ' + str(len(releases)) + ' 个正式版本</div>\n'
+            '        <div class="release-list" id="releases">\n'
+            + releases_html + '\n'
+            '        </div>\n'
+            '    </main>\n'
+            '\n'
+            '    <footer>\n'
+            '        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>\n'
+            '    </footer>\n'
+            '</body>\n'
+            '</html>'
+        )
+        return html
+
+    def _openclaw_css(self) -> str:
+        return (
+            '        .release-list { display: flex; flex-direction: column; }\n'
+            '        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }\n'
+            '        .release:first-child { border-top: 1px solid var(--border-soft); }\n'
+            '        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }\n'
+            '        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }\n'
+            '        .release-title:hover { color: var(--brand-light); text-decoration: underline; }\n'
+            '        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }\n'
+            '        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }\n'
+            '        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }\n'
+            '        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }\n'
+            '        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }\n'
+            '        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }\n'
+            '        .release-section { margin-bottom: 16px; }\n'
+            '        .release-section:last-child { margin-bottom: 0; }\n'
+            '        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }\n'
+        )
+
+    def _render_openclaw_releases(self, releases: List[Dict]) -> str:
+        if not releases:
+            return '<div class="no-updates">暂无更新记录</div>'
+
+        html = ''
+        for release in releases:
+            tag_name = release.get('tag_name', '')
+            name = release.get('name', tag_name)
+            html_url = release.get('html_url', '#')
+            published = release.get('published_at', '')[:10]
+            features = release.get('features', '')
+            bug_fixes = release.get('bug_fixes', '')
+
+            sections_html = ''
+            if features:
+                sections_html += (
+                    '<div class="release-section">\n'
+                    '    <div class="release-section-title">🆕 新增功能</div>\n'
+                    '    <div class="release-card">' + render_summary(features) + '</div>\n'
+                    '</div>'
+                )
+            if bug_fixes:
+                sections_html += (
+                    '<div class="release-section">\n'
+                    '    <div class="release-section-title">🐛 Bug 修复</div>\n'
+                    '    <div class="release-card">' + render_summary(bug_fixes) + '</div>\n'
+                    '</div>'
+                )
+
+            html += (
+                '<div class="release">\n'
+                '    <div class="release-header">\n'
+                '        <div style="display:flex;align-items:center;flex-wrap:wrap;">\n'
+                '            <a href="' + html_url + '" target="_blank" class="release-title">' + name + '</a>\n'
+                '            <span class="release-tag">' + tag_name + '</span>\n'
+                '        </div>\n'
+                '        <span class="release-date">' + published + '</span>\n'
+                '    </div>\n'
+                + sections_html + '\n'
+                '</div>'
+            )
+        return html
+
 
 if __name__ == '__main__':
     gen = PageGenerator()
@@ -650,3 +805,5 @@ if __name__ == '__main__':
     print(f'Generated {len(detail_paths)} detail pages')
     hermes_out = gen.generate_hermes_updates()
     print(f'Generated: {hermes_out}')
+    openclaw_out = gen.generate_openclaw_updates()
+    print(f'Generated: {openclaw_out}')

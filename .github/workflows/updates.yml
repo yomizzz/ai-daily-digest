@@ -1,0 +1,92 @@
+name: AI Daily Digest Updates
+
+on:
+  schedule:
+    # 上海时间 11:00 = UTC 03:00，每日抓取过去 24 小时内的 hermes-agent 和 openclaw 更新
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+    inputs:
+      hermes_mode:
+        description: 'Hermes 运行模式'
+        required: false
+        default: 'skip'
+        type: choice
+        options:
+          - skip
+          - incremental
+          - initial
+      openclaw_mode:
+        description: 'OpenClaw 运行模式'
+        required: false
+        default: 'skip'
+        type: choice
+        options:
+          - skip
+          - incremental
+          - initial
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install httpx
+
+      # ── Hermes ──────────────────────────────────────────────────
+
+      - name: Fetch hermes-agent releases
+        if: inputs.hermes_mode != 'skip' || github.event_name == 'schedule'
+        env:
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+        run: |
+          MODE="${{ inputs.hermes_mode || 'incremental' }}"
+          FORCE_FLAG=""
+          if [ "$MODE" = "initial" ]; then FORCE_FLAG="--force"; fi
+          echo "Hermes 模式: $MODE, force: $FORCE_FLAG"
+          python src/hermes_updater.py "$MODE" $FORCE_FLAG
+
+      # ── OpenClaw ────────────────────────────────────────────────
+
+      - name: Fetch openclaw releases
+        if: inputs.openclaw_mode != 'skip' || github.event_name == 'schedule'
+        env:
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+        run: |
+          MODE="${{ inputs.openclaw_mode || 'incremental' }}"
+          FORCE_FLAG=""
+          if [ "$MODE" = "initial" ]; then FORCE_FLAG="--force"; fi
+          echo "OpenClaw 模式: $MODE, force: $FORCE_FLAG"
+          python src/openclaw_updater.py "$MODE" $FORCE_FLAG
+
+      # ── 生成页面 ─────────────────────────────────────────────────
+
+      - name: Generate HTML pages
+        run: |
+          python src/generator.py
+
+      # ── 提交 ────────────────────────────────────────────────────
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update digest: $(date +'%Y-%m-%d %H:%M')"
+            git push
+          fi
