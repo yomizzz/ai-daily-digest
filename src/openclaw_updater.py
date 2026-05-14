@@ -306,14 +306,18 @@ def run_initial(summarizer_api_key: str, force: bool = False):
         updated_releases.append(release_out)
 
         if html_url not in existing_urls:
+            features = result.get("features", "无")
+            bug_fixes = result.get("bug_fixes", "无")
+            combined = (features if features else "") + ("\n\n🐛 Bug 修复：" + bug_fixes if bug_fixes and bug_fixes != "无" else "")
             entry = {
                 "title": name,
                 "url": html_url,
                 "source": "openclaw",
                 "published": to_shanghai(r.get("published_at", "")),
                 "category": "openclaw",
-                "features": result.get("features", ""),
-                "bug_fixes": result.get("bug_fixes", ""),
+                "summary": combined,
+                "features": features,
+                "bug_fixes": bug_fixes,
                 "why_matters": "查看新增功能与 Bug 修复详情",
                 "tags": "OpenClaw",
             }
@@ -380,14 +384,18 @@ def run_incremental(summarizer_api_key: str):
         release_out["bug_fixes"] = result.get("bug_fixes", "无")
         updated_releases.append(release_out)
 
+        features = result.get("features", "无")
+        bug_fixes = result.get("bug_fixes", "无")
+        combined = (features if features else "") + ("\n\n🐛 Bug 修复：" + bug_fixes if bug_fixes and bug_fixes != "无" else "")
         entry = {
             "title": name,
             "url": html_url,
             "source": "openclaw",
             "published": to_shanghai(r.get("published_at", "")),
             "category": "openclaw",
-            "features": result.get("features", ""),
-            "bug_fixes": result.get("bug_fixes", ""),
+            "summary": combined,
+            "features": features,
+            "bug_fixes": bug_fixes,
             "why_matters": "查看新增功能与 Bug 修复详情",
             "tags": "OpenClaw",
         }
