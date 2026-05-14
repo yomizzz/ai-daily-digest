@@ -299,11 +299,32 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Dreaming/memory-wiki：添加 ChatGPT 导入功能，新增&quot;Imported Insights&quot;和&quot;Memory Palace&quot;日记子标签，支持直接从 UI 查看导入的源聊天和编译的 wiki 页面
+Control UI/webchat：将助手媒体/回复/语音指令渲染为结构化聊天气泡，添加富输出标签，外部嵌入 URL 受配置限制
+Tools/video_generate：支持纯 URL 资产传递、类型化 providerOptions、参考音频输入、per-asset 角色提示和 adaptive 宽高比，提高图像输入上限
+Feishu：改进文档评论会话，支持更丰富的上下文解析、评论反应和输入反馈
+Microsoft Teams：新增反应支持、Graph 分页和委托 OAuth 设置
+Plugins：允许插件清单声明激活和设置描述符，插件可描述所需认证和配置步骤
+Ollama：缓存模型上下文窗口和功能元数据，减少重复刷新时的重复请求
+Models/providers：在调试日志中显示 OpenAI 兼容端点的分类，便于诊断路由问题
+QA/parity：添加 GPT-5.4 vs Opus 4.6 代理功能对比报告</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>OpenAI/Codex OAuth：修复新 Codex 登录时 scope 重写导致的 invalid_scope 错误
+Audio transcription：仅对 OpenAI 兼容请求禁用固定 DNS，修复 OpenAI、Groq、Mistral 转录问题
+macOS/Talk Mode：首次授权麦克风权限后直接启动 Talk Mode，无需二次切换
+Control UI/webchat：TTS 音频回复持久化到聊天历史，混合工具输出正确配对消息
+WhatsApp：正确使用配置的默认账户，避免被错误注册为 default
+ACP/agents：抑制子助手内部进度消息泄漏到父会话
+Agents/timeouts：LLM 空闲看门狗正确尊重显式运行超时配置
+Config：zod schema 包含 asyncCompletion 配置项
+Google/Veo：移除不支持的 numberOfVideos 字段，修复 Gemini Veo 调用
+QA/packaging：npm 发布包含打包的 QA 场景，CLI 启动不受仓库 QA 配置影响
+Codex/QA：隐藏应用服务器协调消息，泄漏的测试元数据正确识别为 QA 失败
+WhatsApp：消息反应通过网关路径路由，DM 和群聊均使用实时监听器
+Auto-reply/WhatsApp：图像理解后保留附件真实路径，图像编辑不再丢失媒体
+Telegram/sessions：入站消息缺少 MessageThreadId 时正确初始化主题会话</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

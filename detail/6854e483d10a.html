@@ -299,32 +299,34 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Android 重新设计聊天设置界面
-Docker 添加 OPENCLAW_TZ 时区支持
-iOS 添加 onboarding 欢迎页面
-Slack 添加可选的交互式回复指令</p></div>
+    <div class="detail-card"><p>Android聊天设置UI重新设计
+Docker支持OPENCLAW_TZ时区环境变量配置
+iOS添加入职欢迎引导页面
+Android使用Google Code Scanner进行二维码扫描
+Slack支持可选的交互式回复指令
+UI移动端导航抽屉和主题变体优化</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Telegram：将线程媒体传输策略纳入 SSRF 安全检查
-Discord：处理网关元数据获取失败情况
-会话重置时保留 lastAccountId 和 lastThreadId
-压缩后使用完整会话 token 计数进行合理性检查
-Agents 响应中删除 Anthropic thinking 块
-修复内存文件在大小写不敏感挂载时重复注入
-Android 修复 HttpURLConnection 内存泄漏
-修复 Agents 配置验证模式缺少 params 字段
-Android 使用 Google Code Scanner 进行 QR onboarding
-恢复 Web fetch firecrawl 配置
-Signal 添加 groups 配置到通道模式
-宽区域发现 Zod 配置添加缺失的 domain 字段
-不安全 control-ui 连接时保留共享认证
-压缩摘要中保留 persona 和语言连续性
-跨 agent 子 agent 生成时正确解析目标工作区
-Ollama 隐藏本地推理-only 输出
-Windows 重启时抑制可见控制台窗口
-Docker 防止网关令牌在构建上下文中泄露
-UI 恢复滚动按钮的 chat-new-messages 样式</p></div>
+    <div class="detail-card"><p>修复compaction使用完整会话token计数进行压缩后校验
+修复Telegram媒体传输策略的SSRF安全问题
+修复Discord网关获取元数据失败的处理逻辑
+修复会话重置时丢失lastAccountId和lastThreadId的问题
+修复agent回放时Anthropic思考块被错误丢弃
+修复大小写不敏感挂载时内存文件被重复注入
+修复Android TalkModeVoiceResolver的HttpURLConnection内存泄漏
+修复agent会话重置提示触发Azure内容过滤器的问题
+修复config中agents.list验证schema缺少params字段
+修复web fetch firecrawl配置在zod schema中丢失
+修复Signal channel schema缺少groups配置
+修复discovery的wideArea配置缺少domain字段
+修复不安全连接下control-ui共享认证丢失
+修复compaction摘要中人格和语言不一致
+修复跨代理子代理工作区解析错误
+修复ollama纯推理输出未被隐藏
+修复滚动药丸按钮丢失chat-new-messages样式
+修复Windows重启时控制台窗口闪烁问题
+修复Docker构建时网关令牌泄漏的安全漏洞</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

@@ -299,15 +299,17 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Heartbeat UX：默认10分钟间隔；支持`HEARTBEAT ultrathink`命令；`HEARTBEAT_OK`可抑制发送；跳过的心跳不刷新会话；回退心跳不再启动新会话；支持`heartbeatIdleMinutes`配置
-Heartbeat工具：新增`warelay heartbeat --session-id`、relay `--heartbeat-now`命令及`warelay relay:heartbeat`、`warelay relay:heartbeat:tmux`辅助命令
-Prompt结构优化：一次性`sessionIntro`、每条消息`ultrathink`前缀；会话空闲过期时间可配置（默认7天）
-健壮性增强：WebSocket错误防护和全局未处理异常处理；Baileys @lid解析修复；Webhook媒体托管使用共享主机模块（测试覆盖）
-文档更新：README突出Clawd；docs/claude-config.md更新配置说明、心跳行为和主目录信息</p></div>
+    <div class="detail-card"><p>心跳默认间隔从默认改为 10 分钟，支持 `heartbeatIdleMinutes` 配置
+新增 `HEARTBEAT ultrathink` 提示符，`HEARTBEAT_OK` 可抑制心跳发送
+新增命令 `warelay heartbeat --session-id`、中继 `--heartbeat-now` 及 `warelay relay:heartbeat` 辅助命令
+Prompt 结构支持一次性 `sessionIntro` 和每消息 `ultrathink` 前缀
+会话闲置 7 天后自动过期（可配置）</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>无</p></div>
+    <div class="detail-card"><p>跳过的心跳不再错误刷新会话，后备心跳不再意外启动新会话
+WebSocket 错误添加保护，全局未处理异常增加处理器
+修复 Baileys @lid 解析问题</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

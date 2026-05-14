@@ -299,11 +299,25 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>安全：跨提供商默认锁定DMs，新增多对多配对优先+白名单机制
+沙箱：新增每个代理范围默认值和工作区访问控制，工具/会话隔离增强
+代理循环：新增压缩、修枝、流式处理功能，错误处理大幅加强
+提供商：Telegram/WhatsApp/Discord/Slack可靠性、线程、反应、媒体、重试全面改进
+控制UI：新增日志标签、流式稳定性、焦点模式、大型输出渲染优化
+CLI/Gateway/Doctor：守护进程/日志/状态诊断大幅扩展
+新增 `/compact` 命令支持手动压缩会话上下文
+新增 Himalaya email、CodexBar、1Password 技能集成
+新增 FAQ/ClawdHub/配置示例/展示文档</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>CLI/Gateway/Doctor：修复守护进程运行时选择、日志/状态/健康/错误显示，添加 `--yes`/`--non-interactive` 和 `--deep` 扫描选项
+代理循环+压缩：修复压缩/修枝调优、溢出处理、引导上下文安全问题及多提供商线程/确认流程
+沙箱+工具：修复每个代理沙箱覆盖、工作区访问控制、进程隔离和工具超时/反应问题
+提供商：修复 Telegram/WhatsApp/Discord/Slack/Signal/iMessage 的重试/退避、线程、反应、媒体组、提及门控问题
+控制UI/Web：修复日志标签、焦点模式、配置表单、流式稳定性、聊天历史窗口化问题
+macOS/Android/TUI/Build：修复 macOS 网关竞态、QR 打包、JSON5 配置安全、Voice Wake、Android EXIF 旋转和 APK 版本命名问题
+依赖兼容性：修复 npm 包覆盖、Node 25 qrcode-terminal 导入、Bun/Playwright/WebSocket 兼容性</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

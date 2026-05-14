@@ -299,12 +299,10 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Web 自动回复支持媒体调整压缩、类型检测和提供商限制
-支持可选 sessionIntro 控制仅发送一次系统提示
-打字指示器支持可配置刷新间隔
-新增语音笔记转录功能，Transcript 块和媒体路径可传入提示词
-命令自动回复返回结构化 {payload, meta}，超时消息包含命令工作目录
-新增命令和转录功能的聚焦测试</p></div>
+    <div class="detail-card"><p>Web自动回复支持调整压缩媒体、遵守mediaMaxMb限制、检测媒体类型并执行提供商限制
+会话支持仅发送一次系统提示（sessionIntro），打字指示器支持可配置刷新间隔
+新增语音转录功能，可将Transcript块和媒体路径注入回复提示
+命令自动回复返回结构化{payload, meta}，支持mediaMaxMb限制、Claude元数据记录和cwd超时提示</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>

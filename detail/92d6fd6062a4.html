@@ -299,23 +299,24 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>新增 Anthropic Opus 4.6 和 OpenAI Codex gpt-5.3-codex 模型支持（带前向兼容回退）
-新增 xAI (Grok) 提供商支持
-Web UI 新增 token 使用量仪表板
-Memory 模块新增原生 Voyage AI 支持
-Sessions 对历史负载进行上限控制，减少上下文溢出
-CLI 命令帮助信息按字母顺序排列</p></div>
+    <div class="detail-card"><p>Models: 支持 Anthropic Opus 4.6 和 OpenAI Codex gpt-5.3-codex 模型（向前兼容回退）
+Providers: 新增 xAI (Grok) 支持
+Web UI: 添加 token 使用量仪表板
+Memory: 原生支持 Voyage AI
+Sessions: 限制 sessions_history 负载以减少上下文溢出
+CLI: 帮助输出中的命令按字母顺序排序</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Telegram: 修复 DM topic threadId 自动注入问题
-Security: 修复 Gateway canvas host 和 A2UI 资产的认证漏洞
-Cron: 修复定时任务调度和提醒发送的回归问题
-Security: 新增 skill/plugin 代码安全扫描器；修复配置响应中的凭证泄露
-Exec approvals: 修复白名单字符串格式转换问题
-Slack: 修复 /new 和 /reset 命令的提及过滤问题
-Chrome 扩展: 修复打包路径解析问题
-Compaction: 允许上下文溢出时多次压缩重试；显示明确的计费错误信息</p></div>
+    <div class="detail-card"><p>Telegram: 自动注入 DM topic threadId 到消息工具和子代理通知
+Security: Gateway canvas 主机和 A2UI 资产要求身份验证
+Cron: 修复调度和提醒传递回归问题，强化定时器逻辑
+Update: 强化更新流程中 Control UI 资产处理
+Security: 添加 skill/plugin 代码安全扫描器，从配置响应中清除凭据
+Exec approvals: 将字符串格式的允许列表条目强制转换为对象
+Slack: 为 /new 和 /reset 命令添加 mention stripPatterns
+Chrome extension: 修复捆绑路径解析问题
+Compaction/errors: 允许上下文溢出时多次压缩重试，显示明确计费错误</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

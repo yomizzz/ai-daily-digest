@@ -299,34 +299,34 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Discord: 支持从本地音频文件发送带波形预览的语音消息（含静默投递）
-Discord: 新增可配置的在线状态/活动/类型/URL
-Slack/Plugins: 添加线程所有权出站 gating，支持 @-mention 绕过追踪
-Agents: 新增 `hf:zai-org/GLM-5` 合成目录支持
-Agents: 添加预提示上下文诊断，便于溢出调试
-Onboarding/Providers: 新增 Hugging Face Inference 官方支持及认证流程
-Skills: 移除重复的 `local-places`，统一使用 `goplaces`</p></div>
+    <div class="detail-card"><p>Discord: 支持从本地音频文件发送带波形预览的语音消息（包括静音投递）
+Discord: 添加可配置的存在状态/活动/类型/URL（自定义状态默认活动文本）
+Slack/Plugins: 添加线程所有权出站门控，支持通过 message_sending 钩子实现取消/修改行为
+Agents: 添加 hf:zai-org/GLM-5 的合成目录支持
+Skills: 移除重复的 Google Places 技能，统一使用 goplaces
+Agents: 添加预提示上下文诊断功能，改善溢出调试
+Onboarding/Providers: 添加 Hugging Face Inference 提供商支持及完整认证流程</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Outbound: 添加写前式投递队列，防止网关重启后消息丢失
-Auto-reply: 自动注入隐式回复线程，使 `replyToMode` 无需模型显式标记即可生效
-Outbound/Threading: 透传 `replyTo` 和 `threadId`，保留线程/回复路由
-Auto-reply/Media: 允许纯图片消息触达 agent，支持媒体仅运行的上下文保留
-Discord: 修复自动线程回复路由至现有线程而非根频道
-Web UI: 允许 markdown 图片渲染，添加 `img` 标签及属性白名单
-Telegram/Matrix: 将 MP3/M4A 识别为语音兼容格式
-WhatsApp: 修复出站文档文件名始终显示为 &quot;file&quot;
-Telegram: 命令菜单限制 100 条，防止超出限制
-Telegram: 作用域 skill 命令至指定 agent，避免多 agent 配置冲突
-Discord: 修复数字 guild 白名单被误路由，添加 `guild:` 前缀
-MS Teams: 保留 mention entities，兼容更广泛的 Teams mention ID 格式
-Media: 将 `text/*` MIME 类型归类为文档
-Inbound/Web UI: 保留 `\n` 序列，防止 Windows 路径被损坏
-TUI/Streaming: 最终负载丢失时保留流式助手文本内容
-Providers/MiniMax: 修复 API-key 提供商配置，解决 `invalid role: developer` 错误
-Ollama/Agents: 使用解析后的基础 URL，规范化 `/v1` 端点，支持中止和 token 限制
-OpenAI Codex/Spark: 实现 `gpt-5.3-codex-spark` 端到端支持</p></div>
+    <div class="detail-card"><p>Outbound: 添加写前投递队列和崩溃恢复重试，防止网关重启后消息丢失
+Auto-reply/Threading: 自动注入隐式回复线程，使 replyToMode 无需模型显式发出
+Outbound/Threading: 将 replyTo 和 threadId 从消息发送工具传递到通道适配器
+Auto-reply/Media: 允许纯图片消息（无标题）正常到达代理
+Discord: 将自动线程回复路由到现有线程而非根频道
+Web UI: 修复 markdown 图片在 webchat 中被过滤的问题
+Telegram/Matrix: 将 MP3/M4A 视为语音兼容格式
+WhatsApp: 保留出站文档文件名而非总是发送 &quot;file&quot;
+Telegram: 限制 bot 命令菜单为 100 条，避免 TOO_MUCH 错误
+Telegram: 将技能命令限定在当前代理范围
+Discord: 修正数字公会白名单被错误路由的问题
+MS Teams: 接受更广泛的真实 Teams 提及 ID 格式
+Media: 将 text/* MIME 类型正确分类为文档
+Inbound/Web UI: 保留字面 \n 序列，避免 Windows 路径被损坏
+TUI/Streaming: 在最终载荷缺少文本块时保留流式文本
+Providers/MiniMax: 修正 MiniMax API 密钥提供商的路径，修复角色错误
+Ollama/Agents: 使用解析后的基础 URL 进行流式传输，支持中止和令牌限制
+OpenAI Codex/Spark: 实现端到端 gpt-5.3-codex-spark 支持</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

@@ -299,11 +299,25 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>新增 `openclaw infer` 一级命令，支持 model、media、web、embedding 任务的 provider-backed 推理工作流
+媒体生成支持跨 image/music/video provider 自动回退，保留意图并映射参数到最近支持的选项
+恢复 memory-wiki 堆栈，包含 plugin、CLI、sync/query/apply 工具及 claim-health linting
+新增 webhook 入口 plugin，支持外部自动化通过共享密钥端点创建和驱动 TaskFlows
+会话持久化新增压缩检查点保存及分支/恢复操作，便于检查和恢复压缩前状态
+新增可插拔压缩 provider 注册表，支持插件替换内置 summarization pipeline
+新增 `agents.defaults.systemPromptOverride` 配置，用于受控的 prompt 实验
+新增 Google Gemma 4 模型支持，修复原生 Google Gemma 路由回退逻辑
+新增 Arcee AI provider plugin，包含 Trinity catalog 集成和 OpenRouter 支持
+恢复 Claude CLI 作为本地 Anthropic 首选路径，修复 Docker Claude CLI 支持
+Ollama 检测 vision 能力，自动设置支持 vision 的模型的图像输入
+Memory/dreaming 支持将重标识的会话记录摄取到 dream corpus
+Context engines 暴露 availableTools、citationsMode 及 memory-artifact 状态</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>修复 CLI/infer 的 TTS 处理、web-search 配置行为、agent-vs-CLI 执行差异等问题
+修复 media capability fallback 未合并 bundled capability plugin ids 的问题
+修复 history 序列跟踪、评论/工具 XML 隐藏、follow-up 回复仅基于 final_answer 等问题</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

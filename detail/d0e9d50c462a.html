@@ -299,34 +299,28 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Telegram: 完全移除 `@ts-nocheck`，使用 Grammy 类型直接定义，删除 StickerMetadata 重复代码
-Onboarding: 新增 Cloudflare AI Gateway 提供商设置和文档
-Onboarding: 新增 Moonshot (.cn) 认证选项并保留中国区基础 URL
-Messages: 支持按渠道和账户覆盖 responsePrefix 配置
-Cron: 新增 isolated jobs 的 announce 投递模式及控制面板配置
-Cron: isolated jobs 默认改为 announce 投递；支持 ISO 8601 schedule.at 输入格式
-Cron: 一次性任务成功后默认删除；CLI 新增 `--keep-after-run` 选项
-Cron: announce 投递时抑制消息工具以确保摘要一致性
-Shell completion: 自动检测并迁移慢速动态模式到缓存文件，加快终端启动速度</p></div>
+    <div class="detail-card"><p>Telegram：移除所有 `@ts-nocheck`，全面使用 Grammy 和原生 Telegram 类型
+Onboarding：新增 Cloudflare AI Gateway 提供商配置和文档
+Onboarding：新增 Moonshot（.cn）认证选项，保留中国区 base URL
+Messages：支持每个通道和每个账户独立配置 responsePrefix
+Cron：新增 announce 投递模式，支持 CLI 和 Control UI 配置
+Cron：isolated jobs 默认使用 announce 投递，接受 ISO 8601 schedule.at
+Cron：one-shot jobs 执行成功后默认删除，新增 `--keep-after-run` 选项
+Shell completion：自动检测并迁移慢速动态模式到缓存文件，加快终端启动</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Heartbeat: 支持多账户渠道的显式 accountId 路由
-TUI/Gateway: 处理非流式最终响应，刷新非本地聊天历史，避免目标工具流的事件间隙警告
-Telegram: 修复内联模型选择中的会话模型覆盖失效问题
-Web UI: 修复代理模型选择保存和长工作区路径换行显示
-Web UI: 修复设置 `basePath` 后的 header logo 路径解析
-Onboarding: 从非交互式 API key 参数自动推断认证选择
-Security: 阻止不受信任渠道元数据进入系统提示
-Security: 强制消息工具附件使用沙箱化媒体路径
-Security: 要求显式凭证才能覆盖网关 URL，防止凭证泄露
-Security: 将 whatsapp_login 工具限制为仅所有者发送者可用
-Voice call: 加强 webhook 验证的主机白名单和代理信任机制
-Voice call: 新增匿名来电 ID 与白名单策略的回归测试
-Cron: 接受 epoch 时间戳和 0ms 持续时间；文件重建或 mtime 变化时重载存储
-Cron: 直接投递 announce 任务并正确处理投递模式和 wakeMode
-Telegram: 正确包含 forward_from_chat 元数据并加强 cron 投递目标验证
-macOS: 修复 cron 负载摘要渲染和 ISO 8601 格式化器并发安全问题</p></div>
+    <div class="detail-card"><p>Heartbeat：支持多账户通道的显式 accountId 路由
+TUI/Gateway：处理非流式完成，刷新非本地聊天历史，避免工具流事件间隙警告
+Telegram：内联模型选择时正确遵守会话模型覆盖
+Web UI：修复 agent 模型选择保存问题，修复长工作区路径显示
+Onboarding：从非交互式 API 密钥标志自动推断认证选项
+Security：阻止不受信任通道元数据进入系统提示词，强制媒体路径沙箱隔离
+Security：网关 URL 覆盖需显式凭证，whatsapp_login 工具限制为所有者发送者
+Voice call：强化 webhook 验证保护，支持匿名来电白名单策略
+Cron：支持 epoch 时间戳和零毫秒时长解析，监听文件重建/mtime 变化
+Telegram：转发消息包含 forward_from_chat 元数据
+macOS：修复 cron 摘要渲染和 ISO 8601 格式化并发安全</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

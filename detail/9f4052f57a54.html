@@ -299,22 +299,25 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>新增 Active Memory 插件，提供专用记忆子代理，支持配置化上下文模式和实时检查（`/verbose`）
-macOS Talk 模式新增实验性本地 MLX 语音提供者，支持本地播放和系统语音回退
-添加 `openclaw exec-policy` 命令，同步工具执行配置与本地审批文件
-Gateway 新增 `commands.list` RPC，支持远程客户端发现运行时命令
-新增 LM Studio 集成，支持本地/自托管 OpenAI 兼容模型的发现和流式传输
-新增 Codex 提供者，使用 Codex 管理的认证和模型发现
-添加 `openclaw qa telegram` 实时测试通道和 `--runner multipass` QA 测试车道
-Matrix 协议支持 MSC4357 实时标记，草稿发送和编辑时支持打字机动画
-插件加载机制优化，按清单声明的需求限制激活范围，减少无关运行时加载
-Control UI/Dreaming 简化 Scene 和 Diary 界面，稳定状态排序</p></div>
+    <div class="detail-card"><p>Active Memory 插件：新增专用记忆子代理，在主回复前自动提取偏好、上下文和历史细节，支持多种上下文模式和调试转录持久化
+macOS 本地 MLX 语音提供商：为 Talk 模式新增实验性本地语音支持，支持本地播放、打断处理和系统语音回退
+exec-policy 命令：新增 `openclaw exec-policy` 命令用于同步 tools.exec.* 配置与本地执行审批文件
+commands.list RPC：新增 RPC 接口让远程 gateway 客户端可发现运行时命令及其参数元数据
+私有网络请求配置：为自托管 OpenAI 兼容端点添加 per-provider `request.allowPrivateNetwork` 配置
+多 Pass 测试运行：新增 `--runner multipass` 支持在 Linux VM 中运行 QA 测试场景
+Dreaming UI 简化：简化 Scene 和 Diary 界面，稳定状态显示和列表排序逻辑
+Matrix 实时编辑标记：添加 MSC4357 实时标记，支持 Matrix 客户端显示打字机动画效果
+Telegram QA 通道：新增实时 Telegram 私群机器人测试功能
+Codex 提供商：新增捆绑 Codex 提供商，使用 Codex 管理的认证和线程处理
+LM Studio 提供商：新增捆绑 LM Studio 提供商，支持本地模型发现和流式预加载
+插件加载优化：按 manifest 声明精确激活插件，减少无关运行时加载
+QMD 内存搜索增强：默认启用搜索模式，优化内存回溯的可预测性</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>移除 busybox/toybox 解释器类安全二进制文件
-防止空审批列表绕过授权机制
-扩展 shell-wrapper 检测，阻止 env-argv 注入攻击</p></div>
+    <div class="detail-card"><p>安全修复：从安全二进制列表移除 busybox/toybox 解释器
+安全修复：防止空审批者列表被授予显式批准权限
+安全修复：扩展 shell 包装检测，阻止 env-argv 注入攻击</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

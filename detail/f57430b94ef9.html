@@ -299,11 +299,32 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>聊天&quot;providers&quot;重命名为&quot;channels&quot;，支持自动迁移配置
+Memory：新增向量搜索功能，支持Markdown记忆的SQLite索引、分块、懒同步和文件监听
+Plugins：恢复完整语音通话插件功能（Telnyx/Twilio、流式、入站策略、工具/CLI）
+Models：新增Synthetic provider和Moonshot Kimi K2 0905模型及变体
+Cron：支持ISO时间戳一次性调度，可选删除后运行
+Agents：新增压缩模式配置，支持防护摘要和每agent模型回退
+Memory：支持自定义OpenAI兼容嵌入端点和本地node-llama-cpp嵌入
+新增`clawdbot memory` CLI和`memory_search`/`memory_get`工具
+工具配置文件和组快捷方式，支持Docker bind mounts
+浏览器`scrollintoview`操作，支持Claude/Gemini工具参数别名
+Tailscale二进制发现、自定义绑定模式和探测认证重试
+新增Chutes OAuth认证和API密钥输入规范化
+安装后自动运行诊断并提示守护进程重启</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>修复pnpm工作区不匹配、缺失UI资源和tsx二进制的警告
+修复凭证验证失败触发回退和环境变量apiKey规范化
+修复无效认证配置导致环境密钥无法使用
+修复Gemini 3 ID规范化和工具调用ID处理
+修复压缩上下文溢出自动恢复机制
+修复MiniMax畸形工具调用XML
+修复遵循CLAWDBOT_AGENT_DIR目录配置
+修复Anthropic过载错误友好消息和用户轮次合并
+修复消息工具发送上下文隔离和打字指示器保持
+修复`/status`白名单行为和推理标签强制执行</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

@@ -69,7 +69,7 @@
           "state": "uploaded",
           "size": 37797184,
           "digest": "sha256:4cf6a5dfdab821b865949fe51134f2caf1a4e7e854e014953aeba61c0c132bb8",
-          "download_count": 14497,
+          "download_count": 14540,
           "created_at": "2026-05-07T22:39:11Z",
           "updated_at": "2026-05-07T22:39:14Z",
           "browser_download_url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.7/OpenClaw-2026.5.7.dmg"
@@ -105,7 +105,7 @@
           "state": "uploaded",
           "size": 35175793,
           "digest": "sha256:cef9b25af11e8826ccfccf2515118a0548f62c610904256a094d3fa7b21df7e0",
-          "download_count": 1131,
+          "download_count": 1133,
           "created_at": "2026-05-07T22:39:11Z",
           "updated_at": "2026-05-07T22:39:14Z",
           "browser_download_url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.7/OpenClaw-2026.5.7.dSYM.zip"
@@ -141,7 +141,7 @@
           "state": "uploaded",
           "size": 51130645,
           "digest": "sha256:d5a880b76df2a797a5b08326385a7ca80b07f0ff2ccb470f329bc6b36b1f639a",
-          "download_count": 16784,
+          "download_count": 16829,
           "created_at": "2026-05-07T22:39:11Z",
           "updated_at": "2026-05-07T22:39:15Z",
           "browser_download_url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.7/OpenClaw-2026.5.7.zip"
@@ -152,8 +152,8 @@
       "body": "\n### Fixes\n\n- Release/plugin publishing: retry transient ClawHub CLI dependency install failures, keep preview-passing plugins publishable when one preview cell flakes, and verify every expected ClawHub package version after publish so maintenance releases are faster to recover and less likely to hide partial plugin publishes.\n- OpenAI: support `openai/chat-latest` as an explicit direct API-key model override for trying the moving ChatGPT Instant API alias without changing the stable default model.\n- Cron CLI: include computed `status` in `cron list --json` and `cron show --json` output so external tooling can read disabled/running/ok/error/skipped/idle state without reimplementing cron status derivation. (#78701) Thanks @aweiker.\n- Channels CLI: make `openclaw channels list` channel-only, add `--all` for bundled and catalog channels, render installed/configured/enabled state, and move model auth/usage details to `openclaw models auth list`, `openclaw status`, and `openclaw models list`. (#78456) Thanks @sliverp.\n- Native commands: honor owner enforcement for native command handlers. (#78864) Thanks @pgondhi987.\n- Active Memory: require admin scope for global memory toggles. (#78863) Thanks @pgondhi987.\n- Gateway/sessions: clear cached skills snapshots during `/new` and `sessions.reset` so long-lived channel sessions rebuild the visible skill list after skills change. (#78873) Thanks @Evizero.\n- Auto-reply: gate inline skill tool dispatch through before-tool-call authorization hooks. (#78517) Thanks @pgondhi987.\n- Tavily: resolve dedicated `tavily_search` and `tavily_extract` tool credentials from the active runtime config snapshot, so `exec` SecretRef-backed API keys do not reach the tools unresolved. (#78610) Thanks @VACInc.\n- Plugins/install: use the same absolute POSIX npm lifecycle shell for managed plugin install, rollback, repair, and uninstall npm operations as staged package updates, preventing restricted PATH shells from breaking cleanup. Thanks @vincentkoc.\n- Agents/context engine: invalidate cached assembled context views when source history shrinks or assembly fails, preventing stale pre-reset history from being reused. Fixes #77968. (#78163) Thanks @brokemac79 and @ChrisBot2026.\n- Discord/message: parse provider-prefixed targets like `discord:channel:<id>` as channel sends instead of legacy Discord DM targets, so cross-channel agent `message(action=\"send\")` calls no longer misroute channel IDs into misleading `Unknown Channel` failures. Fixes #78572.\n- Agents/compaction: clamp compaction summary reserve tokens to each model's output limit so high-context compaction no longer requests invalid `max_tokens` values. (#54392) Thanks @adzendo.\n- Commands/BTW: show the `/btw` missing-question usage placeholder with brackets so outbound channel sanitization keeps it visible. Fixes #62877. Thanks @RajvardhanPatil07.\n- Cron/doctor: repair persisted cron jobs whose `payload.model` was stored as `\"default\"`, `\"null\"`, blank, or JSON `null` by removing the bad override during `openclaw doctor --fix` while keeping cron runtime model validation strict. Fixes #78549. Thanks @bizzle12368239.\n- Telegram: honor `accessGroup:*` sender allowlists for DMs, groups, native commands, and callback authorization before applying Telegram's numeric sender-ID checks. Fixes #78660. Thanks @manugc.\n- Agent delivery: report `deliverySucceeded=false` when outbound delivery returns no adapter result, so claimed/empty delivery paths no longer masquerade as successful sends. Fixes #78532. Thanks @joeyfrasier.\n- Cron/isolated runs: fail implicit announce delivery before model execution when `delivery.channel=last` has no previous route, so recurring jobs do not spend tokens before hitting a permanent delivery-target error. Fixes #78608. Thanks @sallyom.\n- Gateway/sessions: persist a new generated transcript file when daily gateway-agent session rollover changes the session id, while preserving custom transcript paths. Fixes #78607. Thanks @nailujac, @zerone0x, and @sallyom.\n- Doctor/Codex OAuth: preserve working `openai-codex/*` PI routes during `doctor --fix` and recover 2026.5.5-rewritten `openai/*` GPT-5 routes when only Codex OAuth auth is available, so update repair does not break subscription-auth setups. Fixes #78407. Thanks @shakkernerd.\n- Telegram: keep the polling watchdog tied to `getUpdates` liveness so unrelated outbound Bot API calls cannot mask a wedged inbound poller. Fixes #78422. Thanks @ai-hpc.\n- Agents/subagents: have completed session-mode subagent registry rows honor `agents.defaults.subagents.archiveAfterMinutes` instead of a hardcoded 5-minute TTL, so registry-backed surfaces keep one retention knob across spawn modes. (#78263) Thanks @arniesaha.\n- Plugins/channel setup: forward `setChannelRuntime` from non-bundled external plugin setup entries so deferred external channel runtime initializers are installed before startup polling. Fixes #77779. (#77799) Thanks @openperf.\n- Telegram: treat successful same-chat `message` tool outbound sends during an inbound Telegram turn as delivered when deciding whether to emit the rewritten silent reply fallback. (#78685) Thanks @neeravmakwana.\n- Gateway/tasks: reconcile stale CLI run-context tasks whose live run context disappeared and bound channel hot-reload deferrals so stale task records cannot block Discord/Slack/Telegram reloads forever.\n- Discord/voice: audit Discord voice-channel permissions in `channels capabilities` and `channels status --probe`, including auto-join targets, so missing Connect/Speak/Read Message History permissions show up before `/vc join`.\n- Discord/voice: make voice capture less choppy by extending the default post-speech silence grace to 2.5s, add `voice.captureSilenceGraceMs` for noisy Discord sessions, and tighten the spoken-output prompt around live STT fragments. Thanks @vincentkoc.\n- WhatsApp: route proactive phone-number sends through Baileys LID forward mappings when available, so LID-addressed contacts receive agent messages instead of creating sender-only ghost chats. Fixes #67378. (#74925) Thanks @edenfunf.\n- WhatsApp: send captioned `MEDIA:` directive auto-replies once instead of emitting an empty media message before the captioned media reply. (#78770) Thanks @ai-hpc.\n- Codex/approvals: in Codex approval modes, stop installing the pre-guardian native `PermissionRequest` hook by default so Codex's reviewer can approve safe commands before OpenClaw surfaces an approval, remember `allow-always` decisions for identical Codex native `PermissionRequest` payloads within the active session window, and make plugin approval requests validate/render their actual allowed decisions so Telegram and other native approval UIs cannot offer stale actions. Thanks @shakkernerd.\n- Model providers: normalize APNG sniffed PNG uploads, preserve Gemini 3 tool-call thought-signature replay with fallback signatures, accept legacy `__env__:VAR` custom-provider keys, and repair snake_case tool-call transcript sanitization. Fixes #51881, #48915, #77566, and #42858.\n- Telegram/models: parse provider ids containing dots in `/models` callback buttons so `hf.co` model lists render as inline keyboard buttons. Fixes #38745.\n\n",
       "reactions": {
         "url": "https://api.github.com/repos/openclaw/openclaw/releases/319188139/reactions",
-        "total_count": 94,
-        "+1": 46,
+        "total_count": 95,
+        "+1": 47,
         "-1": 0,
         "laugh": 0,
         "hooray": 0,
@@ -163,8 +163,8 @@
         "eyes": 3
       },
       "mentions_count": 22,
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败"
+      "features": "Plugin 发布支持重试瞬态 ClawHub CLI 依赖安装失败，验证每个预期包版本以加快维护发布\nOpenAI 支持 `openai/chat-latest` 作为显式 API-key 模型覆盖\nCron CLI 在 JSON 输出中包含计算的 `status`，便于外部工具读取状态\nChannels CLI 使 `openclaw channels list` 仅显示频道，添加 `--all` 选项查看捆绑和目录频道\nGateway/sessions 在 `/new` 和 `sessions.reset` 时清除缓存的技能快照\nPlugins/install 使用统一的绝对 POSIX npm 生命周期 shell，防止受限 PATH 导致操作失败\nAgents/context engine 在源历史缩减或组装失败时使缓存上下文视图失效\nAgents/compaction 将压缩摘要保留令牌限制在每个模型的输出限制内\nGateway/sessions 在每日会话轮换时保留新生成的转录文件，同时保持自定义路径\nDoctor/Codex OAuth 修复期间保留工作 PI 路由并恢复 GPT-5 路由\nAgents/subagents 完成会话模式子代理注册行遵循 `archiveAfterMinutes` 而非硬编码 5 分钟\nPlugins/channel setup 转发 `setChannelRuntime` 以便在启动轮询前安装外部通道运行时",
+      "bug_fixes": "Native commands 遵守所有者执行\nActive Memory 全局内存切换需要管理员权限\nAuto-reply 通过 before-tool-call 授权钩子限制内联技能工具调度\nTavily 从活动运行时配置解析 `tavily_search` 和 `tavily_extract` 凭据\nDiscord 正确解析 provider-prefixed 目标如 `discord:channel:<id>`\nTelegram 遵守 `accessGroup:*` 发送者白名单后再应用数字 ID 检查\nAgent delivery 当出站投递无结果时正确报告 `deliverySucceeded=false`\nCron 隐式公告投递在模型执行前失败，避免在永久错误前消耗令牌\nTelegram 将 polling watchdog 绑定到 `getUpdates` 存活状态\nCron/doctor 修复存储为 `\"default\"` 等无效值的 `payload.model`"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/318547856",
@@ -221,7 +221,7 @@
       },
       "mentions_count": 2,
       "features": "无",
-      "bug_fixes": "修复 Doctor/OpenAI Codex 错误地将有效的 OAuth 路由重写为 API 密钥路由的问题（#78407）\n修复插件请求头中的第三方符号元数据导致 SDK 或受保护 fetch 路径被拒绝的问题\n修复调试代理中调用者头对象的符号元数据导致重放请求失败的问题\n修复 Web fetch 超时后未正确清理调度器导致工具通道保持活跃的问题（#78439）"
+      "bug_fixes": "还原 `doctor --fix` 对 `openai-codex/*` OAuth 路由的错误修改，避免破坏 OAuth-only GPT-5.5 配置\n清理请求头中的第三方符号元数据，防止 SDK 和受保护 fetch 路径误拒有效的插件请求\n规范化调试代理捕获的请求头字典，防止符号元数据导致 replay 失败\n限制 Web fetch 超时后的调度器清理，确保超时应返回工具错误而非保持 Gateway 活跃"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/318283205",
@@ -277,8 +277,8 @@
         "eyes": 3
       },
       "mentions_count": 17,
-      "features": "iOS pairing：支持私有 LAN 和 .local 网关的 setup-code 及手动 ws:// 连接\nControl UI/Sessions：新增紧凑的 `N Checkpoint(s)` 披露和现代风格的历史卡片展示\nControl UI/sessions：会话列表新增运行时筛选功能\nDiscord/streaming：进度草稿中显示实时推理文本\nPlugins/diagnostics：TypeScript 包警告新增可操作的说明指引",
-      "bug_fixes": "Feishu：修复首轮和后续消息未保持在同一话题会话的问题（#78262）\nLINE：拒绝无通配符的 `dmPolicy: \"open\"` 配置，防止静默阻塞（#78316）\nTelegram/Codex：修复工具进度草稿重复显示问题（#75641）\nProviders/xAI：停止向 Grok 模型发送不支持的 reasoning effort 参数\nMatrix/approvals：审批传递失败时自动重试 3 次，防止审批提示丢失（#78179）\nDiscord/gateway：修复心跳超时测量，防止误触发重连（#77668）\nDiscord/guilds：修复 `/steer` 等纯文本命令被静默丢弃的问题（#78080）\nExec approvals：Windows 下文件重命名失败时回退到复制操作（#77785）\nSlack：保留 Socket Mode SDK 错误上下文，避免启动失败日志信息丢失\nControl UI/chat：修复历史重载后进度文本消失的问题（#77374）\nControl UI/sessions：修复显式创建会话时才触发 /new 命令和生命周期钩子（#76957）\nTUI：修复终端断开后进程残留和心跳历史问题\nDoctor/sessions：`--fix` 可修复心跳中毒导致的会话卡死问题\nGateway/shutdown：关闭时取消延迟维护，防止孤儿后台定时器"
+      "features": "Control UI/Sessions: 新增紧凑的 checkpoint 计数显示和现代化历史卡片布局\nControl UI/performance: 新增部分频道状态标签和慢速渲染事件日志记录\nControl UI/sessions: 新增 Sessions 表格显示 agent runtime 并支持按标签过滤\nDiscord/streaming: 进度草稿中新增实时推理文本显示\niOS pairing: 私有 LAN 和 .local 网关新增 setup-code 和 ws:// 连接支持",
+      "bug_fixes": "Feishu: 修复首次对话和后续对话无法保持在同一主题会话的问题\nLINE: 修复缺少通配符 allowFrom 时 webhook DM 被静默阻止的问题\nTelegram/Codex: 修复工具进度草稿重复显示的问题\nProviders/xAI: 修复向 Grok 模型发送不支持的推理参数导致运行失败的问题\nMatrix/approvals: 修复审批交付失败导致提示搁置的问题\nDiscord/gateway: 修复心跳超时触发错误重连循环的问题\nDiscord/guilds: 修复文本控制命令被静默丢弃的问题\nExec approvals: 修复 Windows 上 exec-approvals.json 重命名失败的问题\nSlack: 修复重连日志中错误上下文信息丢失的问题\nControl UI/chat: 修复历史重载后助手进度文本消失的问题\nTUI: 修复终端断开时的不当退出和心跳会话恢复问题\nDoctor/sessions: 修复心跳污染导致 doctor 修复卡住的问题\nAgents/context engines: 修复运行时上下文被错误包含在上下文引擎中的问题\nGateway/shutdown: 修复关闭时后台定时器未正确清理的问题\nAgents/generated media: 修复生成附件被重复发布的问题"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/317674880",
@@ -334,8 +334,8 @@
         "eyes": 8
       },
       "mentions_count": 75,
-      "features": "Google Meet/Voice Call：Twilio 拨号加入通过实时 Gemini 语音桥接，支持音频流控和打断队列清除，响应更快速\nGateway/Windows：Windows 上 loopback 网关监听器仅绑定 127.0.0.1，避免 IPv6 双栈导致本地 HTTP 请求卡死\nPlugins/migration：引用未安装的官方插件时提示安装命令而非要求删除配置\nOpenAI/Codex media：运行时和 manifest 支持 Codex 音频转录功能\nAgents/Plugins/performance：模型刷新复用工作区插件元数据快照，避免重复冷扫描提升性能\nConfig/plugin auto-enable：自动白名单时优先使用插件 manifest id 而非内置 channel 别名\nSecrets/apply：secrets apply 时保留 auth-profile 的 keyRef/tokenRef 元数据\nPlugins/active-memory：跳过包含冒号的 session-store channel 条目，避免 QQ 等 scoped ID 崩溃\nSecrets/external channel contracts：支持在 dist/ 目录解析 npm 发布插件的 secret-contract-api\nModels/auth：新增 openclaw models auth list 命令查看认证配置\nControl UI：dashboard breadcrumbs 显示活跃 agent 名称，New Job 侧边栏改为可折叠\nGateway/startup：优化启动路径减少插件加载时间和内存占用\nControl UI/performance：记录浏览器长任务/长动画帧事件便于调试\nSlack/streaming：新增 Block Kit 富文本进度条和流式进度行显示\nChannels/streaming：默认限制进度草稿工具行数避免布局抖动\nAgents/verbose：默认使用紧凑工具摘要，可通过配置切换原始详情",
-      "bug_fixes": "QQ c2c agent IDs（如 c2c:10D4F7C2…）在 active-memory 中导致 recall 运行崩溃"
+      "features": "Google Meet/Voice Call：Twilio 电话拨入通过实时 Gemini 语音桥接传输，提供更快的语音代理体验\nOpenAI/Codex：支持 Codex 音频转录功能\nModels/auth：新增 `openclaw models auth list` 命令查看已保存的认证配置\nControl UI：仪表板面包屑显示当前代理名称；New Job 侧边栏支持折叠\nControl UI/performance：浏览器长任务记录到调试事件日志，便于追踪卡顿\nSlack/streaming：新增富文本进度渲染（`streaming.progress.render: \"rich\"`），限制进度行长度避免界面抖动\nAgents/verbose：默认使用紧凑的 explain-mode 工具摘要，可通过配置切换原始详细输出",
+      "bug_fixes": "Gateway/Windows：仅绑定 127.0.0.1 避免 IPv6 双栈导致 localhost HTTP 请求卡死\nPlugins/migration：插件未安装时提示安装命令而非要求删除配置\nPlugins/active-memory：跳过含冒号的会话存储通道条目，避免 QQ 等平台对话 ID 导致 recall 运行崩溃\nSecrets/external channel contracts：修复 dist/ 路径下发布的外部化频道插件 SecretRef 解析失败问题\nSecrets/apply：保留 keyRef 和 tokenRef 字段防止 secrets apply 丢失元数据\nConfig/plugin auto-enable：WeCom/Yuanbao 等别名优先解析为已安装插件 ID"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/317107545",
@@ -391,7 +391,7 @@
         "eyes": 9
       },
       "features": "无",
-      "bug_fixes": "修复安全扫描器误拦截官方捆绑插件包的问题（当 process.env 和普通 API 调用仅出现在编译包的远端部分时）"
+      "bug_fixes": "修复安装扫描器误拦截官方捆绑插件包的问题（当 process.env 访问仅出现在编译包远处时）"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/317028609",
@@ -447,8 +447,8 @@
         "eyes": 0
       },
       "mentions_count": 110,
-      "features": "文件传输插件：支持 `file_fetch`、`dir_list`、`dir_fetch`、`file_write` 工具，含默认拒绝路径策略和 16MB 传输限制\nGateway 性能优化：通过懒加载插件发现、cron、schema、会话等组件，缩短启动和热路径响应时间\n统一流式进度模式：Discord、Telegram、Matrix、Slack、Teams 支持共享 progress 配置和自动状态标签\n新增 `/steer` 命令：空闲会话下可独立引导当前运行，无需启动新轮次\n新增 `/side` 命令：作为 `/btw` 的别名，支持文本和原生斜杠命令格式\nDoctor 配置修复：`doctor --fix` 现在即使存在其他验证问题也会提交安全遗留迁移\nDiscord 状态反应：支持 `trackToolCalls: true` 跟踪后续工具进度，显示降级传输状态\nGateway 配置安全：无效配置现在会关闭启动失败，由 `doctor --fix` 负责修复\nWhatsApp Channel/Newsletter：支持新的消息渠道目标\nDiscord/Mantis smoke 测试：新增 `discord-smoke` runner 验证机器人可见性和消息交互\nSlack 实时传输 QA：新增 canary 和 mention-gating 覆盖的测试 runner\n插件入职改进：手动安装支持可选官方插件，暴露 Codex 插件作为可选项\n插件列表更新：`openclaw plugins list --json` 包含依赖安装状态，改进 beta 通道更新逻辑\nClawHub 速率限制提示：429 错误标注重置窗口和未认证更高限额提示",
-      "bug_fixes": "修复 Doctor 配置迁移：`doctor --fix` 在其他验证问题阻止时也提交安全迁移（#76798）\n修复工具工厂热路径：跳过被拒绝列表已阻止的可选媒体和 PDF 工具工厂（#76773）\n修复 Discord 降级状态：状态输出正确显示降级传输或事件循环饥饿问题（#76327）"
+      "features": "file-transfer 插件：新增 `file_fetch`、`dir_list`、`dir_fetch`、`file_write` 工具，支持节点间二进制文件操作，带默认拒绝路径策略和 16MB 传输上限\nGateway 性能优化：懒加载插件/运行时发现、cron、schema、sessions 和模型元数据\nChannels 流式传输：统一 streaming.mode 配置，跨 Discord、Telegram、Matrix、Slack 和 Teams\n新增 `/steer` 命令：独立于队列的会话转向控制\n新增 `/side` 命令：作为 `/btw` 的文本和原生斜杠别名\n`doctor --fix` 改进：即使存在其他验证问题也提交安全遗留迁移\nDiscord 状态反应：支持 `trackToolCalls: true` 追踪后续工具进度\nGateway 配置：无效配置现在失败关闭，`doctor --fix` 负责修复\nQA 测试：新增 Mantis Discord 和 Slack 实时传输 QA 运行器\n插件安装：支持手动安装可选官方插件和外部 Codex 插件\nPlugins/CLI 更新：包含包依赖状态，`@beta` 更新优先\nWhatsApp 支持：新增 WhatsApp Channel/Newsletter 目标",
+      "bug_fixes": "修复 `doctor --fix` 在其他配置问题下无法清理遗留键的问题（#76798）\n修复 Discord 传输降级和事件循环饥饿的状态显示（#76327）"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/316775966",
@@ -591,7 +591,7 @@
           "state": "uploaded",
           "size": 51078259,
           "digest": "sha256:a993a8fba51d671be20f367d917dd86c85f6b406efb36672adbfbee3b71b3371",
-          "download_count": 12397,
+          "download_count": 12398,
           "created_at": "2026-05-03T01:14:30Z",
           "updated_at": "2026-05-03T01:14:32Z",
           "browser_download_url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.2/OpenClaw-2026.5.2.zip"
@@ -613,8 +613,8 @@
         "eyes": 0
       },
       "mentions_count": 200,
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败"
+      "features": "外部插件安装、更新、医生修复、依赖报告覆盖npm优先切换和过期配置安装\nGateway和agent启动、session列表、任务维护、提示准备、插件加载性能优化\nControl UI和WebChat在Sessions、Cron、长连接Gateway WebSocket场景下更稳定\n添加`openclaw gateway restart --force`和`--wait <duration>`命令\n插件列表命令显示依赖安装状态，便于脚本检查缺失依赖\nBeta更新通道默认尝试@beta版本插件，回退到latest\n添加平台级工具描述符规划器，缓存插件工具描述符避免重复加载\nxAI添加Grok 4.3并设为默认聊天模型\nGoogle Meet支持API创建房间时设置accessType和entryPointAccess\nGoogle Meet添加`end-active-conference`和`test-listen`命令\n修复多个消息平台：WhatsApp、Telegram、Discord、Slack、Signal",
+      "bug_fixes": "修复Control UI和WebChat在分组消息宽度、iOS PWA边界、选择对比度问题\n修复可见回复路由问题\n修复WhatsApp Channel/Newsletter、Telegram话题命令网络问题\n修复Discord投递和启动边缘情况"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/316120478",
@@ -779,8 +779,8 @@
         "eyes": 14
       },
       "mentions_count": 200,
-      "features": "Active-run steering 支持，默认可见回复强制和子智能体路由元数据\n智能体 follow-up commitments 功能，支持心跳提醒和CLI管理\nMessages 队列支持 `steer` 模式，默认500ms防抖\n人员维基功能上线，支持人物卡片、关系图谱、隐私溯源和搜索\nActive Memory 支持按会话过滤 `allowedChatIds`/`deniedChatIds`\n内存超时时返回部分召回摘要，保留有用上下文\n新增 NVIDIA 模型提供商，支持API密钥接入和模型选择\n修复Bedrock Opus 4.7 thinking模式对齐问题\nGateway 新增事件循环就绪诊断和运行时依赖修复\nSQLite插件状态存储，支持TTL和自动隔离\n增强 Slack Block Kit、Telegram、Discord、WhatsApp 等频道稳定性\n新增 OpenGrep 安全扫描和GHSA策略增强\n新增 `doctor.memory.remHarness` RPC 用于预览REM输出",
-      "bug_fixes": "修复受限配置文件下工具隐式拓宽问题（#47487）\n修复stale models配置绕过manifest导致助手故障问题（#74451）"
+      "features": "Active-run steering 默认启用，新增 visible-reply 强制和子智能体路由元数据\nMemory 升级为 people-aware wiki，支持人员卡片、关系图谱和溯源报告\nActive Memory 新增 per-conversation 过滤器，支持 allowedChatIds/deniedChatIds\nActive Memory 超时时返回有界的部分召回摘要，避免上下文丢失\n新增 NVIDIA provider，集成 API-key 引导和静态模型目录\nMessages 默认队列模式改为 steer，支持 500ms followup 去抖\n全局 visibleReplies 配置上线，强制所有来源通过 message(action=send) 输出\nGateway 事件新增 spawnedBy 字段，便于客户端路由子会话事件\n新增 SQLite 后端插件状态存储，支持 TTL、驱逐和插件隔离\nProviders 新增 manifest-backed 模型/认证路径和 Bedrock Opus 4.7 thinking 支持\nGateway 可靠性改进：慢主机启动、事件循环诊断、过期会话恢复\n安全工具默认配置收严，restrictive profiles 不再隐式允许 exec/fs 工具\n新增 OpenGrep 扫描、GHSA triage policy 和 Docker 自动化引导\nAgents 新增 inferred follow-up commitments，支持心跳提醒和 CLI 管理",
+      "bug_fixes": "无"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/315482726",
@@ -945,8 +945,8 @@
         "eyes": 4
       },
       "mentions_count": 200,
-      "features": "Codex Computer Use 支持：新增 status/install 命令、市场发现、fail-closed MCP 检查\nDeepInfra 集成：支持模型发现、媒体生成/编辑、TTS、嵌入和提供商自有入职策略\n腾讯元宝和 QQBot 支持扩展：新增群聊、流式传输、媒体上传和管道重构\n插件启动和模型目录转向 manifest-first 元数据，减少 Gateway 启动工作量\nSandbox/Docker 新增 opt-in GPU 透传支持，支持在沙盒容器内运行本地 GPU 工作负载\niOS/Gateway 新增 `node.presence.alive` 协议事件和 `node.list` 最后在线字段\nAndroid 节点在断开后保留持久化的最后在线元数据\nGateway/chat 支持通过 `chat.send` 接受非图片附件并暂存为代理可读媒体路径\nSecurity/networking 新增 opt-in 运营商管理的出站代理路由（proxy.enabled + proxy.proxyUrl）\nPlugin SDK 新增共享通道路由规范化和解析器驱动的目标解析\nMatrix 新增流式工具进度更新到实时预览，默认显示中间工具行\nPlugin SDK/models 新增共享 manifest 支持的提供商目录构建器",
-      "bug_fixes": "修复 Telegram 启动/发送问题、Slack socket/媒体卡顿、Gateway 启动预热\n修复会话/历史记录默认值、更新同步和 Windows 重启移交问题\n修复 Docker sandbox GPU 透传问题（#57976，#58124）\n修复 `chat.send` 静默丢弃不支持的文件附件问题（#48123）\n修复 Codex Computer Use 安装问题（#72094）"
+      "features": "Codex Computer Use 新增状态/安装命令、市场发现和 MCP 安全检查，支持桌面控制\nDeepInfra 加入内置提供商，支持模型发现、媒体生成/编辑、TTS 和嵌入\nTencent Yuanbao 和 QQBot 扩展群聊、流媒体、媒体上传等渠道覆盖\n插件和模型目录改用清单优先元数据，提升 Gateway 启动性能\nDocker sandbox 新增 GPU passthrough，支持在沙盒中运行本地 GPU 工作负载\niOS/Android 新增节点存活状态协议事件，断连后保持持久元数据\nGateway 新增运营者管理的出站代理路由，支持严格 HTTP 转发代理验证\nMatrix 新增实时审批场景，支持 exec 元数据、chunked 回退、插件审批等\n插件 SDK 新增共享通道路由规范化和解析目标类型等工具\nMatrix 流媒体默认推送工具进度更新到实时预览",
+      "bug_fixes": "Telegram 启动和消息发送可靠性修复\nSlack socket 和媒体卡顿问题修复\nGateway 启动预热机制修复\nSession 和历史记录默认值修复\nWindows 重启交接问题修复\n非图片附件处理修复，保留不支持的 RPC 路径而非静默丢弃\nCodex Computer Use MCP 服务器检查修复"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/314329340",
@@ -1111,8 +1111,8 @@
         "eyes": 10
       },
       "mentions_count": 200,
-      "features": "添加通用浏览器实时传输协议和 Google Live Talk 会话支持，包含受限临时令牌及 Gateway 中继\nCLI/models 新增显式源计划路由提供商过滤模型列表，保持稳定授权顺序\nCerebras 作为捆绑插件加入，包含入职引导、静态模型目录和文档\nMemory/OpenAI兼容端点新增非对称嵌入配置，支持直接查询嵌入和批量索引\nOllama/memory 为 nomic-embed-text、qwen3-embedding、mxbai-embed-large 添加检索查询前缀\n插件清单接管预运行时模型 ID 规范化、端点元数据和请求族提示，移除核心路由表\nPlugins/config 改用运行时快照和事务性变更辅助函数，替代直接配置加载/写入\nPlugins/install 支持 `OPENCLAW_PLUGIN_STAGE_DIR` 分层依赖根，解决只读预装依赖问题\nControl UI 新增 JSON5 原始配置待更改差异面板，支持敏感值隐藏\nControl UI 优化快速设置仪表板网格布局，适配桌面、平板和移动端\n添加 `openclaw matrix encryption setup` 一键加密设置和恢复引导命令\nAgents/compaction 新增 `maxActiveTranscriptBytes` 预检触发器实现转录轮换\nCLI/migration 新增 Claude Code/Desktop 配置导入器\nCLI/migration 新增 `openclaw migrate` 命令及 Hermes 导入器",
-      "bug_fixes": "Gateway/device tokens 修复设备令牌轮换响应不再回显共享令牌，保留同设备握手\nAgents/sessions_spawn 修复生成模型覆盖使用目标代理运行时默认提供商的裸别名\nControl UI/Talk 修复 Google Live 会话保持 WebSocket 而非回退 WebRTC，并验证端点\nGateway/startup 修复在插件加载计划前复用配置快照进行启动自动启用\nAgents/subagents 修复对显式 `sessions_spawn(agentId=...)` 调用强制 `subagents.allowAgents`\nACP/sessions_spawn 修复 `acp.dispatch.enabled=false` 下仍允许显式 `sessions_spawn(runtime=\"acp\")`\nCLI/update 修复 npm 全局更新安装到临时前缀后再切换，防止混合安装问题"
+      "features": "Control UI/Talk: 添加通用浏览器实时传输合约，支持 Google Live 浏览器 Talk 会话及 Gateway 中继\nCLI/models: 通过显式源计划路由提供商过滤的模型列表，保持稳定的权威顺序\nProviders: 新增 Cerebras 捆绑插件，支持引导、静态模型目录和文档\nMemory/OpenAI-compatible: 添加 `memorySearch.inputType` 等配置，支持非对称嵌入端点\nOllama/memory: 为 nomic-embed-text、qwen3-embedding、mxbai-embed-large 模型添加检索查询前缀\nPlugins/providers: 将模型 ID 规范化、端点元数据和请求提示移入插件清单\nPlugins/config: 弃用直接配置加载/写入辅助函数，改用事务性变异辅助函数\nPlugins/install: 允许插件阶段目录包含分层运行时依赖根\nControl UI: 添加原始配置待更改差异面板，支持 JSON5 解析和敏感值隐藏\nControl UI: 优化快速设置仪表板网格布局，适配桌面、平板和移动端\nMatrix/E2EE: 添加 `openclaw matrix encryption setup` 命令，一键启用加密和恢复引导\nAgents/compaction: 添加 `maxActiveTranscriptBytes` 预检触发器，支持本地 compaction\nCLI/migration: 添加 Claude 导入器，支持 Claude Code 和 Claude Desktop 配置迁移\nCLI/migration: 添加 `openclaw migrate` 命令和 Hermes 导入器",
+      "bug_fixes": "Gateway/device tokens: 停止在共享/管理员 `device.token.rotate` 响应中回显旋转的 bearer 令牌\nAgents/sessions_spawn: 解决配置的裸模型别名用于生成模型覆盖\nControl UI/Talk: 保持 Google Live 浏览器会话使用 WebSocket 传输并验证端点，限制 Gateway 中继会话\nGateway/startup: 重新使用配置快照插件清单用于启动自动启用\nAgents/subagents: 对显式同代理 `sessions_spawn(agentId=...)` 调用执行 `subagents.allowAgents`\nACP/sessions_spawn: 让显式 ACP 生成引导轮次在禁用自动 ACP 线程分派时仍可运行\nCLI/update: 在临时前缀中安装 npm 全局更新，防止混合旧/新安装"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/314047904",
@@ -1277,8 +1277,8 @@
         "eyes": 11
       },
       "mentions_count": 199,
-      "features": "TTS 新增 `/tts latest` 读音播报和 `/tts chat on|off|default` 会话级自动 TTS 控制\n新增 Azure Speech、ElevenLabs v3、Volcengine 等多个 TTS 提供商支持\n插件系统迁移到冷持久注册表，减少 manifest 扫描并提升更新确定性\nOpenTelemetry 追踪扩展覆盖模型调用、token 使用、工具循环等核心流程\n浏览器自动化新增安全标签页 URL、iframe 感知快照和 `browser doctor --deep` 诊断\n控制 UI 新增 PWA 安装支持和 Web Push 通知\nCLI 新增 TUI 交互式设置向导和上下文模式选择器\n插件系统新增 before-agent-finalize 钩子、Codex MCP 中继和 cron jobId 上下文\nGoogle Meet 新增日历出席导出工作流和干运行预览\nCLI 图像生成新增通用 `--background` 参数\nDiscord 语音频道支持 LLM 模型覆盖配置\n浏览器自动化支持 Raspberry Pi 等慢速主机的 CDP 就绪超时调优",
-      "bug_fixes": "无"
+      "features": "TTS全面升级：新增Azure Speech、小米、本地CLI、Inworld、火山引擎、ElevenLabs v3等多种TTS提供商，支持语音回复自动TTS控制和角色设定\n插件系统重构：插件启动和安装路径迁移到持久化冷注册表，减少清单扫描，使插件更新、修复更确定性\nOpenTelemetry扩展：覆盖模型调用、token使用、工具循环、agent运行、执行进程等，带有低基数属性\n浏览器自动化增强：更安全的标签页URL、iframe感知的角色快照、CDP就绪调优、无头单次启动、深度浏览器诊断\n控制UI改进：新增PWA安装和Web Push通知、Crestodian首次运行修复、TUI设置向导、上下文模式选择\n安装加固：覆盖Windows、macOS、Linux、Docker等多平台，包括Node服务重启和混合版本网关验证\nGoogle Meet新增日历出席导出工作流和会议记录工具\nDiscord支持语音频道LLM模型独立覆盖设置\n插件系统新增before-agent-finalize钩子、cron jobId上下文、Codex MCP钩子中继支持",
+      "bug_fixes": "修复TTS/WhatsApp语音回复重复抑制问题（#66032）\n修复浏览器配置在Raspberry Pi等慢速主机上的CDP就绪超时问题（#66803）"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/313623308",
@@ -1443,8 +1443,8 @@
         "eyes": 9
       },
       "mentions_count": 141,
-      "features": "Google Meet作为捆绑参与者插件集成，支持个人Google认证、Chrome/Twilio实时会话\nDeepSeek V4 Flash和V4 Pro加入捆绑目录，V4 Flash成为入门默认选项\nTalk、Voice Call和Google Meet支持实时语音循环，可咨询完整OpenClaw代理获取更深层答案\n浏览器自动化新增坐标点击、60秒默认操作预算、每配置文件headless覆盖\nGemini Live实时语音提供者支持后端语音通话和Google Meet音频桥接\nControl UI工具访问面板新增紧凑实时工具芯片、可折叠工具组、直接切换\n聊天消息新增Steer操作，可注入后续任务到当前运行\nMemory混合搜索新增raw vectorScore和textScore暴露，便于检查检索贡献\nGradium新增捆绑文本转语音提供者，支持语音笔记和电话输出\nVoice Call新增setup和smoke命令用于测试通话就绪状态\nMatrix要求完整交叉签名身份信任，新增CLI验证命令\n插件和模型基础设施优化：静态模型目录、清单支持模型行、懒加载提供者依赖",
-      "bug_fixes": "DeepSeek思考/回放行为修复，跟随工具调用轮次正常执行\n混合内存搜索修复向量与文本检索贡献检查问题（#68166）\n移除Pi专用registerEmbeddedExtensionFactory兼容性路径，统一使用registerAgentToolResultMiddleware"
+      "features": "Google Meet 作为捆绑插件加入，支持个人 Google 认证、Chrome/Twilio 实时会话及配对节点 Chrome 支持\nDeepSeek V4 Flash 和 V4 Pro 加入捆绑目录，V4 Flash 为入门默认选项\nTalk、Voice Call、Google Meet 支持实时语音循环，可咨询完整 OpenClaw agent 获取深度答案\n浏览器自动化新增视口坐标点击、60s 默认操作预算、每配置 headless 覆盖选项\nGemini Live 实时语音 provider 支持后端 Voice Call 和 Google Meet 音频桥接\nVoice Call 新增 `voicecall setup` 和 `smoke` 命令用于测试通话就绪状态\nControl UI 新增排队消息的 Steer 操作，可注入浏览器后续指令\nMemory 混合搜索暴露原始 vectorScore 和 textScore，便于检查检索贡献度\nGradium 文本转语音 provider 加入捆绑目录，支持语音笔记和电话输出\nMatrix 新增 `openclaw matrix verify self` 命令用于自我设备验证\nGoogle Meet 新增工件和考勤工作流，支持会议记录导出和历史扫描",
+      "bug_fixes": "修复 DeepSeek thinking/replay 在后续 tool-call 轮次的行为问题\n修复混合搜索结果中 vectorScore 和 textScore 显示问题（#68166）\n插件 SDK 移除 Pi 专用的 `api.registerEmbeddedExtensionFactory(...)` 兼容性路径"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/313278140",
@@ -1500,8 +1500,8 @@
         "eyes": 9
       },
       "mentions_count": 29,
-      "features": "OpenAI 提供商：通过 Codex OAuth 支持图像生成和参考图编辑，`gpt-image-2` 无需 API Key\nOpenRouter 提供商：添加图像生成和参考图编辑支持\n图像生成：支持代理请求画质和输出格式提示，传递背景、审核等 OpenAI 特定参数\n子代理：新增可选的 forked context 支持，子代理可继承请求者转录\n工具调用：图像、视频、音乐、TTS 生成工具支持自定义 `timeoutMs`\n本地嵌入：新增可配置的 `memorySearch.local.contextSize`（默认 4096）\nPi 依赖：更新到 `0.70.0`，使用上游 `gpt-5.5` 目录元数据\nCodex 调试：添加结构化日志便于排查 harness 自动选择问题",
-      "bug_fixes": "Codex harness：修复用户输入提示路由、后续答案队列和应用服务器批准决策处理\n上下文引擎：日志前清理组装失败信息，防止序列化原始错误对象\nWhatsApp：首次运行设置脱离 Baileys 依赖路径，QuickStart 安装可提前展示设置界面\n流式输出：部分中止时抑制重复的最终组装文本\nWindows Codex：修复通过 PATHEXT 解析 `codex.cmd` shims\nSlack 群组：MPIM 正确分类为群聊，抑制非 DM 界面的工具/计划进度消息\n代理回放：停止 OpenAI/Codex 合成缺失工具结果，保留其他传输层的合成修复\nTelegram 媒体回复：解析 Markdown 图像语法为媒体载荷\nWebChat 错误：表面显示不可重试的提供商错误（账单、认证、配额）\nWhatsApp 媒体：统一出站媒体规范化处理\n本地嵌入 CLI：`memory status/index/search` 命令可解析本地嵌入\nWebChat 附件：为文本模型保留图像附件为媒体引用\nGoogle Meet 插件：离开时挂断 Twilio 通话，清理失败的音频桥接\n图像模型配置：明确配置优先于原生视觉跳过\nCodex 图像理解：支持 `codex/*` 图像模型，`openai-codex/*` 走 OAuth 路由"
+      "features": "OpenAI Provider：通过 Codex OAuth 支持图像生成和参考图像编辑\nOpenRouter Provider：通过 image_generate 支持图像生成和参考图像编辑\n图像生成：传递质量、格式、背景、审核、压缩等提示参数给 provider\nAgents/subagents：添加可选的分叉上下文，支持子 agent 继承请求者对话记录\nAgents/tools：为图像/视频/音乐/TTS 生成工具添加 per-call timeoutMs 超时支持\nMemory/local embeddings：添加可配置的 contextSize 参数（默认 4096）用于本地嵌入\nPi 依赖：更新捆绑包至 0.70.0，使用上游 gpt-5.5 目录元数据\nCodex harness：为 harness 选择决策添加结构化调试日志",
+      "bug_fixes": "Codex harness：修复 request_user_input 提示路由、跟进答案队列和命令审批处理\nContext-engine：修复日志记录时不暴露原始错误对象的问题\nWhatsApp/onboarding：修复首次运行设置加载依赖 Baileys 运行时的问题\nBlock streaming：修复部分中止时重复发送最终回复的问题\nCodex/Windows：修复 npm 安装的 codex.cmd shims 无法正确解析的问题\nSlack/groups：修复工作状态信息泄露到群组房间的问题\nAgents/replay：修复 OpenAI/Codex 重放时错误合成缺失工具结果的问题\nTelegram/media replies：修复 markdown 图片语法无法正确解析为媒体消息的问题\nAgents/WebChat：修复非重试错误无法正确显示的问题\nWhatsApp：统一直接发送和自动回复的媒体规范化处理\nMemory/CLI：修复独立命令无法解析本地 embeddings 的问题\nGateway/WebChat：修复文本模型无法保留图像附件的问题\nPlugins/Google Meet：修复离开时未挂断 Twilio 通话等问题\nMedia understanding：修复文本模型忽略显式图像配置的问题\nCodex/media understanding：支持 codex/* 图像模型并验证 app-server 响应"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/312756751",
@@ -1666,8 +1666,8 @@
         "eyes": 6
       },
       "mentions_count": 62,
-      "features": "xAI：新增图像生成、文本转语音、语音转文本支持（grok-imagine-image等模型、六种语音、多种音频格式）\nSTT：Deepgram、ElevenLabs、Mistral支持语音通话流式转录，ElevenLabs新增Scribe v2批量音频转录\nTUI：新增本地嵌入式模式，无需Gateway即可运行终端聊天\nOnboarding：自动安装缺失的provider和channel插件\nOpenAI/Responses：原生web_search工具自动用于Responses模型\n新增`/models add`命令，可在聊天中注册模型无需重启Gateway\nWhatsApp：新增可配置的原生回复引用功能\nWhatsApp：支持per-group和per-direct的systemPrompt配置注入\nAgents/sessions：新增邮箱风格的sessions_list过滤器（标签、代理、搜索）\nControl UI：新增浏览器本地个人身份标识，优化Quick Settings和窄屏布局\nGateway/diagnostics：默认启用稳定性记录，新增支持友好的诊断导出功能\nTencent：新增腾讯云provider插件（TokenHub引导、hy3预览模型）\nAmazon Bedrock Mantle：新增Claude Opus 4.7支持\nGPT-5：提示覆盖整合到共享provider运行时，支持通过配置切换人格风格\nOpenAI Codex：移除Codex CLI认证导入，改用浏览器登录或设备配对\nCLI/Claude：默认热身stdio会话，支持Gateway重启后恢复会话\nPi/models：更新pi包至0.68.1，OpenCode Go目录新增kimi-k2.6等模型\nTokenjuice：新增原生支持，压缩Pi嵌入式运行的exec/bash工具结果\nACPX：新增openClawToolsMcpBridge选项，注入核心MCP服务器\nCLI/doctor plugins：懒加载插件路径，减少doctor运行时间约74%",
-      "bug_fixes": "无（本次更新日志中未包含Bug修复内容）"
+      "features": "xAI 新增图像生成、语音合成、语音转文字功能，支持 grok-imagine-image 等模型及六种实时语音音色\nSTT 新增 Deepgram、ElevenLabs、Mistral 的语音通话流式转录，以及 Scribe v2 批量转录\nTUI 新增本地嵌入式模式，无需 Gateway 即可运行终端对话并保留插件审批机制\nOnboarding 阶段自动安装缺失的 provider 和 channel 插件，无需手动恢复\nOpenAI Responses 模型自动使用原生 web_search 工具进行网页搜索\n新增 `/models add` 命令，可在对话中注册模型并立即使用，无需重启 Gateway\nWhatsApp 新增原生回复引用功能，支持 configurable replyToMode\nWhatsApp 支持按群组/私信配置 systemPrompt，支持通配符和账户级覆盖\nAgents/sessions 新增邮箱式过滤功能，支持按标签、代理和关键词筛选\n控制界面新增用户个人身份标识，优化快速设置和窄屏布局\nGateway 诊断新增稳定性记录和带敏感信息脱敏的支持导出包\n新增腾讯云 provider 插件，支持 TokenHub 引导和 Hy3 模型\nAmazon Bedrock Mantle 新增 Claude Opus 4.7 支持，提供提供商自有 Bearer 认证流式传输\nGPT-5 提示覆盖移入共享 provider 运行时，新增全局人格开关配置\n移除 OpenAI Codex CLI 认证导入，改用浏览器登录或设备配对\nCLI/Claude 默认启动热 stdio 会话，支持 Gateway 重启后恢复\nPi 包更新至 0.68.1，新增 opencode-go/kimi-k2.6 等模型目录\nTokenjuice 新增原生支持，压缩 Pi 嵌入式运行中的嘈杂 exec/bash 结果\nACPX 新增 openClawToolsMcpBridge 选项，注入核心 MCP 服务器提供 cron 等工具\nCLI/doctor 插件改为懒加载，减少冷启动耗时约 74%",
+      "bug_fixes": "修复 WhatsApp 群组/私信 systemPrompt 无法正确注入的问题（关闭 #7011）"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/312032321",
@@ -1723,8 +1723,8 @@
         "eyes": 12
       },
       "mentions_count": 4,
-      "features": "OpenAI/images：默认使用 gpt-image-2 作为图像生成提供商，支持 2K/4K 尺寸提示",
-      "bug_fixes": "Plugins/doctor：修复打包安装时缺失 channel/provider 依赖的恢复问题\n图像生成：记录失败 provider/model 候选到 warn 日志级别，便于排查\nAuth/commands：修复非所有者可通过宽松回退绕过所有者强制命令的问题\nSlack：保留运行时出站发送的线程别名，确保消息留在指定线程\nBrowser：立即拒绝无效的 ax<N> 可访问性引用，不再等待超时\nnpm/install：解决 google-auth-library 废弃依赖链导致的安装警告问题"
+      "features": "OpenAI/images: 默认使用 `gpt-image-2` 作为图像生成提供者，并在文档和工具元数据中支持 2K/4K 尺寸选项",
+      "bug_fixes": "Plugins/doctor: 修复 doctor 路径中的插件运行时依赖，使打包安装可恢复缺失的 channel/provider 依赖\nImage generation: 在自动 fallback 前以 warn 级别记录失败的 provider/model，使 OpenAI 图像失败在网关日志中可见\nAuth/commands: 修复所有者强制命令的身份验证，防止非所有者通过通配符 `allowFrom` 绕过权限检查\nSlack: 修复运行时出站发送中线程别名的保留，确保调用方提供的 `threadTs` 保持有效\nBrowser: 立即拒绝无效的 `ax<N>` 可访问性引用，不再等待浏览器操作超时\nnpm/install: 将 `node-domexception` 别名添加到根 `package.json` overrides，消除废弃的依赖链警告"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/311905045",
@@ -1889,8 +1889,8 @@
         "eyes": 6
       },
       "mentions_count": 59,
-      "features": "设置向导重构安全免责声明样式，添加黄色警告横幅和要点清单，优化加载体验\nAgent系统提示增强完成偏差、实时状态检查、弱结果恢复和验证机制\n支持分层模型定价和缓存目录，包含Moonshot Kimi K2.6/K2.5成本估算\n会话维护默认强制入口上限和年龄清理，防止加载时OOM\n插件测试重用加载器别名和Jiti配置，减少重复导入开销\nCron任务状态分离到jobs-state.json，保持job定义文件稳定\n上下文压缩期间发送开始和完成通知\nMoonshot Kimi默认切换至k2.6，保留k2.5兼容\nMoonshot Kimi K2.6支持thinking.keep=\"all\"选项\nBlueBubbles群组支持转发systemPrompt配置，支持通配符匹配\n插件任务添加独立运行时注册合约管理生命周期\n日志sanitizeForLog()用正则替换循环提升性能\nQA/CI默认失败报错，添加--allow-failures选项\nMattermost流式思考和工具活动到草稿帖子并原地完成",
-      "bug_fixes": "修复YOLO模式安全检查误拦截gateway-host执行\n修复OpenAI Codex遗留传输覆盖问题\n修复Anthropic api默认值误匹配非Anthropic提供商\nQQ机器人添加SSRF防护保护媒体上传路径\n修复模板渲染sessionKey的allowRequestSessionKey门控\n修复Chrome MCP DevTools连接错误显示为超时\n修复Webchat内联图片空轮次误判问题\n修复Discord /think自适应思考选项错误显示\n修复思考max选项对不支持模型的暴露\n修复费用使用缓存无限增长问题"
+      "features": "摘要生成失败",
+      "bug_fixes": "摘要生成失败"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/310081573",
@@ -2055,8 +2055,8 @@
         "eyes": 14
       },
       "mentions_count": 58,
-      "features": "Anthropic/models: 默认使用Claude Opus 4.7，支持图像理解和opus别名\nGoogle/TTS: 添加Gemini语音合成支持（WAV和PCM电话输出）\nControl UI/Overview: 添加Model Auth状态卡片，显示OAuth状态和限流信息\nMemory/LanceDB: 添加云存储支持，支持远程对象存储\nGitHub Copilot/memory search: 添加Copilot嵌入provider用于记忆搜索\nAgents/local models: 添加实验性选项简化本地模型工具集",
-      "bug_fixes": "Gateway/tools: 修复内置工具名冲突导致的安全漏洞，拒绝客户端同名工具定义\nAgents/replay recovery: 将特定401错误归类为replay无效，提供正确的重置指导\nGateway/webchat: 修复webchat音频嵌入的localRoots限制\nMatrix/pairing: 阻止DM配对存储条目授权房间控制命令\nDocker/build: 修复pnpm v10+虚拟存储路径的构建兼容性问题\nMatrix/E2EE: 优化无密码token认证机器人的启动bootstrap流程\nCron/announce: 修复`NO_REPLY`时尾部内容泄露问题\nPlugins/bundled: 修复切换bundled根目录后缓存未隔离问题\nPackaging/plugins: 精简打包中的测试依赖，防止测试代码进入发布包\nAgents/context + Memory: 优化默认上下文预算，限制memory_get摘录大小\nMatrix/commands: 优化房间流量时的DM配对存储读取逻辑\nMemory-core/dreaming: 修复dream日记污染会话摄入的问题"
+      "features": "Anthropic Claude Opus 4.7：新增默认模型选择、opus别名、Claude CLI默认设置及图像理解功能\nGoogle TTS：新增Gemini文本转语音支持，包括语音选择、WAV和PCM电话输出\nControl UI：新增Model Auth状态卡片，显示OAuth令牌健康度和提供商速率限制压力\nMemory/LanceDB：为持久内存索引新增远程对象存储云存储支持\nGitHub Copilot：新增Copilot嵌入提供商用于记忆搜索，支持远程覆盖和令牌刷新\nAgents/local models：新增实验性配置`localModelLean`以精简弱本地模型的工具集",
+      "bug_fixes": "Gateway/tools：拒绝名称与内置工具冲突的客户端工具定义，防止信任继承\nGateway/webchat：强制webchat音频嵌入路径遵守localRoots边界限制\nAgents/replay recovery：将特定401错误归类为replay-invalid，提供正确的重置指导\nMatrix/pairing：阻止DM配对存储条目授权房间控制命令\nMatrix/commands：房间路径跳过DM配对存储读取，提升安全性\nDocker/build：修复pnpm v10+虚拟存储布局下的原生绑定检测\nMatrix/E2EE：为无密码令牌认证机器人优化启动引导流程\nCron/announce：修复`NO_REPLY`结尾时静默哨兵泄漏摘要文本问题\nPlugins/bundled channels：按捆绑根分区隔离缓存，防止`OPENCLAW_BUNDLED_PLUGINS_DIR`切换时状态混乱\nPackaging/plugins：清理捆绑插件依赖中的测试框架，防止发布tarball膨胀\nAgents/context + Memory：优化启动预算、限制`memory_get`摘录大小，防止长会话上下文溢出\nMemory-core/dreaming：会话记录落地前跳过梦境叙事副本，防止污染会话摄入"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/308765455",
@@ -2221,8 +2221,8 @@
         "eyes": 9
       },
       "mentions_count": 44,
-      "features": "GPT-5.4 系列支持：新增对 `gpt-5.4-pro` 的前瞻兼容支持，包括定价/限额和目录可见性 (#66453)\nTelegram 论坛主题：支持在代理上下文和插件钩子元数据中显示人工主题名称 (#65973)",
-      "bug_fixes": "Ollama 超时修复：修复慢速本地 Ollama 运行不继承配置的 embedded-run 超时问题 (#63175)\nCodex 模型注册：修复因缺少 `apiKey` 导致自定义模型被静默丢弃的问题 (#66180)\nOllama 视觉模型：修复图像和 PDF 工具将有效的 Ollama 视觉模型错误拒绝为未知的问题 (#59943)\nSlack 安全验证：修复交互事件可绕过 `allowFrom` 允许列表的漏洞 (#66028)\n附件路径安全：修复 `realpath` 错误导致允许列表检查降级的问题 (#66022)\nGateway 工具安全：阻止通过 gateway-tool 新增危险安全标志 (#62006)\nGemini 图像请求：修复 Google 基础 URL 末尾 `/openai` 导致请求 404 的问题 (#66445)\n主题名持久化：修复重启后 Telegram 主题名称需要重新学习的问题 (#66107)\nSystemd 密钥保护：防止 doctor 修复重写 systemd 单元时嵌入 dotenv 密钥 (#66249)\nOllama 使用量统计：修复本地 Ollama 流式响应报告虚假 token 用量的问题 (#64568)\n插件缓存优化：修复大型配置下 doctor/plugins 反复读取插件目录导致 CPU 占用过高的问题 (#66246)\nCopilot 推理支持：允许 Copilot GPT-5.4 使用 `xhigh` 推理强度 (#50168)\n嵌入模型兼容：修复代理内存 providers 因前缀丢失导致的 `Unknown provider` 错误 (#66452)\n本地模型配置：改进低上下文本地模型的预检提示和配置指引 (#66236)"
+      "features": "新增 `gpt-5.4-pro` 模型前向兼容支持，包括定价/限制和状态可见性\nTelegram 论坛主题名现在可在代理上下文和元数据中显示人类可读名称",
+      "bug_fixes": "Ollama 慢速本地运行不再错误继承默认流截止时间\nCodex 提供商目录输出现在正确包含 `apiKey`，修复自定义模型被静默删除问题\n图像和 PDF 工具不再错误拒绝有效的 Ollama 视觉模型\nSlack 交互事件现在正确应用全局 `allowFrom` 允许列表，防止绕过验证\n本地附件路径解析失败时强制降级，防止安全检查被绕过\n网关工具现在拒绝可能启用危险安全标志的 `config.patch/apply` 调用\nGemini 图像请求不再因路径拼接错误返回 404\nTelegram 主题名称现持久化存储，重启后可继续使用\n`openclaw doctor --repair` 不再错误地将 dotenv 密钥重新嵌入 systemd 单元\n本地 Ollama 运行现在报告准确的 token 使用量而非虚假的压缩触发值\n大型 `agents.list` 配置的插件自动启用不再反复读取目录导致 CPU 占用过高\nGitHub Copilot GPT-5.4 现支持 `xhigh` 推理强度\n代理支持的内存提供者现在正确保留非 OpenAI 前缀，避免出现未知提供商错误\n本地模型低上下文提示现已正确指向相关配置而非错误建议更大模型"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/308286177",
@@ -2278,8 +2278,8 @@
         "eyes": 11
       },
       "mentions_count": 35,
-      "features": "新增 Active Memory 插件，提供专用记忆子代理，支持配置化上下文模式和实时检查（`/verbose`）\nmacOS Talk 模式新增实验性本地 MLX 语音提供者，支持本地播放和系统语音回退\n添加 `openclaw exec-policy` 命令，同步工具执行配置与本地审批文件\nGateway 新增 `commands.list` RPC，支持远程客户端发现运行时命令\n新增 LM Studio 集成，支持本地/自托管 OpenAI 兼容模型的发现和流式传输\n新增 Codex 提供者，使用 Codex 管理的认证和模型发现\n添加 `openclaw qa telegram` 实时测试通道和 `--runner multipass` QA 测试车道\nMatrix 协议支持 MSC4357 实时标记，草稿发送和编辑时支持打字机动画\n插件加载机制优化，按清单声明的需求限制激活范围，减少无关运行时加载\nControl UI/Dreaming 简化 Scene 和 Diary 界面，稳定状态排序",
-      "bug_fixes": "移除 busybox/toybox 解释器类安全二进制文件\n防止空审批列表绕过授权机制\n扩展 shell-wrapper 检测，阻止 env-argv 注入攻击"
+      "features": "Active Memory 插件：新增专用记忆子代理，在主回复前自动提取偏好、上下文和历史细节，支持多种上下文模式和调试转录持久化\nmacOS 本地 MLX 语音提供商：为 Talk 模式新增实验性本地语音支持，支持本地播放、打断处理和系统语音回退\nexec-policy 命令：新增 `openclaw exec-policy` 命令用于同步 tools.exec.* 配置与本地执行审批文件\ncommands.list RPC：新增 RPC 接口让远程 gateway 客户端可发现运行时命令及其参数元数据\n私有网络请求配置：为自托管 OpenAI 兼容端点添加 per-provider `request.allowPrivateNetwork` 配置\n多 Pass 测试运行：新增 `--runner multipass` 支持在 Linux VM 中运行 QA 测试场景\nDreaming UI 简化：简化 Scene 和 Diary 界面，稳定状态显示和列表排序逻辑\nMatrix 实时编辑标记：添加 MSC4357 实时标记，支持 Matrix 客户端显示打字机动画效果\nTelegram QA 通道：新增实时 Telegram 私群机器人测试功能\nCodex 提供商：新增捆绑 Codex 提供商，使用 Codex 管理的认证和线程处理\nLM Studio 提供商：新增捆绑 LM Studio 提供商，支持本地模型发现和流式预加载\n插件加载优化：按 manifest 声明精确激活插件，减少无关运行时加载\nQMD 内存搜索增强：默认启用搜索模式，优化内存回溯的可预测性",
+      "bug_fixes": "安全修复：从安全二进制列表移除 busybox/toybox 解释器\n安全修复：防止空审批者列表被授予显式批准权限\n安全修复：扩展 shell 包装检测，阻止 env-argv 注入攻击"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/307933468",
@@ -2444,8 +2444,8 @@
         "eyes": 8
       },
       "mentions_count": 15,
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败"
+      "features": "Dreaming/memory-wiki：添加 ChatGPT 导入功能，新增\"Imported Insights\"和\"Memory Palace\"日记子标签，支持直接从 UI 查看导入的源聊天和编译的 wiki 页面\nControl UI/webchat：将助手媒体/回复/语音指令渲染为结构化聊天气泡，添加富输出标签，外部嵌入 URL 受配置限制\nTools/video_generate：支持纯 URL 资产传递、类型化 providerOptions、参考音频输入、per-asset 角色提示和 adaptive 宽高比，提高图像输入上限\nFeishu：改进文档评论会话，支持更丰富的上下文解析、评论反应和输入反馈\nMicrosoft Teams：新增反应支持、Graph 分页和委托 OAuth 设置\nPlugins：允许插件清单声明激活和设置描述符，插件可描述所需认证和配置步骤\nOllama：缓存模型上下文窗口和功能元数据，减少重复刷新时的重复请求\nModels/providers：在调试日志中显示 OpenAI 兼容端点的分类，便于诊断路由问题\nQA/parity：添加 GPT-5.4 vs Opus 4.6 代理功能对比报告",
+      "bug_fixes": "OpenAI/Codex OAuth：修复新 Codex 登录时 scope 重写导致的 invalid_scope 错误\nAudio transcription：仅对 OpenAI 兼容请求禁用固定 DNS，修复 OpenAI、Groq、Mistral 转录问题\nmacOS/Talk Mode：首次授权麦克风权限后直接启动 Talk Mode，无需二次切换\nControl UI/webchat：TTS 音频回复持久化到聊天历史，混合工具输出正确配对消息\nWhatsApp：正确使用配置的默认账户，避免被错误注册为 default\nACP/agents：抑制子助手内部进度消息泄漏到父会话\nAgents/timeouts：LLM 空闲看门狗正确尊重显式运行超时配置\nConfig：zod schema 包含 asyncCompletion 配置项\nGoogle/Veo：移除不支持的 numberOfVideos 字段，修复 Gemini Veo 调用\nQA/packaging：npm 发布包含打包的 QA 场景，CLI 启动不受仓库 QA 配置影响\nCodex/QA：隐藏应用服务器协调消息，泄漏的测试元数据正确识别为 QA 失败\nWhatsApp：消息反应通过网关路径路由，DM 和群聊均使用实时监听器\nAuto-reply/WhatsApp：图像理解后保留附件真实路径，图像编辑不再丢失媒体\nTelegram/sessions：入站消息缺少 MessageThreadId 时正确初始化主题会话"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/307788242",
@@ -2610,8 +2610,8 @@
         "eyes": 10
       },
       "mentions_count": 61,
-      "features": "**Codex 集成**：新增 Codex 提供商和插件自有应用服务器，使 `codex/gpt-*` 模型使用 Codex 管理的认证、线程、模型发现和压缩功能\n**Active Memory**：新增可选的主动记忆插件，为聊天提供专属记忆子代理，自动拉取用户偏好和上下文，支持多种模式及实时调试\n**macOS 本地语音**：新增实验性 MLX 语音提供商，支持本地语音播放和系统语音回退\n**视频生成**：新增 Seedance 2.0 模型支持及完整参数配置\n**Teams 集成**：新增消息操作功能（置顶、标记已读、反应等）\n**QA Matrix 测试**：新增实时 Matrix 自动化测试通道\n**QA Telegram 测试**：新增私有群组机器人间测试功能\n**QA Multipass**：新增 Linux 虚拟机测试运行器\n**exec-policy 命令**：新增本地命令行用于同步工具执行策略配置\n**Gateway RPC**：新增 `commands.list` 远程命令发现接口\n**Provider 网络配置**：新增私有网络请求白名单配置选项\n**Matrix 流式处理**：支持 MSC4357 实时标记，客户端可渲染打字机动画\n**Dreaming UI**：简化场景和日记界面，优化状态和排序逻辑\n**严格 Agentic 模式**：为 GPT-5 系列新增严格代理执行合约\n**OpenAI/Codex 兼容**：增强工具 schema 兼容性和运行状态展示\n**飞书集成**：标准化用户代理并注册为 AI 代理",
-      "bug_fixes": "**浏览器安全**：加强沙箱导航防御、SSRF 防护、主机名白名单、重定向处理等多项安全加固\n**工具安全**：强化执行预检、主机环境黑名单、插件安装依赖扫描、WebSocket 帧处理等安全机制\n**OpenAI/Codex**：添加必需的 OAuth 作用域，更清晰分类提供商/运行时错误"
+      "features": "**Codex 提供商支持**：新增捆绑 Codex 提供商，使 `codex/gpt-*` 模型使用 Codex 管理的认证、线程、模型发现和压缩\n**Active Memory 插件**：新增主动记忆子代理，自动提取聊天中的偏好、上下文和历史细节\n**macOS 本地语音**：新增实验性 MLX 语音提供商用于 Talk 模式，支持本地播放和系统语音回退\n**视频生成**：新增 Seedance 2.0 模型支持及提供商特定元数据字段\n**Microsoft Teams**：新增消息置顶、已读、反应等操作功能\n**Matrix QA 测试通道**：新增基于临时 Matrix 服务器的实时传输测试\n**Telegram QA 测试通道**：新增私人群组机器人间测试及原生命令回复支持\n**多虚拟机 QA 测试**：新增 multipass runner 支持在可丢弃 Linux VM 中运行测试\n**exec-policy 命令**：新增本地命令用于同步工具执行配置与审批文件\n**Gateway 命令发现**：新增 commands.list RPC 支持远程客户端发现命令\n**私有网络请求**：新增 per-provider 私有网络请求配置选项\n**飞书集成优化**：标准化用户代理并注册为 AI 代理\n**Matrix 实时标记**：新增 MSC4357 实时标记用于草稿预览和编辑\n**Dreaming UI 优化**：简化场景和日记界面，稳定等待条目排序\n**严格 Agentic 模式**：新增 GPT-5 家族的严格嵌入式 Pi 执行合约\n**文档国际化改进**：优化翻译流程和错误恢复机制",
+      "bug_fixes": "**浏览器安全加固**：全面增强 SSRF 防护、导航防御、沙箱隔离和 Docker CDP 源范围限制\n**工具安全加固**：加强执行预检、主机环境隔离、节点输出边界、插件依赖扫描和 WebSocket 帧大小限制\n**Codex 集成修复**：添加必需的 OAuth 作用域，改进提供商和运行时失败分类"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/306864638",
@@ -2776,8 +2776,8 @@
         "eyes": 16
       },
       "mentions_count": 21,
-      "features": "Memory/dreaming: 新增基于历史的REM回填通道、日记提交流程和实时短期记忆提升整合\nControl UI/dreaming: 新增结构化日记视图，含时间线导航、回填/重置控制和梦境摘要追踪\nQA/lab: 新增角色氛围评估报告，支持模型选择和多任务并行运行\nPlugins/provider-auth: 支持provider清单声明auth别名，实现跨provider变体共享认证配置\niOS: 版本号锁定到CalVer，新增gateway版本固定工作流",
-      "bug_fixes": "Browser/security: 修复交互驱动的页面导航后安全检查被绕过的问题\nSecurity/dotenv: 阻止不受信任workspace的.env文件注入运行时和浏览器控制环境变量\nGateway/node exec events: 隔离远程节点执行事件的信任边界，防止注入可信内容\nPlugins/onboarding: 防止不受信任插件与捆绑provider的认证选项ID冲突\nSecurity/dependency audit: 升级basic-ftp修复CRLF命令注入漏洞\nAndroid/pairing: 修复扫码后认证状态残留和后台自动重试导致的配对失败\nMatrix/gateway: 修复Matrix同步就绪前过早标记启动成功导致的崩溃问题\nSlack/media: 修复同源重定向丢失认证导致图片附件无法加载\nReply/doctor: 修复OAuth重新认证失败未正确提示用户\nControl UI: 修复快速切换会话时历史记录与当前会话不同步\nGateway/chat: 阻止agent间控制令牌泄露到用户聊天界面\nAuto-reply/NO_REPLY: 清理静默前缀令牌防止泄露到用户可见回复中\nSessions/routing: 修复后续会话消息抢占外部渠道(Telegram/Discord)路由\nGateway/sessions: 重置会话时正确清除自动回退的模型覆盖设置"
+      "features": "Memory/dreaming: 新增 grounded REM backfill lane，支持历史路径回填、日记提交/重置、持久化事实提取和实时短期记忆提升\nControl UI/dreaming: 新增结构化日记视图，包含时间线导航、backfill/重置控制和 grounded Scene lane\nQA/lab: 新增 character-vibes 评估报告，支持模型选择和并行运行\nPlugins/provider-auth: 支持 provider manifests 声明 providerAuthAliases，实现 provider variants 间认证配置共享\niOS: 发布版本锁定到显式 CalVer，添加 pnpm ios:version:pin workflow",
+      "bug_fixes": "Browser/security: 修复浏览器交互后安全检查可被绕过的问题，防止 SSRF 隔离被突破\nSecurity/dotenv: 阻止不受信任 .env 文件中的运行时控制环境变量和浏览器控制覆盖\nGateway/node exec events: 标记远程节点 exec 事件为不受信任，防止注入可信系统内容\nPlugins/onboarding: 防止不受信任工作区插件与内置 provider auth-choice 冲突\nSecurity/dependency: 强制升级 basic-ftp 修复 CRLF 命令注入漏洞\nAndroid/pairing: 修复二维码扫描时清理过期认证、后台时暂停自动重试\nMatrix/gateway: 等待 Matrix sync 就绪后再标记启动成功，隔离后台失败\nSlack/media: 保留同源重定向的 bearer auth，跨域时正确剥离\nReply/doctor: 使用活跃运行时快照解析 SecretRefs，改进 gateway OAuth 重认证提示\nControl UI: 修复快速会话切换时的陈旧历史 reload 问题\nGateway/chat: 阻止 ANNOUNCE_SKIP/REPLY_SKIP 控制令牌泄露到用户界面\nAuto-reply/NO_REPLY: 剥离粘连的前导 NO_REPLY 令牌，防止静默标记泄漏\nSessions/routing: 保留会话间公告流量的外部路由，防止 Telegram/Discord 等通道丢失消息\nGateway/sessions: 重置时清除自动回退模型覆盖，保留用户明确选择的模型"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/306413127",
@@ -2942,8 +2942,8 @@
         "eyes": 8
       },
       "mentions_count": 3,
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败"
+      "features": "无",
+      "bug_fixes": "Telegram 频道：修复 npm 安装后缺少文件导致的网关启动失败问题\n多个打包频道：修复 BlueBubbles、Feishu、Slack 等频道安装后缺少文件导致的启动失败问题\n打包插件：修复插件兼容性元数据与版本不对齐导致的加载问题\nAgents 进度：修复 OpenAI 系列运行中 update_plan 不可用的问题\nAgents 执行：修复 /exec 默认报告与实际运行时行为不一致的问题\nSlack：修复 Socket Mode WebSocket 连接未正确使用环境变量代理设置的问题\nSlack 操作：修复 SecretRef bot token 在配置重新读取后失败的问题\n网络请求守卫：修复可信代理模式下未跳过 DNS pinning 导致代理沙箱无法解析外部主机的问题"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/306366394",
@@ -3108,8 +3108,8 @@
         "eyes": 11
       },
       "mentions_count": 44,
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败"
+      "features": "新增 `openclaw infer` 一级命令，支持 model、media、web、embedding 任务的 provider-backed 推理工作流\n媒体生成支持跨 image/music/video provider 自动回退，保留意图并映射参数到最近支持的选项\n恢复 memory-wiki 堆栈，包含 plugin、CLI、sync/query/apply 工具及 claim-health linting\n新增 webhook 入口 plugin，支持外部自动化通过共享密钥端点创建和驱动 TaskFlows\n会话持久化新增压缩检查点保存及分支/恢复操作，便于检查和恢复压缩前状态\n新增可插拔压缩 provider 注册表，支持插件替换内置 summarization pipeline\n新增 `agents.defaults.systemPromptOverride` 配置，用于受控的 prompt 实验\n新增 Google Gemma 4 模型支持，修复原生 Google Gemma 路由回退逻辑\n新增 Arcee AI provider plugin，包含 Trinity catalog 集成和 OpenRouter 支持\n恢复 Claude CLI 作为本地 Anthropic 首选路径，修复 Docker Claude CLI 支持\nOllama 检测 vision 能力，自动设置支持 vision 的模型的图像输入\nMemory/dreaming 支持将重标识的会话记录摄取到 dream corpus\nContext engines 暴露 availableTools、citationsMode 及 memory-artifact 状态",
+      "bug_fixes": "修复 CLI/infer 的 TTS 处理、web-search 配置行为、agent-vs-CLI 执行差异等问题\n修复 media capability fallback 未合并 bundled capability plugin ids 的问题\n修复 history 序列跟踪、评论/工具 XML 隐藏、follow-up 回复仅基于 final_answer 等问题"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/305515615",
@@ -3274,8 +3274,8 @@
         "eyes": 18
       },
       "mentions_count": 102,
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败"
+      "features": "Agents 新增内置 `video_generate` 工具，代理可直接创建视频并返回生成的媒体\n新增内置 `music_generate` 工具，支持 Google Lyria、MiniMax 和 Comfy 工作流，包括异步任务追踪\nComfyUI 新增捆绑工作流媒体插件，支持本地和云端工作流，含图像生成、视频生成和音乐生成\n新增 Qwen、Fireworks AI、StepFun 提供商，以及 MiniMax TTS、Ollama Web Search 和 MiniMax Search 集成\nAmazon Bedrock 新增 Mantle 支持、推理配置发现和自动请求区域注入\nControl UI 新增多语言支持：简体中文、繁体中文、巴西葡萄牙语、德语、西班牙语、日语、韩语、法语等12种语言\nPlugins 新增引导式 TUI 提示和 `install --force` 替换安装功能\nControl UI Skills 面板新增 ClawHub 搜索、详情和安装流程\niOS 新增通用 APNs 执行批准通知和应用内批准模态框\nMatrix 新增原生执行批准功能，支持频道或 DM 送达和线程感知处理\nChannels 新增可配置的 `contextVisibility` 选项，按渠道过滤上下文可见性\nProviders 新增跨 OpenAI/Anthropic/Google 的共享请求传输覆盖（headers、auth、proxy、TLS）\nOpenAI 新增 `openai-codex/gpt-5.4-mini` 前向兼容和可选 GPT 个性化\nClaude CLI 通过 loopback MCP 桥接暴露 OpenClaw 工具，改用 stdin + 流式响应\nACPX 运行时直接嵌入捆绑插件，新增通用 `reply_dispatch` 钩子\nAgents 新增实验性结构化计划和执行进度事件\nAnthropic 从新入职移除 Claude CLI 后端，现有配置可继续运行\n视频生成新增 xAI Grok、Alibaba Wan 和 Runway 提供商\nMemory 搜索新增 Amazon Bedrock 嵌入支持（Titan、Cohere、Nova、TwelveLabs）",
+      "bug_fixes": "Agents/music generation 修复对不支持的可选提示硬失败的问题，改为警告忽略"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/304801451",
@@ -3440,8 +3440,8 @@
         "eyes": 4
       },
       "mentions_count": 26,
-      "features": "xAI 插件：将 x_search 配置从旧路径迁移至插件专属路径，统一认证方式\nWeb fetch 插件：将 Firecrawl 配置迁移至插件专属路径，改进回退机制\n任务流：恢复核心任务流基板，支持 managed/mirrored 同步模式和持久化状态跟踪\n任务流：新增 managed 子任务生成与 sticky cancel intent，支持外部协调器立即停止调度\n任务流插件：添加 api.runtime.taskFlow 接口，简化托管任务流创建\nAndroid 助手：添加助手入口点和 Google Assistant App Actions 支持\n执行默认：改为 YOLO 模式（security=full, ask=off），默认不提示用户审批\nProvider 运行时：新增 provider-owned replay hook，支持转录策略和推理模式分发\n插件钩子：新增 before_agent_reply，支持插件短路 LLM 返回合成回复\n会话路由：将 provider 会话语法移至插件，支持 Telegram 话题路由和飞书继承\n飞书评论：新增 Drive 评论事件流，支持评论线程解析和文档协作\nMatrix 插件：发送 m.mentions 元数据，确保提及通知正常工作\nDiff 查看器：新增 plugin-owned viewerBaseUrl，支持稳定代理/公开源\nAgent 压缩：统一 agents.defaults.compaction.model 在所有入口点的解析\nAgent 压缩：新增 compaction.notifyUser 选项，控制压缩提示显示\nWhatsApp 反应：添加 reactionLevel 指导配置\n审批渠道：自动启用 DM-first 原生聊天审批，支持渠道扇出显式配置",
-      "bug_fixes": "Provider 传输策略：集中化请求认证、代理、TLS 和头部配置，阻止不安全的传输覆盖\nProvider/Copilot：规范化 GitHub Copilot API 主机分类，加固 token 派生代理端点解析\nProvider 流式头部：集中化默认和归因头部合并，确保跨路径一致性\nProvider 媒体 HTTP：集中化 base URL 规范化、默认认证和头部注入，标准化多 provider 请求路径"
+      "features": "Task Flow 子系统恢复，提供 managed/mirrored 同步模式和 `openclaw flows` 检视恢复工具\n新增托管子任务生成和粘性取消意图，便于外部编排器停止调度\n新增 `api.runtime.taskFlow` 接口，插件可从宿主 OpenClaw 上下文创建托管 Task Flow\nAndroid 助手新增 Google Assistant App Actions 入口支持\n网关/节点 exec 默认启用 YOLO 模式，security=full + ask=off\n新增 Provider-owned replay hook surfaces 用于转录策略和推理模式分发\n新增 `before_agent_reply` 钩子，插件可短路 LLM 返回合成回复\nFeishu 新增 Drive 评论事件流，支持评论线程上下文和文档协作工作流\nMatrix 插件新增合规 `m.mentions` 元数据，通知可靠性提升\n新增插件所有 `viewerBaseUrl`，链接可使用稳定的代理/公共源",
+      "bug_fixes": "集中化 Provider 传输策略的请求认证、代理、TLS 和 Header 配置，阻止不安全覆盖\n修复 GitHub Copilot API 主机分类和 token 派生代理端点解析，失败时安全关闭\n集中化 Provider streaming headers 跨 websocket、embedded-runner 和代理流路径的默认归因头合并"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/304300860",
@@ -3606,8 +3606,8 @@
         "eyes": 15
       },
       "mentions_count": 30,
-      "features": "聊天任务板：新增 `/tasks` 命令，可在当前会话中查看后台任务面板和最近任务详情\nSearXNG 搜索：集成 SearXNG 网络搜索提供商插件，支持配置主机地址\nBedrock Guardrails：新增 Amazon Bedrock Guardrails 支持\nmacOS 语音唤醒：支持通过语音唤醒触发 Talk Mode 对话模式\n飞书评论：新增飞书文档评论事件流程，支持评论线程解析和回复功能\n聊天历史截断：聊天历史文本截断可配置，支持 `gateway.webchat.chatHistoryMaxChars` 和请求级 `maxChars` 参数\n全局默认参数：新增 `agents.defaults.params` 用于全局默认提供商参数配置\nAgent 容错机制：改进同提供商认证重试机制，新增 `auth.cooldowns.rateLimitedProfileRotations` 配置\nCron 工具白名单：新增 `openclaw cron --tools` 命令支持按任务设置工具白名单\n渠道会话路由：将会话对话语法迁移到插件持有的会话密钥，保留 Telegram 和飞书的路由能力\nWhatsApp 反应：新增 `reactionLevel` 引导控制智能体反应行为\nTelegram 错误策略：新增可配置的 `errorPolicy` 和 `errorCooldownMs` 控制重复错误\nZAI 模型支持：新增 `glm-5.1` 和 `glm-5v-turbo` 模型\nAgent 压缩模型：修复 `agents.defaults.compaction.model` 在手动压缩和上下文压缩路径的一致性",
-      "bug_fixes": "错误消息泄露：停止向外部聊天渠道泄露原始提供商/运行时错误，改为返回友好的重试提示\n网关重载循环：配置重载器忽略启动时的配置写入，避免生成令牌触发重启循环\n任务维护阻塞：修复任务注册表维护扫描在高并发下阻塞网关事件循环的问题\n过期任务显示：从 `/status` 和会话状态中隐藏过期的已完成后台任务\n任务状态竞态：修复维护扫描期间任务状态被过时快照覆盖的问题\nExec 审批默认值：修复未设置内联或配置工具策略时未遵循安全默认值的缺陷\nExec 审批持久化：修复 `allow-always` 未正确持久化为用户信任的问题\nCron 审批死锁：修复隔离 cron 在信任自动化允许情况下无路由审批的死锁问题\n模型切换排队：修复 `/model` 更改在忙碌运行时未排队而是中断当前操作的问题"
+      "features": "任务面板：添加会话内后台任务面板 `/tasks`，支持最近任务详情和无关联任务时的 agent 本地回退计数\nWeb 搜索：集成 SearXNG provider 插件，支持可配置主机地址\nBedrock 安全：添加 Amazon Bedrock Guardrails 支持\nmacOS 语音唤醒：新增 Voice Wake 选项触发 Talk Mode\n飞书评论：添加 Drive 评论事件流程、评论线程上下文解析和内联回复功能\n聊天历史截断：新增 `gateway.webchat.chatHistoryMaxChars` 配置和 per-request `maxChars` 参数\nAgent 默认参数：新增 `agents.defaults.params` 全局默认 provider 参数配置\nAgent 故障转移：添加同 provider 认证配置重试上限、跨 provider 模型回退和 `auth.cooldowns.rateLimitedProfileRotations` 旋钮\nCron 工具白名单：新增 `openclaw cron --tools` 支持每任务工具白名单\n会话路由：将会话对话语法迁移到插件管理的会话密钥面，支持 Telegram 话题路由和飞书范围继承\nWhatsApp 反应：添加反应级别指导\nTelegram 错误处理：新增可配置的 `errorPolicy` 和 `errorCooldownMs` 控制\nZAI 模型：添加 `glm-5.1` 和 `glm-5v-turbo` 模型支持\nAgent 压缩模型：修复 `agents.defaults.compaction.model` 在手动压缩和上下文压缩路径的一致性",
+      "bug_fixes": "错误泄露：阻止原始 provider/运行时错误泄露到外部聊天渠道，改为返回友好的重试提示，Bedrock 工具结果不匹配时添加 `/new` 提示\n网关重载：忽略启动时的配置写入，避免生成 auth token 和 Control UI origins 触发重启循环\n任务注册阻塞：修复任务注册维护扫描在 SQLite 同步压力下阻塞网关事件循环的问题\n任务状态显示：隐藏陈旧的已完成任务，优先显示实时任务上下文，仅在无活跃工作时显示最近失败\n任务维护覆盖：修复扫描期间任务心跳或清理更新被陈旧快照状态覆盖的问题\n执行审批对齐：修复 `exec-approvals.json` 安全默认未生效、Slack/Discord 审批处理不一致的问题\n执行审批持久化：修复 `allow-always` 未持久化为可信状态、命令行信任误用、静态白名单绕过审批等问题\nCron 审批死锁：修复孤立 cron 任务在信任自动化时无法路由审批的问题"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/303901621",
@@ -3772,8 +3772,8 @@
         "eyes": 5
       },
       "mentions_count": 51,
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败"
+      "features": "ACP/plugins: 新增默认关闭的 ACPX 插件工具 MCP 桥接配置，强化桥接打包和日志路径\nAgents/LLM: 新增可配置的空闲流超时，阻止卡顿的模型流而非等待整体超时\nAgents/MCP: 支持提供者安全名称的工具命名、streamable-http 传输和按服务器连接超时\nAndroid/notifications: 新增通知转发控制，支持包过滤、勿扰时段、速率限制和更安全的选取器行为\nBackground tasks: 实现统一的后台运行控制平面，通过 SQLite 分类账整合 ACP、子代理、计划和后台 CLI 执行\nBackground tasks: 新增 `openclaw flows list|show|cancel` 线性任务流控制界面\nChannels/QQ Bot: 新增 QQ Bot 捆绑渠道插件，支持多账户、斜杠命令、提醒和媒体收发\nLINE/outbound media: 支持 LINE 图像、视频和音频出站发送\nMatrix/history: 新增 Matrix 组触发器的可选房间历史上下文和每代理水印\nTasks: 新增 SQLite 支持的任务流注册表和任务到流链接脚手架\nTasks: 单任务流持久化阻塞状态，支持重试时干净恢复",
+      "bug_fixes": "无（本次更新日志中未包含 Bug 修复条目）"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/302776989",
@@ -3938,8 +3938,8 @@
         "eyes": 14
       },
       "mentions_count": 71,
-      "features": "xAI 迁移至 Responses API，新增 `x_search` 支持并自动启用 xAI 插件\nxAI 集成新增 onboarding 引导的 x_search 配置和模型选择器\nMiniMax 新增 `image-01` 图像生成模型，支持文生图和图生图编辑\nbefore_tool_call hooks 支持异步 requireApproval，实现工具执行审批流程\n当前对话支持 ACP 绑定（Discord、BlueBubbles、iMessage），可直接转为 Codex 工作区\nOpenAI 及 Codex 模型默认启用 apply_patch 功能\n新增 Gemini CLI backend 支持，统一 CLI backend 日志输出\n简化 Podman 容器配置，改为 host-CLI 工作流程\nSlack 新增 upload-file action，支持文件上传及元数据覆盖\nTeams、Google Chat 新增文件上传支持，统一通过 upload-file 接口\nMatrix TTS 语音回复改为原生语音气泡发送\n新增 `openclaw config schema` 命令输出配置 JSON schema\nTTS 配置自动迁移旧版 speech 配置\n内存 flush 策略迁移至 memory-core 插件管理\nMiniMax 精简模型目录，仅保留 M2.7 系列\nPlugins runtime 暴露 runHeartbeatOnce 供插件触发单次心跳\nCompaction 后保留 AGENTS 刷新，改善取消原因展示\n新增 Mintlify 锚点链接校验脚本\nTavily 请求添加 `X-Client-Source: openclaw` 标识头",
-      "bug_fixes": "修复 Agents/Anthropic 中未处理的 provider stop reasons 导致崩溃的问题"
+      "features": "xAI/Tools：迁移到 Responses API，添加 x_search 支持，自动启用 xAI 搜索插件\nxAI/Onboarding：onboard 和 web 配置向导中添加可选的 x_search 设置\nMiniMax：新增图像生成 provider，支持 image-01 模型的文生图和图生图编辑\nPlugins/hooks：为 before_tool_call hooks 添加 async `requireApproval`，支持工具执行审批\nACP/channels：添加 Discord/BlueBubbles/iMessage 当前对话的 ACP 绑定\nOpenAI/apply_patch：默认启用 apply_patch，与 write 权限对齐\nPlugins/CLI backends：添加 Gemini CLI 支持和通用 --cli-backend-logs 标志\nPlugins/startup：自动加载捆绑的 provider 和 CLI-backend 插件\nPodman：简化容器设置，文档化 host-CLI 工作流\nSlack/tool actions：新增 upload-file action，支持文件名/标题/评论覆盖\nMessage actions/files：为 Teams 和 Google Chat 添加文件上传支持\nPlugins/Matrix TTS：发送原生 Matrix 语音消息气泡\nCLI：新增 `openclaw config schema` 命令打印 JSON schema\nMemory/plugins：重构内存 flush 计划到 active memory plugin 合约\nMiniMax：精简模型目录，仅保留 M2.7 系列\nPlugins/runtime：暴露 `runHeartbeatOnce` 支持单次心跳触发\nAgents/compaction：保留压缩后的 AGENTS 刷新和 safeguard 取消原因展示\nTavily：添加 `X-Client-Source: openclaw` 请求头用于流量归因",
+      "bug_fixes": "Agents/Anthropic：将未处理的 provider stop reasons（如 sensitive）恢复为结构化错误"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/301315642",
@@ -4270,8 +4270,8 @@
         "eyes": 21
       },
       "mentions_count": 16,
-      "features": "ModelStudio/Qwen：新增阿里云 Model Studio 标准付费端点（中国/全球），重新命名提供商组为 `Qwen (Alibaba Cloud Model Studio)`\nUI/clarity：整合按钮组件，优化 Knot 主题为黑白红配色并通过 WCAG 2.1 AA 对比度认证，新增 Diagnostics/CLI/Secrets/ACP/MCP 配置图标，改进无障碍支持\nCSP/Control UI：为 index.html 内联脚本计算 SHA-256 哈希并加入 script-src 指令，默认阻止内联脚本但允许显式哈希的引导代码",
-      "bug_fixes": "Plugins/bundled runtimes：恢复 npm 包中的 WhatsApp、Matrix 等插件运行时文件，修复全局安装失败问题\nCLI/channel auth：自动选择单个可登录通道，修复单通道配置和按需安装场景下的通道认证问题\nAuth/OpenAI tokens：修复保存凭证后回滚到过期令牌的问题，使 Configure/Onboard 流程正常工作\nControl UI/auth：保留操作员权限范围，避免会话在读取页面失败或空白\nPlugins/ClawHub：修复安装时插件 API 兼容性检查，修复版本号常量导致的安装失败问题\nPlugins/uninstall：支持 clawhub: 规范和版本无关的包名作为卸载目标\nBrowser/Chrome MCP：修复浏览器标签可用性等待逻辑，减少 macOS 上的超时和重复授权提示\nBrowser/CDP：修复慢速 headless Linux 环境下的二次运行浏览器启动回归问题\nAgents/web_search：使用实际配置的网络搜索提供商而非默认值，修复 agent 查找错误提供商的问题\nMistral/models：降低默认 max-token 安全预算，修复 doctor 命令以恢复旧配置\nClawHub/macOS：修复 macOS 认证路径和本地登录读取，修复 skills 浏览的 429 错误和空列表问题"
+      "features": "Qwen (Alibaba Cloud Model Studio): 新增标准按量付费 DashScope 端点，支持中国和全球区域\nUI/clarity: 合并按钮组件，改进 Knot 主题为黑白红配色（WCAG 2.1 AA 对比度），为配置区添加专用图标\nCSP/Control UI: 计算内联脚本 SHA-256 哈希并加入 script-src 指令，默认阻止内联脚本",
+      "bug_fixes": "插件运行时: 重新在 npm 包中包含 WhatsApp、Matrix 等插件运行时文件，修复全局安装失败问题\nCLI/渠道认证: 修复单渠道配置下的登录/登出功能，防止渠道 ID 滥用\nOpenAI 令牌: 修复 auth-profile 写入导致凭证回滚的问题\nControl UI/认证: 修复操作员会话在读取页面空白或失败的问题\nClawHub: 修复安装时插件 API 兼容性检查，解决 stale 1.2.0 常量导致的安装失败\n插件卸载: 支持 clawhub: 规范和版本less包名的卸载\nChrome MCP: 减少 macOS 上的用户配置超时和重复授权提示\nCDP 浏览器: 修复慢速无头 Linux 环境下的二次启动回退问题\nWeb Search 代理: 修复代理轮次使用错误提供商的问题\nMistral 模型: 调低默认 token 上限，修复 doctor 命令修复旧配置\nClawHub/macOS: 修复 macOS 上的认证令牌读取和保存路径\n技能浏览: 修复 ClawControl 认证429错误和空列表问题\nConfig 警告: 修复相同基础版本间的误报警告\nCLI/cron: 修复带时区参数的本地时间 DST 边界处理"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/300152758",
@@ -4327,8 +4327,8 @@
         "eyes": 30
       },
       "mentions_count": 120,
-      "features": "新增官方 Matrix 插件，基于 matrix-js-sdk 实现Matrix消息支持\nDiscord命令部署默认切换到Carbon reconcile，避免重启时频繁重新部署\n`time`命令在白名单评估时被视为透明包装器，批准的`time ...`命令绑定内部可执行文件而非包装器路径\n媒体快照输出迁移到`details.media`，生成媒体继续正确附加到助手回复",
-      "bug_fixes": "移除旧版Chrome扩展中继路径和捆绑扩展资源，运行`openclaw doctor --fix`迁移主机本地浏览器配置\n移除遗留的`nano-banana-pro`技能包装器，改用`agents.defaults.imageGenerationModel.primary`配置\n插件SDK迁移到新路径`openclaw/plugin-sdk/*`，移除旧的`openclaw/extension-api`\n消息发现必须使用新的`ChannelMessageActionAction.describeMessageTool(...)`方法\n移除遗留的`CLAWDBOT_*`和`MOLTBOT_*`环境变量，统一使用`OPENCLAW_*`前缀\n移除遗留的`.moltbot`状态目录自动检测，需手动迁移到`~/.openclaw`\n阻止构建工具JVM注入、glibc可利用参数和.NET依赖劫持等安全风险\nWebhook预认证请求限制降低到64KB/5s，阻止无认证调用者强制大缓冲区路径\nMatrix插件修复：mention必需房间中不再在消息路由前刷新线程绑定\nMatrix插件修复：网关重启时入站事件去重，避免重复处理已处理消息\nAndroid联系人搜索正确转义`%`和`_`通配符，避免意外匹配"
+      "features": "新增 Matrix 插件，支持官方 matrix-js-sdk，提供消息持久化去重功能\n插件安装优先使用 ClawHub，仅在包不存在时回退 npm\n插件 SDK 迁移至 openclaw/plugin-sdk/* 新架构\n执行环境沙箱增强安全性，阻止 JVM 注入、glibc 劫持、.NET 依赖劫持\n语音通话 webhooks 新增签名验证和预认证请求速率限制\nDiscord 命令部署切换为 Carbon reconcile 模式\n代理媒体回复统一迁移至 details.media 结构\nAndroid 联系人搜索修复 SQL LIKE 通配符注入问题",
+      "bug_fixes": "Chrome MCP 遗留扩展路径移除，旧配置自动迁移至 existing-session/user 模式\nMatrix 插件修复提及门控房间的消息路由和线程绑定刷新问题\n修复 time 命令在 allowlist 评估时的透明调度问题"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/297041210",
@@ -4384,8 +4384,8 @@
         "eyes": 17
       },
       "mentions_count": 37,
-      "features": "Android 重新设计聊天设置界面\nDocker 添加 OPENCLAW_TZ 时区支持\niOS 添加 onboarding 欢迎页面\nSlack 添加可选的交互式回复指令",
-      "bug_fixes": "Telegram：将线程媒体传输策略纳入 SSRF 安全检查\nDiscord：处理网关元数据获取失败情况\n会话重置时保留 lastAccountId 和 lastThreadId\n压缩后使用完整会话 token 计数进行合理性检查\nAgents 响应中删除 Anthropic thinking 块\n修复内存文件在大小写不敏感挂载时重复注入\nAndroid 修复 HttpURLConnection 内存泄漏\n修复 Agents 配置验证模式缺少 params 字段\nAndroid 使用 Google Code Scanner 进行 QR onboarding\n恢复 Web fetch firecrawl 配置\nSignal 添加 groups 配置到通道模式\n宽区域发现 Zod 配置添加缺失的 domain 字段\n不安全 control-ui 连接时保留共享认证\n压缩摘要中保留 persona 和语言连续性\n跨 agent 子 agent 生成时正确解析目标工作区\nOllama 隐藏本地推理-only 输出\nWindows 重启时抑制可见控制台窗口\nDocker 防止网关令牌在构建上下文中泄露\nUI 恢复滚动按钮的 chat-new-messages 样式"
+      "features": "Android聊天设置UI重新设计\nDocker支持OPENCLAW_TZ时区环境变量配置\niOS添加入职欢迎引导页面\nAndroid使用Google Code Scanner进行二维码扫描\nSlack支持可选的交互式回复指令\nUI移动端导航抽屉和主题变体优化",
+      "bug_fixes": "修复compaction使用完整会话token计数进行压缩后校验\n修复Telegram媒体传输策略的SSRF安全问题\n修复Discord网关获取元数据失败的处理逻辑\n修复会话重置时丢失lastAccountId和lastThreadId的问题\n修复agent回放时Anthropic思考块被错误丢弃\n修复大小写不敏感挂载时内存文件被重复注入\n修复Android TalkModeVoiceResolver的HttpURLConnection内存泄漏\n修复agent会话重置提示触发Azure内容过滤器的问题\n修复config中agents.list验证schema缺少params字段\n修复web fetch firecrawl配置在zod schema中丢失\n修复Signal channel schema缺少groups配置\n修复discovery的wideArea配置缺少domain字段\n修复不安全连接下control-ui共享认证丢失\n修复compaction摘要中人格和语言不一致\n修复跨代理子代理工作区解析错误\n修复ollama纯推理输出未被隐藏\n修复滚动药丸按钮丢失chat-new-messages样式\n修复Windows重启时控制台窗口闪烁问题\n修复Docker构建时网关令牌泄漏的安全漏洞"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/296518523",
@@ -4550,8 +4550,8 @@
         "eyes": 16
       },
       "mentions_count": 40,
-      "features": "Control UI 仪表板新增模块化概览、聊天、配置、代理和会话视图，支持命令面板、移动端底部标签和斜杠命令、搜索、导出、置顶消息等聊天工具\nOpenAI/GPT-5.4 快速模式新增跨界面可配置的会话级快速切换功能\nAnthropic/Claude 快速模式将快速切换映射到 Anthropic API 服务层请求\nOllama、vLLM、SGLang 模型迁移至 provider-plugin 架构，提升模块化程度\n新增 Kubernetes 安装路径及部署文档\n代理/子代理新增 sessions_yield 功能，支持立即结束当前轮次并携带隐藏负载\nSlack 代理回复支持 Block Kit 消息格式",
-      "bug_fixes": "安全修复：配对码切换为短期引导令牌，避免凭证泄露\n安全修复：禁用隐式工作区插件自动加载，防止未授权执行\n修复 Kimi Coding 工具调用格式，改为标准 tool_use 块格式\n修复 TUI 聊天日志重复渲染助手回复的问题\n修复 Telegram 模型选择器按钮持久化和验证问题\n修复重启后重复发送主动消息的问题\n修复 Kimi Coding 默认 User-Agent 头以支持订阅认证\n修复 OpenAI Codex Spark 通过兼容路径继续工作\n修复 Ollama Kimi 模型思考模式下的工具路由问题\n修复 Moonshot CN API 显式 baseUrl 认证问题\n修复 Kimi Coding 自定义端点被内置默认值覆盖问题\n修复 TUI 主会话路由继承外部消息渠道的问题\n修复 BlueBubbles 和 iMessage 自聊回声重复问题\n修复子代理完成通知超时及重复投递问题"
+      "features": "摘要生成失败",
+      "bug_fixes": "摘要生成失败"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/295986061",
@@ -4607,8 +4607,8 @@
         "eyes": 13
       },
       "mentions_count": 59,
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败"
+      "features": "**Ollama 一站式配置**：新增 Local/Cloud + Local 模式设置向导、浏览器云登录、推荐模型和云模型处理\n**OpenCode Go provider**：新增 OpenCode Go 提供商，统一 Zen 和 Go 的设置流程，共享密钥存储\n**多模态记忆索引**：支持通过 Gemini `gemini-embedding-2-preview` 对图像和音频进行可选索引\n**Gemini 记忆搜索增强**：添加 `gemini-embedding-2-preview` 支持，可配置输出维度和自动重新索引\n**iOS 欢迎屏幕**：新增实时代理概览欢迎页，连接时自动刷新，重构为停靠工具栏替代浮动控件\n**iOS 小屏适配**：主页脚手架适配小屏手机，聊天在主会话而非 `ios` 会话中打开\n**macOS 聊天模型选择器**：新增模型选择器，持久化思考级别选择，强化会话模型同步\n**macOS 网关认证检测**：检测远程网关是否需要共享认证令牌，指导获取位置\n**Discord 线程归档配置**：添加 `autoArchiveDuration` 配置，支持 1 小时/1天/3天/1周归档时长\n**iOS TestFlight 流程**：新增本地 beta 发布流程，Fastlane 支持和 watch-app 归档修复\n**ACP 会话恢复**：支持 `resumeSessionId` 参数，让 ACP 会话可恢复现有 Codex 对话\n**节点待处理工作队列**：添加内存中待处理工作队列原语和唤醒助手复用\n**Git 状态忽略**：忽略网关生成的 `.dev-state` 文件，减少仓库噪音\n**CLI 环境标记**：子命令环境标记 `OPENCLAW_CLI` 以便检测 CLI 启动\n**OpenRouter 新模型**：添加 Hunter Alpha 和 Healer Alpha 免费隐形模型入口",
+      "bug_fixes": "**文本消毒**：清除用户可见文本中的模型控制令牌（`<|...|>` 和全角 `<｜...｜>`），防止 GLM-5 和 DeepSeek 内部标记泄露\n**iOS 前台恢复**：后台 Socket 销毁后前台返回时立即重连，不再等待后续唤醒\n**网关认证令牌安全**：将会话认证令牌改为会话级浏览器存储，替代长期 localStorage，按网关 URL 隔离\n**macOS LaunchAgent 重启**：修复 macOS launchd 显式重启时保持 LaunchAgent 注册，自重启通过分离辅助进程交接\n**Cron 隔离传递**：收紧 Cron 作业隔离传递，禁止通过临时发送或备用主会话通知"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/294575815",
@@ -4773,8 +4773,8 @@
         "eyes": 22
       },
       "mentions_count": 43,
-      "features": "CLI新增 `openclaw backup create` 和 `openclaw backup verify` 命令，支持本地状态归档备份\nmacOS新增远程网关令牌字段，保留现有非明文配置值并增加格式警告\nTalk模式新增 `talk.silenceTimeoutMs` 配置项，允许自定义静默超时时间\nTUI可从当前工作区推断活跃代理，同时保留显式代理目标设置\nBrave搜索新增 `tools.web.search.brave.mode: \"llm-context\"` 选项\nCLI版本信息新增短Git提交哈希显示\nACP新增入口溯源元数据和可见收据注入功能\n网络搜索提供者排序按字母排列，多键自动检测优先Grok再Kimi\nACPX测试工具移至专用测试工具目录",
-      "bug_fixes": "macOS升级重启时重新启用被禁用的LaunchAgent服务\nmacOS应用修复浏览器代理路由、粘贴语义、转录噪声剥离等多项问题\nAndroid移除自更新、后台位置、屏幕录制等非必要权限\nTelegram消息路由按代理去重，避免同一消息触发重复回复\nCron/Telegram公告投递修复文本消息路由问题\nMatrix路由为损坏的m.direct服务器添加安全回退检测\n飞书插件安装后正确清理发现缓存，不再立即重新提示下载\n插件升级时优先使用捆绑版本，避免被npm安装覆盖"
+      "features": "CLI/backup: 新增 `openclaw backup create` 和 `openclaw backup verify` 命令，支持配置备份、归档验证及危险操作中的备份提醒\nTalk mode: 新增 `talk.silenceTimeoutMs` 配置项，允许自定义静默超时时间后再自动发送\nTUI: 从当前工作区自动推断活动代理，同时保留显式的 `agent:` 会话目标\nTools/Brave web search: 新增 `tools.web.search.brave.mode: \"llm-context\"` 选项，调用 Brave LLM Context 端点并返回带来源的摘要片段\nACP/Provenance: 新增 ACP 入口溯元数据和收据注入功能（`openclaw acp --provenance off|meta|meta+receipt`）\nCLI/install: `openclaw --version` 输出现包含 git commit hash\nTools/web search: 规范化提供商顺序，多键自动检测优先选择 Grok\nmacOS/onboarding: 远程模式新增网关令牌字段，自动保留现有非明文配置值",
+      "bug_fixes": "macOS launchd restart: 修复更新后 LaunchAgent 服务被禁用导致重启卡住的问题\nmacOS app/chat UI: 修复浏览器代理路由、纯文本粘贴语义、清理助手调试痕迹、权限状态刷新及 cron 解析问题\nAndroid/Play: 移除自更新、后台位置、屏幕录制和后台麦克风权限，清理遗留位置配置\nTelegram/DM routing: 修复同一 DM 触发重复回复的问题\nCron/Telegram announce delivery: 修复纯文本目标虚假报告已送达的问题\nMatrix/DM routing: 为损坏的 `m.direct` homeservers 添加安全回退机制，修复房间绑定代理选择问题\nFeishu/plugin onboarding: 修复安装后立即重新提示下载的问题\nPlugins/channel onboarding: 优先使用捆绑通道插件，避免被重复的 npm 安装覆盖"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/294352622",
@@ -4939,8 +4939,8 @@
         "eyes": 13
       },
       "mentions_count": 196,
-      "features": "Agents/context engine plugin interface：添加 ContextEngine 插件槽位，支持完整生命周期钩子和配置驱动的解析，零行为变更（#22201）\nACP/persistent channel bindings：添加持久化 Discord 和 Telegram 话题绑定存储与路由，支持 ACP 线程目标重启后保留（#34873）\nTelegram/ACP topic bindings：支持话题绑定、路由到 ACP 会话、可操作审批按钮及确认固定（#36683）\nTelegram/topic agent routing：支持论坛群组和 DM 话题中按话题设置 agentId 路由（#33647）\nWeb UI/i18n：添加西班牙语（es）本地化支持及语言选择器（#35038）\nOnboarding/web search：配置向导中添加提供商选择步骤及 SecretRef 引用模式支持（#34009）\nTools/Web search：Perplexity 切换至 Search API，新增语言/区域/时间过滤（#33822）\nGateway：添加 SecretRef 支持 gateway.auth.token 及认证模式护栏（#35094）\nDocker/Podman：添加 OPENCLAW_EXTENSIONS 支持容器构建时预装扩展依赖（#32223）\nPlugins/system-context fields：添加 prependSystemContext 和 appendSystemContext 用于系统提示空间静态引导（#35177）\nPlugins/hook policy：添加 hooks.allowPromptInjection 并验证未知钩子名称（#36567）\nHooks/Compaction lifecycle：发出 session:compact:before/after 事件供自动化响应（#16788）\nAgents/compaction post-context：添加 postCompactionSections 配置决定压缩后重新注入的 AGENTS.md 章节（#34556）\nTTS/OpenAI endpoints：支持 messages.tts.openai.baseUrl 配置及 OpenAI TTS 请求路由（#34321）\nSlack/DM typing feedback：添加 Slack DM 打字反应反馈配置（#19816）\nDiscord/allowBots mention gating：添加 allowBots: \"mentions\" 仅接受提及机器人的消息（#36683）\nAgents/tool-result truncation：使用头部+尾部截断保留重要诊断信息（#20076）\nCron/job snapshot persistence：规范化持久化时跳过备份以保留 jobs.json.bak 恢复快照（#35234）\nCLI：只读 SecretRef 状态流安全降级处理（#37023）\nTools/Diffs guidance：系统提示中恢复简短差异使用提示，详情移至配套技能（#36904）",
-      "bug_fixes": "Agents/compaction post-context configurability：修复文档默认配对在任意顺序配置时的遗留回退行为（#34556）\nTelegram/ACP topic bindings：接受 Telegram Mac Unicode dash 选项前缀（#36683）\nCron/job snapshot persistence：规范化持久化跳过备份创建，确保预编辑快照保留用于恢复（#35234）"
+      "features": "摘要生成失败",
+      "bug_fixes": "摘要生成失败"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/292373048",
@@ -5105,7 +5105,7 @@
         "eyes": 28
       },
       "mentions_count": 95,
-      "features": "Secrets/SecretRef 支持扩展至 64 个用户凭证目标，实现快速失败和诊断报告\n新增原生 PDF 工具，支持 Anthropic/Google PDF 提供商及回退提取方案\n出站适配器新增 sendPayload 支持，覆盖 Discord/Slack/WhatsApp/Zalo 等平台\n新增 MiniMax-M2.5-highspeed 模型支持，保留 Lightning 兼容配置\nsessions_spawn 子代理运行时新增内联文件附件支持及生命周期清理\nTelegram 流式预览默认改为 partial 模式，新安装开箱即用\nTelegram DM 流式传输改用 sendMessageDraft，区分推理和回答预览\nTelegram 语音消息新增 disableAudioPreflight 配置跳过转录预检\n新增 openclaw config validate 命令，支持 JSON 输出和详细错误路径\nDiffs 工具新增 PDF 输出及质量控制参数\nMemory 搜索新增 Ollama 嵌入提供商支持\nZalo 个人插件重构为原生 zca-js 进程内集成\n插件 SDK 新增 ChannelGatewayContext.channelRuntime 访问能力\n插件运行时新增音频文件转录 API\n会话生命周期钩子新增 sessionKey 上下文信息\n消息生命周期新增 transcribed/preprocessed 钩子事件及群组上下文\n音频理解新增转录确认回显功能（默认关闭）\n插件运行时新增立即心跳请求 API\n插件运行时新增 AgentEvent 和 SessionTranscriptUpdate 订阅机制\nCLI 横幅新增 taglineMode 配置控制启动标语行为",
+      "features": "SecretRef 支持扩展至 64 个目标，涵盖运行时收集器、secrets 规划/应用/审计流程及文档（#29580）\n新增原生 PDF 工具，支持 Anthropic/Google PDF 提供商及非原生模型回退提取（#31319）\nDiscord/Slack/WhatsApp/Zalo 等平台新增共享 `sendPayload` 支持，含多媒体迭代和文本回退（#30144）\n新增 MiniMax-M2.5-highspeed 模型支持，保留旧版 Lightning 兼容（#31350）\nsessions_spawn 新增内联文件附件支持，含 base64 编码和生命周期清理（#16761）\nTelegram 流式传输默认启用 `partial` 模式，新安装开箱即用（#31824）\nTelegram 私聊预览流使用 `sendMessageDraft`，区分推理/回答预览（#31824）\nTelegram 语音消息新增可选 `disableAudioPreflight` 跳过提及检测预检（#23067）\n新增 `openclaw config validate` 命令及启动时详细配置错误路径提示（#31220）\nDiffs 工具新增 PDF 输出支持和质量/缩放参数（#31342）\nMemory 新增 Ollama 嵌入支持（`memorySearch.provider = \"ollama\"`）（#26349）\nZalo 插件使用原生 `zca-js` 集成重建，移除外部 CLI 传输依赖\n插件 SDK 新增 `channelRuntime` 上下文，供外部渠道插件访问共享运行时辅助函数（#25462）\n插件运行时新增 `api.runtime.stt.transcribeAudioFile` API（#22402）\n会话生命周期钩子事件新增 `sessionKey` 字段（#26394）\n新增 `message:transcribed` 和 `message:preprocessed` 内部钩子事件（#9859）\n新增 `tools.media.audio.echoTranscript` 可选音频回显确认消息（#32150）\n插件运行时新增 `runtime.system.requestHeartbeatNow` API（#19464）\n新增 `runtime.events.onAgentEvent` 和 `onSessionTranscriptUpdate` 订阅 API（#16044）\n新增 `cli.banner.taglineMode` 控制启动标语行为（#32782）",
       "bug_fixes": "无"
     },
     {
@@ -5235,8 +5235,8 @@
         "eyes": 11
       },
       "mentions_count": 76,
-      "features": "**Agents/Thinking**：Anthropic Claude 4.6 模型默认思考级别设为 `adaptive`，其他推理模型默认 `low`\n**Gateway/健康检查**：新增 `/health`、`/healthz`、`/ready`、`/readyz` 端点，支持 Docker/Kubernetes 探活\n**Android/Nodes**：新增 `camera.list`、`device.permissions`、`device.health`、`notifications.actions` 等命令\n**Discord/Thread**：改用 `idleHours`（默认 24h）和可选 `maxAgeHours` 管理会话生命周期\n**Telegram/DM topics**：支持按 DM 配置话题路由和授权，新增 `dmPolicy`、`requireTopic` 等配置\n**Web UI/Cron 国际化**：本地化 Cron 页面标签、过滤器、表单帮助文本，支持英语和中文\n**OpenAI/Streaming**：Responses WebSocket 优先，默认 `transport: \"auto\"`，支持 SSE 回退\n**Android/Gateway**：实时能力集成覆盖，画布 URL 规范化，调试诊断 JSON 输出\n**Android/Nodes 新增功能**：`system.notify`、`photos.latest`、`contacts.search/add`、`calendar.events/add`、`motion.activity/pedometer`\n**CLI/Config**：新增 `openclaw config file` 命令显示配置文件路径\n**Feishu/Docx**：支持表格创建/单元格写入、图片/文件上传\n**Feishu/Reactions**：处理 `im.message.reaction.created_v1` 事件，支持验证和过滤\n**Feishu/Chat tooling**：新增聊天信息和成员查询工具\n**Feishu/Doc permissions**：支持可选所有者权限授予\n**Web UI/德语**：新增德语 (`de`) 语言支持\n**Tools/Diffs**：新增差异渲染工具，支持画布和 PNG 输出\n**Memory/LanceDB**：支持自定义 `baseUrl` 和 embedding 维度\n**ACP/ACPX streaming**：固定插件版本 `0.1.15`，简化流传递逻辑\n**Shell 环境变量**：在 `exec`、`acp`、`acp-client`、`tui-local` 中设置 `OPENCLAW_SHELL` 标记\n**Cron/Heartbeat 轻量模式**：新增 `--light-context` 选项，仅加载 `HEARTBEAT.md`",
-      "bug_fixes": "无（更新日志中未包含明确的 Bug 修复项）"
+      "features": "Anthropic Claude 4.6 模型默认思考级别升级为 `adaptive`，其他推理模型保持 `low`\nGateway 新增内置健康检查端点（`/health`、`/healthz`、`/ready`、`/readyz`）\nAndroid 节点新增相机、权限、设备健康、通知操作等命令\nDiscord 线程生命周期改为 inactivity 控制，支持 `/session idle` 和 `/session max-age` 命令\nTelegram 新增 DM 话题配置和路由，支持基于话题的授权和防抖机制\nWeb UI Cron 页面支持英文和中文本地化\nOpenAI Responses 改为 WebSocket 优先传输方式\nCLI 新增 `openclaw config file` 命令用于打印配置文件路径\n飞书新增 Docx 表格创建/写入和图片/文件上传功能\n飞书新增消息反应处理和聊天信息查询工具\n飞书文档权限支持所有者授权字段\nWeb UI 新增德语 (`de`) 本地化支持\n新增 `diffs` 插件工具用于只读差异渲染\nLanceDB 记忆支持自定义 OpenAI `baseUrl` 和嵌入维度\nACPX 插件支持简化，流传输优化为仅发送最终结果\nCron 和心跳任务新增轻量级引导模式选项\nShell 类运行时新增 `OPENCLAW_SHELL` 环境变量标记",
+      "bug_fixes": "无"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/291156681",
@@ -5401,8 +5401,8 @@
         "eyes": 11
       },
       "mentions_count": 47,
-      "features": "External Secrets Management：新增完整 `openclaw secrets` 工作流（audit、configure、apply、reload），支持运行时快照激活和严格的目标路径验证\nACP Thread-bound agents：ACP代理成为线程会话的一级运行时，集成 spawn/send 调度、生命周期控制和启动协调\nAgents/Routing CLI：新增 `openclaw agents bindings`、`bind`、`unbind` 命令用于账户范围的路由管理\nCodex/WebSocket transport：默认 WebSocket 优先（`transport: \"auto\"` 配合 SSE 回退）\nOnboarding/Plugins：渠道插件可拥有交互式引导流程，支持 `configureInteractive` 和 `configureWhenConfigured` 钩子\nAuth/Onboarding：Gemini CLI OAuth 前新增账户风险警告和确认环节\nAndroid/Nodes：新增 `device` 能力及 `device.status`、`device.info` 节点命令\nAndroid/Nodes：新增 `notifications.list` 支持，可在代理工具中列出设备通知",
-      "bug_fixes": "Telegram/DM allowlist：强制执行 `dmPolicy: \"allowlist\"` 的 `allowFrom` 需求，防止升级后 DM 流量被静默丢弃\nDelivery queue/recovery backoff：持久化 `lastAttemptAt` 防止重试饥饿，确保在回退窗口到期后才重试\nGoogle Chat/Lifecycle：保持 `startAccount` 待处理直到中止，防止自动重启循环\nTemp dirs/Linux umask：创建后强制 `0700` 权限并自修复现有可写临时目录，防止 `umask 0002` 启动崩溃\nNextcloud Talk/Lifecycle：保持 `startAccount` 待处理并关闭时停止 webhook 监控，防止 `EADDRINUSE` 重启循环\nMicrosoft Teams/File uploads：立即响应 `fileConsent/invoke` 避免超时提示横幅\nQueue/Drain/Cron reliability：同步泵故障时保证 `draining` 标志重置，网关重启期间拒绝新入队并加强 cron 超时安全\nTyping indicators：最终化时始终标记 dispatch 空闲，防止运行完成后打字指示器卡住\nTyping/TTL safety net：共享打字管道新增最大持续时间保护机制"
+      "features": "External Secrets Management：新增完整 `openclaw secrets` 工作流程（audit、configure、apply、reload），支持运行时快照激活和严格目标路径验证\nACP/Thread-bound agents：ACP agents 作为线程会话的一级运行时，支持 spawn/send 调度集成和生命周期控制\nAgents/Routing CLI：新增 `openclaw agents bindings`、`bind`、`unbind` 命令用于账户范围路由管理\nCodex/WebSocket transport：`openai-codex` 默认启用 WebSocket-first，附带 SSE 回退机制\nOnboarding/Plugins：允许 channel plugins 自定义交互式 onboarding 流程\nAuth/Onboarding：Gemini CLI OAuth 添加账户风险警告和确认环节\nAndroid/Nodes：新增 Android device capability 及 `device.status` 和 `device.info` 节点命令\nAndroid/Nodes：新增 `notifications.list` 支持，可在 agent tooling 中列出设备通知",
+      "bug_fixes": "Telegram/DM allowlist：修复跨 account-capable channels 的 `dmPolicy: \"allowlist\"` 策略执行，避免升级后 DM 流量静默丢失\nDelivery queue/recovery backoff：修复重试饥饿问题，通过持久化 `lastAttemptAt` 延迟恢复直到 backoff 窗口到期\nGemini OAuth：修复 OAuth 项目发现元数据和端点回退处理，包括环境变量提供项目 ID 的回退场景\nGoogle Chat/Lifecycle：修复 webhook 模式下 `startAccount` 未正确挂起导致的自动重启循环问题\nTemp dirs/Linux umask：修复临时目录创建后权限强制为 0700，防止 `umask 0002` 安装环境启动崩溃\nNextcloud Talk/Lifecycle：修复网关管理账户生命周期时的 `EADDRINUSE` 重启循环\nMicrosoft Teams/File uploads：修复文件上传时假阳性超时错误提示，上传完成后不再显示失败横幅\nQueue/Drain/Cron reliability：加强队列排空保证同步泵失败时 `draining` 标志重置，防止重启期间任务静默丢失\nTyping/Main reply pipeline：修复 agent-runner 最终化时 dispatch idle 标记，确保打字指示器正常清理\nTyping/TTL safety net：为共享打字状态添加最大持续时间保护机制"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/290708916",
@@ -5567,8 +5567,8 @@
         "eyes": 10
       },
       "mentions_count": 23,
-      "features": "Android 聊天 UI 改进流式消息传递和 Markdown 渲染质量\nAndroid 启动性能优化，添加性能基准测试脚本\n移动端小屏幕添加堆叠布局的编写操作按钮\n新增 `agents.defaults.heartbeat.directPolicy` 配置选项\n澄清单用户默认安全通知\n将所有 `bot.molt` 相关标识替换为 `ai.openclaw`\n新增 `session.parentForkMaxTokens` 配置项（默认 100000）",
-      "bug_fixes": "修复子代理完成通知传递的队列状态机问题\n修复 Telegram Webhook 启动和 JSON 处理，防止请求挂起\n修复 Slack 会话线程过大的父会话继承问题\n修复 Cron 消息多账户路由优先使用发送方绑定账户\n修复 Gateway 消息媒体根的非默认 agent 发送失败问题\n修复跟进路由失败时的同通道回退dispatch问题\n修复 Cron 通知重复发送问题\n修复 LINE 生命周期启动被误读为退出的重启循环问题\n修复 Discord Gateway 启动时错误事件捕获，避免崩溃\n修复 Discord 入站文本嵌入标题丢失问题\n修复 Slack 入站媒体下载失败时文件丢失问题\n修复 Telegram 消息预览问题"
+      "features": "Android 聊天 UI 改进流式消息传递和 Markdown 渲染质量，支持更好的 GitHub 风格 Markdown\nAndroid 启动性能优化：延迟前台服务启动、添加启动宏基准测试和性能 CLI 脚本\n移动端小屏幕添加发送按钮堆叠布局改善可用性\n心跳配置新增 `agents.defaults.heartbeat.directPolicy` 选项，替代原有 DM 开关\n配置系统提醒代理在编辑前调用 `config.schema` 避免配置猜测",
+      "bug_fixes": "Telegram Webhook 改为回调模式 JSON 处理，防止请求超时和更新丢失\nSlack 修复超大父会话导致线程会话静默失效问题，新增 `session.parentForkMaxTokens` 配置\nCron 多账户路由修复，显式 `delivery.accountId` 优先于全局默认值\nGateway 媒体根修复，非默认 agent 工作区媒体发送不再报 `LocalMediaAccessError`\n跨平台路由同频道回退修复，跟进回复不再因临时源适配器故障被丢弃\nCron 重复防护修复，分别跟踪尝试投递与确认投递，避免重复发送\nLINE 生命周期修复，防止 webhook 启动被误读为通道退出导致重启循环\nDiscord Gateway 修复，在生命周期监听器附加前捕获启动错误\nDiscord 消息解析修复，保留嵌入的 title 和 description 回退文本\nSlack 媒体下载失败时提供文件名占位符回退，避免附件消息静默丢失"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/290148383",
@@ -5733,8 +5733,8 @@
         "eyes": 13
       },
       "mentions_count": 53,
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败"
+      "features": "自动回复中止：支持多语言停止关键词和尾部标点变体（如 `STOP OPENCLAW!!!`）\nAndroid 引导流程：原生四步引导，改为五标签页导航（Connect/Chat/Voice/Screen/Settings）\nTalk 配置：添加提供商无关的 Talk 配置，暴露 Gateway ElevenLabs 元数据\n安全模型：添加 `security.trust_model.multi_user_heuristic` 标志共享用户入口并提供加固指南",
+      "bug_fixes": "路由隔离：修复跨渠道回复被错误路由到其他频道的问题\n心跳防泄漏：阻止心跳消息发送至 Discord 等直接消息目标\n心跳默认行为：默认目标从 `last` 改为 `none`，避免意外推送\n队列去重：会话已有活跃运行时丢弃后续心跳，防止重复响应分支\n线程泄漏：cron/heartbeat 投递不再沿用缓存的 `lastThreadId`，保持在顶层目标\n消息去重：修复 Telegram 发送重复消息的问题\n输入指示器：长回复时保持打字状态指示，防止中途过期\n模型降级：fallback 模型继续遍历完整降级链而非死锁"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/289709455",
@@ -5899,8 +5899,8 @@
         "eyes": 9
       },
       "mentions_count": 45,
-      "features": "**Kilo Gateway 提供商**：新增 `kilocode` 一级提供商支持，涵盖认证、入职、隐式检测、模型默认值及文档，默认模型为 `kilocode/anthropic/claude-opus-4.6`\n**Vercel AI Gateway**：支持 Claude 简写模型引用，自动规范化为标准 Anthropic 路由模型 ID\n**Prompt 缓存文档**：新增专门参考文档，涵盖 `cacheRetention`、代理级 `params` 合并优先级及调优指南\n**HTTP 安全头**：新增 `Strict-Transport-Security` 支持，用于直接 HTTPS 部署场景\n**会话维护强化**：新增磁盘预算控制（`maxDiskBytes`/`highWaterBytes`）和更安全的清理行为\n**Kimi 网页搜索**：新增 `provider: \"kimi\"` (Moonshot) 支持，包含引文提取和修正的两步搜索流程\n**Moonshot 视频支持**：新增原生 Moonshot 视频提供商，纳入自动视频密钥检测\n**代理参数覆盖**：支持在模型默认值之上单独配置代理级 `params`（如 `cacheRetention`）\n**引导文件缓存**：按会话缓存引导文件快照，减少会话内写入导致的缓存失效",
-      "bug_fixes": "**配置安全**：修复 `config.get` 快照中敏感动态密钥的脱敏问题及还原行为\n**Vitest 测试内存**：根据主机内存分级并行工作线程，防止内存受限环境 OOM\n**WhatsApp 群组过滤**：修复无显式 `groups` 时 `allowlist` 模式下所有群组消息被错误阻止的问题\n**上下文剪枝**：扩展 `cache-ttl` 资格至 Moonshot/Kimi 和 ZAI/GLM 提供商\n**Doctor 内存检查**：改进 `openclaw doctor` 对网关侧内存嵌入就绪状态的探测和警告\n**会话密钥规范化**：修复混合大小写导致的重复会话和历史缺失问题\n**Telegram 反应**：软失败处理反应错误，接受 snake_case `message_id`，修复 DM 反应不稳定问题\n**Telegram 轮询**：将偏移量限定至机器人身份，防止跨令牌偏移混乱和重叠轮询器"
+      "features": "新增 `kilocode` 一级提供商支持，集成认证、入职流程、隐式检测、模型默认值及文档，默认模型为 `kilocode/anthropic/claude-opus-4.6`\nVercel AI Gateway 支持 Claude 简写模型引用，自动规范化为 Anthropic 路由的模型 ID\n添加专门的 prompt caching 参考文档，涵盖 `cacheRetention`、代理级 `params` 合并优先级及调优指南\nGateway 新增可选 `Strict-Transport-Security` HTTP 安全头支持\n强化会话维护，添加磁盘预算控制和更安全的清理行为\n新增 Moonshot/Kimi 网页搜索提供商支持及两步搜索工具流程\n新增原生 Moonshot 视频提供商并支持自动视频密钥检测\n支持按代理的 `params` 覆盖，允许独立调整缓存行为\n引导文件快照按会话密钥缓存，减少不必要的 prompt cache 失效",
+      "bug_fixes": "配置快照中正确清除敏感动态通配符密钥并保留还原行为\nVitest 测试根据主机内存动态调整并行工作进程配置\n修复 WhatsApp 群组策略问题：设置 `allowlist` 模式时不再错误阻止已允许的发送者\n扩展 `cache-ttl` 上下文剪枝支持至 Moonshot/Kimi 和 ZAI/GLM 提供商\n改进 `openclaw doctor` 内存就绪检测，提供更精确的网关内存探针警告\n会话存储规范化混合大小写密钥，防止重复会话和 TUI/WebUI 历史缺失\nTelegram 消息反应软失败处理，支持 `message_id`，修复 DM 反应循环问题\nTelegram 轮询偏移量按 bot 身份隔离，防止重启时的跨令牌偏移污染\n修复 `/reasoning off` 时防止推理内容泄漏问题"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/289243064",
@@ -6137,7 +6137,7 @@
           "state": "uploaded",
           "size": 18112332,
           "digest": "sha256:8e2930b8d682fa56c10a5e20ed30e05c59a1f12699121395e9126bac389d90cc",
-          "download_count": 15196,
+          "download_count": 15197,
           "created_at": "2026-02-21T16:56:37Z",
           "updated_at": "2026-02-21T16:56:44Z",
           "browser_download_url": "https://github.com/openclaw/openclaw/releases/download/v2026.2.21/OpenClaw-2026.2.21.dmg"
@@ -6209,7 +6209,7 @@
           "state": "uploaded",
           "size": 23065599,
           "digest": "sha256:6fbaa258d079ee1540b69f13e2a080f4fb7b7bcef4b659fff97f27d9d2a36ebf",
-          "download_count": 3716,
+          "download_count": 3717,
           "created_at": "2026-02-21T16:56:37Z",
           "updated_at": "2026-02-21T16:56:46Z",
           "browser_download_url": "https://github.com/openclaw/openclaw/releases/download/v2026.2.21/OpenClaw-2026.2.21.zip"
@@ -6231,8 +6231,8 @@
         "eyes": 15
       },
       "mentions_count": 78,
-      "features": "Models/Google: 新增 Gemini 3.1 模型支持\nProviders: 新增火山引擎（豆包）和 BytePlus 提供商及模型集成，支持交互/非交互认证流程\nChannels/CLI: 支持按账户/频道配置默认出站路由，`openclaw agent --deliver` 无需指定 `--reply-to` 即可发送\nChannels: 支持通过 `channels.modelByChannel` 按频道覆盖模型，并在 /status 中显示\nTelegram/Streaming: 简化为 `channels.telegram.streaming` 布尔配置，自动兼容旧版 streamMode 值\nDiscord/Streaming: 新增流预览模式，支持 live draft 回复和可配置分块\nDiscord/Telegram: 新增生命周期状态反应，支持排队/思考/工具/完成/错误阶段的 emoji 和时序配置\nDiscord/Voice: 新增 `/vc` 命令控制语音频道加入/离开/状态，支持实时语音对话自动加入配置\nDiscord: 支持配置斜杠命令响应的临时消息默认值\nDiscord: 支持通过频道编辑操作更新论坛可用标签\nDiscord: 新会话中包含频道主题的可信入站元数据\nDiscord/Subagents: 新增线程绑定的子代理会话，支持线程级聚焦/列表控制和后续路由\niOS/Chat: 优化聊天 UI，清理入站噪音，精简工具输出，支持输入时收起 Composer 和点击收起键盘\niOS/Watch: 桥接 Apple Watch 镜像提示通知操作到 iOS 快捷回复\niOS/Gateway: 优化后台唤醒和重连行为，包括 BGAppRefresh 降级、位置唤醒节流、APNs 重试机制\nAuto-reply/UI: 新增模型回退生命周期可见性，日志和 WebUI 中显示回退原因和活动模型\nMSTeams: 优化消息缓存去重，改用时间戳 Map 键作为唯一成员来源\nAgents/Subagents: 默认子代理生成深度改用共享 `maxSpawnDepth=2`，启用深度-1 编排器\nSecurity: 引入 `ownerDisplaySecret` 专用 HMAC 密钥增强身份混淆，SHA-1 升级为 SHA-256 哈希算法",
-      "bug_fixes": "Security: 修复 Pi runner 重试循环无界问题，引入动态限制（32-160次）并返回 `retry_limit` 错误\nTelegram: 修复跨账户重复 bot-token 所有权检测问题（内容被截断）"
+      "features": "摘要生成失败",
+      "bug_fixes": "摘要生成失败"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/288337583",
@@ -6397,8 +6397,8 @@
         "eyes": 14
       },
       "mentions_count": 28,
-      "features": "Apple Watch 配套应用 MVP，支持手表收件箱 UI、通知转发和状态/发送命令\niOS 节点通过 APNs 远程唤醒并自动重连，减少后台调用失败\n新增配对设备清理命令，支持移除设备及拒绝待处理配对请求\niOS 推送注册和通知签名配置，支持节点消息投递\nAPNs 投递验证测试管道\n安全审计：检测 gateway.auth.mode=\"none\" 导致的 HTTP API 暴露风险\n强化编码智能体技能指导，移除不安全的命令示例",
-      "bug_fixes": "修复推理流期间助手流式输出中断问题\n修复 WKWebView 生命周期导致的崩溃风险\n修复配对状态自动恢复时的闪烁问题\n修复手动重试时的配对和重连行为稳定性\n恢复 iOS 本地签名团队自动选择功能\n统一 Telegram message 和 channel_post 处理流程\nTelegram 工具失败警告仅在详细模式显示\nCron 和心跳消息支持显式发送到指定 Telegram topic\n修复 macOS LaunchAgent 无法打开 SQLite 临时文件问题\n计费错误消息现在包含具体模型名称（如 OpenAI (gpt-5.3)）\nGateway TUI 遵守 blockStreamingDefault 配置\nChat UI 接受规范的主会话密钥别名\n修复 Apple 客户端 RPC 参数将布尔值错误编码为 1/0\nQMD 后端跳过嵌入提供者警告\n改善 Canvas 资源解析和空状态处理\nDoctor 命令修复配置时避免意外重复写入 token"
+      "features": "Apple Watch 伴侣应用：新增 watch inbox UI、通知中继处理和状态/发送命令交互界面\niOS 节点唤醒优化：通过 APNs 唤醒断开的 iOS 节点，silent push 唤醒后自动重连 gateway sessions\nCLI 设备管理：新增 `device.pair.remove`、`openclaw devices remove` 和 `openclaw devices clear` 命令\niOS APNs 配置：添加 node delivery 的 push registration 和 notification-signing 配置\nGateway APNs 测试：添加 APNs 投递验证的 push-test pipeline\n安全审计增强：检测 `gateway.http.no_auth` 配置漏洞，警告 Gateway HTTP APIs 暴露风险\nSkill 安全性加固：移除直接插值不可信文本到命令字符串的 shell-command 示例",
+      "bug_fixes": "代理流式传输：在 reasoning streams 期间保持 assistant 局部流式响应活跃\niOS WebView：修复 screen tab 更新时的手势/生命周期崩溃问题\niOS 配对：修复 auto-resume 时 pairing-status 闪烁问题\niOS 配对：修复手动重试时 stale pairing request state 的稳定性和重复配对循环问题\niOS 签名：恢复 `.local-signing.xcconfig` 覆盖，确保本地签名配置正确\nTelegram：统一 `message` 和 `channel_post` 的消息处理逻辑\nTelegram：仅在 verbose 模式显示 exec/bash 工具失败警告\nTelegram 定时任务：遵循显式 topic targets，修复定时消息投递到错误 thread 的问题\nGateway Daemon：转发 `TMPDIR` 环境变量，解决 LaunchAgent 运行时的 SQLite 临时文件访问问题\n计费错误提示：在错误消息中包含具体模型名称（如 `OpenAI (gpt-5.3)`）\nGateway TUI：遵守 `agents.defaults.blockStreamingDefault` 配置，移除硬编码的 block-streaming 禁用\nUI 会话路由：接受 canonical main session-key 别名，修复主会话路由不一致问题\nOpenClawKit 协议：修复 JSON 布尔值被错误转换为 `1`/`0` 的问题\n命令诊断：QMD 内存后端时跳过不必要的 embedding-provider 警告\nCanvas UI：修复 bundled-asset 解析和 empty-state 渲染问题\n命令诊断：修复 repair 时意外添加重复 `gateway.auth.token` 配置的问题\nGateway 认证：修复 unresolved gateway auth 默认行为"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/287498141",
@@ -6527,8 +6527,8 @@
         "eyes": 14
       },
       "mentions_count": 72,
-      "features": "支持 1M 上下文窗口测试（通过 `params.context1m: true` 启用 Opus/Sonnet）\n支持 Anthropic Sonnet 4.6 模型，兼容旧版上游目录的回退机制\n新增 `/subagents spawn` 命令，支持确定性子代理激活\n子代理任务消息添加上下文前缀，保留来源信息\n新增 iOS 分享扩展，支持将 URL/文字/图片直接转发至 gateway\niOS 新增后台语音监听开关，App 退后台时保持 Talk Mode 运行\niOS 新增语音指令提示开关，可禁用 ElevenLabs 切换指令以节省 token\niOS 优化打断行为，减少内置扬声器播放时的误触发\nSlack 新增原生单消息文本流式传输，保留回复线程和流控逻辑\nSlack 新增可配置的草稿预览流式传输模式\nTelegram 支持内联按钮样式（primary/success/danger）\nTelegram 支持将用户消息反应作为系统事件通知\niMessage 支持回复功能，正确定位回复目标消息\n新增意图优先的工具详情视图和执行摘要\nDiscord 暴露原生 `/exec` 命令选项，支持自动补全和结构化输入\nDiscord 支持可复用交互组件（按钮、选择器、表单）\nDiscord 新增交互组件每按钮用户白名单限制\nCron 支持独立 webhook 交付模式，支持 HTTP(S) URL 验证\nCron 新增确定性默认交错策略，支持 `openclaw cron add/edit --stagger` 配置\nCron 在运行日志/webhook 中记录模型和使用量，并提供聚合脚本\nWeb 工具新增 URL 白名单机制\nBrowser 支持自定义 Chrome 启动参数配置\nVoice Call 预缓存来电 TTS 问候语，加速首次播放\nSkills 紧凑化技能文件路径中的 home 目录前缀以节省 prompt 空间\nSkills 优化技能描述路由边界，明确使用场景和限制\nAuto-reply 在元数据中包含可信的消息 ID 和发送者 ID\nUI/Sessions 避免会话前缀在显示名称中重复\n消息元数据包含可信的 message_id 和 sender_id，支持下游定位和审核流程",
-      "bug_fixes": "修复了子代理消息缺少上下文信息的问题\n修复了 iOS Talk Mode 在后台被中断的问题（通过新增后台监听选项）\n修复了 Slack 流式传输失败时的回退逻辑\n修复了 iMessage 回复功能未正确设置回复目标的问题\n修复了会话显示名称中前缀重复显示的问题\n修复了 cron webhook URL 未验证有效性的问题"
+      "features": "Anthropic 1M 上下文支持：通过 `params.context1m: true` 启用 Opus/Sonnet 百万上下文 beta\nAnthropic Sonnet 4.6 支持：在别名和默认配置中全面支持 Sonnet 4.6 模型\n新增 `/subagents spawn` 命令：支持从聊天命令确定性激活子代理\n子代理任务消息前缀：为轮询子代理消息添加上下文信息保留源标识\niOS 分享扩展：支持将 URL/文本/图片内容直接转发至 gateway agent.request\niOS 后台聆听模式：允许 Talk Mode 在应用后台时保持运行（默认关闭保护电池）\niOS 语音指令提示开关：可禁用 ElevenLabs 语音切换指令以节省 token\niOS 打断行为优化：内置扬声器/接收器输出时禁用语音打断，减少 TTS 误触发\nSlack 原生单消息流：集成 chat.startStream/appendStream/stopStream 实现消息流式传输\nSlack 草稿预览流模式：新增可配置流模式支持\nTelegram 内联按钮样式：支持 primary/success/danger 三种按钮样式\nTelegram 消息反应通知：将用户反应作为系统事件通知，支持配置通知范围\niMessage 回复功能：支持 replyToId 并规范化回复标签格式\n工具详情视图：新增 intent-first 设计风格的工具详情和执行摘要展示\nDiscord /exec 命令选项：暴露 host/security/ask/node 等选项实现自动补全\nDiscord 可复用交互组件：支持组件多次使用前不过期\nDiscord per-button 权限控制：支持按钮级别的 allowedUsers 白名单限制\nCron webhook 投递分离：独立 per-job webhook 投递配置，支持 HTTP(S) 验证\nCron 调度交错策略：top-of-hour 循环调度新增确定性默认交错支持\nCron 使用量遥测：记录每个运行的模型/提供商使用数据并支持本地聚合报告\nWeb 工具 URL 白名单：为 web_search 和 web_fetch 添加 URL 允许列表配置\nBrowser extraArgs 配置：支持自定义 Chrome 启动参数\nVoice Call 问候语预缓存：提前缓存入站问候语 TTS 加速首次播放\nSkills 路径压缩：系统提示中用 ~ 替换 home 目录前缀精简路径\nSkills 路由边界指导：添加明确的 \"Use when\"/\"NOT for\" 描述指导\nAuto-reply 元数据增强：包含 message_id 和 sender_id 支持下游定位工作流",
+      "bug_fixes": "无"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/286678334",
@@ -6693,8 +6693,8 @@
         "eyes": 8
       },
       "mentions_count": 43,
-      "features": "Discord：解锁组件v2（按钮、选择器、模态框、附件文件块）实现原生交互\nDiscord：组件v2 UI、嵌入透传、执行审批UX优化\n插件系统：暴露 `llm_input` 和 `llm_output` hook payloads 支持扩展观察\n子代理：支持嵌套子代理（子子代理），可配置最大深度和每代理子数量限制\nSlack/Discord/Telegram：支持每通道确认反应覆盖（账号/通道级别）\nCron：添加完成运行webhook传递开关和专用认证token支持\n频道：跨核心和扩展去重探测/token解析基础类型",
-      "bug_fixes": "安全：用SHA-256替换废弃的SHA-1沙箱配置哈希\n安全：从日志中删除Telegram bot tokens防止密钥泄露\n安全：阻止危险的Docker配置（绑定挂载、主机网络、不受限制的seccomp）\n安全：LINE账号缺少token或secret时webhook启动失败\n安全：限制技能下载安装目标目录防止任意文件写入\n安全：清理工作区路径防止LLM提示词注入\n安全：防止Control UI通过助手名称/头像存储型XSS攻击\n安全：从状态响应中删除敏感会话详情仅对非管理员隐藏\n网关：修复Control UI绕过模式下操作员范围保留问题\n网关：拒绝格式错误的`agent:`前缀会话密钥防止跨会话路由\n网关：`chat.send`过滤null字节和危险控制字符\n网关：`send`目标内部`webchat`时返回可操作错误提示\n配置：敏感key白名单后缀匹配改为大小写不敏感\n沙箱：配置哈希保留数组顺序确保容器正确重建\n技能：强化Linux上go安装程序回退处理root环境\nWeb：限制下载响应体大小防止内存耗尽\n开发：强化git预提交钩子防止恶意文件名注入"
+      "features": "Discord：解锁 Components v2 丰富交互（按钮、选择器、模态框、附件文件块）实现原生 Discord 交互\nDiscord：Components v2 UI + 嵌入穿透 + 执行审批体验优化\n插件：暴露 `llm_input` 和 `llm_output` 钩子负载，支持扩展观察提示上下文和模型输出使用详情\n子代理：支持嵌套子代理（含 `maxSpawnDepth` 和 `maxChildrenPerAgent` 限制）及深度感知工具策略\nSlack/Discord/Telegram：添加每渠道确认反应覆盖，支持平台特定 emoji 格式\nCron/Gateway：添加完成运行 Webhook 传递开关和专用 `cron.webhookToken` 认证令牌支持\n渠道：跨核心和扩展去重探测/令牌解析基础类型，保留每渠道错误类型",
+      "bug_fixes": "安全：用 SHA-256 替换已弃用的 SHA-1 沙箱配置哈希\n安全：从错误消息和堆栈跟踪中 redact Telegram bot 令牌防止密钥泄露\n安全/沙箱：阻止危险 Docker 配置（绑定挂载、主机网络、无限制 seccomp/apparmor）防止容器逃逸\n沙箱：配置哈希保留数组顺序确保顺序敏感设置正确触发容器重建\n安全/Gateway：对非管理员客户端从状态响应中 redact 敏感会话/路径细节\n控制 UI：设备身份不可用时保留操作员范围，防止 LAN/HTTP 操作员会话虚假的范围错误\n安全/LINE：缺失渠道令牌或密钥时 Webhook 启动失败，仅在两者都存在时将 LINE 账户视为已配置\n安全/技能：限制 `download` 安装程序 `targetDir` 到技能工具目录防止任意文件写入\n安全/网页抓取：HTML 解析前限制下载响应体大小防止内存耗尽\n配置/Gateway：敏感密钥白名单后缀匹配改为大小写不敏感，保留 `passwordFile` 路径豁免\n开发工具：加固 git `pre-commit` 钩子防止恶意文件名注入选项\n安全/Gateway：拒绝格式错误的 `agent:` 前缀会话密钥，防止意外跨会话路由\n安全/Gateway：加固 `chat.send` 消息处理，拒绝空字节、剥离不安全控制字符、规范化为 NFC\n安全/Gateway：`send` 目标为内部 `webchat` 时返回可操作错误引导使用 `chat.send`\n安全/控制 UI：移除内联脚本注入、服务引导配置为 JSON、强化 `script-src 'self'` 防止存储型 XSS\n安全/代理：嵌入 LLM 提示前清理工作区路径（剥离 Unicode 控制/格式字符）防止指令注入\n代理/沙箱：明确系统提示路径用法，沙箱 bash/exec 使用容器路径、文件工具保留主机映射避免路径错误"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/286474524",
@@ -6895,8 +6895,8 @@
         "eyes": 11
       },
       "mentions_count": 56,
-      "features": "Telegram: 支持通过 `openclaw message poll` 发送投票（持续时间、静默投递、匿名控制）\nSlack/Discord: 新增 `dmPolicy` + `allowFrom` 配置别名用于 DM 访问控制\nDiscord: 支持通过 `channels.discord.execApprovals.target` 配置 exec 审批提示目标频道\nSandbox: 新增 `sandbox.browser.binds` 用于单独配置浏览器容器绑定挂载\nDiscord: 添加消息路由决策的调试日志",
-      "bug_fixes": "CLI/Plugins: 修复 `openclaw message send` 在插件频道成功投递后不挂起\nCLI/Plugins: 修复消息命令退出时正确调用插件 `gateway_stop` 钩子\nWhatsApp: 修复每个账户 `dmPolicy` 覆盖的优先级处理\nTelegram: 修复 `native=false` 时插件命令被错误注册到命令菜单\nLINE: 修复开发者控制台验证请求签名验证\nCron: 修复 `delivery.to` 设置时纯文本输出直接投递\nCron/Slack: 修复 cron 投递时保留 agent 身份（名称和图标）\nMedia: 接受 `MEDIA:` 前缀路径避免工具返回的本地媒体路径报错\nAgents: 修复工具结果媒体（截图、图像、音频）按详细级别投递\nAgents/Image tool: 修复工作区本地图像路径被错误拒绝\nAgents/Image tool: 修复工具接线中有效工作区根目录传递\nBlueBubbles: 修复群聊消息中包含发送者身份并清理格式\nCLI: 修复维护命令（doctor/dashboard/reset/uninstall）懒注册问题\nCLI/Dashboard: 修复 LAN 绑定模式下仪表板 URL 生成\nTUI/Gateway: 修复从网关绑定模式解析目标 URL 而非硬编码 localhost\nTUI: 修复 `--session` 在 global scope 下不生效\nTUI: 修复可搜索列表会话名称显示宽度\nTUI: 修复并发最终化时流式回复被清除\nTUI: 修复工具边界增量导致早期流式文本丢失\nTUI: 修复二进制附件历史导致启动崩溃\nTUI: 修复窄终端渲染性能开销\nTUI: 修复浅色主题下文本对比度\nTUI/Hooks: 修复重置原因传递"
+      "features": "摘要生成失败",
+      "bug_fixes": "摘要生成失败"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/286317993",
@@ -7097,8 +7097,8 @@
         "eyes": 8
       },
       "mentions_count": 50,
-      "features": "Discord: 支持从本地音频文件发送带波形预览的语音消息（含静默投递）\nDiscord: 新增可配置的在线状态/活动/类型/URL\nSlack/Plugins: 添加线程所有权出站 gating，支持 @-mention 绕过追踪\nAgents: 新增 `hf:zai-org/GLM-5` 合成目录支持\nAgents: 添加预提示上下文诊断，便于溢出调试\nOnboarding/Providers: 新增 Hugging Face Inference 官方支持及认证流程\nSkills: 移除重复的 `local-places`，统一使用 `goplaces`",
-      "bug_fixes": "Outbound: 添加写前式投递队列，防止网关重启后消息丢失\nAuto-reply: 自动注入隐式回复线程，使 `replyToMode` 无需模型显式标记即可生效\nOutbound/Threading: 透传 `replyTo` 和 `threadId`，保留线程/回复路由\nAuto-reply/Media: 允许纯图片消息触达 agent，支持媒体仅运行的上下文保留\nDiscord: 修复自动线程回复路由至现有线程而非根频道\nWeb UI: 允许 markdown 图片渲染，添加 `img` 标签及属性白名单\nTelegram/Matrix: 将 MP3/M4A 识别为语音兼容格式\nWhatsApp: 修复出站文档文件名始终显示为 \"file\"\nTelegram: 命令菜单限制 100 条，防止超出限制\nTelegram: 作用域 skill 命令至指定 agent，避免多 agent 配置冲突\nDiscord: 修复数字 guild 白名单被误路由，添加 `guild:` 前缀\nMS Teams: 保留 mention entities，兼容更广泛的 Teams mention ID 格式\nMedia: 将 `text/*` MIME 类型归类为文档\nInbound/Web UI: 保留 `\\n` 序列，防止 Windows 路径被损坏\nTUI/Streaming: 最终负载丢失时保留流式助手文本内容\nProviders/MiniMax: 修复 API-key 提供商配置，解决 `invalid role: developer` 错误\nOllama/Agents: 使用解析后的基础 URL，规范化 `/v1` 端点，支持中止和 token 限制\nOpenAI Codex/Spark: 实现 `gpt-5.3-codex-spark` 端到端支持"
+      "features": "Discord: 支持从本地音频文件发送带波形预览的语音消息（包括静音投递）\nDiscord: 添加可配置的存在状态/活动/类型/URL（自定义状态默认活动文本）\nSlack/Plugins: 添加线程所有权出站门控，支持通过 message_sending 钩子实现取消/修改行为\nAgents: 添加 hf:zai-org/GLM-5 的合成目录支持\nSkills: 移除重复的 Google Places 技能，统一使用 goplaces\nAgents: 添加预提示上下文诊断功能，改善溢出调试\nOnboarding/Providers: 添加 Hugging Face Inference 提供商支持及完整认证流程",
+      "bug_fixes": "Outbound: 添加写前投递队列和崩溃恢复重试，防止网关重启后消息丢失\nAuto-reply/Threading: 自动注入隐式回复线程，使 replyToMode 无需模型显式发出\nOutbound/Threading: 将 replyTo 和 threadId 从消息发送工具传递到通道适配器\nAuto-reply/Media: 允许纯图片消息（无标题）正常到达代理\nDiscord: 将自动线程回复路由到现有线程而非根频道\nWeb UI: 修复 markdown 图片在 webchat 中被过滤的问题\nTelegram/Matrix: 将 MP3/M4A 视为语音兼容格式\nWhatsApp: 保留出站文档文件名而非总是发送 \"file\"\nTelegram: 限制 bot 命令菜单为 100 条，避免 TOO_MUCH 错误\nTelegram: 将技能命令限定在当前代理范围\nDiscord: 修正数字公会白名单被错误路由的问题\nMS Teams: 接受更广泛的真实 Teams 提及 ID 格式\nMedia: 将 text/* MIME 类型正确分类为文档\nInbound/Web UI: 保留字面 \\n 序列，避免 Windows 路径被损坏\nTUI/Streaming: 在最终载荷缺少文本块时保留流式文本\nProviders/MiniMax: 修正 MiniMax API 密钥提供商的路径，修复角色错误\nOllama/Agents: 使用解析后的基础 URL 进行流式传输，支持中止和令牌限制\nOpenAI Codex/Spark: 实现端到端 gpt-5.3-codex-spark 支持"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/285935227",
@@ -7263,8 +7263,8 @@
         "eyes": 11
       },
       "mentions_count": 50,
-      "features": "CLI：新增 `openclaw logs --local-time` 命令，支持本地时区和时区偏移显示日志时间戳\nTelegram：支持将区块引用渲染为原生 `<blockquote>` 标签\nConfig：避免对类似 `maxTokens` 的字段进行脱敏处理，防止配置验证失败\nGateway：WS payload/buffer 限制提升，支持500万字节图片附件\nGateway：重启前先排空活跃会话，防止消息丢失\nGateway：安装时自动生成认证token，防止launchd重启循环\nWhatsApp：Markdown粗体/删除线转WhatsApp格式\nWhatsApp：支持纯媒体发送并规范化空载荷\nWhatsApp：语音消息未提供MIME类型时使用默认类型",
-      "bug_fixes": "Security：修复未认证的Nostr profile API远程配置篡改漏洞\nSecurity：移除捆绑的soul-evil hook\nSecurity/Sandbox：限制镜像skill同步目标到sandbox skills/根目录，防止使用frontmatter控制的skill名称作为文件系统路径\nSecurity/Web tools：浏览器/web内容默认视为不可信，减少prompt注入重放风险\nSecurity/Hooks：加强webhook和设备token验证，添加per-client认证失败限流\nSecurity/Browser：loopback浏览器控制HTTP路由需认证，自动生成无auth时的token\nSessions/Gateway：强化transcript路径解析，拒绝不安全的session ID/文件路径\nGateway/OpenResponses：强化URL-based输入文件的SSRF防护，添加主机名白名单和per-request URL输入限制\nGateway：处理async `EPIPE` 异常和防止auth配置中token未定义\nGateway/Control UI：修复symlink-based Node管理器全局安装时dashboard资源缺失问题\nCron：修复 `nextRunAtMs` 推进时任务跳过执行的问题\nCron：防止多个job同时触发时重复执行\nCron：隔离scheduler错误，防止一个坏job影响所有job\nCron：一次性任务重启后不再重新触发被跳过/出错的运行\nCron：isolated-agent运行时使用存储的session model覆盖，保留Gmail hook的model优先级\nHeartbeat：防止scheduler因异常运行错误而停滞，避免跳过后立即重跑循环\nLogging/Browser：临时目录不可用时回退到 `os.tmpdir()/openclaw`\nTelegram：处理无文本消息的模型选择器编辑"
+      "features": "CLI：新增 `openclaw logs --local-time` 命令，支持以本地时区显示日志时间戳并包含时区偏移量\nTelegram：Blockquotes 现渲染为原生 `<blockquote>` 标签而非移除\nConfig：避免重写 `maxTokens` 类字段，防止配置快照验证往返失败\nHooks：`POST /hooks/agent` 默认拒绝 sessionKey 覆盖，强化 hook 上下文安全性\nGateway：提升 WebSocket payload 限制，支持高达 500 万字节的图像附件传输\nGateway：重启前自动排空活动会话，防止消息丢失\nGateway：安装时自动生成 auth token，避免 launchd 重启循环\nCron：新增隔离任务认证、计时器重设、错误隔离等多项调度可靠性改进\nWhatsApp：支持 Markdown 粗体/删除线格式转换，允许媒体仅发送模式",
+      "bug_fixes": "安全：修复 Nostr 个人资料 API 未认证远程配置篡改漏洞\n安全：移除捆绑的恶意 soul-evil hook\n安全/Sandbox：隔离 skill 同步目的地至沙箱 skills/ 目录，防止路径遍历\n安全/Web 工具：默认将浏览器内容视为不可信，移除 transcript 中的工具结果详情以降低提示注入风险\n安全/Hooks：强化 webhook 和设备令牌验证，增加 per-client 限流机制\n安全/浏览器：HTTP 循环路由需认证，修复无认证时的自动 token 生成\n会话/Gateway：强化路径解析并拒绝不安全的 session ID，防止目录遍历\n日志/浏览器：修复 `/tmp/openclaw` 不可用时的临时文件回退路径\nWhatsApp：设置语音消息默认 MIME 类型，规范化空白 payload 处理\nTelegram：修复 model picker editMessageText 中无文本消息的处理\nCron：修复任务跳过执行、重复触发、one-shot 任务重启后重放等多个调度问题\nCron：修复心跳调度器在错误后stall及重跑循环问题\nGateway：修复控制面板资产在全局安装时加载失败问题"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/284530669",
@@ -7429,8 +7429,8 @@
         "eyes": 12
       },
       "mentions_count": 23,
-      "features": "iOS：Alpha 版节点应用支持 setup-code 引导流程\n频道：BlueBubbles 集成及频道清理功能\n插件：设备配对和手机控制插件（支持 Telegram `/pair` 及 iOS/Android 节点控制）\n工具：将 Grok（xAI）添加为 web_search 提供商\nGateway：为 Web UI 添加代理管理 RPC 方法（agents.create/update/delete）\nWeb UI：在聊天历史中显示压缩分隔线\n代理：代理信封中包含运行时 shell 信息\n路径：新增 OPENCLAW_HOME 环境变量支持",
-      "bug_fixes": "Telegram：强化引用解析，保留引用上下文，避免 QUOTE_TEXT_INVALID 和嵌套回复引用误分类\nTelegram：修复使用过期话题线程 ID 导致的消息发送失败问题\nTelegram：支持 Markdown 暗雷使用 `<tg-spoiler>` HTML 标签渲染\nTelegram：限制命令注册数量为 100 条，避免启动时出现 BOT_COMMANDS_TOO_MUCH 错误\nTelegram：DM allowFrom 匹配优先使用发送者用户 ID\n修复 Web UI 聊天刷新时平滑滚动至最新消息并消除新消息徽章闪烁\n修复 web_search 缓存键包含提供商特定设置及传递 Grok 的 inlineCitations 参数\n模型故障转移：将 HTTP 400 错误视为可故障转移，启用自动模型回退\n修复压缩后代理失忆问题：保留 Pi session parentId 链\n修复多代理 sessions.usage 发现问题\n修复 Cron 定时任务调度和可靠性问题\n修复 tsdown 迁移导致的 Hooks 打包问题\n修复路由配置变更需重启才能生效的问题\n修复 maxTokens 超出 contextWindow 的无效模型配置\nDiscord：支持论坛/媒体频道的 thread-create 消息并优化路由\n内存：Voyage 嵌入设置 input_type 提升检索效果\n媒体理解：支持 .caf 音频附件转录\n状态目录：支持 OPENCLAW_STATE_DIR 环境变量"
+      "features": "iOS支持alpha节点应用与setup-code引导流程\nChannels新增BlueBubbles综合清理功能\nPlugins新增设备配对与电话控制插件（支持Telegram /pair命令）\nTools集成Grok (xAI)作为网页搜索provider\nGateway新增agent管理RPC方法（create/update/delete）\nWeb UI聊天历史新增Compaction分隔符显示\nAgents在envelope中包含runtime shell信息\nPaths支持OPENCLAW_HOME环境变量覆盖路径解析",
+      "bug_fixes": "Telegram强化引号解析，避免嵌套回复误分类和QUOTE_TEXT_INVALID错误\nTelegram修复topic thread ID过期导致的消息发送失败问题\nTelegram markdown spoilers改用`<tg-spoiler>`标签渲染\nTelegram命令注册限制100条，避免BOT_COMMANDS_TOO_MUCH错误\nTelegram DM allowFrom匹配逻辑修复，优先匹配用户ID\nWeb UI聊天刷新改为平滑滚动到最新消息，抑制手动刷新时新消息徽章闪烁\n模型故障转移新增HTTP 400错误处理，支持自动降级\n修复提及\"context overflow\"时误触发上下文溢出检测的问题\n修复compaction后agent记忆丢失问题，transcript写入现在保留Pi session parentId链\n修复多agent会话的usage发现功能\nAgent新增上下文溢出预防护机制，限制过大工具结果\n子agent/compaction通知计时稳定性优化\nCron任务调度与交付可靠性增强\nCron工具参数解析增强，支持LLM省略job包装的情况\nGateway/CLI在bind=lan模式下使用LAN IP生成探测URL和控制面板链接\n修复2026.2.2以来hooks打包问题（tsdown迁移后遗症）\n路由配置改为每条消息刷新，避免绑定变更需重启\nExec approvals命令显示改为等宽字体，提升安全审核体验\nConfig限制maxTokens不超过contextWindow，防止无效模型配置\nThinking模式新增对github-copilot/gpt-5.2-codex和gpt-5.2的支持\nDiscord支持forum/media线程创建消息和路由增强\n修复Windows驱动器路径解析与工具元数据缩短问题\nMemory/Voyage embeddings设置优化，改进检索效果\nMemory/QMD模型缓存跨agent复用，避免重复下载\n媒体理解新增.caf音频格式转录支持\nState目录支持OPENCLAW_STATE_DIR配置设备身份和画布存储路径"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/283960114",
@@ -7595,8 +7595,8 @@
         "eyes": 23
       },
       "mentions_count": 19,
-      "features": "新增 Anthropic Opus 4.6 和 OpenAI Codex gpt-5.3-codex 模型支持（带前向兼容回退）\n新增 xAI (Grok) 提供商支持\nWeb UI 新增 token 使用量仪表板\nMemory 模块新增原生 Voyage AI 支持\nSessions 对历史负载进行上限控制，减少上下文溢出\nCLI 命令帮助信息按字母顺序排列",
-      "bug_fixes": "Telegram: 修复 DM topic threadId 自动注入问题\nSecurity: 修复 Gateway canvas host 和 A2UI 资产的认证漏洞\nCron: 修复定时任务调度和提醒发送的回归问题\nSecurity: 新增 skill/plugin 代码安全扫描器；修复配置响应中的凭证泄露\nExec approvals: 修复白名单字符串格式转换问题\nSlack: 修复 /new 和 /reset 命令的提及过滤问题\nChrome 扩展: 修复打包路径解析问题\nCompaction: 允许上下文溢出时多次压缩重试；显示明确的计费错误信息"
+      "features": "Models: 支持 Anthropic Opus 4.6 和 OpenAI Codex gpt-5.3-codex 模型（向前兼容回退）\nProviders: 新增 xAI (Grok) 支持\nWeb UI: 添加 token 使用量仪表板\nMemory: 原生支持 Voyage AI\nSessions: 限制 sessions_history 负载以减少上下文溢出\nCLI: 帮助输出中的命令按字母顺序排序",
+      "bug_fixes": "Telegram: 自动注入 DM topic threadId 到消息工具和子代理通知\nSecurity: Gateway canvas 主机和 A2UI 资产要求身份验证\nCron: 修复调度和提醒传递回归问题，强化定时器逻辑\nUpdate: 强化更新流程中 Control UI 资产处理\nSecurity: 添加 skill/plugin 代码安全扫描器，从配置响应中清除凭据\nExec approvals: 将字符串格式的允许列表条目强制转换为对象\nSlack: 为 /new 和 /reset 命令添加 mention stripPatterns\nChrome extension: 修复捆绑路径解析问题\nCompaction/errors: 允许上下文溢出时多次压缩重试，显示明确计费错误"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/283189651",
@@ -7797,8 +7797,8 @@
         "eyes": 13
       },
       "mentions_count": 15,
-      "features": "Telegram: 完全移除 `@ts-nocheck`，使用 Grammy 类型直接定义，删除 StickerMetadata 重复代码\nOnboarding: 新增 Cloudflare AI Gateway 提供商设置和文档\nOnboarding: 新增 Moonshot (.cn) 认证选项并保留中国区基础 URL\nMessages: 支持按渠道和账户覆盖 responsePrefix 配置\nCron: 新增 isolated jobs 的 announce 投递模式及控制面板配置\nCron: isolated jobs 默认改为 announce 投递；支持 ISO 8601 schedule.at 输入格式\nCron: 一次性任务成功后默认删除；CLI 新增 `--keep-after-run` 选项\nCron: announce 投递时抑制消息工具以确保摘要一致性\nShell completion: 自动检测并迁移慢速动态模式到缓存文件，加快终端启动速度",
-      "bug_fixes": "Heartbeat: 支持多账户渠道的显式 accountId 路由\nTUI/Gateway: 处理非流式最终响应，刷新非本地聊天历史，避免目标工具流的事件间隙警告\nTelegram: 修复内联模型选择中的会话模型覆盖失效问题\nWeb UI: 修复代理模型选择保存和长工作区路径换行显示\nWeb UI: 修复设置 `basePath` 后的 header logo 路径解析\nOnboarding: 从非交互式 API key 参数自动推断认证选择\nSecurity: 阻止不受信任渠道元数据进入系统提示\nSecurity: 强制消息工具附件使用沙箱化媒体路径\nSecurity: 要求显式凭证才能覆盖网关 URL，防止凭证泄露\nSecurity: 将 whatsapp_login 工具限制为仅所有者发送者可用\nVoice call: 加强 webhook 验证的主机白名单和代理信任机制\nVoice call: 新增匿名来电 ID 与白名单策略的回归测试\nCron: 接受 epoch 时间戳和 0ms 持续时间；文件重建或 mtime 变化时重载存储\nCron: 直接投递 announce 任务并正确处理投递模式和 wakeMode\nTelegram: 正确包含 forward_from_chat 元数据并加强 cron 投递目标验证\nmacOS: 修复 cron 负载摘要渲染和 ISO 8601 格式化器并发安全问题"
+      "features": "Telegram：移除所有 `@ts-nocheck`，全面使用 Grammy 和原生 Telegram 类型\nOnboarding：新增 Cloudflare AI Gateway 提供商配置和文档\nOnboarding：新增 Moonshot（.cn）认证选项，保留中国区 base URL\nMessages：支持每个通道和每个账户独立配置 responsePrefix\nCron：新增 announce 投递模式，支持 CLI 和 Control UI 配置\nCron：isolated jobs 默认使用 announce 投递，接受 ISO 8601 schedule.at\nCron：one-shot jobs 执行成功后默认删除，新增 `--keep-after-run` 选项\nShell completion：自动检测并迁移慢速动态模式到缓存文件，加快终端启动",
+      "bug_fixes": "Heartbeat：支持多账户通道的显式 accountId 路由\nTUI/Gateway：处理非流式完成，刷新非本地聊天历史，避免工具流事件间隙警告\nTelegram：内联模型选择时正确遵守会话模型覆盖\nWeb UI：修复 agent 模型选择保存问题，修复长工作区路径显示\nOnboarding：从非交互式 API 密钥标志自动推断认证选项\nSecurity：阻止不受信任通道元数据进入系统提示词，强制媒体路径沙箱隔离\nSecurity：网关 URL 覆盖需显式凭证，whatsapp_login 工具限制为所有者发送者\nVoice call：强化 webhook 验证保护，支持匿名来电白名单策略\nCron：支持 epoch 时间戳和零毫秒时长解析，监听文件重建/mtime 变化\nTelegram：转发消息包含 forward_from_chat 元数据\nmacOS：修复 cron 摘要渲染和 ISO 8601 格式化并发安全"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/282785768",
@@ -7963,8 +7963,8 @@
         "eyes": 11
       },
       "mentions_count": 19,
-      "features": "飞书/Lark 插件支持及官方文档上线\nWeb UI 新增 Agents 仪表板，支持管理 agent 文件、工具、技能、模型、通道和定时任务\nMemory 模块新增可选 QMD 后端用于工作区内存\nSecurity 新增健康检查技能和引导审计指南\n配置项支持设置默认子 agent 思考级别（agents.defaults.subagents.thinking）\n文档完善中文翻译、管道指南及导航首页更新",
-      "bug_fixes": "Security：gateway /approve 命令现需 operator.approvals 权限\nSecurity：Matrix 白名单必须使用完整 MXID，禁止模糊名称解析授予访问权限\nSecurity：Slack 斜杠命令通道类型查找失败时强制访问组门控\nSecurity：跳过网关设备身份前必须验证共享密钥\nSecurity：技能安装程序下载增加 SSRF 检查，阻止私有/本地地址请求\nSecurity：强化 Windows 执行白名单，阻止 cmd.exe 通过单个 & 绕过\nSecurity：voice-call 入站白名单强化，拒绝匿名呼叫者，令牌门控 Twilio 媒体流\nMedia understanding：提供商获取增加 SSRF 防护，允许显式覆盖私有 baseUrl\nwebchat：流式传输和刷新时保留用户滚动位置\nTelegram：从 grammY 长轮询超时错误中自动恢复\nAgents：修复格式错误的工具调用和会话记录\nAgents：调用 AbortSignal.any() 前先验证 AbortSignal 实例有效性\nMedia understanding：跳过二进制媒体文件的文本提取\nOnboarding：TUI 流程保持独占，退出时恢复终端状态\nCLI/Zsh 补全：缓存脚本并转义选项描述，避免无效选项错误\nUI：修复 Control UI 资源路径解析，外部编辑后正确刷新 agent 文件"
+      "features": "Feishu/Lark 飞书插件支持及文档上线\nWeb UI 新增 Agents 仪表板，支持管理 agent 文件、工具、技能、模型、频道和定时任务\nMemory 模块新增可选的 QMD 后端用于工作区记忆\nSecurity 模块新增健康检查技能和启动审计指导\nConfig 支持通过配置设置默认子代理思考级别",
+      "bug_fixes": "Security：gateway /approve 命令现在需要 operator.approvals 权限\nSecurity：Matrix 白名单要求完整 MXID，禁止模糊名称解析授予访问权限\nSecurity：Slack 斜杠命令在频道类型查找失败时强制启用访问组门控\nSecurity：gateway 连接时需要验证共享密钥认证后才能跳过设备身份\nSecurity：技能安装程序下载添加 SSRF 检查，阻止私有/本地地址 URL\nSecurity：加强 Windows exec 白名单，阻止通过单个 & 绕过 cmd.exe\nSecurity：加强语音入站白名单，拒绝匿名呼叫者，对 Twilio 媒体流进行令牌门控\nMedia understanding：对提供者获取添加 SSRF 护栏，允许显式的私有 baseUrl 覆盖\nwebchat：流式传输和刷新时保持用户滚动位置\nTelegram：从 grammY 长轮询超时错误中恢复\nAgents：修复格式错误的工具调用和会话记录\nagents：验证 AbortSignal 实例后再调用 AbortSignal.any()\nMedia understanding：从文件文本提取中跳过二进制媒体\nTUI：阻止 onboarding 输出并恢复终端状态\nCLI/Zsh 补全：缓存脚本并转义选项描述避免无效错误\nUI：修复 Control UI 资源路径解析问题，刷新外部编辑后的 agent 文件"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/282150369",
@@ -8093,8 +8093,8 @@
         "eyes": 12
       },
       "mentions_count": 20,
-      "features": "Agents: 添加 OpenRouter 应用归因头\nAgents: 添加系统提示安全护栏\nAgents: 扩展 CreateAgentSessionOptions 支持 systemPrompt/skills/contextFiles\nAgents: 更新 pi-ai 至 0.50.9，重命名 cacheControlTtl 为 cacheRetention（带向后兼容映射）\nGateway: 向 agent 和 chat.send 消息注入时间戳\nGateway: TLS 监听器要求最低 TLS 1.3\nTelegram: 使用共享配对存储\nDiscord: 继承线程父绑定用于路由\nWeb UI: 优化聊天布局，延长会话活跃时长",
-      "bug_fixes": "修复 Telegram 文件获取缺少下载超时的问题\n修复流式传输在段落边界未刷新块导致换行分块错误的问题\n修复 /new 问候提示错误引用工作区文件的问题\n修复 Windows 上 npm 系列 CLI 的 spawn() 失败问题\n修复 Docker 网关命令使用主机端口而非容器端口的问题\n修复 lobster 路径/工作目录注入导致任意代码执行的安全漏洞 (GHSA-4mhr-g7xj-cg8j)\n修复 WhatsApp accountId 路径遍历漏洞\n修复 MEDIA 路径提取导致的本地文件包含漏洞\n修复消息工具文件路径未验证沙箱根目录的安全问题\n修复本地嵌入向量未进行 L2 归一化导致的语义搜索问题\n修复环境变量 LD*/DYLD* 可覆盖导致主机执行安全风险\n修复 Twitch 未强制允许列表导致非白名单发送者可以发送消息的问题\n修复插件/钩子安装路径未验证导致的路径遍历风险\n修复系统提示覆盖未使用 session_status 获取当前日期/时间的问题\n修复 subagent 宣布故障转移竞态条件问题"
+      "features": "Telegram使用共享配对存储，支持更统一的消息同步\nAgents添加OpenRouter应用归因头部\nAgents新增系统提示安全防护机制\nAgents扩展会话创建选项，支持systemPrompt/skills/contextFiles配置\nAgents添加工具策略合规快照功能\nAuth更新MiniMax OAuth提示和门户认证文案\nDiscord继承线程父级绑定实现智能路由\nGateway要求TLS 1.3最小版本提升安全性\nWeb UI优化聊天布局并延长会话活跃时长",
+      "bug_fixes": "修复Telegram文件下载超时及DM/论坛线程规格校验问题\n修复流式输出在段落边界换行分块不稳定问题\n修复/new欢迎语误引用工作区文件问题\n修复Tools适配器签名对齐及\"*\"允许列表虚假警告\n修复会话日志路径从.clawdbot到.openclaw迁移\n修复Windows上npm系列CLI的spawn()失败问题\n修复语义搜索向量L2归一化问题\n修复系统提示时间获取逻辑\n修复多安全漏洞：路径遍历、LFI、任意执行、env注入等\n修复Chrome扩展CDP会话中继安全\n修复TUI模型选择器数字搜索崩溃问题"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/281796621",
@@ -8223,8 +8223,8 @@
         "eyes": 13
       },
       "mentions_count": 12,
-      "features": "CLI: 新增 `completion` 命令支持 Zsh/Bash/PowerShell/Fish，安装时自动配置\nCLI: 新增 per-agent `models status` 命令，支持 `--agent` 过滤器\nAgents: 新增 Kimi K2.5 到合成模型目录\nAuth: Kimi Coding 切换为内置 provider，规范化 OAuth profile email\nAuth: 新增 MiniMax OAuth 插件及 onboarding 引导选项\nWeb UI: 聊天命令后刷新会话，优化会话显示名称\nBuild: TypeScript 构建迁移至 `tsdown` + `tsgo`，提升构建速度\nBuild: 修复 npm 发布时 `openclaw` CLI 入口点丢失问题\nDocs: 新增 pi/pi-dev 文档，更新 OpenClaw 品牌和安装链接",
-      "bug_fixes": "Security: 限制媒体解析器本地路径提取，防止 LFI 漏洞\nGateway: 修复 token 默认值变成字面 \"undefined\" 的问题\nControl UI: 修复 npm 全局安装时的资产路径解析\nmacOS: 修复 gateway 发现时的 stderr 管道背压问题\nTelegram: 修复非规范化 ID 的账户 token 查找和 threadId 处理\nTelegram: 修复重叠样式/链接的 HTML 嵌套问题\nTelegram: 修复 react 操作中接受数字 messageId/chatId\nTelegram: 修复 per-account proxy dispatcher 配置\nTelegram: 限制技能命令仅在绑定代理范围内生效\nBlueBubbles: 按 messageId 防抖，保留文本+图片消息附件\nRouting: 子代理公告传递优先使用 requesterOrigin\nExtensions: 恢复嵌入式扩展发现类型定义\nCLI: 修复 `tui:dev` 端口解析问题\nLINE: 修复 status 命令 TypeError\nOAuth: 刷新令牌有效时跳过过期 token 警告"
+      "features": "CLI 新增 completion 命令，支持 Zsh/Bash/PowerShell/Fish 自动补全及安装时自动配置\nCLI 新增按代理筛选的 models status 命令（--agent 参数）\nAgents 新增 Kimi K2.5 模型到合成模型目录\nAuth 将 Kimi Coding 切换到内置 provider，统一 OAuth 配置文件的邮箱格式\nAuth 新增 MiniMax OAuth 插件及 onboarding 引导选项\nAgents 更新 pi SDK/API 使用和依赖\nWeb UI 新增聊天命令后自动刷新会话，优化会话显示名称",
+      "bug_fixes": "修复媒体解析器路径提取限制，防止本地文件包含（LFI）安全漏洞\n修复网关令牌默认值错误变成字面量字符串 \"undefined\" 的问题\n修复 npm 全局安装时 Control UI 资源路径解析错误\n修复 macOS 网关发现时 stderr 管道背压问题\n修复 Telegram 非规范化 ID 的账户令牌查找和 threadId 处理\n修复 Telegram HTML 标签嵌套重叠导致的样式和链接解析问题\n修复 Telegram react 操作中数字 messageId/chatId 接收问题\n修复 Telegram 按账户使用独立代理分发器的问题\n修复 Telegram 技能命令作用域未限定到绑定代理的问题\n修复 BlueBubbles 按 messageId 防抖导致附件丢失的问题\n修复路由优先使用过期会话而非 requesterOrigin 的问题\n恢复嵌入式扩展的发现类型定义\n修复 CLI tui:dev 端口解析问题\n修复 LINE 状态命令 TypeError 错误\n修复 OAuth 刷新令牌有效时仍显示过期警告的问题"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/281372930",
@@ -8446,8 +8446,8 @@
         "eyes": 29
       },
       "mentions_count": 29,
-      "features": "LINE 消息渠道插件上线，支持富文本回复和快捷回复\nTelegram DM 话题支持独立会话，新增出站链接预览开关\nEdge TTS 提供商作为备用方案，支持无密钥使用\nTTS 自动模式支持关闭/始终/仅入站/仅标记四种选项\n执行审批支持通过 `/approve` 命令在所有渠道进行\nWeb 搜索新增 Brave 时间范围过滤参数\nControl UI 仪表板设计系统全新升级\nGateway 工具支持安全的配置补丁更新\nOllama 提供商发现机制和文档完善\nVenice 提供商指南和交叉链接升级",
-      "bug_fixes": "Web UI 修复配置/调试页面溢出、滚动和代码块尺寸问题\nWeb UI 修复运行中停止按钮显示和会话状态切换逻辑\nWeb UI 修复断开连接横幅残留和表单验证逻辑\nWeb UI 隐藏聊天气泡中的内部 message_id 提示\nGateway 允许 Control UI 仅令牌认证跳过设备配对\nMatrix 修复 E2EE 媒体附件解密\nBlueBubbles 修复电话号码路由到私信并自动创建缺失会话\nBlueBubbles 修复回复标签中 part-index GUID 保持\niMessage 聊天标识符前缀大小写规范化\nSignal 修复反应发送和 CLI 作者标志\nSignal 新增 signal-cli 启动超时配置\nTelegram 修复 Node 22 上传文件 duplex 设置\nTelegram 修复长轮询 AbortSignal 处理\nTelegram 修复每账户代理设置和语音笔记隐私回退\n语音通话修复 TwiML 流返回和 TTS 播放序列化\nGoogle Chat 修复邮箱白名单匹配和空间目标规范化"
+      "features": "Providers: Ollama 自动发现和文档，Venice 指南升级并添加交叉链接\nChannels: 新增 LINE Messaging API 插件，支持富文本回复和快速回复\nTTS: 新增 Edge TTS 备用方案（无需 API 密钥），添加自动模式切换\nExec approvals: 支持通过 `/approve` 命令在所有渠道（包括插件）中批准执行\nTelegram: DM 主题作为独立会话，新增出站链接预览开关\nWeb search: 添加 Brave 搜索新鲜度过滤器参数\nUI: 全新控制面板仪表盘设计系统（字体、颜色、间距）\nGateway: 暴露 config.patch 工具，支持安全的部分更新",
+      "bug_fixes": "Web UI: 修复 config/debug 布局溢出、滚动和代码块尺寸问题\nWeb UI: 活动运行期间显示停止按钮，空闲时恢复新会话按钮\nWeb UI: 重连时清除陈旧断开横幅，表单保存时改进 schema 验证\nWeb UI: 隐藏 chat 气泡中的内部 message_id 提示\nGateway: 允许 Control UI 令牌认证跳过设备配对\nMatrix: 修复 E2EE 媒体附件解密，添加预检大小保护\nBlueBubbles: 路由电话号码目标到 DM，避免泄露路由 ID\niMessage: 不区分大小写规范化 chat ID 前缀\nSignal: 修复群组/UUID 目标的反应发送，添加可配置启动超时\nTelegram: 修复 Node 22 上传失败、代理设置和语音笔记隐私回退\nVoice Call: 修复 TwiML 流返回和 TTS 播放重叠问题\nGoogle Chat: 收紧邮箱白名单匹配，规范化 space 目标"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/279625865",
@@ -8612,8 +8612,8 @@
         "eyes": 0
       },
       "mentions_count": 19,
-      "features": "TTS: 将Telegram TTS移入核心模块，默认启用模型驱动的TTS标签以实现富有表现力的音频回复\nGateway: 新增HTTP端点支持直接工具调用（附带认证和工具策略）\nHeartbeat: 添加每通道可见性控制（OK/警报/指示器）\n部署: 新增Fly.io部署支持及指南\nChannels: 新增Tlon/Urbit通道插件（支持私信、群组提及、线程回复）\nChannels: 支持跨内置和插件通道的每组工具允许/拒绝策略\nAgents: 新增Bedrock自动发现默认值及配置覆盖\nCLI: 新增`clawdbot system`命令用于系统事件和heartbeat控制\nCLI: 为`clawdbot models status`添加实时认证探测\nCLI: `clawdbot update`后默认重启gateway\nBrowser: 新增节点主机代理自动路由功能\nPlugins: 新增JSON-only的`llm-task`工具\nMarkdown: 新增每通道表格转换（Signal/WhatsApp使用bullet，其他平台使用代码块）",
-      "bug_fixes": "Sessions: 接受非UUID sessionId同时保留代理作用域\nSessions: 修复出站消息的会话键镜像、创建会话条目及规范化会话键大小写\nSessions: 拒绝数组支持的会话存储以防止静默数据丢失\nGateway: 比较进程启动时间避免PID回收导致的锁循环\nExec approvals: 持久化白名单条目ID保持macOS白名单行稳定\nExec: 遵循工具执行的安全默认设置避免不必要的权限提升提示\nLinux: systemd PATH中包含环境配置的用户bin目录\nTailscale: 仅在权限错误时使用sudo重试\nAgents: 修复最后助手轮次仅调用工具时的静默停止问题\nAgents: 忽略IDENTITY.md中的模板占位符\nAgents: 模型切换时丢弃孤立的OpenAI Responses推理块\nSlack: 对未列出频道遵循open groupPolicy\nDiscord: 限制自动线程提及绕过仅限机器人创建的线程\nDiscord: 重试速率限制的白名单解析和命令部署\nMentions: 在群聊中有其他显式提及时忽略隐式提及匹配\nTelegram: 在媒体标题中渲染markdown\nMS Teams: 移除Graph和Bot Framework作用域中的`.default`后缀"
+      "features": "摘要生成失败",
+      "bug_fixes": "摘要生成失败"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/279286166",
@@ -8742,8 +8742,8 @@
         "eyes": 0
       },
       "mentions_count": 15,
-      "features": "Compaction safeguard新增自适应分块、渐进式回退及UI状态重试机制\n状态输出新增Antigravity使用追踪功能\nSlack新增replyToModeByChatType实现聊天类型回复线程覆盖\nBlueBubbles的sendAttachment支持MP3/CAF语音备忘录的asVoice参数\nOnboarding新增hatch选择(TUI/Web/Later)、token解释器及macOS后台仪表板",
-      "bug_fixes": "BlueBubbles修复空闲/无回复时打字指示器未停止的问题\nMessage tool修复send时path/filePath被错误修改的bug\nAuto-reply修复无会话状态时错误报告模型切换的问题\nControl UI修复注入和身份RPC中本地头像URL解析问题\nAgents修复工具调用标记未被剥离的问题\nDiscord修复Message Content Intent入职提示不清晰的问题\nGateway修复卸载前未停止服务导致加载失败的问题\nAgents修复API错误详情未正确显示的问题\nExec修复PTY生成失败时未回退到非PTY的问题\nExec approvals修复链式shell命令缺少每段允许列表的问题\nDoctor修复未遵循CLAWDBOT_GATEWAY_TOKEN进行认证检查的问题\nMatrix插件修复m.direct持久化和房间回退问题\nCLI修复输出路径未优先使用~表示home目录的问题\nMattermost插件修复配对/允许列表控制和@username目标保留问题\nAgents修复转录清理导致final标签和错误轮次被破坏的问题\nAuth修复冷却期间初始选择和轮换中未跳过认证配置文件的bug\nSlack修复WebClient重试过多导致重复发送的问题\nSlack修复threadId提供时未读取线程回复的问题\nmacOS修复gateway摘要显示“未链接”的误报问题"
+      "features": "摘要生成失败",
+      "bug_fixes": "摘要生成失败"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/278987294",
@@ -8872,8 +8872,8 @@
         "eyes": 0
       },
       "mentions_count": 22,
-      "features": "Lobster可选插件工具，支持类型化工作流和审批门控\nControl UI支持自定义助手身份和头像显示\n缓存TTL剪枝优化 + 认证感知默认值，减少冷请求令牌消耗\nExec审批支持elevated ask/full模式\nSignal输入指示器和已读回执\nMSTeams支持文件上传、adaptive cards和附件处理\n/models命令UX刷新 + clawdbot update wizard交互更新\nCLI命令重组，gateway/node命令扁平化，新增gateway probe检测\n心跳支持显式session keys和活动时段配置\n每channel可配置空闲时长和去抖动覆盖\nNodes支持exec风格执行，暴露PATH环境变量\nDiscord支持通配符channel配置",
-      "bug_fixes": "流式响应保持跨块回复标签，运行开始时启动typing指示器\n接受带空格/tilde的MEDIA路径，优先使用消息工具提示图像\n丢弃未签名thinking块，强制字母数字工具调用ID\nExec审批主agent设为默认，对齐node/gateway allowlist预检\n验证解析路径，避免allowlist竞态和空可选参数"
+      "features": "Lobster可选插件工具，支持类型化工作流与审批门控\nControl UI自定义助手身份和头像显示\n缓存优化：新增cache-ttl剪枝模式，减少冷请求token消耗\nExec审批新增elevated ask/full模式，支持本地/网关/节点定向\nSignal输入状态指示器和已读回执\nMSTeams文件上传、自适应卡片和附件处理改进\n/models命令UX优化，新增clawdbot update wizard交互式更新\nCLI网关和节点服务命令重组，新增gateway probe连通性检查\n会话支持按渠道配置空闲时长和去抖动覆盖\n节点支持exec风格执行，PATH环境变量优化\nDiscord通配符频道配置支持\nHeartbeat允许显式会话密钥和活动时间配置\nmacOS设置界面刷新优化",
+      "bug_fixes": "流式响应跨块保留回复标签，输入指示器在运行开始时触发\n修复Claude模型无符号thinking块问题，Mistral/OpenRouter强制字母数字工具调用ID\nExec审批将主代理作为默认代理，对齐节点/网关允许列表预检查\n执行审批验证解析路径，避免允许列表解析竞态和空参数问题"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/278541318",
@@ -9002,7 +9002,7 @@
         "eyes": 0
       },
       "mentions_count": 42,
-      "features": "Control UI: 新增复制为 Markdown 功能，支持错误反馈\nControl UI: 移除旧版列表视图，简化界面\nTUI: 代码块支持语法高亮显示\nTUI: 会话选择器新增衍生标题、模糊搜索、相对时间和最后消息预览\nTUI: 新增可搜索模型选择器，快速切换模型\nTUI: 新增输入历史功能（上下键遍历已发送消息）\nACP: 新增 `clawdbot acp` 命令，支持 IDE 集成\nACP: 新增 `clawdbot acp client` 交互式调试工具\nSkills: 下载安装支持 OS 过滤选项\nSkills: 新增本地 sherpa-onnx-tts 语音合成技能\nMemory: 新增混合 BM25 + 向量搜索（FTS5），支持加权合并和回退机制\nMemory: 新增 SQLite 嵌入缓存，加速重索引和频繁更新\nMemory: 新增 OpenAI 批量索引功能，显著提升嵌入处理效率\nMemory: 新增 Gemini 原生嵌入提供商支持\nMemory: 批量索引支持并行任务（默认并发数 2），实时进度渲染\nBrowser: 支持配置文件默认快照设置，提升工具/CLI 效率\nNostr: 新增 Nostr 频道插件，含个人资料管理和引导默认值\nMatrix: 迁移至 matrix-bot-sdk，新增 E2EE 加密和位置处理支持\nSlack: 新增 Bolt HTTP 接收器模式，支持 HTTP Webhook\nTelegram: 转发消息支持标准化来源详情和旧版兼容\nDiscord: 超出命令限制时自动回退至 `/skill`，并全局开放该命令\n插件系统: 支持清单内嵌配置模式、频道元数据驱动 UI、新增记忆槽选择器\n插件: 新增 BlueBubbles 频道插件（默认禁用）\n插件: Zalo 和 Zalo Personal 迁移至共享插件 SDK 运行时\n插件: 支持可选代理工具和显式允许列表\n插件: 配置存在时自动启用，新增插件源同步和更新功能\nGateway: 新增 `/v1/responses` API（OpenResponses），支持语义流事件\nGateway: `/v1/responses` 扩展支持文件/图片输入、tool_choice 和输出限制\nUsage: 新增 `/usage cost` 汇总命令和 macOS 菜单成本图表\nSecurity: 检测到 ≤300B 模型无沙箱运行且启用网络工具时发出警告\nExec: 新增 host/security/ask 路由和会话级 `/exec` 指令",
+      "features": "Control UI: 新增复制为Markdown功能，带错误反馈；移除旧版列表视图\nTUI: 代码块语法高亮、会话选择器增强（标题/模糊搜索/时间/预览）、可搜索模型选择器、输入历史\nACP: 新增IDE集成命令和交互式调试工具\nSkills: 下载安装支持OS过滤选项、新增本地sherpa-onnx-tts语音技能\nMemory: 混合BM25+向量搜索、SQLite嵌入缓存、OpenAI批量索引（默认启用/可并行）、Gemini嵌入支持、详细日志\nBrowser: 工具/CLI快照配置默认值\n新增Nostr频道插件（资料管理+引导）、Matrix迁移至新SDK（E2EE）、Slack HTTP webhook模式、Telegram转发消息上下文增强\nDiscord: `/skill`全局可用，命令超限回退至`/skill`\nZalouser插件、BlueBubbles插件（默认禁用）\n插件系统：清单配置验证、内存槽位选择器、频道元数据驱动UI、可选工具白名单、自动启用bundled插件\nGateway: `/v1/responses` API（文件/图片输入、工具选择、输出限制）\nUsage: `/usage cost`汇总和macOS菜单成本图表\nSecurity: 对<=300B模型无沙箱+Web工具组合发出安全警告\nExec: 主机/安全/请求路由",
       "bug_fixes": "无"
     },
     {
@@ -9132,8 +9132,8 @@
         "eyes": 0
       },
       "mentions_count": 23,
-      "features": "新增 Hooks 系统，包含打包 hooks、CLI 工具和完整文档\n新增入站媒体理解，支持 image/audio/video，带 provider 和 CLI fallback\n新增 Zalo Personal 插件（@clawdbot/zalouser），统一插件渠道目录\n新增 session.identityLinks 用于跨平台 DM session 关联\n新增 Web search country/language 参数（支持 Brave API）\n新增 Vercel AI Gateway 认证选择和 onboarding 更新\n新增打包插件默认禁用机制，允许安装版本覆盖\n新增 Antigravity、Gemini CLI OAuth、Copilot Proxy 插件\nweb_fetch 改进：使用 Readability 提取，支持 Firecrawl fallback，发送 Chrome-like headers\n新增 exec 工具：支持 PTY 交互式会话、tmux 风格 send-keys、bracketed paste 和 cursor position 查询\nexec 工具默认 exit 通知，自动迁移 legacy tools.bash 配置\nTUI 新增运行完成后刷新 session token counts\nControl UI 新增删除 sessions 功能\nTelegram 新增 reply-chain 消息绕过 mention gating\niMessage 新增远程附件支持（VM/SSH 部署）\nMessages 新增 delivered outbound text/media 镜像到 session transcripts\nCron isolated jobs 每次运行启动新 session id 防止上下文堆积\n新增 Health 端点：per-agent session summaries 和 account-level health details\n新增 Hooks hook pack installs 支持（npm/path/zip/tar）\nConfig 新增 env var substitution 支持",
-      "bug_fixes": "macOS 修复：drain subprocess pipes 避免 deadlocks\nVerbose 修复：仅对支持 markdown 的渠道启用 markdown 包装\nTelegram 修复：接受 tg/group/telegram 前缀和 topic targets 用于 inline button 验证\nTelegram 修复：拆分长 captions 为 follow-up messages\nConfig 修复：阻止无效 config 启动，保留 best-effort doctor config"
+      "features": "Hooks 系统：新增完整的 hooks 机制，含捆绑 hooks、CLI 工具和文档支持\n媒体理解：新增入站媒体（图像/音频/视频）理解功能，支持 provider 和 CLI 回退方案\nZalo 插件：新增 Zalo Personal 插件并统一插件 channel 目录\n跨平台会话链接：新增 `session.identityLinks` 支持 DM 会话跨平台关联\nVercel AI Gateway 集成：新增认证选项和引导流程更新\nWeb 搜索增强：新增 `country`/`language` 参数支持\n捆绑插件：默认禁用捆绑插件并支持已安装版本覆盖\nweb_fetch 改进：使用 Readability 提升内容提取，添加 Firecrawl 回退和 Chrome 风格请求头\nexec 工具：新增 PTY 交互支持、tmux 风格快捷键、进程提交和光标响应\n用户技能命令：新增用户可直接调用的技能命令注册机制\n健康检查增强：新增按代理会话摘要和账户级健康详情\n钩子包安装：支持 npm/path/zip/tar 多种格式安装\n配置改进：支持环境变量替换、启动时验证配置合法性\n目录统一：跨 channel 和插件 channel 统一 `clawdbot directory` 命令\nControl UI 增强：支持从 UI 删除会话\nTelegram 改进：默认最小反应级别、群组中回复链消息绕过提及限制\niMessage 增强：支持远程附件（VM/SSH 部署）\n消息功能：出站文本/媒体自动镜像到会话转录、消息目录缓存实时刷新\nCron 隔离：每次运行使用全新会话 ID 防止上下文堆积\n文档更新：新增帮助中心、Node/npm PATH 指南",
+      "bug_fixes": "macOS 修复：解决子进程管道在等待前未排空导致的死锁问题\nTelegram 修复：支持 tg/group/telegram 前缀和主题目标的内联按钮验证\nTelegram 修复：长标题消息自动拆分为后续消息\nVerbose 模式修复：仅在支持 markdown 的 channel 启用 markdown 格式包裹\n配置修复：阻止无效配置启动、保留学历 doctor 配置、保持滚动配置"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/277351058",
@@ -9464,8 +9464,8 @@
         "eyes": 0
       },
       "mentions_count": 31,
-      "features": "Web 搜索：新增 `web_search`/`web_fetch` 工具（基于 Brave API），集成首次设置引导\n浏览器控制：Chrome 扩展中继接管模式 + 远程浏览器控制（`clawdbot browser serve`）\n插件系统：渠道插件（网关 HTTP 钩子）+ Zalo 插件 + 插件安装引导流程\n安全增强：`clawdbot security audit` 新增检查项（+ `--fix`）、detect-secrets CI 扫描及 SECURITY.md 安全策略\n语音通话：新增 Plivo 语音提供商（无 SDK 依赖）\n渠道支持：Matrix 插件、Telegram 消息删除、WhatsApp 读取回执开关\n使用追踪：新增 MiniMax 编程计划使用量追踪\n配置增强：`channels.<provider>.configWrites` 门控配置 + Claude Code CLI 认证选项标注\nDaemon：支持多网关环境下配置感知的服务名称\nControl UI：显示原始 any-map 条目及文档链接导航",
-      "bug_fixes": "修复网关终止信号未正确转发给 CLI 子进程的问题（#933）\n修复 Control UI 中 main 会话键未规范化的问题\n修复 Markdown 代码块内的 thinking/final 标签未正确处理的问题（#939）\n修复浏览器角色快照在 Playwright 页面切换后失效的问题\n修复 macOS launchd 日志目录缺失问题（#909）\n修复 Telegram 原生命令注册错误（#929，修复 #901）\n修复 Google 未签名思维块导致的签名错误\n修复 Agent 工具调用文本降级时误删相邻回复的问题（#905）\n修复 npm 发布包缺少最新 dist/ 的问题\n修复 OpenAI/OpenRouter 工具调用 ID 过长问题"
+      "features": "Web 搜索/抓取工具：集成 Brave API，支持 `web_search`/`web_fetch` 命令，配置引导自动提示 API key\nChrome 扩展中继接管模式：支持工具栏按钮一键接管 + `clawdbot browser serve` 远程控制\n浏览器默认配置文件改为 `chrome`，内置扩展中继自动启动\n插件系统升级：支持频道 HTTP hooks 插件、Zalo 插件、Matrix 外部插件、Plivo 语音提供商\n安全功能增强：`clawdbot security audit` 检查范围扩展，新增 `--fix` 自动修复和 detect-secrets CI 扫描\n安全文档：发布 `SECURITY.md` 漏洞报告政策\n新增引导安装流程：插件安装引导、安全检查点提示\n频道配置优化：新增 `channels.<provider>.configWrites` 写入权限控制、Slack 频道 ID 自动迁移\nTelegram：新增消息删除 action\nWhatsApp：新增 `sendReadReceipts` 选项禁用自动已读回执\n多网关支持：profile 感知的服务名称\n文档完善：新增多网关指南、CLI 命令文档页面、Gateway 安全加固指南",
+      "bug_fixes": "Gateway：正确转发终止信号到重生的 CLI 子进程，避免孤儿 systemd 进程\nControl UI：修复会话默认值传递，规范主会话键避免 bare `main` 别名\n工具处理：修复 Markdown 代码块内 thinking/final 标签被错误剥离的问题\n浏览器：修复 Playwright 返回不同 Page 实例时的快照引用持久化问题\nmacOS：修复 launchd 日志目录创建和 SwiftFormat 配置格式化\nTelegram：修复停靠命令注册时下划线导致的 `BOT_COMMAND_INVALID` 错误\nGoogle：修复未签名 thinking blocks 导致的签名错误，下调后重发\nAgent 系统提示词：明确用户时区和 24 小时制显示格式\n工具调用：修复降级工具调用文本时吞掉相邻回复的问题，过滤 thinking-tag 泄漏"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/276289351",
@@ -9582,7 +9582,7 @@
       "zipball_url": "https://api.github.com/repos/openclaw/openclaw/zipball/v2026.1.12-2",
       "body": "### Fixes\n- Packaging: include `dist/memory/**` in the npm tarball (fixes `ERR_MODULE_NOT_FOUND` for `dist/memory/index.js`).\n",
       "features": "无",
-      "bug_fixes": "修复 npm 包发布时遗漏 dist/memory/** 目录导致的模块找不到错误"
+      "bug_fixes": "修复 npm 包打包时遗漏 `dist/memory/**` 目录导致的 `ERR_MODULE_NOT_FOUND` 错误"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/276286936",
@@ -9638,8 +9638,8 @@
         "eyes": 0
       },
       "mentions_count": 27,
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败"
+      "features": "聊天\"providers\"重命名为\"channels\"，支持自动迁移配置\nMemory：新增向量搜索功能，支持Markdown记忆的SQLite索引、分块、懒同步和文件监听\nPlugins：恢复完整语音通话插件功能（Telnyx/Twilio、流式、入站策略、工具/CLI）\nModels：新增Synthetic provider和Moonshot Kimi K2 0905模型及变体\nCron：支持ISO时间戳一次性调度，可选删除后运行\nAgents：新增压缩模式配置，支持防护摘要和每agent模型回退\nMemory：支持自定义OpenAI兼容嵌入端点和本地node-llama-cpp嵌入\n新增`clawdbot memory` CLI和`memory_search`/`memory_get`工具\n工具配置文件和组快捷方式，支持Docker bind mounts\n浏览器`scrollintoview`操作，支持Claude/Gemini工具参数别名\nTailscale二进制发现、自定义绑定模式和探测认证重试\n新增Chutes OAuth认证和API密钥输入规范化\n安装后自动运行诊断并提示守护进程重启",
+      "bug_fixes": "修复pnpm工作区不匹配、缺失UI资源和tsx二进制的警告\n修复凭证验证失败触发回退和环境变量apiKey规范化\n修复无效认证配置导致环境密钥无法使用\n修复Gemini 3 ID规范化和工具调用ID处理\n修复压缩上下文溢出自动恢复机制\n修复MiniMax畸形工具调用XML\n修复遵循CLAWDBOT_AGENT_DIR目录配置\n修复Anthropic过载错误友好消息和用户轮次合并\n修复消息工具发送上下文隔离和打字指示器保持\n修复`/status`白名单行为和推理标签强制执行"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/275964436",
@@ -9768,7 +9768,7 @@
         "eyes": 0
       },
       "features": "无",
-      "bug_fixes": "修复全新安装时 CLI 入口点出现顶层 await 警告的问题\n修复 npm 安装时横幅无法显示提交哈希的问题（增加 gitHead 回退机制）"
+      "bug_fixes": "修复了 CLI 在新安装时入口点出现顶级 await 警告的问题\n修复了 CLI 在 npm 安装时横幅中无法显示 commit hash 的问题"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/275960320",
@@ -9897,7 +9897,7 @@
         "eyes": 0
       },
       "features": "无",
-      "bug_fixes": "修复 npm 安装后 CLI 入口点权限不可执行的问题\n修复 npm 包缺少 `dist/plugins/` 目录导致的模块缺失错误"
+      "bug_fixes": "修复CLI入口点在npm安装后权限不可执行的问题\n修复npm包缺少dist/plugins/导致的模块缺失错误"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/275951078",
@@ -10014,7 +10014,7 @@
       "zipball_url": "https://api.github.com/repos/openclaw/openclaw/zipball/v2026.1.11-1",
       "body": "## Fixes\n- Installer: include `patches/` in the npm package so postinstall patching works for npm/bun installs.\n",
       "features": "无",
-      "bug_fixes": "安装器修复：确保 `patches/` 目录包含在 npm 包中，使 npm/bun 安装时的 postinstall 打补丁功能正常工作"
+      "bug_fixes": "修复安装程序未包含 `patches/` 目录的问题，确保 npm/bun 安装时 postinstall 补丁正常工作"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/275947006",
@@ -10131,8 +10131,8 @@
       "zipball_url": "https://api.github.com/repos/openclaw/openclaw/zipball/v2026.1.11",
       "body": "### Highlights\n- Plugins are now first-class: loader + CLI management, plus the new Voice Call plugin.\n- Config: modular `$include` support for split config files. (#731) — thanks @pasogott.\n- Agents/Pi: reserve compaction headroom so pre-compaction memory writes can run before auto-compaction.\n- Agents: automatic pre-compaction memory flush turn to store durable memories before compaction.\n\n### Changes\n- Deps: update pi-agent-core/pi-ai/pi-coding-agent/pi-tui and refresh the pi-ai patch.\n- Dev: bump @types/node.\n- macOS: add wizard debug CLI and share wizard parsing helpers.\n- CLI/Onboarding: simplify MiniMax auth choice to a single M2.1 option.\n- CLI: configure section selection now loops until Continue.\n- Docs: explain MiniMax vs MiniMax Lightning (speed vs cost) and restore LM Studio example.\n- Docs: add Cerebras GLM 4.6/4.7 config example (OpenAI-compatible endpoint).\n- Onboarding/CLI: group model/auth choice by provider and label Z.AI as GLM 4.7.\n- Onboarding/Docs: add Moonshot AI (Kimi K2) auth choice + config example.\n- CLI/Onboarding: prompt to reuse detected API keys for Moonshot/MiniMax/Z.AI/Gemini/Anthropic/OpenCode.\n- CLI/Onboarding: move MiniMax to the top of the provider list.\n- CLI/Onboarding: add MiniMax M2.1 Lightning auth choice.\n- CLI/Onboarding: show key previews when reusing detected API keys.\n- Auto-reply: add compact `/model` picker (models + available providers) and show provider endpoints in `/model status`.\n- Control UI: add Config tab model presets (MiniMax M2.1, GLM 4.7, Kimi) for one-click setup.\n- Plugins: add extension loader (tools/RPC/CLI/services), discovery paths, and config schema + Control UI labels (uiHints).\n- Plugins: add `clawdbot plugins install` (path/tgz/npm), plus `list|info|enable|disable|doctor` UX.\n- Plugins: voice-call plugin now real (Twilio/log), adds start/status RPC/CLI/tool + tests.\n- Docs: add plugins doc + cross-links from tools/skills/gateway config.\n- Docs: clarify memory flush behavior + writable workspace requirement in Memory/Session/FAQ.\n- Docs: add beginner-friendly plugin quick start + expand Voice Call plugin docs.\n- Tests: add Docker plugin loader + tgz-install smoke test.\n- Tests: extend Docker plugin E2E to cover installing from local folders (`plugins.load.paths`) and `file:` npm specs.\n- Tests: add coverage for pre-compaction memory flush settings (including read-only/CLI skips).\n- Tests: modernize live model smoke selection for current releases and enforce tools/images/thinking-high coverage. (#769) — thanks @steipete.\n- Agents/Tools: add `apply_patch` tool for multi-file edits (experimental; gated by tools.exec.applyPatch; OpenAI-only).\n- Agents/Tools: rename the bash tool to exec (config alias maintained). (#748) — thanks @myfunc.\n- Agents: add pre-compaction memory flush config (`agents.defaults.compaction.*`) with a soft threshold + system prompt.\n- Config: add `$include` directive for modular config files. (#731) — thanks @pasogott.\n- Build: set pnpm minimum release age to 2880 minutes (2 days). (#718) — thanks @dan-dr.\n- macOS: prompt to install the global `clawdbot` CLI when missing in local mode; install via `clawd.bot/install-cli.sh` (no onboarding) and use external launchd/CLI instead of the embedded gateway runtime.\n- Docs: add gog calendar event color IDs from `gog calendar colors`. (#715) — thanks @mjrussell.\n- Cron/CLI: add `--model` flag to cron add/edit commands. (#711) — thanks @mjrussell.\n- Cron/CLI: trim model overrides on cron edits and document main-session guidance. (#711) — thanks @mjrussell.\n- Skills: bundle `skill-creator` to guide creating and packaging skills.\n- Providers: add per-DM history limit overrides (`dmHistoryLimit`) with provider-level config. (#728) — thanks @pkrmf.\n- Discord: expose channel/category management actions in the message tool. (#730) — thanks @NicholasSpisak.\n- Docs: rename README “macOS app” section to “Apps”. (#733) — thanks @AbhisekBasu1.\n- Gateway: require `client.id` in WebSocket connect params; use `client.instanceId` for presence de-dupe; update docs/tests.\n- macOS: remove the attach-only gateway setting; local mode now always manages launchd while still attaching to an existing gateway if present.\n\n### Installer\n- Postinstall: replace `git apply` with builtin JS patcher (works npm/pnpm/bun; no git dependency) plus regression tests.\n- Postinstall: skip pnpm patch fallback when the new patcher is active.\n- Installer tests: add root+non-root docker smokes, CI workflow to fetch clawd.bot scripts and run install sh/cli with onboarding skipped.\n- Installer UX: support `CLAWDBOT_NO_ONBOARD=1` for non-interactive installs; fix npm prefix on Linux and auto-install git.\n- Installer UX: add `install.sh --help` with flags/env and git install hint.\n- Installer UX: add `--install-method git|npm` and auto-detect source checkouts (prompt to update git checkout vs migrate to npm).\n\n### Fixes\n- Control UI: flatten nav into a single horizontal scroll row on tablet/mobile (and always show collapsed group items). (#771) — thanks @carlulsoe.\n- macOS: start + await local gateway before onboarding wizard begins.\n- macOS: cancel onboarding wizard on close, recover if the gateway drops the session, and time out stalled gateway connects.\n- macOS: wizard debug CLI now surfaces error status instead of exiting as complete.\n- Models/Onboarding: configure MiniMax (minimax.io) via Anthropic-compatible `/anthropic` endpoint by default (keep `minimax-api` as a legacy alias).\n- Agents/Browser: cap Playwright AI snapshots for tool calls (maxChars); CLI snapshots remain full. (#763) — thanks @thesash.\n- Models: normalize Gemini 3 Pro/Flash IDs to preview names for live model lookups. (#769) — thanks @steipete.\n- CLI: fix guardCancel typing for configure prompts. (#769) — thanks @steipete.\n- Providers: default groupPolicy to allowlist across providers and warn in doctor when groups are open.\n- MS Teams: add groupPolicy/groupAllowFrom gating for group chats and warn when groups are open.\n- Providers: strip tool call/result ids from Gemini CLI payloads to avoid API 400s. (#756)\n- Gateway/WebChat: include handshake validation details in the WebSocket close reason for easier debugging; preserve close codes.\n- Gateway/Auth: send invalid connect responses before closing the handshake; stabilize invalid-connect auth test.\n- Gateway: tighten gateway listener detection.\n- Control UI: hide onboarding chat when configured and guard the mobile chat sidebar overlay.\n- Auth: read Codex keychain credentials and make the lookup platform-aware.\n- macOS/Release: avoid bundling dist artifacts in relay builds and generate appcasts from zip-only sources.\n- Doctor: surface plugin diagnostics in the report.\n- Plugins: treat `plugins.load.paths` directory entries as package roots when they contain `package.json` + `clawdbot.extensions`; load plugin packages from config dirs; extract archives without system tar.\n- Config: expand `~` in `CLAWDBOT_CONFIG_PATH` and common path-like config fields (including `plugins.load.paths`); guard invalid `$include` paths. (#731) — thanks @pasogott.\n- Agents: stop pre-creating session transcripts so first user messages persist in JSONL history.\n- Agents: skip pre-compaction memory flush when the session workspace is read-only.\n- Auto-reply: allow inline `/status` for allowlisted senders (stripped before the model); unauthorized senders see it as plain text.\n- Auto-reply: include config-only allowlisted models in `/model` even when the catalog is partial.\n- Auto-reply: allow fuzzy `/model` matches (e.g. `/model kimi` or `/model moonshot/kimi`) when unambiguous.\n- Auto-reply: ignore inline `/status` directives unless the message is directive-only.\n- CLI/Configure: enter the selected section immediately, then return to the section picker.\n- CLI/Configure: apply the chosen auth model as default (skip the extra picker) and refresh the model catalog for new providers.\n- Auto-reply: align `/think` default display with model reasoning defaults. (#751) — thanks @gabriel-trigo.\n- Auto-reply: flush block reply buffers on tool boundaries. (#750) — thanks @sebslight.\n- Auto-reply: allow sender fallback for command authorization when `SenderId` is empty (WhatsApp self-chat). (#755) — thanks @juanpablodlc.\n- Heartbeat: refresh prompt text for updated defaults.\n- Agents/Tools: use PowerShell on Windows to capture system utility output. (#748) — thanks @myfunc.\n- Agents/Tools: normalize Claude Code-style read/write/edit params (file_path/old_string/new_string) and keep sandbox guards in place. (#768) — thanks @hsrvc.\n- Docker: tolerate unset optional env vars in docker-setup.sh under strict mode. (#725) — thanks @petradonka.\n- CLI/Update: preserve base environment when passing overrides to update subprocesses. (#713) — thanks @danielz1z.\n- Agents: treat message tool errors as failures so fallback replies still send; require `to` + `message` for `action=send`. (#717) — thanks @theglove44.\n- Agents: preserve reasoning items on tool-only turns.\n- Agents: enforce `<final>` gating for reasoning-tag providers to prevent tag/reasoning leaks. (#754) — thanks @mcinteerj.\n- Agents/Subagents: wait for completion before announcing, align wait timeout with run timeout, and make announce prompts more emphatic.\n- Agents: route subagent transcripts to the target agent sessions directory and add regression coverage. (#708) — thanks @xMikeMickelson.\n- Agents/Tools: preserve action enums when flattening tool schemas. (#708) — thanks @xMikeMickelson.\n- Gateway/Agents: canonicalize main session aliases for store writes and add regression coverage. (#709) — thanks @xMikeMickelson.\n- Agents: reset sessions and retry when auto-compaction overflows instead of crashing the gateway.\n- Providers/Telegram: normalize command mentions for consistent parsing. (#729) — thanks @obviyus.\n- Providers: skip DM history limit handling for non-DM sessions. (#728) — thanks @pkrmf.\n- Sandbox: fix non-main mode incorrectly sandboxing the main DM session and align `/status` runtime reporting with effective sandbox state.\n- Sandbox/Gateway: treat `agent:<id>:main` as a main-session alias when `session.mainKey` is customized (backwards compatible).\n- Auto-reply: fast-path allowlisted slash commands (inline `/help`/`/commands`/`/status`/`/whoami` stripped before model).\n",
       "mentions_count": 20,
-      "features": "**插件系统**：新增插件加载器，支持通过路径、tgz、npm 安装插件（`clawdbot plugins install`）\n**语音通话插件**：新增 Voice Call 插件，支持 Twilio 通话、日志记录及 RPC/CLI/工具调用\n**模块化配置**：支持 `$include` 指令实现配置文件拆分和复用\n**预压缩内存刷新**：新增预压缩内存刷新配置，确保压缩前持久化重要记忆\n**多文件编辑工具**：新增 `apply_patch` 工具用于实验性多文件编辑（需开启 `tools.exec.applyPatch`）\n**工具重命名**：bash 工具重命名为 `exec`，保留配置别名兼容\n**模型选择器**：自动回复增加 `/model` 快捷选择器，支持显示提供商端点\n**配置预设面板**：Control UI 新增 Config 页签一键配置 MiniMax M2.1、GLM 4.7、Kimi 等模型\n**技能创建器**：新增 `skill-creator` 技能包引导创建和打包自定义技能\n**DM 历史限制**：支持按 DM 会话设置独立的历史限制（`dmHistoryLimit`）\n**Cron 模型覆盖**：cron 命令新增 `--model` 参数支持定时任务使用不同模型\n**安装脚本优化**：新增 `CLAWDBOT_NO_ONBOARD=1` 环境变量支持非交互安装\n**安装方法选择**：安装脚本支持 `--install-method git|npm` 指定安装方式",
-      "bug_fixes": "**Control UI 移动端适配**：修复平板/手机上的导航栏布局，优化为单行横向滚动"
+      "features": "**插件系统正式成为一等公民**：新增插件加载器、CLI 管理命令（install/list/info/enable/disable/doctor）及语音通话插件（Twilio）\n**配置模块化**：`$include` 指令支持分拆配置文件，提升配置可维护性\n**Agents 内存优化**：预压缩内存刷新机制，在自动压缩前自动存储持久化记忆\n**模型选择器**：Auto-reply 添加紧凑型 `/model` 选择器，Control UI 新增模型预设（MiniMax M2.1、GLM 4.7、Kimi）\n**多新提供商支持**：新增 MiniMax M2.1 Lightning、Moonshot AI (Kimi K2)、GLM 4.6/4.7 等认证选项和配置示例\n**API 密钥复用**：自动检测并提示复用 Moonshot/MiniMax/Z.AI/Gemini/Anthropic/OpenCode 的已有密钥\n**安装器改进**：替换 git patch 为 JS 内置修补器（兼容 npm/pnpm/bun），支持非交互安装（`CLAWDBOT_NO_ONBOARD=1`）\n**Discord 功能增强**：消息工具新增频道/类别管理操作\n**Cron 任务支持模型覆盖**：`--model` 标志可用于定时任务管理\n**工具重命名**：bash 工具重命名为 exec（保留配置别名）\n**实验性功能**：`apply_patch` 工具支持多文件编辑（需开启 tools.exec.applyPatch）",
+      "bug_fixes": "（日志内容被截断，无法提取 Bug 修复部分）"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/275788121",
@@ -10297,8 +10297,8 @@
         "eyes": 0
       },
       "mentions_count": 30,
-      "features": "CLI: `clawdbot status` 改为表格显示，增加 OS/update/gateway/daemon/agents/sessions 等完整信息\nCLI: 新增 `clawdbot update` 命令（基于 git checkout 的安全更新方式）\nGateway: 新增 OpenAI 兼容的 `/v1/chat/completions` HTTP 端点，支持 SSE 流式输出和按 agent 路由\nCLI Backends: 添加 Codex CLI 备用方案，支持恢复功能和 JSONL 解析\nOnboarding: 添加 Z.AI (GLM) 和 OpenRouter API 密钥认证选项\nAgents: 新增块回复间的人机延迟 pacing 功能（off/natural/custom 模式）\nAgents/Browser: 新增 `browser.target` 配置（sandbox/host/custom）及沙箱主机控制门控\nOnboarding: 添加基于目录的默认模型选择器\nProviders: 统一组历史上下文包装器，支持按 provider/account 覆盖 `historyLimit`\nGateway/Heartbeat: 可选传递心跳推理输出\nDocker: 允许可选的 home 卷和额外绑定挂载",
-      "bug_fixes": "CLI/Status: 表格扩展到全终端宽度，改进警告信息，添加故障排查链接\nCLI/Update: 修正进度转盘显示条件\nTelegram: 添加 `/whoami` 和 `/id` 命令，支持 `@username` 格式的 allowFrom 配置\nControl UI: 停止自动写入 `telegram.groups[\"*\"]`\nWhatsApp: 仅对已处理消息发送确认反应，检测 @lid 提及\nSandbox/Skills: 将技能镜像到沙箱工作区以保持可访问性\nTerminal/Table: 修复 ANSI 安全换行，防止表格截断\nmacOS: 清除未签名 launchd 覆盖项，规范化模型选择器选择\nGateway/Heartbeat: 修复心跳回复为 HEARTBEAT_OK 时推理输出丢失的问题\nAgents: 强制单写会话锁，移除隐藏推理输出中的标签，识别 usage limit 错误\nProviders: 入站消息去重，避免重复 LLM 调用\nGateway/Auth: 默认使用回环令牌认证，限制音频转录仅使用 Whisper"
+      "features": "CLI status 命令升级为表格显示，展示 OS/更新/gateway/daemon/agents/sessions；`status --all` 输出完整只读调试报告\n添加 Codex CLI 回退支持，支持文本恢复和 JSONL 解析\n新增 `clawdbot update` 命令（安全的 git checkout 更新方式）\nGateway 新增 OpenAI 兼容的 `/v1/chat/completions` HTTP 端点，支持认证、SSE 流式和按 agent 路由\n添加 Z.AI (GLM) 认证选项及 `--zai-api-key` 标志\n添加 OpenRouter API key 认证选项\nAgent 块回复间新增人类延迟节流功能（off/natural/custom 模式）\nBrowser 新增 `browser.target` 配置（sandbox/host/custom），支持自定义控制 URL/主机/端口白名单\n模型选择器升级为目录驱动的默认值选择器\n统一 providers 历史上下文包装器，支持 per-provider/per-account 的 `historyLimit` 覆盖\nGateway 心跳可选输出 `Reasoning:` 内容",
+      "bug_fixes": "CLI status 表格扩展至全终端宽度，改进警告信息显示和调试信息输出\nTelegram 新增 `/whoami` 和 `/id` 命令，`allowFrom` 支持 `@username` 和前缀 ID\nControl UI 停止自动写入 `telegram.groups[\"*\"]`，改用警告/确认机制\nWhatsApp 仅对已处理消息发送 ack reactions，忽略旧的 `messages.ackReaction` 配置\nDocker 构建支持可选 apt 包安装\nGateway 心跳在主回复为 `HEARTBEAT_OK` 时仍正常输出 reasoning\nmacOS 在签名重启时清除未签名 launchd 覆盖项\nAgent 强制单写者会话锁，丢弃孤儿工具结果以防止 ID 失败\n消息去重：跨 providers 过滤入站消息，避免重发/重连时的重复 LLM 调用\nAgent 清理隐藏推理输出中的 `<thought>` / `<antthinking>` 标签"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/275679944",
@@ -10463,8 +10463,8 @@
         "eyes": 0
       },
       "mentions_count": 21,
-      "features": "**Microsoft Teams 集成**：支持轮询、附件处理、出站 CLI 发送、频道策略配置\n**模型接入扩展**：新增 OpenCode Zen 和 MiniMax Anthropic 兼容 API 支持\n**认证系统增强**：Token 认证配置、认证优先级排序、OAuth 过期检查\n**CLI 消息子命令**：`message send/poll/attach/outbound` 统一管理\n**Gateway 发现机制**：支持本地和广域网 DNS-SD 自动发现、状态查询、SSH 直连\n**WhatsApp 增强**：广播群组多人回复、可配置媒体大小上限、身份前缀\n**Telegram 增强**：内联键盘按钮与回调路由、主题定时投递、音频转语音标签\n**Signal 增强**：消息反应与通知功能\n**控制 UI 升级**：移动端适配、消息队列展示、推理过程视图、会话链接\n**沙箱环境改进**：浏览器自动启动、技能同步、列表/重建命令\n**日志与配置**：多格式日志输出、全局配色禁用、环境变量内联支持\n**命令扩展**：`/debug` 运行时覆盖、`/config` 聊天更新、状态/成本报告\n**医生/守护进程**：权限检查、配置审计、供应商状态探测、重启指导\n**移动端图标**：iOS/Android/macOS 图标全新设计",
-      "bug_fixes": "**打包修复**：确保 MS Teams 发送模块包含在 npm tarball 中\n**沙箱/浏览器**：CDP 端点自动启动、容器代理修复、列表输出格式对齐\n**代理/运行时**：修复心跳提示范围、会话停止中断、上下文窗口保护\n**模型处理**：模型降级字符串化、计费故障转移、认证冷却排序\n**工具调度**：恢复 Anthropic OAuth 工具调度、Gmail hook 模型稳定性"
+      "features": "Microsoft Teams provider 支持（轮询、附件、出站发送、按频道策略）\n新增 OpenCode Zen 和 MiniMax Anthropic 兼容 API 模型支持\ntoken 认证 profiles 和认证顺序设置命令\nOAuth 有效期检查集成到 doctor/status\nCLI 统一消息工具和子命令（send/poll/attach/sendfile）\ngateway discover 支持本地和广域网 DNS-SD 发现\ngateway status 提供人类可读格式、JSON 输出和 SSH loopback\n`/config` 聊天更新、`/config get` 和 `/debug` 运行时覆盖\nsandbox CLI 命令（list/recreate）、skills 同步和浏览器自动启动\n日志输出模式（pretty/plain/JSONL）和全局 `--no-color`\nWhatsApp 广播群组支持多 Agent 回复、入站媒体大小限制可配置\nTelegram 内联键盘按钮、回调路由和 audio_as_voice 标签支持\nSignal 反应和通知支持 allowlist\nControl UI 排队消息、会话链接和移动端响应式设计\nTUI agent picker 和 agents list RPC\n自适应上下文修剪和 eligible skills 列表注入\n守护进程审计/修复流程和 provider 状态探测警告\n刷新 iOS/Android/macOS 应用图标\nDoctor/Daemon 权限检查和 supervisor 配置审计\n`/commands` 列表、`/models` 和 `/usage` 命令别名",
+      "bug_fixes": "修复 npm tarball 缺少 MS Teams send 模块\n修复 sandbox CDP 端点自动启动和容器外代理问题\n修复心跳提示错误限制到非默认会话\n修复 /stop 命令在工具调用间正确中止\n修复小上下文窗口保护逻辑\n修复 model fallback 字符串化问题\n修复 sessions_spawn 未正确继承 provider\n修复计费/积分故障转移逻辑\n修复 auth cooldown 顺序处理\n修复 Anthropic OAuth 工具调度和工具名绕过\n修复 OpenAI 无效 reasoning 重放问题\n修复 Gmail hook 模型强化"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/275073887",
@@ -10592,8 +10592,8 @@
         "rocket": 1,
         "eyes": 1
       },
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败"
+      "features": "安全：跨提供商默认锁定DMs，新增多对多配对优先+白名单机制\n沙箱：新增每个代理范围默认值和工作区访问控制，工具/会话隔离增强\n代理循环：新增压缩、修枝、流式处理功能，错误处理大幅加强\n提供商：Telegram/WhatsApp/Discord/Slack可靠性、线程、反应、媒体、重试全面改进\n控制UI：新增日志标签、流式稳定性、焦点模式、大型输出渲染优化\nCLI/Gateway/Doctor：守护进程/日志/状态诊断大幅扩展\n新增 `/compact` 命令支持手动压缩会话上下文\n新增 Himalaya email、CodexBar、1Password 技能集成\n新增 FAQ/ClawdHub/配置示例/展示文档",
+      "bug_fixes": "CLI/Gateway/Doctor：修复守护进程运行时选择、日志/状态/健康/错误显示，添加 `--yes`/`--non-interactive` 和 `--deep` 扫描选项\n代理循环+压缩：修复压缩/修枝调优、溢出处理、引导上下文安全问题及多提供商线程/确认流程\n沙箱+工具：修复每个代理沙箱覆盖、工作区访问控制、进程隔离和工具超时/反应问题\n提供商：修复 Telegram/WhatsApp/Discord/Slack/Signal/iMessage 的重试/退避、线程、反应、媒体组、提及门控问题\n控制UI/Web：修复日志标签、焦点模式、配置表单、流式稳定性、聊天历史窗口化问题\nmacOS/Android/TUI/Build：修复 macOS 网关竞态、QR 打包、JSON5 配置安全、Voice Wake、Android EXIF 旋转和 APK 版本命名问题\n依赖兼容性：修复 npm 包覆盖、Node 25 qrcode-terminal 导入、Bun/Playwright/WebSocket 兼容性"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/274113821",
@@ -10710,7 +10710,7 @@
       "zipball_url": "https://api.github.com/repos/openclaw/openclaw/zipball/v2026.1.5-3",
       "body": "## Fixes\n- NPM package: include missing runtime dist folders (slack/signal/imessage/tui/wizard/control-ui/daemon) to avoid ERR_MODULE_NOT_FOUND in Node 25 npx installs.",
       "features": "无",
-      "bug_fixes": "修复 NPM 包缺少运行时 dist 文件夹问题，解决 Node 25 npx 安装时的 ERR_MODULE_NOT_FOUND 错误"
+      "bug_fixes": "修复 NPM 包在 Node 25 中因缺少运行时 dist 文件夹导致 ERR_MODULE_NOT_FOUND 错误，影响 slack/signal/imessage/tui/wizard/control-ui/daemon 等模块"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/274111073",
@@ -10839,7 +10839,7 @@
         "eyes": 1
       },
       "features": "无",
-      "bug_fixes": "修复 npm 包分发问题，确保 `clawdbot agent` 在 npx 安装时能正确解析 session helpers\n修复 Node 25 兼容性问题，通过直接引用路径避免不支持的 directory import"
+      "bug_fixes": "修复 npx 安装时无法解析会话辅助工具的问题\n修复 Node 25 中目录导入不被支持的问题"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/274109364",
@@ -11050,8 +11050,8 @@
         "eyes": 0
       },
       "mentions_count": 1,
-      "features": "**可插拔代理架构**：新增 `inbound.reply.agent` 块，支持 Claude、Pi、Codex、Opencode 等多个 AI 代理，每个代理有独立的参数构建器和解析器\n**安全停止词机制**：收到 `stop`、`esc`、`abort`、`wait`、`exit` 时立即终止 agent 运行，并在后续对话前提醒\n**同手机模式**：支持在同一手机号上运行，可聊天控制 AI 助手，自动回声检测防止循环\n**批量消息处理**：多条 WhatsApp 消息合并发送，每条带时间戳保证顺序\n**IPC 通信**：通过 Unix socket 实现 `warelay send` 和心跳命令复用 relay 连接\n**自动恢复机制**：WhatsApp 连接卡住超过 30 分钟自动重启\n**提前权限过滤**：未授权发送者在解密前被拦截，防止 Bad MAC 错误\n**可配置同手机标记**：新增 `inbound.samePhoneMarker` 配置自定义前缀",
-      "bug_fixes": "**空结果处理**：修复 Claude 返回 `result: \"\"` 时错误地将原始 JSON 发送出去的问题\n**心跳消息前缀**：修复心跳告警消息不显示表情前缀（如 🦞）的问题\n**友好错误提示**：命令失败时现在返回用户友好的错误消息而非静默失败\n**测试数据隔离**：修复测试污染生产 `sessions.json` 的问题\n**Signal 会话损坏**：修复 `warelay send` 创建新连接导致 Signal ratchet 损坏的问题\n**媒体类型发送**：修复 Web 端发送媒体时全部当作图片发送的问题"
+      "features": "可插拔 agent 架构（Claude/Pi/Codex/Opencode）：支持为不同 agent 选择 CLI 和解析器，无需更改模板即可切换\nSafety stop words 安全词：用户发送 \"stop/esc/abort/wait/exit\" 时立即中止 agent 并提醒\nIPC 服务器：web relay 启动 Unix socket 服务器，命令自动通过 IPC 连接 relay\n批量入站消息处理：多个 WhatsApp 消息合并为一个批次，每条带时间戳保证顺序\nWhatsApp 会话自动恢复：30 分钟无消息活动时自动重启连接，防止卡死\n同设备模式：支持在与消息发送者相同的电话号码上运行，可与自己聊天控制 AI 助手\n回声检测：跟踪最近发送的消息文本，防止同设备模式下无限循环回复\n提前过滤未授权发送者：在解密前阻止未经授权的发送者，避免会话状态损坏",
+      "bug_fixes": "修复 Claude CLI 返回空字符串时错误发送原始 JSON 的问题\n修复心跳提醒消息未应用响应前缀的 bug\n修复命令失败时静默失败的问题，现在返回用户友好的错误消息\n修复测试污染生产 sessions.json 的问题\n修复 warelay send/heartbeat 命令破坏 Signal 会话 ratchet 的问题\n修复 WhatsApp Web 发送时所有媒体都作为图片发送的问题"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/265907450",
@@ -11131,7 +11131,7 @@
       "tarball_url": "https://api.github.com/repos/openclaw/openclaw/tarball/v1.2.2",
       "zipball_url": "https://api.github.com/repos/openclaw/openclaw/zipball/v1.2.2",
       "body": "- Manual heartbeat sends: warelay heartbeat accepts --message/--body with --provider web|twilio to push real outbound messages; --dry-run previews payloads without sending.\n- SHA256: bb4f80a8c4d92ceede657b43abb67864939c580155716963c3207b566719bd58",
-      "features": "手动心跳命令支持 --message/--body 参数，通过 --provider web|twilio 推送出站消息\n新增 --dry-run 选项，可预览消息 payload 而不实际发送",
+      "features": "Manual heartbeat 支持 --message/--body 参数配合 --provider web|twilio 发送真实出站消息\nManual heartbeat 新增 --dry-run 参数，可预览消息载荷而不实际发送",
       "bug_fixes": "无"
     },
     {
@@ -11212,7 +11212,7 @@
       "tarball_url": "https://api.github.com/repos/openclaw/openclaw/tarball/v1.2.1",
       "zipball_url": "https://api.github.com/repos/openclaw/openclaw/zipball/v1.2.1",
       "body": "warelay 1.2.1\\n\\n- Heartbeat: warelay heartbeat now supports --message/--body for manual sends on web or twilio, with --dry-run to preview payloads.\\n- Media handling: MIME-first detection (magic bytes > headers > extension) so images/audio/video/doc send correctly even with wrong suffixes, and images still recompress under caps.\\n- Hosting/inbound: hosted and saved media files are renamed with the detected extension, ensuring correct Content-Type for Twilio/web round-trips (including Baileys inbound saves).\\n- Docs/tests: changelog and image docs updated; added coverage for inbound media extension preservation.\\n",
-      "features": "Heartbeat 支持 `--message/--body` 手动发送消息到 web 或 Twilio，新增 `--dry-run` 预览载荷\n媒体处理采用 MIME 优先检测策略（magic bytes > headers > extension），确保图片/音频/视频/文档正确发送\n入站媒体文件自动使用检测到的正确扩展名重命名，确保 Twilio/Baileys 往返时 Content-Type 正确\n新增入站媒体扩展名保留的测试覆盖",
+      "features": "Heartbeat支持--message/--body参数手动发送消息，新增--dry-run预览payload\nMIME优先检测机制（magic bytes > headers > extension），确保图片/音频/视频/文档正确发送\n媒体文件根据检测到的扩展名自动重命名，确保正确的Content-Type（支持Twilio/web往返及Baileys入站保存）\n媒体文件在超过大小限制时自动重新压缩",
       "bug_fixes": "无"
     },
     {
@@ -11257,8 +11257,8 @@
       "zipball_url": "https://api.github.com/repos/openclaw/openclaw/zipball/v1.2.0",
       "body": "- Heartbeat UX: default 10 m; prompt `HEARTBEAT ultrathink`; `HEARTBEAT_OK` suppresses sends; skipped heartbeats don’t refresh sessions; fallback heartbeats no longer start new sessions; supports `heartbeatIdleMinutes`.\n- Heartbeat tooling: `warelay heartbeat --session-id`, relay `--heartbeat-now`, helpers `warelay relay:heartbeat` and `warelay relay:heartbeat:tmux`.\n- Prompt structure: one-time `sessionIntro`, per-message `ultrathink` prefix; sessions idle-expire after 7 days (configurable).\n- Robustness: WebSocket error guards and global unhandled handlers; Baileys @lid resolution; webhook media hosting uses shared host module (test-covered).\n- Docs: README highlights Clawd; `docs/claude-config.md` updated with current config, heartbeat behavior, and home directory.\n",
       "mentions_count": 1,
-      "features": "Heartbeat UX：默认10分钟间隔；支持`HEARTBEAT ultrathink`命令；`HEARTBEAT_OK`可抑制发送；跳过的心跳不刷新会话；回退心跳不再启动新会话；支持`heartbeatIdleMinutes`配置\nHeartbeat工具：新增`warelay heartbeat --session-id`、relay `--heartbeat-now`命令及`warelay relay:heartbeat`、`warelay relay:heartbeat:tmux`辅助命令\nPrompt结构优化：一次性`sessionIntro`、每条消息`ultrathink`前缀；会话空闲过期时间可配置（默认7天）\n健壮性增强：WebSocket错误防护和全局未处理异常处理；Baileys @lid解析修复；Webhook媒体托管使用共享主机模块（测试覆盖）\n文档更新：README突出Clawd；docs/claude-config.md更新配置说明、心跳行为和主目录信息",
-      "bug_fixes": "无"
+      "features": "心跳默认间隔从默认改为 10 分钟，支持 `heartbeatIdleMinutes` 配置\n新增 `HEARTBEAT ultrathink` 提示符，`HEARTBEAT_OK` 可抑制心跳发送\n新增命令 `warelay heartbeat --session-id`、中继 `--heartbeat-now` 及 `warelay relay:heartbeat` 辅助命令\nPrompt 结构支持一次性 `sessionIntro` 和每消息 `ultrathink` 前缀\n会话闲置 7 天后自动过期（可配置）",
+      "bug_fixes": "跳过的心跳不再错误刷新会话，后备心跳不再意外启动新会话\nWebSocket 错误添加保护，全局未处理异常增加处理器\n修复 Baileys @lid 解析问题"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/265319344",
@@ -11338,7 +11338,7 @@
       "tarball_url": "https://api.github.com/repos/openclaw/openclaw/tarball/v1.1.0",
       "zipball_url": "https://api.github.com/repos/openclaw/openclaw/zipball/v1.1.0",
       "body": "- Web auto-replies now resize/recompress media, honor inbound.reply.mediaMaxMb, detect media kind, and enforce provider caps.\n- Sessions can send the system prompt only once (optional sessionIntro) and typing indicators refresh on a configurable interval.\n- Optional voice-note transcription feeds a Transcript block plus media path into prompts before replying.\n- Command auto-replies return structured {payload, meta}, respect mediaMaxMb for local media, log Claude metadata, and include the command cwd in timeout messages.\n- Added focused tests for command and transcription helpers.\n\nChecksum (sha256): 9aaaaad7ca87287529b86f857d66d2c3123c23f7a764e36c68b520f57ae82bfa",
-      "features": "Web 自动回复支持媒体调整压缩、类型检测和提供商限制\n支持可选 sessionIntro 控制仅发送一次系统提示\n打字指示器支持可配置刷新间隔\n新增语音笔记转录功能，Transcript 块和媒体路径可传入提示词\n命令自动回复返回结构化 {payload, meta}，超时消息包含命令工作目录\n新增命令和转录功能的聚焦测试",
+      "features": "Web自动回复支持调整压缩媒体、遵守mediaMaxMb限制、检测媒体类型并执行提供商限制\n会话支持仅发送一次系统提示（sessionIntro），打字指示器支持可配置刷新间隔\n新增语音转录功能，可将Transcript块和媒体路径注入回复提示\n命令自动回复返回结构化{payload, meta}，支持mediaMaxMb限制、Claude元数据记录和cwd超时提示",
       "bug_fixes": "无"
     },
     {
@@ -11382,7 +11382,7 @@
       "tarball_url": "https://api.github.com/repos/openclaw/openclaw/tarball/v0.1.3",
       "zipball_url": "https://api.github.com/repos/openclaw/openclaw/zipball/v0.1.3",
       "body": "### Features\n- Added `cwd` option to command reply config so external reply commands (e.g., Claude Code) run in the intended working directory for correct context.\n- Added configurable file-based logging (default `/tmp/warelay/warelay.log`), with level set via `logging.level` in `~/.warelay/warelay.json`; `--verbose` still forces debug.\n\n### Developer notes\n- Command auto-replies now pass `{ timeoutMs, cwd }` into the command runner; custom runners/tests that stub `runCommandWithTimeout` should accept the options object as well as the legacy numeric timeout.\n",
-      "features": "添加 `cwd` 选项到命令回复配置，支持在指定工作目录运行外部回复命令（如 Claude Code）\n添加可配置的文件日志功能，默认路径 `/tmp/warelay/warelay.log`，支持通过 `logging.level` 配置日志级别\n命令自动回复现在传递超时和工作目录参数，自定义运行器需同时支持选项对象和旧版数字超时参数",
+      "features": "新增 `cwd` 选项，使外部回复命令可在正确工作目录中运行\n新增文件日志功能，默认日志文件为 `/tmp/warelay/warelay.log`，可通过配置设置日志级别",
       "bug_fixes": "无"
     },
     {
@@ -11427,7 +11427,7 @@
       "zipball_url": "https://api.github.com/repos/openclaw/openclaw/zipball/v0.1.2",
       "body": "- Fix commander help config for TypeScript build (subcommandTerm).\n- Bump version and web UA to 0.1.2; keeps tagline/help polish from 0.1.1.\n\nInstall:\n```bash\nnpm install -g warelay@0.1.2\n# or\nnpx warelay@0.1.2 --help\n```\n",
       "features": "无",
-      "bug_fixes": "修复 TypeScript 构建中 commander 帮助配置（subcommandTerm）的问题"
+      "bug_fixes": "修复 TypeScript 构建中 commander 帮助配置（subcommandTerm）问题"
     },
     {
       "url": "https://api.github.com/repos/openclaw/openclaw/releases/265131910",
@@ -11482,9 +11482,9 @@
         "rocket": 2,
         "eyes": 0
       },
-      "features": "添加可执行 shim，支持 npx warelay@0.1.x 直接运行 CLI\n帮助/版本横幅使用 README 标语并添加彩色示例页脚\n为 send 和 status 命令添加 --verbose 选项，支持一致的详细输出\n品牌小写化并更新 web provider 用户代理为 warelay/cli/0.1.1",
+      "features": "添加可执行 shim，支持 npx warelay@0.1.x 直接运行 CLI\n帮助/版本横幅使用 README 标语并添加彩色示例页脚\n为 send 和 status 命令添加 --verbose 选项以输出一致详情\n统一品牌名称小写，并更新 web provider UA 为 warelay/cli/0.1.1",
       "bug_fixes": "无"
     }
   ],
-  "last_updated": "2026-05-14 20:17:15"
+  "last_updated": "2026-05-14 20:50:50"
 }

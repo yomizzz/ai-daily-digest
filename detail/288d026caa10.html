@@ -299,28 +299,28 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Memory/dreaming: 新增基于历史的REM回填通道、日记提交流程和实时短期记忆提升整合
-Control UI/dreaming: 新增结构化日记视图，含时间线导航、回填/重置控制和梦境摘要追踪
-QA/lab: 新增角色氛围评估报告，支持模型选择和多任务并行运行
-Plugins/provider-auth: 支持provider清单声明auth别名，实现跨provider变体共享认证配置
-iOS: 版本号锁定到CalVer，新增gateway版本固定工作流</p></div>
+    <div class="detail-card"><p>Memory/dreaming: 新增 grounded REM backfill lane，支持历史路径回填、日记提交/重置、持久化事实提取和实时短期记忆提升
+Control UI/dreaming: 新增结构化日记视图，包含时间线导航、backfill/重置控制和 grounded Scene lane
+QA/lab: 新增 character-vibes 评估报告，支持模型选择和并行运行
+Plugins/provider-auth: 支持 provider manifests 声明 providerAuthAliases，实现 provider variants 间认证配置共享
+iOS: 发布版本锁定到显式 CalVer，添加 pnpm ios:version:pin workflow</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Browser/security: 修复交互驱动的页面导航后安全检查被绕过的问题
-Security/dotenv: 阻止不受信任workspace的.env文件注入运行时和浏览器控制环境变量
-Gateway/node exec events: 隔离远程节点执行事件的信任边界，防止注入可信内容
-Plugins/onboarding: 防止不受信任插件与捆绑provider的认证选项ID冲突
-Security/dependency audit: 升级basic-ftp修复CRLF命令注入漏洞
-Android/pairing: 修复扫码后认证状态残留和后台自动重试导致的配对失败
-Matrix/gateway: 修复Matrix同步就绪前过早标记启动成功导致的崩溃问题
-Slack/media: 修复同源重定向丢失认证导致图片附件无法加载
-Reply/doctor: 修复OAuth重新认证失败未正确提示用户
-Control UI: 修复快速切换会话时历史记录与当前会话不同步
-Gateway/chat: 阻止agent间控制令牌泄露到用户聊天界面
-Auto-reply/NO_REPLY: 清理静默前缀令牌防止泄露到用户可见回复中
-Sessions/routing: 修复后续会话消息抢占外部渠道(Telegram/Discord)路由
-Gateway/sessions: 重置会话时正确清除自动回退的模型覆盖设置</p></div>
+    <div class="detail-card"><p>Browser/security: 修复浏览器交互后安全检查可被绕过的问题，防止 SSRF 隔离被突破
+Security/dotenv: 阻止不受信任 .env 文件中的运行时控制环境变量和浏览器控制覆盖
+Gateway/node exec events: 标记远程节点 exec 事件为不受信任，防止注入可信系统内容
+Plugins/onboarding: 防止不受信任工作区插件与内置 provider auth-choice 冲突
+Security/dependency: 强制升级 basic-ftp 修复 CRLF 命令注入漏洞
+Android/pairing: 修复二维码扫描时清理过期认证、后台时暂停自动重试
+Matrix/gateway: 等待 Matrix sync 就绪后再标记启动成功，隔离后台失败
+Slack/media: 保留同源重定向的 bearer auth，跨域时正确剥离
+Reply/doctor: 使用活跃运行时快照解析 SecretRefs，改进 gateway OAuth 重认证提示
+Control UI: 修复快速会话切换时的陈旧历史 reload 问题
+Gateway/chat: 阻止 ANNOUNCE_SKIP/REPLY_SKIP 控制令牌泄露到用户界面
+Auto-reply/NO_REPLY: 剥离粘连的前导 NO_REPLY 令牌，防止静默标记泄漏
+Sessions/routing: 保留会话间公告流量的外部路由，防止 Telegram/Discord 等通道丢失消息
+Gateway/sessions: 重置时清除自动回退模型覆盖，保留用户明确选择的模型</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

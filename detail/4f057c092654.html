@@ -299,26 +299,23 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>文件传输插件：支持 `file_fetch`、`dir_list`、`dir_fetch`、`file_write` 工具，含默认拒绝路径策略和 16MB 传输限制
-Gateway 性能优化：通过懒加载插件发现、cron、schema、会话等组件，缩短启动和热路径响应时间
-统一流式进度模式：Discord、Telegram、Matrix、Slack、Teams 支持共享 progress 配置和自动状态标签
-新增 `/steer` 命令：空闲会话下可独立引导当前运行，无需启动新轮次
-新增 `/side` 命令：作为 `/btw` 的别名，支持文本和原生斜杠命令格式
-Doctor 配置修复：`doctor --fix` 现在即使存在其他验证问题也会提交安全遗留迁移
-Discord 状态反应：支持 `trackToolCalls: true` 跟踪后续工具进度，显示降级传输状态
-Gateway 配置安全：无效配置现在会关闭启动失败，由 `doctor --fix` 负责修复
-WhatsApp Channel/Newsletter：支持新的消息渠道目标
-Discord/Mantis smoke 测试：新增 `discord-smoke` runner 验证机器人可见性和消息交互
-Slack 实时传输 QA：新增 canary 和 mention-gating 覆盖的测试 runner
-插件入职改进：手动安装支持可选官方插件，暴露 Codex 插件作为可选项
-插件列表更新：`openclaw plugins list --json` 包含依赖安装状态，改进 beta 通道更新逻辑
-ClawHub 速率限制提示：429 错误标注重置窗口和未认证更高限额提示</p></div>
+    <div class="detail-card"><p>file-transfer 插件：新增 `file_fetch`、`dir_list`、`dir_fetch`、`file_write` 工具，支持节点间二进制文件操作，带默认拒绝路径策略和 16MB 传输上限
+Gateway 性能优化：懒加载插件/运行时发现、cron、schema、sessions 和模型元数据
+Channels 流式传输：统一 streaming.mode 配置，跨 Discord、Telegram、Matrix、Slack 和 Teams
+新增 `/steer` 命令：独立于队列的会话转向控制
+新增 `/side` 命令：作为 `/btw` 的文本和原生斜杠别名
+`doctor --fix` 改进：即使存在其他验证问题也提交安全遗留迁移
+Discord 状态反应：支持 `trackToolCalls: true` 追踪后续工具进度
+Gateway 配置：无效配置现在失败关闭，`doctor --fix` 负责修复
+QA 测试：新增 Mantis Discord 和 Slack 实时传输 QA 运行器
+插件安装：支持手动安装可选官方插件和外部 Codex 插件
+Plugins/CLI 更新：包含包依赖状态，`@beta` 更新优先
+WhatsApp 支持：新增 WhatsApp Channel/Newsletter 目标</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>修复 Doctor 配置迁移：`doctor --fix` 在其他验证问题阻止时也提交安全迁移（#76798）
-修复工具工厂热路径：跳过被拒绝列表已阻止的可选媒体和 PDF 工具工厂（#76773）
-修复 Discord 降级状态：状态输出正确显示降级传输或事件循环饥饿问题（#76327）</p></div>
+    <div class="detail-card"><p>修复 `doctor --fix` 在其他配置问题下无法清理遗留键的问题（#76798）
+修复 Discord 传输降级和事件循环饥饿的状态显示（#76327）</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

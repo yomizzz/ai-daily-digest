@@ -299,23 +299,21 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>**插件系统**：新增插件加载器，支持通过路径、tgz、npm 安装插件（`clawdbot plugins install`）
-**语音通话插件**：新增 Voice Call 插件，支持 Twilio 通话、日志记录及 RPC/CLI/工具调用
-**模块化配置**：支持 `$include` 指令实现配置文件拆分和复用
-**预压缩内存刷新**：新增预压缩内存刷新配置，确保压缩前持久化重要记忆
-**多文件编辑工具**：新增 `apply_patch` 工具用于实验性多文件编辑（需开启 `tools.exec.applyPatch`）
-**工具重命名**：bash 工具重命名为 `exec`，保留配置别名兼容
-**模型选择器**：自动回复增加 `/model` 快捷选择器，支持显示提供商端点
-**配置预设面板**：Control UI 新增 Config 页签一键配置 MiniMax M2.1、GLM 4.7、Kimi 等模型
-**技能创建器**：新增 `skill-creator` 技能包引导创建和打包自定义技能
-**DM 历史限制**：支持按 DM 会话设置独立的历史限制（`dmHistoryLimit`）
-**Cron 模型覆盖**：cron 命令新增 `--model` 参数支持定时任务使用不同模型
-**安装脚本优化**：新增 `CLAWDBOT_NO_ONBOARD=1` 环境变量支持非交互安装
-**安装方法选择**：安装脚本支持 `--install-method git|npm` 指定安装方式</p></div>
+    <div class="detail-card"><p>**插件系统正式成为一等公民**：新增插件加载器、CLI 管理命令（install/list/info/enable/disable/doctor）及语音通话插件（Twilio）
+**配置模块化**：`$include` 指令支持分拆配置文件，提升配置可维护性
+**Agents 内存优化**：预压缩内存刷新机制，在自动压缩前自动存储持久化记忆
+**模型选择器**：Auto-reply 添加紧凑型 `/model` 选择器，Control UI 新增模型预设（MiniMax M2.1、GLM 4.7、Kimi）
+**多新提供商支持**：新增 MiniMax M2.1 Lightning、Moonshot AI (Kimi K2)、GLM 4.6/4.7 等认证选项和配置示例
+**API 密钥复用**：自动检测并提示复用 Moonshot/MiniMax/Z.AI/Gemini/Anthropic/OpenCode 的已有密钥
+**安装器改进**：替换 git patch 为 JS 内置修补器（兼容 npm/pnpm/bun），支持非交互安装（`CLAWDBOT_NO_ONBOARD=1`）
+**Discord 功能增强**：消息工具新增频道/类别管理操作
+**Cron 任务支持模型覆盖**：`--model` 标志可用于定时任务管理
+**工具重命名**：bash 工具重命名为 exec（保留配置别名）
+**实验性功能**：`apply_patch` 工具支持多文件编辑（需开启 tools.exec.applyPatch）</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>**Control UI 移动端适配**：修复平板/手机上的导航栏布局，优化为单行横向滚动</p></div>
+    <div class="detail-card"><p>（日志内容被截断，无法提取 Bug 修复部分）</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

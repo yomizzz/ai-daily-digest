@@ -299,26 +299,27 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>External Secrets Management：新增完整 `openclaw secrets` 工作流（audit、configure、apply、reload），支持运行时快照激活和严格的目标路径验证
-ACP Thread-bound agents：ACP代理成为线程会话的一级运行时，集成 spawn/send 调度、生命周期控制和启动协调
-Agents/Routing CLI：新增 `openclaw agents bindings`、`bind`、`unbind` 命令用于账户范围的路由管理
-Codex/WebSocket transport：默认 WebSocket 优先（`transport: &quot;auto&quot;` 配合 SSE 回退）
-Onboarding/Plugins：渠道插件可拥有交互式引导流程，支持 `configureInteractive` 和 `configureWhenConfigured` 钩子
-Auth/Onboarding：Gemini CLI OAuth 前新增账户风险警告和确认环节
-Android/Nodes：新增 `device` 能力及 `device.status`、`device.info` 节点命令
-Android/Nodes：新增 `notifications.list` 支持，可在代理工具中列出设备通知</p></div>
+    <div class="detail-card"><p>External Secrets Management：新增完整 `openclaw secrets` 工作流程（audit、configure、apply、reload），支持运行时快照激活和严格目标路径验证
+ACP/Thread-bound agents：ACP agents 作为线程会话的一级运行时，支持 spawn/send 调度集成和生命周期控制
+Agents/Routing CLI：新增 `openclaw agents bindings`、`bind`、`unbind` 命令用于账户范围路由管理
+Codex/WebSocket transport：`openai-codex` 默认启用 WebSocket-first，附带 SSE 回退机制
+Onboarding/Plugins：允许 channel plugins 自定义交互式 onboarding 流程
+Auth/Onboarding：Gemini CLI OAuth 添加账户风险警告和确认环节
+Android/Nodes：新增 Android device capability 及 `device.status` 和 `device.info` 节点命令
+Android/Nodes：新增 `notifications.list` 支持，可在 agent tooling 中列出设备通知</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Telegram/DM allowlist：强制执行 `dmPolicy: &quot;allowlist&quot;` 的 `allowFrom` 需求，防止升级后 DM 流量被静默丢弃
-Delivery queue/recovery backoff：持久化 `lastAttemptAt` 防止重试饥饿，确保在回退窗口到期后才重试
-Google Chat/Lifecycle：保持 `startAccount` 待处理直到中止，防止自动重启循环
-Temp dirs/Linux umask：创建后强制 `0700` 权限并自修复现有可写临时目录，防止 `umask 0002` 启动崩溃
-Nextcloud Talk/Lifecycle：保持 `startAccount` 待处理并关闭时停止 webhook 监控，防止 `EADDRINUSE` 重启循环
-Microsoft Teams/File uploads：立即响应 `fileConsent/invoke` 避免超时提示横幅
-Queue/Drain/Cron reliability：同步泵故障时保证 `draining` 标志重置，网关重启期间拒绝新入队并加强 cron 超时安全
-Typing indicators：最终化时始终标记 dispatch 空闲，防止运行完成后打字指示器卡住
-Typing/TTL safety net：共享打字管道新增最大持续时间保护机制</p></div>
+    <div class="detail-card"><p>Telegram/DM allowlist：修复跨 account-capable channels 的 `dmPolicy: &quot;allowlist&quot;` 策略执行，避免升级后 DM 流量静默丢失
+Delivery queue/recovery backoff：修复重试饥饿问题，通过持久化 `lastAttemptAt` 延迟恢复直到 backoff 窗口到期
+Gemini OAuth：修复 OAuth 项目发现元数据和端点回退处理，包括环境变量提供项目 ID 的回退场景
+Google Chat/Lifecycle：修复 webhook 模式下 `startAccount` 未正确挂起导致的自动重启循环问题
+Temp dirs/Linux umask：修复临时目录创建后权限强制为 0700，防止 `umask 0002` 安装环境启动崩溃
+Nextcloud Talk/Lifecycle：修复网关管理账户生命周期时的 `EADDRINUSE` 重启循环
+Microsoft Teams/File uploads：修复文件上传时假阳性超时错误提示，上传完成后不再显示失败横幅
+Queue/Drain/Cron reliability：加强队列排空保证同步泵失败时 `draining` 标志重置，防止重启期间任务静默丢失
+Typing/Main reply pipeline：修复 agent-runner 最终化时 dispatch idle 标记，确保打字指示器正常清理
+Typing/TTL safety net：为共享打字状态添加最大持续时间保护机制</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

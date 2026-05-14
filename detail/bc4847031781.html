@@ -299,35 +299,43 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>iOS：Alpha 版节点应用支持 setup-code 引导流程
-频道：BlueBubbles 集成及频道清理功能
-插件：设备配对和手机控制插件（支持 Telegram `/pair` 及 iOS/Android 节点控制）
-工具：将 Grok（xAI）添加为 web_search 提供商
-Gateway：为 Web UI 添加代理管理 RPC 方法（agents.create/update/delete）
-Web UI：在聊天历史中显示压缩分隔线
-代理：代理信封中包含运行时 shell 信息
-路径：新增 OPENCLAW_HOME 环境变量支持</p></div>
+    <div class="detail-card"><p>iOS支持alpha节点应用与setup-code引导流程
+Channels新增BlueBubbles综合清理功能
+Plugins新增设备配对与电话控制插件（支持Telegram /pair命令）
+Tools集成Grok (xAI)作为网页搜索provider
+Gateway新增agent管理RPC方法（create/update/delete）
+Web UI聊天历史新增Compaction分隔符显示
+Agents在envelope中包含runtime shell信息
+Paths支持OPENCLAW_HOME环境变量覆盖路径解析</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Telegram：强化引用解析，保留引用上下文，避免 QUOTE_TEXT_INVALID 和嵌套回复引用误分类
-Telegram：修复使用过期话题线程 ID 导致的消息发送失败问题
-Telegram：支持 Markdown 暗雷使用 `&lt;tg-spoiler&gt;` HTML 标签渲染
-Telegram：限制命令注册数量为 100 条，避免启动时出现 BOT_COMMANDS_TOO_MUCH 错误
-Telegram：DM allowFrom 匹配优先使用发送者用户 ID
-修复 Web UI 聊天刷新时平滑滚动至最新消息并消除新消息徽章闪烁
-修复 web_search 缓存键包含提供商特定设置及传递 Grok 的 inlineCitations 参数
-模型故障转移：将 HTTP 400 错误视为可故障转移，启用自动模型回退
-修复压缩后代理失忆问题：保留 Pi session parentId 链
-修复多代理 sessions.usage 发现问题
-修复 Cron 定时任务调度和可靠性问题
-修复 tsdown 迁移导致的 Hooks 打包问题
-修复路由配置变更需重启才能生效的问题
-修复 maxTokens 超出 contextWindow 的无效模型配置
-Discord：支持论坛/媒体频道的 thread-create 消息并优化路由
-内存：Voyage 嵌入设置 input_type 提升检索效果
-媒体理解：支持 .caf 音频附件转录
-状态目录：支持 OPENCLAW_STATE_DIR 环境变量</p></div>
+    <div class="detail-card"><p>Telegram强化引号解析，避免嵌套回复误分类和QUOTE_TEXT_INVALID错误
+Telegram修复topic thread ID过期导致的消息发送失败问题
+Telegram markdown spoilers改用`&lt;tg-spoiler&gt;`标签渲染
+Telegram命令注册限制100条，避免BOT_COMMANDS_TOO_MUCH错误
+Telegram DM allowFrom匹配逻辑修复，优先匹配用户ID
+Web UI聊天刷新改为平滑滚动到最新消息，抑制手动刷新时新消息徽章闪烁
+模型故障转移新增HTTP 400错误处理，支持自动降级
+修复提及&quot;context overflow&quot;时误触发上下文溢出检测的问题
+修复compaction后agent记忆丢失问题，transcript写入现在保留Pi session parentId链
+修复多agent会话的usage发现功能
+Agent新增上下文溢出预防护机制，限制过大工具结果
+子agent/compaction通知计时稳定性优化
+Cron任务调度与交付可靠性增强
+Cron工具参数解析增强，支持LLM省略job包装的情况
+Gateway/CLI在bind=lan模式下使用LAN IP生成探测URL和控制面板链接
+修复2026.2.2以来hooks打包问题（tsdown迁移后遗症）
+路由配置改为每条消息刷新，避免绑定变更需重启
+Exec approvals命令显示改为等宽字体，提升安全审核体验
+Config限制maxTokens不超过contextWindow，防止无效模型配置
+Thinking模式新增对github-copilot/gpt-5.2-codex和gpt-5.2的支持
+Discord支持forum/media线程创建消息和路由增强
+修复Windows驱动器路径解析与工具元数据缩短问题
+Memory/Voyage embeddings设置优化，改进检索效果
+Memory/QMD模型缓存跨agent复用，避免重复下载
+媒体理解新增.caf音频格式转录支持
+State目录支持OPENCLAW_STATE_DIR配置设备身份和画布存储路径</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

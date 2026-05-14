@@ -299,33 +299,29 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Agents: 添加 OpenRouter 应用归因头
-Agents: 添加系统提示安全护栏
-Agents: 扩展 CreateAgentSessionOptions 支持 systemPrompt/skills/contextFiles
-Agents: 更新 pi-ai 至 0.50.9，重命名 cacheControlTtl 为 cacheRetention（带向后兼容映射）
-Gateway: 向 agent 和 chat.send 消息注入时间戳
-Gateway: TLS 监听器要求最低 TLS 1.3
-Telegram: 使用共享配对存储
-Discord: 继承线程父绑定用于路由
-Web UI: 优化聊天布局，延长会话活跃时长</p></div>
+    <div class="detail-card"><p>Telegram使用共享配对存储，支持更统一的消息同步
+Agents添加OpenRouter应用归因头部
+Agents新增系统提示安全防护机制
+Agents扩展会话创建选项，支持systemPrompt/skills/contextFiles配置
+Agents添加工具策略合规快照功能
+Auth更新MiniMax OAuth提示和门户认证文案
+Discord继承线程父级绑定实现智能路由
+Gateway要求TLS 1.3最小版本提升安全性
+Web UI优化聊天布局并延长会话活跃时长</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>修复 Telegram 文件获取缺少下载超时的问题
-修复流式传输在段落边界未刷新块导致换行分块错误的问题
-修复 /new 问候提示错误引用工作区文件的问题
-修复 Windows 上 npm 系列 CLI 的 spawn() 失败问题
-修复 Docker 网关命令使用主机端口而非容器端口的问题
-修复 lobster 路径/工作目录注入导致任意代码执行的安全漏洞 (GHSA-4mhr-g7xj-cg8j)
-修复 WhatsApp accountId 路径遍历漏洞
-修复 MEDIA 路径提取导致的本地文件包含漏洞
-修复消息工具文件路径未验证沙箱根目录的安全问题
-修复本地嵌入向量未进行 L2 归一化导致的语义搜索问题
-修复环境变量 LD*/DYLD* 可覆盖导致主机执行安全风险
-修复 Twitch 未强制允许列表导致非白名单发送者可以发送消息的问题
-修复插件/钩子安装路径未验证导致的路径遍历风险
-修复系统提示覆盖未使用 session_status 获取当前日期/时间的问题
-修复 subagent 宣布故障转移竞态条件问题</p></div>
+    <div class="detail-card"><p>修复Telegram文件下载超时及DM/论坛线程规格校验问题
+修复流式输出在段落边界换行分块不稳定问题
+修复/new欢迎语误引用工作区文件问题
+修复Tools适配器签名对齐及&quot;*&quot;允许列表虚假警告
+修复会话日志路径从.clawdbot到.openclaw迁移
+修复Windows上npm系列CLI的spawn()失败问题
+修复语义搜索向量L2归一化问题
+修复系统提示时间获取逻辑
+修复多安全漏洞：路径遍历、LFI、任意执行、env注入等
+修复Chrome扩展CDP会话中继安全
+修复TUI模型选择器数字搜索崩溃问题</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

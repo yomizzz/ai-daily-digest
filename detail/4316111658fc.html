@@ -299,30 +299,22 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>xAI 插件：将 x_search 配置从旧路径迁移至插件专属路径，统一认证方式
-Web fetch 插件：将 Firecrawl 配置迁移至插件专属路径，改进回退机制
-任务流：恢复核心任务流基板，支持 managed/mirrored 同步模式和持久化状态跟踪
-任务流：新增 managed 子任务生成与 sticky cancel intent，支持外部协调器立即停止调度
-任务流插件：添加 api.runtime.taskFlow 接口，简化托管任务流创建
-Android 助手：添加助手入口点和 Google Assistant App Actions 支持
-执行默认：改为 YOLO 模式（security=full, ask=off），默认不提示用户审批
-Provider 运行时：新增 provider-owned replay hook，支持转录策略和推理模式分发
-插件钩子：新增 before_agent_reply，支持插件短路 LLM 返回合成回复
-会话路由：将 provider 会话语法移至插件，支持 Telegram 话题路由和飞书继承
-飞书评论：新增 Drive 评论事件流，支持评论线程解析和文档协作
-Matrix 插件：发送 m.mentions 元数据，确保提及通知正常工作
-Diff 查看器：新增 plugin-owned viewerBaseUrl，支持稳定代理/公开源
-Agent 压缩：统一 agents.defaults.compaction.model 在所有入口点的解析
-Agent 压缩：新增 compaction.notifyUser 选项，控制压缩提示显示
-WhatsApp 反应：添加 reactionLevel 指导配置
-审批渠道：自动启用 DM-first 原生聊天审批，支持渠道扇出显式配置</p></div>
+    <div class="detail-card"><p>Task Flow 子系统恢复，提供 managed/mirrored 同步模式和 `openclaw flows` 检视恢复工具
+新增托管子任务生成和粘性取消意图，便于外部编排器停止调度
+新增 `api.runtime.taskFlow` 接口，插件可从宿主 OpenClaw 上下文创建托管 Task Flow
+Android 助手新增 Google Assistant App Actions 入口支持
+网关/节点 exec 默认启用 YOLO 模式，security=full + ask=off
+新增 Provider-owned replay hook surfaces 用于转录策略和推理模式分发
+新增 `before_agent_reply` 钩子，插件可短路 LLM 返回合成回复
+Feishu 新增 Drive 评论事件流，支持评论线程上下文和文档协作工作流
+Matrix 插件新增合规 `m.mentions` 元数据，通知可靠性提升
+新增插件所有 `viewerBaseUrl`，链接可使用稳定的代理/公共源</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Provider 传输策略：集中化请求认证、代理、TLS 和头部配置，阻止不安全的传输覆盖
-Provider/Copilot：规范化 GitHub Copilot API 主机分类，加固 token 派生代理端点解析
-Provider 流式头部：集中化默认和归因头部合并，确保跨路径一致性
-Provider 媒体 HTTP：集中化 base URL 规范化、默认认证和头部注入，标准化多 provider 请求路径</p></div>
+    <div class="detail-card"><p>集中化 Provider 传输策略的请求认证、代理、TLS 和 Header 配置，阻止不安全覆盖
+修复 GitHub Copilot API 主机分类和 token 派生代理端点解析，失败时安全关闭
+集中化 Provider streaming headers 跨 websocket、embedded-runner 和代理流路径的默认归因头合并</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

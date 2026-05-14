@@ -299,35 +299,29 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>LINE 消息渠道插件上线，支持富文本回复和快捷回复
-Telegram DM 话题支持独立会话，新增出站链接预览开关
-Edge TTS 提供商作为备用方案，支持无密钥使用
-TTS 自动模式支持关闭/始终/仅入站/仅标记四种选项
-执行审批支持通过 `/approve` 命令在所有渠道进行
-Web 搜索新增 Brave 时间范围过滤参数
-Control UI 仪表板设计系统全新升级
-Gateway 工具支持安全的配置补丁更新
-Ollama 提供商发现机制和文档完善
-Venice 提供商指南和交叉链接升级</p></div>
+    <div class="detail-card"><p>Providers: Ollama 自动发现和文档，Venice 指南升级并添加交叉链接
+Channels: 新增 LINE Messaging API 插件，支持富文本回复和快速回复
+TTS: 新增 Edge TTS 备用方案（无需 API 密钥），添加自动模式切换
+Exec approvals: 支持通过 `/approve` 命令在所有渠道（包括插件）中批准执行
+Telegram: DM 主题作为独立会话，新增出站链接预览开关
+Web search: 添加 Brave 搜索新鲜度过滤器参数
+UI: 全新控制面板仪表盘设计系统（字体、颜色、间距）
+Gateway: 暴露 config.patch 工具，支持安全的部分更新</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Web UI 修复配置/调试页面溢出、滚动和代码块尺寸问题
-Web UI 修复运行中停止按钮显示和会话状态切换逻辑
-Web UI 修复断开连接横幅残留和表单验证逻辑
-Web UI 隐藏聊天气泡中的内部 message_id 提示
-Gateway 允许 Control UI 仅令牌认证跳过设备配对
-Matrix 修复 E2EE 媒体附件解密
-BlueBubbles 修复电话号码路由到私信并自动创建缺失会话
-BlueBubbles 修复回复标签中 part-index GUID 保持
-iMessage 聊天标识符前缀大小写规范化
-Signal 修复反应发送和 CLI 作者标志
-Signal 新增 signal-cli 启动超时配置
-Telegram 修复 Node 22 上传文件 duplex 设置
-Telegram 修复长轮询 AbortSignal 处理
-Telegram 修复每账户代理设置和语音笔记隐私回退
-语音通话修复 TwiML 流返回和 TTS 播放序列化
-Google Chat 修复邮箱白名单匹配和空间目标规范化</p></div>
+    <div class="detail-card"><p>Web UI: 修复 config/debug 布局溢出、滚动和代码块尺寸问题
+Web UI: 活动运行期间显示停止按钮，空闲时恢复新会话按钮
+Web UI: 重连时清除陈旧断开横幅，表单保存时改进 schema 验证
+Web UI: 隐藏 chat 气泡中的内部 message_id 提示
+Gateway: 允许 Control UI 令牌认证跳过设备配对
+Matrix: 修复 E2EE 媒体附件解密，添加预检大小保护
+BlueBubbles: 路由电话号码目标到 DM，避免泄露路由 ID
+iMessage: 不区分大小写规范化 chat ID 前缀
+Signal: 修复群组/UUID 目标的反应发送，添加可配置启动超时
+Telegram: 修复 Node 22 上传失败、代理设置和语音笔记隐私回退
+Voice Call: 修复 TwiML 流返回和 TTS 播放重叠问题
+Google Chat: 收紧邮箱白名单匹配，规范化 space 目标</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

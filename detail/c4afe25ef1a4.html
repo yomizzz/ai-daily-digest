@@ -299,28 +299,24 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Android 聊天 UI 改进流式消息传递和 Markdown 渲染质量
-Android 启动性能优化，添加性能基准测试脚本
-移动端小屏幕添加堆叠布局的编写操作按钮
-新增 `agents.defaults.heartbeat.directPolicy` 配置选项
-澄清单用户默认安全通知
-将所有 `bot.molt` 相关标识替换为 `ai.openclaw`
-新增 `session.parentForkMaxTokens` 配置项（默认 100000）</p></div>
+    <div class="detail-card"><p>Android 聊天 UI 改进流式消息传递和 Markdown 渲染质量，支持更好的 GitHub 风格 Markdown
+Android 启动性能优化：延迟前台服务启动、添加启动宏基准测试和性能 CLI 脚本
+移动端小屏幕添加发送按钮堆叠布局改善可用性
+心跳配置新增 `agents.defaults.heartbeat.directPolicy` 选项，替代原有 DM 开关
+配置系统提醒代理在编辑前调用 `config.schema` 避免配置猜测</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>修复子代理完成通知传递的队列状态机问题
-修复 Telegram Webhook 启动和 JSON 处理，防止请求挂起
-修复 Slack 会话线程过大的父会话继承问题
-修复 Cron 消息多账户路由优先使用发送方绑定账户
-修复 Gateway 消息媒体根的非默认 agent 发送失败问题
-修复跟进路由失败时的同通道回退dispatch问题
-修复 Cron 通知重复发送问题
-修复 LINE 生命周期启动被误读为退出的重启循环问题
-修复 Discord Gateway 启动时错误事件捕获，避免崩溃
-修复 Discord 入站文本嵌入标题丢失问题
-修复 Slack 入站媒体下载失败时文件丢失问题
-修复 Telegram 消息预览问题</p></div>
+    <div class="detail-card"><p>Telegram Webhook 改为回调模式 JSON 处理，防止请求超时和更新丢失
+Slack 修复超大父会话导致线程会话静默失效问题，新增 `session.parentForkMaxTokens` 配置
+Cron 多账户路由修复，显式 `delivery.accountId` 优先于全局默认值
+Gateway 媒体根修复，非默认 agent 工作区媒体发送不再报 `LocalMediaAccessError`
+跨平台路由同频道回退修复，跟进回复不再因临时源适配器故障被丢弃
+Cron 重复防护修复，分别跟踪尝试投递与确认投递，避免重复发送
+LINE 生命周期修复，防止 webhook 启动被误读为通道退出导致重启循环
+Discord Gateway 修复，在生命周期监听器附加前捕获启动错误
+Discord 消息解析修复，保留嵌入的 title 和 description 回退文本
+Slack 媒体下载失败时提供文件名占位符回退，避免附件消息静默丢失</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

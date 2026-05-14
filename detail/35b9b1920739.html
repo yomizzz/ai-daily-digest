@@ -299,30 +299,30 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>xAI：新增图像生成、文本转语音、语音转文本支持（grok-imagine-image等模型、六种语音、多种音频格式）
-STT：Deepgram、ElevenLabs、Mistral支持语音通话流式转录，ElevenLabs新增Scribe v2批量音频转录
-TUI：新增本地嵌入式模式，无需Gateway即可运行终端聊天
-Onboarding：自动安装缺失的provider和channel插件
-OpenAI/Responses：原生web_search工具自动用于Responses模型
-新增`/models add`命令，可在聊天中注册模型无需重启Gateway
-WhatsApp：新增可配置的原生回复引用功能
-WhatsApp：支持per-group和per-direct的systemPrompt配置注入
-Agents/sessions：新增邮箱风格的sessions_list过滤器（标签、代理、搜索）
-Control UI：新增浏览器本地个人身份标识，优化Quick Settings和窄屏布局
-Gateway/diagnostics：默认启用稳定性记录，新增支持友好的诊断导出功能
-Tencent：新增腾讯云provider插件（TokenHub引导、hy3预览模型）
-Amazon Bedrock Mantle：新增Claude Opus 4.7支持
-GPT-5：提示覆盖整合到共享provider运行时，支持通过配置切换人格风格
-OpenAI Codex：移除Codex CLI认证导入，改用浏览器登录或设备配对
-CLI/Claude：默认热身stdio会话，支持Gateway重启后恢复会话
-Pi/models：更新pi包至0.68.1，OpenCode Go目录新增kimi-k2.6等模型
-Tokenjuice：新增原生支持，压缩Pi嵌入式运行的exec/bash工具结果
-ACPX：新增openClawToolsMcpBridge选项，注入核心MCP服务器
-CLI/doctor plugins：懒加载插件路径，减少doctor运行时间约74%</p></div>
+    <div class="detail-card"><p>xAI 新增图像生成、语音合成、语音转文字功能，支持 grok-imagine-image 等模型及六种实时语音音色
+STT 新增 Deepgram、ElevenLabs、Mistral 的语音通话流式转录，以及 Scribe v2 批量转录
+TUI 新增本地嵌入式模式，无需 Gateway 即可运行终端对话并保留插件审批机制
+Onboarding 阶段自动安装缺失的 provider 和 channel 插件，无需手动恢复
+OpenAI Responses 模型自动使用原生 web_search 工具进行网页搜索
+新增 `/models add` 命令，可在对话中注册模型并立即使用，无需重启 Gateway
+WhatsApp 新增原生回复引用功能，支持 configurable replyToMode
+WhatsApp 支持按群组/私信配置 systemPrompt，支持通配符和账户级覆盖
+Agents/sessions 新增邮箱式过滤功能，支持按标签、代理和关键词筛选
+控制界面新增用户个人身份标识，优化快速设置和窄屏布局
+Gateway 诊断新增稳定性记录和带敏感信息脱敏的支持导出包
+新增腾讯云 provider 插件，支持 TokenHub 引导和 Hy3 模型
+Amazon Bedrock Mantle 新增 Claude Opus 4.7 支持，提供提供商自有 Bearer 认证流式传输
+GPT-5 提示覆盖移入共享 provider 运行时，新增全局人格开关配置
+移除 OpenAI Codex CLI 认证导入，改用浏览器登录或设备配对
+CLI/Claude 默认启动热 stdio 会话，支持 Gateway 重启后恢复
+Pi 包更新至 0.68.1，新增 opencode-go/kimi-k2.6 等模型目录
+Tokenjuice 新增原生支持，压缩 Pi 嵌入式运行中的嘈杂 exec/bash 结果
+ACPX 新增 openClawToolsMcpBridge 选项，注入核心 MCP 服务器提供 cron 等工具
+CLI/doctor 插件改为懒加载，减少冷启动耗时约 74%</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>无（本次更新日志中未包含Bug修复内容）</p></div>
+    <div class="detail-card"><p>修复 WhatsApp 群组/私信 systemPrompt 无法正确注入的问题（关闭 #7011）</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

@@ -299,32 +299,33 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Apple Watch 配套应用 MVP，支持手表收件箱 UI、通知转发和状态/发送命令
-iOS 节点通过 APNs 远程唤醒并自动重连，减少后台调用失败
-新增配对设备清理命令，支持移除设备及拒绝待处理配对请求
-iOS 推送注册和通知签名配置，支持节点消息投递
-APNs 投递验证测试管道
-安全审计：检测 gateway.auth.mode=&quot;none&quot; 导致的 HTTP API 暴露风险
-强化编码智能体技能指导，移除不安全的命令示例</p></div>
+    <div class="detail-card"><p>Apple Watch 伴侣应用：新增 watch inbox UI、通知中继处理和状态/发送命令交互界面
+iOS 节点唤醒优化：通过 APNs 唤醒断开的 iOS 节点，silent push 唤醒后自动重连 gateway sessions
+CLI 设备管理：新增 `device.pair.remove`、`openclaw devices remove` 和 `openclaw devices clear` 命令
+iOS APNs 配置：添加 node delivery 的 push registration 和 notification-signing 配置
+Gateway APNs 测试：添加 APNs 投递验证的 push-test pipeline
+安全审计增强：检测 `gateway.http.no_auth` 配置漏洞，警告 Gateway HTTP APIs 暴露风险
+Skill 安全性加固：移除直接插值不可信文本到命令字符串的 shell-command 示例</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>修复推理流期间助手流式输出中断问题
-修复 WKWebView 生命周期导致的崩溃风险
-修复配对状态自动恢复时的闪烁问题
-修复手动重试时的配对和重连行为稳定性
-恢复 iOS 本地签名团队自动选择功能
-统一 Telegram message 和 channel_post 处理流程
-Telegram 工具失败警告仅在详细模式显示
-Cron 和心跳消息支持显式发送到指定 Telegram topic
-修复 macOS LaunchAgent 无法打开 SQLite 临时文件问题
-计费错误消息现在包含具体模型名称（如 OpenAI (gpt-5.3)）
-Gateway TUI 遵守 blockStreamingDefault 配置
-Chat UI 接受规范的主会话密钥别名
-修复 Apple 客户端 RPC 参数将布尔值错误编码为 1/0
-QMD 后端跳过嵌入提供者警告
-改善 Canvas 资源解析和空状态处理
-Doctor 命令修复配置时避免意外重复写入 token</p></div>
+    <div class="detail-card"><p>代理流式传输：在 reasoning streams 期间保持 assistant 局部流式响应活跃
+iOS WebView：修复 screen tab 更新时的手势/生命周期崩溃问题
+iOS 配对：修复 auto-resume 时 pairing-status 闪烁问题
+iOS 配对：修复手动重试时 stale pairing request state 的稳定性和重复配对循环问题
+iOS 签名：恢复 `.local-signing.xcconfig` 覆盖，确保本地签名配置正确
+Telegram：统一 `message` 和 `channel_post` 的消息处理逻辑
+Telegram：仅在 verbose 模式显示 exec/bash 工具失败警告
+Telegram 定时任务：遵循显式 topic targets，修复定时消息投递到错误 thread 的问题
+Gateway Daemon：转发 `TMPDIR` 环境变量，解决 LaunchAgent 运行时的 SQLite 临时文件访问问题
+计费错误提示：在错误消息中包含具体模型名称（如 `OpenAI (gpt-5.3)`）
+Gateway TUI：遵守 `agents.defaults.blockStreamingDefault` 配置，移除硬编码的 block-streaming 禁用
+UI 会话路由：接受 canonical main session-key 别名，修复主会话路由不一致问题
+OpenClawKit 协议：修复 JSON 布尔值被错误转换为 `1`/`0` 的问题
+命令诊断：QMD 内存后端时跳过不必要的 embedding-provider 警告
+Canvas UI：修复 bundled-asset 解析和 empty-state 渲染问题
+命令诊断：修复 repair 时意外添加重复 `gateway.auth.token` 配置的问题
+Gateway 认证：修复 unresolved gateway auth 默认行为</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

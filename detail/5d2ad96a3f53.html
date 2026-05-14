@@ -299,26 +299,26 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Lobster可选插件工具，支持类型化工作流和审批门控
-Control UI支持自定义助手身份和头像显示
-缓存TTL剪枝优化 + 认证感知默认值，减少冷请求令牌消耗
-Exec审批支持elevated ask/full模式
-Signal输入指示器和已读回执
-MSTeams支持文件上传、adaptive cards和附件处理
-/models命令UX刷新 + clawdbot update wizard交互更新
-CLI命令重组，gateway/node命令扁平化，新增gateway probe检测
-心跳支持显式session keys和活动时段配置
-每channel可配置空闲时长和去抖动覆盖
-Nodes支持exec风格执行，暴露PATH环境变量
-Discord支持通配符channel配置</p></div>
+    <div class="detail-card"><p>Lobster可选插件工具，支持类型化工作流与审批门控
+Control UI自定义助手身份和头像显示
+缓存优化：新增cache-ttl剪枝模式，减少冷请求token消耗
+Exec审批新增elevated ask/full模式，支持本地/网关/节点定向
+Signal输入状态指示器和已读回执
+MSTeams文件上传、自适应卡片和附件处理改进
+/models命令UX优化，新增clawdbot update wizard交互式更新
+CLI网关和节点服务命令重组，新增gateway probe连通性检查
+会话支持按渠道配置空闲时长和去抖动覆盖
+节点支持exec风格执行，PATH环境变量优化
+Discord通配符频道配置支持
+Heartbeat允许显式会话密钥和活动时间配置
+macOS设置界面刷新优化</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>流式响应保持跨块回复标签，运行开始时启动typing指示器
-接受带空格/tilde的MEDIA路径，优先使用消息工具提示图像
-丢弃未签名thinking块，强制字母数字工具调用ID
-Exec审批主agent设为默认，对齐node/gateway allowlist预检
-验证解析路径，避免allowlist竞态和空可选参数</p></div>
+    <div class="detail-card"><p>流式响应跨块保留回复标签，输入指示器在运行开始时触发
+修复Claude模型无符号thinking块问题，Mistral/OpenRouter强制字母数字工具调用ID
+Exec审批将主代理作为默认代理，对齐节点/网关允许列表预检查
+执行审批验证解析路径，避免允许列表解析竞态和空参数问题</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

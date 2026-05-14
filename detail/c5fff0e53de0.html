@@ -299,26 +299,26 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Secrets/SecretRef 支持扩展至 64 个用户凭证目标，实现快速失败和诊断报告
-新增原生 PDF 工具，支持 Anthropic/Google PDF 提供商及回退提取方案
-出站适配器新增 sendPayload 支持，覆盖 Discord/Slack/WhatsApp/Zalo 等平台
-新增 MiniMax-M2.5-highspeed 模型支持，保留 Lightning 兼容配置
-sessions_spawn 子代理运行时新增内联文件附件支持及生命周期清理
-Telegram 流式预览默认改为 partial 模式，新安装开箱即用
-Telegram DM 流式传输改用 sendMessageDraft，区分推理和回答预览
-Telegram 语音消息新增 disableAudioPreflight 配置跳过转录预检
-新增 openclaw config validate 命令，支持 JSON 输出和详细错误路径
-Diffs 工具新增 PDF 输出及质量控制参数
-Memory 搜索新增 Ollama 嵌入提供商支持
-Zalo 个人插件重构为原生 zca-js 进程内集成
-插件 SDK 新增 ChannelGatewayContext.channelRuntime 访问能力
-插件运行时新增音频文件转录 API
-会话生命周期钩子新增 sessionKey 上下文信息
-消息生命周期新增 transcribed/preprocessed 钩子事件及群组上下文
-音频理解新增转录确认回显功能（默认关闭）
-插件运行时新增立即心跳请求 API
-插件运行时新增 AgentEvent 和 SessionTranscriptUpdate 订阅机制
-CLI 横幅新增 taglineMode 配置控制启动标语行为</p></div>
+    <div class="detail-card"><p>SecretRef 支持扩展至 64 个目标，涵盖运行时收集器、secrets 规划/应用/审计流程及文档（#29580）
+新增原生 PDF 工具，支持 Anthropic/Google PDF 提供商及非原生模型回退提取（#31319）
+Discord/Slack/WhatsApp/Zalo 等平台新增共享 `sendPayload` 支持，含多媒体迭代和文本回退（#30144）
+新增 MiniMax-M2.5-highspeed 模型支持，保留旧版 Lightning 兼容（#31350）
+sessions_spawn 新增内联文件附件支持，含 base64 编码和生命周期清理（#16761）
+Telegram 流式传输默认启用 `partial` 模式，新安装开箱即用（#31824）
+Telegram 私聊预览流使用 `sendMessageDraft`，区分推理/回答预览（#31824）
+Telegram 语音消息新增可选 `disableAudioPreflight` 跳过提及检测预检（#23067）
+新增 `openclaw config validate` 命令及启动时详细配置错误路径提示（#31220）
+Diffs 工具新增 PDF 输出支持和质量/缩放参数（#31342）
+Memory 新增 Ollama 嵌入支持（`memorySearch.provider = &quot;ollama&quot;`）（#26349）
+Zalo 插件使用原生 `zca-js` 集成重建，移除外部 CLI 传输依赖
+插件 SDK 新增 `channelRuntime` 上下文，供外部渠道插件访问共享运行时辅助函数（#25462）
+插件运行时新增 `api.runtime.stt.transcribeAudioFile` API（#22402）
+会话生命周期钩子事件新增 `sessionKey` 字段（#26394）
+新增 `message:transcribed` 和 `message:preprocessed` 内部钩子事件（#9859）
+新增 `tools.media.audio.echoTranscript` 可选音频回显确认消息（#32150）
+插件运行时新增 `runtime.system.requestHeartbeatNow` API（#19464）
+新增 `runtime.events.onAgentEvent` 和 `onSessionTranscriptUpdate` 订阅 API（#16044）
+新增 `cli.banner.taglineMode` 控制启动标语行为（#32782）</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>

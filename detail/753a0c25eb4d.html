@@ -299,39 +299,11 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>TTS: 将Telegram TTS移入核心模块，默认启用模型驱动的TTS标签以实现富有表现力的音频回复
-Gateway: 新增HTTP端点支持直接工具调用（附带认证和工具策略）
-Heartbeat: 添加每通道可见性控制（OK/警报/指示器）
-部署: 新增Fly.io部署支持及指南
-Channels: 新增Tlon/Urbit通道插件（支持私信、群组提及、线程回复）
-Channels: 支持跨内置和插件通道的每组工具允许/拒绝策略
-Agents: 新增Bedrock自动发现默认值及配置覆盖
-CLI: 新增`clawdbot system`命令用于系统事件和heartbeat控制
-CLI: 为`clawdbot models status`添加实时认证探测
-CLI: `clawdbot update`后默认重启gateway
-Browser: 新增节点主机代理自动路由功能
-Plugins: 新增JSON-only的`llm-task`工具
-Markdown: 新增每通道表格转换（Signal/WhatsApp使用bullet，其他平台使用代码块）</p></div>
+    <div class="detail-card"><p>摘要生成失败</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Sessions: 接受非UUID sessionId同时保留代理作用域
-Sessions: 修复出站消息的会话键镜像、创建会话条目及规范化会话键大小写
-Sessions: 拒绝数组支持的会话存储以防止静默数据丢失
-Gateway: 比较进程启动时间避免PID回收导致的锁循环
-Exec approvals: 持久化白名单条目ID保持macOS白名单行稳定
-Exec: 遵循工具执行的安全默认设置避免不必要的权限提升提示
-Linux: systemd PATH中包含环境配置的用户bin目录
-Tailscale: 仅在权限错误时使用sudo重试
-Agents: 修复最后助手轮次仅调用工具时的静默停止问题
-Agents: 忽略IDENTITY.md中的模板占位符
-Agents: 模型切换时丢弃孤立的OpenAI Responses推理块
-Slack: 对未列出频道遵循open groupPolicy
-Discord: 限制自动线程提及绕过仅限机器人创建的线程
-Discord: 重试速率限制的白名单解析和命令部署
-Mentions: 在群聊中有其他显式提及时忽略隐式提及匹配
-Telegram: 在媒体标题中渲染markdown
-MS Teams: 移除Graph和Bot Framework作用域中的`.default`后缀</p></div>
+    <div class="detail-card"><p>摘要生成失败</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

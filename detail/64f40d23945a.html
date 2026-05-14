@@ -299,24 +299,23 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Google Meet作为捆绑参与者插件集成，支持个人Google认证、Chrome/Twilio实时会话
-DeepSeek V4 Flash和V4 Pro加入捆绑目录，V4 Flash成为入门默认选项
-Talk、Voice Call和Google Meet支持实时语音循环，可咨询完整OpenClaw代理获取更深层答案
-浏览器自动化新增坐标点击、60秒默认操作预算、每配置文件headless覆盖
-Gemini Live实时语音提供者支持后端语音通话和Google Meet音频桥接
-Control UI工具访问面板新增紧凑实时工具芯片、可折叠工具组、直接切换
-聊天消息新增Steer操作，可注入后续任务到当前运行
-Memory混合搜索新增raw vectorScore和textScore暴露，便于检查检索贡献
-Gradium新增捆绑文本转语音提供者，支持语音笔记和电话输出
-Voice Call新增setup和smoke命令用于测试通话就绪状态
-Matrix要求完整交叉签名身份信任，新增CLI验证命令
-插件和模型基础设施优化：静态模型目录、清单支持模型行、懒加载提供者依赖</p></div>
+    <div class="detail-card"><p>Google Meet 作为捆绑插件加入，支持个人 Google 认证、Chrome/Twilio 实时会话及配对节点 Chrome 支持
+DeepSeek V4 Flash 和 V4 Pro 加入捆绑目录，V4 Flash 为入门默认选项
+Talk、Voice Call、Google Meet 支持实时语音循环，可咨询完整 OpenClaw agent 获取深度答案
+浏览器自动化新增视口坐标点击、60s 默认操作预算、每配置 headless 覆盖选项
+Gemini Live 实时语音 provider 支持后端 Voice Call 和 Google Meet 音频桥接
+Voice Call 新增 `voicecall setup` 和 `smoke` 命令用于测试通话就绪状态
+Control UI 新增排队消息的 Steer 操作，可注入浏览器后续指令
+Memory 混合搜索暴露原始 vectorScore 和 textScore，便于检查检索贡献度
+Gradium 文本转语音 provider 加入捆绑目录，支持语音笔记和电话输出
+Matrix 新增 `openclaw matrix verify self` 命令用于自我设备验证
+Google Meet 新增工件和考勤工作流，支持会议记录导出和历史扫描</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>DeepSeek思考/回放行为修复，跟随工具调用轮次正常执行
-混合内存搜索修复向量与文本检索贡献检查问题（#68166）
-移除Pi专用registerEmbeddedExtensionFactory兼容性路径，统一使用registerAgentToolResultMiddleware</p></div>
+    <div class="detail-card"><p>修复 DeepSeek thinking/replay 在后续 tool-call 轮次的行为问题
+修复混合搜索结果中 vectorScore 和 textScore 显示问题（#68166）
+插件 SDK 移除 Pi 专用的 `api.registerEmbeddedExtensionFactory(...)` 兼容性路径</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

@@ -299,43 +299,36 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>支持 1M 上下文窗口测试（通过 `params.context1m: true` 启用 Opus/Sonnet）
-支持 Anthropic Sonnet 4.6 模型，兼容旧版上游目录的回退机制
-新增 `/subagents spawn` 命令，支持确定性子代理激活
-子代理任务消息添加上下文前缀，保留来源信息
-新增 iOS 分享扩展，支持将 URL/文字/图片直接转发至 gateway
-iOS 新增后台语音监听开关，App 退后台时保持 Talk Mode 运行
-iOS 新增语音指令提示开关，可禁用 ElevenLabs 切换指令以节省 token
-iOS 优化打断行为，减少内置扬声器播放时的误触发
-Slack 新增原生单消息文本流式传输，保留回复线程和流控逻辑
-Slack 新增可配置的草稿预览流式传输模式
-Telegram 支持内联按钮样式（primary/success/danger）
-Telegram 支持将用户消息反应作为系统事件通知
-iMessage 支持回复功能，正确定位回复目标消息
-新增意图优先的工具详情视图和执行摘要
-Discord 暴露原生 `/exec` 命令选项，支持自动补全和结构化输入
-Discord 支持可复用交互组件（按钮、选择器、表单）
-Discord 新增交互组件每按钮用户白名单限制
-Cron 支持独立 webhook 交付模式，支持 HTTP(S) URL 验证
-Cron 新增确定性默认交错策略，支持 `openclaw cron add/edit --stagger` 配置
-Cron 在运行日志/webhook 中记录模型和使用量，并提供聚合脚本
-Web 工具新增 URL 白名单机制
-Browser 支持自定义 Chrome 启动参数配置
-Voice Call 预缓存来电 TTS 问候语，加速首次播放
-Skills 紧凑化技能文件路径中的 home 目录前缀以节省 prompt 空间
-Skills 优化技能描述路由边界，明确使用场景和限制
-Auto-reply 在元数据中包含可信的消息 ID 和发送者 ID
-UI/Sessions 避免会话前缀在显示名称中重复
-消息元数据包含可信的 message_id 和 sender_id，支持下游定位和审核流程</p></div>
+    <div class="detail-card"><p>Anthropic 1M 上下文支持：通过 `params.context1m: true` 启用 Opus/Sonnet 百万上下文 beta
+Anthropic Sonnet 4.6 支持：在别名和默认配置中全面支持 Sonnet 4.6 模型
+新增 `/subagents spawn` 命令：支持从聊天命令确定性激活子代理
+子代理任务消息前缀：为轮询子代理消息添加上下文信息保留源标识
+iOS 分享扩展：支持将 URL/文本/图片内容直接转发至 gateway agent.request
+iOS 后台聆听模式：允许 Talk Mode 在应用后台时保持运行（默认关闭保护电池）
+iOS 语音指令提示开关：可禁用 ElevenLabs 语音切换指令以节省 token
+iOS 打断行为优化：内置扬声器/接收器输出时禁用语音打断，减少 TTS 误触发
+Slack 原生单消息流：集成 chat.startStream/appendStream/stopStream 实现消息流式传输
+Slack 草稿预览流模式：新增可配置流模式支持
+Telegram 内联按钮样式：支持 primary/success/danger 三种按钮样式
+Telegram 消息反应通知：将用户反应作为系统事件通知，支持配置通知范围
+iMessage 回复功能：支持 replyToId 并规范化回复标签格式
+工具详情视图：新增 intent-first 设计风格的工具详情和执行摘要展示
+Discord /exec 命令选项：暴露 host/security/ask/node 等选项实现自动补全
+Discord 可复用交互组件：支持组件多次使用前不过期
+Discord per-button 权限控制：支持按钮级别的 allowedUsers 白名单限制
+Cron webhook 投递分离：独立 per-job webhook 投递配置，支持 HTTP(S) 验证
+Cron 调度交错策略：top-of-hour 循环调度新增确定性默认交错支持
+Cron 使用量遥测：记录每个运行的模型/提供商使用数据并支持本地聚合报告
+Web 工具 URL 白名单：为 web_search 和 web_fetch 添加 URL 允许列表配置
+Browser extraArgs 配置：支持自定义 Chrome 启动参数
+Voice Call 问候语预缓存：提前缓存入站问候语 TTS 加速首次播放
+Skills 路径压缩：系统提示中用 ~ 替换 home 目录前缀精简路径
+Skills 路由边界指导：添加明确的 &quot;Use when&quot;/&quot;NOT for&quot; 描述指导
+Auto-reply 元数据增强：包含 message_id 和 sender_id 支持下游定位工作流</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>修复了子代理消息缺少上下文信息的问题
-修复了 iOS Talk Mode 在后台被中断的问题（通过新增后台监听选项）
-修复了 Slack 流式传输失败时的回退逻辑
-修复了 iMessage 回复功能未正确设置回复目标的问题
-修复了会话显示名称中前缀重复显示的问题
-修复了 cron webhook URL 未验证有效性的问题</p></div>
+    <div class="detail-card"><p>无</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>
