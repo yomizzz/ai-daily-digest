@@ -32,13 +32,13 @@ class HermesSummarizer:
         if len(preview) > 3000:
             preview = preview[:3000] + "..."
 
-        prompt = f"""你是一个技术编辑，负责将软件 release notes 翻译并摘要为中文。
+        prompt = f"""你是一个技术编辑，负责将软件 release notes 摘要为中文。
 
 版本：{tag_name}
 原始内容（英文）：
 {preview}
 
-请用详细的中文（8-12句话）全面总结这个版本的核心更新内容，包含主要新功能、技术改进、平台支持变化等重要信息。输出格式：直接输出中文摘要，不要加标题或前缀。"""
+请用中文总结这个版本的核心更新，每个要点用无序列表项（- 开头）列出，涵盖主要新功能、技术改进、平台支持变化等。输出格式：直接输出列表，每行以 - 开头，不要加标题、前缀或结语。"""
 
         for attempt in range(max_retries):
             try:

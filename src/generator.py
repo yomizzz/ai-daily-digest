@@ -57,6 +57,11 @@ THEME_CSS = """
         }
         .article-meta { font-size: 0.85em; color: var(--color-text-secondary); margin-bottom: 10px; }
         .article-summary { color: var(--color-text); margin-bottom: 12px; font-size: 0.95em; line-height: 1.6; }
+        .article-summary ul, .detail-card ul { margin: 8px 0; padding-left: 20px; }
+        .article-summary li, .detail-card li { margin: 4px 0; }
+        .summary-list { list-style: none; padding-left: 0; }
+        .summary-list li { padding: 4px 0 4px 16px; position: relative; }
+        .summary-list li::before { content: '•'; position: absolute; left: 0; color: var(--color-link); }
         .article-why { color: var(--color-link); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-link); }
         .tags { margin-top: 10px; font-size: 0.8em; color: var(--color-text-secondary); }
         footer { text-align: center; padding: 30px; color: var(--color-text-secondary); font-size: 0.85em; }
@@ -76,13 +81,56 @@ def make_slug(title: str, url: str) -> str:
 
 
 def truncate_summary(text: str, max_chars: int = 200) -> str:
+    """截断摘要，并保留列表结构（- 开头的行转 ul/li）"""
+    if not text:
+        return ''
+    # 如果包含列表格式，保持结构
+    if '\n- ' in text or text.startswith('- '):
+        lines = text.split('\n')
+        html_lines = []
+        char_count = 0
+        for line in lines:
+            if line.startswith('- '):
+                if char_count < max_chars:
+                    html_lines.append('<li>' + _escHtml(line[2:]) + '</li>')
+                    char_count += len(line)
+                # else stop adding items
+        if html_lines:
+            return '<ul class="summary-list">' + ''.join(html_lines) + '</ul>'
+        return _escHtml(text)
+    # 普通文本截断
     if len(text) <= max_chars:
-        return text
+        return _escHtml(text)
     cut = text[:max_chars]
     last_punct = max(cut.rfind('。'), cut.rfind('，'), cut.rfind('；'))
     if last_punct > max_chars * 0.6:
-        return cut[:last_punct + 1]
-    return cut + '…'
+        return _escHtml(cut[:last_punct + 1])
+    return _escHtml(cut + '…')
+
+
+def render_summary(text: str) -> str:
+    """渲染摘要为 HTML，保留列表结构，不截断"""
+    if not text:
+        return ''
+    if '\n- ' in text or text.startswith('- '):
+        lines = text.split('\n')
+        html_lines = []
+        for line in lines:
+            if line.startswith('- '):
+                html_lines.append('<li>' + _escHtml(line[2:]) + '</li>')
+            elif line.strip():
+                html_lines.append('<p>' + _escHtml(line) + '</p>')
+        if html_lines:
+            return '<ul class="summary-list">' + ''.join(html_lines) + '</ul>'
+        return '<p>' + _escHtml(text) + '</p>'
+    return '<p>' + _escHtml(text) + '</p>'
+
+
+def _escHtml(text: str) -> str:
+    return (text.replace('&', '&amp;')
+              .replace('<', '&lt;')
+              .replace('>', '&gt;')
+              .replace('"', '&quot;'))
 
 
 class PageGenerator:
@@ -281,7 +329,7 @@ class PageGenerator:
             '    <main>\n'
             '        <a href="../index.html" class="back-link">← 返回日报</a>\n'
             '        <div class="detail-card">\n'
-            '            <p>' + summary + '</p>\n'
+            '            ' + render_summary(summary) + '\n'
             '        </div>\n'
             + tags_html + '\n'
             '        <div class="detail-why">💡 ' + why + '</div>\n'
@@ -388,7 +436,7 @@ class PageGenerator:
             published = release.get('published_at', '')
             summary_zh = release.get('summary_zh', '')
 
-            body_html = ('<div class="release-card"><p>' + summary_zh + '</p></div>'
+            body_html = ('<div class="release-card">' + render_summary(summary_zh) + '</div>'
                          if summary_zh else '')
 
             html += (
