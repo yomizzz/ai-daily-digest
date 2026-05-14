@@ -156,9 +156,9 @@ def save_articles(articles: List[Dict]):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
-def get_existing_hermes_tags(articles: List[Dict]) -> set:
-    """返回 articles.json 中所有 hermes category 的 tag_name（存于 title 字段）"""
-    return {a.get("title", "") for a in articles if a.get("category") == "hermes"}
+def get_existing_hermes_urls(articles: List[Dict]) -> set:
+    """返回 articles.json 中所有 hermes category 的 url（用于去重）"""
+    return {a.get("url", "") for a in articles if a.get("category") == "hermes"}
 
 
 # ─── 全量运行 ─────────────────────────────────────────────────────────────
@@ -170,13 +170,14 @@ def run_initial(summarizer: HermesSummarizer):
     print(f"[HermesUpdater] 共获取 {len(all_releases)} 条正式版本")
 
     articles = load_articles()
-    existing_tags = get_existing_hermes_tags(articles)
+    existing_urls = get_existing_hermes_urls(articles)
     new_count = 0
 
     for r in all_releases:
         tag = r.get("tag_name", "")
         name = r.get("name", tag)
-        if tag in existing_tags:
+        html_url = r.get("html_url", "")
+        if html_url in existing_urls:
             print(f"  {tag} 已存在，跳过")
             continue
 
@@ -212,13 +213,14 @@ def run_incremental(summarizer: HermesSummarizer):
     print(f"[HermesUpdater] 过去 24 小时有 {len(recent)} 个正式版本")
 
     articles = load_articles()
-    existing_tags = get_existing_hermes_tags(articles)
+    existing_urls = get_existing_hermes_urls(articles)
     new_count = 0
 
     for r in recent:
         tag = r.get("tag_name", "")
         name = r.get("name", tag)
-        if tag in existing_tags:
+        html_url = r.get("html_url", "")
+        if html_url in existing_urls:
             print(f"  {tag} 已存在，跳过")
             continue
 
