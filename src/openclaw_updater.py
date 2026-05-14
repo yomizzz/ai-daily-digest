@@ -55,7 +55,7 @@ class OpenClawSummarizer:
 
         # 裁剪过长的 body（API 有 token 限制）
         body = body.strip()
-        max_chars = 15000
+        max_chars = 5000
         if len(body) > max_chars:
             body = body[:max_chars] + "\n\n[内容过长，已截断]"
 
