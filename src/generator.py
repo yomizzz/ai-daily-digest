@@ -327,7 +327,7 @@ class PageGenerator:
             '    </header>\n'
             '\n'
             '    <main>\n'
-            '        <a href="../index.html" class="back-link">← 返回日报</a>\n'
+            '        <a href="javascript:history.back()" class="back-link">← 返回日报</a>\n'
             '        <div class="detail-card">\n'
             '            ' + render_summary(summary) + '\n'
             '        </div>\n'

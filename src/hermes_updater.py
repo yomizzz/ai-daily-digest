@@ -163,13 +163,18 @@ def get_existing_hermes_urls(articles: List[Dict]) -> set:
 
 # ─── 全量运行 ─────────────────────────────────────────────────────────────
 
-def run_initial(summarizer: HermesSummarizer):
-    """初始全量运行：抓所有正式版 → 摘要 → 追加到 articles.json"""
+def run_initial(summarizer: HermesSummarizer, force: bool = False):
+    """初始全量运行：抓所有正式版 → 摘要 → 追加到 articles.json
+    force=True: 先删除所有 hermes 条目，强制重新生成所有摘要
+    """
     print("[HermesUpdater] 初始全量运行...")
     all_releases = fetch_releases_from_github(max_count=50)
     print(f"[HermesUpdater] 共获取 {len(all_releases)} 条正式版本")
 
     articles = load_articles()
+    if force:
+        print(f"[HermesUpdater] force 模式：删除 {len([a for a in articles if a.get('category')=='hermes'])} 条旧 hermes 条目")
+        articles = [a for a in articles if a.get('category') != 'hermes']
     existing_urls = get_existing_hermes_urls(articles)
     new_count = 0
 
@@ -253,18 +258,20 @@ def run_incremental(summarizer: HermesSummarizer):
 
 # ─── 主入口 ───────────────────────────────────────────────────────────────
 
-def update(mode: str = "incremental"):
+def update(mode: str = "incremental", force: bool = False):
     api_key = os.environ.get("MINIMAX_API_KEY", "")
     if not api_key:
         print("[HermesUpdater] 警告：MINIMAX_API_KEY 未设置")
     summarizer = HermesSummarizer(api_key)
 
     if mode == "initial":
-        run_initial(summarizer)
+        run_initial(summarizer, force=force)
     else:
         run_incremental(summarizer)
 
 
 if __name__ == "__main__":
     import sys
-    update(sys.argv[1] if len(sys.argv) > 1 else "incremental")
+    force = "--force" in sys.argv
+    mode = "initial" if ("initial" in sys.argv or force) else "incremental"
+    update(mode, force=force)

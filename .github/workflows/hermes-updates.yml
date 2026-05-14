@@ -40,8 +40,10 @@ jobs:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
         run: |
           MODE="${{ inputs.mode || 'incremental' }}"
-          echo "运行模式: $MODE"
-          python src/hermes_updater.py "$MODE"
+          FORCE_FLAG=""
+          if [ "$MODE" = "initial" ]; then FORCE_FLAG="--force"; fi
+          echo "运行模式: $MODE, force: $FORCE_FLAG"
+          python src/hermes_updater.py "$MODE" $FORCE_FLAG
 
       - name: Generate HTML pages
         run: |
