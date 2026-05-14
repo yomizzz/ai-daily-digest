@@ -279,7 +279,7 @@ def run_initial(summarizer: OpenClawSummarizer, force: bool = False):
             else:
                 print(f"  正在摘要: {tag}...")
             result = summarizer.summarize_release(tag, r.get("body", ""))
-            time.sleep(3)
+            time.sleep(1)
         else:
             result = cached
             print(f"  {tag} 复用已有摘要")
@@ -341,7 +341,7 @@ def run_incremental(summarizer: OpenClawSummarizer):
 
         print(f"  正在摘要: {tag}...")
         result = summarizer.summarize_release(tag, r.get("body", ""))
-        time.sleep(3)
+        time.sleep(1)
 
         release_out = dict(r)
         release_out["features"] = result.get("features", "无")
