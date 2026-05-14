@@ -38,8 +38,7 @@ class HermesSummarizer:
 原始内容（英文）：
 {preview}
 
-请用简洁的中文（3-5句话）总结这个版本的核心更新内容，只描述最重要功能，不要逐条列点。
-输出格式：直接输出中文摘要，不要加标题或前缀。"""
+请用详细的中文（8-12句话）全面总结这个版本的核心更新内容，包含主要新功能、技术改进、平台支持变化等重要信息。输出格式：直接输出中文摘要，不要加标题或前缀。"""
 
         for attempt in range(max_retries):
             try:
@@ -58,7 +57,7 @@ class HermesSummarizer:
                             {"role": "user", "content": prompt}
                         ],
                         "temperature": 0.3,
-                        "max_tokens": 400
+                        "max_tokens": 1500
                     }
                 )
                 client.close()

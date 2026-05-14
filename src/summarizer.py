@@ -40,7 +40,7 @@ class Summarizer:
                         {"role": "user", "content": prompt}
                     ],
                     temperature=0.3,
-                    max_tokens=500
+                    max_tokens=1500 if article.get('category') == 'hermes' else 500
                 )
 
                 result = response.choices[0].message.content
