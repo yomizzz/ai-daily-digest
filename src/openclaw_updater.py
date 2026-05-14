@@ -124,7 +124,9 @@ def summarize_one_release(tag: str, body: str, api_key: str) -> Dict[str, str]:
 # ─── 工具函数 ─────────────────────────────────────────────────────────────────
 
 def is_beta_version(tag_name: str) -> bool:
-    return bool(re.search(r'beta|b\d|rc\d|draft', tag_name.lower()))
+    """只过滤真正的 beta/rc 预发布版本"""
+    t = tag_name.lower()
+    return bool(re.search(r'beta\d*|\.b\d|rc\d', t))
 
 
 def parse_date(date_str: str) -> datetime:
@@ -285,7 +287,7 @@ def run_initial(summarizer_api_key: str, force: bool = False):
 
     for r in all_releases:
         tag = r.get("tag_name", "")
-        name = r.get("name", tag)
+        name = r.get("name") or tag
         html_url = r.get("html_url", "")
 
         if html_url in existing_urls and tag not in results:
@@ -363,7 +365,7 @@ def run_incremental(summarizer_api_key: str):
     updated_releases = []
     for r in recent:
         tag = r.get("tag_name", "")
-        name = r.get("name", tag)
+        name = r.get("name") or tag
         html_url = r.get("html_url", "")
         if html_url in existing_urls:
             print(f"  {tag} 已存在，跳过")
