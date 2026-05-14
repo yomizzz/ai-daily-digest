@@ -91,7 +91,7 @@ def summarize_one_release(tag: str, body: str, api_key: str) -> Dict[str, str]:
         body = body[:max_chars] + "\n\n[内容过长，已截断]"
     user_prompt = f"版本：{tag}\n\n更新日志：\n{body}"
     payload = {
-        "model": "MiniMax-Text-01",
+        "model": "MiniMax-M2.7",
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": user_prompt},
@@ -105,8 +105,8 @@ def summarize_one_release(tag: str, body: str, api_key: str) -> Dict[str, str]:
     }
     for attempt in range(3):
         try:
-            with httpx.Client(timeout=60) as client:
-                resp = client.post("https://api.minimax.chat/v1/text/chatcompletion_pro",
+            with httpx.Client(timeout=httpx.Timeout(30.0, connect=10.0)) as client:
+                resp = client.post("https://api.minimax.chat/v1/chat/completions",
                                    headers=headers, json=payload)
                 resp.raise_for_status()
                 result = resp.json()
