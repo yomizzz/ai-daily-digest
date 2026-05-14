@@ -299,21 +299,22 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>自动回复中止：支持多语言停止关键词和尾部标点变体（如 `STOP OPENCLAW!!!`）
-Android 引导流程：原生四步引导，改为五标签页导航（Connect/Chat/Voice/Screen/Settings）
-Talk 配置：添加提供商无关的 Talk 配置，暴露 Gateway ElevenLabs 元数据
-安全模型：添加 `security.trust_model.multi_user_heuristic` 标志共享用户入口并提供加固指南</p></div>
+    <div class="detail-card"><p>自动回复中止快捷键：扩展独立停止短语，支持多语言关键词和尾随标点，精确匹配&quot;do not do that&quot;
+Android/App UX：新增四步引导流程和五标签页外壳（Connect/Chat/Voice/Screen/Settings）
+Talk/Gateway配置：添加提供商无关的Talk配置，暴露ElevenLabs配置元数据
+安全/审计：新增`security.trust_model.multi_user_heuristic`标记共享用户入口</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>路由隔离：修复跨渠道回复被错误路由到其他频道的问题
-心跳防泄漏：阻止心跳消息发送至 Discord 等直接消息目标
-心跳默认行为：默认目标从 `last` 改为 `none`，避免意外推送
-队列去重：会话已有活跃运行时丢弃后续心跳，防止重复响应分支
-线程泄漏：cron/heartbeat 投递不再沿用缓存的 `lastThreadId`，保持在顶层目标
-消息去重：修复 Telegram 发送重复消息的问题
-输入指示器：长回复时保持打字状态指示，防止中途过期
-模型降级：fallback 模型继续遍历完整降级链而非死锁</p></div>
+    <div class="detail-card"><p>路由/会话隔离：防止webchat/control-ui上下文劫持Discord目标回复
+安全/路由：关闭共享会话跨渠道回复，绑定出站目标解析到当前轮次源渠道
+心跳路由：阻止心跳泄露到Discord等直接消息目标
+心跳默认配置：切换隐式传递目标从&quot;last&quot;到&quot;none&quot;（外部传递需主动开启）
+心跳排队：会话已有活动运行时删除心跳，防止重复响应分支
+Cron/心跳传递：不再继承缓存会话的lastThreadId，避免泄露到活跃线程
+消息工具去重：将源渠道元数据视为权威，消除Telegram重复发送
+打字保持活动：长时间回复时刷新打字回调，防止打字指示器过期
+模型回退：当运行在备用模型时继续遍历回退链，而非跳回主模型</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

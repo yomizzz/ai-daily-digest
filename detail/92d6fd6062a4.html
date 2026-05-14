@@ -299,24 +299,25 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Models: 支持 Anthropic Opus 4.6 和 OpenAI Codex gpt-5.3-codex 模型（向前兼容回退）
-Providers: 新增 xAI (Grok) 支持
-Web UI: 添加 token 使用量仪表板
-Memory: 原生支持 Voyage AI
-Sessions: 限制 sessions_history 负载以减少上下文溢出
-CLI: 帮助输出中的命令按字母顺序排序</p></div>
+    <div class="detail-card"><p>支持 Anthropic Opus 4.6 和 OpenAI Codex gpt-5.3-codex 模型，带向前兼容回退
+新增 xAI (Grok) 提供商支持
+Web UI 新增 Token 使用量仪表板
+原生支持 Voyage AI 记忆存储
+Sessions 增加 sessions_history 有效载荷上限，防止上下文溢出
+CLI 帮助输出按字母顺序排列命令
+Agents 更新 pi-mono 至 0.52.7，新增 Opus 4.6 模型 ID 回退支持</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Telegram: 自动注入 DM topic threadId 到消息工具和子代理通知
-Security: Gateway canvas 主机和 A2UI 资产要求身份验证
-Cron: 修复调度和提醒传递回归问题，强化定时器逻辑
-Update: 强化更新流程中 Control UI 资产处理
-Security: 添加 skill/plugin 代码安全扫描器，从配置响应中清除凭据
-Exec approvals: 将字符串格式的允许列表条目强制转换为对象
-Slack: 为 /new 和 /reset 命令添加 mention stripPatterns
-Chrome extension: 修复捆绑路径解析问题
-Compaction/errors: 允许上下文溢出时多次压缩重试，显示明确计费错误</p></div>
+    <div class="detail-card"><p>Telegram：自动注入 DM topic threadId 至消息工具和子代理通知
+安全：Gateway canvas host 和 A2UI 资产请求现需认证
+Cron：修复调度和提醒传递的回归问题，强化定时器逻辑
+Update：强化更新流程中 Control UI 资源处理
+安全：新增 skill/plugin 代码安全扫描器；过滤 config.get 响应中的凭证信息
+Exec approvals：修复裸字符串 allowlist 条目未正确转换的问题
+Slack：为 /new 和 /reset 命令添加 mention stripPatterns
+Chrome 扩展：修复打包路径解析问题
+压缩/错误：上下文溢出时允许多次压缩重试；显示清晰的计费错误信息</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

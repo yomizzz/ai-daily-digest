@@ -299,25 +299,26 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>新增 `gpt-5.4-pro` 模型前向兼容支持，包括定价/限制和状态可见性
-Telegram 论坛主题名现在可在代理上下文和元数据中显示人类可读名称</p></div>
+    <div class="detail-card"><p>OpenAI Codex: 新增 `gpt-5.4-pro` 前向兼容支持，包括定价/限制和状态可见性
+Telegram: 在agent context和prompt元数据中显示人工话题名称
+Copilot thinking: 支持 GPT-5.4 使用 `xhigh` 推理级别
+Agents/local models: 优化低上下文自托管模型的预检提示</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Ollama 慢速本地运行不再错误继承默认流截止时间
-Codex 提供商目录输出现在正确包含 `apiKey`，修复自定义模型被静默删除问题
-图像和 PDF 工具不再错误拒绝有效的 Ollama 视觉模型
-Slack 交互事件现在正确应用全局 `allowFrom` 允许列表，防止绕过验证
-本地附件路径解析失败时强制降级，防止安全检查被绕过
-网关工具现在拒绝可能启用危险安全标志的 `config.patch/apply` 调用
-Gemini 图像请求不再因路径拼接错误返回 404
-Telegram 主题名称现持久化存储，重启后可继续使用
-`openclaw doctor --repair` 不再错误地将 dotenv 密钥重新嵌入 systemd 单元
-本地 Ollama 运行现在报告准确的 token 使用量而非虚假的压缩触发值
-大型 `agents.list` 配置的插件自动启用不再反复读取目录导致 CPU 占用过高
-GitHub Copilot GPT-5.4 现支持 `xhigh` 推理强度
-代理支持的内存提供者现在正确保留非 OpenAI 前缀，避免出现未知提供商错误
-本地模型低上下文提示现已正确指向相关配置而非错误建议更大模型</p></div>
+    <div class="detail-card"><p>Ollama: 修复慢速本地模型继承默认流超时而非配置超时的问题
+Models/Codex: 修复验证器错误拒绝导致所有自定义模型被丢弃的问题
+Tools/image+pdf: 修复Ollama视觉模型被错误拒绝为未知的问题
+Slack: 修复交互事件绕过allowlist安全检查的问题
+Attachments: 修复realpath错误导致allowlist检查降级的安全问题
+Gateway-tool: 阻止模型层面调用启用危险安全标志的patch操作
+Google image: 修复Gemini图像请求404问题
+Telegram: 修复重启后话题名称需要重新学习的问题
+Doctor/systemd: 防止re-embedding secrets进用户systemd单元
+Ollama: 修复使用量报告回退到错误token计数的问题
+Doctor/plugins: 优化大型配置下的插件目录查找性能
+Memory/embeddings: 修复代理提供商使用OpenAI兼容模型时失败的问题
+Browser/SSRF: 恢复默认SSRF策略下的主机名导航</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

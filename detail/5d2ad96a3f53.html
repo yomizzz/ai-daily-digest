@@ -299,26 +299,30 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Lobster可选插件工具，支持类型化工作流与审批门控
-Control UI自定义助手身份和头像显示
-缓存优化：新增cache-ttl剪枝模式，减少冷请求token消耗
-Exec审批新增elevated ask/full模式，支持本地/网关/节点定向
-Signal输入状态指示器和已读回执
-MSTeams文件上传、自适应卡片和附件处理改进
-/models命令UX优化，新增clawdbot update wizard交互式更新
-CLI网关和节点服务命令重组，新增gateway probe连通性检查
-会话支持按渠道配置空闲时长和去抖动覆盖
-节点支持exec风格执行，PATH环境变量优化
-Discord通配符频道配置支持
-Heartbeat允许显式会话密钥和活动时间配置
-macOS设置界面刷新优化</p></div>
+    <div class="detail-card"><p>Lobster 可选插件工具：支持类型化工作流和审批门控
+Control UI 自定义助手身份 + 头像显示
+缓存优化：TTL 剪枝模式 + 认证感知默认值，减少冷请求 token 消耗
+Exec 审批增强：支持 elevated ask/full 模式、通配符允许列表、gateway/node 定向
+Signal 频道：打字状态指示器和已读回执
+MSTeams 频道：文件上传、adaptive cards 和附件处理改进
+新增 `clawdbot update wizard`：交互式频道选择 + 重启提示 + preflight 检查
+`/models` 命令 UX 刷新，支持更详细的模型列表分页
+CLI 命令重组：`clawdbot gateway` 和 `clawdbot node` 子命令扁平化，新增 `gateway probe` 可达性检查
+心跳模块：支持显式会话密钥和活跃时段配置
+新增每通道空闲时长配置 `sessions.channelIdleMinutes`
+节点模块：支持 exec-style 运行，暴露 PATH 环境变量
+队列新增每通道去抖覆盖配置
+Discord 频道：支持通配符频道配置
+macOS 设置界面优化
+诊断工具：新增缓存跟踪配置用于调试</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>流式响应跨块保留回复标签，输入指示器在运行开始时触发
-修复Claude模型无符号thinking块问题，Mistral/OpenRouter强制字母数字工具调用ID
-Exec审批将主代理作为默认代理，对齐节点/网关允许列表预检查
-执行审批验证解析路径，避免允许列表解析竞态和空参数问题</p></div>
+    <div class="detail-card"><p>流式响应：修复跨块保留回复标签，打字指示器改为运行开始时触发
+媒体路径：修复含空格/tilde 的 MEDIA 路径处理
+模型兼容性：丢弃 Claude 模型的未签名思考块，强制严格提供商的字母数字工具调用 ID
+Exec 审批：修复主 agent 默认处理、节点/网关预检查对齐、解析路径验证、允许列表竞态条件和空参数问题
+控制 UI 安全：默认拒绝无设备身份的不安全 HTTP 连接</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

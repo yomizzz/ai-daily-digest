@@ -299,20 +299,17 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>新增 Matrix 插件，支持官方 matrix-js-sdk，提供消息持久化去重功能
-插件安装优先使用 ClawHub，仅在包不存在时回退 npm
-插件 SDK 迁移至 openclaw/plugin-sdk/* 新架构
-执行环境沙箱增强安全性，阻止 JVM 注入、glibc 劫持、.NET 依赖劫持
-语音通话 webhooks 新增签名验证和预认证请求速率限制
-Discord 命令部署切换为 Carbon reconcile 模式
-代理媒体回复统一迁移至 details.media 结构
-Android 联系人搜索修复 SQL LIKE 通配符注入问题</p></div>
+    <div class="detail-card"><p>新增官方 Matrix 插件，使用 `matrix-js-sdk` 实现
+插件安装优先从 ClawHub 获取，不存在时回退到 npm
+Discord 命令部署默认切换为 Carbon reconcile 方式
+媒体回复迁移到 `details.media` 统一附加方式</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Chrome MCP 遗留扩展路径移除，旧配置自动迁移至 existing-session/user 模式
-Matrix 插件修复提及门控房间的消息路由和线程绑定刷新问题
-修复 time 命令在 allowlist 评估时的透明调度问题</p></div>
+    <div class="detail-card"><p>修复 Matrix 消息导致线程绑定过早刷新的问题
+修复 Matrix 网关重启后消息重复处理问题
+修复联系人搜索中 `%` 和 `_` 被误识别为 SQL LIKE 通配符的问题
+修复 webhook 预认证请求的内存耗尽漏洞，添加 IP 并发限制</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

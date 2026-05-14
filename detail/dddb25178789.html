@@ -299,32 +299,29 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>OpenAI Provider：通过 Codex OAuth 支持图像生成和参考图像编辑
-OpenRouter Provider：通过 image_generate 支持图像生成和参考图像编辑
-图像生成：传递质量、格式、背景、审核、压缩等提示参数给 provider
-Agents/subagents：添加可选的分叉上下文，支持子 agent 继承请求者对话记录
-Agents/tools：为图像/视频/音乐/TTS 生成工具添加 per-call timeoutMs 超时支持
-Memory/local embeddings：添加可配置的 contextSize 参数（默认 4096）用于本地嵌入
-Pi 依赖：更新捆绑包至 0.70.0，使用上游 gpt-5.5 目录元数据
-Codex harness：为 harness 选择决策添加结构化调试日志</p></div>
+    <div class="detail-card"><p>OpenAI Provider：通过Codex OAuth支持图像生成和参考图像编辑，openai/gpt-image-2 无需API key即可工作
+OpenRouter Provider：通过image_generate支持图像生成和参考图像编辑
+图像生成：支持代理请求画质和输出格式提示，传递OpenAI特定背景、审核、压缩和用户提示
+代理/子代理：添加可选forked context支持，支持sessions_spawn运行继承请求者转录
+代理工具：为图像、视频、音乐和TTS生成工具添加per-call timeoutMs支持
+Memory/local embeddings：添加可配置的memorySearch.local.contextSize，默认4096</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Codex harness：修复 request_user_input 提示路由、跟进答案队列和命令审批处理
-Context-engine：修复日志记录时不暴露原始错误对象的问题
-WhatsApp/onboarding：修复首次运行设置加载依赖 Baileys 运行时的问题
-Block streaming：修复部分中止时重复发送最终回复的问题
-Codex/Windows：修复 npm 安装的 codex.cmd shims 无法正确解析的问题
-Slack/groups：修复工作状态信息泄露到群组房间的问题
-Agents/replay：修复 OpenAI/Codex 重放时错误合成缺失工具结果的问题
-Telegram/media replies：修复 markdown 图片语法无法正确解析为媒体消息的问题
-Agents/WebChat：修复非重试错误无法正确显示的问题
-WhatsApp：统一直接发送和自动回复的媒体规范化处理
-Memory/CLI：修复独立命令无法解析本地 embeddings 的问题
-Gateway/WebChat：修复文本模型无法保留图像附件的问题
-Plugins/Google Meet：修复离开时未挂断 Twilio 通话等问题
-Media understanding：修复文本模型忽略显式图像配置的问题
-Codex/media understanding：支持 codex/* 图像模型并验证 app-server 响应</p></div>
+    <div class="detail-card"><p>Codex harness：修复request_user_input提示路由到原始聊天，保留后续回答队列
+Codex harness：修复上下文引擎组装失败时的日志泄露问题
+WhatsApp：修复首次运行设置加载依赖Baileys运行时路径的问题
+Block streaming：修复部分块传递中止后重复回复的问题
+Codex harness/Windows：解决npm安装的codex.cmd shims路径解析问题
+Slack/groups：修复MPIM群组DM分类和工具/计划进度泄露问题
+Agents/replay：停止OpenAI/Codex重放合成缺失的工具结果
+Telegram：修复远程markdown图像语法解析，支持 ![...](...) 格式
+Agents/WebChat：正确显示非重试性提供商错误（如账单、认证、限流）
+WhatsApp：统一直接发送和自动回复的出站媒体规范化
+Memory/CLI：修复独立memory命令解析本地嵌入的问题
+Gateway/WebChat：为文本模型保留图像附件作为媒体引用
+Media understanding：修复显式图像模型配置优先级，支持MiniMax VL等提供商默认值
+Codex/media understanding：支持codex/*图像模型，保持openai-codex/*走Codex OAuth路由</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

@@ -299,28 +299,29 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Memory/dreaming: 新增 grounded REM backfill lane，支持历史路径回填、日记提交/重置、持久化事实提取和实时短期记忆提升
-Control UI/dreaming: 新增结构化日记视图，包含时间线导航、backfill/重置控制和 grounded Scene lane
-QA/lab: 新增 character-vibes 评估报告，支持模型选择和并行运行
-Plugins/provider-auth: 支持 provider manifests 声明 providerAuthAliases，实现 provider variants 间认证配置共享
-iOS: 发布版本锁定到显式 CalVer，添加 pnpm ios:version:pin workflow</p></div>
+    <div class="detail-card"><p>Memory/dreaming：新增基于历史的 REM 回填通道、日记提交/重置流程和短期记忆提升集成
+Control UI/dreaming：新增结构化日记视图、时间线导航、回填/重置控制和场景通道
+QA/lab：新增角色氛围评估报告，支持模型选择和并行运行对比
+Plugins/provider-auth：支持 provider 声明 auth 别名，变体可共享认证配置
+iOS：版本号固定为显式 CalVer，新增 `pnpm ios:version:pin` 工作流用于发布分支管理</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Browser/security: 修复浏览器交互后安全检查可被绕过的问题，防止 SSRF 隔离被突破
-Security/dotenv: 阻止不受信任 .env 文件中的运行时控制环境变量和浏览器控制覆盖
-Gateway/node exec events: 标记远程节点 exec 事件为不受信任，防止注入可信系统内容
-Plugins/onboarding: 防止不受信任工作区插件与内置 provider auth-choice 冲突
-Security/dependency: 强制升级 basic-ftp 修复 CRLF 命令注入漏洞
-Android/pairing: 修复二维码扫描时清理过期认证、后台时暂停自动重试
-Matrix/gateway: 等待 Matrix sync 就绪后再标记启动成功，隔离后台失败
-Slack/media: 保留同源重定向的 bearer auth，跨域时正确剥离
-Reply/doctor: 使用活跃运行时快照解析 SecretRefs，改进 gateway OAuth 重认证提示
-Control UI: 修复快速会话切换时的陈旧历史 reload 问题
-Gateway/chat: 阻止 ANNOUNCE_SKIP/REPLY_SKIP 控制令牌泄露到用户界面
-Auto-reply/NO_REPLY: 剥离粘连的前导 NO_REPLY 令牌，防止静默标记泄漏
-Sessions/routing: 保留会话间公告流量的外部路由，防止 Telegram/Discord 等通道丢失消息
-Gateway/sessions: 重置时清除自动回退模型覆盖，保留用户明确选择的模型</p></div>
+    <div class="detail-card"><p>Browser/security：修复浏览器交互后导航可绕过 SSRF 安全检查的漏洞
+Security/dotenv：阻止不受信任的 .env 文件注入运行时控制环境变量
+Gateway/node exec events：标记远程 exec 事件为不可信，防止注入信任的系统内容
+Plugins/onboarding：防止不受信任插件与内置 provider 认证 ID 冲突
+Security/dependency audit：升级 basic-ftp 修复 CRLF 命令注入漏洞
+Android/pairing：修复扫描后配对状态、令牌管理和后台暂停逻辑
+Matrix/gateway：等待 Matrix 同步就绪后才标记启动成功，修复同步停止时的崩溃
+Slack/media：修复 files.slack.com 同源重定向时 bearer token 保留问题
+Reply/doctor：使用运行时快照执行回复，解析 SecretRef 并提示 OAuth 重认证
+Control UI：修复快速切换会话时的历史加载竞态问题
+Gateway/chat：隐藏内部 ANNOUNCE_SKIP/REPLY_SKIP 控制令牌防止泄露
+Auto-reply/NO_REPLY：移除无实质内容的 NO_REPLY 前缀标记
+Sessions/routing：保持会话间公告的外部路由，确保 Telegram/Discord 等通道消息正常投递
+Gateway/sessions：重置时清除自动模型覆盖，保留用户手动选择
+Slack/ACP：将 block 回复标记为可见输出，防止重复发送</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

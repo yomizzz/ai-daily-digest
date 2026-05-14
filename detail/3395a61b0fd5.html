@@ -299,30 +299,29 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Feishu/Lark 飞书插件支持及文档上线
-Web UI 新增 Agents 仪表板，支持管理 agent 文件、工具、技能、模型、频道和定时任务
-Memory 模块新增可选的 QMD 后端用于工作区记忆
-Security 模块新增健康检查技能和启动审计指导
-Config 支持通过配置设置默认子代理思考级别</p></div>
+    <div class="detail-card"><p>飞书/Lark插件支持：新增飞书/Lark插件及其文档支持
+Agents仪表板：Web UI新增Agents管理仪表板，支持管理文件、工具、技能、模型、渠道和定时任务
+QMD工作区内存：实现可选的QMD后端用于工作区内存
+健康检查技能：新增健康检查技能和启动审计引导指南
+子代理思考级别配置：支持通过配置设置默认子代理思考级别</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Security：gateway /approve 命令现在需要 operator.approvals 权限
-Security：Matrix 白名单要求完整 MXID，禁止模糊名称解析授予访问权限
-Security：Slack 斜杠命令在频道类型查找失败时强制启用访问组门控
-Security：gateway 连接时需要验证共享密钥认证后才能跳过设备身份
-Security：技能安装程序下载添加 SSRF 检查，阻止私有/本地地址 URL
-Security：加强 Windows exec 白名单，阻止通过单个 &amp; 绕过 cmd.exe
-Security：加强语音入站白名单，拒绝匿名呼叫者，对 Twilio 媒体流进行令牌门控
-Media understanding：对提供者获取添加 SSRF 护栏，允许显式的私有 baseUrl 覆盖
-webchat：流式传输和刷新时保持用户滚动位置
-Telegram：从 grammY 长轮询超时错误中恢复
-Agents：修复格式错误的工具调用和会话记录
-agents：验证 AbortSignal 实例后再调用 AbortSignal.any()
-Media understanding：从文件文本提取中跳过二进制媒体
-TUI：阻止 onboarding 输出并恢复终端状态
-CLI/Zsh 补全：缓存脚本并转义选项描述避免无效错误
-UI：修复 Control UI 资源路径解析问题，刷新外部编辑后的 agent 文件</p></div>
+    <div class="detail-card"><p>强化网关审批：网关/approve命令现需operator.approvals授权
+Matrix安全加固：白名单要求完整MXIDs，禁用模糊名称解析
+Slack命令安全：失败时强制执行访问组gating
+SSRF防护强化：技能安装程序下载添加SSRF检查，阻止私有/本地地址
+WebSocket安全：网关连接需验证共享密钥认证
+Windows白名单加固：阻止cmd.exe通过单个&amp;绕过
+语音通话安全：拒绝匿名来电者，令牌保护Twilio媒体流
+媒体理解SSRF防护：提供程序获取应用SSRF guardrails
+Web聊天滚动保持：流式传输时尊重用户滚动位置
+Telegram恢复：处理grammY长轮询超时错误
+工具调用修复：修复格式错误的工具调用和会话记录
+媒体提取优化：跳过二进制媒体的文本提取
+TUI终端保护：阻止onboarding输出，恢复终端状态
+UI路径修复：解决Control UI资产路径正确解析
+UI刷新修复：外部编辑后正确刷新agent文件</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

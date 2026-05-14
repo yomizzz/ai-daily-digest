@@ -299,24 +299,24 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>外部插件安装、更新、医生修复、依赖报告覆盖npm优先切换和过期配置安装
-Gateway和agent启动、session列表、任务维护、提示准备、插件加载性能优化
-Control UI和WebChat在Sessions、Cron、长连接Gateway WebSocket场景下更稳定
-添加`openclaw gateway restart --force`和`--wait &lt;duration&gt;`命令
-插件列表命令显示依赖安装状态，便于脚本检查缺失依赖
-Beta更新通道默认尝试@beta版本插件，回退到latest
-添加平台级工具描述符规划器，缓存插件工具描述符避免重复加载
-xAI添加Grok 4.3并设为默认聊天模型
-Google Meet支持API创建房间时设置accessType和entryPointAccess
-Google Meet添加`end-active-conference`和`test-listen`命令
-修复多个消息平台：WhatsApp、Telegram、Discord、Slack、Signal</p></div>
+    <div class="detail-card"><p>Gateway 跳过插件认证覆盖层预检，减少启动延迟；新增 `restart --force` 和 `--wait` 选项
+Control UI 和 WebChat 在会话管理、WebSocket 长连接、分组消息宽度等方面提升稳定性
+新增平台级工具描述符规划器，缓存插件工具描述符避免重复加载
+源检出模式下从 `extensions/*` pnpm workspace 加载内置插件，支持本地依赖
+`openclaw plugins list --json` 输出包含包依赖安装状态，便于脚本检测
+Beta 通道下插件更新优先尝试 `@beta` 版本并回退到 default/latest
+xAI 新增 Grok 4.3 并设为默认聊天模型
+Google Meet 支持 API 创建房间时设置访问类型、新增 `end-active-conference` 和 `test-listen` 命令
+ACPX 诊断模块和 OpenTelemetry 诊断能力已移至独立 `@openclaw/*` 包，优化核心包体积</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>修复Control UI和WebChat在分组消息宽度、iOS PWA边界、选择对比度问题
-修复可见回复路由问题
-修复WhatsApp Channel/Newsletter、Telegram话题命令网络问题
-修复Discord投递和启动边缘情况</p></div>
+    <div class="detail-card"><p>修复 WhatsApp 频道/Newsletter 目标、Telegram 话题命令、Discord 投递/启动边缘情况
+修复 Slack 线程、Signal 群组/媒体、可见回复路由等消息投递问题
+修复 OpenAI 兼容 TTS/Realtime、OpenRouter/DeepSeek 回放、Anthropic 流式处理
+修复 LM Studio 推理元数据、Web 搜索（Brave/SearXNG/Firecrawl）稳定性
+修复媒体路径、音乐播放、语音通话路由问题
+优化文件系统 walker 的 POSIX 包含检查快速路径，避免重复 path.resolve/relative 调用</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

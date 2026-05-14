@@ -299,11 +299,32 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Telegram: 新增 `openclaw message poll` 命令，支持投票发送（时长、静默投递、匿名控制）
+Slack/Discord: 新增 `dmPolicy` + `allowFrom` 配置别名用于 DM 访问控制
+Discord: exec 审批提示可针对频道或 DM+频道同时发送
+Sandbox: 新增 `sandbox.browser.binds` 配置浏览器容器独立绑定挂载</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>CLI: 修复 `openclaw message send` 成功投递后不退出导致挂起的问题
+CLI: 修复 one-shot 命令退出前未执行 `gateway_stop` 钩子的问题
+WhatsApp: 修复 per-account `dmPolicy` 设置不生效的问题
+Telegram: 修复 `native=false` 时插件命令被错误注册到菜单的问题
+LINE: 修复 &quot;Verify&quot; 请求未返回正确响应的问题
+Cron: 修复文本输出投递不完整的问题
+Cron/Slack: 修复 cron 任务投递时 agent 身份丢失的问题
+Media: 修复 `MEDIA:` 前缀路径加载失败的问题
+Agents: 修复媒体（截图、图片、音频）未根据 verbose 级别投递的问题
+Agents/Image tool: 修复工作区本地图片路径被拒绝的问题
+BlueBubbles: 修复群聊消息格式与 iMessage/Signal 不一致的问题
+CLI: 修复维护命令（doctor、dashboard、reset）无法正确解析的问题
+CLI/Dashboard: 修复 LAN 绑定时 dashboard URL 生成不正确的问题
+TUI: 修复 `openclaw tui` 在非 localhost 网关下无法连接的问题
+TUI: 修复 `--session` 参数与全局作用域冲突导致会话合并的问题
+TUI: 修复并发场景下流式回复被意外清除的问题
+TUI: 修复工具边界处先前文本丢失的问题
+TUI: 修复二进制历史记录导致启动崩溃的问题
+TUI: 修复浅色主题（如 Solarized Light）终端前景色对比度不足的问题</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

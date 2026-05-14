@@ -299,31 +299,32 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>任务面板：添加会话内后台任务面板 `/tasks`，支持最近任务详情和无关联任务时的 agent 本地回退计数
-Web 搜索：集成 SearXNG provider 插件，支持可配置主机地址
-Bedrock 安全：添加 Amazon Bedrock Guardrails 支持
-macOS 语音唤醒：新增 Voice Wake 选项触发 Talk Mode
-飞书评论：添加 Drive 评论事件流程、评论线程上下文解析和内联回复功能
-聊天历史截断：新增 `gateway.webchat.chatHistoryMaxChars` 配置和 per-request `maxChars` 参数
-Agent 默认参数：新增 `agents.defaults.params` 全局默认 provider 参数配置
-Agent 故障转移：添加同 provider 认证配置重试上限、跨 provider 模型回退和 `auth.cooldowns.rateLimitedProfileRotations` 旋钮
-Cron 工具白名单：新增 `openclaw cron --tools` 支持每任务工具白名单
-会话路由：将会话对话语法迁移到插件管理的会话密钥面，支持 Telegram 话题路由和飞书范围继承
-WhatsApp 反应：添加反应级别指导
-Telegram 错误处理：新增可配置的 `errorPolicy` 和 `errorCooldownMs` 控制
-ZAI 模型：添加 `glm-5.1` 和 `glm-5v-turbo` 模型支持
-Agent 压缩模型：修复 `agents.defaults.compaction.model` 在手动压缩和上下文压缩路径的一致性</p></div>
+    <div class="detail-card"><p>Tasks/chat: 新增 `/tasks` 会话原生后台任务看板，支持查看最近任务详情和本地回退计数
+Web search/SearXNG: 集成可配置 host 的 SearXNG 网络搜索提供商插件
+Amazon Bedrock/Guardrails: 支持 Bedrock Guardrails 安全过滤功能
+macOS/Voice Wake: 新增语音唤醒触发 Talk Mode 功能
+Feishu/comments: 新增 Drive 评论事件流，支持评论线程上下文解析和内联回复
+Gateway/webchat: `chat.history` 文本截断改为可配置，支持全局和单次请求设置
+Agents/default params: 新增 `agents.defaults.params` 全局默认提供商参数配置
+Agents/failover: 添加同提供商速率限制重试上限及 `auth.cooldowns.rateLimitedProfileRotations` 旋钮
+Cron/tools allowlist: 新增 `openclaw cron --tools` 支持每个任务独立配置工具白名单
+Channels/session routing: 将会话对话语法迁移到插件拥有的会话密钥表面
+WhatsApp/reactions: 新增 `reactionLevel` 指导控制代理反应行为
+Telegram/errors: 添加 `errorPolicy` 和 `errorCooldownMs` 错误策略控制
+ZAI/models: 新增 `glm-5.1` 和 `glm-5v-turbo` 模型支持
+Agents/compaction: 统一 `agents.defaults.compaction.model` 作用于手动和自动压缩路径</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>错误泄露：阻止原始 provider/运行时错误泄露到外部聊天渠道，改为返回友好的重试提示，Bedrock 工具结果不匹配时添加 `/new` 提示
-网关重载：忽略启动时的配置写入，避免生成 auth token 和 Control UI origins 触发重启循环
-任务注册阻塞：修复任务注册维护扫描在 SQLite 同步压力下阻塞网关事件循环的问题
-任务状态显示：隐藏陈旧的已完成任务，优先显示实时任务上下文，仅在无活跃工作时显示最近失败
-任务维护覆盖：修复扫描期间任务心跳或清理更新被陈旧快照状态覆盖的问题
-执行审批对齐：修复 `exec-approvals.json` 安全默认未生效、Slack/Discord 审批处理不一致的问题
-执行审批持久化：修复 `allow-always` 未持久化为可信状态、命令行信任误用、静态白名单绕过审批等问题
-Cron 审批死锁：修复孤立 cron 任务在信任自动化时无法路由审批的问题</p></div>
+    <div class="detail-card"><p>Chat/error replies: 阻止原始错误信息泄露到外部聊天渠道，Bedrock 会话错误增加 `/new` 提示
+Gateway/reload: 修复配置热重载时的重启循环问题，已生成令牌和种子源不再触发重启
+Tasks/gateway: 修复 SQLite 压力下任务维护扫描阻塞网关事件循环导致的启动后挂起
+Tasks/status: 隐藏过时已完成任务，优先显示实时任务上下文，失败信息仅在无活跃工作时展示
+Tasks/gateway: 修复维护扫描覆盖扫描期间到达的活跃心跳或清理更新的问题
+Exec/approvals: 修复未设置策略时的安全默认值处理，确保 Slack/Discord 远程执行不误入假审批超时
+Exec/approvals: 修复 `allow-always` 持久化为一次性行为、shell 路径信任复用、静态白名单绕过 `ask:&quot;always&quot;` 等问题
+Exec/cron: 修复可信自动化场景下的无路由审批死锁问题，增加 `openclaw doctor` 工具策略冲突警告
+Sessions/model switching: 修复 `/model` 变更打断运行的问题，改为在当前轮次完成后生效</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

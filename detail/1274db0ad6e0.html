@@ -299,41 +299,40 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Microsoft Teams provider 支持（轮询、附件、出站发送、按频道策略）
-新增 OpenCode Zen 和 MiniMax Anthropic 兼容 API 模型支持
-token 认证 profiles 和认证顺序设置命令
-OAuth 有效期检查集成到 doctor/status
-CLI 统一消息工具和子命令（send/poll/attach/sendfile）
-gateway discover 支持本地和广域网 DNS-SD 发现
-gateway status 提供人类可读格式、JSON 输出和 SSH loopback
-`/config` 聊天更新、`/config get` 和 `/debug` 运行时覆盖
-sandbox CLI 命令（list/recreate）、skills 同步和浏览器自动启动
-日志输出模式（pretty/plain/JSONL）和全局 `--no-color`
-WhatsApp 广播群组支持多 Agent 回复、入站媒体大小限制可配置
-Telegram 内联键盘按钮、回调路由和 audio_as_voice 标签支持
-Signal 反应和通知支持 allowlist
-Control UI 排队消息、会话链接和移动端响应式设计
-TUI agent picker 和 agents list RPC
-自适应上下文修剪和 eligible skills 列表注入
-守护进程审计/修复流程和 provider 状态探测警告
-刷新 iOS/Android/macOS 应用图标
-Doctor/Daemon 权限检查和 supervisor 配置审计
-`/commands` 列表、`/models` 和 `/usage` 命令别名</p></div>
+    <div class="detail-card"><p>Microsoft Teams 消息提供商（轮询、附件、发送、频道策略）
+OpenCode Zen 和 MiniMax API 模型支持（兼容 Anthropic 格式）
+Token 认证配置和优先级排序功能
+CLI 消息子命令统一（send/poll 等）
+Gateway 本地/广域网自动发现（DNS-SD）
+Gateway 状态 SSH 循环回显
+/config 和 /debug 配置管理命令
+沙盒环境管理和浏览器自动启动
+WhatsApp 广播群组多 Agent 回复
+WhatsApp 入站媒体大小可配置
+Telegram 内联键盘按钮和回调路由
+Telegram 音频转语音标签支持
+Signal 表情反应和通知
+Slack 线程优化
+Discord 稳定性提升
+移动端 UI 响应式适配
+消息队列和会话链接功能
+推理过程可视化视图
+成本/使用量报告功能
+医生/守护进程审计和修复流程
+OAuth 认证健康检查</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>修复 npm tarball 缺少 MS Teams send 模块
-修复 sandbox CDP 端点自动启动和容器外代理问题
-修复心跳提示错误限制到非默认会话
-修复 /stop 命令在工具调用间正确中止
-修复小上下文窗口保护逻辑
-修复 model fallback 字符串化问题
-修复 sessions_spawn 未正确继承 provider
-修复计费/积分故障转移逻辑
-修复 auth cooldown 顺序处理
-修复 Anthropic OAuth 工具调度和工具名绕过
-修复 OpenAI 无效 reasoning 重放问题
-修复 Gmail hook 模型强化</p></div>
+    <div class="detail-card"><p>修复 npm 包中缺少 MS Teams 发送模块
+修复沙盒 CDP 端点自动启动
+修复容器内 CDP 代理转发
+修复 /stop 命令在工具调用间中止
+修复会话键值显式要求
+修复小上下文窗口保护
+修复模型降级字符串化问题
+修复账单/额度故障转移
+修复认证冷却排序
+恢复 Anthropic OAuth 工具调度</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

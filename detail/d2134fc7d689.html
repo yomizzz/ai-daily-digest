@@ -299,27 +299,27 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>新增 `kilocode` 一级提供商支持，集成认证、入职流程、隐式检测、模型默认值及文档，默认模型为 `kilocode/anthropic/claude-opus-4.6`
-Vercel AI Gateway 支持 Claude 简写模型引用，自动规范化为 Anthropic 路由的模型 ID
-添加专门的 prompt caching 参考文档，涵盖 `cacheRetention`、代理级 `params` 合并优先级及调优指南
-Gateway 新增可选 `Strict-Transport-Security` HTTP 安全头支持
-强化会话维护，添加磁盘预算控制和更安全的清理行为
-新增 Moonshot/Kimi 网页搜索提供商支持及两步搜索工具流程
-新增原生 Moonshot 视频提供商并支持自动视频密钥检测
-支持按代理的 `params` 覆盖，允许独立调整缓存行为
-引导文件快照按会话密钥缓存，减少不必要的 prompt cache 失效</p></div>
+    <div class="detail-card"><p>Kilo Gateway: 新增 kilocode provider 支持（认证、引导、隐式检测、模型默认值、缓存处理）
+Vercel AI Gateway: 支持 Claude 速记模型引用，自动规范化为标准格式
+新增 prompt caching 完整参考文档
+HTTP 安全: 支持 Strict-Transport-Security 头
+会话管理: 加强清理机制，新增磁盘预算控制（maxDiskBytes/highWaterBytes）
+Web 搜索: 新增 Kimi (Moonshot) provider 支持
+视频理解: 新增 Moonshot 视频 provider，支持自动检测
+代理配置: 支持按代理独立覆盖 cacheRetention 等参数
+代理引导: 缓存引导文件快照，减少缓存失效</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>配置快照中正确清除敏感动态通配符密钥并保留还原行为
-Vitest 测试根据主机内存动态调整并行工作进程配置
-修复 WhatsApp 群组策略问题：设置 `allowlist` 模式时不再错误阻止已允许的发送者
-扩展 `cache-ttl` 上下文剪枝支持至 Moonshot/Kimi 和 ZAI/GLM 提供商
-改进 `openclaw doctor` 内存就绪检测，提供更精确的网关内存探针警告
-会话存储规范化混合大小写密钥，防止重复会话和 TUI/WebUI 历史缺失
-Telegram 消息反应软失败处理，支持 `message_id`，修复 DM 反应循环问题
-Telegram 轮询偏移量按 bot 身份隔离，防止重启时的跨令牌偏移污染
-修复 `/reasoning off` 时防止推理内容泄漏问题</p></div>
+    <div class="detail-card"><p>安全: 清除敏感配置项的动态密钥，保留恢复能力
+测试: Vitest 根据主机内存自动调整并行策略
+WhatsApp: 修复 allowlist 模式下被正确用户的群组消息被误拦问题
+上下文修剪: cache-ttl 模式扩展支持 Moonshot/Kimi 和 ZAI/GLM
+Doctor: 查询网关侧内存嵌入就绪状态并给出警告
+会话存储: 规范化会话密钥大小写，迁移历史数据防止重复
+Telegram: 修复反应操作错误导致崩溃、消息ID格式兼容、DM反应循环
+Telegram: 修复跨 token 轮询偏移量污染和重叠问题
+Telegram: 推理关闭时抑制推理内容泄露</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

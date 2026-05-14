@@ -299,43 +299,45 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>iOS支持alpha节点应用与setup-code引导流程
-Channels新增BlueBubbles综合清理功能
-Plugins新增设备配对与电话控制插件（支持Telegram /pair命令）
-Tools集成Grok (xAI)作为网页搜索provider
-Gateway新增agent管理RPC方法（create/update/delete）
-Web UI聊天历史新增Compaction分隔符显示
-Agents在envelope中包含runtime shell信息
-Paths支持OPENCLAW_HOME环境变量覆盖路径解析</p></div>
+    <div class="detail-card"><p>iOS Alpha 节点应用支持设置码引导流程
+Channels 新增 BlueBubbles 频道清理功能
+新增设备配对和手机控制插件（Telegram `/pair`、iOS/Android 节点控制）
+新增 Grok (xAI) 作为 Web 搜索提供商
+Gateway 新增 Agent 管理 RPC 方法（create/update/delete）
+Web UI 聊天历史新增 Compaction 分隔线显示
+Agent 信封新增运行时 Shell 信息
+新增 `OPENCLAW_HOME` 环境变量支持自定义路径</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Telegram强化引号解析，避免嵌套回复误分类和QUOTE_TEXT_INVALID错误
-Telegram修复topic thread ID过期导致的消息发送失败问题
-Telegram markdown spoilers改用`&lt;tg-spoiler&gt;`标签渲染
-Telegram命令注册限制100条，避免BOT_COMMANDS_TOO_MUCH错误
-Telegram DM allowFrom匹配逻辑修复，优先匹配用户ID
-Web UI聊天刷新改为平滑滚动到最新消息，抑制手动刷新时新消息徽章闪烁
-模型故障转移新增HTTP 400错误处理，支持自动降级
-修复提及&quot;context overflow&quot;时误触发上下文溢出检测的问题
-修复compaction后agent记忆丢失问题，transcript写入现在保留Pi session parentId链
-修复多agent会话的usage发现功能
-Agent新增上下文溢出预防护机制，限制过大工具结果
-子agent/compaction通知计时稳定性优化
-Cron任务调度与交付可靠性增强
-Cron工具参数解析增强，支持LLM省略job包装的情况
-Gateway/CLI在bind=lan模式下使用LAN IP生成探测URL和控制面板链接
-修复2026.2.2以来hooks打包问题（tsdown迁移后遗症）
-路由配置改为每条消息刷新，避免绑定变更需重启
-Exec approvals命令显示改为等宽字体，提升安全审核体验
-Config限制maxTokens不超过contextWindow，防止无效模型配置
-Thinking模式新增对github-copilot/gpt-5.2-codex和gpt-5.2的支持
-Discord支持forum/media线程创建消息和路由增强
-修复Windows驱动器路径解析与工具元数据缩短问题
-Memory/Voyage embeddings设置优化，改进检索效果
-Memory/QMD模型缓存跨agent复用，避免重复下载
-媒体理解新增.caf音频格式转录支持
-State目录支持OPENCLAW_STATE_DIR配置设备身份和画布存储路径</p></div>
+    <div class="detail-card"><p>修复 Telegram 引号解析、保卫上下文、避免嵌套回复误分类
+修复 Telegram 过时主题线程 ID 的主动发送恢复机制
+修复 Telegram Markdown spoiler 标签渲染
+修复 Telegram 命令注册数量限制（截断至 100 条）
+修复 Telegram DM allowFrom 匹配逻辑（优先用户 ID）
+修复 Web UI 聊天刷新滚动和消息徽章闪烁问题
+修复 Web 搜索缓存键和 Grok 内联引用参数传递
+修复 Perplexity 模型 ID 规范化问题
+HTTP 400 错误纳入自动故障转移范围
+修复对话提及&quot;上下文溢出&quot;时的误报检测
+修复 Compaction 后 Pi session parentId 链丢失问题
+修复多 Agent 会话 usage 发现问题
+修复上下文溢出导致 Agent 崩溃（预截断工具结果）
+修复 Subagent/compaction 广播计时和指标保持
+修复 Cron 调度和投递可靠性
+修复 Cron 参数展平问题
+修复 Gateway/CLI LAN 模式 IP 探测链接
+修复 tsdown 迁移导致的 hooks 失效问题
+修复路由绑定在消息处理时动态刷新
+修复 API key/token 的嵌入换行符清理
+修复 `maxTokens` 超出 contextWindow 的配置校验
+修复 Copilot 模型思考深度等级支持
+修复 Discord 论坛/媒体线程创建路由
+修复 `OPENCLAW_HOME` 路径解析和 Windows 驱动器处理
+修复 Voyage embeddings input_type 设置
+修复 QMD 默认模型缓存跨 Agent 重用
+修复 .caf 音频附件识别
+修复状态目录路径对 OPENCLAW_STATE_DIR 的支持</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

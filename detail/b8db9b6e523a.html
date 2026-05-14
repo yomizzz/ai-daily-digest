@@ -299,20 +299,41 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Control UI: 新增复制为Markdown功能，带错误反馈；移除旧版列表视图
-TUI: 代码块语法高亮、会话选择器增强（标题/模糊搜索/时间/预览）、可搜索模型选择器、输入历史
-ACP: 新增IDE集成命令和交互式调试工具
-Skills: 下载安装支持OS过滤选项、新增本地sherpa-onnx-tts语音技能
-Memory: 混合BM25+向量搜索、SQLite嵌入缓存、OpenAI批量索引（默认启用/可并行）、Gemini嵌入支持、详细日志
-Browser: 工具/CLI快照配置默认值
-新增Nostr频道插件（资料管理+引导）、Matrix迁移至新SDK（E2EE）、Slack HTTP webhook模式、Telegram转发消息上下文增强
-Discord: `/skill`全局可用，命令超限回退至`/skill`
-Zalouser插件、BlueBubbles插件（默认禁用）
-插件系统：清单配置验证、内存槽位选择器、频道元数据驱动UI、可选工具白名单、自动启用bundled插件
-Gateway: `/v1/responses` API（文件/图片输入、工具选择、输出限制）
-Usage: `/usage cost`汇总和macOS菜单成本图表
-Security: 对&lt;=300B模型无沙箱+Web工具组合发出安全警告
-Exec: 主机/安全/请求路由</p></div>
+    <div class="detail-card"><p>Control UI：添加复制为Markdown功能（带错误反馈）
+Control UI：移除旧版列表视图
+TUI：添加代码块语法高亮
+TUI：会话选择器支持派生标题、模糊搜索、相对时间和消息预览
+TUI：添加可搜索模型选择器
+TUI：添加提交消息的输入历史（上下键）
+ACP：添加`clawdbot acp`命令支持IDE集成
+ACP：添加`clawdbot acp client`交互式调试工具
+Skills：下载安装支持操作系统过滤
+Skills：新增本地sherpa-onnx-tts语音合成技能
+Memory：添加混合BM25+向量搜索（FTS5），支持加权合并和回退
+Memory：添加SQLite嵌入缓存加速重索引
+Memory：添加OpenAI批量索引功能（默认启用）
+Memory：支持并行OpenAI批量索引（默认并发数2）
+Memory：添加Gemini嵌入提供者
+Memory：添加verbose日志和批量状态着色
+Browser：允许配置快照默认值
+Nostr：新增Nostr频道插件，支持资料管理和入职引导
+Matrix：迁移到matrix-bot-sdk，支持端到端加密
+Slack：添加Bolt HTTP接收器的HTTP webhook模式
+Telegram：丰富转发消息的规范化来源信息
+Discord：添加`/skill`命令并在超限时回退执行
+Zalouser：添加频道停靠栏元数据、状态探测和配置schema
+Plugins：要求清单嵌入配置schema和预检验证
+Plugins：新增插件槽位系统和专用内存槽位选择器
+Plugins：迁移Zalo、BlueBubbles等到统一SDK运行时
+Plugins：自动启用有配置的捆绑频道插件
+Plugins：支持npm插件同步和更新
+Plugins：允许可选代理工具并添加创作指南
+Plugins/UI：频道插件元数据驱动UI标签/图标和定时任务选项
+Gateway：添加`/v1/responses`端点支持语义流
+Gateway：扩展响应API支持文件/图片输入和工具选择
+Usage：添加成本摘要和macOS菜单成本图表
+Security：小于等于300B模型无沙箱运行时发出警告
+Exec：添加主机/安全/请求路由</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>

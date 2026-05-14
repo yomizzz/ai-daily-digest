@@ -299,11 +299,31 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>**设置向导**：重新设计安全免责声明样式，添加黄色警告横幅、标题和要点清单，模型目录加载时显示加载动画
+**AI 代理**：加强默认系统提示词，增加完成偏差、实时状态检查、弱结果恢复和验证指导
+**模型定价**：支持分层模型定价缓存目录，添加 Moonshot Kimi K2.6/K2.5 成本估算
+**会话维护**：默认启用条目上限和过期修剪，加载时自动清理过大存储防止内存溢出
+**Cron 任务**：分离运行时状态到 `jobs-state.json`，保持 `jobs.json` 稳定便于 Git 追踪
+**上下文压缩**：在上下文压缩期间发送可选的开始和完成通知
+**Moonshot Kimi**：默认使用 `kimi-k2.6`，保留 `kimi-k2.5` 兼容性；支持 `thinking.keep = &quot;all&quot;`
+**BlueBubbles 群组**：支持按群组配置系统提示，实现特定行为指导
+**插件任务**：添加分离式运行时注册机制，插件可自主管理任务生命周期
+**终端日志**：用单次正则替换迭代循环优化日志清理性能
+**QA 测试**：测试套件默认失败时退出，添加 `--allow-failures` 选项支持仅收集产物
+**Mattermost**：流式输出思考、工具调用和回复内容到单个草稿预览中</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>**Exec/YOLO**：修复安全模式下阻止 YOLO 执行脚本的回归问题
+**OpenAI Codex**：修正遗留传输配置兼容性问题
+**Anthropic 插件**：修复非 Anthropic 提供商被错误重写传输的问题
+**QQBot**：添加 SSRF 防护保护媒体上传接口
+**Gateway**：加强模板渲染会话密钥的访问控制
+**浏览器 MCP**：改进 DevTools 连接错误提示
+**网页聊天**：正确处理内联图像附件作为媒体内容
+**Discord**：仅对支持自适应思考的模型显示该选项
+**思考功能**：仅对支持模型暴露最大推理配置
+**Gateway 用量**：使用 FIFO 驱逐防止成本缓存无限增长</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

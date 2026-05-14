@@ -299,10 +299,10 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Heartbeat支持--message/--body参数手动发送消息，新增--dry-run预览payload
-MIME优先检测机制（magic bytes &gt; headers &gt; extension），确保图片/音频/视频/文档正确发送
-媒体文件根据检测到的扩展名自动重命名，确保正确的Content-Type（支持Twilio/web往返及Baileys入站保存）
-媒体文件在超过大小限制时自动重新压缩</p></div>
+    <div class="detail-card"><p>Heartbeat 支持通过 --message/--body 手动发送消息，--dry-run 预览 payload
+MIME 优先检测机制（magic bytes &gt; headers &gt; extension），确保图片/音频/视频/文档正确发送
+媒体文件自动按检测到的扩展名重命名，确保 Content-Type 正确用于 Twilio/web 往返
+更新文档并为入站媒体扩展名保留添加测试覆盖</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>

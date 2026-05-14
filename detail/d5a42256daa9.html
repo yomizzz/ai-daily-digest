@@ -299,31 +299,28 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>CLI 新增 completion 命令，支持 Zsh/Bash/PowerShell/Fish 自动补全及安装时自动配置
-CLI 新增按代理筛选的 models status 命令（--agent 参数）
-Agents 新增 Kimi K2.5 模型到合成模型目录
-Auth 将 Kimi Coding 切换到内置 provider，统一 OAuth 配置文件的邮箱格式
-Auth 新增 MiniMax OAuth 插件及 onboarding 引导选项
-Agents 更新 pi SDK/API 使用和依赖
-Web UI 新增聊天命令后自动刷新会话，优化会话显示名称</p></div>
+    <div class="detail-card"><p>CLI 新增 completion 命令（Zsh/Bash/PowerShell/Fish）及 postinstall/onboarding 时的自动配置
+CLI 支持按 agent 查看 models status（--agent 过滤器）
+合成模型目录新增 Kimi K2.5 模型
+Auth 模块支持 Kimi Coding 内置 provider 及 MiniMax OAuth 插件集成
+Web UI 在执行聊天命令后刷新会话并改进会话显示名称</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>修复媒体解析器路径提取限制，防止本地文件包含（LFI）安全漏洞
-修复网关令牌默认值错误变成字面量字符串 &quot;undefined&quot; 的问题
-修复 npm 全局安装时 Control UI 资源路径解析错误
-修复 macOS 网关发现时 stderr 管道背压问题
-修复 Telegram 非规范化 ID 的账户令牌查找和 threadId 处理
-修复 Telegram HTML 标签嵌套重叠导致的样式和链接解析问题
-修复 Telegram react 操作中数字 messageId/chatId 接收问题
-修复 Telegram 按账户使用独立代理分发器的问题
-修复 Telegram 技能命令作用域未限定到绑定代理的问题
-修复 BlueBubbles 按 messageId 防抖导致附件丢失的问题
-修复路由优先使用过期会话而非 requesterOrigin 的问题
-恢复嵌入式扩展的发现类型定义
-修复 CLI tui:dev 端口解析问题
-修复 LINE 状态命令 TypeError 错误
-修复 OAuth 刷新令牌有效时仍显示过期警告的问题</p></div>
+    <div class="detail-card"><p>安全修复：限制媒体解析器中的本地路径提取以防止本地文件包含漏洞
+Gateway 修复：防止 token 默认值变成字面量 &quot;undefined&quot;
+Control UI 修复：解决 npm 全局安装时的资源解析问题
+macOS 修复：避免 gateway 发现中的 stderr 管道背压问题
+Telegram 修复：规范化账户 token 查找、保留投递线程回退、修复 HTML 嵌套和 threadId 处理
+Telegram 修复：在 react actions 中正确接受数字 messageId/chatId
+Telegram 修复：通过 undici fetch 尊重 per-account proxy dispatcher
+Telegram 修复：将技能命令限定为每个 bot 绑定的 agent
+BlueBubbles 修复：通过 messageId 防抖保留 text+image 消息的附件
+Routing 修复：优先使用 requesterOrigin 而非过时的会话条目进行子 agent 公告投递
+Extensions 修复：恢复嵌入式扩展发现类型定义
+CLI 修复：修正 tui:dev 端口解析逻辑
+LINE 修复：解决状态命令 TypeError 错误
+OAuth 修复：在刷新令牌有效时跳过过期 token 警告</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

@@ -299,23 +299,26 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>file-transfer 插件：新增 `file_fetch`、`dir_list`、`dir_fetch`、`file_write` 工具，支持节点间二进制文件操作，带默认拒绝路径策略和 16MB 传输上限
-Gateway 性能优化：懒加载插件/运行时发现、cron、schema、sessions 和模型元数据
-Channels 流式传输：统一 streaming.mode 配置，跨 Discord、Telegram、Matrix、Slack 和 Teams
-新增 `/steer` 命令：独立于队列的会话转向控制
-新增 `/side` 命令：作为 `/btw` 的文本和原生斜杠别名
-`doctor --fix` 改进：即使存在其他验证问题也提交安全遗留迁移
-Discord 状态反应：支持 `trackToolCalls: true` 追踪后续工具进度
-Gateway 配置：无效配置现在失败关闭，`doctor --fix` 负责修复
-QA 测试：新增 Mantis Discord 和 Slack 实时传输 QA 运行器
-插件安装：支持手动安装可选官方插件和外部 Codex 插件
-Plugins/CLI 更新：包含包依赖状态，`@beta` 更新优先
-WhatsApp 支持：新增 WhatsApp Channel/Newsletter 目标</p></div>
+    <div class="detail-card"><p>文件传输插件：新增 file_fetch、dir_list、dir_fetch、file_write 等 Agent 工具，支持节点间二进制文件操作，默认拒绝路径策略，16MB 单次传输上限
+统一流式进度模式：Discord、Telegram、Matrix、Slack、Teams 支持 auto 进度标签和共享进度配置
+`/steer` 命令：会话空闲时可独立引导当前运行而不开启新轮次
+`/side` 命令：作为 `/btw` 侧问的文本和原生斜杠命令别名
+doctor --fix 改进：即使存在无关验证问题也会提交安全遗留迁移
+Discord 状态反应：支持通过 `trackToolCalls: true` 追踪后续工具进度
+懒加载性能优化：运行时发现、关闭钩子、计划任务、通道配置 schema、维护定时器等延后至就绪后加载
+WhatsApp Channel/Newsletter 支持
+Mantis Discord 烟雾测试 runner
+Slack 实时传输 QA runner
+手动安装可选官方插件（含 ClawHub 诊断和 npm 回退）
+插件列表 JSON 输出包含依赖安装状态</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>修复 `doctor --fix` 在其他配置问题下无法清理遗留键的问题（#76798）
-修复 Discord 传输降级和事件循环饥饿的状态显示（#76327）</p></div>
+    <div class="detail-card"><p>修复 macOS LaunchAgent 升级问题
+阻止无效配置在启动时自动恢复（现改为关闭失败）
+跳过可选媒体/PDF 工具工厂以避免不必要的热路径开销
+修复遗留配置键（如 agents.defaults.llm）清理问题
+ClawHub 429 错误增加重置窗口提示</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

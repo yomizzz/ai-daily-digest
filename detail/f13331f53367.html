@@ -299,29 +299,11 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>**Ollama 一站式配置**：新增 Local/Cloud + Local 模式设置向导、浏览器云登录、推荐模型和云模型处理
-**OpenCode Go provider**：新增 OpenCode Go 提供商，统一 Zen 和 Go 的设置流程，共享密钥存储
-**多模态记忆索引**：支持通过 Gemini `gemini-embedding-2-preview` 对图像和音频进行可选索引
-**Gemini 记忆搜索增强**：添加 `gemini-embedding-2-preview` 支持，可配置输出维度和自动重新索引
-**iOS 欢迎屏幕**：新增实时代理概览欢迎页，连接时自动刷新，重构为停靠工具栏替代浮动控件
-**iOS 小屏适配**：主页脚手架适配小屏手机，聊天在主会话而非 `ios` 会话中打开
-**macOS 聊天模型选择器**：新增模型选择器，持久化思考级别选择，强化会话模型同步
-**macOS 网关认证检测**：检测远程网关是否需要共享认证令牌，指导获取位置
-**Discord 线程归档配置**：添加 `autoArchiveDuration` 配置，支持 1 小时/1天/3天/1周归档时长
-**iOS TestFlight 流程**：新增本地 beta 发布流程，Fastlane 支持和 watch-app 归档修复
-**ACP 会话恢复**：支持 `resumeSessionId` 参数，让 ACP 会话可恢复现有 Codex 对话
-**节点待处理工作队列**：添加内存中待处理工作队列原语和唤醒助手复用
-**Git 状态忽略**：忽略网关生成的 `.dev-state` 文件，减少仓库噪音
-**CLI 环境标记**：子命令环境标记 `OPENCLAW_CLI` 以便检测 CLI 启动
-**OpenRouter 新模型**：添加 Hunter Alpha 和 Healer Alpha 免费隐形模型入口</p></div>
+    <div class="detail-card"><p>摘要生成失败</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>**文本消毒**：清除用户可见文本中的模型控制令牌（`&lt;|...|&gt;` 和全角 `&lt;｜...｜&gt;`），防止 GLM-5 和 DeepSeek 内部标记泄露
-**iOS 前台恢复**：后台 Socket 销毁后前台返回时立即重连，不再等待后续唤醒
-**网关认证令牌安全**：将会话认证令牌改为会话级浏览器存储，替代长期 localStorage，按网关 URL 隔离
-**macOS LaunchAgent 重启**：修复 macOS launchd 显式重启时保持 LaunchAgent 注册，自重启通过分离辅助进程交接
-**Cron 隔离传递**：收紧 Cron 作业隔离传递，禁止通过临时发送或备用主会话通知</p></div>
+    <div class="detail-card"><p>摘要生成失败</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

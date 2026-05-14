@@ -299,24 +299,29 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Android 聊天 UI 改进流式消息传递和 Markdown 渲染质量，支持更好的 GitHub 风格 Markdown
-Android 启动性能优化：延迟前台服务启动、添加启动宏基准测试和性能 CLI 脚本
-移动端小屏幕添加发送按钮堆叠布局改善可用性
-心跳配置新增 `agents.defaults.heartbeat.directPolicy` 选项，替代原有 DM 开关
-配置系统提醒代理在编辑前调用 `config.schema` 避免配置猜测</p></div>
+    <div class="detail-card"><p>Android 聊天 UI 改进流式消息传递和 Markdown 渲染质量
+Android 启动性能优化：延迟前台服务启动并添加启动基准测试脚本
+聊天编写按钮在小屏幕上采用移动端堆叠布局
+心跳配置用 directPolicy 策略替换原有 DM 开关，支持全局和单代理配置
+品牌标识全面替换为 `ai.openclaw`（文档、iOS 界面、脚本及 CLI 测试）
+提醒 agents 在配置编辑前调用 `config.schema` 以避免猜测
+子代理完成通知调度重构为显式队列/直发/回退状态机
+Telegram webhook 改为回调模式 JSON 处理，防止请求挂起
+Slack 线程新增 `session.parentForkMaxTokens` 配置限制父会话继承大小
+Cron 消息支持按 `accountId` 隔离路由，fallback 到发送代理绑定的渠道账号
+网关消息发送通过 RPC 传递 `agentId`，解决非默认代理媒体上传失败
+后续回复支持同渠道回退调度，跨渠道回退仍被阻止
+Discord 启动时提前捕获网关错误事件，防止未捕获崩溃
+Slack 文件消息在媒体下载失败时使用文件名占位符回退</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Telegram Webhook 改为回调模式 JSON 处理，防止请求超时和更新丢失
-Slack 修复超大父会话导致线程会话静默失效问题，新增 `session.parentForkMaxTokens` 配置
-Cron 多账户路由修复，显式 `delivery.accountId` 优先于全局默认值
-Gateway 媒体根修复，非默认 agent 工作区媒体发送不再报 `LocalMediaAccessError`
-跨平台路由同频道回退修复，跟进回复不再因临时源适配器故障被丢弃
-Cron 重复防护修复，分别跟踪尝试投递与确认投递，避免重复发送
-LINE 生命周期修复，防止 webhook 启动被误读为通道退出导致重启循环
-Discord Gateway 修复，在生命周期监听器附加前捕获启动错误
-Discord 消息解析修复，保留嵌入的 title 和 description 回退文本
-Slack 媒体下载失败时提供文件名占位符回退，避免附件消息静默丢失</p></div>
+    <div class="detail-card"><p>子代理通知在冷/陈旧插件注册状态下可正确解析出站通道
+Telegram 发送无 `message_id` 时正确标记为投递失败
+LINE 保持 `startAccount` 挂起状态，防止 webhook 启动被误读为即时退出
+Discord 嵌入消息的 title 和 description 不再被静默丢弃
+Cron 防止重复发送：当投递已尝试时不再发送主会话摘要
+Slack 文件消息在媒体下载失败时不静默丢弃</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

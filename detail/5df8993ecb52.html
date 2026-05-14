@@ -299,21 +299,26 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>**插件系统正式成为一等公民**：新增插件加载器、CLI 管理命令（install/list/info/enable/disable/doctor）及语音通话插件（Twilio）
-**配置模块化**：`$include` 指令支持分拆配置文件，提升配置可维护性
-**Agents 内存优化**：预压缩内存刷新机制，在自动压缩前自动存储持久化记忆
-**模型选择器**：Auto-reply 添加紧凑型 `/model` 选择器，Control UI 新增模型预设（MiniMax M2.1、GLM 4.7、Kimi）
-**多新提供商支持**：新增 MiniMax M2.1 Lightning、Moonshot AI (Kimi K2)、GLM 4.6/4.7 等认证选项和配置示例
-**API 密钥复用**：自动检测并提示复用 Moonshot/MiniMax/Z.AI/Gemini/Anthropic/OpenCode 的已有密钥
-**安装器改进**：替换 git patch 为 JS 内置修补器（兼容 npm/pnpm/bun），支持非交互安装（`CLAWDBOT_NO_ONBOARD=1`）
-**Discord 功能增强**：消息工具新增频道/类别管理操作
-**Cron 任务支持模型覆盖**：`--model` 标志可用于定时任务管理
-**工具重命名**：bash 工具重命名为 exec（保留配置别名）
-**实验性功能**：`apply_patch` 工具支持多文件编辑（需开启 tools.exec.applyPatch）</p></div>
+    <div class="detail-card"><p>插件系统：新增插件加载器、CLI管理命令（install/list/info/enable/disable/doctor）及 Voice Call 插件
+配置：支持模块化 `$include` 指令，可拆分配置文件
+代理：自动预压缩内存刷新，确保压缩前持久化记忆
+代理：新增 `apply_patch` 工具支持多文件编辑（实验性）
+工具：bash 工具更名为 exec（配置别名兼容）
+CLI：新增 `/model` 选择器，支持按提供商筛选模型
+CLI/Docs：新增 MiniMax M2.1 Lightning、MiniMax M2.1、MiniMax Lightning 认证选项
+CLI/Docs：新增 Moonshot AI（Kimi K2）和 Z.AI（GLM 4.7）认证选项及配置示例
+CLI/Docs：新增 Cerebras GLM 4.6/4.7 配置示例
+Control UI：新增 Config 页签模型预设（MiniMax M2.1、GLM 4.7、Kimi）一键配置
+配置：新增按 DM 历史限制覆盖（`dmHistoryLimit`）
+Discord：消息工具新增频道/分类管理操作
+Cron：新增 `--model` 参数支持
+技能：新增 `skill-creator` 引导创建和打包技能
+安装器：支持 `CLAWDBOT_NO_ONBOARD=1` 非交互安装，新增 `--install-method` 参数
+文档：新增插件快速入门指南及 Voice Call 插件文档</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>（日志内容被截断，无法提取 Bug 修复部分）</p></div>
+    <div class="detail-card"><p>Control UI：修复平板/手机端导航栏横向滚动显示问题</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

@@ -299,11 +299,30 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Context Engine 插件接口：新增 `ContextEngine` 插件槽位，支持完整生命周期钩子，实现上下文管理策略可插拔（#22201）
+ACP 持久化频道绑定：为 Discord 和 Telegram topic 添加持久化绑定存储和路由解析，支持 CLI 管理（#34873）
+Telegram topic 绑定增强：支持 Unicode dash 前缀、`--thread here|auto` 绑定、in-topic 确认置顶及操作按钮（#36683）
+Telegram 主题路由：支持论坛群组和 DM 主题中每个主题独立的 `agentId` 覆盖和隔离会话（#33647）
+Web UI 国际化：新增西班牙语 (`es`) 区域支持，包含语言检测和切换器（#35038）
+Web 搜索向导：配置向导中添加提供商选择步骤和完整列表，支持 SecretRef 模式（#34009）
+Web 搜索提供商：Perplexity 切换为 Search API，新增语言/区域/时间过滤（#33822）
+Gateway 认证：支持 SecretRef 配置 `gateway.auth.token`，带 auth-mode 校验（#35094）
+容器扩展依赖：新增 `OPENCLAW_EXTENSIONS` 环境变量，支持容器镜像预装扩展（#32223）
+插件系统上下文：新增 `prependSystemContext` 和 `appendSystemContext` 字段，优化提示词缓存（#35177）
+插件钩子策略：新增 `allowPromptInjection` 配置选项，运行时校验钩子名称（#36567）
+压缩生命周期钩子：新增 `session:compact:before/after` 事件，支持自动化响应压缩执行（#16788）
+压缩后置上下文：新增 `agents.defaults.compaction.postCompactionSections` 配置（#34556）
+TTS 端点支持：新增 OpenAI 兼容 `messages.tts.openai.baseUrl` 配置和路由（#34321）
+Slack DM 反馈：新增 `channels.slack.typingReaction` 配置，支持 Socket Mode 反应式状态（#19816）
+Discord 机器人过滤：新增 `allowBots: &quot;mentions&quot;` 选项，仅接受提及机器人的消息（#35693）
+工具结果截断：改用 head+tail 截断策略，保留重要尾部诊断信息（#20076）
+Cron 任务快照：normalization 期间跳过备份，仅用户操作时创建快照（#35234）
+CLI SecretRef：只读模式下安全降级，状态检查不中断（#37023）
+Diffs 工具指导：恢复简短提示词，详细说明移至配套技能（#36904）</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>无</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

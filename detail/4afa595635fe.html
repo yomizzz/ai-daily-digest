@@ -303,10 +303,10 @@
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>还原 `doctor --fix` 对 `openai-codex/*` OAuth 路由的错误修改，避免破坏 OAuth-only GPT-5.5 配置
-清理请求头中的第三方符号元数据，防止 SDK 和受保护 fetch 路径误拒有效的插件请求
-规范化调试代理捕获的请求头字典，防止符号元数据导致 replay 失败
-限制 Web fetch 超时后的调度器清理，确保超时应返回工具错误而非保持 Gateway 活跃</p></div>
+    <div class="detail-card"><p>回滚 doctor --fix 对 openai-codex/* OAuth 路由的错误重写，避免破坏 GPT-5.5 OAuth-only 配置
+移除第三方符号元数据以防止受保护 fetch 路径错误拒绝有效插件请求
+标准化 debug-proxy 捕获的请求头，防止符号元数据导致重放失败
+修复请求超时时的调度器清理，防止 Gateway 工具通道残留</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

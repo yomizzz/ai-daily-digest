@@ -299,31 +299,38 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>CLI：新增 `openclaw logs --local-time` 命令，支持以本地时区显示日志时间戳并包含时区偏移量
-Telegram：Blockquotes 现渲染为原生 `&lt;blockquote&gt;` 标签而非移除
-Config：避免重写 `maxTokens` 类字段，防止配置快照验证往返失败
-Hooks：`POST /hooks/agent` 默认拒绝 sessionKey 覆盖，强化 hook 上下文安全性
-Gateway：提升 WebSocket payload 限制，支持高达 500 万字节的图像附件传输
-Gateway：重启前自动排空活动会话，防止消息丢失
-Gateway：安装时自动生成 auth token，避免 launchd 重启循环
-Cron：新增隔离任务认证、计时器重设、错误隔离等多项调度可靠性改进
-WhatsApp：支持 Markdown 粗体/删除线格式转换，允许媒体仅发送模式</p></div>
+    <div class="detail-card"><p>CLI：新增 `openclaw logs --local-time` 命令，以本地时区显示日志时间戳
+Telegram：支持将块引用渲染为原生 `&lt;blockquote&gt;` 标签
+配置：避免对 `maxTokens` 等字段进行脱敏，防止配置验证往返失败
+WhatsApp：支持 Markdown 粗体/删除线转换为 WhatsApp 格式
+WhatsApp：支持纯媒体消息发送并规范化前导空负载
+Telegram：处理模型选择器编辑消息时无文本的情况
+日志/浏览器：默认日志路径不可用时回退到 `os.tmpdir()/openclaw`</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>安全：修复 Nostr 个人资料 API 未认证远程配置篡改漏洞
-安全：移除捆绑的恶意 soul-evil hook
-安全/Sandbox：隔离 skill 同步目的地至沙箱 skills/ 目录，防止路径遍历
-安全/Web 工具：默认将浏览器内容视为不可信，移除 transcript 中的工具结果详情以降低提示注入风险
-安全/Hooks：强化 webhook 和设备令牌验证，增加 per-client 限流机制
-安全/浏览器：HTTP 循环路由需认证，修复无认证时的自动 token 生成
-会话/Gateway：强化路径解析并拒绝不安全的 session ID，防止目录遍历
-日志/浏览器：修复 `/tmp/openclaw` 不可用时的临时文件回退路径
-WhatsApp：设置语音消息默认 MIME 类型，规范化空白 payload 处理
-Telegram：修复 model picker editMessageText 中无文本消息的处理
-Cron：修复任务跳过执行、重复触发、one-shot 任务重启后重放等多个调度问题
-Cron：修复心跳调度器在错误后stall及重跑循环问题
-Gateway：修复控制面板资产在全局安装时加载失败问题</p></div>
+    <div class="detail-card"><p>安全：修复 Nostr 个人资料 API 未授权远程配置篡改漏洞
+安全：移除捆绑的 soul-evil hook
+安全/Sandbox：将镜像技能同步目标限制在沙箱 skills/ 目录
+安全/Web工具：默认将浏览器/网页内容视为不可信，减少提示注入重放风险
+安全/Hooks：加强 webhook 和设备令牌验证，添加每客户端认证失败限流
+安全/浏览器：loopback 浏览器控制 HTTP 路由需要认证
+会话/Gateway：加强会话路径解析，拒绝不安全的会话 ID/文件路径
+Gateway：提高 WebSocket 负载/缓冲区限制，支持 500 万字节图片附件
+Gateway：重启前排空活跃轮次，防止消息丢失
+Gateway：安装时自动生成认证令牌，防止 launchd 重启循环
+Gateway：防止认证配置中出现 undefined/缺失令牌
+Gateway：处理关闭时 stdout/stderr 的异步 EPIPE 错误
+Gateway/Control UI：修复通过 symlink 型 Node 管理器全局安装时仪表盘资源丢失问题
+Cron：使用请求的 agentId 进行隔离作业认证解析
+Cron：防止 nextRunAtMs 推进时作业跳过执行
+Cron：将 agentId 传递给 runHeartbeatOnce 用于主会话作业
+Cron：onTimer 触发时重新设置计时器，防止作业执行中被中断
+Cron：防止多作业同时触发时重复执行
+Cron：隔离调度器错误，防止单个错误作业影响所有作业
+Cron：防止跳过的/错误的运行后重启时一次性作业重新触发
+心跳：防止意外运行错误导致调度器停滞，避免 requests-in-flight 跳过后立即重跑循环
+WhatsApp：Baileys 未提供时为语音消息设置默认 MIME 类型</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

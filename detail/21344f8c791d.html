@@ -299,25 +299,27 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>CLI/backup: 新增 `openclaw backup create` 和 `openclaw backup verify` 命令，支持配置备份、归档验证及危险操作中的备份提醒
-Talk mode: 新增 `talk.silenceTimeoutMs` 配置项，允许自定义静默超时时间后再自动发送
-TUI: 从当前工作区自动推断活动代理，同时保留显式的 `agent:` 会话目标
-Tools/Brave web search: 新增 `tools.web.search.brave.mode: &quot;llm-context&quot;` 选项，调用 Brave LLM Context 端点并返回带来源的摘要片段
-ACP/Provenance: 新增 ACP 入口溯元数据和收据注入功能（`openclaw acp --provenance off|meta|meta+receipt`）
-CLI/install: `openclaw --version` 输出现包含 git commit hash
-Tools/web search: 规范化提供商顺序，多键自动检测优先选择 Grok
-macOS/onboarding: 远程模式新增网关令牌字段，自动保留现有非明文配置值</p></div>
+    <div class="detail-card"><p>CLI新增 `openclaw backup create` 和 `openclaw backup verify` 命令，支持本地状态归档和仅配置备份模式
+macOS onboarding新增远程网关令牌字段，保留现有非明文配置值并警告不匹配的令牌
+Talk模式新增 `talk.silenceTimeoutMs` 配置项，允许自定义静默超时时间
+TUI支持从当前工作区自动推断活动代理，同时保留显式 `agent:` 会话目标
+Brave搜索新增 `tools.web.search.brave.mode: &quot;llm-context&quot;` 选项，支持LLM上下文端点和来源元数据
+CLI版本信息新增显示git commit hash
+ACP新增可选的入口来源元数据和收据注入功能（`openclaw acp --provenance`）
+Web搜索提供商排序改为字母顺序，多键自动检测优先选择Grok
+文档更新搜索免费积分详情和当前计划名称</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>macOS launchd restart: 修复更新后 LaunchAgent 服务被禁用导致重启卡住的问题
-macOS app/chat UI: 修复浏览器代理路由、纯文本粘贴语义、清理助手调试痕迹、权限状态刷新及 cron 解析问题
-Android/Play: 移除自更新、后台位置、屏幕录制和后台麦克风权限，清理遗留位置配置
-Telegram/DM routing: 修复同一 DM 触发重复回复的问题
-Cron/Telegram announce delivery: 修复纯文本目标虚假报告已送达的问题
-Matrix/DM routing: 为损坏的 `m.direct` homeservers 添加安全回退机制，修复房间绑定代理选择问题
-Feishu/plugin onboarding: 修复安装后立即重新提示下载的问题
-Plugins/channel onboarding: 优先使用捆绑通道插件，避免被重复的 npm 安装覆盖</p></div>
+    <div class="detail-card"><p>修复macOS更新后LaunchAgent服务重启卡住的问题
+修复macOS应用聊天UI的代理路由、粘贴语义、权限状态刷新和异常数据处理问题
+清理Android应用的冗余权限和后台服务，仅保留前台数据同步
+修复Telegram DM按代理去重而非按会话键去重导致的重复回复问题
+修复Cron/Telegram定时任务的虚假投递状态问题
+修复Matrix DM检测的fallback逻辑、房间绑定优先级和代理选择问题
+修复飞书插件安装后缓存未清理导致的重复下载提示问题
+修复channel onboarding中npm安装版本覆盖捆绑插件的问题
+修复配置写入后密钥解析快照保持完整性的问题</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

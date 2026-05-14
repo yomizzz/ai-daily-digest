@@ -299,26 +299,27 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Codex Computer Use 新增状态/安装命令、市场发现和 MCP 安全检查，支持桌面控制
-DeepInfra 加入内置提供商，支持模型发现、媒体生成/编辑、TTS 和嵌入
-Tencent Yuanbao 和 QQBot 扩展群聊、流媒体、媒体上传等渠道覆盖
-插件和模型目录改用清单优先元数据，提升 Gateway 启动性能
-Docker sandbox 新增 GPU passthrough，支持在沙盒中运行本地 GPU 工作负载
-iOS/Android 新增节点存活状态协议事件，断连后保持持久元数据
-Gateway 新增运营者管理的出站代理路由，支持严格 HTTP 转发代理验证
-Matrix 新增实时审批场景，支持 exec 元数据、chunked 回退、插件审批等
-插件 SDK 新增共享通道路由规范化和解析目标类型等工具
-Matrix 流媒体默认推送工具进度更新到实时预览</p></div>
+    <div class="detail-card"><p>**Codex Computer Use 配置**：新增 status/install 命令、市场发现和 fail-closed MCP 检查，支持桌面控制
+**DeepInfra 提供商集成**：支持模型发现、媒体生成编辑、TTS、嵌入和入职策略
+**Tencent Yuanbao/QQBot 扩展**：新增 QQ 群聊、流式传输、媒体上传和管道重构
+**Docker GPU 直通**：为沙箱容器添加 `sandbox.docker.gpus` 选项，支持本地 GPU 工作负载
+**iOS/Android 节点存活事件**：后台节点可标记为最近活跃，无需保持连接状态
+**聊天附件支持**：非图片附件可通过 `chat.send` 以代理可读路径方式暂存
+**出站代理路由**：新增 operator 管理的出站代理支持，包含严格验证和循环绕过
+**Matrix 流式工具进度**：实时预览默认显示工具进度更新，支持配置关闭
+**插件 SDK 通道路由**：暴露共享通道路由规范化和解析逻辑
+**模型目录别名/抑制**：支持通过 manifest 声明模型别名和抑制规则
+**多提供商迁移**：Qianfan、小米、NVIDIA、Cerebras、Mistral、Moonshot、DeepSeek、腾讯 TokenHub、StepFun、BytePlus、Volcano Engine 等提供商目录迁移至插件 manifest</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Telegram 启动和消息发送可靠性修复
-Slack socket 和媒体卡顿问题修复
-Gateway 启动预热机制修复
-Session 和历史记录默认值修复
-Windows 重启交接问题修复
-非图片附件处理修复，保留不支持的 RPC 路径而非静默丢弃
-Codex Computer Use MCP 服务器检查修复</p></div>
+    <div class="detail-card"><p>**Telegram**：修复启动和消息发送问题
+**Slack**：修复 socket 和媒体传输停滞问题
+**Gateway**：修复启动预热、会话/历史默认值和更新同步问题
+**Windows**：修复重启交接问题
+**Docker GPU 支持**：修复沙箱内本地 GPU 工作负载运行问题（#57976）
+**聊天附件**：修复 RPC 附件路径被静默丢弃的问题（#48123）
+**Codex MCP**：修复 Computer Use 模式启动前的 MCP 服务器检查（#72094）</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

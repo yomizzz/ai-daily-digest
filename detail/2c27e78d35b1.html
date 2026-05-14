@@ -299,27 +299,29 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Anthropic Claude Opus 4.7：新增默认模型选择、opus别名、Claude CLI默认设置及图像理解功能
-Google TTS：新增Gemini文本转语音支持，包括语音选择、WAV和PCM电话输出
-Control UI：新增Model Auth状态卡片，显示OAuth令牌健康度和提供商速率限制压力
-Memory/LanceDB：为持久内存索引新增远程对象存储云存储支持
-GitHub Copilot：新增Copilot嵌入提供商用于记忆搜索，支持远程覆盖和令牌刷新
-Agents/local models：新增实验性配置`localModelLean`以精简弱本地模型的工具集</p></div>
+    <div class="detail-card"><p>Anthropic/Claude Opus 4.7：新增默认模型选择、opus别名、Claude CLI默认配置及图像理解支持
+Google/TTS：集成 Gemini 语音合成，支持语音选择、WAV和PCM输出
+Control UI：添加 Model Auth 状态卡片，显示OAuth令牌健康和速率限制压力
+Memory/LanceDB：新增云存储支持，支持远程对象存储替代本地磁盘
+GitHub Copilot：添加 Copilot 嵌入提供程序用于记忆搜索，支持插件复用传输
+Agents/local models：新增 experimental.localModelLean 配置，减少本地模型工具负载
+文档展示：添加可扫描英雄区、章节跳转链接和响应式视频网格
+QA/Matrix：分离 Matrix 实时QA到独立 runner</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Gateway/tools：拒绝名称与内置工具冲突的客户端工具定义，防止信任继承
-Gateway/webchat：强制webchat音频嵌入路径遵守localRoots边界限制
-Agents/replay recovery：将特定401错误归类为replay-invalid，提供正确的重置指导
-Matrix/pairing：阻止DM配对存储条目授权房间控制命令
-Matrix/commands：房间路径跳过DM配对存储读取，提升安全性
-Docker/build：修复pnpm v10+虚拟存储布局下的原生绑定检测
-Matrix/E2EE：为无密码令牌认证机器人优化启动引导流程
-Cron/announce：修复`NO_REPLY`结尾时静默哨兵泄漏摘要文本问题
-Plugins/bundled channels：按捆绑根分区隔离缓存，防止`OPENCLAW_BUNDLED_PLUGINS_DIR`切换时状态混乱
-Packaging/plugins：清理捆绑插件依赖中的测试框架，防止发布tarball膨胀
-Agents/context + Memory：优化启动预算、限制`memory_get`摘录大小，防止长会话上下文溢出
-Memory-core/dreaming：会话记录落地前跳过梦境叙事副本，防止污染会话摄入</p></div>
+    <div class="detail-card"><p>Gateway/tools：修复本地 MEDIA 工具信任边界，防止客户端工具名与内置工具冲突（400错误）
+Agents/replay：修复 401 错误正确分类为 replay-invalid，提供 /new 会话重置指导
+Gateway/webchat：修复 webchat 音频嵌入路径的 localRoots 限制
+Matrix/pairing：阻止 DM 配对存储条目授权房间控制命令
+Docker/build：修复 pnpm v10+ 虚拟存储布局的原生绑定检测
+Matrix/E2EE：修复密码less令牌认证机器人的保守启动引导
+Cron/announce：修复 NO_REPLY 结尾的混合内容提醒回复泄露
+Plugins/bundled channels：按捆绑根分区通道缓存，防止切换时重用状态
+Packaging/plugins：清理捆绑插件测试依赖，保持发布包精简
+Agents/Memory：优化启动提示预算和记忆摘录，减少长会话上下文
+Matrix/commands：跳过 DM 配对存储读取，简化房间认证路径
+Memory-core/dreaming：修复引导前跳过梦境叙事转录，防止会话摄入污染</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

@@ -299,8 +299,9 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>新增 `cwd` 选项，使外部回复命令可在正确工作目录中运行
-新增文件日志功能，默认日志文件为 `/tmp/warelay/warelay.log`，可通过配置设置日志级别</p></div>
+    <div class="detail-card"><p>命令回复配置新增 `cwd` 选项，支持外部命令在指定工作目录执行
+新增可配置的文件日志功能，默认日志路径为 `/tmp/warelay/warelay.log`，可通过 `logging.level` 配置日志级别
+命令自动回复现在传递 `{ timeoutMs, cwd }` 参数给命令运行器，API 更新需支持选项对象</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>

@@ -299,34 +299,30 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Hooks 系统：新增完整的 hooks 机制，含捆绑 hooks、CLI 工具和文档支持
-媒体理解：新增入站媒体（图像/音频/视频）理解功能，支持 provider 和 CLI 回退方案
-Zalo 插件：新增 Zalo Personal 插件并统一插件 channel 目录
-跨平台会话链接：新增 `session.identityLinks` 支持 DM 会话跨平台关联
-Vercel AI Gateway 集成：新增认证选项和引导流程更新
-Web 搜索增强：新增 `country`/`language` 参数支持
-捆绑插件：默认禁用捆绑插件并支持已安装版本覆盖
-web_fetch 改进：使用 Readability 提升内容提取，添加 Firecrawl 回退和 Chrome 风格请求头
-exec 工具：新增 PTY 交互支持、tmux 风格快捷键、进程提交和光标响应
-用户技能命令：新增用户可直接调用的技能命令注册机制
-健康检查增强：新增按代理会话摘要和账户级健康详情
-钩子包安装：支持 npm/path/zip/tar 多种格式安装
-配置改进：支持环境变量替换、启动时验证配置合法性
-目录统一：跨 channel 和插件 channel 统一 `clawdbot directory` 命令
-Control UI 增强：支持从 UI 删除会话
-Telegram 改进：默认最小反应级别、群组中回复链消息绕过提及限制
-iMessage 增强：支持远程附件（VM/SSH 部署）
-消息功能：出站文本/媒体自动镜像到会话转录、消息目录缓存实时刷新
-Cron 隔离：每次运行使用全新会话 ID 防止上下文堆积
-文档更新：新增帮助中心、Node/npm PATH 指南</p></div>
+    <div class="detail-card"><p>Hooks 系统：新增 hooks 系统（含捆绑 hooks、CLI 工具和文档），支持 npm/path/zip/tar 安装
+媒体理解：新增入站媒体理解功能（图片/音频/视频），支持 provider 和 CLI 回退
+Zalo Personal 插件：新增 Zalo 个人插件并统一插件渠道目录
+会话身份链接：新增 `session.identityLinks` 用于跨平台 DM 会话链接
+Vercel AI Gateway：新增认证选择和引导更新
+网页搜索：新增 `country`/`language` 参数支持
+PTY 支持：为 exec 工具添加 PTY 支持，支持交互式会话
+进程工具：新增 tmux 风格的 `send-keys`、bracketed paste 和 `submit` helpers
+PTY 光标：响应 PTY 光标位置查询以解锁交互式 TUI
+技能命令：支持用户可调用的技能命令
+Telegram：默认反应级别设为 minimal，启用反应通知；回复链消息可绕过群组提及限制
+iMessage：新增 VM/SSH 部署的远程附件支持
+消息同步：将出站文本/媒体镜像到会话转录
+Cron 隔离：隔离任务每次运行生成新会话 ID，防止上下文累积
+配置替换：支持在配置值中进行环境变量替换
+健康检查：新增每个代理的会话摘要和账户级健康详情，支持选择性探测
+捆绑插件：禁用状态下预装 Antigravity、Gemini CLI OAuth、Copilot Proxy provider 插件</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>macOS 修复：解决子进程管道在等待前未排空导致的死锁问题
-Telegram 修复：支持 tg/group/telegram 前缀和主题目标的内联按钮验证
-Telegram 修复：长标题消息自动拆分为后续消息
-Verbose 模式修复：仅在支持 markdown 的 channel 启用 markdown 格式包裹
-配置修复：阻止无效配置启动、保留学历 doctor 配置、保持滚动配置</p></div>
+    <div class="detail-card"><p>macOS：修复子进程管道在等待前未排空的问题，避免死锁
+Verbose 模式：仅在支持 markdown 的渠道中包装工具摘要/输出
+Telegram：接受 tg/group/telegram 前缀和话题目标用于内联按钮验证
+Telegram：将长字幕拆分为后续消息发送</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

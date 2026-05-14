@@ -299,32 +299,35 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Anthropic 1M 上下文支持：通过 `params.context1m: true` 启用 Opus/Sonnet 百万上下文 beta
-Anthropic Sonnet 4.6 支持：在别名和默认配置中全面支持 Sonnet 4.6 模型
-新增 `/subagents spawn` 命令：支持从聊天命令确定性激活子代理
-子代理任务消息前缀：为轮询子代理消息添加上下文信息保留源标识
-iOS 分享扩展：支持将 URL/文本/图片内容直接转发至 gateway agent.request
-iOS 后台聆听模式：允许 Talk Mode 在应用后台时保持运行（默认关闭保护电池）
-iOS 语音指令提示开关：可禁用 ElevenLabs 语音切换指令以节省 token
-iOS 打断行为优化：内置扬声器/接收器输出时禁用语音打断，减少 TTS 误触发
-Slack 原生单消息流：集成 chat.startStream/appendStream/stopStream 实现消息流式传输
-Slack 草稿预览流模式：新增可配置流模式支持
-Telegram 内联按钮样式：支持 primary/success/danger 三种按钮样式
-Telegram 消息反应通知：将用户反应作为系统事件通知，支持配置通知范围
-iMessage 回复功能：支持 replyToId 并规范化回复标签格式
-工具详情视图：新增 intent-first 设计风格的工具详情和执行摘要展示
-Discord /exec 命令选项：暴露 host/security/ask/node 等选项实现自动补全
-Discord 可复用交互组件：支持组件多次使用前不过期
-Discord per-button 权限控制：支持按钮级别的 allowedUsers 白名单限制
-Cron webhook 投递分离：独立 per-job webhook 投递配置，支持 HTTP(S) 验证
-Cron 调度交错策略：top-of-hour 循环调度新增确定性默认交错支持
-Cron 使用量遥测：记录每个运行的模型/提供商使用数据并支持本地聚合报告
-Web 工具 URL 白名单：为 web_search 和 web_fetch 添加 URL 允许列表配置
-Browser extraArgs 配置：支持自定义 Chrome 启动参数
-Voice Call 问候语预缓存：提前缓存入站问候语 TTS 加速首次播放
-Skills 路径压缩：系统提示中用 ~ 替换 home 目录前缀精简路径
-Skills 路由边界指导：添加明确的 &quot;Use when&quot;/&quot;NOT for&quot; 描述指导
-Auto-reply 元数据增强：包含 message_id 和 sender_id 支持下游定位工作流</p></div>
+    <div class="detail-card"><p>Agents/Anthropic：支持 Opt-in 1M 上下文测试版头，映射至 `context-1m-2025-08-07`
+Agents/Models：全面支持 Anthropic Sonnet 4.6，各别名/默认配置生效并有向前兼容回退
+Commands/Subagents：新增 `/subagents spawn` 命令，支持确定性子代理激活
+Agents/Subagents：添加会话派生的接受说明，解释轮询子代理被禁用的原因
+Agents/Subagents：为派生的子代理任务消息添加上下文前缀，保留来源信息
+iOS/Share：新增 iOS 分享扩展，支持将 URL/文本/图片内容直接转发至 gateway
+iOS/Talk：新增「后台聆听」开关，支持后台运行时保持 Talk 模式
+iOS/Talk：新增「语音指令提示」开关，可禁用 ElevenLabs 语音切换指令以节省 Token
+iOS/Talk：优化打断行为，禁用内置扬声器/接收器时的语音误打断
+Slack：新增原生单消息文本流式传输，支持流式回退至普通投递
+Slack：添加可配置的草稿预览流式传输模式
+Telegram/Agents：支持内联按钮样式（primary|success|danger）
+Telegram：将用户消息反应作为系统事件显示，支持配置通知范围
+iMessage：支持出站文本/媒体的回复 ID，正确处理 `[[reply_to:&lt;id&gt;]]` 标签
+Tool Display/Web UI：新增意图优先的工具详情视图和执行摘要
+Discord：暴露原生 `/exec` 命令选项，支持自动补全和结构化输入
+Discord：支持可重用的交互组件，按钮/选择器可多次使用
+Discord：支持每按钮的 `allowedUsers` 白名单，限制可交互用户范围
+Cron/Gateway：分离每作业 webhook 投递，新增独立的 webhook 投递模式
+Cron/CLI：新增循环整点调度的确定性默认交错策略，支持自动迁移
+Cron：记录每次运行的模型/提供商使用量至日志/webhook，支持本地汇总报告
+Tools/Web：为 `web_search` 和 `web_fetch` 添加 URL 白名单功能
+Browser：支持 `extraArgs` 配置自定义 Chrome 启动参数
+Voice Call：预缓存入站问候语 TTS，加速首次播放响应
+Skills：压缩技能文件路径中的主目录前缀为 `~`，优化提示序列化
+Skills：改进技能描述路由边界，添加「Use when/NOT for」指导说明
+Auto-reply：在对话元数据中包含可信的入站 `message_id`
+Auto-reply：在入站元数据中包含 `sender_id` 供审核工作流使用
+UI/Sessions：避免重复显示已输入的会话前缀（如「Subagent Subagent...」）</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>

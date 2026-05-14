@@ -299,30 +299,27 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>xAI 新增图像生成、语音合成、语音转文字功能，支持 grok-imagine-image 等模型及六种实时语音音色
-STT 新增 Deepgram、ElevenLabs、Mistral 的语音通话流式转录，以及 Scribe v2 批量转录
-TUI 新增本地嵌入式模式，无需 Gateway 即可运行终端对话并保留插件审批机制
-Onboarding 阶段自动安装缺失的 provider 和 channel 插件，无需手动恢复
-OpenAI Responses 模型自动使用原生 web_search 工具进行网页搜索
-新增 `/models add` 命令，可在对话中注册模型并立即使用，无需重启 Gateway
-WhatsApp 新增原生回复引用功能，支持 configurable replyToMode
-WhatsApp 支持按群组/私信配置 systemPrompt，支持通配符和账户级覆盖
-Agents/sessions 新增邮箱式过滤功能，支持按标签、代理和关键词筛选
-控制界面新增用户个人身份标识，优化快速设置和窄屏布局
-Gateway 诊断新增稳定性记录和带敏感信息脱敏的支持导出包
-新增腾讯云 provider 插件，支持 TokenHub 引导和 Hy3 模型
-Amazon Bedrock Mantle 新增 Claude Opus 4.7 支持，提供提供商自有 Bearer 认证流式传输
-GPT-5 提示覆盖移入共享 provider 运行时，新增全局人格开关配置
-移除 OpenAI Codex CLI 认证导入，改用浏览器登录或设备配对
-CLI/Claude 默认启动热 stdio 会话，支持 Gateway 重启后恢复
-Pi 包更新至 0.68.1，新增 opencode-go/kimi-k2.6 等模型目录
-Tokenjuice 新增原生支持，压缩 Pi 嵌入式运行中的嘈杂 exec/bash 结果
-ACPX 新增 openClawToolsMcpBridge 选项，注入核心 MCP 服务器提供 cron 等工具
-CLI/doctor 插件改为懒加载，减少冷启动耗时约 74%</p></div>
+    <div class="detail-card"><p>xAI Provider：新增图片生成、文本转语音、语音转文本支持，支持grok-imagine-image等模型
+STT Provider：Deepgram、ElevenLabs、Mistral新增语音通话流式转录功能
+TUI：新增本地嵌入模式，无需Gateway即可运行终端聊天
+Onboarding：自动安装缺失的provider和channel插件，完成首次运行配置
+Models/commands：新增`/models add`命令，支持从聊天窗口动态注册模型
+WhatsApp：新增原生回复引用功能（replyToMode）
+WhatsApp：群组和私聊支持独立systemPrompt配置，支持通配符和账户级覆盖
+Agents/sessions：新增邮箱式过滤器，支持按标签、agent、关键词筛选
+Control UI：新增操作员个人身份标识，优化快速设置和窄屏布局
+Gateway/diagnostics：新增诊断导出功能，生成包含日志、状态、配置的报告
+Providers：新增Tencent Cloud、AWS Bedrock Mantle、GPT-5等provider支持
+OpenAI Codex：移除Codex CLI认证导入，改为浏览器登录方式
+CLI/Claude：默认warm stdio会话，支持重启后恢复Claude会话
+Pi/models：更新bundled pi包至0.68.1，新增OpenCode Go模型目录
+Tokenjuice：新增tokenjuice插件支持，紧凑化exec/bash工具输出
+ACPX：新增openClawToolsMcpBridge选项，注入OpenClaw MCP服务器
+CLI/doctor plugins：优化插件懒加载，减少约74%启动时间</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>修复 WhatsApp 群组/私信 systemPrompt 无法正确注入的问题（关闭 #7011）</p></div>
+    <div class="detail-card"><p>无</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

@@ -299,26 +299,26 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>SecretRef 支持扩展至 64 个目标，涵盖运行时收集器、secrets 规划/应用/审计流程及文档（#29580）
-新增原生 PDF 工具，支持 Anthropic/Google PDF 提供商及非原生模型回退提取（#31319）
-Discord/Slack/WhatsApp/Zalo 等平台新增共享 `sendPayload` 支持，含多媒体迭代和文本回退（#30144）
-新增 MiniMax-M2.5-highspeed 模型支持，保留旧版 Lightning 兼容（#31350）
-sessions_spawn 新增内联文件附件支持，含 base64 编码和生命周期清理（#16761）
-Telegram 流式传输默认启用 `partial` 模式，新安装开箱即用（#31824）
-Telegram 私聊预览流使用 `sendMessageDraft`，区分推理/回答预览（#31824）
-Telegram 语音消息新增可选 `disableAudioPreflight` 跳过提及检测预检（#23067）
-新增 `openclaw config validate` 命令及启动时详细配置错误路径提示（#31220）
-Diffs 工具新增 PDF 输出支持和质量/缩放参数（#31342）
-Memory 新增 Ollama 嵌入支持（`memorySearch.provider = &quot;ollama&quot;`）（#26349）
-Zalo 插件使用原生 `zca-js` 集成重建，移除外部 CLI 传输依赖
-插件 SDK 新增 `channelRuntime` 上下文，供外部渠道插件访问共享运行时辅助函数（#25462）
-插件运行时新增 `api.runtime.stt.transcribeAudioFile` API（#22402）
-会话生命周期钩子事件新增 `sessionKey` 字段（#26394）
-新增 `message:transcribed` 和 `message:preprocessed` 内部钩子事件（#9859）
-新增 `tools.media.audio.echoTranscript` 可选音频回显确认消息（#32150）
-插件运行时新增 `runtime.system.requestHeartbeatNow` API（#19464）
-新增 `runtime.events.onAgentEvent` 和 `onSessionTranscriptUpdate` 订阅 API（#16044）
-新增 `cli.banner.taglineMode` 控制启动标语行为（#32782）</p></div>
+    <div class="detail-card"><p>SecretRef 支持扩展至 64 个目标（包括运行时收集器、secrets 规划/应用/审计流程及入职 UX），未解析引用在活跃表面快速失败，非活跃表面报告非阻塞诊断
+新增原生 PDF 工具，支持 Anthropic/Google PDF 提供商及非原生模型提取回退，可配置默认参数
+出站适配器新增 sendPayload 支持，覆盖 Discord/Slack/WhatsApp/Zalo 等平台，支持多媒体迭代和文本回退
+新增 MiniMax-M2.5-highspeed 一级支持，同时保留 MiniMax-M2.5-Lightning 兼容性
+sessions_spawn 支持内联文件附件，附带 base64/utf8 编码、转录内容编辑和生命周期清理
+Telegram 流式默认改为 partial，新安装开箱即用实时预览流
+Telegram 私聊新增 sendMessageDraft 预览流式处理，推理模式下的预览通道分离
+Telegram 语音提及新增 disableAudioPreflight 选项，可跳过群组语音的提及检测预检转录
+CLI 新增 openclaw config validate 命令，支持 --json 输出格式验证配置文件
+diff 工具新增 PDF 文件输出支持，可配置渲染质量和缩放参数
+Memory 新增 Ollama 作为嵌入搜索提供商（memorySearch.provider = &quot;ollama&quot;）
+Zalo 个人插件重建为原生 zca-js 集成，QR/登录/收发流程完全在 OpenClaw 内部运行
+插件 SDK 公开 channelRuntime 到 ChannelGatewayContext，供外部频道插件访问共享运行时辅助函数
+插件运行时新增 api.runtime.stt.transcribeAudioFile，可转录本地音频文件
+插件钩子新增 session_start/session_end 事件的 sessionKey 上下文信息
+新增 message:transcribed 和 message:preprocessed 内部钩子事件，message:sent 事件新增 isGroup/groupId 上下文
+媒体理解新增音频回显确认功能（tools.media.audio.echoTranscript），可发送转录确认消息
+插件运行时公开 runtime.system.requestHeartbeatNow，可立即唤醒目标会话
+插件运行时新增 runtime.events.onAgentEvent 和 onSessionTranscriptUpdate 事件订阅，隔离故障监听器
+CLI 新增 cli.banner.taglineMode 配置，可控制启动横幅标语行为（random/default/off）</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>

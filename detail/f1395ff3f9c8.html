@@ -299,23 +299,23 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>可插拔 agent 架构（Claude/Pi/Codex/Opencode）：支持为不同 agent 选择 CLI 和解析器，无需更改模板即可切换
-Safety stop words 安全词：用户发送 &quot;stop/esc/abort/wait/exit&quot; 时立即中止 agent 并提醒
-IPC 服务器：web relay 启动 Unix socket 服务器，命令自动通过 IPC 连接 relay
-批量入站消息处理：多个 WhatsApp 消息合并为一个批次，每条带时间戳保证顺序
-WhatsApp 会话自动恢复：30 分钟无消息活动时自动重启连接，防止卡死
-同设备模式：支持在与消息发送者相同的电话号码上运行，可与自己聊天控制 AI 助手
-回声检测：跟踪最近发送的消息文本，防止同设备模式下无限循环回复
-提前过滤未授权发送者：在解密前阻止未经授权的发送者，避免会话状态损坏</p></div>
+    <div class="detail-card"><p>**可插拔代理架构**：支持 Claude、Pi、Codex、Opencode 等多种代理，通过 `inbound.reply.agent` 配置选择 CLI 和解析器
+**代理安全停止词**：入站消息为 `stop`、`esc`、`abort`、`wait` 或 `exit` 时立即终止代理并提醒用户
+**IPC 服务器通信**：通过 Unix 套接字实现 `warelay send`/`warelay heartbeat` 与运行中的 relay 共享连接
+**批量消息处理**：多条 WhatsApp 消息合并为一批并附时间戳发送给代理，保持顺序和上下文
+**IPC 发送后自动显示输入指示器**：通过 IPC 发送消息后自动显示&quot;正在输入&quot;状态
+**WhatsApp 会话卡死自动恢复**：30分钟无消息活动时自动重启连接，修复 Bad MAC 解密错误导致的卡死
+**同一手机号模式**：支持在相同号码上自发自收消息，可配置标记前缀（默认 `[same-phone]`）
+**回声检测**：同一手机号模式下追踪最近发送的消息，防止无限循环自动回复</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>修复 Claude CLI 返回空字符串时错误发送原始 JSON 的问题
-修复心跳提醒消息未应用响应前缀的 bug
-修复命令失败时静默失败的问题，现在返回用户友好的错误消息
-修复测试污染生产 sessions.json 的问题
-修复 warelay send/heartbeat 命令破坏 Signal 会话 ratchet 的问题
-修复 WhatsApp Web 发送时所有媒体都作为图片发送的问题</p></div>
+    <div class="detail-card"><p>**空结果字段处理**：Claude CLI 返回 `result: &quot;&quot;` 时正确处理为空输出，而非发送原始 JSON
+**心跳回复响应前缀**：修复 `responsePrefix`（如 🦞）在心跳提醒消息中未应用的问题
+**用户可见错误消息**：命令执行失败（非零退出、被终止、异常）现在返回用户友好的错误提示
+**测试会话隔离**：修复测试文件污染生产 `sessions.json` 的问题
+**信号会话损坏预防**：通过 IPC 机制防止 `warelay send` 与 relay 同时连接导致会话状态损坏
+**Web 发送媒体类型识别**：修复所有媒体都错误发送为图片的问题，正确区分音频/视频/图片/文档</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

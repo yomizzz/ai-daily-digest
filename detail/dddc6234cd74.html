@@ -299,28 +299,28 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>**Codex 提供商支持**：新增捆绑 Codex 提供商，使 `codex/gpt-*` 模型使用 Codex 管理的认证、线程、模型发现和压缩
-**Active Memory 插件**：新增主动记忆子代理，自动提取聊天中的偏好、上下文和历史细节
-**macOS 本地语音**：新增实验性 MLX 语音提供商用于 Talk 模式，支持本地播放和系统语音回退
-**视频生成**：新增 Seedance 2.0 模型支持及提供商特定元数据字段
-**Microsoft Teams**：新增消息置顶、已读、反应等操作功能
-**Matrix QA 测试通道**：新增基于临时 Matrix 服务器的实时传输测试
-**Telegram QA 测试通道**：新增私人群组机器人间测试及原生命令回复支持
-**多虚拟机 QA 测试**：新增 multipass runner 支持在可丢弃 Linux VM 中运行测试
-**exec-policy 命令**：新增本地命令用于同步工具执行配置与审批文件
-**Gateway 命令发现**：新增 commands.list RPC 支持远程客户端发现命令
-**私有网络请求**：新增 per-provider 私有网络请求配置选项
-**飞书集成优化**：标准化用户代理并注册为 AI 代理
-**Matrix 实时标记**：新增 MSC4357 实时标记用于草稿预览和编辑
-**Dreaming UI 优化**：简化场景和日记界面，稳定等待条目排序
-**严格 Agentic 模式**：新增 GPT-5 家族的严格嵌入式 Pi 执行合约
-**文档国际化改进**：优化翻译流程和错误恢复机制</p></div>
+    <div class="detail-card"><p>Memory/Active Memory: 新增主动记忆插件，提供专用记忆子代理，支持自动拉取用户偏好和上下文
+macOS/Talk: 新增本地MLX语音提供者，支持本地语音播放和系统语音回退
+CLI/exec policy: 新增exec-policy命令，用于同步工具执行配置与本地审批文件
+Gateway: 新增commands.list RPC，支持远程客户端发现运行时命令
+Microsoft Teams: 新增消息固定、已读、反应等操作功能
+QA/Matrix: 新增Matrix QA测试通道，支持实时传输覆盖
+QA/Telegram: 新增Telegram QA测试通道，支持私群机器人间验证
+QA/testing: 新增multipass runner，支持在虚拟机中运行QA场景
+Models/Codex: 新增Codex provider，让codex/gpt-*模型使用Codex管理的认证和线程
+Models/providers: 新增per-provider私有网络请求配置选项
+Agents: 新增strict-agentic embedded Pi执行合约用于GPT-5系列
+Agents/OpenAI: 新增OpenAI/Codex工具模式兼容性和embedded-run状态支持
+Matrix: 新增MSC4357实时标记支持，用于流式编辑预览动画
+Control UI/dreaming: 简化Scene和Diary界面，稳定等待条目排序
+Feishu: 标准化请求用户代理，注册为AI代理
+Docs i18n: 改进文档翻译流程，支持从终止会话恢复</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>**浏览器安全加固**：全面增强 SSRF 防护、导航防御、沙箱隔离和 Docker CDP 源范围限制
-**工具安全加固**：加强执行预检、主机环境隔离、节点输出边界、插件依赖扫描和 WebSocket 帧大小限制
-**Codex 集成修复**：添加必需的 OAuth 作用域，改进提供商和运行时失败分类</p></div>
+    <div class="detail-card"><p>Browser/security: 加强浏览器沙箱导航防御，涵盖SSRF、主机名白名单、重定向、子框架等安全防护
+Security/tools: 强化exec预检读取、主机环境拒绝列表、节点输出边界、媒体读取等安全检查
+OpenAI/Codex: 新增所需OAuth范围，更清晰分类provider/runtime失败类型</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

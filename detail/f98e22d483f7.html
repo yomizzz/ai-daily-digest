@@ -299,25 +299,26 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>新增 `openclaw infer` 一级命令，支持 model、media、web、embedding 任务的 provider-backed 推理工作流
-媒体生成支持跨 image/music/video provider 自动回退，保留意图并映射参数到最近支持的选项
-恢复 memory-wiki 堆栈，包含 plugin、CLI、sync/query/apply 工具及 claim-health linting
-新增 webhook 入口 plugin，支持外部自动化通过共享密钥端点创建和驱动 TaskFlows
-会话持久化新增压缩检查点保存及分支/恢复操作，便于检查和恢复压缩前状态
-新增可插拔压缩 provider 注册表，支持插件替换内置 summarization pipeline
-新增 `agents.defaults.systemPromptOverride` 配置，用于受控的 prompt 实验
-新增 Google Gemma 4 模型支持，修复原生 Google Gemma 路由回退逻辑
-新增 Arcee AI provider plugin，包含 Trinity catalog 集成和 OpenRouter 支持
-恢复 Claude CLI 作为本地 Anthropic 首选路径，修复 Docker Claude CLI 支持
-Ollama 检测 vision 能力，自动设置支持 vision 的模型的图像输入
-Memory/dreaming 支持将重标识的会话记录摄取到 dream corpus
-Context engines 暴露 availableTools、citationsMode 及 memory-artifact 状态</p></div>
+    <div class="detail-card"><p>新增 `openclaw infer ...` 一级命令中心，支持跨模型、媒体、网页和嵌入任务的 provider-backed 推理工作流
+媒体生成支持跨图片/音乐/视频提供商的自动回退，保留意图并适配尺寸/时长参数
+恢复 memory-wiki 插件堆栈，包含 CLI、同步/查询/应用工具、claim 健康检查和矛盾聚类功能
+新增 webhook ingress 插件，支持外部自动化通过共享密钥端点创建和驱动 TaskFlows
+Sessions 新增持久化压缩检查点及分支/恢复操作，便于检查和恢复压缩前的会话状态
+新增可插拔压缩 provider 注册表，支持通过 `agents.defaults.compaction.provider` 配置替换内置摘要管道
+新增 `agents.defaults.systemPromptOverride` 用于受控提示实验，支持独立的心跳提示区段控制
+新增 Gemma 4 模型支持，修复 Google 原生 Gemma 路由的回退解析问题
+新增 Arcee AI provider 插件，包含 Trinity 目录条目和 OpenRouter 支持
+恢复 Claude CLI 作为首选本地 Anthropic 路径
+Ollama 新增视觉能力检测，支持向视觉模型发送图片附件
+Memory/dreaming 新增会话记录摄入功能，支持按日会话语料库标注和游标检查点
+新增 context engine 的 prompt-cache 运行时上下文暴露，确保当前轮次缓存使用与活跃尝试对齐
+Plugin SDK 新增 availableTools 和 citationsMode 参数传递及内存状态暴露接口</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>修复 CLI/infer 的 TTS 处理、web-search 配置行为、agent-vs-CLI 执行差异等问题
-修复 media capability fallback 未合并 bundled capability plugin ids 的问题
-修复 history 序列跟踪、评论/工具 XML 隐藏、follow-up 回复仅基于 final_answer 等问题</p></div>
+    <div class="detail-card"><p>修复 CLI/infer 的 TTS 处理、profile 感知网关偏好解析、转录参数覆盖、图片输出格式匹配等问题
+修复 media 插件在 `plugins.allow` 配置下 capability fallback 未合并内置插件 ids 的问题
+修复历史记录中文本缓冲、序列追踪、用户可见历史隐藏及 follow-up 回复文本关联等多个问题</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

@@ -299,28 +299,37 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Telegram：移除所有 `@ts-nocheck`，全面使用 Grammy 和原生 Telegram 类型
-Onboarding：新增 Cloudflare AI Gateway 提供商配置和文档
-Onboarding：新增 Moonshot（.cn）认证选项，保留中国区 base URL
-Messages：支持每个通道和每个账户独立配置 responsePrefix
-Cron：新增 announce 投递模式，支持 CLI 和 Control UI 配置
-Cron：isolated jobs 默认使用 announce 投递，接受 ISO 8601 schedule.at
-Cron：one-shot jobs 执行成功后默认删除，新增 `--keep-after-run` 选项
-Shell completion：自动检测并迁移慢速动态模式到缓存文件，加快终端启动</p></div>
+    <div class="detail-card"><p>无</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Heartbeat：支持多账户通道的显式 accountId 路由
-TUI/Gateway：处理非流式完成，刷新非本地聊天历史，避免工具流事件间隙警告
-Telegram：内联模型选择时正确遵守会话模型覆盖
-Web UI：修复 agent 模型选择保存问题，修复长工作区路径显示
-Onboarding：从非交互式 API 密钥标志自动推断认证选项
-Security：阻止不受信任通道元数据进入系统提示词，强制媒体路径沙箱隔离
-Security：网关 URL 覆盖需显式凭证，whatsapp_login 工具限制为所有者发送者
-Voice call：强化 webhook 验证保护，支持匿名来电白名单策略
-Cron：支持 epoch 时间戳和零毫秒时长解析，监听文件重建/mtime 变化
-Telegram：转发消息包含 forward_from_chat 元数据
-macOS：修复 cron 摘要渲染和 ISO 8601 格式化并发安全</p></div>
+    <div class="detail-card"><p>新增 Cloudflare AI Gateway 提供商集成
+Moonshot (.cn) 认证支持和区域化基础 URL
+每频道和每账户的 responsePrefix 覆盖机制
+Cron 的 announce 投递模式配置和 CLI 选项
+单次任务执行后自动清理和保留选项
+ISO 8601 时间格式支持
+Shell completion 的动态模式缓存优化
+中文文档本地化
+清除 Telegram 模块中的 TypeScript 类型检查禁用注释
+统一使用 Grammy 库类型定义
+精简贴纸元数据处理逻辑
+重构消息上下文类型依赖关系
+消除 bot.ts 中的错误处理冗余
+清理失效的反应式消息线程路由
+强化贴纸缓存的防御机制
+tmux 交互改进和 TUI 分隔符
+界面视觉统一调整
+Web UI 模型选择器修正和长路径显示
+新消息提示的按钮样式
+隔离频道元数据与系统提示词
+媒体路径沙箱化处理
+URL 覆盖的凭证验证
+WhatsApp 登录工具的权限控制
+Webhook 验证和呼叫者身份验证
+Cron 任务的时间戳解析、数据重载和投递控制
+Telegram 元数据同步
+macOS 兼容性调整</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

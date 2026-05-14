@@ -299,28 +299,28 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>xAI/Tools：迁移到 Responses API，添加 x_search 支持，自动启用 xAI 搜索插件
-xAI/Onboarding：onboard 和 web 配置向导中添加可选的 x_search 设置
-MiniMax：新增图像生成 provider，支持 image-01 模型的文生图和图生图编辑
-Plugins/hooks：为 before_tool_call hooks 添加 async `requireApproval`，支持工具执行审批
-ACP/channels：添加 Discord/BlueBubbles/iMessage 当前对话的 ACP 绑定
-OpenAI/apply_patch：默认启用 apply_patch，与 write 权限对齐
-Plugins/CLI backends：添加 Gemini CLI 支持和通用 --cli-backend-logs 标志
-Plugins/startup：自动加载捆绑的 provider 和 CLI-backend 插件
-Podman：简化容器设置，文档化 host-CLI 工作流
-Slack/tool actions：新增 upload-file action，支持文件名/标题/评论覆盖
-Message actions/files：为 Teams 和 Google Chat 添加文件上传支持
-Plugins/Matrix TTS：发送原生 Matrix 语音消息气泡
-CLI：新增 `openclaw config schema` 命令打印 JSON schema
-Memory/plugins：重构内存 flush 计划到 active memory plugin 合约
-MiniMax：精简模型目录，仅保留 M2.7 系列
-Plugins/runtime：暴露 `runHeartbeatOnce` 支持单次心跳触发
-Agents/compaction：保留压缩后的 AGENTS 刷新和 safeguard 取消原因展示
-Tavily：添加 `X-Client-Source: openclaw` 请求头用于流量归因</p></div>
+    <div class="detail-card"><p>**xAI 工具升级**：迁移到 Responses API，添加原生 `x_search` 支持，自动启用相关插件
+**xAI 集成向导**：在 `openclaw onboard` 过程中提供可选的 x_search 配置引导
+**MiniMax 图像生成**：新增 `image-01` 模型支持，支持图生图和比例控制
+**工具执行审批**：为 `before_tool_call` hooks 添加 async `requireApproval`，支持通过界面/Telegram/Discord 审批
+**ACP 对话绑定**：Discord、BlueBubbles、iMessage 支持 `/acp spawn --bind here` 直接绑定当前对话
+**OpenAI apply_patch**：默认启用，并支持沙盒权限
+**Gemini CLI 支持**：新增捆绑的 Gemini CLI 后端，统一 CLI 日志输出
+**捆绑插件自动加载**：Claude/Codex/Gemini CLI 等插件不再需要手动配置 `plugins.allow`
+**容器简化**：Podman 改用用户级配置，提供 `--container` 命令简化操作
+**文件上传统一**：Slack 新增 `upload-file` 操作，Teams/Google Chat/BlueBubbles 支持统一上传接口
+**Matrix 语音消息**：TTS 回复改为原生 Matrix 语音气泡
+**配置架构导出**：新增 `openclaw config schema` 命令
+**TTS 配置迁移**：自动迁移旧版语音配置
+**内存插件重构**：预压缩刷新逻辑由 memory-core 接管
+**MiniMax 精简**：移除 M2/M2.1/M2.5/VL-01 等旧模型，仅保留 M2.7
+**心跳手动触发**：插件可调用 `runHeartbeatOnce` 触发单次心跳
+**压缩刷新保持**：确保压缩后的 AGENTS 状态在所有场景下正确刷新
+**压缩状态优化**：将良性手动压缩标记为&quot;跳过&quot;而非&quot;失败&quot;</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Agents/Anthropic：将未处理的 provider stop reasons（如 sensitive）恢复为结构化错误</p></div>
+    <div class="detail-card"><p>**Agent 异常处理**：修复 Agent 遇到未处理的 provider stop reasons（如 sensitive）时崩溃的问题</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

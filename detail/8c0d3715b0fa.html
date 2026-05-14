@@ -299,20 +299,22 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>TTS全面升级：新增Azure Speech、小米、本地CLI、Inworld、火山引擎、ElevenLabs v3等多种TTS提供商，支持语音回复自动TTS控制和角色设定
-插件系统重构：插件启动和安装路径迁移到持久化冷注册表，减少清单扫描，使插件更新、修复更确定性
-OpenTelemetry扩展：覆盖模型调用、token使用、工具循环、agent运行、执行进程等，带有低基数属性
-浏览器自动化增强：更安全的标签页URL、iframe感知的角色快照、CDP就绪调优、无头单次启动、深度浏览器诊断
-控制UI改进：新增PWA安装和Web Push通知、Crestodian首次运行修复、TUI设置向导、上下文模式选择
-安装加固：覆盖Windows、macOS、Linux、Docker等多平台，包括Node服务重启和混合版本网关验证
-Google Meet新增日历出席导出工作流和会议记录工具
-Discord支持语音频道LLM模型独立覆盖设置
-插件系统新增before-agent-finalize钩子、cron jobId上下文、Codex MCP钩子中继支持</p></div>
+    <div class="detail-card"><p>**完整 TTS 语音升级**：新增 `/tts latest` 朗读支持、聊天范围自动 TTS 控制、人格设置、各代理/账户覆盖，以及 Azure Speech、小米、本地 CLI、Inworld、Volcengine 和 ElevenLabs v3 等多家提供商支持
+**插件系统重构**：插件启动和安装路径迁移到冷持久注册表，减少清单扫描，使插件更新、修复和安装元数据更具确定性
+**OpenTelemetry 全链路覆盖**：扩展到模型调用、代币使用、工具循环、测试运行、执行进程、出站传递、上下文组装和内存压力监控
+**浏览器自动化增强**：更安全的标签页 URL、iframe 感知角色快照、CDP 就绪调整、无头一次性启动，以及深层浏览器诊断探测
+**PWA 和 Web Push 通知**：控制 UI 新增 PWA 安装支持和 Web Push 推送通知功能
+**TUI 交互式设置**：首次运行设置助手、本地规划器回退、完整 TUI 交互式 Crestodian 和上下文模式选择器
+**Discord 语音频道配置**：支持 `channels.discord.voice.model` 覆盖语音频道的 LLM 模型
+**图像生成增强**：`--background` 选项扩展到通用参数，支持 fal 图像生成的 PNG/JPEG 输出格式
+**插件钩子扩展**：新增代理最终化前钩子、计划任务 `jobId` 上下文、Codex MCP 钩子中继支持
+**Azure Speech TTS 提供商**：新增 Azure Speech 捆绑 TTS 提供商，支持语音列表、SSML 转义和原生 Ogg/Opus 音频输出
+**Google Meet 考勤导出**：新增日历备份的考勤导出工作流、导出清单和试运行预览</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>修复TTS/WhatsApp语音回复重复抑制问题（#66032）
-修复浏览器配置在Raspberry Pi等慢速主机上的CDP就绪超时问题（#66803）</p></div>
+    <div class="detail-card"><p>**TTS 重复抑制**：修复 `/tts latest` 朗读时的重复抑制问题
+**浏览器启动超时**：允许本地托管 Chrome 启动发现和 CDP 就绪超时针对树莓派等慢速主机进行调优</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

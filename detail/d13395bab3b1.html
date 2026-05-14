@@ -299,33 +299,33 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Discord：解锁 Components v2 丰富交互（按钮、选择器、模态框、附件文件块）实现原生 Discord 交互
-Discord：Components v2 UI + 嵌入穿透 + 执行审批体验优化
-插件：暴露 `llm_input` 和 `llm_output` 钩子负载，支持扩展观察提示上下文和模型输出使用详情
-子代理：支持嵌套子代理（含 `maxSpawnDepth` 和 `maxChildrenPerAgent` 限制）及深度感知工具策略
-Slack/Discord/Telegram：添加每渠道确认反应覆盖，支持平台特定 emoji 格式
-Cron/Gateway：添加完成运行 Webhook 传递开关和专用 `cron.webhookToken` 认证令牌支持
-渠道：跨核心和扩展去重探测/令牌解析基础类型，保留每渠道错误类型</p></div>
+    <div class="detail-card"><p>Discord: 解锁 Components v2（按钮、选择器、模态框、附件文件块）实现原生交互
+Discord: components v2 UI + embeds 透传 + exec 审批 UX 优化
+Plugins: 暴露 `llm_input` 和 `llm_output` hook payloads 供扩展观察
+Subagents: 支持嵌套子代理（子-子代理），可配置深度及每代理子代理数限制
+Slack/Discord/Telegram: 添加按频道确认反应覆盖，支持平台特定 emoji 格式
+Cron/Gateway: 添加完成运行 webhook 传递开关及专用 webhook 认证令牌支持
+Channels: 跨核心和扩展去重 probe/token 解析基础类型</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>安全：用 SHA-256 替换已弃用的 SHA-1 沙箱配置哈希
-安全：从错误消息和堆栈跟踪中 redact Telegram bot 令牌防止密钥泄露
-安全/沙箱：阻止危险 Docker 配置（绑定挂载、主机网络、无限制 seccomp/apparmor）防止容器逃逸
-沙箱：配置哈希保留数组顺序确保顺序敏感设置正确触发容器重建
-安全/Gateway：对非管理员客户端从状态响应中 redact 敏感会话/路径细节
-控制 UI：设备身份不可用时保留操作员范围，防止 LAN/HTTP 操作员会话虚假的范围错误
-安全/LINE：缺失渠道令牌或密钥时 Webhook 启动失败，仅在两者都存在时将 LINE 账户视为已配置
-安全/技能：限制 `download` 安装程序 `targetDir` 到技能工具目录防止任意文件写入
-安全/网页抓取：HTML 解析前限制下载响应体大小防止内存耗尽
-配置/Gateway：敏感密钥白名单后缀匹配改为大小写不敏感，保留 `passwordFile` 路径豁免
-开发工具：加固 git `pre-commit` 钩子防止恶意文件名注入选项
-安全/Gateway：拒绝格式错误的 `agent:` 前缀会话密钥，防止意外跨会话路由
-安全/Gateway：加固 `chat.send` 消息处理，拒绝空字节、剥离不安全控制字符、规范化为 NFC
-安全/Gateway：`send` 目标为内部 `webchat` 时返回可操作错误引导使用 `chat.send`
-安全/控制 UI：移除内联脚本注入、服务引导配置为 JSON、强化 `script-src 'self'` 防止存储型 XSS
-安全/代理：嵌入 LLM 提示前清理工作区路径（剥离 Unicode 控制/格式字符）防止指令注入
-代理/沙箱：明确系统提示路径用法，沙箱 bash/exec 使用容器路径、文件工具保留主机映射避免路径错误</p></div>
+    <div class="detail-card"><p>Security: 沙箱配置哈希从 SHA-1 升级为 SHA-256
+Security: 从错误消息和堆栈跟踪中清除 Telegram bot tokens
+Sandbox/Security: 阻止危险 Docker 配置（绑定挂载、主机网络、seccomp/apparmor）
+Sandbox: 修复配置哈希保留数组顺序以正确触发容器重建
+Gateway/Security: 从状态响应中清除敏感会话/路径详情（非管理员）
+Gateway/Control UI: 为绕过模式保留操作员作用域
+LINE/Security: 启动时缺少令牌或密钥时失败关闭
+Skills/Security: 限制下载安装程序目标目录防止任意文件写入
+Skills/Linux: 加强 apt 系统上的 go 安装程序回退处理
+Web Fetch/Security: 限制下载响应体大小防止内存耗尽
+Config/Gateway: 使敏感密钥白名单后缀匹配不区分大小写
+Dev tooling: 加强 git pre-commit hook 防止恶意文件名注入
+Gateway/Agent: 拒绝格式错误的 agent:-前缀会话密钥
+Gateway/Chat: 加强聊天消息处理，拒绝 null 字节和危险控制字符
+Gateway/Send: 对 webchat 目标返回可操作错误指引
+Control UI: 防止通过助手名称/头像的存储型 XSS
+Agents/Security: 清除工作区路径中的 Unicode 控制/格式字符</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

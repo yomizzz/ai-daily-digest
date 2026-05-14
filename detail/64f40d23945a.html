@@ -299,23 +299,26 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Google Meet 作为捆绑插件加入，支持个人 Google 认证、Chrome/Twilio 实时会话及配对节点 Chrome 支持
-DeepSeek V4 Flash 和 V4 Pro 加入捆绑目录，V4 Flash 为入门默认选项
-Talk、Voice Call、Google Meet 支持实时语音循环，可咨询完整 OpenClaw agent 获取深度答案
-浏览器自动化新增视口坐标点击、60s 默认操作预算、每配置 headless 覆盖选项
+    <div class="detail-card"><p>Google Meet 作为内置参与者插件集成，支持个人 Google 认证、Chrome/Twilio 实时会话、Artifact/Attendance 导出及会话恢复工具
+DeepSeek V4 Flash 和 V4 Pro 加入内置模型目录，V4 Flash 成为 onboarding 默认选项
+Talk、Voice Call 和 Google Meet 支持咨询完整 OpenClaw Agent 的实时语音循环
+浏览器自动化新增坐标点击、60 秒默认操作超时时长、按配置文件 headless 覆盖及更稳定的标签页复用/恢复
+Control UI 新增紧凑型实时工具芯片、可折叠工具组、直接切换开关及运行时/来源归属显示
+Control UI 聊天界面支持为排队消息注入&quot;Steer&quot;操作以追加浏览器后续操作
+插件和模型基础设施优化：静态模型目录、manifest 支持的模型行、延迟加载 provider 依赖
+Voice Call 新增 setup 命令和 smoke 测试命令用于检查就绪状态
 Gemini Live 实时语音 provider 支持后端 Voice Call 和 Google Meet 音频桥接
-Voice Call 新增 `voicecall setup` 和 `smoke` 命令用于测试通话就绪状态
-Control UI 新增排队消息的 Steer 操作，可注入浏览器后续指令
-Memory 混合搜索暴露原始 vectorScore 和 textScore，便于检查检索贡献度
-Gradium 文本转语音 provider 加入捆绑目录，支持语音笔记和电话输出
-Matrix 新增 `openclaw matrix verify self` 命令用于自我设备验证
-Google Meet 新增工件和考勤工作流，支持会议记录导出和历史扫描</p></div>
+Gemini TTS 支持通过配置 audioProfile 和 speakerName 控制语音风格
+实时 brain WebSocket 端点接入 Gemini Live，支持异步 OpenClaw 工具调用
+Matrix 要求完全跨签名身份信任，新增 CLI 自设备验证命令
+Gradium 内置文本转语音 provider，支持语音笔记和电话输出
+混合记忆搜索新增 raw vectorScore 和 textScore，暴露组合 score 前的独立检索贡献度
+Gemini TTS 新增 audioProfile 和 speakerName 配置项控制语音风格</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>修复 DeepSeek thinking/replay 在后续 tool-call 轮次的行为问题
-修复混合搜索结果中 vectorScore 和 textScore 显示问题（#68166）
-插件 SDK 移除 Pi 专用的 `api.registerEmbeddedExtensionFactory(...)` 兼容性路径</p></div>
+    <div class="detail-card"><p>修复 DeepSeek thinking/replay 在后续工具调用轮次中的行为问题
+混合搜索修复 (#68166)：正确暴露原始 vectorScore 和 textScore</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

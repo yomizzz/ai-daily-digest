@@ -299,22 +299,11 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Google Meet/Voice Call：Twilio 电话拨入通过实时 Gemini 语音桥接传输，提供更快的语音代理体验
-OpenAI/Codex：支持 Codex 音频转录功能
-Models/auth：新增 `openclaw models auth list` 命令查看已保存的认证配置
-Control UI：仪表板面包屑显示当前代理名称；New Job 侧边栏支持折叠
-Control UI/performance：浏览器长任务记录到调试事件日志，便于追踪卡顿
-Slack/streaming：新增富文本进度渲染（`streaming.progress.render: &quot;rich&quot;`），限制进度行长度避免界面抖动
-Agents/verbose：默认使用紧凑的 explain-mode 工具摘要，可通过配置切换原始详细输出</p></div>
+    <div class="detail-card"><p>摘要生成失败</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Gateway/Windows：仅绑定 127.0.0.1 避免 IPv6 双栈导致 localhost HTTP 请求卡死
-Plugins/migration：插件未安装时提示安装命令而非要求删除配置
-Plugins/active-memory：跳过含冒号的会话存储通道条目，避免 QQ 等平台对话 ID 导致 recall 运行崩溃
-Secrets/external channel contracts：修复 dist/ 路径下发布的外部化频道插件 SecretRef 解析失败问题
-Secrets/apply：保留 keyRef 和 tokenRef 字段防止 secrets apply 丢失元数据
-Config/plugin auto-enable：WeCom/Yuanbao 等别名优先解析为已安装插件 ID</p></div>
+    <div class="detail-card"><p>摘要生成失败</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

@@ -299,29 +299,41 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Telegram使用共享配对存储，支持更统一的消息同步
-Agents添加OpenRouter应用归因头部
-Agents新增系统提示安全防护机制
-Agents扩展会话创建选项，支持systemPrompt/skills/contextFiles配置
-Agents添加工具策略合规快照功能
-Auth更新MiniMax OAuth提示和门户认证文案
-Discord继承线程父级绑定实现智能路由
-Gateway要求TLS 1.3最小版本提升安全性
-Web UI优化聊天布局并延长会话活跃时长</p></div>
+    <div class="detail-card"><p>Telegram 使用共享配对存储（#6127），感谢 @obviyus
+Agents 添加 OpenRouter 应用归属头，感谢 @alexanderatallah
+Agents 添加系统提示安全防护栏（#5445），感谢 @joshp123
+Agents 扩展 CreateAgentSessionOptions 支持 systemPrompt/skills/contextFiles
+Gateway 注入时间戳到 agent 和 chat.send 消息（#3705），感谢 @conroywhitney, @CashWilliams
+Gateway 要求 TLS 1.3 最低版本（#5970），感谢 @loganaden
+Web UI 优化聊天布局并延长会话活跃时长
+Discord 继承线程父绑定用于路由（#3892），感谢 @aerolalit
+Streaming 在段落边界刷新块流以实现换行分块（#7014）
+Telegram 添加文件下载超时（#6914），感谢 @hclsys
+Memory search 实现 L2 归一化本地嵌入向量以修复语义搜索（#5332）
+Telegram 恢复草稿流式部分（#5543），感谢 @obviyus
+TUI 防止模型选择器中使用数字搜索时崩溃
+文档更新涵盖多模块配置和导航修正（#3050 等多个 PR）</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>修复Telegram文件下载超时及DM/论坛线程规格校验问题
-修复流式输出在段落边界换行分块不稳定问题
-修复/new欢迎语误引用工作区文件问题
-修复Tools适配器签名对齐及&quot;*&quot;允许列表虚假警告
-修复会话日志路径从.clawdbot到.openclaw迁移
-修复Windows上npm系列CLI的spawn()失败问题
-修复语义搜索向量L2归一化问题
-修复系统提示时间获取逻辑
-修复多安全漏洞：路径遍历、LFI、任意执行、env注入等
-修复Chrome扩展CDP会话中继安全
-修复TUI模型选择器数字搜索崩溃问题</p></div>
+    <div class="detail-card"><p>插件安装路径验证，拦截目录遍历类命名
+Telegram 强制 DM 与论坛发送的线程规范（#6833），感谢 @obviyus
+工具执行适配器/签名对齐（遗留问题 + 参数顺序 + 参数规范化）
+修复 Windows spawn() 对 npm 系列 CLI 失败问题（#5815），感谢 @thejhinvirtuoso
+Discord 解决 PluralKit 代理发送者的允许列表和标签问题（#5838），感谢 @thewilloftheshadow
+Tlon 为 SSE 客户端添加超时以防 CWE-400（#5926）
+修复 pi prompt 模板参数语法错误（#6543）
+Subagents 修复通知故障转移竞态（#6621）
+修复 Telegram 流式部分恢复（#5543）
+Onboarding 优化 Windows 引导友好提示（#6242），感谢 @shanselman
+修复 before_tool_call 插件钩子接入工具执行（#6570, #6660），感谢 @ryancnelson
+Browser 保护 Chrome 扩展继电器 CDP 会话安全
+Docker 使用容器端口替代主机端口（#5110），感谢 @mise42
+安全：阻止 lobster 路径注入导致任意命令执行漏洞（#5335），感谢 @vignesh07
+安全：清理 WhatsApp accountId 防路径遍历（#4610）
+安全：限制媒体路径提取防本地文件包含（#4930）
+安全：验证消息工具文件路径防沙箱逃逸（#6398）
+安全：阻止 LD*/DYLD* 环境变量覆盖防主机命令执行（#4896），感谢 @HassanFleyah</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

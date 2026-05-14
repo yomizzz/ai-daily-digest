@@ -299,31 +299,11 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>Plugin 发布支持重试瞬态 ClawHub CLI 依赖安装失败，验证每个预期包版本以加快维护发布
-OpenAI 支持 `openai/chat-latest` 作为显式 API-key 模型覆盖
-Cron CLI 在 JSON 输出中包含计算的 `status`，便于外部工具读取状态
-Channels CLI 使 `openclaw channels list` 仅显示频道，添加 `--all` 选项查看捆绑和目录频道
-Gateway/sessions 在 `/new` 和 `sessions.reset` 时清除缓存的技能快照
-Plugins/install 使用统一的绝对 POSIX npm 生命周期 shell，防止受限 PATH 导致操作失败
-Agents/context engine 在源历史缩减或组装失败时使缓存上下文视图失效
-Agents/compaction 将压缩摘要保留令牌限制在每个模型的输出限制内
-Gateway/sessions 在每日会话轮换时保留新生成的转录文件，同时保持自定义路径
-Doctor/Codex OAuth 修复期间保留工作 PI 路由并恢复 GPT-5 路由
-Agents/subagents 完成会话模式子代理注册行遵循 `archiveAfterMinutes` 而非硬编码 5 分钟
-Plugins/channel setup 转发 `setChannelRuntime` 以便在启动轮询前安装外部通道运行时</p></div>
+    <div class="detail-card"><p>摘要生成失败</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>Native commands 遵守所有者执行
-Active Memory 全局内存切换需要管理员权限
-Auto-reply 通过 before-tool-call 授权钩子限制内联技能工具调度
-Tavily 从活动运行时配置解析 `tavily_search` 和 `tavily_extract` 凭据
-Discord 正确解析 provider-prefixed 目标如 `discord:channel:&lt;id&gt;`
-Telegram 遵守 `accessGroup:*` 发送者白名单后再应用数字 ID 检查
-Agent delivery 当出站投递无结果时正确报告 `deliverySucceeded=false`
-Cron 隐式公告投递在模型执行前失败，避免在永久错误前消耗令牌
-Telegram 将 polling watchdog 绑定到 `getUpdates` 存活状态
-Cron/doctor 修复存储为 `&quot;default&quot;` 等无效值的 `payload.model`</p></div>
+    <div class="detail-card"><p>摘要生成失败</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>
