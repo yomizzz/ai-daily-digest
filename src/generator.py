@@ -298,7 +298,11 @@ THEME_CSS = """
 
 
 def make_slug(title: str, url: str) -> str:
-    key = (title + url).encode()
+    if not title:
+        title = "untitled"
+    if not url:
+        url = ""
+    key = (str(title) + str(url)).encode()
     return hashlib.md5(key).hexdigest()[:12]
 
 
