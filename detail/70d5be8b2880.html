@@ -51,6 +51,11 @@
         }
         .article-meta { font-size: 0.85em; color: var(--color-text-secondary); margin-bottom: 10px; }
         .article-summary { color: var(--color-text); margin-bottom: 12px; font-size: 0.95em; line-height: 1.6; }
+        .article-summary ul, .detail-card ul { margin: 8px 0; padding-left: 20px; }
+        .article-summary li, .detail-card li { margin: 4px 0; }
+        .summary-list { list-style: none; padding-left: 0; }
+        .summary-list li { padding: 4px 0 4px 16px; position: relative; }
+        .summary-list li::before { content: '•'; position: absolute; left: 0; color: var(--color-link); }
         .article-why { color: var(--color-link); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-link); }
         .tags { margin-top: 10px; font-size: 0.8em; color: var(--color-text-secondary); }
         footer { text-align: center; padding: 30px; color: var(--color-text-secondary); font-size: 0.85em; }
@@ -81,7 +86,7 @@
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
         <div class="detail-card">
-            <p>作者开发了一款名为"Open Link in Unloaded Tab"的Firefox扩展，为右键菜单添加了“在未加载标签页中打开链接”的功能。虽然Firefox允许卸载标签页以节省系统资源，但此前无法以未加载状态打开新标签页，这款扩展解决了这个痛点。</p>
+            <p>作者开发了一款名为&quot;Open Link in Unloaded Tab&quot;的Firefox扩展，为右键菜单添加了“在未加载标签页中打开链接”的功能。虽然Firefox允许卸载标签页以节省系统资源，但此前无法以未加载状态打开新标签页，这款扩展解决了这个痛点。</p>
         </div>
 <div class="detail-tags">标签：Firefox扩展, 浏览器插件, 标签页管理</div>
         <div class="detail-why">💡 适合需要管理大量标签页、关注内存使用的Firefox用户。</div>

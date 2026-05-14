@@ -51,6 +51,11 @@
         }
         .article-meta { font-size: 0.85em; color: var(--color-text-secondary); margin-bottom: 10px; }
         .article-summary { color: var(--color-text); margin-bottom: 12px; font-size: 0.95em; line-height: 1.6; }
+        .article-summary ul, .detail-card ul { margin: 8px 0; padding-left: 20px; }
+        .article-summary li, .detail-card li { margin: 4px 0; }
+        .summary-list { list-style: none; padding-left: 0; }
+        .summary-list li { padding: 4px 0 4px 16px; position: relative; }
+        .summary-list li::before { content: '•'; position: absolute; left: 0; color: var(--color-link); }
         .article-why { color: var(--color-link); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-link); }
         .tags { margin-top: 10px; font-size: 0.8em; color: var(--color-text-secondary); }
         footer { text-align: center; padding: 30px; color: var(--color-text-secondary); font-size: 0.85em; }
@@ -81,10 +86,10 @@
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
         <div class="detail-card">
-            <p>本次更新大幅提升了系统韧性和安全性，新增可插拔内存存储和凭证池轮换机制，支持按需切换</p>
+            <ul class="summary-list"><li>新增可插拔内存提供程序，支持灵活配置存储后端</li><li>实现凭证池自动轮换机制，提升认证安全性</li><li>集成 Camofox 反检测浏览器，增强自动化隐蔽性</li><li>支持内联代码差异预览，优化变更审核体验</li><li>网关强化修复竞态条件和审批路由漏洞</li><li>完成 168 个 PR 的深度安全修复，解决 46 个问题</li></ul>
         </div>
 <div class="detail-tags">标签：Hermes Agent</div>
-        <div class="detail-why">💡 🔗 点击查看中文摘要与详情</div>
+        <div class="detail-why">💡 查看中文摘要与详情</div>
         <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.3" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 

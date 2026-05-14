@@ -51,6 +51,11 @@
         }
         .article-meta { font-size: 0.85em; color: var(--color-text-secondary); margin-bottom: 10px; }
         .article-summary { color: var(--color-text); margin-bottom: 12px; font-size: 0.95em; line-height: 1.6; }
+        .article-summary ul, .detail-card ul { margin: 8px 0; padding-left: 20px; }
+        .article-summary li, .detail-card li { margin: 4px 0; }
+        .summary-list { list-style: none; padding-left: 0; }
+        .summary-list li { padding: 4px 0 4px 16px; position: relative; }
+        .summary-list li::before { content: '•'; position: absolute; left: 0; color: var(--color-link); }
         .article-why { color: var(--color-link); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-link); }
         .tags { margin-top: 10px; font-size: 0.8em; color: var(--color-text-secondary); }
         footer { text-align: center; padding: 30px; color: var(--color-text-secondary); font-size: 0.85em; }
@@ -81,10 +86,10 @@
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
         <div class="detail-card">
-            <p>本次更新带来完整的流式传输能力和全新插件架构，并重构provider系统以支持Vercel AI Gateway和原生Anthropic集成</p>
+            <ul class="summary-list"><li>流式传输：支持统一的实时 token 递送</li><li>插件架构：全新一流插件系统</li><li>提供商系统重构：支持 Vercel AI Gateway，原生集成 Anthropic 提供商</li><li>智能审批机制</li><li>实时 Chrome CDP 浏览器连接</li><li>ACP IDE 深度集成</li><li>Honcho 记忆功能</li><li>语音模式</li><li>持久化 Shell</li><li>全平台 50+ 错误修复</li></ul>
         </div>
 <div class="detail-tags">标签：Hermes Agent</div>
-        <div class="detail-why">💡 🔗 点击查看中文摘要与详情</div>
+        <div class="detail-why">💡 查看中文摘要与详情</div>
         <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.17" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 

@@ -51,6 +51,11 @@
         }
         .article-meta { font-size: 0.85em; color: var(--color-text-secondary); margin-bottom: 10px; }
         .article-summary { color: var(--color-text); margin-bottom: 12px; font-size: 0.95em; line-height: 1.6; }
+        .article-summary ul, .detail-card ul { margin: 8px 0; padding-left: 20px; }
+        .article-summary li, .detail-card li { margin: 4px 0; }
+        .summary-list { list-style: none; padding-left: 0; }
+        .summary-list li { padding: 4px 0 4px 16px; position: relative; }
+        .summary-list li::before { content: '•'; position: absolute; left: 0; color: var(--color-link); }
         .article-why { color: var(--color-link); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-link); }
         .tags { margin-top: 10px; font-size: 0.8em; color: var(--color-text-secondary); }
         footer { text-align: center; padding: 30px; color: var(--color-text-secondary); font-size: 0.85em; }
@@ -81,10 +86,10 @@
     <main>
         <a href="../index.html" class="back-link">← 返回日报</a>
         <div class="detail-card">
-            <p>这个版本是安全加固版本，主要更新包括：新增Hugging Face提供商并大幅改进了模型命令，新增Telegram私密群组话题支持，集成原生Modal SDK以及支持GPT</p>
+            <ul class="summary-list"><li>新增 Hugging Face 提供商支持</li><li>重构 /model 命令，提升模型切换体验</li><li>支持 Telegram 私密聊天话题</li><li>集成原生 Modal SDK</li><li>新增插件生命周期钩子</li><li>为 GPT 模型强制执行工具使用规范</li><li>支持 Nix flake 打包方式</li><li>修复 50 多项安全性和可靠性问题</li><li>完成全面的供应链安全审计</li></ul>
         </div>
 <div class="detail-tags">标签：Hermes Agent</div>
-        <div class="detail-why">💡 🔗 点击查看中文摘要与详情</div>
+        <div class="detail-why">💡 查看中文摘要与详情</div>
         <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.28" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 

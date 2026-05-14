@@ -51,6 +51,11 @@
         }
         .article-meta { font-size: 0.85em; color: var(--color-text-secondary); margin-bottom: 10px; }
         .article-summary { color: var(--color-text); margin-bottom: 12px; font-size: 0.95em; line-height: 1.6; }
+        .article-summary ul, .detail-card ul { margin: 8px 0; padding-left: 20px; }
+        .article-summary li, .detail-card li { margin: 4px 0; }
+        .summary-list { list-style: none; padding-left: 0; }
+        .summary-list li { padding: 4px 0 4px 16px; position: relative; }
+        .summary-list li::before { content: '•'; position: absolute; left: 0; color: var(--color-link); }
         .article-why { color: var(--color-link); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-link); }
         .tags { margin-top: 10px; font-size: 0.8em; color: var(--color-text-secondary); }
         footer { text-align: center; padding: 30px; color: var(--color-text-secondary); font-size: 0.85em; }

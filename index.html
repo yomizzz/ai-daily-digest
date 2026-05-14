@@ -51,6 +51,11 @@
         }
         .article-meta { font-size: 0.85em; color: var(--color-text-secondary); margin-bottom: 10px; }
         .article-summary { color: var(--color-text); margin-bottom: 12px; font-size: 0.95em; line-height: 1.6; }
+        .article-summary ul, .detail-card ul { margin: 8px 0; padding-left: 20px; }
+        .article-summary li, .detail-card li { margin: 4px 0; }
+        .summary-list { list-style: none; padding-left: 0; }
+        .summary-list li { padding: 4px 0 4px 16px; position: relative; }
+        .summary-list li::before { content: '•'; position: absolute; left: 0; color: var(--color-link); }
         .article-why { color: var(--color-link); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-link); }
         .tags { margin-top: 10px; font-size: 0.8em; color: var(--color-text-secondary); }
         footer { text-align: center; padding: 30px; color: var(--color-text-secondary); font-size: 0.85em; }
@@ -68,14 +73,14 @@
     <header>
         <h1>🤖 每日 AI 资讯精选</h1>
         <p class="subtitle">自动聚合优质内容，AI 生成中文摘要</p>
-        <p class="last-updated">最后更新：2026-05-14 08:35:35</p>
+        <p class="last-updated">最后更新：2026-05-14 11:05:48</p>
     </header>
 
     <main>
         <div class="filter-bar">
             <button class="filter-btn active" data-filter="all">全部</button>
 <button class="filter-btn" data-filter="blog">blog</button><button class="filter-btn" data-filter="hermes">hermes</button>
-            <span class="article-count">共 55 篇</span>
+            <span class="article-count">共 59 篇</span>
         </div>
 
         <div class="articles" id="articles">
@@ -121,7 +126,7 @@
         <span class="category-tag">blog</span>
     </div>
     <div class="article-meta">evanhahn.com · 2026-05-13</div>
-    <p class="article-summary">作者开发了一款名为"Open Link in Unloaded Tab"的Firefox扩展，为右键菜单添加了“在未加载标签页中打开链接”的功能。虽然Firefox允许卸载标签页以节省系统资源，但此前无法以未加载状态打开新标签页，这款扩展解决了这个痛点。</p>
+    <p class="article-summary">作者开发了一款名为&quot;Open Link in Unloaded Tab&quot;的Firefox扩展，为右键菜单添加了“在未加载标签页中打开链接”的功能。虽然Firefox允许卸载标签页以节省系统资源，但此前无法以未加载状态打开新标签页，这款扩展解决了这个痛点。</p>
     <div class="article-why">💡 <a href="detail/70d5be8b2880.html" style="color:var(--color-link);text-decoration:none;">适合需要管理大量标签页、关注内存使用的Firefox用户。 →</a></div>
 <div class="tags">标签：Firefox扩展, 浏览器插件, 标签页管理</div>
 </div><div class="article" data-category="blog">
@@ -310,7 +315,7 @@
         <span class="category-tag">blog</span>
     </div>
     <div class="article-meta">pluralistic.net · 2026-05-12</div>
-    <p class="article-summary">本文是Cory Doctorow的Pluralistic每日博客，聚焦"A fascist paradigm"这一主题探讨改变一切的变化，同时收录了OpenStreetMap与怀特岛合作项目、超市清单、议员祈祷填补坑洞、D120骰子设计以及"Too Like the Lightning"作品评论等多个有趣链接，并预告作者在巴塞罗那和柏林的线下活动。</p>
+    <p class="article-summary">本文是Cory Doctorow的Pluralistic每日博客，聚焦&quot;A fascist paradigm&quot;这一主题探讨改变一切的变化，同时收录了OpenStreetMap与怀特岛合作项目、超市清单、议员祈祷填补坑洞、D120骰子设计以及&quot;Too Like the Lightning&quot;作品评论等多个有趣链接，并预告作者在巴塞罗那和柏林的线下活动。</p>
     <div class="article-why">💡 <a href="detail/2b7af065e2a1.html" style="color:var(--color-link);text-decoration:none;">Pluralistic以独特的跨领域视角，将政治分析与日常趣闻巧妙融合，是了解科技文化评论的重要来源。 →</a></div>
 <div class="tags">标签：每日博客, 科技评论, 数字文化</div>
 </div><div class="article" data-category="blog">
@@ -558,12 +563,48 @@
 <div class="tags">标签：Hermes Agent</div>
 </div><div class="article" data-category="hermes">
     <div class="article-header">
+        <a href="detail/901bf00c0ae1.html" class="article-title">Hermes Agent v0.7.0 (v2026.4.3)</a>
+        <span class="category-tag">hermes</span>
+    </div>
+    <div class="article-meta">hermes-agent · 2026-04-04</div>
+    <p class="article-summary"><ul class="summary-list"><li>新增可插拔内存提供程序，支持灵活配置存储后端</li><li>实现凭证池自动轮换机制，提升认证安全性</li><li>集成 Camofox 反检测浏览器，增强自动化隐蔽性</li><li>支持内联代码差异预览，优化变更审核体验</li><li>网关强化修复竞态条件和审批路由漏洞</li><li>完成 168 个 PR 的深度安全修复，解决 46 个问题</li></ul></p>
+    <div class="article-why">💡 <a href="detail/901bf00c0ae1.html" style="color:var(--color-link);text-decoration:none;">查看中文摘要与详情 →</a></div>
+<div class="tags">标签：Hermes Agent</div>
+</div><div class="article" data-category="hermes">
+    <div class="article-header">
         <a href="detail/9459b4a016d1.html" class="article-title">Hermes Agent v0.6.0 (v2026.3.30)</a>
         <span class="category-tag">hermes</span>
     </div>
     <div class="article-meta">hermes-agent · 2026-03-30</div>
     <p class="article-summary">v0.6.0 带来了 Profiles 功能，支持运行多个相互隔离的 agent 实例。新增 MCP server 模式便于与外部工具集成，同时提供官方 Docker 容器简化部署。新增飞书/Lark 和企业微信两个国内主流办公平台的支持，以及 Telegram webhook 和 Slack 多工作区 OAuth 等通信集成能力。</p>
     <div class="article-why">💡 <a href="detail/9459b4a016d1.html" style="color:var(--color-link);text-decoration:none;">🔗 点击查看中文摘要与详情 →</a></div>
+<div class="tags">标签：Hermes Agent</div>
+</div><div class="article" data-category="hermes">
+    <div class="article-header">
+        <a href="detail/35fd02ac1275.html" class="article-title">Hermes Agent v0.5.0 (v2026.3.28)</a>
+        <span class="category-tag">hermes</span>
+    </div>
+    <div class="article-meta">hermes-agent · 2026-03-29</div>
+    <p class="article-summary"><ul class="summary-list"><li>新增 Hugging Face 提供商支持</li><li>重构 /model 命令，提升模型切换体验</li><li>支持 Telegram 私密聊天话题</li><li>集成原生 Modal SDK</li><li>新增插件生命周期钩子</li><li>为 GPT 模型强制执行工具使用规范</li><li>支持 Nix flake 打包方式</li><li>修复 50 多项安全性和可靠性问题</li><li>完成全面的供应链安全审计</li></ul></p>
+    <div class="article-why">💡 <a href="detail/35fd02ac1275.html" style="color:var(--color-link);text-decoration:none;">查看中文摘要与详情 →</a></div>
+<div class="tags">标签：Hermes Agent</div>
+</div><div class="article" data-category="hermes">
+    <div class="article-header">
+        <a href="detail/d578a35ef76e.html" class="article-title">Hermes Agent v0.4.0 (v2026.3.23)</a>
+        <span class="category-tag">hermes</span>
+    </div>
+    <div class="article-meta">hermes-agent · 2026-03-24</div>
+    <p class="article-summary"><ul class="summary-list"><li>新增 OpenAI 兼容 API 服务器</li><li>新增 6 个消息适配器</li><li>新增 4 个推理服务提供商</li><li>MCP 服务器管理支持 OAuth 2.1</li><li>支持 @ 上下文引用功能</li><li>网关新增提示缓存功能</li><li>流式传输改为默认启用</li><li>可靠性优化，修复 200+ 漏洞</li></ul></p>
+    <div class="article-why">💡 <a href="detail/d578a35ef76e.html" style="color:var(--color-link);text-decoration:none;">查看中文摘要与详情 →</a></div>
+<div class="tags">标签：Hermes Agent</div>
+</div><div class="article" data-category="hermes">
+    <div class="article-header">
+        <a href="detail/509b4dee7536.html" class="article-title">Hermes Agent v0.3.0 (v2026.3.17)</a>
+        <span class="category-tag">hermes</span>
+    </div>
+    <div class="article-meta">hermes-agent · 2026-03-17</div>
+    <p class="article-summary"><ul class="summary-list"><li>流式传输：支持统一的实时 token 递送</li><li>插件架构：全新一流插件系统</li><li>提供商系统重构：支持 Vercel AI Gateway，原生集成 Anthropic 提供商</li><li>智能审批机制</li><li>实时 Chrome CDP 浏览器连接</li><li>ACP IDE 深度集成</li><li>Honcho 记忆功能</li><li>语音模式</li><li>持久化 Shell</li><li>全平台 50+ 错误修复</li></ul></p>
+    <div class="article-why">💡 <a href="detail/509b4dee7536.html" style="color:var(--color-link);text-decoration:none;">查看中文摘要与详情 →</a></div>
 <div class="tags">标签：Hermes Agent</div>
 </div><div class="article" data-category="hermes">
     <div class="article-header">
