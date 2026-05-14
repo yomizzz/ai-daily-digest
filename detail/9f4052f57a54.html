@@ -299,11 +299,22 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>新增 Active Memory 插件，提供专用记忆子代理，支持配置化上下文模式和实时检查（`/verbose`）
+macOS Talk 模式新增实验性本地 MLX 语音提供者，支持本地播放和系统语音回退
+添加 `openclaw exec-policy` 命令，同步工具执行配置与本地审批文件
+Gateway 新增 `commands.list` RPC，支持远程客户端发现运行时命令
+新增 LM Studio 集成，支持本地/自托管 OpenAI 兼容模型的发现和流式传输
+新增 Codex 提供者，使用 Codex 管理的认证和模型发现
+添加 `openclaw qa telegram` 实时测试通道和 `--runner multipass` QA 测试车道
+Matrix 协议支持 MSC4357 实时标记，草稿发送和编辑时支持打字机动画
+插件加载机制优化，按清单声明的需求限制激活范围，减少无关运行时加载
+Control UI/Dreaming 简化 Scene 和 Diary 界面，稳定状态排序</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>移除 busybox/toybox 解释器类安全二进制文件
+防止空审批列表绕过授权机制
+扩展 shell-wrapper 检测，阻止 env-argv 注入攻击</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

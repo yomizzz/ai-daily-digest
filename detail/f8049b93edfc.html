@@ -299,11 +299,32 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Apple Watch 配套应用 MVP，支持手表收件箱 UI、通知转发和状态/发送命令
+iOS 节点通过 APNs 远程唤醒并自动重连，减少后台调用失败
+新增配对设备清理命令，支持移除设备及拒绝待处理配对请求
+iOS 推送注册和通知签名配置，支持节点消息投递
+APNs 投递验证测试管道
+安全审计：检测 gateway.auth.mode=&quot;none&quot; 导致的 HTTP API 暴露风险
+强化编码智能体技能指导，移除不安全的命令示例</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>修复推理流期间助手流式输出中断问题
+修复 WKWebView 生命周期导致的崩溃风险
+修复配对状态自动恢复时的闪烁问题
+修复手动重试时的配对和重连行为稳定性
+恢复 iOS 本地签名团队自动选择功能
+统一 Telegram message 和 channel_post 处理流程
+Telegram 工具失败警告仅在详细模式显示
+Cron 和心跳消息支持显式发送到指定 Telegram topic
+修复 macOS LaunchAgent 无法打开 SQLite 临时文件问题
+计费错误消息现在包含具体模型名称（如 OpenAI (gpt-5.3)）
+Gateway TUI 遵守 blockStreamingDefault 配置
+Chat UI 接受规范的主会话密钥别名
+修复 Apple 客户端 RPC 参数将布尔值错误编码为 1/0
+QMD 后端跳过嵌入提供者警告
+改善 Canvas 资源解析和空状态处理
+Doctor 命令修复配置时避免意外重复写入 token</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

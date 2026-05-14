@@ -299,11 +299,24 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>新增官方 Matrix 插件，基于 matrix-js-sdk 实现Matrix消息支持
+Discord命令部署默认切换到Carbon reconcile，避免重启时频繁重新部署
+`time`命令在白名单评估时被视为透明包装器，批准的`time ...`命令绑定内部可执行文件而非包装器路径
+媒体快照输出迁移到`details.media`，生成媒体继续正确附加到助手回复</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>移除旧版Chrome扩展中继路径和捆绑扩展资源，运行`openclaw doctor --fix`迁移主机本地浏览器配置
+移除遗留的`nano-banana-pro`技能包装器，改用`agents.defaults.imageGenerationModel.primary`配置
+插件SDK迁移到新路径`openclaw/plugin-sdk/*`，移除旧的`openclaw/extension-api`
+消息发现必须使用新的`ChannelMessageActionAction.describeMessageTool(...)`方法
+移除遗留的`CLAWDBOT_*`和`MOLTBOT_*`环境变量，统一使用`OPENCLAW_*`前缀
+移除遗留的`.moltbot`状态目录自动检测，需手动迁移到`~/.openclaw`
+阻止构建工具JVM注入、glibc可利用参数和.NET依赖劫持等安全风险
+Webhook预认证请求限制降低到64KB/5s，阻止无认证调用者强制大缓冲区路径
+Matrix插件修复：mention必需房间中不再在消息路由前刷新线程绑定
+Matrix插件修复：网关重启时入站事件去重，避免重复处理已处理消息
+Android联系人搜索正确转义`%`和`_`通配符，避免意外匹配</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

@@ -299,11 +299,23 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>**可插拔代理架构**：新增 `inbound.reply.agent` 块，支持 Claude、Pi、Codex、Opencode 等多个 AI 代理，每个代理有独立的参数构建器和解析器
+**安全停止词机制**：收到 `stop`、`esc`、`abort`、`wait`、`exit` 时立即终止 agent 运行，并在后续对话前提醒
+**同手机模式**：支持在同一手机号上运行，可聊天控制 AI 助手，自动回声检测防止循环
+**批量消息处理**：多条 WhatsApp 消息合并发送，每条带时间戳保证顺序
+**IPC 通信**：通过 Unix socket 实现 `warelay send` 和心跳命令复用 relay 连接
+**自动恢复机制**：WhatsApp 连接卡住超过 30 分钟自动重启
+**提前权限过滤**：未授权发送者在解密前被拦截，防止 Bad MAC 错误
+**可配置同手机标记**：新增 `inbound.samePhoneMarker` 配置自定义前缀</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>**空结果处理**：修复 Claude 返回 `result: &quot;&quot;` 时错误地将原始 JSON 发送出去的问题
+**心跳消息前缀**：修复心跳告警消息不显示表情前缀（如 🦞）的问题
+**友好错误提示**：命令失败时现在返回用户友好的错误消息而非静默失败
+**测试数据隔离**：修复测试污染生产 `sessions.json` 的问题
+**Signal 会话损坏**：修复 `warelay send` 创建新连接导致 Signal ratchet 损坏的问题
+**媒体类型发送**：修复 Web 端发送媒体时全部当作图片发送的问题</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

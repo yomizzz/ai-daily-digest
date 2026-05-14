@@ -299,11 +299,30 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Models/Google: 新增 Gemini 3.1 模型支持
+Providers: 新增火山引擎（豆包）和 BytePlus 提供商及模型集成，支持交互/非交互认证流程
+Channels/CLI: 支持按账户/频道配置默认出站路由，`openclaw agent --deliver` 无需指定 `--reply-to` 即可发送
+Channels: 支持通过 `channels.modelByChannel` 按频道覆盖模型，并在 /status 中显示
+Telegram/Streaming: 简化为 `channels.telegram.streaming` 布尔配置，自动兼容旧版 streamMode 值
+Discord/Streaming: 新增流预览模式，支持 live draft 回复和可配置分块
+Discord/Telegram: 新增生命周期状态反应，支持排队/思考/工具/完成/错误阶段的 emoji 和时序配置
+Discord/Voice: 新增 `/vc` 命令控制语音频道加入/离开/状态，支持实时语音对话自动加入配置
+Discord: 支持配置斜杠命令响应的临时消息默认值
+Discord: 支持通过频道编辑操作更新论坛可用标签
+Discord: 新会话中包含频道主题的可信入站元数据
+Discord/Subagents: 新增线程绑定的子代理会话，支持线程级聚焦/列表控制和后续路由
+iOS/Chat: 优化聊天 UI，清理入站噪音，精简工具输出，支持输入时收起 Composer 和点击收起键盘
+iOS/Watch: 桥接 Apple Watch 镜像提示通知操作到 iOS 快捷回复
+iOS/Gateway: 优化后台唤醒和重连行为，包括 BGAppRefresh 降级、位置唤醒节流、APNs 重试机制
+Auto-reply/UI: 新增模型回退生命周期可见性，日志和 WebUI 中显示回退原因和活动模型
+MSTeams: 优化消息缓存去重，改用时间戳 Map 键作为唯一成员来源
+Agents/Subagents: 默认子代理生成深度改用共享 `maxSpawnDepth=2`，启用深度-1 编排器
+Security: 引入 `ownerDisplaySecret` 专用 HMAC 密钥增强身份混淆，SHA-1 升级为 SHA-256 哈希算法</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Security: 修复 Pi runner 重试循环无界问题，引入动态限制（32-160次）并返回 `retry_limit` 错误
+Telegram: 修复跨账户重复 bot-token 所有权检测问题（内容被截断）</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

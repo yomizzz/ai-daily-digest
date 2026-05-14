@@ -299,11 +299,28 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>**Codex 集成**：新增 Codex 提供商和插件自有应用服务器，使 `codex/gpt-*` 模型使用 Codex 管理的认证、线程、模型发现和压缩功能
+**Active Memory**：新增可选的主动记忆插件，为聊天提供专属记忆子代理，自动拉取用户偏好和上下文，支持多种模式及实时调试
+**macOS 本地语音**：新增实验性 MLX 语音提供商，支持本地语音播放和系统语音回退
+**视频生成**：新增 Seedance 2.0 模型支持及完整参数配置
+**Teams 集成**：新增消息操作功能（置顶、标记已读、反应等）
+**QA Matrix 测试**：新增实时 Matrix 自动化测试通道
+**QA Telegram 测试**：新增私有群组机器人间测试功能
+**QA Multipass**：新增 Linux 虚拟机测试运行器
+**exec-policy 命令**：新增本地命令行用于同步工具执行策略配置
+**Gateway RPC**：新增 `commands.list` 远程命令发现接口
+**Provider 网络配置**：新增私有网络请求白名单配置选项
+**Matrix 流式处理**：支持 MSC4357 实时标记，客户端可渲染打字机动画
+**Dreaming UI**：简化场景和日记界面，优化状态和排序逻辑
+**严格 Agentic 模式**：为 GPT-5 系列新增严格代理执行合约
+**OpenAI/Codex 兼容**：增强工具 schema 兼容性和运行状态展示
+**飞书集成**：标准化用户代理并注册为 AI 代理</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>**浏览器安全**：加强沙箱导航防御、SSRF 防护、主机名白名单、重定向处理等多项安全加固
+**工具安全**：强化执行预检、主机环境黑名单、插件安装依赖扫描、WebSocket 帧处理等安全机制
+**OpenAI/Codex**：添加必需的 OAuth 作用域，更清晰分类提供商/运行时错误</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

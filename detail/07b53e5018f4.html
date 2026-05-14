@@ -299,11 +299,29 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Web 搜索：新增 `web_search`/`web_fetch` 工具（基于 Brave API），集成首次设置引导
+浏览器控制：Chrome 扩展中继接管模式 + 远程浏览器控制（`clawdbot browser serve`）
+插件系统：渠道插件（网关 HTTP 钩子）+ Zalo 插件 + 插件安装引导流程
+安全增强：`clawdbot security audit` 新增检查项（+ `--fix`）、detect-secrets CI 扫描及 SECURITY.md 安全策略
+语音通话：新增 Plivo 语音提供商（无 SDK 依赖）
+渠道支持：Matrix 插件、Telegram 消息删除、WhatsApp 读取回执开关
+使用追踪：新增 MiniMax 编程计划使用量追踪
+配置增强：`channels.&lt;provider&gt;.configWrites` 门控配置 + Claude Code CLI 认证选项标注
+Daemon：支持多网关环境下配置感知的服务名称
+Control UI：显示原始 any-map 条目及文档链接导航</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>修复网关终止信号未正确转发给 CLI 子进程的问题（#933）
+修复 Control UI 中 main 会话键未规范化的问题
+修复 Markdown 代码块内的 thinking/final 标签未正确处理的问题（#939）
+修复浏览器角色快照在 Playwright 页面切换后失效的问题
+修复 macOS launchd 日志目录缺失问题（#909）
+修复 Telegram 原生命令注册错误（#929，修复 #901）
+修复 Google 未签名思维块导致的签名错误
+修复 Agent 工具调用文本降级时误删相邻回复的问题（#905）
+修复 npm 发布包缺少最新 dist/ 的问题
+修复 OpenAI/OpenRouter 工具调用 ID 过长问题</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

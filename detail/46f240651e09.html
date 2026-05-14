@@ -299,11 +299,34 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>新增 Hooks 系统，包含打包 hooks、CLI 工具和完整文档
+新增入站媒体理解，支持 image/audio/video，带 provider 和 CLI fallback
+新增 Zalo Personal 插件（@clawdbot/zalouser），统一插件渠道目录
+新增 session.identityLinks 用于跨平台 DM session 关联
+新增 Web search country/language 参数（支持 Brave API）
+新增 Vercel AI Gateway 认证选择和 onboarding 更新
+新增打包插件默认禁用机制，允许安装版本覆盖
+新增 Antigravity、Gemini CLI OAuth、Copilot Proxy 插件
+web_fetch 改进：使用 Readability 提取，支持 Firecrawl fallback，发送 Chrome-like headers
+新增 exec 工具：支持 PTY 交互式会话、tmux 风格 send-keys、bracketed paste 和 cursor position 查询
+exec 工具默认 exit 通知，自动迁移 legacy tools.bash 配置
+TUI 新增运行完成后刷新 session token counts
+Control UI 新增删除 sessions 功能
+Telegram 新增 reply-chain 消息绕过 mention gating
+iMessage 新增远程附件支持（VM/SSH 部署）
+Messages 新增 delivered outbound text/media 镜像到 session transcripts
+Cron isolated jobs 每次运行启动新 session id 防止上下文堆积
+新增 Health 端点：per-agent session summaries 和 account-level health details
+新增 Hooks hook pack installs 支持（npm/path/zip/tar）
+Config 新增 env var substitution 支持</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>macOS 修复：drain subprocess pipes 避免 deadlocks
+Verbose 修复：仅对支持 markdown 的渠道启用 markdown 包装
+Telegram 修复：接受 tg/group/telegram 前缀和 topic targets 用于 inline button 验证
+Telegram 修复：拆分长 captions 为 follow-up messages
+Config 修复：阻止无效 config 启动，保留 best-effort doctor config</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

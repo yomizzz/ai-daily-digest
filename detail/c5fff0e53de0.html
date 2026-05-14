@@ -299,11 +299,30 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Secrets/SecretRef 支持扩展至 64 个用户凭证目标，实现快速失败和诊断报告
+新增原生 PDF 工具，支持 Anthropic/Google PDF 提供商及回退提取方案
+出站适配器新增 sendPayload 支持，覆盖 Discord/Slack/WhatsApp/Zalo 等平台
+新增 MiniMax-M2.5-highspeed 模型支持，保留 Lightning 兼容配置
+sessions_spawn 子代理运行时新增内联文件附件支持及生命周期清理
+Telegram 流式预览默认改为 partial 模式，新安装开箱即用
+Telegram DM 流式传输改用 sendMessageDraft，区分推理和回答预览
+Telegram 语音消息新增 disableAudioPreflight 配置跳过转录预检
+新增 openclaw config validate 命令，支持 JSON 输出和详细错误路径
+Diffs 工具新增 PDF 输出及质量控制参数
+Memory 搜索新增 Ollama 嵌入提供商支持
+Zalo 个人插件重构为原生 zca-js 进程内集成
+插件 SDK 新增 ChannelGatewayContext.channelRuntime 访问能力
+插件运行时新增音频文件转录 API
+会话生命周期钩子新增 sessionKey 上下文信息
+消息生命周期新增 transcribed/preprocessed 钩子事件及群组上下文
+音频理解新增转录确认回显功能（默认关闭）
+插件运行时新增立即心跳请求 API
+插件运行时新增 AgentEvent 和 SessionTranscriptUpdate 订阅机制
+CLI 横幅新增 taglineMode 配置控制启动标语行为</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>无</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

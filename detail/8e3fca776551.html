@@ -299,11 +299,32 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>CLI: `clawdbot status` 改为表格显示，增加 OS/update/gateway/daemon/agents/sessions 等完整信息
+CLI: 新增 `clawdbot update` 命令（基于 git checkout 的安全更新方式）
+Gateway: 新增 OpenAI 兼容的 `/v1/chat/completions` HTTP 端点，支持 SSE 流式输出和按 agent 路由
+CLI Backends: 添加 Codex CLI 备用方案，支持恢复功能和 JSONL 解析
+Onboarding: 添加 Z.AI (GLM) 和 OpenRouter API 密钥认证选项
+Agents: 新增块回复间的人机延迟 pacing 功能（off/natural/custom 模式）
+Agents/Browser: 新增 `browser.target` 配置（sandbox/host/custom）及沙箱主机控制门控
+Onboarding: 添加基于目录的默认模型选择器
+Providers: 统一组历史上下文包装器，支持按 provider/account 覆盖 `historyLimit`
+Gateway/Heartbeat: 可选传递心跳推理输出
+Docker: 允许可选的 home 卷和额外绑定挂载</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>CLI/Status: 表格扩展到全终端宽度，改进警告信息，添加故障排查链接
+CLI/Update: 修正进度转盘显示条件
+Telegram: 添加 `/whoami` 和 `/id` 命令，支持 `@username` 格式的 allowFrom 配置
+Control UI: 停止自动写入 `telegram.groups[&quot;*&quot;]`
+WhatsApp: 仅对已处理消息发送确认反应，检测 @lid 提及
+Sandbox/Skills: 将技能镜像到沙箱工作区以保持可访问性
+Terminal/Table: 修复 ANSI 安全换行，防止表格截断
+macOS: 清除未签名 launchd 覆盖项，规范化模型选择器选择
+Gateway/Heartbeat: 修复心跳回复为 HEARTBEAT_OK 时推理输出丢失的问题
+Agents: 强制单写会话锁，移除隐藏推理输出中的标签，识别 usage limit 错误
+Providers: 入站消息去重，避免重复 LLM 调用
+Gateway/Auth: 默认使用回环令牌认证，限制音频转录仅使用 Whisper</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

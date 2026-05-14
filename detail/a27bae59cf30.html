@@ -299,11 +299,25 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>GPT-5.4 系列支持：新增对 `gpt-5.4-pro` 的前瞻兼容支持，包括定价/限额和目录可见性 (#66453)
+Telegram 论坛主题：支持在代理上下文和插件钩子元数据中显示人工主题名称 (#65973)</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Ollama 超时修复：修复慢速本地 Ollama 运行不继承配置的 embedded-run 超时问题 (#63175)
+Codex 模型注册：修复因缺少 `apiKey` 导致自定义模型被静默丢弃的问题 (#66180)
+Ollama 视觉模型：修复图像和 PDF 工具将有效的 Ollama 视觉模型错误拒绝为未知的问题 (#59943)
+Slack 安全验证：修复交互事件可绕过 `allowFrom` 允许列表的漏洞 (#66028)
+附件路径安全：修复 `realpath` 错误导致允许列表检查降级的问题 (#66022)
+Gateway 工具安全：阻止通过 gateway-tool 新增危险安全标志 (#62006)
+Gemini 图像请求：修复 Google 基础 URL 末尾 `/openai` 导致请求 404 的问题 (#66445)
+主题名持久化：修复重启后 Telegram 主题名称需要重新学习的问题 (#66107)
+Systemd 密钥保护：防止 doctor 修复重写 systemd 单元时嵌入 dotenv 密钥 (#66249)
+Ollama 使用量统计：修复本地 Ollama 流式响应报告虚假 token 用量的问题 (#64568)
+插件缓存优化：修复大型配置下 doctor/plugins 反复读取插件目录导致 CPU 占用过高的问题 (#66246)
+Copilot 推理支持：允许 Copilot GPT-5.4 使用 `xhigh` 推理强度 (#50168)
+嵌入模型兼容：修复代理内存 providers 因前缀丢失导致的 `Unknown provider` 错误 (#66452)
+本地模型配置：改进低上下文本地模型的预检提示和配置指引 (#66236)</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

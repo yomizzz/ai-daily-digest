@@ -299,11 +299,41 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Control UI: 新增复制为 Markdown 功能，支持错误反馈
+Control UI: 移除旧版列表视图，简化界面
+TUI: 代码块支持语法高亮显示
+TUI: 会话选择器新增衍生标题、模糊搜索、相对时间和最后消息预览
+TUI: 新增可搜索模型选择器，快速切换模型
+TUI: 新增输入历史功能（上下键遍历已发送消息）
+ACP: 新增 `clawdbot acp` 命令，支持 IDE 集成
+ACP: 新增 `clawdbot acp client` 交互式调试工具
+Skills: 下载安装支持 OS 过滤选项
+Skills: 新增本地 sherpa-onnx-tts 语音合成技能
+Memory: 新增混合 BM25 + 向量搜索（FTS5），支持加权合并和回退机制
+Memory: 新增 SQLite 嵌入缓存，加速重索引和频繁更新
+Memory: 新增 OpenAI 批量索引功能，显著提升嵌入处理效率
+Memory: 新增 Gemini 原生嵌入提供商支持
+Memory: 批量索引支持并行任务（默认并发数 2），实时进度渲染
+Browser: 支持配置文件默认快照设置，提升工具/CLI 效率
+Nostr: 新增 Nostr 频道插件，含个人资料管理和引导默认值
+Matrix: 迁移至 matrix-bot-sdk，新增 E2EE 加密和位置处理支持
+Slack: 新增 Bolt HTTP 接收器模式，支持 HTTP Webhook
+Telegram: 转发消息支持标准化来源详情和旧版兼容
+Discord: 超出命令限制时自动回退至 `/skill`，并全局开放该命令
+插件系统: 支持清单内嵌配置模式、频道元数据驱动 UI、新增记忆槽选择器
+插件: 新增 BlueBubbles 频道插件（默认禁用）
+插件: Zalo 和 Zalo Personal 迁移至共享插件 SDK 运行时
+插件: 支持可选代理工具和显式允许列表
+插件: 配置存在时自动启用，新增插件源同步和更新功能
+Gateway: 新增 `/v1/responses` API（OpenResponses），支持语义流事件
+Gateway: `/v1/responses` 扩展支持文件/图片输入、tool_choice 和输出限制
+Usage: 新增 `/usage cost` 汇总命令和 macOS 菜单成本图表
+Security: 检测到 ≤300B 模型无沙箱运行且启用网络工具时发出警告
+Exec: 新增 host/security/ask 路由和会话级 `/exec` 指令</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>无</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

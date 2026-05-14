@@ -299,11 +299,28 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Memory/dreaming: 新增基于历史的REM回填通道、日记提交流程和实时短期记忆提升整合
+Control UI/dreaming: 新增结构化日记视图，含时间线导航、回填/重置控制和梦境摘要追踪
+QA/lab: 新增角色氛围评估报告，支持模型选择和多任务并行运行
+Plugins/provider-auth: 支持provider清单声明auth别名，实现跨provider变体共享认证配置
+iOS: 版本号锁定到CalVer，新增gateway版本固定工作流</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Browser/security: 修复交互驱动的页面导航后安全检查被绕过的问题
+Security/dotenv: 阻止不受信任workspace的.env文件注入运行时和浏览器控制环境变量
+Gateway/node exec events: 隔离远程节点执行事件的信任边界，防止注入可信内容
+Plugins/onboarding: 防止不受信任插件与捆绑provider的认证选项ID冲突
+Security/dependency audit: 升级basic-ftp修复CRLF命令注入漏洞
+Android/pairing: 修复扫码后认证状态残留和后台自动重试导致的配对失败
+Matrix/gateway: 修复Matrix同步就绪前过早标记启动成功导致的崩溃问题
+Slack/media: 修复同源重定向丢失认证导致图片附件无法加载
+Reply/doctor: 修复OAuth重新认证失败未正确提示用户
+Control UI: 修复快速切换会话时历史记录与当前会话不同步
+Gateway/chat: 阻止agent间控制令牌泄露到用户聊天界面
+Auto-reply/NO_REPLY: 清理静默前缀令牌防止泄露到用户可见回复中
+Sessions/routing: 修复后续会话消息抢占外部渠道(Telegram/Discord)路由
+Gateway/sessions: 重置会话时正确清除自动回退的模型覆盖设置</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

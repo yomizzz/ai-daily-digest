@@ -299,11 +299,36 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>CLI：新增 `openclaw logs --local-time` 命令，支持本地时区和时区偏移显示日志时间戳
+Telegram：支持将区块引用渲染为原生 `&lt;blockquote&gt;` 标签
+Config：避免对类似 `maxTokens` 的字段进行脱敏处理，防止配置验证失败
+Gateway：WS payload/buffer 限制提升，支持500万字节图片附件
+Gateway：重启前先排空活跃会话，防止消息丢失
+Gateway：安装时自动生成认证token，防止launchd重启循环
+WhatsApp：Markdown粗体/删除线转WhatsApp格式
+WhatsApp：支持纯媒体发送并规范化空载荷
+WhatsApp：语音消息未提供MIME类型时使用默认类型</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Security：修复未认证的Nostr profile API远程配置篡改漏洞
+Security：移除捆绑的soul-evil hook
+Security/Sandbox：限制镜像skill同步目标到sandbox skills/根目录，防止使用frontmatter控制的skill名称作为文件系统路径
+Security/Web tools：浏览器/web内容默认视为不可信，减少prompt注入重放风险
+Security/Hooks：加强webhook和设备token验证，添加per-client认证失败限流
+Security/Browser：loopback浏览器控制HTTP路由需认证，自动生成无auth时的token
+Sessions/Gateway：强化transcript路径解析，拒绝不安全的session ID/文件路径
+Gateway/OpenResponses：强化URL-based输入文件的SSRF防护，添加主机名白名单和per-request URL输入限制
+Gateway：处理async `EPIPE` 异常和防止auth配置中token未定义
+Gateway/Control UI：修复symlink-based Node管理器全局安装时dashboard资源缺失问题
+Cron：修复 `nextRunAtMs` 推进时任务跳过执行的问题
+Cron：防止多个job同时触发时重复执行
+Cron：隔离scheduler错误，防止一个坏job影响所有job
+Cron：一次性任务重启后不再重新触发被跳过/出错的运行
+Cron：isolated-agent运行时使用存储的session model覆盖，保留Gmail hook的model优先级
+Heartbeat：防止scheduler因异常运行错误而停滞，避免跳过后立即重跑循环
+Logging/Browser：临时目录不可用时回退到 `os.tmpdir()/openclaw`
+Telegram：处理无文本消息的模型选择器编辑</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

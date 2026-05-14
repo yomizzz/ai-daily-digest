@@ -299,11 +299,28 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>**Microsoft Teams 集成**：支持轮询、附件处理、出站 CLI 发送、频道策略配置
+**模型接入扩展**：新增 OpenCode Zen 和 MiniMax Anthropic 兼容 API 支持
+**认证系统增强**：Token 认证配置、认证优先级排序、OAuth 过期检查
+**CLI 消息子命令**：`message send/poll/attach/outbound` 统一管理
+**Gateway 发现机制**：支持本地和广域网 DNS-SD 自动发现、状态查询、SSH 直连
+**WhatsApp 增强**：广播群组多人回复、可配置媒体大小上限、身份前缀
+**Telegram 增强**：内联键盘按钮与回调路由、主题定时投递、音频转语音标签
+**Signal 增强**：消息反应与通知功能
+**控制 UI 升级**：移动端适配、消息队列展示、推理过程视图、会话链接
+**沙箱环境改进**：浏览器自动启动、技能同步、列表/重建命令
+**日志与配置**：多格式日志输出、全局配色禁用、环境变量内联支持
+**命令扩展**：`/debug` 运行时覆盖、`/config` 聊天更新、状态/成本报告
+**医生/守护进程**：权限检查、配置审计、供应商状态探测、重启指导
+**移动端图标**：iOS/Android/macOS 图标全新设计</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>**打包修复**：确保 MS Teams 发送模块包含在 npm tarball 中
+**沙箱/浏览器**：CDP 端点自动启动、容器代理修复、列表输出格式对齐
+**代理/运行时**：修复心跳提示范围、会话停止中断、上下文窗口保护
+**模型处理**：模型降级字符串化、计费故障转移、认证冷却排序
+**工具调度**：恢复 Anthropic OAuth 工具调度、Gmail hook 模型稳定性</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

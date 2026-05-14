@@ -299,11 +299,32 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>OpenAI 提供商：通过 Codex OAuth 支持图像生成和参考图编辑，`gpt-image-2` 无需 API Key
+OpenRouter 提供商：添加图像生成和参考图编辑支持
+图像生成：支持代理请求画质和输出格式提示，传递背景、审核等 OpenAI 特定参数
+子代理：新增可选的 forked context 支持，子代理可继承请求者转录
+工具调用：图像、视频、音乐、TTS 生成工具支持自定义 `timeoutMs`
+本地嵌入：新增可配置的 `memorySearch.local.contextSize`（默认 4096）
+Pi 依赖：更新到 `0.70.0`，使用上游 `gpt-5.5` 目录元数据
+Codex 调试：添加结构化日志便于排查 harness 自动选择问题</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Codex harness：修复用户输入提示路由、后续答案队列和应用服务器批准决策处理
+上下文引擎：日志前清理组装失败信息，防止序列化原始错误对象
+WhatsApp：首次运行设置脱离 Baileys 依赖路径，QuickStart 安装可提前展示设置界面
+流式输出：部分中止时抑制重复的最终组装文本
+Windows Codex：修复通过 PATHEXT 解析 `codex.cmd` shims
+Slack 群组：MPIM 正确分类为群聊，抑制非 DM 界面的工具/计划进度消息
+代理回放：停止 OpenAI/Codex 合成缺失工具结果，保留其他传输层的合成修复
+Telegram 媒体回复：解析 Markdown 图像语法为媒体载荷
+WebChat 错误：表面显示不可重试的提供商错误（账单、认证、配额）
+WhatsApp 媒体：统一出站媒体规范化处理
+本地嵌入 CLI：`memory status/index/search` 命令可解析本地嵌入
+WebChat 附件：为文本模型保留图像附件为媒体引用
+Google Meet 插件：离开时挂断 Twilio 通话，清理失败的音频桥接
+图像模型配置：明确配置优先于原生视觉跳过
+Codex 图像理解：支持 `codex/*` 图像模型，`openai-codex/*` 走 OAuth 路由</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

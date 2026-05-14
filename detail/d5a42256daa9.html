@@ -299,11 +299,33 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>CLI: 新增 `completion` 命令支持 Zsh/Bash/PowerShell/Fish，安装时自动配置
+CLI: 新增 per-agent `models status` 命令，支持 `--agent` 过滤器
+Agents: 新增 Kimi K2.5 到合成模型目录
+Auth: Kimi Coding 切换为内置 provider，规范化 OAuth profile email
+Auth: 新增 MiniMax OAuth 插件及 onboarding 引导选项
+Web UI: 聊天命令后刷新会话，优化会话显示名称
+Build: TypeScript 构建迁移至 `tsdown` + `tsgo`，提升构建速度
+Build: 修复 npm 发布时 `openclaw` CLI 入口点丢失问题
+Docs: 新增 pi/pi-dev 文档，更新 OpenClaw 品牌和安装链接</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Security: 限制媒体解析器本地路径提取，防止 LFI 漏洞
+Gateway: 修复 token 默认值变成字面 &quot;undefined&quot; 的问题
+Control UI: 修复 npm 全局安装时的资产路径解析
+macOS: 修复 gateway 发现时的 stderr 管道背压问题
+Telegram: 修复非规范化 ID 的账户 token 查找和 threadId 处理
+Telegram: 修复重叠样式/链接的 HTML 嵌套问题
+Telegram: 修复 react 操作中接受数字 messageId/chatId
+Telegram: 修复 per-account proxy dispatcher 配置
+Telegram: 限制技能命令仅在绑定代理范围内生效
+BlueBubbles: 按 messageId 防抖，保留文本+图片消息附件
+Routing: 子代理公告传递优先使用 requesterOrigin
+Extensions: 恢复嵌入式扩展发现类型定义
+CLI: 修复 `tui:dev` 端口解析问题
+LINE: 修复 status 命令 TypeError
+OAuth: 刷新令牌有效时跳过过期 token 警告</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

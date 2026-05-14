@@ -299,11 +299,26 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Google Meet/Voice Call：Twilio 拨号加入通过实时 Gemini 语音桥接，支持音频流控和打断队列清除，响应更快速
+Gateway/Windows：Windows 上 loopback 网关监听器仅绑定 127.0.0.1，避免 IPv6 双栈导致本地 HTTP 请求卡死
+Plugins/migration：引用未安装的官方插件时提示安装命令而非要求删除配置
+OpenAI/Codex media：运行时和 manifest 支持 Codex 音频转录功能
+Agents/Plugins/performance：模型刷新复用工作区插件元数据快照，避免重复冷扫描提升性能
+Config/plugin auto-enable：自动白名单时优先使用插件 manifest id 而非内置 channel 别名
+Secrets/apply：secrets apply 时保留 auth-profile 的 keyRef/tokenRef 元数据
+Plugins/active-memory：跳过包含冒号的 session-store channel 条目，避免 QQ 等 scoped ID 崩溃
+Secrets/external channel contracts：支持在 dist/ 目录解析 npm 发布插件的 secret-contract-api
+Models/auth：新增 openclaw models auth list 命令查看认证配置
+Control UI：dashboard breadcrumbs 显示活跃 agent 名称，New Job 侧边栏改为可折叠
+Gateway/startup：优化启动路径减少插件加载时间和内存占用
+Control UI/performance：记录浏览器长任务/长动画帧事件便于调试
+Slack/streaming：新增 Block Kit 富文本进度条和流式进度行显示
+Channels/streaming：默认限制进度草稿工具行数避免布局抖动
+Agents/verbose：默认使用紧凑工具摘要，可通过配置切换原始详情</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>QQ c2c agent IDs（如 c2c:10D4F7C2…）在 active-memory 中导致 recall 运行崩溃</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

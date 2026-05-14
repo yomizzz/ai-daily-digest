@@ -299,11 +299,30 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>**Agents/Thinking**：Anthropic Claude 4.6 模型默认思考级别设为 `adaptive`，其他推理模型默认 `low`
+**Gateway/健康检查**：新增 `/health`、`/healthz`、`/ready`、`/readyz` 端点，支持 Docker/Kubernetes 探活
+**Android/Nodes**：新增 `camera.list`、`device.permissions`、`device.health`、`notifications.actions` 等命令
+**Discord/Thread**：改用 `idleHours`（默认 24h）和可选 `maxAgeHours` 管理会话生命周期
+**Telegram/DM topics**：支持按 DM 配置话题路由和授权，新增 `dmPolicy`、`requireTopic` 等配置
+**Web UI/Cron 国际化**：本地化 Cron 页面标签、过滤器、表单帮助文本，支持英语和中文
+**OpenAI/Streaming**：Responses WebSocket 优先，默认 `transport: &quot;auto&quot;`，支持 SSE 回退
+**Android/Gateway**：实时能力集成覆盖，画布 URL 规范化，调试诊断 JSON 输出
+**Android/Nodes 新增功能**：`system.notify`、`photos.latest`、`contacts.search/add`、`calendar.events/add`、`motion.activity/pedometer`
+**CLI/Config**：新增 `openclaw config file` 命令显示配置文件路径
+**Feishu/Docx**：支持表格创建/单元格写入、图片/文件上传
+**Feishu/Reactions**：处理 `im.message.reaction.created_v1` 事件，支持验证和过滤
+**Feishu/Chat tooling**：新增聊天信息和成员查询工具
+**Feishu/Doc permissions**：支持可选所有者权限授予
+**Web UI/德语**：新增德语 (`de`) 语言支持
+**Tools/Diffs**：新增差异渲染工具，支持画布和 PNG 输出
+**Memory/LanceDB**：支持自定义 `baseUrl` 和 embedding 维度
+**ACP/ACPX streaming**：固定插件版本 `0.1.15`，简化流传递逻辑
+**Shell 环境变量**：在 `exec`、`acp`、`acp-client`、`tui-local` 中设置 `OPENCLAW_SHELL` 标记
+**Cron/Heartbeat 轻量模式**：新增 `--light-context` 选项，仅加载 `HEARTBEAT.md`</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>无（更新日志中未包含明确的 Bug 修复项）</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

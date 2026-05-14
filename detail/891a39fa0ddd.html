@@ -299,11 +299,30 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>添加通用浏览器实时传输协议和 Google Live Talk 会话支持，包含受限临时令牌及 Gateway 中继
+CLI/models 新增显式源计划路由提供商过滤模型列表，保持稳定授权顺序
+Cerebras 作为捆绑插件加入，包含入职引导、静态模型目录和文档
+Memory/OpenAI兼容端点新增非对称嵌入配置，支持直接查询嵌入和批量索引
+Ollama/memory 为 nomic-embed-text、qwen3-embedding、mxbai-embed-large 添加检索查询前缀
+插件清单接管预运行时模型 ID 规范化、端点元数据和请求族提示，移除核心路由表
+Plugins/config 改用运行时快照和事务性变更辅助函数，替代直接配置加载/写入
+Plugins/install 支持 `OPENCLAW_PLUGIN_STAGE_DIR` 分层依赖根，解决只读预装依赖问题
+Control UI 新增 JSON5 原始配置待更改差异面板，支持敏感值隐藏
+Control UI 优化快速设置仪表板网格布局，适配桌面、平板和移动端
+添加 `openclaw matrix encryption setup` 一键加密设置和恢复引导命令
+Agents/compaction 新增 `maxActiveTranscriptBytes` 预检触发器实现转录轮换
+CLI/migration 新增 Claude Code/Desktop 配置导入器
+CLI/migration 新增 `openclaw migrate` 命令及 Hermes 导入器</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Gateway/device tokens 修复设备令牌轮换响应不再回显共享令牌，保留同设备握手
+Agents/sessions_spawn 修复生成模型覆盖使用目标代理运行时默认提供商的裸别名
+Control UI/Talk 修复 Google Live 会话保持 WebSocket 而非回退 WebRTC，并验证端点
+Gateway/startup 修复在插件加载计划前复用配置快照进行启动自动启用
+Agents/subagents 修复对显式 `sessions_spawn(agentId=...)` 调用强制 `subagents.allowAgents`
+ACP/sessions_spawn 修复 `acp.dispatch.enabled=false` 下仍允许显式 `sessions_spawn(runtime=&quot;acp&quot;)`
+CLI/update 修复 npm 全局更新安装到临时前缀后再切换，防止混合安装问题</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

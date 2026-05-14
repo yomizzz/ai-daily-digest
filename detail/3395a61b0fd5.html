@@ -299,11 +299,31 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>飞书/Lark 插件支持及官方文档上线
+Web UI 新增 Agents 仪表板，支持管理 agent 文件、工具、技能、模型、通道和定时任务
+Memory 模块新增可选 QMD 后端用于工作区内存
+Security 新增健康检查技能和引导审计指南
+配置项支持设置默认子 agent 思考级别（agents.defaults.subagents.thinking）
+文档完善中文翻译、管道指南及导航首页更新</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Security：gateway /approve 命令现需 operator.approvals 权限
+Security：Matrix 白名单必须使用完整 MXID，禁止模糊名称解析授予访问权限
+Security：Slack 斜杠命令通道类型查找失败时强制访问组门控
+Security：跳过网关设备身份前必须验证共享密钥
+Security：技能安装程序下载增加 SSRF 检查，阻止私有/本地地址请求
+Security：强化 Windows 执行白名单，阻止 cmd.exe 通过单个 &amp; 绕过
+Security：voice-call 入站白名单强化，拒绝匿名呼叫者，令牌门控 Twilio 媒体流
+Media understanding：提供商获取增加 SSRF 防护，允许显式覆盖私有 baseUrl
+webchat：流式传输和刷新时保留用户滚动位置
+Telegram：从 grammY 长轮询超时错误中自动恢复
+Agents：修复格式错误的工具调用和会话记录
+Agents：调用 AbortSignal.any() 前先验证 AbortSignal 实例有效性
+Media understanding：跳过二进制媒体文件的文本提取
+Onboarding：TUI 流程保持独占，退出时恢复终端状态
+CLI/Zsh 补全：缓存脚本并转义选项描述，避免无效选项错误
+UI：修复 Control UI 资源路径解析，外部编辑后正确刷新 agent 文件</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

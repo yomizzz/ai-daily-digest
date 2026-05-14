@@ -299,11 +299,32 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>聊天任务板：新增 `/tasks` 命令，可在当前会话中查看后台任务面板和最近任务详情
+SearXNG 搜索：集成 SearXNG 网络搜索提供商插件，支持配置主机地址
+Bedrock Guardrails：新增 Amazon Bedrock Guardrails 支持
+macOS 语音唤醒：支持通过语音唤醒触发 Talk Mode 对话模式
+飞书评论：新增飞书文档评论事件流程，支持评论线程解析和回复功能
+聊天历史截断：聊天历史文本截断可配置，支持 `gateway.webchat.chatHistoryMaxChars` 和请求级 `maxChars` 参数
+全局默认参数：新增 `agents.defaults.params` 用于全局默认提供商参数配置
+Agent 容错机制：改进同提供商认证重试机制，新增 `auth.cooldowns.rateLimitedProfileRotations` 配置
+Cron 工具白名单：新增 `openclaw cron --tools` 命令支持按任务设置工具白名单
+渠道会话路由：将会话对话语法迁移到插件持有的会话密钥，保留 Telegram 和飞书的路由能力
+WhatsApp 反应：新增 `reactionLevel` 引导控制智能体反应行为
+Telegram 错误策略：新增可配置的 `errorPolicy` 和 `errorCooldownMs` 控制重复错误
+ZAI 模型支持：新增 `glm-5.1` 和 `glm-5v-turbo` 模型
+Agent 压缩模型：修复 `agents.defaults.compaction.model` 在手动压缩和上下文压缩路径的一致性</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>错误消息泄露：停止向外部聊天渠道泄露原始提供商/运行时错误，改为返回友好的重试提示
+网关重载循环：配置重载器忽略启动时的配置写入，避免生成令牌触发重启循环
+任务维护阻塞：修复任务注册表维护扫描在高并发下阻塞网关事件循环的问题
+过期任务显示：从 `/status` 和会话状态中隐藏过期的已完成后台任务
+任务状态竞态：修复维护扫描期间任务状态被过时快照覆盖的问题
+Exec 审批默认值：修复未设置内联或配置工具策略时未遵循安全默认值的缺陷
+Exec 审批持久化：修复 `allow-always` 未正确持久化为用户信任的问题
+Cron 审批死锁：修复隔离 cron 在信任自动化允许情况下无路由审批的死锁问题
+模型切换排队：修复 `/model` 更改在忙碌运行时未排队而是中断当前操作的问题</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

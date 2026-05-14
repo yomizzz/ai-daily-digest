@@ -299,11 +299,26 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>External Secrets Management：新增完整 `openclaw secrets` 工作流（audit、configure、apply、reload），支持运行时快照激活和严格的目标路径验证
+ACP Thread-bound agents：ACP代理成为线程会话的一级运行时，集成 spawn/send 调度、生命周期控制和启动协调
+Agents/Routing CLI：新增 `openclaw agents bindings`、`bind`、`unbind` 命令用于账户范围的路由管理
+Codex/WebSocket transport：默认 WebSocket 优先（`transport: &quot;auto&quot;` 配合 SSE 回退）
+Onboarding/Plugins：渠道插件可拥有交互式引导流程，支持 `configureInteractive` 和 `configureWhenConfigured` 钩子
+Auth/Onboarding：Gemini CLI OAuth 前新增账户风险警告和确认环节
+Android/Nodes：新增 `device` 能力及 `device.status`、`device.info` 节点命令
+Android/Nodes：新增 `notifications.list` 支持，可在代理工具中列出设备通知</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Telegram/DM allowlist：强制执行 `dmPolicy: &quot;allowlist&quot;` 的 `allowFrom` 需求，防止升级后 DM 流量被静默丢弃
+Delivery queue/recovery backoff：持久化 `lastAttemptAt` 防止重试饥饿，确保在回退窗口到期后才重试
+Google Chat/Lifecycle：保持 `startAccount` 待处理直到中止，防止自动重启循环
+Temp dirs/Linux umask：创建后强制 `0700` 权限并自修复现有可写临时目录，防止 `umask 0002` 启动崩溃
+Nextcloud Talk/Lifecycle：保持 `startAccount` 待处理并关闭时停止 webhook 监控，防止 `EADDRINUSE` 重启循环
+Microsoft Teams/File uploads：立即响应 `fileConsent/invoke` 避免超时提示横幅
+Queue/Drain/Cron reliability：同步泵故障时保证 `draining` 标志重置，网关重启期间拒绝新入队并加强 cron 超时安全
+Typing indicators：最终化时始终标记 dispatch 空闲，防止运行完成后打字指示器卡住
+Typing/TTL safety net：共享打字管道新增最大持续时间保护机制</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

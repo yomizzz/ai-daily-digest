@@ -299,11 +299,24 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Active-run steering 支持，默认可见回复强制和子智能体路由元数据
+智能体 follow-up commitments 功能，支持心跳提醒和CLI管理
+Messages 队列支持 `steer` 模式，默认500ms防抖
+人员维基功能上线，支持人物卡片、关系图谱、隐私溯源和搜索
+Active Memory 支持按会话过滤 `allowedChatIds`/`deniedChatIds`
+内存超时时返回部分召回摘要，保留有用上下文
+新增 NVIDIA 模型提供商，支持API密钥接入和模型选择
+修复Bedrock Opus 4.7 thinking模式对齐问题
+Gateway 新增事件循环就绪诊断和运行时依赖修复
+SQLite插件状态存储，支持TTL和自动隔离
+增强 Slack Block Kit、Telegram、Discord、WhatsApp 等频道稳定性
+新增 OpenGrep 安全扫描和GHSA策略增强
+新增 `doctor.memory.remHarness` RPC 用于预览REM输出</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>修复受限配置文件下工具隐式拓宽问题（#47487）
+修复stale models配置绕过manifest导致助手故障问题（#74451）</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

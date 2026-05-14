@@ -299,11 +299,28 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>iOS pairing：支持私有 LAN 和 .local 网关的 setup-code 及手动 ws:// 连接
+Control UI/Sessions：新增紧凑的 `N Checkpoint(s)` 披露和现代风格的历史卡片展示
+Control UI/sessions：会话列表新增运行时筛选功能
+Discord/streaming：进度草稿中显示实时推理文本
+Plugins/diagnostics：TypeScript 包警告新增可操作的说明指引</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Feishu：修复首轮和后续消息未保持在同一话题会话的问题（#78262）
+LINE：拒绝无通配符的 `dmPolicy: &quot;open&quot;` 配置，防止静默阻塞（#78316）
+Telegram/Codex：修复工具进度草稿重复显示问题（#75641）
+Providers/xAI：停止向 Grok 模型发送不支持的 reasoning effort 参数
+Matrix/approvals：审批传递失败时自动重试 3 次，防止审批提示丢失（#78179）
+Discord/gateway：修复心跳超时测量，防止误触发重连（#77668）
+Discord/guilds：修复 `/steer` 等纯文本命令被静默丢弃的问题（#78080）
+Exec approvals：Windows 下文件重命名失败时回退到复制操作（#77785）
+Slack：保留 Socket Mode SDK 错误上下文，避免启动失败日志信息丢失
+Control UI/chat：修复历史重载后进度文本消失的问题（#77374）
+Control UI/sessions：修复显式创建会话时才触发 /new 命令和生命周期钩子（#76957）
+TUI：修复终端断开后进程残留和心跳历史问题
+Doctor/sessions：`--fix` 可修复心跳中毒导致的会话卡死问题
+Gateway/shutdown：关闭时取消延迟维护，防止孤儿后台定时器</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

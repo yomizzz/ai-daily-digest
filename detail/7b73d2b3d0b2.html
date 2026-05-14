@@ -299,11 +299,23 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>ModelStudio/Qwen：新增阿里云 Model Studio 标准付费端点（中国/全球），重新命名提供商组为 `Qwen (Alibaba Cloud Model Studio)`
+UI/clarity：整合按钮组件，优化 Knot 主题为黑白红配色并通过 WCAG 2.1 AA 对比度认证，新增 Diagnostics/CLI/Secrets/ACP/MCP 配置图标，改进无障碍支持
+CSP/Control UI：为 index.html 内联脚本计算 SHA-256 哈希并加入 script-src 指令，默认阻止内联脚本但允许显式哈希的引导代码</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Plugins/bundled runtimes：恢复 npm 包中的 WhatsApp、Matrix 等插件运行时文件，修复全局安装失败问题
+CLI/channel auth：自动选择单个可登录通道，修复单通道配置和按需安装场景下的通道认证问题
+Auth/OpenAI tokens：修复保存凭证后回滚到过期令牌的问题，使 Configure/Onboard 流程正常工作
+Control UI/auth：保留操作员权限范围，避免会话在读取页面失败或空白
+Plugins/ClawHub：修复安装时插件 API 兼容性检查，修复版本号常量导致的安装失败问题
+Plugins/uninstall：支持 clawhub: 规范和版本无关的包名作为卸载目标
+Browser/Chrome MCP：修复浏览器标签可用性等待逻辑，减少 macOS 上的超时和重复授权提示
+Browser/CDP：修复慢速 headless Linux 环境下的二次运行浏览器启动回归问题
+Agents/web_search：使用实际配置的网络搜索提供商而非默认值，修复 agent 查找错误提供商的问题
+Mistral/models：降低默认 max-token 安全预算，修复 doctor 命令以恢复旧配置
+ClawHub/macOS：修复 macOS 认证路径和本地登录读取，修复 skills 浏览的 429 错误和空列表问题</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

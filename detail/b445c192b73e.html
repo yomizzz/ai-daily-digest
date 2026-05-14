@@ -299,11 +299,37 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>Telegram: 支持通过 `openclaw message poll` 发送投票（持续时间、静默投递、匿名控制）
+Slack/Discord: 新增 `dmPolicy` + `allowFrom` 配置别名用于 DM 访问控制
+Discord: 支持通过 `channels.discord.execApprovals.target` 配置 exec 审批提示目标频道
+Sandbox: 新增 `sandbox.browser.binds` 用于单独配置浏览器容器绑定挂载
+Discord: 添加消息路由决策的调试日志</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>CLI/Plugins: 修复 `openclaw message send` 在插件频道成功投递后不挂起
+CLI/Plugins: 修复消息命令退出时正确调用插件 `gateway_stop` 钩子
+WhatsApp: 修复每个账户 `dmPolicy` 覆盖的优先级处理
+Telegram: 修复 `native=false` 时插件命令被错误注册到命令菜单
+LINE: 修复开发者控制台验证请求签名验证
+Cron: 修复 `delivery.to` 设置时纯文本输出直接投递
+Cron/Slack: 修复 cron 投递时保留 agent 身份（名称和图标）
+Media: 接受 `MEDIA:` 前缀路径避免工具返回的本地媒体路径报错
+Agents: 修复工具结果媒体（截图、图像、音频）按详细级别投递
+Agents/Image tool: 修复工作区本地图像路径被错误拒绝
+Agents/Image tool: 修复工具接线中有效工作区根目录传递
+BlueBubbles: 修复群聊消息中包含发送者身份并清理格式
+CLI: 修复维护命令（doctor/dashboard/reset/uninstall）懒注册问题
+CLI/Dashboard: 修复 LAN 绑定模式下仪表板 URL 生成
+TUI/Gateway: 修复从网关绑定模式解析目标 URL 而非硬编码 localhost
+TUI: 修复 `--session` 在 global scope 下不生效
+TUI: 修复可搜索列表会话名称显示宽度
+TUI: 修复并发最终化时流式回复被清除
+TUI: 修复工具边界增量导致早期流式文本丢失
+TUI: 修复二进制附件历史导致启动崩溃
+TUI: 修复窄终端渲染性能开销
+TUI: 修复浅色主题下文本对比度
+TUI/Hooks: 修复重置原因传递</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>

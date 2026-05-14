@@ -299,11 +299,26 @@
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
 <div class="detail-section">
     <h3 class="detail-section-title">🆕 新增功能</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>CLI新增 `openclaw backup create` 和 `openclaw backup verify` 命令，支持本地状态归档备份
+macOS新增远程网关令牌字段，保留现有非明文配置值并增加格式警告
+Talk模式新增 `talk.silenceTimeoutMs` 配置项，允许自定义静默超时时间
+TUI可从当前工作区推断活跃代理，同时保留显式代理目标设置
+Brave搜索新增 `tools.web.search.brave.mode: &quot;llm-context&quot;` 选项
+CLI版本信息新增短Git提交哈希显示
+ACP新增入口溯源元数据和可见收据注入功能
+网络搜索提供者排序按字母排列，多键自动检测优先Grok再Kimi
+ACPX测试工具移至专用测试工具目录</p></div>
 </div>
 <div class="detail-section">
     <h3 class="detail-section-title">🐛 Bug 修复</h3>
-    <div class="detail-card"><p>摘要生成失败</p></div>
+    <div class="detail-card"><p>macOS升级重启时重新启用被禁用的LaunchAgent服务
+macOS应用修复浏览器代理路由、粘贴语义、转录噪声剥离等多项问题
+Android移除自更新、后台位置、屏幕录制等非必要权限
+Telegram消息路由按代理去重，避免同一消息触发重复回复
+Cron/Telegram公告投递修复文本消息路由问题
+Matrix路由为损坏的m.direct服务器添加安全回退检测
+飞书插件安装后正确清理发现缓存，不再立即重新提示下载
+插件升级时优先使用捆绑版本，避免被npm安装覆盖</p></div>
 </div>
 
 <div class="tags">标签：OpenClaw</div>
