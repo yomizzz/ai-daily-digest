@@ -15,6 +15,7 @@ from typing import List, Dict
 SHANGHAI_TZ = timezone(timedelta(hours=8))
 REPO = "NousResearch/hermes-agent"
 ARTICLES_PATH = "data/articles.json"
+HERMES_PATH = "data/hermes-updates.json"
 
 
 # ─── MiniMax summarizer ─────────────────────────────────────────────────────
@@ -161,15 +162,35 @@ def get_existing_hermes_urls(articles: List[Dict]) -> set:
     return {a.get("url", "") for a in articles if a.get("category") == "hermes"}
 
 
+def save_hermes_updates(releases: List[Dict]):
+    os.makedirs(os.path.dirname(HERMES_PATH) or ".", exist_ok=True)
+    now = datetime.now(SHANGHAI_TZ).strftime("%Y-%m-%d %H:%M:%S")
+    data = {"releases": releases, "last_updated": now}
+    with open(HERMES_PATH, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+
 # ─── 全量运行 ─────────────────────────────────────────────────────────────
 
 def run_initial(summarizer: HermesSummarizer, force: bool = False):
-    """初始全量运行：抓所有正式版 → 摘要 → 追加到 articles.json
-    force=True: 先删除所有 hermes 条目，强制重新生成所有摘要
+    """初始全量运行：抓所有正式版 → 摘要 → 写入 articles.json + hermes-updates.json
+    force=True: 强制重新生成所有摘要
     """
     print("[HermesUpdater] 初始全量运行...")
     all_releases = fetch_releases_from_github(max_count=50)
     print(f"[HermesUpdater] 共获取 {len(all_releases)} 条正式版本")
+
+    # 加载已有的 hermes-updates.json（用于复用已有摘要）
+    existing_hermes = {}
+    if os.path.exists(HERMES_PATH):
+        try:
+            with open(HERMES_PATH, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            for r in data.get("releases", []):
+                if r.get("html_url"):
+                    existing_hermes[r["html_url"]] = r.get("summary_zh", "")
+        except (json.JSONDecodeError, IOError):
+            pass
 
     articles = load_articles()
     if force:
@@ -177,34 +198,62 @@ def run_initial(summarizer: HermesSummarizer, force: bool = False):
         articles = [a for a in articles if a.get('category') != 'hermes']
     existing_urls = get_existing_hermes_urls(articles)
     new_count = 0
+    updated_releases = []
 
     for r in all_releases:
         tag = r.get("tag_name", "")
         name = r.get("name", tag)
         html_url = r.get("html_url", "")
-        if html_url in existing_urls:
-            print(f"  {tag} 已存在，跳过")
-            continue
 
-        print(f"  正在摘要: {tag}...")
-        summary = summarizer.summarize_release(tag, r.get("body", ""))
+        # 从 articles.json 获取已有摘要
+        existing_summary = existing_hermes.get(html_url, "")
+        if not existing_summary:
+            for a in articles:
+                if a.get("url") == html_url:
+                    existing_summary = a.get("summary_zh", "")
+                    break
 
-        entry = {
-            "title": name,
-            "url": r.get("html_url", ""),
-            "source": "hermes-agent",
-            "published": to_shanghai(r.get("published_at", "")),
-            "category": "hermes",
-            "summary_zh": summary,
-            "why_matters": "查看中文摘要与详情",
-            "tags": "Hermes Agent",
-        }
-        articles.append(entry)
-        new_count += 1
-        time.sleep(3)
+        # 决定是否需要重新摘要
+        need_summarize = (html_url not in existing_urls) or (force and not existing_summary)
 
+        if need_summarize:
+            if html_url in existing_urls:
+                print(f"  {tag} 已存在于 articles，重新生成摘要...")
+            else:
+                print(f"  正在摘要: {tag}...")
+            summary = summarizer.summarize_release(tag, r.get("body", ""))
+            time.sleep(3)
+        else:
+            summary = existing_summary
+            if html_url not in existing_urls:
+                print(f"  {tag} 复用已有摘要")
+            else:
+                print(f"  {tag} 已存在于 articles，跳过")
+
+        # 写入更新后的 release（含 summary_zh）
+        release_out = dict(r)
+        release_out["summary_zh"] = summary
+        updated_releases.append(release_out)
+
+        # 追加到 articles.json（如果不在的话）
+        if html_url not in existing_urls:
+            entry = {
+                "title": name,
+                "url": html_url,
+                "source": "hermes-agent",
+                "published": to_shanghai(r.get("published_at", "")),
+                "category": "hermes",
+                "summary_zh": summary,
+                "why_matters": "查看中文摘要与详情",
+                "tags": "Hermes Agent",
+            }
+            articles.append(entry)
+            new_count += 1
+
+    # 保存两个文件
     articles.sort(key=lambda x: x.get("published", ""), reverse=True)
     save_articles(articles)
+    save_hermes_updates(updated_releases)
     print(f"[HermesUpdater] 完成，新增 {new_count} 条，articles.json 共 {len(articles)} 条")
 
 
