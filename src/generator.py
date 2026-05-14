@@ -763,9 +763,9 @@ class PageGenerator:
 
         html = ''
         for release in releases:
-            tag_name = release.get('tag_name', '')
-            name = release.get('name', tag_name)
-            html_url = release.get('html_url', '#')
+            tag_name = release.get('tag_name', '') or ''
+            name = release.get('name') or tag_name
+            html_url = release.get('html_url') or '#'
             published = release.get('published_at', '')[:10]
             features = release.get('features', '')
             bug_fixes = release.get('bug_fixes', '')
