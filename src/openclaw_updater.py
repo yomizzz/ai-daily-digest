@@ -2,11 +2,13 @@
 OpenClaw Release Updater
 从 GitHub 抓取 openclaw/openclaw 正式版本，生成结构化摘要
 """
+import asyncio
 import json
 import os
 import re
 import time
 import httpx
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone, timedelta
 from typing import List, Dict, Optional
 
@@ -14,14 +16,12 @@ REPO = "openclaw/openclaw"
 ARTICLES_PATH = "data/articles.json"
 OPENCLAW_PATH = "data/openclaw-updates.json"
 SHANGHAI_TZ = timezone(timedelta(hours=8))
+MAX_CONCURRENT = 5  # 并发数
 
 
 # ─── Summarizer ────────────────────────────────────────────────────────────────
 
-class OpenClawSummarizer:
-    """调用 MiniMax API 对 OpenClaw release body 生成结构化摘要"""
-
-    SYSTEM_PROMPT = """你是一个专业的 AI 工具更新日志分析师。请从以下 OpenClaw 版本更新日志中，提取并生成中文结构化摘要。
+SYSTEM_PROMPT = """你是一个专业的 AI 工具更新日志分析师。请从以下 OpenClaw 版本更新日志中，提取并生成中文结构化摘要。
 
 输出格式（严格按此格式，不要有多余内容）：
 
@@ -40,106 +40,85 @@ class OpenClawSummarizer:
 4. 如果某个分类为空，写「无」
 """
 
-    def __init__(self, api_key: str):
-        self.api_key = api_key
-        self.endpoint = "https://api.minimax.chat/v1/text/chatcompletion_pro"
-        self.model = "MiniMax-Text-01"
 
-    def summarize_release(self, tag: str, body: str) -> Dict[str, str]:
-        """
-        对单个 release body 生成结构化摘要
-        返回 {"features": "...", "bug_fixes": "..."} 或 {"summary_zh": "..."}（fallback）
-        """
-        if not body or not body.strip():
-            return {"features": "无", "bug_fixes": "无"}
-
-        # 裁剪过长的 body（API 有 token 限制）
-        body = body.strip()
-        max_chars = 5000
-        if len(body) > max_chars:
-            body = body[:max_chars] + "\n\n[内容过长，已截断]"
-
-        user_prompt = f"版本：{tag}\n\n更新日志：\n{body}"
-
-        payload = {
-            "model": self.model,
-            "messages": [
-                {"role": "system", "content": self.SYSTEM_PROMPT},
-                {"role": "user", "content": user_prompt},
-            ],
-            "temperature": 0.3,
-            "max_tokens": 1500,
-        }
-
-        headers = {
-            "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json",
-        }
-
-        for attempt in range(3):
-            try:
-                with httpx.Client(timeout=60) as client:
-                    resp = client.post(self.endpoint, headers=headers, json=payload)
-                    resp.raise_for_status()
-                    result = resp.json()
-                    content = result["choices"][0]["message"]["content"]
-
-                # 清理 think 标签
-                content = re.sub(r'</?think>.*?(\n|$)', '', content, flags=re.DOTALL).strip()
-                return self._parse_output(content)
-
-            except Exception as e:
-                if attempt < 2:
-                    time.sleep((attempt + 1) * 5)
-                    continue
-                print(f"  [OpenClawSummarizer] 摘要失败: {e}")
-                return {"features": "摘要生成失败", "bug_fixes": "摘要生成失败"}
-        return {"features": "摘要生成失败", "bug_fixes": "摘要生成失败"}
-
-    def _parse_output(self, content: str) -> Dict[str, str]:
-        """解析结构化输出"""
-        features = ""
-        bug_fixes = ""
-
-        lines = content.split('\n')
-        current_section = None
-        items = []
-
-        for line in lines:
-            line = line.strip()
-            if not line:
+def parse_summary_output(content: str) -> Dict[str, str]:
+    """解析结构化输出"""
+    features = ""
+    bug_fixes = ""
+    lines = content.split('\n')
+    current_section = None
+    items = []
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+        if line.startswith("## 新增功能") or line.startswith("### 新增功能"):
+            if current_section == "bug_fixes" and items:
+                bug_fixes = "\n".join(items)
+            current_section = "features"
+            items = []
+        elif line.startswith("## Bug 修复") or line.startswith("### Bug 修复") or line.startswith("## 缺陷修复"):
+            if current_section == "features" and items:
+                features = "\n".join(items)
+            current_section = "bug_fixes"
+            items = []
+        elif line.startswith("- ") or line.startswith("* "):
+            items.append(line[2:].strip())
+        elif line.startswith("##"):
+            continue
+        else:
+            if line.startswith("-") or "*" in line[:3]:
                 continue
-            if line.startswith("## 新增功能") or line.startswith("### 新增功能"):
-                if current_section == "bug_fixes" and items:
-                    bug_fixes = "\n".join(items)
-                current_section = "features"
-                items = []
-            elif line.startswith("## Bug 修复") or line.startswith("### Bug 修复") or line.startswith("## 缺陷修复"):
-                if current_section == "features" and items:
-                    features = "\n".join(items)
-                current_section = "bug_fixes"
-                items = []
-            elif line.startswith("- ") or line.startswith("* "):
-                items.append(line[2:].strip())
-            elif line.startswith("##"):
+    if current_section == "features" and items:
+        features = "\n".join(items)
+    elif current_section == "bug_fixes" and items:
+        bug_fixes = "\n".join(items)
+    if not features and not bug_fixes:
+        return {"features": content[:500], "bug_fixes": "无"}
+    return {
+        "features": features or "无",
+        "bug_fixes": bug_fixes or "无",
+    }
+
+
+def summarize_one_release(tag: str, body: str, api_key: str) -> Dict[str, str]:
+    """同步方式摘要单个 release（供线程池调用）"""
+    if not body or not body.strip():
+        return {"features": "无", "bug_fixes": "无"}
+    body = body.strip()
+    max_chars = 5000
+    if len(body) > max_chars:
+        body = body[:max_chars] + "\n\n[内容过长，已截断]"
+    user_prompt = f"版本：{tag}\n\n更新日志：\n{body}"
+    payload = {
+        "model": "MiniMax-Text-01",
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_prompt},
+        ],
+        "temperature": 0.3,
+        "max_tokens": 1500,
+    }
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
+    }
+    for attempt in range(3):
+        try:
+            with httpx.Client(timeout=60) as client:
+                resp = client.post("https://api.minimax.chat/v1/text/chatcompletion_pro",
+                                   headers=headers, json=payload)
+                resp.raise_for_status()
+                result = resp.json()
+                content = result["choices"][0]["message"]["content"]
+            content = re.sub(r'</?think>.*?(\n|$)', '', content, flags=re.DOTALL).strip()
+            return parse_summary_output(content)
+        except Exception as e:
+            if attempt < 2:
+                time.sleep((attempt + 1) * 3)
                 continue
-            else:
-                if line.startswith("-") or "*" in line[:3]:
-                    continue
-
-        if current_section == "features" and items:
-            features = "\n".join(items)
-        elif current_section == "bug_fixes" and items:
-            bug_fixes = "\n".join(items)
-
-        # 如果解析失败，尝试简单 fallback
-        if not features and not bug_fixes:
-            return {"features": content[:500], "bug_fixes": "无"}
-
-        return {
-            "features": features or "无",
-            "bug_fixes": bug_fixes or "无",
-        }
+            return {"features": "摘要生成失败", "bug_fixes": "摘要生成失败"}
+    return {"features": "摘要生成失败", "bug_fixes": "摘要生成失败"}
 
 
 # ─── 工具函数 ─────────────────────────────────────────────────────────────────
@@ -235,8 +214,8 @@ def save_openclaw_updates(releases: List[Dict]):
 
 # ─── 全量运行 ─────────────────────────────────────────────────────────────
 
-def run_initial(summarizer: OpenClawSummarizer, force: bool = False):
-    """初始全量运行：抓所有正式版 → 摘要 → 写入 articles.json + openclaw-updates.json"""
+def run_initial(summarizer_api_key: str, force: bool = False):
+    """初始全量运行：抓所有正式版 → 并发摘要 → 写入 articles.json + openclaw-updates.json"""
     print("[OpenClawUpdater] 初始全量运行...")
     all_releases = fetch_releases_from_github(max_count=100)
     print(f"[OpenClawUpdater] 共获取 {len(all_releases)} 条正式版本")
@@ -261,35 +240,66 @@ def run_initial(summarizer: OpenClawSummarizer, force: bool = False):
         print(f"[OpenClawUpdater] force 模式：删除 {len([a for a in articles if a.get('category')=='openclaw'])} 条旧 openclaw 条目")
         articles = [a for a in articles if a.get('category') != 'openclaw']
     existing_urls = get_existing_openclaw_urls(articles)
-    new_count = 0
+
+    # 分类：需要摘要的 vs 复用缓存的
+    to_summarize = []
+    to_reuse = []
+    for r in all_releases:
+        tag = r.get("tag_name", "")
+        html_url = r.get("html_url", "")
+        cached = existing_summaries.get(html_url, {})
+        need_summarize = (html_url not in existing_urls) or (force and not cached.get("features"))
+        if need_summarize:
+            to_summarize.append(r)
+        else:
+            to_reuse.append((r, cached))
+
+    print(f"  需摘要: {len(to_summarize)} 条，复用: {len(to_reuse)} 条")
+
+    # 并发摘要
+    results = {}
+    if to_summarize:
+        print(f"  开始并发摘要（最多 {MAX_CONCURRENT} 个并行）...")
+        with ThreadPoolExecutor(max_workers=MAX_CONCURRENT) as executor:
+            futures = {
+                executor.submit(summarize_one_release, r.get("tag_name", ""), r.get("body", ""), summarizer_api_key): r
+                for r in to_summarize
+            }
+            for i, future in enumerate(futures):
+                r = futures[future]
+                tag = r.get("tag_name", "")
+                try:
+                    result = future.result()
+                    results[tag] = result
+                    print(f"  [{i+1}/{len(to_summarize)}] {tag} 完成")
+                except Exception as e:
+                    results[tag] = {"features": "摘要失败", "bug_fixes": "摘要失败"}
+                    print(f"  [{i+1}/{len(to_summarize)}] {tag} 失败: {e}")
+                # 控制速度，避免 API 限流
+                if (i + 1) % 5 == 0:
+                    time.sleep(2)
+
+    # 组装结果
     updated_releases = []
+    new_count = 0
 
     for r in all_releases:
         tag = r.get("tag_name", "")
         name = r.get("name", tag)
         html_url = r.get("html_url", "")
 
-        # 复用已有摘要
-        cached = existing_summaries.get(html_url, {})
-        need_summarize = (html_url not in existing_urls) or (force and not cached.get("features"))
-
-        if need_summarize:
-            if html_url in existing_urls:
-                print(f"  {tag} 已存在于 articles，重新生成摘要...")
-            else:
-                print(f"  正在摘要: {tag}...")
-            result = summarizer.summarize_release(tag, r.get("body", ""))
-            time.sleep(1)
-        else:
+        if html_url in existing_urls and tag not in results:
+            cached = existing_summaries.get(html_url, {})
             result = cached
             print(f"  {tag} 复用已有摘要")
+        else:
+            result = results.get(tag, {"features": "无", "bug_fixes": "无"})
 
         release_out = dict(r)
         release_out["features"] = result.get("features", "无")
         release_out["bug_fixes"] = result.get("bug_fixes", "无")
         updated_releases.append(release_out)
 
-        # 追加到 articles.json
         if html_url not in existing_urls:
             entry = {
                 "title": name,
@@ -313,7 +323,7 @@ def run_initial(summarizer: OpenClawSummarizer, force: bool = False):
 
 # ─── 增量运行 ─────────────────────────────────────────────────────────────
 
-def run_incremental(summarizer: OpenClawSummarizer):
+def run_incremental(summarizer_api_key: str):
     """增量运行：只处理过去 24 小时内的新正式版"""
     print("[OpenClawUpdater] 增量运行，检查过去 24 小时...")
     all_releases = fetch_releases_from_github(max_count=100)
@@ -322,15 +332,35 @@ def run_incremental(summarizer: OpenClawSummarizer):
 
     if not recent:
         print("[OpenClawUpdater] 无新版本")
-        # 仍然写一个空更新记录（更新 last_updated）
         save_openclaw_updates([])
         return
 
     articles = load_articles()
     existing_urls = get_existing_openclaw_urls(articles)
+    to_summarize = [r for r in recent if r.get("html_url") not in existing_urls]
+    print(f"  需摘要: {len(to_summarize)} 条")
+
+    results = {}
+    if to_summarize:
+        with ThreadPoolExecutor(max_workers=MAX_CONCURRENT) as executor:
+            futures = {
+                executor.submit(summarize_one_release, r.get("tag_name", ""), r.get("body", ""), summarizer_api_key): r
+                for r in to_summarize
+            }
+            for i, future in enumerate(futures):
+                r = futures[future]
+                tag = r.get("tag_name", "")
+                try:
+                    results[tag] = future.result()
+                    print(f"  [{i+1}/{len(to_summarize)}] {tag} 完成")
+                except Exception as e:
+                    results[tag] = {"features": "摘要失败", "bug_fixes": "摘要失败"}
+                    print(f"  [{i+1}/{len(to_summarize)}] {tag} 失败: {e}")
+                if (i + 1) % 5 == 0:
+                    time.sleep(2)
+
     new_count = 0
     updated_releases = []
-
     for r in recent:
         tag = r.get("tag_name", "")
         name = r.get("name", tag)
@@ -339,10 +369,7 @@ def run_incremental(summarizer: OpenClawSummarizer):
             print(f"  {tag} 已存在，跳过")
             continue
 
-        print(f"  正在摘要: {tag}...")
-        result = summarizer.summarize_release(tag, r.get("body", ""))
-        time.sleep(1)
-
+        result = results.get(tag, {"features": "无", "bug_fixes": "无"})
         release_out = dict(r)
         release_out["features"] = result.get("features", "无")
         release_out["bug_fixes"] = result.get("bug_fixes", "无")
@@ -364,7 +391,6 @@ def run_incremental(summarizer: OpenClawSummarizer):
 
     articles.sort(key=lambda x: x.get("published", ""), reverse=True)
     save_articles(articles)
-    # 追加到 openclaw-updates.json（增量追加，不覆盖历史）
     if new_count > 0:
         save_openclaw_updates(updated_releases)
     print(f"[OpenClawUpdater] 完成，新增 {new_count} 条，articles.json 共 {len(articles)} 条")
@@ -376,12 +402,11 @@ def update(mode: str = "incremental", force: bool = False):
     api_key = os.environ.get("MINIMAX_API_KEY", "")
     if not api_key:
         print("[OpenClawUpdater] 警告：MINIMAX_API_KEY 未设置")
-    summarizer = OpenClawSummarizer(api_key)
 
     if mode == "initial":
-        run_initial(summarizer, force=force)
+        run_initial(api_key, force=force)
     else:
-        run_incremental(summarizer)
+        run_incremental(api_key)
 
 
 if __name__ == "__main__":
