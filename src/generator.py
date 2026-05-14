@@ -11,66 +11,277 @@ from typing import List, Dict
 
 SHANGHAI_TZ = timezone(timedelta(hours=8))
 
-# MVP.css 主题样式
+# Kami-inspired design system
+# Warm parchment canvas, ink-blue accent, serif-led hierarchy
 THEME_CSS = """
-        :root { --width: 900px; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
-        header { padding: 2rem 1rem 1rem; }
-        main { max-width: var(--width); margin: 0 auto; padding: 0 1rem 3rem; }
+        :root {
+            --brand:     #1B365D;
+            --brand-light: #2D5A8A;
+            --brand-tint: #EEF2F7;
+            --brand-tint-strong: #E4ECF5;
+            --parchment:  #f5f4ed;
+            --ivory:      #faf9f5;
+            --sand:       #e8e6dc;
+            --border:     #e8e6dc;
+            --border-soft:#e5e3d8;
+            --near-black: #141413;
+            --dark-warm:  #3d3d3a;
+            --charcoal:   #4d4c48;
+            --olive:      #504e49;
+            --stone:      #6b6a64;
+        }
+        /* ── Reset & Base ── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: var(--parchment);
+            color: var(--near-black);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                         'Helvetica Neue', Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        ::selection { background: var(--brand-tint-strong); color: var(--brand); }
+
+        /* ── Typography ── */
+        h1 { font-family: Charter, Georgia, 'Times New Roman', serif;
+             font-size: 28px; font-weight: 500; line-height: 1.2;
+             color: var(--near-black); letter-spacing: -0.3px; }
+        h2 { font-size: 18px; font-weight: 500; line-height: 1.3; color: var(--dark-warm); }
+        p  { color: var(--olive); line-height: 1.65; }
+
+        /* ── Layout ── */
+        header {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 3rem 2rem 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+        header h1 { font-size: 26px; margin-bottom: 6px; }
+        .subtitle { color: var(--stone); font-size: 14px; margin-bottom: 4px; }
+        .last-updated { color: var(--stone); font-size: 12px; }
+
+        main {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 2rem 2rem 4rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--stone);
+            font-size: 12px;
+        }
+        footer a { color: var(--brand); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        /* ── Filter Bar ── */
         .filter-bar {
             display: flex;
-            gap: 10px;
+            gap: 8px;
             flex-wrap: wrap;
-            margin-bottom: 20px;
-            padding: 15px;
-            background: var(--color-bg-secondary);
-            border-radius: var(--border-radius);
+            margin-bottom: 28px;
+            padding: 14px 16px;
+            background: var(--ivory);
+            border: 1px solid var(--border-soft);
+            border-radius: 6px;
+            align-items: center;
         }
         .filter-btn {
-            padding: 8px 16px;
-            border: 1px solid #ccc;
-            background: var(--color-bg);
-            border-radius: 20px;
+            padding: 5px 14px;
+            border: 1px solid var(--border);
+            background: var(--parchment);
+            color: var(--olive);
+            border-radius: 4px;
             cursor: pointer;
-            font-size: 0.9em;
-            color: var(--color-text);
+            font-size: 13px;
+            font-family: inherit;
+            transition: all 0.15s ease;
         }
-        .filter-btn:hover, .filter-btn.active {
-            background: var(--color-link);
-            color: white;
-            border-color: var(--color-link);
+        .filter-btn:hover {
+            border-color: var(--brand);
+            color: var(--brand);
         }
-        .article-count { margin-left: auto; color: var(--color-text-secondary); font-size: 0.9em; }
-        .articles { display: flex; flex-direction: column; gap: 15px; }
-        .article { padding: 20px; margin-bottom: 15px; }
-        .article-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
-        .article-title { font-size: 1.1em; font-weight: 600; color: var(--color-link); text-decoration: none; flex: 1; }
-        .article-title:hover { opacity: var(--hover-brightness); }
+        .filter-btn.active {
+            background: var(--brand);
+            border-color: var(--brand);
+            color: #fff;
+            font-weight: 500;
+        }
+        .article-count { margin-left: auto; color: var(--stone); font-size: 12px; }
+
+        /* ── Article Cards ── */
+        .articles { display: flex; flex-direction: column; gap: 0; }
+        .article {
+            padding: 22px 0;
+            border-bottom: 1px solid var(--border-soft);
+        }
+        .article:first-child { border-top: 1px solid var(--border-soft); }
+
+        .article-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+        .article-title {
+            font-family: Charter, Georgia, 'Times New Roman', serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--brand);
+            text-decoration: none;
+            line-height: 1.35;
+            flex: 1;
+        }
+        .article-title:hover { color: var(--brand-light); text-decoration: underline; }
+
         .category-tag {
-            padding: 4px 10px;
-            background: var(--color-bg-secondary);
-            color: var(--color-secondary);
-            border-radius: 12px;
-            font-size: 0.75em;
-            margin-left: 10px;
+            padding: 3px 10px;
+            background: var(--brand-tint);
+            color: var(--brand);
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: 500;
             white-space: nowrap;
+            letter-spacing: 0.2px;
+            flex-shrink: 0;
         }
-        .article-meta { font-size: 0.85em; color: var(--color-text-secondary); margin-bottom: 10px; }
-        .article-summary { color: var(--color-text); margin-bottom: 12px; font-size: 0.95em; line-height: 1.6; }
-        .article-summary ul, .detail-card ul { margin: 8px 0; padding-left: 20px; }
-        .article-summary li, .detail-card li { margin: 4px 0; }
+
+        .article-meta {
+            font-size: 12px;
+            color: var(--stone);
+            margin-bottom: 10px;
+            font-family: -apple-system, sans-serif;
+        }
+
+        /* ── Summary ── */
+        .article-summary {
+            color: var(--olive);
+            margin-bottom: 12px;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+        .article-summary ul, .detail-card ul { margin: 6px 0; padding-left: 18px; }
+        .article-summary li, .detail-card li { margin: 3px 0; color: var(--olive); }
         .summary-list { list-style: none; padding-left: 0; }
-        .summary-list li { padding: 4px 0 4px 16px; position: relative; }
-        .summary-list li::before { content: '•'; position: absolute; left: 0; color: var(--color-link); }
-        .article-why { color: var(--color-link); font-size: 0.9em; padding: 8px 12px; margin-bottom: 12px; border-left: 3px solid var(--color-link); }
-        .tags { margin-top: 10px; font-size: 0.8em; color: var(--color-text-secondary); }
-        footer { text-align: center; padding: 30px; color: var(--color-text-secondary); font-size: 0.85em; }
-        footer a { color: var(--color-link); text-decoration: none; }
+        .summary-list li {
+            padding: 2px 0 2px 18px;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.65;
+        }
+        .summary-list li::before {
+            content: '·';
+            position: absolute;
+            left: 4px;
+            color: var(--brand);
+            font-weight: 700;
+        }
+
+        .article-why {
+            font-size: 12px;
+            color: var(--stone);
+            margin-bottom: 8px;
+        }
+        .article-why a { color: var(--brand); text-decoration: none; font-weight: 500; }
+        .article-why a:hover { text-decoration: underline; }
+
+        .tags {
+            margin-top: 8px;
+            font-size: 11px;
+            color: var(--stone);
+        }
+
+        /* ── Detail Page ── */
+        .detail-card {
+            background: var(--ivory);
+            border: 1px solid var(--border-soft);
+            border-radius: 6px;
+            padding: 28px 32px;
+            margin: 20px 0;
+        }
+        .detail-card p { font-size: 15px; line-height: 1.8; color: var(--dark-warm); }
+        .detail-card ul { margin: 8px 0; padding-left: 20px; }
+        .detail-card li { font-size: 15px; line-height: 1.75; color: var(--dark-warm); margin: 5px 0; }
+
+        .detail-tags { margin-top: 16px; font-size: 12px; color: var(--stone); }
+
+        .detail-why {
+            margin-top: 16px;
+            font-size: 13px;
+            color: var(--dark-warm);
+        }
+
+        .original-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 22px;
+            background: var(--brand);
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+        }
+        .original-link:hover { background: var(--brand-light); }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 16px;
+            color: var(--brand);
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .back-link:hover { text-decoration: underline; }
+
+        /* ── Release Cards (hermes page) ── */
+        .release-list { display: flex; flex-direction: column; }
+        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
+        .release:first-child { border-top: 1px solid var(--border-soft); }
+        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+        .release-title {
+            font-family: Charter, Georgia, serif;
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--brand);
+            text-decoration: none;
+        }
+        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
+        .release-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            background: var(--brand-tint);
+            color: var(--brand);
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
+        .release-card {
+            background: var(--ivory);
+            border: 1px solid var(--border-soft);
+            border-radius: 6px;
+            padding: 18px 22px;
+            margin-top: 10px;
+        }
+        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
+        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
+        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
+
+        /* ── Responsive ── */
         @media (max-width: 600px) {
-            .article-header { flex-direction: column; gap: 8px; }
+            header { padding: 2rem 1.25rem 1.5rem; }
+            main { padding: 1.5rem 1.25rem 3rem; }
+            .article-header { flex-direction: column; gap: 6px; }
             .category-tag { margin-left: 0; }
-            .filter-bar { flex-direction: column; }
-            .article-count { margin-left: 0; margin-top: 10px; }
+            .filter-bar { flex-direction: column; align-items: flex-start; }
+            .article-count { margin-left: 0; }
+            .release-header { flex-direction: column; }
+            .release-date { margin-left: 0; }
         }
 """
 
@@ -169,7 +380,6 @@ class PageGenerator:
             '    <meta charset="UTF-8">\n'
             '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
             '    <title>每日 AI 资讯精选</title>\n'
-            '    <link rel="stylesheet" href="https://unpkg.com/mvp.css">\n'
             '    <style>\n'
             + THEME_CSS + '\n'
             '    </style>\n'
@@ -288,23 +498,7 @@ class PageGenerator:
         summary = article.get('summary_zh', article.get('summary', ''))
         why = article.get('why_matters', '值得一读')
         tags = article.get('tags', '')
-
-        tags_html = '<div class="detail-tags">标签：' + tags + '</div>' if tags else ''
-
-        detail_css = (
-            '        .detail-card { background: var(--color-bg-secondary); '
-            'border-radius: 12px; padding: 24px; margin: 24px 0; }\n'
-            '        .detail-card p { margin: 0; font-size: 1.05em; line-height: 1.8; }\n'
-            '        .detail-tags { margin-top: 16px; font-size: 0.85em; color: var(--color-text-secondary); }\n'
-            '        .detail-why { margin-top: 20px; font-size: 0.95em; }\n'
-            '        .original-link { display: inline-block; margin-top: 20px; padding: 12px 24px; '
-            'background: var(--color-link); color: white; border-radius: 8px; text-decoration: none; '
-            'font-size: 0.95em; }\n'
-            '        .original-link:hover { opacity: 0.85; }\n'
-            '        .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); '
-            'text-decoration: none; font-size: 0.9em; }\n'
-            '        .back-link:hover { text-decoration: underline; }\n'
-        )
+        tags_html = '<div class="tags">标签：' + tags + '</div>' if tags else ''
 
         html = (
             '<!DOCTYPE html>\n'
@@ -313,10 +507,8 @@ class PageGenerator:
             '    <meta charset="UTF-8">\n'
             '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
             '    <title>' + title + '</title>\n'
-            '    <link rel="stylesheet" href="https://unpkg.com/mvp.css">\n'
             '    <style>\n'
             + THEME_CSS + '\n'
-            + detail_css +
             '    </style>\n'
             '</head>\n'
             '<body>\n'
@@ -340,7 +532,7 @@ class PageGenerator:
             '        <p>由 GitHub Actions + MiniMax AI 自动生成</p>\n'
             '    </footer>\n'
             '</body>\n'
-            '</html>'
+            '</html>\n'
         )
         return html
 
@@ -371,21 +563,18 @@ class PageGenerator:
         releases_html = self._render_hermes_releases(releases)
 
         hermes_css = (
-            '        .release-list { display: flex; flex-direction: column; gap: 20px; }\n'
-            '        .release { padding: 20px; margin-bottom: 0; }\n'
-            '        .release-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }\n'
-            '        .release-title { font-size: 1.1em; font-weight: 600; color: var(--color-link); text-decoration: none; }\n'
-            '        .release-title:hover { opacity: var(--hover-brightness); }\n'
-            '        .release-date { font-size: 0.85em; color: var(--color-text-secondary); white-space: nowrap; margin-left: 12px; }\n'
-            '        .release-tag { display: inline-block; padding: 3px 10px; background: var(--color-bg-secondary); '
-            'color: var(--color-secondary); border-radius: 12px; font-size: 0.75em; margin-left: 10px; }\n'
-            '        .release-card { background: var(--color-bg-secondary); border-radius: 12px; padding: 20px; margin-top: 12px; }\n'
-            '        .release-card p { margin: 0; font-size: 1em; line-height: 1.7; }\n'
-            '        .no-updates { text-align: center; padding: 60px 20px; color: #888; }\n'
-            '        .back-link { display: inline-block; margin-bottom: 20px; color: var(--color-link); text-decoration: none; '
-            'font-size: 0.9em; }\n'
-            '        .back-link:hover { text-decoration: underline; }\n'
-            '        .release-count { color: var(--color-text-secondary); font-size: 0.9em; }\n'
+            '        .release-list { display: flex; flex-direction: column; }\n'
+            '        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }\n'
+            '        .release:first-child { border-top: 1px solid var(--border-soft); }\n'
+            '        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }\n'
+            '        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }\n'
+            '        .release-title:hover { color: var(--brand-light); text-decoration: underline; }\n'
+            '        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }\n'
+            '        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }\n'
+            '        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }\n'
+            '        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }\n'
+            '        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }\n'
+            '        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }\n'
         )
 
         html = (
@@ -395,7 +584,6 @@ class PageGenerator:
             '    <meta charset="UTF-8">\n'
             '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
             '    <title>Hermes-Agent 更新记录</title>\n'
-            '    <link rel="stylesheet" href="https://unpkg.com/mvp.css">\n'
             '    <style>\n'
             + THEME_CSS + '\n'
             + hermes_css + '\n'
