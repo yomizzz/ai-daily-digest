@@ -168,17 +168,20 @@ def fetch_releases_from_github(max_count: int = 100) -> List[Dict]:
             break
 
         for r in page_data:
-            if r.get("draft") or r.get("prerelease"):
-                continue
             tag = r.get("tag_name", "")
-            if is_beta_version(tag):
+            prerelease = r.get("prerelease")
+            draft = r.get("draft")
+            beta = is_beta_version(tag)
+            if draft or prerelease:
+                continue
+            if beta:
                 continue
             all_releases.append(r)
-
         if len(page_data) < 30:
             break
         page += 1
 
+    print(f"[DEBUG] fetch_releases_from_github: total={len(all_releases)} releases, page={page}")
     return all_releases
 
 
