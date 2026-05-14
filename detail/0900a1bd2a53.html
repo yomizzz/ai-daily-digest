@@ -221,6 +221,17 @@
         }
         .original-link:hover { background: var(--brand-light); }
 
+        /* ── Detail Section (openclaw features/bug_fixes) ── */
+        .detail-section { margin-bottom: 28px; }
+        .detail-section-title {
+            font-family: Charter, Georgia, serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--brand);
+            margin-bottom: 10px;
+            letter-spacing: 0;
+        }
+
         .back-link {
             display: inline-block;
             margin-bottom: 16px;
@@ -286,9 +297,7 @@
 
     <main>
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
-        <div class="detail-card">
-            <p>Linux内核的netconsole模块能够将内核printk日志消息通过UDP传输到远程系统，作为一种远程内核控制台方案。该模块可以在系统启动时或启动后激活使用，作者在经过长期观察后对这一工具的态度有所转变，并认为在特定场景下它具有独特价值。</p>
-        </div>
+<div class="detail-card"><p>Linux内核的netconsole模块能够将内核printk日志消息通过UDP传输到远程系统，作为一种远程内核控制台方案。该模块可以在系统启动时或启动后激活使用，作者在经过长期观察后对这一工具的态度有所转变，并认为在特定场景下它具有独特价值。</p></div>
 <div class="tags">标签：Linux, 内核调试, netconsole, 系统运维, 网络日志</div>
         <div class="detail-why">💡 适合需要远程调试Linux系统或监控内核日志的技术人员，特别是处理远程服务器运维和内核故障诊断的场景。</div>
         <a href="https://utcc.utoronto.ca/~cks/space/blog/linux/NetconsoleForDesktopPanics" target="_blank" class="original-link">📖 阅读英文原文 →</a>

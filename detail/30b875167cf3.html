@@ -221,6 +221,17 @@
         }
         .original-link:hover { background: var(--brand-light); }
 
+        /* ── Detail Section (openclaw features/bug_fixes) ── */
+        .detail-section { margin-bottom: 28px; }
+        .detail-section-title {
+            font-family: Charter, Georgia, serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--brand);
+            margin-bottom: 10px;
+            letter-spacing: 0;
+        }
+
         .back-link {
             display: inline-block;
             margin-bottom: 16px;
@@ -286,9 +297,7 @@
 
     <main>
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
-        <div class="detail-card">
-            <p>本文介绍了如何通过观察Lehmer64随机数生成器的输出序列来破解其内部状态。作为经典LFib（线性反馈移位）算法的变体，Lehmer64生成器具有简单高效的特点，但作者通过数学分析演示了其内部状态可被完全恢复，类似于之前针对Mersenne Twister的破解方法。</p>
-        </div>
+<div class="detail-card"><p>本文介绍了如何通过观察Lehmer64随机数生成器的输出序列来破解其内部状态。作为经典LFib（线性反馈移位）算法的变体，Lehmer64生成器具有简单高效的特点，但作者通过数学分析演示了其内部状态可被完全恢复，类似于之前针对Mersenne Twister的破解方法。</p></div>
 <div class="tags">标签：随机数生成器,密码分析,逆向工程</div>
         <div class="detail-why">💡 深入理解RNG的安全性问题，学习密码学中"不要自己实现加密算法"这一黄金法则的经典案例。</div>
         <a href="https://www.johndcook.com/blog/2026/05/12/hacking-the-lehmer64-rng/" target="_blank" class="original-link">📖 阅读英文原文 →</a>

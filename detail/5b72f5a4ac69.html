@@ -221,6 +221,17 @@
         }
         .original-link:hover { background: var(--brand-light); }
 
+        /* ── Detail Section (openclaw features/bug_fixes) ── */
+        .detail-section { margin-bottom: 28px; }
+        .detail-section-title {
+            font-family: Charter, Georgia, serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--brand);
+            margin-bottom: 10px;
+            letter-spacing: 0;
+        }
+
         .back-link {
             display: inline-block;
             margin-bottom: 16px;
@@ -286,9 +297,7 @@
 
     <main>
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
-        <div class="detail-card">
-            <p>CSP Allow-list Experiment 是一个创新实验，展示了在受内容安全策略（CSP）保护的沙箱iframe中，通过自定义fetch()拦截CSP违规错误，并将其传递给父窗口。用户可以根据错误提示，将被拦截的域名主动添加到允许列表中，从而实现更友好的安全策略管理体验。</p>
-        </div>
+<div class="detail-card"><p>CSP Allow-list Experiment 是一个创新实验，展示了在受内容安全策略（CSP）保护的沙箱iframe中，通过自定义fetch()拦截CSP违规错误，并将其传递给父窗口。用户可以根据错误提示，将被拦截的域名主动添加到允许列表中，从而实现更友好的安全策略管理体验。</p></div>
 <div class="tags">标签：内容安全策略, Web安全, 用户体验</div>
         <div class="detail-why">💡 对于关注Web安全实践的开发者，这个实验提供了一种优雅的方式，让终端用户参与到站点安全策略的配置中，既增强了安全性又避免了传统配置的复杂性。</div>
         <a href="https://simonwillison.net/2026/May/13/csp-allow/#atom-everything" target="_blank" class="original-link">📖 阅读英文原文 →</a>

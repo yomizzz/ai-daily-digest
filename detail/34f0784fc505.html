@@ -221,6 +221,17 @@
         }
         .original-link:hover { background: var(--brand-light); }
 
+        /* ── Detail Section (openclaw features/bug_fixes) ── */
+        .detail-section { margin-bottom: 28px; }
+        .detail-section-title {
+            font-family: Charter, Georgia, serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--brand);
+            margin-bottom: 10px;
+            letter-spacing: 0;
+        }
+
         .back-link {
             display: inline-block;
             margin-bottom: 16px;
@@ -286,9 +297,7 @@
 
     <main>
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
-        <div class="detail-card">
-            <p>文章探讨了序列移位操作的逆操作问题。作者通过8位序列abcdefgh的例子说明，将序列右移后再左移会丢失原始数据，因为移位引入的0会覆盖有效位信息，看似直观的“逆操作”实则无法完全恢复原始序列。这一问题揭示了有限精度计算中信息丢失的本质。</p>
-        </div>
+<div class="detail-card"><p>文章探讨了序列移位操作的逆操作问题。作者通过8位序列abcdefgh的例子说明，将序列右移后再左移会丢失原始数据，因为移位引入的0会覆盖有效位信息，看似直观的“逆操作”实则无法完全恢复原始序列。这一问题揭示了有限精度计算中信息丢失的本质。</p></div>
 <div class="tags">标签：位运算，数学趣题，信息论</div>
         <div class="detail-why">💡 文章以简洁的数学例子阐明了移位操作在有限序列中的不可逆性，启发对信息保存的深层思考。</div>
         <a href="https://www.johndcook.com/blog/2026/05/11/inverse-shift/" target="_blank" class="original-link">📖 阅读英文原文 →</a>

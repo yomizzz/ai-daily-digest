@@ -221,6 +221,17 @@
         }
         .original-link:hover { background: var(--brand-light); }
 
+        /* ── Detail Section (openclaw features/bug_fixes) ── */
+        .detail-section { margin-bottom: 28px; }
+        .detail-section-title {
+            font-family: Charter, Georgia, serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--brand);
+            margin-bottom: 10px;
+            letter-spacing: 0;
+        }
+
         .back-link {
             display: inline-block;
             margin-bottom: 16px;
@@ -286,9 +297,7 @@
 
     <main>
         <a href="javascript:history.back()" class="back-link">← 返回日报</a>
-        <div class="detail-card">
-            <p>本文讨论Python代码格式化工具面临的一个棘手问题——当遇到不完整的代码片段（如if语句块后紧跟其他语句）时，格式化器应该如何判断代码结构并决定缩进方式。作者探讨了可能的启发式方法来处理这类边界情况，并指出代码格式化的复杂性往往超出预期。</p>
-        </div>
+<div class="detail-card"><p>本文讨论Python代码格式化工具面临的一个棘手问题——当遇到不完整的代码片段（如if语句块后紧跟其他语句）时，格式化器应该如何判断代码结构并决定缩进方式。作者探讨了可能的启发式方法来处理这类边界情况，并指出代码格式化的复杂性往往超出预期。</p></div>
 <div class="tags">标签：Python, 代码格式化, 编程工具, 启发式算法</div>
         <div class="detail-why">💡 对于Python开发者或工具开发者而言，这篇文章揭示了代码格式化背后的技术挑战，有助于理解IDE和格式化工具的工作原理。</div>
         <a href="https://utcc.utoronto.ca/~cks/space/blog/python/CodeFormattingBlockHeuristics" target="_blank" class="original-link">📖 阅读英文原文 →</a>
