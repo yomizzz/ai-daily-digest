@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.5.12",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.12",
+      "source": "openclaw",
+      "published": "2026-05-15",
+      "category": "openclaw",
+      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
+      "features": "摘要生成失败",
+      "bug_fixes": "摘要生成失败",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Managed agents are the new Lambda",
       "url": "https://martinalderson.com/posts/managed-agents-are-the-new-lambda/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
       "summary": "Managed agents (cloud-hosted agent harnesses) are powerful, but locking yourself into a frontier lab's platform now is risky - here's why and what to do instead.",
@@ -1985,5 +1997,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-15 03:35:53"
+  "last_updated": "2026-05-15 14:00:40"
 }
