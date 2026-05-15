@@ -54,12 +54,12 @@ def parse_summary_output(content: str) -> Dict[str, str]:
             continue
         if line.startswith("## 新增功能") or line.startswith("### 新增功能"):
             if current_section == "bug_fixes" and items:
-                bug_fixes = "\n".join(items)
+                bug_fixes = "- " + "\n- ".join(items)
             current_section = "features"
             items = []
         elif line.startswith("## Bug 修复") or line.startswith("### Bug 修复") or line.startswith("## 缺陷修复"):
             if current_section == "features" and items:
-                features = "\n".join(items)
+                features = "- " + "\n- ".join(items)
             current_section = "bug_fixes"
             items = []
         elif line.startswith("- ") or line.startswith("* "):
@@ -70,9 +70,9 @@ def parse_summary_output(content: str) -> Dict[str, str]:
             if line.startswith("-") or "*" in line[:3]:
                 continue
     if current_section == "features" and items:
-        features = "\n".join(items)
+        features = "- " + "\n- ".join(items)
     elif current_section == "bug_fixes" and items:
-        bug_fixes = "\n".join(items)
+        bug_fixes = "- " + "\n- ".join(items)
     if not features and not bug_fixes:
         return {"features": content[:500], "bug_fixes": "无"}
     return {

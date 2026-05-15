@@ -1,18 +1,6 @@
 {
   "articles": [
     {
-      "title": "openclaw 2026.5.12",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.12",
-      "source": "openclaw",
-      "published": "2026-05-15",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
       "title": "Managed agents are the new Lambda",
       "url": "https://martinalderson.com/posts/managed-agents-are-the-new-lambda/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
       "summary": "Managed agents (cloud-hosted agent harnesses) are powerful, but locking yourself into a frontier lab's platform now is risky - here's why and what to do instead.",
@@ -855,18 +843,6 @@
       "tags": "Hermes Agent"
     },
     {
-      "title": "openclaw 2026.5.7",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.7",
-      "source": "openclaw",
-      "published": "2026-05-08",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
       "title": "openclaw 2026.5.6",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.6",
       "source": "openclaw",
@@ -875,30 +851,6 @@
       "summary": "无\n\n🐛 Bug 修复：回滚 doctor --fix 对 openai-codex/* OAuth 路由的错误重写，避免破坏 GPT-5.5 OAuth-only 配置\n移除第三方符号元数据以防止受保护 fetch 路径错误拒绝有效插件请求\n标准化 debug-proxy 捕获的请求头，防止符号元数据导致重放失败\n修复请求超时时的调度器清理，防止 Gateway 工具通道残留",
       "features": "无",
       "bug_fixes": "回滚 doctor --fix 对 openai-codex/* OAuth 路由的错误重写，避免破坏 GPT-5.5 OAuth-only 配置\n移除第三方符号元数据以防止受保护 fetch 路径错误拒绝有效插件请求\n标准化 debug-proxy 捕获的请求头，防止符号元数据导致重放失败\n修复请求超时时的调度器清理，防止 Gateway 工具通道残留",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
-      "title": "openclaw 2026.5.5",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.5",
-      "source": "openclaw",
-      "published": "2026-05-06",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
-      "title": "openclaw 2026.5.4",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.4",
-      "source": "openclaw",
-      "published": "2026-05-05",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
       "why_matters": "查看新增功能与 Bug 修复详情",
       "tags": "OpenClaw"
     },
@@ -949,18 +901,6 @@
       "tags": "Hermes Agent"
     },
     {
-      "title": "openclaw 2026.4.29",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.29",
-      "source": "openclaw",
-      "published": "2026-05-01",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
       "title": "openclaw 2026.4.27",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.27",
       "source": "openclaw",
@@ -969,18 +909,6 @@
       "summary": "**Codex Computer Use 配置**：新增 status/install 命令、市场发现和 fail-closed MCP 检查，支持桌面控制\n**DeepInfra 提供商集成**：支持模型发现、媒体生成编辑、TTS、嵌入和入职策略\n**Tencent Yuanbao/QQBot 扩展**：新增 QQ 群聊、流式传输、媒体上传和管道重构\n**Docker GPU 直通**：为沙箱容器添加 `sandbox.docker.gpus` 选项，支持本地 GPU 工作负载\n**iOS/Android 节点存活事件**：后台节点可标记为最近活跃，无需保持连接状态\n**聊天附件支持**：非图片附件可通过 `chat.send` 以代理可读路径方式暂存\n**出站代理路由**：新增 operator 管理的出站代理支持，包含严格验证和循环绕过\n**Matrix 流式工具进度**：实时预览默认显示工具进度更新，支持配置关闭\n**插件 SDK 通道路由**：暴露共享通道路由规范化和解析逻辑\n**模型目录别名/抑制**：支持通过 manifest 声明模型别名和抑制规则\n**多提供商迁移**：Qianfan、小米、NVIDIA、Cerebras、Mistral、Moonshot、DeepSeek、腾讯 TokenHub、StepFun、BytePlus、Volcano Engine 等提供商目录迁移至插件 manifest\n\n🐛 Bug 修复：**Telegram**：修复启动和消息发送问题\n**Slack**：修复 socket 和媒体传输停滞问题\n**Gateway**：修复启动预热、会话/历史默认值和更新同步问题\n**Windows**：修复重启交接问题\n**Docker GPU 支持**：修复沙箱内本地 GPU 工作负载运行问题（#57976）\n**聊天附件**：修复 RPC 附件路径被静默丢弃的问题（#48123）\n**Codex MCP**：修复 Computer Use 模式启动前的 MCP 服务器检查（#72094）",
       "features": "**Codex Computer Use 配置**：新增 status/install 命令、市场发现和 fail-closed MCP 检查，支持桌面控制\n**DeepInfra 提供商集成**：支持模型发现、媒体生成编辑、TTS、嵌入和入职策略\n**Tencent Yuanbao/QQBot 扩展**：新增 QQ 群聊、流式传输、媒体上传和管道重构\n**Docker GPU 直通**：为沙箱容器添加 `sandbox.docker.gpus` 选项，支持本地 GPU 工作负载\n**iOS/Android 节点存活事件**：后台节点可标记为最近活跃，无需保持连接状态\n**聊天附件支持**：非图片附件可通过 `chat.send` 以代理可读路径方式暂存\n**出站代理路由**：新增 operator 管理的出站代理支持，包含严格验证和循环绕过\n**Matrix 流式工具进度**：实时预览默认显示工具进度更新，支持配置关闭\n**插件 SDK 通道路由**：暴露共享通道路由规范化和解析逻辑\n**模型目录别名/抑制**：支持通过 manifest 声明模型别名和抑制规则\n**多提供商迁移**：Qianfan、小米、NVIDIA、Cerebras、Mistral、Moonshot、DeepSeek、腾讯 TokenHub、StepFun、BytePlus、Volcano Engine 等提供商目录迁移至插件 manifest",
       "bug_fixes": "**Telegram**：修复启动和消息发送问题\n**Slack**：修复 socket 和媒体传输停滞问题\n**Gateway**：修复启动预热、会话/历史默认值和更新同步问题\n**Windows**：修复重启交接问题\n**Docker GPU 支持**：修复沙箱内本地 GPU 工作负载运行问题（#57976）\n**聊天附件**：修复 RPC 附件路径被静默丢弃的问题（#48123）\n**Codex MCP**：修复 Computer Use 模式启动前的 MCP 服务器检查（#72094）",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
-      "title": "OpenClaw 2026.4.26",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.26",
-      "source": "openclaw",
-      "published": "2026-04-28",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
       "why_matters": "查看新增功能与 Bug 修复详情",
       "tags": "OpenClaw"
     },
@@ -1039,18 +967,6 @@
       "summary": "xAI Provider：新增图片生成、文本转语音、语音转文本支持，支持grok-imagine-image等模型\nSTT Provider：Deepgram、ElevenLabs、Mistral新增语音通话流式转录功能\nTUI：新增本地嵌入模式，无需Gateway即可运行终端聊天\nOnboarding：自动安装缺失的provider和channel插件，完成首次运行配置\nModels/commands：新增`/models add`命令，支持从聊天窗口动态注册模型\nWhatsApp：新增原生回复引用功能（replyToMode）\nWhatsApp：群组和私聊支持独立systemPrompt配置，支持通配符和账户级覆盖\nAgents/sessions：新增邮箱式过滤器，支持按标签、agent、关键词筛选\nControl UI：新增操作员个人身份标识，优化快速设置和窄屏布局\nGateway/diagnostics：新增诊断导出功能，生成包含日志、状态、配置的报告\nProviders：新增Tencent Cloud、AWS Bedrock Mantle、GPT-5等provider支持\nOpenAI Codex：移除Codex CLI认证导入，改为浏览器登录方式\nCLI/Claude：默认warm stdio会话，支持重启后恢复Claude会话\nPi/models：更新bundled pi包至0.68.1，新增OpenCode Go模型目录\nTokenjuice：新增tokenjuice插件支持，紧凑化exec/bash工具输出\nACPX：新增openClawToolsMcpBridge选项，注入OpenClaw MCP服务器\nCLI/doctor plugins：优化插件懒加载，减少约74%启动时间",
       "features": "xAI Provider：新增图片生成、文本转语音、语音转文本支持，支持grok-imagine-image等模型\nSTT Provider：Deepgram、ElevenLabs、Mistral新增语音通话流式转录功能\nTUI：新增本地嵌入模式，无需Gateway即可运行终端聊天\nOnboarding：自动安装缺失的provider和channel插件，完成首次运行配置\nModels/commands：新增`/models add`命令，支持从聊天窗口动态注册模型\nWhatsApp：新增原生回复引用功能（replyToMode）\nWhatsApp：群组和私聊支持独立systemPrompt配置，支持通配符和账户级覆盖\nAgents/sessions：新增邮箱式过滤器，支持按标签、agent、关键词筛选\nControl UI：新增操作员个人身份标识，优化快速设置和窄屏布局\nGateway/diagnostics：新增诊断导出功能，生成包含日志、状态、配置的报告\nProviders：新增Tencent Cloud、AWS Bedrock Mantle、GPT-5等provider支持\nOpenAI Codex：移除Codex CLI认证导入，改为浏览器登录方式\nCLI/Claude：默认warm stdio会话，支持重启后恢复Claude会话\nPi/models：更新bundled pi包至0.68.1，新增OpenCode Go模型目录\nTokenjuice：新增tokenjuice插件支持，紧凑化exec/bash工具输出\nACPX：新增openClawToolsMcpBridge选项，注入OpenClaw MCP服务器\nCLI/doctor plugins：优化插件懒加载，减少约74%启动时间",
       "bug_fixes": "无",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
-      "title": "openclaw 2026.4.21",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.21",
-      "source": "openclaw",
-      "published": "2026-04-22",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
       "why_matters": "查看新增功能与 Bug 修复详情",
       "tags": "OpenClaw"
     },
@@ -1193,18 +1109,6 @@
       "tags": "OpenClaw"
     },
     {
-      "title": "openclaw 2026.4.5",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.5",
-      "source": "openclaw",
-      "published": "2026-04-06",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
       "title": "Hermes Agent v0.7.0 (v2026.4.3)",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.3",
       "source": "hermes-agent",
@@ -1239,18 +1143,6 @@
       "tags": "OpenClaw"
     },
     {
-      "title": "openclaw 2026.3.31",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.3.31",
-      "source": "openclaw",
-      "published": "2026-04-01",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
       "title": "Hermes Agent v0.6.0 (v2026.3.30)",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.30",
       "source": "hermes-agent",
@@ -1279,18 +1171,6 @@
       "summary": "**xAI 工具升级**：迁移到 Responses API，添加原生 `x_search` 支持，自动启用相关插件\n**xAI 集成向导**：在 `openclaw onboard` 过程中提供可选的 x_search 配置引导\n**MiniMax 图像生成**：新增 `image-01` 模型支持，支持图生图和比例控制\n**工具执行审批**：为 `before_tool_call` hooks 添加 async `requireApproval`，支持通过界面/Telegram/Discord 审批\n**ACP 对话绑定**：Discord、BlueBubbles、iMessage 支持 `/acp spawn --bind here` 直接绑定当前对话\n**OpenAI apply_patch**：默认启用，并支持沙盒权限\n**Gemini CLI 支持**：新增捆绑的 Gemini CLI 后端，统一 CLI 日志输出\n**捆绑插件自动加载**：Claude/Codex/Gemini CLI 等插件不再需要手动配置 `plugins.allow`\n**容器简化**：Podman 改用用户级配置，提供 `--container` 命令简化操作\n**文件上传统一**：Slack 新增 `upload-file` 操作，Teams/Google Chat/BlueBubbles 支持统一上传接口\n**Matrix 语音消息**：TTS 回复改为原生 Matrix 语音气泡\n**配置架构导出**：新增 `openclaw config schema` 命令\n**TTS 配置迁移**：自动迁移旧版语音配置\n**内存插件重构**：预压缩刷新逻辑由 memory-core 接管\n**MiniMax 精简**：移除 M2/M2.1/M2.5/VL-01 等旧模型，仅保留 M2.7\n**心跳手动触发**：插件可调用 `runHeartbeatOnce` 触发单次心跳\n**压缩刷新保持**：确保压缩后的 AGENTS 状态在所有场景下正确刷新\n**压缩状态优化**：将良性手动压缩标记为\"跳过\"而非\"失败\"\n\n🐛 Bug 修复：**Agent 异常处理**：修复 Agent 遇到未处理的 provider stop reasons（如 sensitive）时崩溃的问题",
       "features": "**xAI 工具升级**：迁移到 Responses API，添加原生 `x_search` 支持，自动启用相关插件\n**xAI 集成向导**：在 `openclaw onboard` 过程中提供可选的 x_search 配置引导\n**MiniMax 图像生成**：新增 `image-01` 模型支持，支持图生图和比例控制\n**工具执行审批**：为 `before_tool_call` hooks 添加 async `requireApproval`，支持通过界面/Telegram/Discord 审批\n**ACP 对话绑定**：Discord、BlueBubbles、iMessage 支持 `/acp spawn --bind here` 直接绑定当前对话\n**OpenAI apply_patch**：默认启用，并支持沙盒权限\n**Gemini CLI 支持**：新增捆绑的 Gemini CLI 后端，统一 CLI 日志输出\n**捆绑插件自动加载**：Claude/Codex/Gemini CLI 等插件不再需要手动配置 `plugins.allow`\n**容器简化**：Podman 改用用户级配置，提供 `--container` 命令简化操作\n**文件上传统一**：Slack 新增 `upload-file` 操作，Teams/Google Chat/BlueBubbles 支持统一上传接口\n**Matrix 语音消息**：TTS 回复改为原生 Matrix 语音气泡\n**配置架构导出**：新增 `openclaw config schema` 命令\n**TTS 配置迁移**：自动迁移旧版语音配置\n**内存插件重构**：预压缩刷新逻辑由 memory-core 接管\n**MiniMax 精简**：移除 M2/M2.1/M2.5/VL-01 等旧模型，仅保留 M2.7\n**心跳手动触发**：插件可调用 `runHeartbeatOnce` 触发单次心跳\n**压缩刷新保持**：确保压缩后的 AGENTS 状态在所有场景下正确刷新\n**压缩状态优化**：将良性手动压缩标记为\"跳过\"而非\"失败\"",
       "bug_fixes": "**Agent 异常处理**：修复 Agent 遇到未处理的 provider stop reasons（如 sensitive）时崩溃的问题",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
-      "title": "openclaw 2026.3.24",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.3.24",
-      "source": "openclaw",
-      "published": "2026-03-26",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
       "why_matters": "查看新增功能与 Bug 修复详情",
       "tags": "OpenClaw"
     },
@@ -1351,18 +1231,6 @@
       "tags": "OpenClaw"
     },
     {
-      "title": "openclaw 2026.3.12",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.3.12",
-      "source": "openclaw",
-      "published": "2026-03-13",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
       "title": "Hermes Agent v0.2.0 (2026.3.12)",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.12",
       "source": "hermes-agent",
@@ -1371,18 +1239,6 @@
       "summary_zh": "- 正式发布 v0.2.0 版本，从内部小项目升级为功能完整的 AI agent 平台\n- 合并 216 个 pull requests，集成大量社区贡献的功能和改进\n- 63 位贡献者参与开发，社区协作推动项目快速发展\n- 解决 119 个 issues，提升平台稳定性和可靠性",
       "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
-    },
-    {
-      "title": "openclaw 2026.3.11",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.3.11",
-      "source": "openclaw",
-      "published": "2026-03-12",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
     },
     {
       "title": "openclaw 2026.3.8",
@@ -1417,18 +1273,6 @@
       "summary": "SecretRef 支持扩展至 64 个目标（包括运行时收集器、secrets 规划/应用/审计流程及入职 UX），未解析引用在活跃表面快速失败，非活跃表面报告非阻塞诊断\n新增原生 PDF 工具，支持 Anthropic/Google PDF 提供商及非原生模型提取回退，可配置默认参数\n出站适配器新增 sendPayload 支持，覆盖 Discord/Slack/WhatsApp/Zalo 等平台，支持多媒体迭代和文本回退\n新增 MiniMax-M2.5-highspeed 一级支持，同时保留 MiniMax-M2.5-Lightning 兼容性\nsessions_spawn 支持内联文件附件，附带 base64/utf8 编码、转录内容编辑和生命周期清理\nTelegram 流式默认改为 partial，新安装开箱即用实时预览流\nTelegram 私聊新增 sendMessageDraft 预览流式处理，推理模式下的预览通道分离\nTelegram 语音提及新增 disableAudioPreflight 选项，可跳过群组语音的提及检测预检转录\nCLI 新增 openclaw config validate 命令，支持 --json 输出格式验证配置文件\ndiff 工具新增 PDF 文件输出支持，可配置渲染质量和缩放参数\nMemory 新增 Ollama 作为嵌入搜索提供商（memorySearch.provider = \"ollama\"）\nZalo 个人插件重建为原生 zca-js 集成，QR/登录/收发流程完全在 OpenClaw 内部运行\n插件 SDK 公开 channelRuntime 到 ChannelGatewayContext，供外部频道插件访问共享运行时辅助函数\n插件运行时新增 api.runtime.stt.transcribeAudioFile，可转录本地音频文件\n插件钩子新增 session_start/session_end 事件的 sessionKey 上下文信息\n新增 message:transcribed 和 message:preprocessed 内部钩子事件，message:sent 事件新增 isGroup/groupId 上下文\n媒体理解新增音频回显确认功能（tools.media.audio.echoTranscript），可发送转录确认消息\n插件运行时公开 runtime.system.requestHeartbeatNow，可立即唤醒目标会话\n插件运行时新增 runtime.events.onAgentEvent 和 onSessionTranscriptUpdate 事件订阅，隔离故障监听器\nCLI 新增 cli.banner.taglineMode 配置，可控制启动横幅标语行为（random/default/off）",
       "features": "SecretRef 支持扩展至 64 个目标（包括运行时收集器、secrets 规划/应用/审计流程及入职 UX），未解析引用在活跃表面快速失败，非活跃表面报告非阻塞诊断\n新增原生 PDF 工具，支持 Anthropic/Google PDF 提供商及非原生模型提取回退，可配置默认参数\n出站适配器新增 sendPayload 支持，覆盖 Discord/Slack/WhatsApp/Zalo 等平台，支持多媒体迭代和文本回退\n新增 MiniMax-M2.5-highspeed 一级支持，同时保留 MiniMax-M2.5-Lightning 兼容性\nsessions_spawn 支持内联文件附件，附带 base64/utf8 编码、转录内容编辑和生命周期清理\nTelegram 流式默认改为 partial，新安装开箱即用实时预览流\nTelegram 私聊新增 sendMessageDraft 预览流式处理，推理模式下的预览通道分离\nTelegram 语音提及新增 disableAudioPreflight 选项，可跳过群组语音的提及检测预检转录\nCLI 新增 openclaw config validate 命令，支持 --json 输出格式验证配置文件\ndiff 工具新增 PDF 文件输出支持，可配置渲染质量和缩放参数\nMemory 新增 Ollama 作为嵌入搜索提供商（memorySearch.provider = \"ollama\"）\nZalo 个人插件重建为原生 zca-js 集成，QR/登录/收发流程完全在 OpenClaw 内部运行\n插件 SDK 公开 channelRuntime 到 ChannelGatewayContext，供外部频道插件访问共享运行时辅助函数\n插件运行时新增 api.runtime.stt.transcribeAudioFile，可转录本地音频文件\n插件钩子新增 session_start/session_end 事件的 sessionKey 上下文信息\n新增 message:transcribed 和 message:preprocessed 内部钩子事件，message:sent 事件新增 isGroup/groupId 上下文\n媒体理解新增音频回显确认功能（tools.media.audio.echoTranscript），可发送转录确认消息\n插件运行时公开 runtime.system.requestHeartbeatNow，可立即唤醒目标会话\n插件运行时新增 runtime.events.onAgentEvent 和 onSessionTranscriptUpdate 事件订阅，隔离故障监听器\nCLI 新增 cli.banner.taglineMode 配置，可控制启动横幅标语行为（random/default/off）",
       "bug_fixes": "无",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
-      "title": "openclaw 2026.3.1",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.3.1",
-      "source": "openclaw",
-      "published": "2026-03-02",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
       "why_matters": "查看新增功能与 Bug 修复详情",
       "tags": "OpenClaw"
     },
@@ -1477,30 +1321,6 @@
       "summary": "Kilo Gateway: 新增 kilocode provider 支持（认证、引导、隐式检测、模型默认值、缓存处理）\nVercel AI Gateway: 支持 Claude 速记模型引用，自动规范化为标准格式\n新增 prompt caching 完整参考文档\nHTTP 安全: 支持 Strict-Transport-Security 头\n会话管理: 加强清理机制，新增磁盘预算控制（maxDiskBytes/highWaterBytes）\nWeb 搜索: 新增 Kimi (Moonshot) provider 支持\n视频理解: 新增 Moonshot 视频 provider，支持自动检测\n代理配置: 支持按代理独立覆盖 cacheRetention 等参数\n代理引导: 缓存引导文件快照，减少缓存失效\n\n🐛 Bug 修复：安全: 清除敏感配置项的动态密钥，保留恢复能力\n测试: Vitest 根据主机内存自动调整并行策略\nWhatsApp: 修复 allowlist 模式下被正确用户的群组消息被误拦问题\n上下文修剪: cache-ttl 模式扩展支持 Moonshot/Kimi 和 ZAI/GLM\nDoctor: 查询网关侧内存嵌入就绪状态并给出警告\n会话存储: 规范化会话密钥大小写，迁移历史数据防止重复\nTelegram: 修复反应操作错误导致崩溃、消息ID格式兼容、DM反应循环\nTelegram: 修复跨 token 轮询偏移量污染和重叠问题\nTelegram: 推理关闭时抑制推理内容泄露",
       "features": "Kilo Gateway: 新增 kilocode provider 支持（认证、引导、隐式检测、模型默认值、缓存处理）\nVercel AI Gateway: 支持 Claude 速记模型引用，自动规范化为标准格式\n新增 prompt caching 完整参考文档\nHTTP 安全: 支持 Strict-Transport-Security 头\n会话管理: 加强清理机制，新增磁盘预算控制（maxDiskBytes/highWaterBytes）\nWeb 搜索: 新增 Kimi (Moonshot) provider 支持\n视频理解: 新增 Moonshot 视频 provider，支持自动检测\n代理配置: 支持按代理独立覆盖 cacheRetention 等参数\n代理引导: 缓存引导文件快照，减少缓存失效",
       "bug_fixes": "安全: 清除敏感配置项的动态密钥，保留恢复能力\n测试: Vitest 根据主机内存自动调整并行策略\nWhatsApp: 修复 allowlist 模式下被正确用户的群组消息被误拦问题\n上下文修剪: cache-ttl 模式扩展支持 Moonshot/Kimi 和 ZAI/GLM\nDoctor: 查询网关侧内存嵌入就绪状态并给出警告\n会话存储: 规范化会话密钥大小写，迁移历史数据防止重复\nTelegram: 修复反应操作错误导致崩溃、消息ID格式兼容、DM反应循环\nTelegram: 修复跨 token 轮询偏移量污染和重叠问题\nTelegram: 推理关闭时抑制推理内容泄露",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
-      "title": "openclaw 2026.2.22",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.22",
-      "source": "openclaw",
-      "published": "2026-02-23",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
-      "title": "openclaw 2026.2.21",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.21",
-      "source": "openclaw",
-      "published": "2026-02-22",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
       "why_matters": "查看新增功能与 Bug 修复详情",
       "tags": "OpenClaw"
     },
@@ -1649,54 +1469,6 @@
       "tags": "OpenClaw"
     },
     {
-      "title": "openclaw 2026.1.29",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.29",
-      "source": "openclaw",
-      "published": "2026-01-30",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
-      "title": "Clawdbot 2026.1.24",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.24",
-      "source": "openclaw",
-      "published": "2026-01-25",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
-      "title": "Clawdbot 2026.1.23",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.23",
-      "source": "openclaw",
-      "published": "2026-01-24",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
-      "title": "clawdbot 2026.1.22",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.22",
-      "source": "openclaw",
-      "published": "2026-01-23",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
       "title": "clawdbot 2026.1.21",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.21",
       "source": "openclaw",
@@ -1733,30 +1505,6 @@
       "tags": "OpenClaw"
     },
     {
-      "title": "clawdbot 2026.1.15",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.15",
-      "source": "openclaw",
-      "published": "2026-01-16",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
-      "title": "clawdbot 2026.1.14-1",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.14-1",
-      "source": "openclaw",
-      "published": "2026-01-15",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
       "title": "clawdbot 2026.1.12-2",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.12-2",
       "source": "openclaw",
@@ -1765,18 +1513,6 @@
       "summary": "无\n\n🐛 Bug 修复：修复 npm 包发布时缺少 dist/memory/** 文件导致的模块加载错误",
       "features": "无",
       "bug_fixes": "修复 npm 包发布时缺少 dist/memory/** 文件导致的模块加载错误",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
-      "title": "clawdbot 2026.1.12",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.12",
-      "source": "openclaw",
-      "published": "2026-01-13",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
       "why_matters": "查看新增功能与 Bug 修复详情",
       "tags": "OpenClaw"
     },
@@ -1829,18 +1565,6 @@
       "tags": "OpenClaw"
     },
     {
-      "title": "clawdbot 2026.1.10",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.10",
-      "source": "openclaw",
-      "published": "2026-01-11",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
       "title": "clawdbot 2026.1.9",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.9",
       "source": "openclaw",
@@ -1849,18 +1573,6 @@
       "summary": "Microsoft Teams 消息提供商（轮询、附件、发送、频道策略）\nOpenCode Zen 和 MiniMax API 模型支持（兼容 Anthropic 格式）\nToken 认证配置和优先级排序功能\nCLI 消息子命令统一（send/poll 等）\nGateway 本地/广域网自动发现（DNS-SD）\nGateway 状态 SSH 循环回显\n/config 和 /debug 配置管理命令\n沙盒环境管理和浏览器自动启动\nWhatsApp 广播群组多 Agent 回复\nWhatsApp 入站媒体大小可配置\nTelegram 内联键盘按钮和回调路由\nTelegram 音频转语音标签支持\nSignal 表情反应和通知\nSlack 线程优化\nDiscord 稳定性提升\n移动端 UI 响应式适配\n消息队列和会话链接功能\n推理过程可视化视图\n成本/使用量报告功能\n医生/守护进程审计和修复流程\nOAuth 认证健康检查\n\n🐛 Bug 修复：修复 npm 包中缺少 MS Teams 发送模块\n修复沙盒 CDP 端点自动启动\n修复容器内 CDP 代理转发\n修复 /stop 命令在工具调用间中止\n修复会话键值显式要求\n修复小上下文窗口保护\n修复模型降级字符串化问题\n修复账单/额度故障转移\n修复认证冷却排序\n恢复 Anthropic OAuth 工具调度",
       "features": "Microsoft Teams 消息提供商（轮询、附件、发送、频道策略）\nOpenCode Zen 和 MiniMax API 模型支持（兼容 Anthropic 格式）\nToken 认证配置和优先级排序功能\nCLI 消息子命令统一（send/poll 等）\nGateway 本地/广域网自动发现（DNS-SD）\nGateway 状态 SSH 循环回显\n/config 和 /debug 配置管理命令\n沙盒环境管理和浏览器自动启动\nWhatsApp 广播群组多 Agent 回复\nWhatsApp 入站媒体大小可配置\nTelegram 内联键盘按钮和回调路由\nTelegram 音频转语音标签支持\nSignal 表情反应和通知\nSlack 线程优化\nDiscord 稳定性提升\n移动端 UI 响应式适配\n消息队列和会话链接功能\n推理过程可视化视图\n成本/使用量报告功能\n医生/守护进程审计和修复流程\nOAuth 认证健康检查",
       "bug_fixes": "修复 npm 包中缺少 MS Teams 发送模块\n修复沙盒 CDP 端点自动启动\n修复容器内 CDP 代理转发\n修复 /stop 命令在工具调用间中止\n修复会话键值显式要求\n修复小上下文窗口保护\n修复模型降级字符串化问题\n修复账单/额度故障转移\n修复认证冷却排序\n恢复 Anthropic OAuth 工具调度",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
-      "title": "clawdbot 2026.1.8",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.8",
-      "source": "openclaw",
-      "published": "2026-01-08",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
       "why_matters": "查看新增功能与 Bug 修复详情",
       "tags": "OpenClaw"
     },
@@ -1885,18 +1597,6 @@
       "summary": "无\n\n🐛 Bug 修复：修复 NPM 包分发问题，确保 `clawdbot agent` 在 npx 安装时能正确解析会话助手\n修复 Node 25 兼容性问题，通过直接引用文件路径避免目录导入问题",
       "features": "无",
       "bug_fixes": "修复 NPM 包分发问题，确保 `clawdbot agent` 在 npx 安装时能正确解析会话助手\n修复 Node 25 兼容性问题，通过直接引用文件路径避免目录导入问题",
-      "why_matters": "查看新增功能与 Bug 修复详情",
-      "tags": "OpenClaw"
-    },
-    {
-      "title": "clawdbot 2026.1.5",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.5",
-      "source": "openclaw",
-      "published": "2026-01-05",
-      "category": "openclaw",
-      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
-      "features": "摘要生成失败",
-      "bug_fixes": "摘要生成失败",
       "why_matters": "查看新增功能与 Bug 修复详情",
       "tags": "OpenClaw"
     },
