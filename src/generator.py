@@ -359,6 +359,17 @@ def _escHtml(text: str) -> str:
               .replace('"', '&quot;'))
 
 
+def _render_list(text: str) -> str:
+    """渲染为无序列表，每行一个 <li>"""
+    if not text or text in ('无', '摘要生成失败', '摘要失败'):
+        return '<p>无</p>'
+    lines = [l for l in text.split('\n') if l.strip()]
+    if not lines:
+        return '<p>无</p>'
+    items = ''.join('<li>' + _escHtml(l) + '</li>' for l in lines)
+    return '<ul class="summary-list">' + items + '</ul>'
+
+
 class PageGenerator:
     def __init__(self, json_path: str = 'data/articles.json'):
         self.json_path = json_path
@@ -785,14 +796,14 @@ class PageGenerator:
                 sections_html += (
                     '<div class="release-section">\n'
                     '    <div class="release-section-title">🆕 新增功能</div>\n'
-                    '    <div class="release-card">' + render_summary(features) + '</div>\n'
+                    '    <div class="release-card">' + _render_list(features) + '</div>\n'
                     '</div>'
                 )
             if bug_fixes:
                 sections_html += (
                     '<div class="release-section">\n'
                     '    <div class="release-section-title">🐛 Bug 修复</div>\n'
-                    '    <div class="release-card">' + render_summary(bug_fixes) + '</div>\n'
+                    '    <div class="release-card">' + _render_list(bug_fixes) + '</div>\n'
                     '</div>'
                 )
 
