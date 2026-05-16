@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>openclaw 2026.4.24</title>
+    <style>
+
+        :root {
+            --brand:     #1B365D;
+            --brand-light: #2D5A8A;
+            --brand-tint: #EEF2F7;
+            --brand-tint-strong: #E4ECF5;
+            --parchment:  #f5f4ed;
+            --ivory:      #faf9f5;
+            --sand:       #e8e6dc;
+            --border:     #e8e6dc;
+            --border-soft:#e5e3d8;
+            --near-black: #141413;
+            --dark-warm:  #3d3d3a;
+            --charcoal:   #4d4c48;
+            --olive:      #504e49;
+            --stone:      #6b6a64;
+        }
+        /* ── Reset & Base ── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: var(--parchment);
+            color: var(--near-black);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                         'Helvetica Neue', Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        ::selection { background: var(--brand-tint-strong); color: var(--brand); }
+
+        /* ── Typography ── */
+        h1 { font-family: Charter, Georgia, 'Times New Roman', serif;
+             font-size: 28px; font-weight: 500; line-height: 1.2;
+             color: var(--near-black); letter-spacing: -0.3px; }
+        h2 { font-size: 18px; font-weight: 500; line-height: 1.3; color: var(--dark-warm); }
+        p  { color: var(--olive); line-height: 1.65; }
+
+        /* ── Layout ── */
+        header {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 3rem 2rem 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+        header h1 { font-size: 26px; margin-bottom: 6px; }
+        .subtitle { color: var(--stone); font-size: 14px; margin-bottom: 4px; }
+        .last-updated { color: var(--stone); font-size: 12px; }
+
+        main {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 2rem 2rem 4rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--stone);
+            font-size: 12px;
+        }
+        footer a { color: var(--brand); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        /* ── Filter Bar ── */
+        .filter-bar {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 28px;
+            padding: 14px 16px;
+            background: var(--ivory);
+            border: 1px solid var(--border-soft);
+            border-radius: 6px;
+            align-items: center;
+        }
+        .filter-btn {
+            padding: 5px 14px;
+            border: 1px solid var(--border);
+            background: var(--parchment);
+            color: var(--olive);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+            font-family: inherit;
+            transition: all 0.15s ease;
+        }
+        .filter-btn:hover {
+            border-color: var(--brand);
+            color: var(--brand);
+        }
+        .filter-btn.active {
+            background: var(--brand);
+            border-color: var(--brand);
+            color: #fff;
+            font-weight: 500;
+        }
+        .article-count { margin-left: auto; color: var(--stone); font-size: 12px; }
+
+        /* ── Article Cards ── */
+        .articles { display: flex; flex-direction: column; gap: 0; }
+        .article {
+            padding: 22px 0;
+            border-bottom: 1px solid var(--border-soft);
+        }
+        .article:first-child { border-top: 1px solid var(--border-soft); }
+
+        .article-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+        .article-title {
+            font-family: Charter, Georgia, 'Times New Roman', serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--brand);
+            text-decoration: none;
+            line-height: 1.35;
+            flex: 1;
+        }
+        .article-title:hover { color: var(--brand-light); text-decoration: underline; }
+
+        .category-tag {
+            padding: 3px 10px;
+            background: var(--brand-tint);
+            color: var(--brand);
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: 500;
+            white-space: nowrap;
+            letter-spacing: 0.2px;
+            flex-shrink: 0;
+        }
+
+        .article-meta {
+            font-size: 12px;
+            color: var(--stone);
+            margin-bottom: 10px;
+            font-family: -apple-system, sans-serif;
+        }
+
+        /* ── Summary ── */
+        .article-summary {
+            color: var(--olive);
+            margin-bottom: 12px;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+        .article-summary ul, .detail-card ul { margin: 6px 0; padding-left: 18px; }
+        .article-summary li, .detail-card li { margin: 3px 0; color: var(--olive); }
+        .summary-list { list-style: none; padding-left: 0; }
+        .summary-list li {
+            padding: 2px 0 2px 18px;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.65;
+        }
+        .summary-list li::before {
+            content: '·';
+            position: absolute;
+            left: 4px;
+            color: var(--brand);
+            font-weight: 700;
+        }
+
+        .article-why {
+            font-size: 12px;
+            color: var(--stone);
+            margin-bottom: 8px;
+        }
+        .article-why a { color: var(--brand); text-decoration: none; font-weight: 500; }
+        .article-why a:hover { text-decoration: underline; }
+
+        .tags {
+            margin-top: 8px;
+            font-size: 11px;
+            color: var(--stone);
+        }
+
+        /* ── Detail Page ── */
+        .detail-card {
+            background: var(--ivory);
+            border: 1px solid var(--border-soft);
+            border-radius: 6px;
+            padding: 28px 32px;
+            margin: 20px 0;
+        }
+        .detail-card p { font-size: 15px; line-height: 1.8; color: var(--dark-warm); }
+        .detail-card ul { margin: 8px 0; padding-left: 20px; }
+        .detail-card li { font-size: 15px; line-height: 1.75; color: var(--dark-warm); margin: 5px 0; }
+
+        .detail-tags { margin-top: 16px; font-size: 12px; color: var(--stone); }
+
+        .detail-why {
+            margin-top: 16px;
+            font-size: 13px;
+            color: var(--dark-warm);
+        }
+
+        .original-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 22px;
+            background: var(--brand);
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+        }
+        .original-link:hover { background: var(--brand-light); }
+
+        /* ── Detail Section (openclaw features/bug_fixes) ── */
+        .detail-section { margin-bottom: 28px; }
+        .detail-section-title {
+            font-family: Charter, Georgia, serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--brand);
+            margin-bottom: 10px;
+            letter-spacing: 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 16px;
+            color: var(--brand);
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .back-link:hover { text-decoration: underline; }
+
+        /* ── Release Cards (hermes page) ── */
+        .release-list { display: flex; flex-direction: column; }
+        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
+        .release:first-child { border-top: 1px solid var(--border-soft); }
+        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+        .release-title {
+            font-family: Charter, Georgia, serif;
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--brand);
+            text-decoration: none;
+        }
+        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
+        .release-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            background: var(--brand-tint);
+            color: var(--brand);
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
+        .release-card {
+            background: var(--ivory);
+            border: 1px solid var(--border-soft);
+            border-radius: 6px;
+            padding: 18px 22px;
+            margin-top: 10px;
+        }
+        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
+        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
+        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
+
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            header { padding: 2rem 1.25rem 1.5rem; }
+            main { padding: 1.5rem 1.25rem 3rem; }
+            .article-header { flex-direction: column; gap: 6px; }
+            .category-tag { margin-left: 0; }
+            .filter-bar { flex-direction: column; align-items: flex-start; }
+            .article-count { margin-left: 0; }
+            .release-header { flex-direction: column; }
+            .release-date { margin-left: 0; }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>openclaw 2026.4.24</h1>
+        <p><span class="category-tag">openclaw</span> openclaw · 2026-04-26</p>
+    </header>
+
+    <main>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-section">
+    <h3 class="detail-section-title">🆕 新增功能</h3>
+    <div class="detail-card"><ul class="summary-list"><li>Google Meet 作为内置参与者插件集成，支持个人 Google 认证、Chrome/Twilio 实时会话、Artifact/Attendance 导出及会话恢复工具</li><li>DeepSeek V4 Flash 和 V4 Pro 加入内置模型目录，V4 Flash 成为 onboarding 默认选项</li><li>Talk、Voice Call 和 Google Meet 支持咨询完整 OpenClaw Agent 的实时语音循环</li><li>浏览器自动化新增坐标点击、60 秒默认操作超时时长、按配置文件 headless 覆盖及更稳定的标签页复用/恢复</li><li>Control UI 新增紧凑型实时工具芯片、可折叠工具组、直接切换开关及运行时/来源归属显示</li><li>Control UI 聊天界面支持为排队消息注入&quot;Steer&quot;操作以追加浏览器后续操作</li><li>插件和模型基础设施优化：静态模型目录、manifest 支持的模型行、延迟加载 provider 依赖</li><li>Voice Call 新增 setup 命令和 smoke 测试命令用于检查就绪状态</li><li>Gemini Live 实时语音 provider 支持后端 Voice Call 和 Google Meet 音频桥接</li><li>Gemini TTS 支持通过配置 audioProfile 和 speakerName 控制语音风格</li><li>实时 brain WebSocket 端点接入 Gemini Live，支持异步 OpenClaw 工具调用</li><li>Matrix 要求完全跨签名身份信任，新增 CLI 自设备验证命令</li><li>Gradium 内置文本转语音 provider，支持语音笔记和电话输出</li><li>混合记忆搜索新增 raw vectorScore 和 textScore，暴露组合 score 前的独立检索贡献度</li><li>Gemini TTS 新增 audioProfile 和 speakerName 配置项控制语音风格</li></ul></div>
+</div>
+<div class="detail-section">
+    <h3 class="detail-section-title">🐛 Bug 修复</h3>
+    <div class="detail-card"><ul class="summary-list"><li>修复 DeepSeek thinking/replay 在后续工具调用轮次中的行为问题</li><li>混合搜索修复 (#68166)：正确暴露原始 vectorScore 和 textScore</li></ul></div>
+</div>
+
+<div class="tags">标签：OpenClaw</div>
+        <div class="detail-why">💡 查看新增功能与 Bug 修复详情</div>
+        <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.24" target="_blank" class="original-link">📖 阅读英文原文 →</a>
+    </main>
+
+    <footer>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
+    </footer>
+</body>
+</html>

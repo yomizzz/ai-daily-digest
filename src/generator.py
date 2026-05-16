@@ -519,20 +519,30 @@ class PageGenerator:
         features = article.get('features', '')
         bug_fixes = article.get('bug_fixes', '')
 
+        def _render_list(text: str) -> str:
+            """渲染为无序列表，每行一个 <li>"""
+            if not text or text in ('无', '摘要生成失败', '摘要失败'):
+                return '<p>无</p>'
+            lines = [l for l in text.split('\n') if l.strip()]
+            if not lines:
+                return '<p>无</p>'
+            items = ''.join('<li>' + _escHtml(l) + '</li>' for l in lines)
+            return '<ul class="summary-list">' + items + '</ul>'
+
         if category == 'openclaw' and (features or bug_fixes):
             content_html = ''
             if features:
                 content_html += (
                     '<div class="detail-section">\n'
                     '    <h3 class="detail-section-title">🆕 新增功能</h3>\n'
-                    '    <div class="detail-card">' + render_summary(features) + '</div>\n'
+                    '    <div class="detail-card">' + _render_list(features) + '</div>\n'
                     '</div>\n'
                 )
             if bug_fixes:
                 content_html += (
                     '<div class="detail-section">\n'
                     '    <h3 class="detail-section-title">🐛 Bug 修复</h3>\n'
-                    '    <div class="detail-card">' + render_summary(bug_fixes) + '</div>\n'
+                    '    <div class="detail-card">' + _render_list(bug_fixes) + '</div>\n'
                     '</div>\n'
                 )
         else:
