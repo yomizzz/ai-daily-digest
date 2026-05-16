@@ -1,6 +1,110 @@
 {
   "articles": [
     {
+      "title": "SQLAlchemy 2 In Practice - Chapter 8: SQLAlchemy and the Web",
+      "url": "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-8-sqlalchemy-and-the-web",
+      "summary": "This is the eighth and final chapter of my SQLAlchemy 2 in Practice book. If you'd like to support my work, I encourage you to buy this book, either directly from my store or on Amazon. Thank you!\nWhether you are building a traditional web application, or a web API that works alongside a web front end or smartphone app, SQLAlchemy is one of the best choices to add database support to a Python web server. In this chapter two example integrations with Flask and FastAPI will be demonstrated. These ",
+      "source": "miguelgrinberg.com",
+      "category": "blog",
+      "published": "2026-05-16",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 167,
+      "added_at": "2026-05-17 02:59:41"
+    },
+    {
+      "title": "Reading List 05/16/26",
+      "url": "https://www.construction-physics.com/p/reading-list-051626",
+      "summary": "Tokyo&#8217;s cheap housing and expensive land, the House response to the Senate housing bill, an IED near an Alabama dam, Fervo&#8217;s IPO, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-05-16",
+      "summary_zh": "本阅读清单汇集了建筑、住房政策与能源领域的多条资讯，涵盖东京独特的住房与土地价格悖论、美国住房法案在参众两院的博弈进展、阿拉巴马州水坝安全事件，以及地热能源公司Fervo的首次公开募股动态，为读者提供建筑物理与财经交叉领域的精选信息。",
+      "why_matters": "适合关注建筑业动态、能源投资及城市住房问题的读者快速了解行业热点。",
+      "tags": "建筑物理, 住房政策, 能源投资",
+      "id": 165,
+      "added_at": "2026-05-17 02:59:41"
+    },
+    {
+      "title": "Getting C code navigation even for Debian (or Ubuntu) packages",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/linux/CCodeIntelligenceForDebs",
+      "summary": "Every so often, I want (or need) to make modifications to programs in\nan Ubuntu package, and often the programs are written in C (and these\ndays I'm using dgit to manipulate the package). One of my challenges when I do this is that\nI generally don't start out knowing where and how to change the code\nto do what I want; instead, I have to navigate around an unfamiliar\ncode base and work out enough of its structure to find the specific\nbit of code I need to change.\n\nThese days, the dominant way to ",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-05-16",
+      "summary_zh": "文章介绍如何在Debian或Ubuntu系统中获取软件包的C代码导航功能。作者在修改Ubuntu包中的C程序时遇到代码定位难题，介绍使用dgit等工具来获取和浏览源代码的方法，以便更高效地进行代码修改。",
+      "why_matters": "对于需要修改Debian/Ubuntu系统包代码的开发者来说，这篇文章提供了实用的代码导航解决方案。",
+      "tags": "Debian, Ubuntu, C语言, 代码导航, dgit, 包管理",
+      "id": 163,
+      "added_at": "2026-05-17 02:59:41"
+    },
+    {
+      "title": "Pluralistic: Making sense of Trump's unscheduled sudden midair disassembly of the American empire (16 May 2026)",
+      "url": "https://pluralistic.net/2026/05/16/technopoly/",
+      "summary": "Today's links Making sense of Trump's unscheduled sudden midair disassembly of the American empire: Don't mistake \"powerful\" for \"durable.\" Hey look at this: Delights to delectate. Object permanence: Copyrighted law; Viral videos v cops; Crooked banker v tiny bat; \"Infested\"; Can the means of computation be seized? Upcoming appearances: Berlin, Hay-on-Wye, London, LA, Menlo Park, NYC, Edinburgh. Recent appearances: Where I've been. Latest books: You keep readin' em, I'll keep writin' 'em. Upcomi",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-05-16",
+      "summary_zh": "本文为Cory Doctorow的每日链接合集，核心论点在于区分“强大”与“持久”的概念差异，通过多个时事案例（包括版权法争议、执法视频中的权力不对等、以及金融与科技领域的权力博弈）来审视美国霸权的脆弱性与不可持续性。",
+      "why_matters": "Pluralistic一贯的批判性视角，将宏观地缘政治与微观日常议题巧妙串联，启发思考权力运作的本质。",
+      "tags": "政治评论, 技术与社会, 权力批判",
+      "id": 161,
+      "added_at": "2026-05-17 02:59:41"
+    },
+    {
+      "title": "Greg Brockman Officially Takes Control of Products at OpenAI, a Very Stable Well-Run Company",
+      "url": "https://www.wired.com/story/openai-reorg-greg-brockman-product/",
+      "summary": "Maxwell Zeff, reporting for Wired (News+ link):\n\n\n  OpenAI told staff on Friday that it would reorganize the company\nas part of an ongoing effort to unify its product offerings, Wired\nhas learned. OpenAI cofounder and president Greg Brockman will now\nlead the company’s product strategy, in addition to his work on AI\ninfrastructure, OpenAI confirms to Wired. Brockman was previously\nassigned to oversee OpenAI products on an interim basis while the\nCEO of AGI deployment, Fidji Simo, was on medical ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-05-16",
+      "summary_zh": "OpenAI宣布公司重组计划，旨在统一其产品线。联合创始人兼总裁Greg Brockman将新增领导公司产品战略的职责。这一调整反映了OpenAI正在加强产品业务的统一管理。",
+      "why_matters": "了解OpenAI最新组织架构调整及其对产品战略的影响。",
+      "tags": "OpenAI, Greg Brockman, 公司重组",
+      "id": 159,
+      "added_at": "2026-05-17 02:59:41"
+    },
+    {
+      "title": "The Talk Show: ‘A Sociopathic Father’",
+      "url": "https://daringfireball.net/thetalkshow/2026/05/15/ep-447",
+      "summary": "Adam Lisagor returns to the show to talk about Hovercraft, his new virtual presentation camera app for Mac, and how he’s developing it with AI coding tools. Also, delicious Japanese spite sandwich cookies.\n\n\n\nSponsored by:\n\n\nParcel: Track your packages in one place, with native apps for iPhone, iPad, Apple Watch, and Mac.\nScribe: Instantly capture and optimize workflows so your teams and AI agents do their best work.\nSquarespace: Save 10% off your first purchase of a website or domain using code",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-05-16",
+      "summary_zh": "Adam Lisagor再次做客节目，分享他新开发的Mac平台虚拟演示摄像头应用Hovercraft，并详细讲述如何借助AI编码工具提升开发效率，同时顺便推荐了一款美味的日本报复性三明治饼干。",
+      "why_matters": "了解AI辅助开发实践与独立开发者产品创意的实用访谈。",
+      "tags": "Hovercraft, AI编程, Mac应用开发",
+      "id": 157,
+      "added_at": "2026-05-17 02:59:41"
+    },
+    {
+      "title": "DeepSeek-V4-Flash means LLM steering is interesting again",
+      "url": "https://seangoedecke.com/steering-vectors/",
+      "summary": "Ever since Golden Gate Claude I’ve been fascinated with “steering”: the idea that you can guide LLM outputs by directly manipulating the activations of the model mid-flight.\nDeepSeek V4 Flash\nI was inspired to write this post by antirez’s recent project DwarfStar 4, which is a version of llama.cpp that’s been stripped down to run only DeepSeek-V4-Flash. What’s so special about this model? It might be what many engineers have been waiting for: a local model good enough to compete with at least th",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-05-16",
+      "summary_zh": "文章探讨了LLM“引导”（steering）技术，即通过直接操纵模型激活来引导输出。DeepSeek-V4-Flash的发布让这一技术再次受到关注，作者受到DwarfStar 4项目的启发，探索如何通过干预模型内部状态来更精确地控制生成结果。",
+      "why_matters": "对于对LLM内部机制和模型可解释性感兴趣的开发者，这篇文章提供了有价值的视角和技术洞察。",
+      "tags": "LLM, 模型引导, DeepSeek, AI技术",
+      "id": 155,
+      "added_at": "2026-05-17 02:59:41"
+    },
+    {
+      "title": "Quoting Julia Evans",
+      "url": "https://simonwillison.net/2026/May/16/julia-evans/#atom-everything",
+      "summary": "[...] in the last 10 years I’ve learned to really love and respect CSS as a technology.\nSo I decided years ago that I wanted to react to “CSS is hard” by getting better at CSS and taking it seriously as a technology, instead of devaluing it. Doing that changed everything for me: I learned that so many of my frustrations (“centering is impossible”) had been addressed in CSS a long time ago, and that also what “centering” means is not always straightforward and it makes sense that there are many w",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-05-16",
+      "summary_zh": "[作者Simon Willison分享了自己对CSS态度的转变历程。文章指出他曾像许多人一样轻视CSS，但在过去10年里学会了真正热爱和尊重这项技术。通过认真对待CSS并不断提升技能，而非贬低它，作者发现这改变了一切。这个故事强调了用行动和成长来回应技术挑战的重要性。]",
+      "why_matters": "[这篇简短但深刻的文章对所有程序员都有启发意义——如何看待和学习那些看似\"困难\"或被低估的技术]",
+      "tags": "[CSS, 技术学习, 编程态度, 前端开发]",
+      "id": 153,
+      "added_at": "2026-05-17 02:59:41"
+    },
+    {
       "title": "Processor Technology Corporation and the SOL-20",
       "url": "https://dfarq.homeip.net/processor-technology-corporation-and-the-sol-20/?utm_source=rss&utm_medium=rss&utm_campaign=processor-technology-corporation-and-the-sol-20",
       "summary": "Processor Technology Corporation was a personal computer company founded in April 1975, by Gary Ingram and Bob Marsh in Berkeley, California. Their first product was a 4K byte RAM board that was compatible with the MITS Altair 8800 computer but\nThe post Processor Technology Corporation and the SOL-20 appeared first on The Silicon Underground.",
@@ -1879,5 +1983,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-16 13:31:02"
+  "last_updated": "2026-05-17 02:59:41"
 }
