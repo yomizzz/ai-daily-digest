@@ -308,7 +308,9 @@ def run_initial(summarizer_api_key: str, force: bool = False):
         if html_url not in existing_urls:
             features = result.get("features", "无")
             bug_fixes = result.get("bug_fixes", "无")
-            combined = (features if features else "") + ("\n\n🐛 Bug 修复：" + bug_fixes if bug_fixes and bug_fixes != "无" else "")
+            combined = (features if features else "") + (
+                "\n\n🐛 Bug 修复：\n- " + "\n- ".join(bug_fixes.split("\n")) if bug_fixes and bug_fixes != "无" else ""
+            )
             entry = {
                 "title": name,
                 "url": html_url,
