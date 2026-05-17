@@ -105,6 +105,16 @@
       "added_at": "2026-05-17 02:59:41"
     },
     {
+      "title": "Hermes Agent v0.14.0 (2026.5.16)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.16",
+      "source": "hermes-agent",
+      "published": "2026-05-16",
+      "category": "hermes",
+      "summary_zh": "- xAI Grok 集成：新增 SuperGrok OAuth 提供商，grok-4.3 上下文窗口升级至 1M\n- OpenAI 兼容本地代理：可将 Claude Pro、ChatGPT Pro、SuperGrok 等 OAuth 认证的提供商转换为 Codex、Aider、Cline、Continue 可调用的端点\n- X（Twitter）搜索工具 x_search：支持 OAuth 或 API 密钥认证\n- Microsoft Teams 完整集成：Graph 认证 + webhook 监听器 + 管道运行时 + 出站投递\n- 安装精简优化：重量级后端改为首次使用时懒加载安装，[all] 额外依赖大幅精简，支持分层安装回退机制\n- 冷启动性能提升：hermes 启动时间缩短约 19 秒\n- 浏览器 CDP 调用速度提升 180 倍\n- 新增 LINE 和 SimpleX Chat 两个消息平台，累计支持 22 个平台\n- Claude 提示缓存支持跨会话 1 小时持久化\n- /handoff 命令实现会话实时转移\n- Telegram 和 Discord 支持 clarify 原生按钮 UI\n- Discord 频道历史记录回填功能\n- LSP 语义诊断在每次写入时触发\n- 统一的可插拔 video_generate 模块\n- computer_use cua-driver 后端现已支持非 Anthropic 提供商\n- 终端内 URL 可点击跳转\n- 通过 uvx 实现 Zed ACP Registry 集成\n- Windows 原生支持进入 beta 阶段\n- 新增 9 个可选技能模块\n- OpenRouter Pareto Code 路由器集成\n- huggingface/skills 升级为受信任的默认配置源",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Processor Technology Corporation and the SOL-20",
       "url": "https://dfarq.homeip.net/processor-technology-corporation-and-the-sol-20/?utm_source=rss&utm_medium=rss&utm_campaign=processor-technology-corporation-and-the-sol-20",
       "summary": "Processor Technology Corporation was a personal computer company founded in April 1975, by Gary Ingram and Bob Marsh in Berkeley, California. Their first product was a 4K byte RAM board that was compatible with the MITS Altair 8800 computer but\nThe post Processor Technology Corporation and the SOL-20 appeared first on The Silicon Underground.",
@@ -1983,5 +1993,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-17 02:59:41"
+  "last_updated": "2026-05-17 13:53:16"
 }
