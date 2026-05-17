@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "title": "The Tomy Tutor and the state of 1983 home computers",
+      "url": "https://oldvcr.blogspot.com/2026/05/the-tomy-tutor-and-state-of-1983-home.html",
+      "summary": "The Tomy Tutor was my first computer, in late 1983. I was seven and we got it at Federated. I've acquired several more since then, but this is the actual one I used and it still works perfectly.\n\n\n\nUsing a design modeled on the doomed Texas Instruments 99/8, one of several unreleased successors to the TI 99/4A, the Tomy Tutor and its overseas siblings, the Japanese Pyuuta (&#12404;&#12421;&#12358;&#22826;) series, promised an easy kid-friendly introduction to computers with a durable case, nice ",
+      "source": "oldvcr.blogspot.com",
+      "category": "blog",
+      "published": "2026-05-17",
+      "summary_zh": "文章讲述作者1983年（七岁时）购买的第一台电脑Tomy Tutor，这是一款基于德州仪器未发布机型TI 99/8设计的产品。虽然作者后来收藏了更多电脑，但这台Tomy Tutor至今仍完美运行，成为他个人电脑收藏历程的起点。",
+      "why_matters": "对于复古电脑爱好者和怀旧科技收藏者而言，这是了解1980年代家用电脑历史和一位收藏者与第一台电脑深厚情缘的生动故事。",
+      "tags": "Tomy Tutor, 复古电脑, 1983年家用电脑, 怀旧科技",
+      "id": 174,
+      "added_at": "2026-05-18 03:02:30"
+    },
+    {
+      "title": "The Applicability of Spaced Repetition",
+      "url": "https://borretti.me/article/the-applicability-of-spaced-repetition",
+      "summary": "On factual vs. conceptual knowledge.",
+      "source": "borretti.me",
+      "category": "blog",
+      "published": "2026-05-17",
+      "summary_zh": "本文探讨了间隔重复（Spaced Repetition）方法的适用范围，指出该方法对事实性知识（如词汇、历史事件）效果显著，但对概念性知识（如理解因果关系、掌握复杂原理）可能不够有效。作者提醒学习者应根据知识类型的不同选择合适的学习策略，而非盲目将间隔重复应用于所有学习场景。",
+      "why_matters": "帮助学习者理性认识间隔重复工具的优势与局限，避免学习方法的误区。",
+      "tags": "学习方法, 认知科学, 知识管理",
+      "id": 172,
+      "added_at": "2026-05-18 03:02:30"
+    },
+    {
+      "title": "Our servers seem to have surprisingly low power consumption",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/tech/ServersLowPowerConsumption",
+      "summary": "For reasons beyond the scope of this entry, today I was curious how\nmuch power our servers were using.\nIf you have sufficiently fancy PDUs, I think you\ncan get per-outlet measurements that are trustworthy, but we don't\nhave such PDUs. Instead, the best I can do is look at the information\nthat some of our servers report through IPMI.\nI'm not sure how accurate the IPMI information is, but at least some\nof the numbers seem plausible, so I'll assume that it's not massively\noff. The results surprise ",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-05-17",
+      "summary_zh": "作者探讨了如何测量服务器功耗的问题。由于缺乏高端PDU（配电单元）无法获取每个插座的精确功耗数据，只能通过其他方式进行估算。同时发现服务器的功耗似乎比预期低得多，引发了对服务器能效的思考。",
+      "why_matters": "提供了实用的服务器功耗测量思路，对运维人员有参考价值。",
+      "tags": "服务器,功耗,运维,数据中心",
+      "id": 170,
+      "added_at": "2026-05-18 03:02:30"
+    },
+    {
+      "title": "GDS weighs in on the NHS's decision to retreat from Open Source",
+      "url": "https://shkspr.mobi/blog/2026/05/gds-weighs-in-on-the-nhss-decision-to-retreat-from-open-source/",
+      "summary": "Within the UK&#039;s Civil Service you occasionally hear the expression \"being invited to a meeting without biscuits\". It implies a rather frosty discussion without any of the polite niceties of a normal meeting. In general though, even when people have severe disagreements, it is rare for tempers to fray. It is even rarer for those internal disagreements to spill over into public.  Which is what…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-05-17",
+      "summary_zh": "英国政府数字服务局（GDS）对NHS放弃开源软件的决策发表评论。文章借用英国公务员圈中“被邀请参加没有饼干的会议”这一俚语，暗示围绕此事的讨论气氛冷淡、缺乏礼节。文章批评了NHS在开源政策上的倒退，反映出英国政府内部在技术采购策略上存在分歧。",
+      "why_matters": "了解英国政府数字化政策走向及其内部博弈的窗口。",
+      "tags": "英国政府,NHS,开源软件,数字政策",
+      "id": 168,
+      "added_at": "2026-05-18 03:02:30"
+    },
+    {
+      "title": "In the Empire's Defense",
+      "url": "https://idiallo.com/blog/the-empire-won?src=feed",
+      "summary": "I didn't watch Star Wars when it was released. I wasn't even born. By the time we popped the cassette tape in the VCR, it was at least 15 years old. But I liked the movie all the same. It was not my favorite film by any means, but it was memorable. The first time you see Darth Vader appear on screen, you know this villain is not going to be easy to defeat. \"Villain\" because no one needs to tell you who the good guys and bad guys are in this movie. The visuals, the voices, the music, everything t",
+      "source": "idiallo.com",
+      "category": "blog",
+      "published": "2026-05-17",
+      "summary_zh": "作者回忆了观看《星球大战》的童年经历。尽管电影上映时他尚未出生，但通过录像带观看这部超过15年的经典之作依然给他留下了深刻印象。虽然这不是他最喜爱的电影，却极具标志性，尤其是达斯·维达首次亮相银幕的场景令人难忘。",
+      "why_matters": "这是一篇关于电影情怀与经典记忆的温馨随笔。",
+      "tags": "星球大战, 怀旧, 电影回忆",
+      "id": 166,
+      "added_at": "2026-05-18 03:02:30"
+    },
+    {
+      "title": "How I use LLMs as a staff engineer in 2026",
+      "url": "https://seangoedecke.com/how-i-use-llms-in-2026/",
+      "summary": "A bit over a year ago I wrote How I use LLMs as a staff engineer. Here’s a brief summary of what I used AI for last year:\n\nSmart autocomplete with Copilot\nShort tactical changes in areas I don’t know well (always reviewed by a SME)\nWriting lots of use-once-and-throwaway research code\nAsking lots of questions to learn about new topics (e.g. the Unity game engine)\nLast-resort bugfixes, just in case it can figure it out immediately\nBig-picture proofreading for long-form English communication\n\nHere ",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-05-17",
+      "summary_zh": "本文介绍了作者作为高级工程师在2026年使用大语言模型的实践经验，主要涵盖智能代码补全、在陌生领域进行战术性修改、编写一次性研究代码以及日常问答等场景，展示了AI工具如何融入实际的工程工作流程。",
+      "why_matters": "对于想了解AI在实际软件开发中应用的工程师具有参考价值。",
+      "tags": "大语言模型, 软件工程, AI工具, 开发者效率",
+      "id": 164,
+      "added_at": "2026-05-18 03:02:30"
+    },
+    {
+      "title": "GDS weighs in on the NHS's decision to retreat from Open Source",
+      "url": "https://simonwillison.net/2026/May/17/gds-weighs-in/#atom-everything",
+      "summary": "GDS weighs in on the NHS&#x27;s decision to retreat from Open Source\nTerence Eden continues his coverage of the NHS' poorly considered decision to close down access to their open source repositories in response to vulnerabilities reported to them as part of Project Glasswing.\nNow the Government Digital Service have joined the conversation with AI, open code and vulnerability risk in the public sector, published May 14th. Their key recommendation:\n\nKeep open by default. Making everything private ",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-05-17",
+      "summary_zh": "文章报道了NHS（英国国家医疗服务体系）在Project Glasswing项目披露安全漏洞后，做出了关闭开源代码库访问权限的决定。GDS（政府数字服务部门）对此发表了评论，认为这一做法考虑不周，Terence Eden持续跟踪批评了这一决策。",
+      "why_matters": "揭示了政府部门在处理安全漏洞与开源透明性之间的平衡问题，对理解政府技术政策有重要参考价值。",
+      "tags": "开源软件，政府技术政策，网络安全",
+      "id": 162,
+      "added_at": "2026-05-18 03:02:30"
+    },
+    {
       "title": "SQLAlchemy 2 In Practice - Chapter 8: SQLAlchemy and the Web",
       "url": "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-8-sqlalchemy-and-the-web",
       "summary": "This is the eighth and final chapter of my SQLAlchemy 2 in Practice book. If you'd like to support my work, I encourage you to buy this book, either directly from my store or on Amazon. Thank you!\nWhether you are building a traditional web application, or a web API that works alongside a web front end or smartphone app, SQLAlchemy is one of the best choices to add database support to a Python web server. In this chapter two example integrations with Flask and FastAPI will be demonstrated. These ",
@@ -1993,5 +2084,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-17 13:53:16"
+  "last_updated": "2026-05-18 03:02:30"
 }
