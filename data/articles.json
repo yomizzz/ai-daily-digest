@@ -1,6 +1,149 @@
 {
   "articles": [
     {
+      "title": "Microsoft Antitrust case of 1998",
+      "url": "https://dfarq.homeip.net/microsoft-antitrust-case-of-1998/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-antitrust-case-of-1998",
+      "summary": "On May 18, 1998, the Department of Justice filed an antitrust lawsuit against Microsoft, seeking ultimately to break up the company. The case was controversial at the time and remains controversial now, but I would also argue the case is\nThe post Microsoft Antitrust case of 1998 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-05-19",
+      "summary_zh": "1998年5月18日，美国司法部对微软提起反垄断诉讼，旨在最终拆分该公司。该案在当时引起巨大争议，至今仍存争议，涉及微软将Internet Explorer与Windows操作系统捆绑销售的核心问题，对科技行业反垄断监管具有深远影响。",
+      "why_matters": "了解科技巨头与政府监管博弈的经典案例，有助于理解当前数字时代的反垄断议题。",
+      "tags": "微软，反垄断，科技创新",
+      "id": 210,
+      "added_at": "2026-05-20 03:51:24"
+    },
+    {
+      "title": "AI Is Too Expensive",
+      "url": "https://www.wheresyoured.at/ai-is-too-expensive/",
+      "summary": "If you liked this piece, you should subscribe to my premium newsletter. It&#x2019;s $70 a year, or $7 a month, and in return you get a weekly newsletter that&#x2019;s usually anywhere from 5,000 to 18,000 words, including vast, detailed analyses of NVIDIA, Anthropic and",
+      "source": "wheresyoured.at",
+      "category": "blog",
+      "published": "2026-05-19",
+      "summary_zh": "文章探讨了AI技术开发和运行的高昂成本问题，分析了当前AI行业面临的经济挑战，包括算力开销、模型训练费用以及这些成本对AI应用普及和商业模式的深远影响。",
+      "why_matters": "作者是科技领域资深观察者，对AI产业经济问题有独到见解，适合关注AI行业可持续发展的读者。",
+      "tags": "AI成本, 科技经济, 产业分析",
+      "id": 208,
+      "added_at": "2026-05-20 03:51:24"
+    },
+    {
+      "title": "Dumb Ways for an Open Source Project to Die",
+      "url": "https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html",
+      "summary": "How your dependencies became Bernies",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-05-19",
+      "summary_zh": "文章探讨了开源项目走向消亡的各种“愚蠢”方式，特别聚焦于依赖管理问题，揭示了当项目过度依赖外部库而缺乏维护时可能面临的风险，并提供如何避免这些陷阱的实用建议。",
+      "why_matters": "开源维护者必读，帮助你避免项目“意外死亡”的实用指南。",
+      "tags": "开源, 依赖管理, 项目维护",
+      "id": 206,
+      "added_at": "2026-05-20 03:51:24"
+    },
+    {
+      "title": "Approximating Markov’s equation",
+      "url": "https://www.johndcook.com/blog/2026/05/19/zagiers-equation/",
+      "summary": "Markov numbers are integer solutions to x² + y² + z² = 3xyz. The Wikipedia article on Markov numbers mentions that Don Zagier studied Markov numbers by looking the approximating equation x² + y² + z² = 3xyz + 4/9 which is equivalent to f(x) + f(y) = f(z) where f(t) is defined as arccosh(3t/2). It wasn&#8217;t clear to me why the [&#8230;]\nThe post Approximating Markov’s equation first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-05-19",
+      "summary_zh": "马尔可夫数是丢番图方程 x² + y² + z² = 3xyz 的整数解。数学家Don Zagier通过研究一个近似方程 x² + y² + z² = 3xyz + 4/9 来分析马尔可夫数的性质，该近似方程可转化为 f(x) + f(y) = f(z) 的形式，其中 f(t) = arccosh(3t/2)。",
+      "why_matters": "简洁介绍了Zagier研究马尔可夫数的高明技巧——用连续函数近似离散数论问题的思路。",
+      "tags": "数论，马尔可夫数，丢番图方程",
+      "id": 204,
+      "added_at": "2026-05-20 03:51:24"
+    },
+    {
+      "title": "Book Review: Terrible Worlds: Destinations by Adrian Tchaikovsky ★★★★★",
+      "url": "https://shkspr.mobi/blog/2026/05/book-review-terrible-worlds-destinations-by-adrian-tchaikovsky/",
+      "summary": "What&#039;s better than one Adrian Tchaikovsky novella? Three Adrian Tchaikovsky novellæ! Or is it \"novellii\"? Either way, a delightful triptych of stories on a common theme. On the surface, they&#039;re about travelling to a new destination (Space! The Future! For-Copyright-Reasons Not Narnia!)  Except, deep down, they&#039;re about loneliness. No matter how far or fast we run, no matter where or when we go, …",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-05-19",
+      "summary_zh": "需要2-3句话总结核心内容",
+      "why_matters": "说明为什么值得看",
+      "tags": "1-3个标签，用逗号分隔",
+      "id": 202,
+      "added_at": "2026-05-20 03:51:24"
+    },
+    {
+      "title": "Pluralistic: There's no such thing as \"age verification\" (19 May 2026)",
+      "url": "https://pluralistic.net/2026/05/19/shes-dead-of-course/",
+      "summary": "Today's links There's no such thing as \"age verification\": The foreseeable and foreseen consequences of \"something must be done\"/\"there, I've done something.\" Hey look at this: Delights to delectate. Object permanence: Apple Stores exist; Responsible spam; Australia loves Hollywood('s copyright); TCP over Syrian donkey; Icelandic Pirate get funded; Algorithmic cruelty; Trump loves data brokers; Douglas Adams, vindicated; Blog history; Sex names; Flickr's Gamma; \"Fuzzy Nation\"; The Intercept publ",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-05-19",
+      "summary_zh": "本文批判了网络上所谓的\"年龄验证\"措施，作者Cory Doctorow指出这类技术根本无法真正实现年龄限制，反而会带来隐私泄露、言论审查等 foreseeable and foreseen consequences（可预见的后果）。文章批评了政客们\"必须做点什么\"的心态——仅仅为了表示\"我已经采取行动\"而推行效果存疑的政策。",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 200,
+      "added_at": "2026-05-20 03:51:24"
+    },
+    {
+      "title": "Alternatives for the EDIT tool of LLM agents",
+      "url": "http://antirez.com/news/166",
+      "summary": "EDIT: of course this was already done in the past! I had little doubts but people just confirmed me about it on Twitter :) But, keep reading: the CRC32 compromise at the end is an interesting tradeoff, and this is a good discussion to have in general.\n\nRight now I'm working to an agent for my DS4 project. Local inference is token-poor, it's a battlefield where optimizations count. I was quite surprised by the fact the EDIT tool everybody is using right now forces the LLM to emit the old version ",
+      "source": "antirez.com",
+      "category": "blog",
+      "published": "2026-05-19",
+      "summary_zh": "本文探讨了LLM智能体中EDIT工具的替代实现方案，讨论了CRC32校验作为编辑过程中的权衡取舍。作者antirez分享了在开发DS4项目agent过程中的技术思考，认为这类技术权衡的讨论具有普遍参考价值。",
+      "why_matters": "适合对LLM agent开发感兴趣的技术人员，了解实用的工程权衡思路。",
+      "tags": "LLM agent, 工具设计, 技术权衡",
+      "id": 198,
+      "added_at": "2026-05-20 03:51:24"
+    },
+    {
+      "title": "[Sponsor] WorkOS: Agents Need Context. Ship the Integrations That Give It to Them.",
+      "url": "https://workos.com/docs/pipes?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q22026",
+      "summary": "The context that actually matters isn’t in your database. It’s in the tools your users live in every day. Multi-stage agents stall the moment they hit a step they can’t see. And every missing integration is a different OAuth flow, a different token lifecycle, weeks of plumbing before the agent reads a single record.\n\nWorkOS Pipes connects your agent to the tools your users live in. Pre-built connectors for GitHub, Slack, Salesforce, Google Drive, and more. Pipes handles OAuth, token refresh, and",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-05-19",
+      "summary_zh": "WorkOS 指出 AI Agent 真正需要的上下文不在数据库中，而在用户日常使用的工具里。多阶段 Agent 遇到无法\"看见\"的步骤就会停滞，每个缺失的集成都意味着要处理不同的 OAuth 流程和令牌生命周期，开发成本高昂。",
+      "why_matters": "如果你正在构建需要集成外部服务的 AI Agent，这篇文章提供了关于上下文获取和集成挑战的务实视角。",
+      "tags": "AI Agent, WorkOS, 集成开发",
+      "id": 196,
+      "added_at": "2026-05-20 03:51:24"
+    },
+    {
+      "title": "Andrej Karpathy Joined Anthropic",
+      "url": "https://x.com/karpathy/status/2056753169888334312",
+      "summary": "Andrej Karpathy, on Twitter/X (XCancel link):\n\n\n  Personal update: I’ve joined Anthropic. I think the next few\nyears at the frontier of LLMs will be especially formative. I am\nvery excited to join the team here and get back to R&D. I remain\ndeeply passionate about education and plan to resume my work on\nit in time.\n\n\nKarpathy is, to say the least, a star in the AI research field. He co-founded OpenAI in 2015, was director of AI at Tesla (reporting directly to Elon Musk) from 2017–2022, went back",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-05-19",
+      "summary_zh": "AI领域知名专家Andrej Karpathy宣布加入Anthropic公司，他将致力于大语言模型（LLM）前沿研究。Karpathy表示，接下来几年将是LLM发展的关键时期，他期待重新回归研发工作。同时他宣布将继续推进教育事业。",
+      "why_matters": "Karpathy作为AI领域的顶级人才，其职业选择反映了大模型安全研究的前沿趋势。",
+      "tags": "AI动态，人事变动，LLM发展",
+      "id": 194,
+      "added_at": "2026-05-20 03:51:24"
+    },
+    {
+      "title": "Wi-Wi Is Wireless Time Sync at 1 nanosecond",
+      "url": "https://www.jeffgeerling.com/blog/2026/wi-wi-is-wireless-time-sync-less-than-5ns/",
+      "summary": "At NAB, I found a demo of Wi-Wi STAMP, a wireless time synchronization protocol that came out of Japan's NICT.\n\n\n\nWi-Wi stands for Wireless 2Way interferometry, and it uses the 900 MHz band for picosecond-level time sync, and mm-level distance accuracy, in a tiny box, currently the size of a smartphone.\nThe system is still in development, but existing prototypes have 20ps of phase synchronization jitter, and time synchronization down to 30ns. The next generation will have time down to 5ns in rea",
+      "source": "jeffgeerling.com",
+      "category": "blog",
+      "published": "2026-05-19",
+      "summary_zh": "Wi-Wi STAMP是日本NICT机构开发的一种无线时间同步协议，基于\"Wireless 2Way interferometry\"（无线双向干涉测量）技术，可在900 MHz频段实现皮秒级的时间同步精度和毫米级的距离测量精度。该设备体积小巧，目前已达到智能手机大小。NAB展会上展示了这一技术演示。",
+      "why_matters": "展示了未来高精度无线时间同步的前沿技术，对于关注通信、定位和同步技术的人很有参考价值。",
+      "tags": "无线通信，时间同步，干涉测量",
+      "id": 192,
+      "added_at": "2026-05-20 03:51:24"
+    },
+    {
+      "title": "The last six months in LLMs in five minutes",
+      "url": "https://simonwillison.net/2026/May/19/5-minute-llms/#atom-everything",
+      "summary": "I put together these annotated slides from my five minute lightning talk at PyCon US 2026, using the latest iteration of my annotated presentation tool.\n\n\n  \n  #\n  I presented this lightning talk at PyCon US 2026, attempting to summarize the last six months of developments in LLMs in five minutes.\n  \n\n\n  \n  #\n  Six months is a pretty convenient time period to cover, because it captures what I've been calling the November 2025 inflection point. November was a critical month in LLMs, especially fo",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-05-19",
+      "summary_zh": "本文是Simon Willison在PyCon US 2026上的5分钟闪电演讲，简要回顾了过去六个月大型语言模型领域的主要进展。演讲使用了他最新迭代的带注释演示工具制作，帮助观众快速把握LLM领域的最新动态和关键技术趋势。演讲内容以幻灯片加注释的形式呈现，旨在用极短时间传达关键信息。",
+      "why_matters": "Simon Willison是LLM领域的资深观察者，他的五分钟速览可帮助快速了解近期的模型能力提升和应用创新。",
+      "tags": "大型语言模型, AI发展, 技术会议",
+      "id": 190,
+      "added_at": "2026-05-20 03:51:24"
+    },
+    {
       "title": "openclaw 2026.5.18",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.18",
       "source": "openclaw",
@@ -2356,5 +2499,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-19 14:14:59"
+  "last_updated": "2026-05-20 03:51:24"
 }
