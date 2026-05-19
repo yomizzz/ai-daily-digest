@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.5.18",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.18",
+      "source": "openclaw",
+      "published": "2026-05-19",
+      "category": "openclaw",
+      "summary": "摘要生成失败\n\n🐛 Bug 修复：摘要生成失败",
+      "features": "摘要生成失败",
+      "bug_fixes": "摘要生成失败",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Weekly Update 504",
       "url": "https://www.troyhunt.com/weekly-update-504/",
       "summary": "It&apos;s a hot topic, the old \"pay or don&apos;t pay\" for hackers not to leak your data. Since recording this a few days ago, we&apos;ve had Grafana go with the \"no pay\" approach, and I&apos;ve seen a raft",
@@ -2344,5 +2356,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-19 03:34:49"
+  "last_updated": "2026-05-19 14:14:59"
 }
