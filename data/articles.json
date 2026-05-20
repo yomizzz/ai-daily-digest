@@ -1,6 +1,123 @@
 {
   "articles": [
     {
+      "title": "Kaypro II launched May 20, 1982",
+      "url": "https://dfarq.homeip.net/kaypro-ii-launched-may-20-1982/?utm_source=rss&utm_medium=rss&utm_campaign=kaypro-ii-launched-may-20-1982",
+      "summary": "On May 20, 1982, Kaypro shipped its very successful Kaypro II computer, a portable computer that ran CP/M and its associated software. Its main innovation was bundling a selection of popular software with the computer and selling the bundle for\nThe post Kaypro II launched May 20, 1982 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-05-20",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 217,
+      "added_at": "2026-05-21 04:10:25"
+    },
+    {
+      "title": "What will better AI mean?",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/05/20/what-will-better-mean.html",
+      "summary": "I thought about posting this paper but rebranding it as the Claude Mythos technical report. As far as I can tell, there’s no secret tricks the US frontier labs have, and that basically describes how Mythos was trained. What’s in that paper just works, and for verifiable domains, it’s only a matter of fixing bugs and scaling up. That’s why Anthropic is so desperate for regulatory capture, AI has no moat.",
+      "source": "geohot.github.io",
+      "category": "blog",
+      "published": "2026-05-20",
+      "summary_zh": "文章探讨了更先进的人工智能将意味着什么，作者通过分析Claude Mythos技术报告指出，美国前沿AI实验室的训练方法并没有所谓的“秘密技巧”，那些方法本质上是可以公开和复现的。作者认为，对于可验证的领域而言，AI能力的提升主要取决于投入资源的多少，而非隐藏的技术突破。",
+      "why_matters": "作者以内部视角分析了当前AI发展的真实状态，揭示了AI训练并不存在神秘的技术壁垒，对理解AI行业的真实竞争格局很有价值。",
+      "tags": "AI发展, 技术透明, 人工智能前沿",
+      "id": 215,
+      "added_at": "2026-05-21 04:10:25"
+    },
+    {
+      "title": "Assumptions weaken properties",
+      "url": "https://buttondown.com/hillelwayne/archive/assumptions-weaken-properties/",
+      "summary": "In some tests are stronger than others, I defined STRONG => WEAK to mean \"any system passing test STRONG is also guaranteed to pass WEAK\". This uses the logical implication operator, defined as P => Q = !P || (P && Q).\nImplication may be the most overworked operator in logic. Among other things, it's also used in formal specification, where Spec => Prop means \"any system satisfying Spec has property Prop\" and ASSUME => Spec means \"The assumption ASSUME must hold in order for the system to satisf",
+      "source": "buttondown.com/hillelwayne",
+      "category": "blog",
+      "published": "2026-05-20",
+      "summary_zh": "文章探讨了测试规格之间的逻辑关系，提出用蕴含操作符（STRONG => WEAK）来形式化定义“更强测试”的概念，并分析了蕴含操作符的性质及其在软件测试和规格说明中的应用。",
+      "why_matters": "适合对形式化方法、软件测试或规格说明感兴趣的工程师深入阅读。",
+      "tags": "形式化方法，软件测试，逻辑推理",
+      "id": 213,
+      "added_at": "2026-05-21 04:10:25"
+    },
+    {
+      "title": "Square root of x² − 1",
+      "url": "https://www.johndcook.com/blog/2026/05/19/square-root-of-x-squared-minus-one/",
+      "summary": "How should we define √(z² − 1)? Well, you could square z, subtract 1, and take the square root. What else would you do?! The question turns out to be more subtle than it looks. When x is a non-negative real number, √x is defined to be the non-negative real number whose square is x. When x is [&#8230;]\nThe post Square root of x² − 1 first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-05-20",
+      "summary_zh": "本文探讨了复数域下平方根函数√(z²-1)的定义问题。作者指出，虽然看似简单——先平方、减1、再开根号——但当z为复数时，平方根函数具有多值性，需要谨慎处理分支切割等问题。文章通过具体例子说明，即使对于看似“显然”的数学运算，在复分析语境下也可能需要更精确定义。",
+      "why_matters": "对复分析中多值函数和平方根定义的有趣探讨，适合对高等数学感兴趣者。",
+      "tags": "复分析，平方根，多值函数",
+      "id": 211,
+      "added_at": "2026-05-21 04:10:25"
+    },
+    {
+      "title": "Notes about reading messages with the Python email packages",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/python/EmailPackagesNotes",
+      "summary": "I have a long standing personal program to display MIME formatted\nemail messages in the terminal in a sensible way (it was mentioned in\nthis old entry on my email tools and its comments). For a long time this was a Python 2\nprogram, using the Python 2 version of the email package. Recently, I moved\nthis program to Python 3 as part of my sudden enthusiasm for Python\n3 conversions, using the Python 3 version of\nemail and its\nsub-packages. In the process I have wound up with some notes and\nopinions",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-05-20",
+      "summary_zh": "[作者分享了将用于在终端以合理方式显示MIME格式邮件的Python程序从Python 2迁移到新版本email包的经验。这是一个长期维护的个人项目，涉及Python email包的迁移实践。]",
+      "why_matters": "[对于需要处理邮件或使用Python email包的开发者，作者的实战迁移经验具有重要参考价值。]",
+      "tags": "[Python, email包, MIME]",
+      "id": 209,
+      "added_at": "2026-05-21 04:10:25"
+    },
+    {
+      "title": "[RSS Club] Let's meet up AFK",
+      "url": "https://shkspr.mobi/blog/2026/05/rss-club-lets-meet-up-afk/",
+      "summary": "Shhhh! This post is only available to RSS subscribers like you 😊  My wife and I are preparing for a big Interrail journey through Europe. Whenever we go on holiday, we like to meet up with friendly locals to have a drink and chat. We did this on our last journey and it was great.  So, if you&#039;re a member of RSS club and fancy showing some tourists a cool bar, awesome restaurant (with vegan op…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-05-20",
+      "summary_zh": "作者和妻子正在计划一次穿越欧洲的Interrail旅行，呼吁RSS订阅者如果恰好在同一地区，可以线下见面喝一杯、聊聊天。作者表示上次旅行时也这样做过，体验非常棒。这是一个独特的RSS社区线下聚会邀请。",
+      "why_matters": "这是一个温馨的RSS社区成员线下见面邀约，体现了去中心化互联网中人与人之间真实的连接。",
+      "tags": "RSS, Interrail, 旅行, 社交",
+      "id": 207,
+      "added_at": "2026-05-21 04:10:25"
+    },
+    {
+      "title": "Prompts are technical debt too",
+      "url": "https://seangoedecke.com/prompts-are-technical-debt-too/",
+      "summary": "It’s common and correct to say that “all code is technical debt”. Adding code is a necessary evil for developing new features: you almost always have to do it, but each line of code adds to the complexity and maintenance burden of the system. All future changes to the system have to work with the existing code, or at least avoid breaking it. Once systems accumulate enough code, they become impossible for a single person to understand: instead of reading the code and understanding what it does, y",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-05-20",
+      "summary_zh": "文章指出\"所有代码都是技术债务\"同样适用于AI提示词。提示词作为开发新功能的必要手段，虽然能实现功能，但每条提示词都会增加系统的复杂度和维护负担。未来所有系统变更都需要考虑这些提示词的存在，形成技术债务的累积。",
+      "why_matters": "帮助开发者理解AI时代下提示词管理的长期成本，值得产品经理和AI开发者阅读。",
+      "tags": "技术债务，AI工程，提示词工程",
+      "id": 205,
+      "added_at": "2026-05-21 04:10:25"
+    },
+    {
+      "title": "Google I/O, Gemini Spark, Antigravity",
+      "url": "https://simonwillison.net/2026/May/20/google-io/#atom-everything",
+      "summary": "It's hard to find much to write about Google I/O this year because I have a policy of not writing about anything that I can't try out myself, and a lot of the big announcements are \"coming soon\".\nI actually prefer to write about things that are in general availability, because I've had instances in the past where the previews didn't match what was released to the general public later on.\nAside from Gemini 3.5 Flash the most interesting announcement looks to be Google's upcoming OpenClaw competit",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-05-20",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 203,
+      "added_at": "2026-05-21 04:10:25"
+    },
+    {
+      "title": "How fast is 10 tokens per second really?",
+      "url": "https://simonwillison.net/2026/May/20/tokens-per-second/#atom-everything",
+      "summary": "How fast is 10 tokens per second really?\nNeat little HTML app by Mike Veerman (source code here) which simulates LLM token output speeds from 5/second to 800/second.\nUseful if you see a model advertised as \"30 tokens/second\" and want to get a feel for what that actually looks like.\n\n    Via Hacker News\n\n\n    Tags: ai, generative-ai, llms",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-05-20",
+      "summary_zh": "文章介绍了一款由Mike Veerman创建的HTML小工具，可以模拟LLM生成文字的速度效果，支持从5 tokens/秒到800 tokens/秒的多种速度档位。当用户看到某款AI模型宣传“30 tokens/秒”这样的参数时，可以通过这个工具直观感受实际输出速度有多快。",
+      "why_matters": "一个实用的可视化工具，帮助非技术用户建立对LLM速度的直观认知。",
+      "tags": "AI工具, LLM, Token速度, 交互演示",
+      "id": 201,
+      "added_at": "2026-05-21 04:10:25"
+    },
+    {
       "title": "Microsoft Antitrust case of 1998",
       "url": "https://dfarq.homeip.net/microsoft-antitrust-case-of-1998/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-antitrust-case-of-1998",
       "summary": "On May 18, 1998, the Department of Justice filed an antitrust lawsuit against Microsoft, seeking ultimately to break up the company. The case was controversial at the time and remains controversial now, but I would also argue the case is\nThe post Microsoft Antitrust case of 1998 appeared first on The Silicon Underground.",
@@ -2499,5 +2616,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-20 14:13:39"
+  "last_updated": "2026-05-21 04:10:25"
 }
