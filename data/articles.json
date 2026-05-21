@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.5.19",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.19",
+      "source": "openclaw",
+      "published": "2026-05-21",
+      "category": "openclaw",
+      "summary": "- Docker/Podman：新增 `OPENCLAW_IMAGE_APT_PACKAGES` 构建参数用于安装额外 apt 包\n- Docker/Podman：新增 `OPENCLAW_IMAGE_PIP_PACKAGES` 用于本地镜像构建时安装 Python 包\n- Gateway：启动日志与插件服务启动重叠以降低就绪延迟，同时保留 sidecar 门控\n- Mac 应用：重新设计设置页面，采用统一的卡片布局和缓存导航\n- 浏览器：快照中显示待处理和最近处理的模态对话框，支持通过 CLI 回答弹窗\n- 浏览器 CLI：新增 `--timeout-ms` 参数以支持长时运行页面函数\n- Codex：新增 `/codex plugins list`、`enable`、`disable` 命令管理原生插件\n- Skills CLI：`openclaw skills install/update` 支持通过 `--global` 安装共享托管技能\n- CLI/插件：新增 `defineToolPlugin` 及 `openclaw plugins build/validate/init` 命令\n- 代理：支持 HTTPS 托管转发代理端点和 `proxy.tls.caFile` CA 信任配置\n- Skills：新增 meme 制作技能，支持模板搜索和多种渲染方式\n- Skills：新增节点调试、图表生成、临时 spikes 工作流等技能\n- Skills：新增 Python 调试技能，支持 pdb、breakpoint、post-mortem 检查\n- QA-Lab：新增 20 轮和可选 100 轮运行时一致性测试场景\n- QA-Lab：新增 Codex Pi 词汇表 canary 和自我健康检查场景\n\n🐛 Bug 修复：- 无",
+      "features": "- Docker/Podman：新增 `OPENCLAW_IMAGE_APT_PACKAGES` 构建参数用于安装额外 apt 包\n- Docker/Podman：新增 `OPENCLAW_IMAGE_PIP_PACKAGES` 用于本地镜像构建时安装 Python 包\n- Gateway：启动日志与插件服务启动重叠以降低就绪延迟，同时保留 sidecar 门控\n- Mac 应用：重新设计设置页面，采用统一的卡片布局和缓存导航\n- 浏览器：快照中显示待处理和最近处理的模态对话框，支持通过 CLI 回答弹窗\n- 浏览器 CLI：新增 `--timeout-ms` 参数以支持长时运行页面函数\n- Codex：新增 `/codex plugins list`、`enable`、`disable` 命令管理原生插件\n- Skills CLI：`openclaw skills install/update` 支持通过 `--global` 安装共享托管技能\n- CLI/插件：新增 `defineToolPlugin` 及 `openclaw plugins build/validate/init` 命令\n- 代理：支持 HTTPS 托管转发代理端点和 `proxy.tls.caFile` CA 信任配置\n- Skills：新增 meme 制作技能，支持模板搜索和多种渲染方式\n- Skills：新增节点调试、图表生成、临时 spikes 工作流等技能\n- Skills：新增 Python 调试技能，支持 pdb、breakpoint、post-mortem 检查\n- QA-Lab：新增 20 轮和可选 100 轮运行时一致性测试场景\n- QA-Lab：新增 Codex Pi 词汇表 canary 和自我健康检查场景",
+      "bug_fixes": "- 无",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Kaypro II launched May 20, 1982",
       "url": "https://dfarq.homeip.net/kaypro-ii-launched-may-20-1982/?utm_source=rss&utm_medium=rss&utm_campaign=kaypro-ii-launched-may-20-1982",
       "summary": "On May 20, 1982, Kaypro shipped its very successful Kaypro II computer, a portable computer that ran CP/M and its associated software. Its main innovation was bundling a selection of popular software with the computer and selling the bundle for\nThe post Kaypro II launched May 20, 1982 appeared first on The Silicon Underground.",
@@ -2616,5 +2628,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-21 04:10:25"
+  "last_updated": "2026-05-21 14:15:40"
 }
