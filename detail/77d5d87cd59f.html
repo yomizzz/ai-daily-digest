@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>WSJ: ‘Google Unveils New Gemini AI Agent for Personal Tasks’</title>
     <style>
 
         :root {
@@ -287,56 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-05-22 14:13:41</p>
+        <h1>WSJ: ‘Google Unveils New Gemini AI Agent for Personal Tasks’</h1>
+        <p><span class="category-tag">blog</span> daringfireball.net · 2026-05-21</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 1 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="release">
-    <div class="release-header">
-        <div style="display:flex;align-items:center;flex-wrap:wrap;">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.5.20" target="_blank" class="release-title">openclaw 2026.5.20</a>
-            <span class="release-tag">v2026.5.20</span>
-        </div>
-        <span class="release-date">2026-05-21</span>
-    </div>
-<div class="release-section">
-    <div class="release-section-title">🆕 新增功能</div>
-    <div class="release-card"><ul class="summary-list"><li>- Exec approvals：移除旧的allowlist兼容性路径，skill文件必须通过read tool加载，仅真正的skill可执行文件可自动允许</li><li>- Discord语音：支持跟随配置的Discord用户进入语音频道，含频道检查、多用户交接和恢复保留</li><li>- Discord/voice：实时语音会话默认包含有限的IDENTITY.md、USER.md、SOUL.md配置文件上下文</li><li>- CLI/policy：新增bundled Policy插件，支持策略驱动的频道合规检查和doctor lint发现</li><li>- Agents/config：支持按agent配置localModelLean，而非全局启用</li><li>- Providers/xAI：新增device-code OAuth登录，支持远程和无头授权</li><li>- Providers/OpenRouter：支持provider级别的params.provider路由策略</li></ul></div>
-</div><div class="release-section">
-    <div class="release-section-title">🐛 Bug 修复</div>
-    <div class="release-card"><ul class="summary-list"><li>- CLI/tasks：维护命令JSON输出包含过期运行任务的状态信息和原因说明</li><li>- Codex app-server：修复bootstrap hooks提供workspace文件时的系统提示报告字符统计</li><li>- MiniMax music：停止宣传durationSeconds控制，避免误导用户该参数可用</li><li>- Doctor：沙箱工具策略隐藏MCP服务器工具时发出警告</li><li>- Approvals：手动/approve决策现在正确经过信任的approval运行时处理</li><li>- Infra/secrets：恢复tryReadSecretFileSync的安全契约，拒绝符号链接凭证文件</li><li>- Browser：截图和快照尊重配置的图像清理限制</li><li>- Doctor：修复命令移除未识别的thinkingFormat配置值</li><li>- Doctor：检测并警告openclaw.json中存储的明文密钥配置</li><li>- Status：固定模型与默认模型不同时显示清晰的状态提示</li><li>- WebChat：会话变更时清除陈旧的打字指示器</li><li>- Mac app：更新版权年份至2026，保持签名稳定性和Control UI构建</li><li>- macOS app：更新Peekaboo bridge至3.2.1</li><li>- Cron：工具警告不影响成功的计划运行结果交付</li><li>- WhatsApp：更新Baileys依赖至7.0.0-rc12</li></ul></div>
-</div>
-</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><p>Google在I/O大会上宣布推出名为Gemini Spark的全新个人AI助手，旨在将Gemini模型升级为更具竞争力的agentic AI系统，以应对当前AI智能体时代的发展趋势。此举被视为Google在AI领域持续发力的重要信号。</p></div>
+<div class="tags">标签：Google I/O, Gemini AI, 人工智能助手</div>
+        <div class="detail-why">💡 如果你关注AI助手和个人智能工具的发展，Google这次发布的Gemini Spark是一个值得关注的重要产品。</div>
+        <a href="https://www.wsj.com/tech/ai/google-unveils-new-gemini-ai-agent-for-personal-tasks-b8093197?st=BFmPev" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>
