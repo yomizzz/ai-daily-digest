@@ -1,6 +1,175 @@
 {
   "articles": [
     {
+      "title": "Advantages and disadvantages of Windows 3.0",
+      "url": "https://dfarq.homeip.net/advantages-disadvantages-windows-3-0/?utm_source=rss&utm_medium=rss&utm_campaign=advantages-disadvantages-windows-3-0",
+      "summary": "I hear the question from time to time what the advantages and disadvantages of Windows 3.0 were. Windows 3.0, released May 22, 1990, is generally considered the first usable version of Microsoft Windows. It was certainly the first one to\nThe post Advantages and disadvantages of Windows 3.0 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-05-22",
+      "summary_zh": "Windows 3.0于1990年5月22日发布，被广泛认为是微软Windows系统中第一个真正可用的版本。该文分析了这款经典操作系统的优势与不足，回顾了它在计算机发展史上的重要地位。",
+      "why_matters": "适合了解计算机历史和Windows发展历程的读者阅读。",
+      "tags": "Windows 3.0, 操作系统, 技术历史",
+      "id": 255,
+      "added_at": "2026-05-23 03:31:20"
+    },
+    {
+      "title": "Planescape: Torment, Part 1: From the Tabletop…",
+      "url": "https://www.filfre.net/2026/05/planescape-torment-part-1-from-the-tabletop/",
+      "summary": "This article tells part of the general story of Dungeons &#38; Dragons on the tabletop and on computers, which includes the more specific one of the Infinity Engine games. My power fantasy when playing a role-playing game is to confront a villain, explain point by point why his master plan is flawed, and then get [&#8230;]",
+      "source": "filfre.net",
+      "category": "blog",
+      "published": "2026-05-22",
+      "summary_zh": "本文回顾了Dungeons & Dragons从桌面角色扮演游戏到电脑游戏的发展历程，重点聚焦Infinity Engine引擎时代的游戏作品。作者分享了自己在玩RPG时的独特“权力幻想”——面对反派时，能够逐点剖析并指出其计划的致命缺陷，从中获得一种智识上的优越感和掌控力。",
+      "why_matters": "适合喜欢CRPG和D&D历史的玩家了解经典RPG设计的演变脉络。",
+      "tags": "角色扮演游戏, Infinity Engine, 游戏历史",
+      "id": 253,
+      "added_at": "2026-05-23 03:31:20"
+    },
+    {
+      "title": "News: OpenAI Had A Negative 122% Non-GAAP Operating Margin In Q1 2026, and ChatGPT Growth Has Stalled",
+      "url": "https://www.wheresyoured.at/news-openai-had-a-negative-122-operating-margin-in-q1-2026-and-chatgpt-growth-has-stalled/",
+      "summary": "Executive Summary:The Information reports that OpenAI generated $5.7bn in revenue for the first quarter of 2026 based on discussions with sources familiar with its financials.With adjusted negative margins of -122%, this means that for every dollar of revenue OpenAI made, it lost an additional $1.22, or",
+      "source": "wheresyoured.at",
+      "category": "blog",
+      "published": "2026-05-22",
+      "summary_zh": "据报道，OpenAI在2026年第一季度实现57亿美元营收，但非GAAP运营利润率却为负122%，即每获得1美元收入反而额外亏损1.22美元。同时，ChatGPT的用户增长似乎已陷入停滞，公司面临巨大的盈利压力。",
+      "why_matters": "了解AI行业头部企业的真实财务健康状况，以及AI商业化面临的严峻挑战。",
+      "tags": "OpenAI, 财务数据, AI行业, 盈利能力",
+      "id": 251,
+      "added_at": "2026-05-23 03:31:20"
+    },
+    {
+      "title": "Premium: What If...We're In An AI Bubble? (Part 2)",
+      "url": "https://www.wheresyoured.at/premium-what-if-were-in-an-ai-bubble-part-2/",
+      "summary": "Last week I ran the first part of my What If&#x2026;We&#x2019;re In An AI Bubble? Series, where I asked questions and posed scenarios as to the consequences of the many, many questions I&#x2019;ve asked over the last few years. It quickly became one of",
+      "source": "wheresyoured.at",
+      "category": "blog",
+      "published": "2026-05-22",
+      "summary_zh": "本文为AI泡沫系列第二篇，作者延续前文对人工智能领域是否存在泡沫的探讨，通过提问和设想的场景，深入分析当前AI发展热潮背后可能隐藏的问题与风险，包括市场估值过高、技术实际应用与预期不符、资本过度涌入等多个维度。",
+      "why_matters": "适合对AI行业趋势和投资风险感兴趣、想了解行业冷静思考视角的读者。",
+      "tags": "AI泡沫，科技投资，行业分析，风险评估",
+      "id": 249,
+      "added_at": "2026-05-23 03:31:20"
+    },
+    {
+      "title": "Reiner Pope – Chip design from the bottom up",
+      "url": "https://www.dwarkesh.com/p/reiner-pope-2",
+      "summary": "Working up from basic logic gates to why GPUs, TPUs, FPGAs, and the human brain each look the way they do.",
+      "source": "dwarkesh.com",
+      "category": "blog",
+      "published": "2026-05-22",
+      "summary_zh": "文章从基本逻辑门出发，逐步解释GPU、TPU、FPGA以及人脑等不同计算架构的设计原理与演变逻辑，探讨为什么每种处理器呈现出当前的模样，揭示不同芯片如何针对特定计算任务进行架构优化。",
+      "why_matters": "适合想深入理解芯片底层设计逻辑及其各自适用场景的读者。",
+      "tags": "芯片设计，GPU，计算架构",
+      "id": 247,
+      "added_at": "2026-05-23 03:31:20"
+    },
+    {
+      "title": "Dependency Pruning",
+      "url": "https://nesbitt.io/2026/05/22/dependency-pruning.html",
+      "summary": "A survey of unused-dependency detectors",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-05-22",
+      "summary_zh": "Dependency Pruning（依赖剪枝）是一种识别和移除项目中未使用依赖的优化实践。本文综述了多种检测未使用依赖的工具和技术，帮助开发者减少包体积、提升构建效率并降低潜在的安全风险。",
+      "why_matters": "适合希望优化项目依赖、减少包大小的开发者阅读。",
+      "tags": "依赖管理, 代码优化, 开发工具",
+      "id": 245,
+      "added_at": "2026-05-23 03:31:20"
+    },
+    {
+      "title": "How to Talk to Your Coworkers",
+      "url": "https://idiallo.com/blog/how-to-talk-to-your-coworkers?src=feed",
+      "summary": "You know you explained the same issue before in two or three different places, yet here they are asking again. Why don't they understand you? Why do they ask the same question when you've already given them the answer right there on Jira? Are they stupid? Lazy, maybe? Do they not take the time to read?\n\t\t\tI often hear this from developers. They write clear documentation and instructions, and people still bother them to hop on a call. This happens so frequently that I think it is worth addressing",
+      "source": "idiallo.com",
+      "category": "blog",
+      "published": "2026-05-22",
+      "summary_zh": "本文探讨了职场中与同事沟通时常遇到的困境——明明已经解释过的问题，同事却反复询问。作者分析了信息传递失效的常见原因，提供了实用的沟通技巧，帮助读者提升与团队成员的交流效率，减少误解和重复提问。",
+      "why_matters": "职场沟通直接影响团队协作效率，这篇文章提供了切实可行的沟通改进建议，值得一读。",
+      "tags": "职场沟通，团队协作，高效交流",
+      "id": 243,
+      "added_at": "2026-05-23 03:31:20"
+    },
+    {
+      "title": "Apple Seeks Supreme Court Review of Contempt Finding and Injunction Scope in Epic Games Case",
+      "url": "https://9to5mac.com/2026/05/21/apple-seeks-supreme-court-review-of-contempt-finding-and-injunction-scope-in-epic-games-case/",
+      "summary": "Marcus Mendes, reporting for 9to5Mac:\n\n\n  Apple today filed a request with the Supreme Court in an attempt\nto reverse key lower court rulings over the App Store injunction\nin its long-running legal battle with Epic Games. [...] In its\npetition, Apple is asking the Supreme Court to review two\nquestions.\n\nThe first is whether Apple should have been held in contempt for\ncharging a commission on purchases made outside the App Store. The\nsecond is about the scope of the injunction.\n\nOn the first poin",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-05-22",
+      "summary_zh": "Apple今日向美国最高法院提交请愿书，试图推翻下级法院在Epic Games案中关于App Store禁令的关键裁决。这是两家科技巨头旷日持久的法律纠纷的最新进展，Apple此次请求最高法院审查两项核心问题，以挑战此前不利于苹果的裁决。",
+      "why_matters": "了解科技巨头与开发者之间关于应用商店政策争议的法律走向。",
+      "tags": "Apple, Epic Games, 最高法院, App Store, 反垄断",
+      "id": 241,
+      "added_at": "2026-05-23 03:31:20"
+    },
+    {
+      "title": "Stephen Colbert’s ‘The Late Show’ Finale",
+      "url": "https://www.nytimes.com/2026/05/22/arts/television/colbert-last-late-show.html?unlocked_article_code=1.kVA.GO3I.gVq9KeUrHEyM",
+      "summary": "James Poniewozik, writing for The New York Times (gift link):\n\n\n  He didn’t land the pope, but he got a Beatle. He didn’t have a new\nproject to announce, but he left us with a song (in fact two). He\ndidn’t choose to end his show, but he ended it his own weird,\nwonderful way.\n\nStephen Colbert hosted his final “Late Show” on Thursday night,\ncompleting the story of the TV year’s most notorious and rancorous\ncancellation. But his final hour-plus — an emotional and\ndelightfully bizarre wake for a com",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-05-22",
+      "summary_zh": "Stephen Colbert主持多年的《深夜秀》落下帷幕，虽未能邀请到教皇但迎来了披头士乐队成员。虽未公布新项目，但以两首歌曲作为告别，最终以自己独特而精彩的方式为节目画上句号。",
+      "why_matters": "见证喜剧大师十多年主持生涯的最后一刻，感受其独特的幽默风格与告别情怀。",
+      "tags": "深夜秀, Stephen Colbert, 电视综艺",
+      "id": 239,
+      "added_at": "2026-05-23 03:31:20"
+    },
+    {
+      "title": "Zero Sum Problems and Apple Sports",
+      "url": "https://kieranhealy.org/blog/archives/2026/05/21/zero-sum-problems/",
+      "summary": "Kieran Healy kindly accepted my implicit homework assignment yesterday, and wrote a piece on Apple Sports’s bizarre “zero sum” team stats visualization:\n\n\n  It also doesn’t do away with the core problem. That problem is\nprincipally one of information design rather than data\nvisualization. What I mean is that what we’re trying to organize\nis, in effect, fifteen pairs of related but fundamentally distinct\nnumbers. If we had fifteen cases and two variables things\nwould be simple. But with fifteen v",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-05-22",
+      "summary_zh": "本文讨论了Apple Sports应用中一种“zero sum”（零和）的球队统计数据可视化方式存在的问题。作者引用Kieran Healy的分析指出，这个问题的核心不在于数据可视化技术，而在于信息设计本身——如何让用户正确理解统计数据呈现的含义。这是一个值得关注的产品设计案例。",
+      "why_matters": "对于关注产品设计和用户体验的读者，这篇文章提供了一个分析苹果应用设计问题的深度视角。",
+      "tags": "Apple Sports, 信息设计, 数据可视化, 苹果产品",
+      "id": 237,
+      "added_at": "2026-05-23 03:31:20"
+    },
+    {
+      "title": "The Ninth Circuit Appeal Ruling in ‘Epic v. Apple’ That Apple Is Seeking to Overturn at the Supreme Court (PDF)",
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2025/12/11/25-2935.pdf",
+      "summary": "Following up on yesterday’s item re: Apple’s petition to the Supreme Court, here’s the Ninth Circuit ruling. It starts with a “Summary” that is specifically intended for the convenience of the reader. Page 50 is where it covers Apple’s argument regarding Trump v. CASA as precedent that an injunction on commissions should apply only to Epic Games, not to all developers in the U.S. App Store.\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-05-22",
+      "summary_zh": "本文提供了Epic Games诉苹果案第九巡回法院裁决的PDF链接，苹果公司正试图向最高法院推翻该裁决。该裁决文件第50页开始详细阐述苹果关于Trump v. CASA案作为先例的论点。裁决文件开头包含一个专门为方便读者阅读而设置的“摘要”部分。",
+      "why_matters": "这份原始法律文件对于深入了解Epic v. Apple案的最新进展和法律争议点具有重要参考价值。",
+      "tags": "Epic v. Apple, 第九巡回法院, 最高法院上诉",
+      "id": 235,
+      "added_at": "2026-05-23 03:31:20"
+    },
+    {
+      "title": "Lawmakers Demand Answers as CISA Tries to Contain Data Leak",
+      "url": "https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/",
+      "summary": "Lawmakers in both houses of Congress are demanding answers from the U.S. Cybersecurity &#038; Infrastructure Security Agency (CISA) after KrebsOnSecurity reported this week that a CISA contractor intentionally published AWS GovCloud keys and a vast trove of other agency secrets on a public GitHub account. The inquiry comes as CISA is still struggling to contain the breach and invalidate the leaked credentials.",
+      "source": "krebsonsecurity.com",
+      "category": "security",
+      "published": "2026-05-22",
+      "summary_zh": "美国国会两院议员正要求CISA对一起数据泄露事件作出解释。据悉，CISA一名承包商在公共GitHub上发布了AWS GovCloud访问密钥以及大量机构敏感数据。CISA方面正在努力控制此次泄露事件的影响范围。",
+      "why_matters": "暴露了政府机构数据安全管理的重大漏洞，值得关注数据安全与供应链风险的读者阅读。",
+      "tags": "数据泄露, 网络安全, 政府安全",
+      "id": 233,
+      "added_at": "2026-05-23 03:31:20"
+    },
+    {
+      "title": "FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service",
+      "url": "https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything",
+      "summary": "FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service\nBack in 2024 Cox Media Group were caught trying to sell advertisers packages based on \"active listening\", with this deck which claimed:\n\n\nSmart devices capture real-time intent data by listening to our conversations\nAdvertisers can pair this voice-data with behavioral data to target in-market consumers\n\n\nI wrote about this in Sep",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-05-22",
+      "summary_zh": "美国联邦贸易委员会（FTC）对Cox Media Group及另外两家公司提起诉讼，指控这三家公司向广告商虚假宣传其AI“主动监听”营销服务，声称能通过监听消费者设备上的对话来精准投放广告。最终这些公司需支付近100万美元和解金。 FTC认为这种行为构成欺骗性营销，损害了消费者权益。",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 231,
+      "added_at": "2026-05-23 03:31:20"
+    },
+    {
       "title": "openclaw 2026.5.20",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.20",
       "source": "openclaw",
@@ -2887,5 +3056,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-22 14:13:41"
+  "last_updated": "2026-05-23 03:31:20"
 }
