@@ -1,6 +1,110 @@
 {
   "articles": [
     {
+      "title": "How my minimal, memory-safe Go rsync steers clear of vulnerabilities",
+      "url": "https://michael.stapelberg.ch/posts/2026-05-24-minimal-memory-safe-go-rsync-vulns/",
+      "summary": "Back in January 2025, multiple different security researchers published a total\nof 6 security vulnerabilities in\nrsync, some of which\nallow arbitrary code execution and file leaks, so naturally I was wondering\nwhether/how my gokrazy/rsync implementation\nwas affected. Did implementing my own (compatible, but minimal) rsync in Go, a\nmodern and memory-safe programming language, really rule out entire classes of\nsecurity vulnerabilities?\nThis deep dive article was in the making since January 2025, b",
+      "source": "michael.stapelberg.ch",
+      "category": "blog",
+      "published": "2026-05-24",
+      "summary_zh": "本文介绍了作者针对2025年1月rsync被曝出的6个安全漏洞（部分可导致任意代码执行和文件泄露）进行的分析。由于作者使用Go语言自行实现了rsync工具gokrazy/rsync，而Go语言具有内存安全特性，因此这些已披露的漏洞对其实现影响有限。文章探讨了内存安全语言在避免传统C语言代码安全问题方面的天然优势。",
+      "why_matters": "通过实际安全事件说明使用内存安全语言（如Go、Rust）开发基础工具的重要性，适合关注系统安全和代码安全的开发者阅读。",
+      "tags": "网络安全,Go语言,内存安全",
+      "id": 270,
+      "added_at": "2026-05-25 03:11:35"
+    },
+    {
+      "title": "Weekly Update 505",
+      "url": "https://www.troyhunt.com/weekly-update-505/",
+      "summary": "Well, that didn&apos;t last long! Recording this on Saturday morning my time, I observed ShinyHunters having gone quiet since the massive haul that would have been the Instructure ransom. It was two weeks almost to the hour since I&apos;d first heard rumour of payment being made,",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-05-24",
+      "summary_zh": "本文是Troy Hunt的安全周报，介绍了ShinyHunters黑客组织在完成Instructure数据窃取并疑似收到赎金后，近期活动明显减少。录制时间为周六上午，距离首次传出支付消息已近两周。这一现象可能暗示针对Instructure的勒索事件已进入尾声。",
+      "why_matters": "可快速了解近期数据泄露和暗网黑客组织动态，适合关注网络安全形势的读者。",
+      "tags": "数据泄露，网络安全，ShinyHunters",
+      "id": 268,
+      "added_at": "2026-05-25 03:11:35"
+    },
+    {
+      "title": "The Eternal Sloptember",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/05/24/the-eternal-sloptember.html",
+      "summary": "I’m calling it now, the adoption of AI agents into software development will be one of the most costly mistakes in the field’s history. Agents cannot program, and it’s taking longer and longer to realize that they can’t. They are a highly sophisticated statistical model designed to mimic the distribution of programming. The output is broken, but in a way that’s getting harder and harder to detect. Which is exactly what you’d expect from an increasingly accurate statistical model.",
+      "source": "geohot.github.io",
+      "category": "blog",
+      "published": "2026-05-24",
+      "summary_zh": "作者George Hotz对AI编程代理持批评态度，认为将AI代理引入软件开发是行业内最昂贵的错误之一。原因在于AI本质上只是模仿编程分布的统计模型，并不能真正实现编程功能，而人们意识到这一点需要越来越长的时间。",
+      "why_matters": "适合对AI编程能力持怀疑或批判态度的读者阅读，能获得不同视角的技术观点。",
+      "tags": "AI批判, 编程代理, 技术反思",
+      "id": 266,
+      "added_at": "2026-05-25 03:11:35"
+    },
+    {
+      "title": "Signing is for the bad days",
+      "url": "https://nesbitt.io/2026/05/24/signing-is-for-the-bad-days.html",
+      "summary": "TUF, in-toto, and Sigstore only look pointless while nothing is on fire",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-05-24",
+      "summary_zh": "文章讨论了软件供应链安全中签名机制的价值，指出TUF、in-toto和Sigstore等工具在日常看似多余，但在系统出现问题或遭受攻击时才真正发挥作用。签名验证不是为了正常情况，而是为了应对“糟糕的日子”——安全事件发生时能快速定位和解决问题。",
+      "why_matters": "对于关注软件供应链安全和DevOps实践的技术人员来说，提供了对签名工具实际价值的深刻洞察。",
+      "tags": "软件供应链安全, 数字签名, Sigstore",
+      "id": 264,
+      "added_at": "2026-05-25 03:11:35"
+    },
+    {
+      "title": "Building Pi With Pi",
+      "url": "https://lucumr.pocoo.org/2026/5/24/pi-oss/",
+      "summary": "Pi is now part of Earendil, but in the important sense it is\nstill Mario&#8217;s project.  He has been living with its\nissue tracker longer than I have, and he has been exposed to the weirdness of\nthe new form of agent traffic in Open Source projects for longer too.  This post\nis mostly a reflection of my own experience after spending more time in the\ntracker, using Pi to work on Pi, and watching what I have learned about it so\nfar.\nSlop Issues\nUnsurprisingly, we are using Pi to build Pi.  That ",
+      "source": "lucumr.pocoo.org",
+      "category": "blog",
+      "published": "2026-05-24",
+      "summary_zh": "Pi项目现已整合进Earendil，但在核心意义上仍是Mario主导的项目。Mario长期活跃于该项目的issue tracker，积累了丰富处理开源社区各类问题的经验。本文作为一篇反思性文章，探讨了开源项目中项目归属、开发者参与度以及代理流量等议题。",
+      "why_matters": "适合对开源项目维护者心态及开源社区运作机制感兴趣的开发者阅读。",
+      "tags": "开源项目，项目管理，开发者社区",
+      "id": 262,
+      "added_at": "2026-05-25 03:11:35"
+    },
+    {
+      "title": "An idea: user level WireGuard for UDP based encryption and authentication",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/tech/WireGuardForUDPAuthEncryption",
+      "summary": "In some environments, you want to connect programs together with\nmutual authentication and encryption of their traffic (so each end\ncan trust the other and the traffic is immune to easy eavesdropping).\nIf the programs are talking to each other over TCP, there's a well\ndeveloped solution for this in the form of mutual TLS (mTLS) (although\nyou'll probably get to enjoy the fun of running your own private\nCertificate Authority). But if you're using UDP, things are less\nclear. When this came up recen",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-05-24",
+      "summary_zh": "文章提出了一个在用户空间实现WireGuard来处理UDP流量加密和认证的方案，旨在为程序间提供相互认证和流量加密保护，填补了UDP协议在这方面缺乏成熟解决方案的空白。",
+      "why_matters": "提供了轻量级的用户态加密方案，适合需要快速集成安全通信的开发者参考。",
+      "tags": "WireGuard, UDP加密, 用户态网络",
+      "id": 260,
+      "added_at": "2026-05-25 03:11:35"
+    },
+    {
+      "title": "Why Steve Kerr Stayed With the Warriors",
+      "url": "https://www.espn.com/nba/story/_/id/48686303/steve-kerr-decision-return-coach-golden-state-warriors-steph-curry",
+      "summary": "Terrific, poignant profile of Warriors head coach Steve Kerr by Wright Thompson for ESPN:\n\n\n  Kerr doesn’t want the Warriors to end up like the New England Patriots, marred by grudges and grievances. He watched Michael Jordan retire, then unretire, then retire, then unretire. His friends used to grill him about MJ.\n\n“Why doesn’t he go out on top?”\n\n“Because he can’t,” Kerr told them.\n\nFor the past few years, Kerr has watched his mentor, San Antonio Spurs coach Gregg Popovich, struggle through th",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-05-24",
+      "summary_zh": "这篇文章是ESPN记者Wright Thompson撰写的关于勇士队主教练Steve Kerr的深度人物特写。Kerr不希望勇士队重蹈新英格兰爱国者队的覆辙，被怨恨和不满所困扰。他亲历了乔丹的多次退役与复出，从公牛王朝的兴衰中汲取了宝贵的经验教训。",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 258,
+      "added_at": "2026-05-25 03:11:35"
+    },
+    {
+      "title": "Quoting Armin Ronacher",
+      "url": "https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything",
+      "summary": "The most frustrating failure mode right now is that people submit issues that are not in their own voice. They contain an observed problem somewhere, but it has been thrown into a clanker and the clanker reworded it and made a huge mess of it. Typically, it was prompted so badly that the conclusions produced are more often than not inaccurate but always full of confidence. The result is complete guesswork on root causes, fake-minimal repros, suggested implementation strategies, analogies to adja",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-05-24",
+      "summary_zh": "本文引用了开发者Armin Ronacher的观点，指出当前最令人沮丧的问题是人们在提交issue时不再用自己的声音表达，而是让AI工具（如clanker）重写后，导致问题描述变得混乱模糊。这种提示词质量差的情况常常使原始问题的核心被掩盖，最终得出错误的结论。",
+      "why_matters": "提醒开发者保持独立思考，在提交问题反馈时应清晰表达原始信息，避免过度依赖AI改写而丧失关键细节。",
+      "tags": "开发者沟通, AI辅助工具, 问题报告",
+      "id": 256,
+      "added_at": "2026-05-25 03:11:35"
+    },
+    {
       "title": "openclaw 2026.5.22",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.22",
       "source": "openclaw",
@@ -3211,5 +3315,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-24 14:06:42"
+  "last_updated": "2026-05-25 03:11:35"
 }
