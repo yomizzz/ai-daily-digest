@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.5.22",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.22",
+      "source": "openclaw",
+      "published": "2026-05-24",
+      "category": "openclaw",
+      "summary": "- Gateway 性能优化：复用通道目录读取和插件元数据快照，减少文件系统遍历和重复加载\n- Gateway 性能优化：延迟加载闲置插件工作和ACPX运行时，加速健康检查响应\n- Gateway 性能优化：缓存插件SDK别名映射和跳过无效PATH探测，加速启动\n- 新增会议笔记外部插件：支持自动启动捕获、手动转录导入和Discord语音源\n- Media理解：停止自动探测Gemini CLI，改为仅将Antigravity作为低优先级后备\n- Plugin SDK：新增通用通道消息轮询发送器，支持轮询投递能力\n- QA-Lab/diagnostics：扩展OpenTelemetry测试并添加Prometheus可观测性测试别名\n- Crabbox：采用稀疏检出同步并通过Corepack pnpm路由远程变更\n\n🐛 Bug 修复：- Agent/subagent：修复默认子代理引导上下文包含过多文件问题，现在仅加载AGENTS.md和TOOLS.md",
+      "features": "- Gateway 性能优化：复用通道目录读取和插件元数据快照，减少文件系统遍历和重复加载\n- Gateway 性能优化：延迟加载闲置插件工作和ACPX运行时，加速健康检查响应\n- Gateway 性能优化：缓存插件SDK别名映射和跳过无效PATH探测，加速启动\n- 新增会议笔记外部插件：支持自动启动捕获、手动转录导入和Discord语音源\n- Media理解：停止自动探测Gemini CLI，改为仅将Antigravity作为低优先级后备\n- Plugin SDK：新增通用通道消息轮询发送器，支持轮询投递能力\n- QA-Lab/diagnostics：扩展OpenTelemetry测试并添加Prometheus可观测性测试别名\n- Crabbox：采用稀疏检出同步并通过Corepack pnpm路由远程变更",
+      "bug_fixes": "- Agent/subagent：修复默认子代理引导上下文包含过多文件问题，现在仅加载AGENTS.md和TOOLS.md",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Some notes on how we ended up with Palantir & how to replace it",
       "url": "https://berthub.eu/articles/posts/some-notes-on-palantir/",
       "summary": "There is justified anger about governments relying on Palantir software. There are also calls to write replacement software, perhaps imbued with European values, and with less fascism.\nAnd I&rsquo;d love for that to happen pronto, but first we need to understand a few things. It is not just the software.\nImage by Mariia Shalabaieva on Unsplash\n&ldquo;Palantir is often called a data broker, a data miner, or a giant database of personal information.",
@@ -3199,5 +3211,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-24 03:05:03"
+  "last_updated": "2026-05-24 14:06:42"
 }

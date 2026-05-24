@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>This Week in Package Management: 23 May 2026</title>
     <style>
 
         :root {
@@ -287,56 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-05-24 14:06:42</p>
+        <h1>This Week in Package Management: 23 May 2026</h1>
+        <p><span class="category-tag">blog</span> nesbitt.io · 2026-05-23</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 1 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="release">
-    <div class="release-header">
-        <div style="display:flex;align-items:center;flex-wrap:wrap;">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.5.22" target="_blank" class="release-title">openclaw 2026.5.22</a>
-            <span class="release-tag">v2026.5.22</span>
-        </div>
-        <span class="release-date">2026-05-24</span>
-    </div>
-<div class="release-section">
-    <div class="release-section-title">🆕 新增功能</div>
-    <div class="release-card"><ul class="summary-list"><li>- Gateway 性能优化：复用通道目录读取和插件元数据快照，减少文件系统遍历和重复加载</li><li>- Gateway 性能优化：延迟加载闲置插件工作和ACPX运行时，加速健康检查响应</li><li>- Gateway 性能优化：缓存插件SDK别名映射和跳过无效PATH探测，加速启动</li><li>- 新增会议笔记外部插件：支持自动启动捕获、手动转录导入和Discord语音源</li><li>- Media理解：停止自动探测Gemini CLI，改为仅将Antigravity作为低优先级后备</li><li>- Plugin SDK：新增通用通道消息轮询发送器，支持轮询投递能力</li><li>- QA-Lab/diagnostics：扩展OpenTelemetry测试并添加Prometheus可观测性测试别名</li><li>- Crabbox：采用稀疏检出同步并通过Corepack pnpm路由远程变更</li></ul></div>
-</div><div class="release-section">
-    <div class="release-section-title">🐛 Bug 修复</div>
-    <div class="release-card"><ul class="summary-list"><li>- Agent/subagent：修复默认子代理引导上下文包含过多文件问题，现在仅加载AGENTS.md和TOOLS.md</li></ul></div>
-</div>
-</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><p>本期周报汇总了2026年5月第三周包管理领域的最新动态，涵盖了主流包管理器（如npm、pip、cargo等）的重要版本更新、安全公告以及值得关注的行业文章，为包管理生态参与者提供一站式的资讯概览。</p></div>
+<div class="tags">标签：包管理, 周报, 开源生态</div>
+        <div class="detail-why">💡 帮助包管理从业者快速了解本周行业动态，节省信息筛选时间。</div>
+        <a href="https://nesbitt.io/2026/05/23/this-week-in-package-management.html" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>
