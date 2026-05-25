@@ -1,6 +1,149 @@
 {
   "articles": [
     {
+      "title": "FediMeteo, timezones, and the art of not breaking what already works",
+      "url": "https://it-notes.dragas.net/2026/05/25/fedimeteo-timezones-and-the-art-of-not-breaking-what-already-works/",
+      "summary": "I have already written about how FediMeteo was born, and about how HAProxy helps reduce the number of requests that reach snac.\nSeen from the outside, FediMeteo almost seems still. There is a static homepage, regenerated every hour. There are the city pages, with their forecasts. There are RSS feeds waiting to be fetched, JSON objects waiting to be requested, Fediverse instances refreshing data, subscribing, unsubscribing, retrieving profiles, and reading notes.\nThat is the visible part.\nBehind ",
+      "source": "it-notes.dragas.net",
+      "category": "blog",
+      "published": "2026-05-25",
+      "summary_zh": "本文讲述了FediMeteo项目在处理时区问题时如何遵循“不破坏已有功能”的原则。作者介绍了FediMeteo的运行机制——每小时重新生成静态首页，城市页面展示天气预报，并提供RSS订阅服务。同时通过HAProxy负载均衡来优化请求处理，减少对后端服务snac的压力。文章强调了在系统演进中保持稳定性和兼容性的重要性。",
+      "why_matters": "对于运维和分布式系统开发者而言，这是一篇关于如何在技术迭代中保持系统稳定、优雅处理时区等边界问题的实践参考。",
+      "tags": "FediMeteo, 时区处理, 系统架构",
+      "id": 284,
+      "added_at": "2026-05-26 03:24:02"
+    },
+    {
+      "title": "Quantum Link: AOL before it was AOL",
+      "url": "https://dfarq.homeip.net/quantum-link-aol-before-it-was-aol/?utm_source=rss&utm_medium=rss&utm_campaign=quantum-link-aol-before-it-was-aol",
+      "summary": "I used AOL before it was AOL. And if you had a Commodore and a modem in the 1980s, you may have too. On May 24, 1985, Control Video reorganized and became Quantumlink, or Q-Link for short, on its way\nThe post Quantum Link: AOL before it was AOL appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-05-25",
+      "summary_zh": "Quantum Link（简称Q-Link）是美国在线服务AOL的前身，1985年5月24日由Control Video公司重组更名而来。在80年代，拥有Commodore电脑和调制解调器的用户可以通过Q-Link访问这个在线服务，比AOL正式推出早了好几年。文章回顾了这段互联网早期发展的历史。",
+      "why_matters": "对于了解互联网发展史和技术演进历程的读者来说，这篇关于AOL前身的故事提供了珍贵的第一手回忆。",
+      "tags": "互联网历史, AOL, 80年代科技",
+      "id": 282,
+      "added_at": "2026-05-26 03:24:02"
+    },
+    {
+      "title": "GitHub Actions security in Python packages",
+      "url": "https://nesbitt.io/2026/05/25/github-actions-security-in-python-packages.html",
+      "summary": "Thank you Dr. Zizmor",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-05-25",
+      "summary_zh": "本文探讨了Python包开发中GitHub Actions工作流的安全性问题，介绍了安全研究工具zizmor如何帮助发现和修复CI/CD流程中的潜在漏洞，强调了开源项目维护者在使用自动化构建流程时需要关注的安全最佳实践。",
+      "why_matters": "GitHub Actions已成为Python包发布的标配，了解其安全隐患对开发者保障项目供应链安全至关重要。",
+      "tags": "GitHub Actions, Python安全, CI/CD安全",
+      "id": 280,
+      "added_at": "2026-05-26 03:24:02"
+    },
+    {
+      "title": "Why I can't stand the word \"driven\"",
+      "url": "https://www.joanwestenberg.com/why-i-cant-stand-the-word-driven/",
+      "summary": "A man named Harry Readford once stole close to 1,000 head of cattle from Bowen Downs station in central Queensland and drove them south, down through the Channel Country and along the Strzelecki Track into South Australia - across a stretch of desert the squatters swore no herd could",
+      "source": "joanwestenberg.com",
+      "category": "blog",
+      "published": "2026-05-25",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 278,
+      "added_at": "2026-05-26 03:24:02"
+    },
+    {
+      "title": "Anti-robot techniques can be nice but the problem is, they're not static",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/web/RobotsVsLowAttentionWebsites",
+      "summary": "I've recently come up with what I expect would be a quite good\nanti-robot, anti-crawler tactic, which I will give the snappy label\nand summary of \"robots don't POST\". Simply require a HTTP cookie\nto see your web pages and then if visitors don't have the cookie,\nput up an interstitial page with a HTML form that requires them to\nPOST it to get the cookie. All the form need is a \"click me to get\nyour entrance cookie\", because right now, few or no robots or\ncrawlers will make that HTTP POST request;",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-05-25",
+      "summary_zh": "文章介绍了作者提出的一个反机器人/反爬虫策略，名为\"robots don't POST\"。该策略通过要求HTTP cookie来限制网页访问，若访问者没有cookie则显示中间页面（interstitial page）。作者指出这类反机器人技术虽然有效，但存在一个关键问题——它们并非静态的解决方案，需要持续维护和更新。",
+      "why_matters": "对于关注网站安全防护和爬虫治理的技术人员具有参考价值，文中观点有助于理解反爬虫技术的局限性。",
+      "tags": "网络安全, 反爬虫技术, Web安全, cookies",
+      "id": 276,
+      "added_at": "2026-05-26 03:24:02"
+    },
+    {
+      "title": "PHP - simple way to send HTTP headers before a script ends",
+      "url": "https://shkspr.mobi/blog/2026/05/php-simple-way-to-send-http-headers-before-a-script-ends/",
+      "summary": "Suppose you want PHP to keep processing after it has sent back an HTTP response. Normally, this doesn&#039;t work:  &#60;?php    header( \"Location: https://example.com/\" );    //   Long operation.    sleep(10);    die();   Try it yourself. You&#039;ll have to wait 10 seconds before you get back  &#60; HTTP/2 302  &#60; location: https://example.com/   There are some complex ways to fix this - they usually involve…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-05-25",
+      "summary_zh": "文章介绍了在PHP中如何实现“发送HTTP响应后继续后台处理”的简单方法。通常PHP会等待所有代码执行完毕才返回响应，导致用户需要等待耗时操作完成。作者提供了具体的解决方案，可以让脚本在发送header后继续执行长时间任务，而用户无需等待即可获得响应。",
+      "why_matters": "提供了解决PHP后台任务处理痛点的实用技巧，适合需要优化用户体验的开发者参考。",
+      "tags": "PHP, HTTP响应, 后台任务",
+      "id": 274,
+      "added_at": "2026-05-26 03:24:02"
+    },
+    {
+      "title": "Pluralistic: No honor among (ad-tech) thieves (25 May 2026)",
+      "url": "https://pluralistic.net/2026/05/25/lying-spies/",
+      "summary": "Today's links No honor among (ad-tech) thieves: Including \"and\" and \"the.\" Hey look at this: Delights to delectate. Object permanence: Budweiser nunchuks; GOP vote-suppressor voted illegally; Airbnb enshittifies; Oculus enshittifies; Nintendo copyfrauds its fans; Meritocracy to eugenics pipeline; Ultima Online crisis management; SNES cartridge urinal; JJ Abrams x Axanar, \"Sex Criminals\"; Beating school filters for fun; Orphan works; Japanese ATM heist; How the Sacklers rigged the game. Upcoming ",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-05-25",
+      "summary_zh": "这篇文章是Cory Doctorow的Pluralistic日常链接集，聚焦于广告技术行业的诚信问题，批评了平台和科技公司对用户的背叛与欺骗。内容涵盖百威、Airbnb、Oculus等企业的“垃圾化”（enshittification）现象，任天堂被指欺骗粉丝抄袭创意，以及对精英制度可能滑向优生主义的批评。同时收录了一些轻松有趣的发现作为调剂。",
+      "why_matters": "适合关注数字平台权力、互联网伦理和科技企业责任问题的读者，提供深度评论与轻松内容相结合的阅读体验。",
+      "tags": "广告技术, 平台监管, 互联网伦理",
+      "id": 272,
+      "added_at": "2026-05-26 03:24:02"
+    },
+    {
+      "title": "Distributing LLM inference in DwarfStar",
+      "url": "http://antirez.com/news/167",
+      "summary": "High end NVIDIA cards, and the server and power needed to run them, cost a lot of money, especially if you plan to reach enough VRAM to run massive models. The alternative, so far, has been Apple hardware, or the DGX Spark that, even if severely limited because of memory bandwidth, still allows to run LLMs prompt processing (prefill) fast enough. The Mac Studio provided up to 512GB unified memory, a solution with modest memory bandwidth (but much better than the Spark) and compute at a price tha",
+      "source": "antirez.com",
+      "category": "blog",
+      "published": "2026-05-25",
+      "summary_zh": "DwarfStar是antirez开发的一个开源项目，旨在解决大语言模型推理的高成本问题。该项目通过分布式计算方式，让多台设备协同完成LLM推理任务，从而降低对高端硬件的依赖。文章还讨论了当前主流方案（如NVIDIA高端显卡、Apple硬件、DGX Spark等）的优缺点，并提出了利用分布式网络实现LLM推理的创新思路。",
+      "why_matters": "对于对LLM部署成本敏感、想了解边缘计算或分布式推理方案的开发者来说，这篇文章提供了实用的技术参考。",
+      "tags": "LLM推理, 分布式计算, 开源项目",
+      "id": 270,
+      "added_at": "2026-05-26 03:24:02"
+    },
+    {
+      "title": "The History of ‘OK’",
+      "url": "https://www.merriam-webster.com/wordplay/the-hilarious-history-of-ok-okay",
+      "summary": "Merriam-Webster:\n\n\n  The 1820s and 1830s shared another linguistic fad with today: an\nappreciation for deliberate misspellings. (Kewl, rite?) This\ntrend, which had humorists adopting now-cringey bumpkin personas\nwith ignorance manifested in uneducated spellings, turned no go\ninto know go and no use into know yuse (lol). Abbreviations\nwere not immune, and no go became K.G.. So too all right\nbecame O.W. , as an abbreviation for oll wright. And all\ncorrect became o.k. , as an abbreviation for oll k",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-05-25",
+      "summary_zh": "本文追溯了英语词汇“OK”的历史渊源，指出19世纪二三十年代曾流行一种故意的拼写错误风潮，幽默作家们通过采用“土包子”人物设定，用不规范拼写来制造喜剧效果，如将“no go”写作“know go”等。这种语言游戏传统为后来“OK”等缩写词汇的诞生奠定了文化基础。",
+      "why_matters": "了解英语中最常用词汇之一的演变历程，探索语言背后的文化幽默。",
+      "tags": "英语词源，语言历史，词汇演变",
+      "id": 268,
+      "added_at": "2026-05-26 03:24:02"
+    },
+    {
+      "title": "Trump Mobile Website Exposed the Number of Pre-Orders — Both Completed and Abandoned — and the Associated Customer Information",
+      "url": "https://www.theguardian.com/us-news/2026/may/23/trump-mobile-investigating-potential-exposure-of-would-be-customers-personal-information",
+      "summary": "Catie McLeod, The Guardian:\n\n\n  Trump Mobile said in a statement that it was investigating the\nissue — “with the assistance of independent cybersecurity\nprofessionals” — in which the full names, addresses and phone\nnumbers of people who filled out preorder forms appeared to be\nexposed. [...]\n\nJonathan Soma, a programmer and professor at New York’s Columbia\nUniversity, reviewed the code that the Australian had uncovered\nand copied from the Trump Mobile website. Soma said the website\nused a common",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-05-25",
+      "summary_zh": "Trump Mobile网站被发现存在严重安全漏洞，用户在填写预购表单时填写的全名、家庭地址和电话号码等个人信息被暴露。该公司发表声明称正在配合独立网络安全专业人士进行调查。此次数据泄露事件涉及已完成和已放弃的预购订单信息，引发了对用户隐私安全的担忧。",
+      "why_matters": "了解知名科技产品平台的数据保护现状，关注个人隐私信息安全隐患。",
+      "tags": "数据泄露，隐私安全，网络安全，移动应用",
+      "id": 266,
+      "added_at": "2026-05-26 03:24:02"
+    },
+    {
+      "title": "Netherlands Seizes 800 Servers, Arrests 2 for Aiding Cyberattacks",
+      "url": "https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/",
+      "summary": "Authorities in the Netherlands have arrested the co-owners of two related Internet hosting companies for operating IT infrastructure used by Russia to carry out cyberattacks, influence operations and disinformation campaigns inside the European Union. The two men were the focus of a 2025 KrebsOnSecurity story about how their hosting companies had assumed control over the technical infrastructure of Stark Industries Solutions, an Internet service provider sanctioned last year by the EU as a frequ",
+      "source": "krebsonsecurity.com",
+      "category": "security",
+      "published": "2026-05-25",
+      "summary_zh": "荷兰执法部门逮捕了两家互联网托管公司的共同所有者，并查封了约800台服务器。这两人被指控为俄罗斯在欧盟境内实施网络攻击、影响力行动和虚假信息宣传活动提供IT基础设施支持。",
+      "why_matters": "揭示了西方执法机构如何追踪并打击为国家级网络攻击提供便利的托管服务商。",
+      "tags": "网络安全，荷兰执法，俄罗斯网络攻击，基础设施查封",
+      "id": 264,
+      "added_at": "2026-05-26 03:24:02"
+    },
+    {
       "title": "How my minimal, memory-safe Go rsync steers clear of vulnerabilities",
       "url": "https://michael.stapelberg.ch/posts/2026-05-24-minimal-memory-safe-go-rsync-vulns/",
       "summary": "Back in January 2025, multiple different security researchers published a total\nof 6 security vulnerabilities in\nrsync, some of which\nallow arbitrary code execution and file leaks, so naturally I was wondering\nwhether/how my gokrazy/rsync implementation\nwas affected. Did implementing my own (compatible, but minimal) rsync in Go, a\nmodern and memory-safe programming language, really rule out entire classes of\nsecurity vulnerabilities?\nThis deep dive article was in the making since January 2025, b",
@@ -3315,5 +3458,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-25 14:40:32"
+  "last_updated": "2026-05-26 03:24:02"
 }
