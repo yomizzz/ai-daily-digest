@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>CHAOSS Metrics in 2026</title>
     <style>
 
         :root {
@@ -287,56 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-05-28 14:17:43</p>
+        <h1>CHAOSS Metrics in 2026</h1>
+        <p><span class="category-tag">blog</span> nesbitt.io · 2026-05-27</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 1 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="release">
-    <div class="release-header">
-        <div style="display:flex;align-items:center;flex-wrap:wrap;">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.5.26" target="_blank" class="release-title">openclaw 2026.5.26</a>
-            <span class="release-tag">v2026.5.26</span>
-        </div>
-        <span class="release-date">2026-05-27</span>
-    </div>
-<div class="release-section">
-    <div class="release-section-title">🆕 新增功能</div>
-    <div class="release-card"><ul class="summary-list"><li>- **Gateway 启动加速**：避免对插件、频道、会话、计费、警告、定时服务、文件系统进行重复扫描</li><li>- **回复分离优化**：用户可见的回复与较慢的后续工作分离处理，运行时缓存减少</li><li>- **转录成为核心**：基于转录的会议摘要、来源提供程序分块、清理的用户轮次持久化、媒体溯源、Codex 镜像、WebChat 回复统一使用更可靠的转录路径</li><li>- **多频道功能完善**：Telegram 保持打字/进度上下文和论坛话题，iMessage 处理附件根目录，WhatsApp 恢复群组/媒体行为，多渠道增加反应批准支持</li><li>- **实时对话可操控**：Web UI 和 Discord 语音可检查、引导、取消实时对话运行</li><li>- **唤醒词处理优化**：对环境语音容忍度更高，不会误触发代理</li><li>- **内容安全增强**：浏览器快照读取遵守 SSRF 策略，系统事件文本无法伪造嵌套提示标记，拉取文件文本作为外部内容包装，点击批准入站发送者白名单在代理调度前运行，序列化工具调用文本从回复中清理</li><li>- **认证配置增强**：支持命名模型登录配置、OpenCode 和 Codex 认证配置迁移、OpenAI 采样参数转发</li><li>- **诊断可观测性提升**：追踪网关密钥准备、分类技能/工具使用、显示模型流进度、OpenTelemetry LLM 内容跨度、暴露可告警遥测</li><li>- **性能缓存优化**：缓存插件元数据快照、包真实路径、网关稳定元数据、模型成本索引、频道解析、计费索引、会话/认证热路径</li><li>- **移动端对话改进**：iOS 实时对话模式、Android 离线语音/网关恢复、Android 配对新网关操作</li><li>- **语音共享 SDK**：暴露共享实时轮次上下文跟踪、输出活动跟踪、咨询问题匹配、可说话结果提取</li></ul></div>
-</div><div class="release-section">
-    <div class="release-section-title">🐛 Bug 修复</div>
-    <div class="release-card"><ul class="summary-list"><li>- **Windows 计划任务**：相关问题已修复</li><li>- **会话/认证热路径**：已知问题已修复</li><li>- **Codex 应用服务器恢复**：超时和使用限制恢复机制已完善</li><li>- **旧设备令牌**：现在会被正确拒绝</li><li>- **过时提示令牌**：不再提供误导性控制</li></ul></div>
-</div>
-</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><p>暂无摘要</p></div>
+
+        <div class="detail-why">💡 值得一读</div>
+        <a href="https://nesbitt.io/2026/05/27/chaoss-metrics-in-2026.html" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>
