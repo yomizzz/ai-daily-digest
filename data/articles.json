@@ -1,6 +1,175 @@
 {
   "articles": [
     {
+      "title": "What's going on with Gemini?",
+      "url": "https://martinalderson.com/posts/whats-going-on-with-gemini/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
+      "summary": "Google's Gemini 3.5 Flash was the headline model at I/O - fast, but expensive and middling at coding. Why it makes more sense as a model built for Google itself, the TPU advantage, and Google's real weakness in coding agents.",
+      "source": "martinalderson.com",
+      "category": "blog",
+      "published": "2026-05-29",
+      "summary_zh": "Google在I/O大会上推出的Gemini 3.5 Flash主打速度快，但成本较高且编程能力中等。文章分析这款模型更适合Google自身生态使用的原因，探讨了其TPU芯片优势，同时也揭示了Google在编程代理领域面临的真正挑战。",
+      "why_matters": "帮助理解Google在AI竞争中如何通过差异化定位寻找突破点。",
+      "tags": "Gemini, Google AI, 编程代理, TPU, AI战略",
+      "id": 348,
+      "added_at": "2026-05-30 04:16:33"
+    },
+    {
+      "title": "DR DOS: Revenge of CP/M",
+      "url": "https://dfarq.homeip.net/dr-dos-revenge-of-cp-m/?utm_source=rss&utm_medium=rss&utm_campaign=dr-dos-revenge-of-cp-m",
+      "summary": "DR DOS was a third party clone of MS DOS that developed a well-deserved niche following in the late 1980s and early 1990s. Even though it was first released May 28, 1988, its copyright date of 1976 suggests some historical\nThe post DR DOS: Revenge of CP/M appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-05-29",
+      "summary_zh": "DR DOS是由Digital Research公司开发的MS DOS兼容操作系统，于1988年发布，却在版权声明中标注1976年，暗示其与CP/M的血缘关系。文章探讨了这款曾与微软MS DOS竞争的第三方DOS系统在1980年代末至1990年代初的发展历程及其在操作系统史上的特殊地位。",
+      "why_matters": "了解微软MS DOS早期竞争对手的窗口，见证操作系统发展史上的多元竞争格局。",
+      "tags": "DOS操作系统, 操作系统历史, 怀旧技术, 商业软件史",
+      "id": 346,
+      "added_at": "2026-05-30 04:16:33"
+    },
+    {
+      "title": "Why people say CRTs don’t have pixels",
+      "url": "https://dfarq.homeip.net/why-people-say-crts-dont-have-pixels/?utm_source=rss&utm_medium=rss&utm_campaign=why-people-say-crts-dont-have-pixels",
+      "summary": "I keep hearing people say that CRTs don&#8217;t have pixels. That is incorrect. We talked about pixels all the time in the 1980s when CRTs were all we had. In this blog post, I will try to clear up the\nThe post Why people say CRTs don&#8217;t have pixels appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-05-29",
+      "summary_zh": "文章针对“CRT显示器没有像素”这一常见说法进行了纠正。作者指出，在1980年代CRT显示器占主流时，“像素”这一术语就已被广泛使用，这说明人们长期以来都在用像素来描述CRT的显示原理，并非现代LCD屏幕才有的概念。",
+      "why_matters": "文章以轻松的方式澄清了一个关于CRT显示技术的常见误解，帮助读者正确理解像素概念的历史渊源。",
+      "tags": "CRT显示器，像素概念，技术历史",
+      "id": 344,
+      "added_at": "2026-05-30 04:16:33"
+    },
+    {
+      "title": "This Week on The Analog Antiquarian",
+      "url": "https://www.filfre.net/2026/05/this-week-on-the-analog-antiquarian/",
+      "summary": "A Portrait of the Bard as a Young Man",
+      "source": "filfre.net",
+      "category": "blog",
+      "published": "2026-05-29",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 342,
+      "added_at": "2026-05-30 04:16:33"
+    },
+    {
+      "title": "Premium: What If...We're In An AI Bubble? (Part 3)",
+      "url": "https://www.wheresyoured.at/premium-what-if-were-in-an-ai-bubble-part-3/",
+      "summary": "Last week I ran the second part of my three-part &#x201c;What If&#x2026;We&#x2019;re In An AI Bubble?&#x201d; series where I have been covering the scenarios that I believe could lead to the bubble popping.Here&#x2019;s what I&#x2019;ve discussed so far:What",
+      "source": "wheresyoured.at",
+      "category": "blog",
+      "published": "2026-05-29",
+      "summary_zh": "这是作者关于“AI泡沫”主题系列文章的第三部分，继续深入分析可能导致AI泡沫破裂的多种场景。作者延续前两部分的思路，系统性探讨了AI投资热潮中存在的风险因素，包括过度炒作、应用落地不及预期、资本泡沫化等问题，旨在帮助读者理性看待当前AI行业的投资热潮。",
+      "why_matters": "作者提供了客观且有深度的分析视角，帮助读者在AI热潮中保持理性思考，特别适合关注科技投资的读者参考。",
+      "tags": "AI泡沫, 投资风险, 科技行业分析",
+      "id": 340,
+      "added_at": "2026-05-30 04:16:33"
+    },
+    {
+      "title": "Composer’s dependency policies",
+      "url": "https://nesbitt.io/2026/05/29/composer-dependency-policies.html",
+      "summary": "uBlock Origin for composer install",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-05-29",
+      "summary_zh": "本文探讨了Composer的依赖策略管理机制，涵盖如何控制项目依赖的安全性、版本约束以及依赖解析规则等核心概念，帮助PHP开发者更好地理解和管理项目依赖关系。",
+      "why_matters": "为PHP开发者提供Composer依赖管理的最佳实践指南，提升项目依赖安全意识。",
+      "tags": "Composer, PHP, 依赖管理, 安全策略",
+      "id": 338,
+      "added_at": "2026-05-30 04:16:33"
+    },
+    {
+      "title": "Online (one-pass) algorithms",
+      "url": "https://www.johndcook.com/blog/2026/05/29/online-one-pass-algorithms/",
+      "summary": "Canonical example The sample variance of a set of numbers is defined in terms of the sum of the squared distances from each point to the mean. So it would seem that you first need to calculate the mean, then go back and compute the squared differences from the mean. And yet sample variance can [&#8230;]\nThe post Online (one-pass) algorithms first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-05-29",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 336,
+      "added_at": "2026-05-30 04:16:33"
+    },
+    {
+      "title": "The Go language server can do some impressive code navigation",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/programming/GoLSPImpressiveCodeNavigation",
+      "summary": "For reasons outside the scope of this entry, I recently dug into how\nthe Go runtime did (Unix) signal handling on 64-bit x86 Linux. When I undertook\nthis quest, I decided that the easiest way to navigate through the\ncode of the Go runtime was to use the code navigation features exposed\nby the standard Go language server, gopls.\nIn the process I was surprised by just how good its code navigation\nwas, even in the Go runtime.\n\nOn Linux, Go's signal handling talks directly to the Linux kernel\nrather",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-05-29",
+      "summary_zh": "作者在研究Go运行时信号处理机制时，发现Go语言服务器提供了令人印象深刻的代码导航功能，这些功能可以帮助开发者高效浏览和分析Go运行时代码。",
+      "why_matters": "展示了Go语言服务器强大的代码导航能力，对于理解大型代码库（如Go运行时）很有帮助。",
+      "tags": "Go语言，语言服务器，代码导航，IDE",
+      "id": 334,
+      "added_at": "2026-05-30 04:16:33"
+    },
+    {
+      "title": "The UK Government's Low Value Purchase System is a Waste of Time",
+      "url": "https://shkspr.mobi/blog/2026/05/the-uk-governments-low-value-purchase-system-is-a-waste-of-time/",
+      "summary": "It can be hard running a small business. If you want to sell to a large organisation like the UK Government, there are forms to fill in, checks to comply with, tenders to bid on, and a hundred other things.  Luckily, there&#039;s the RM6237 Low Value Purchase System to make everything better. If a department wants to buy something below a certain threshold, they can contact any of the registered…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-05-29",
+      "summary_zh": "文章批评英国政府的RM6237低价值采购系统，认为该系统并未如预期般简化政府采购流程，反而因为繁琐的表单、审核和竞标要求，给小企业参与政府采购设置了障碍。作者指出，政府在推行数字化采购系统的同时，实际上并未真正降低小型供应商的参与门槛。",
+      "why_matters": "对政府采购流程感兴趣或关注政府数字化转型效果的人，这篇文章提供了来自供应商视角的真实吐槽。",
+      "tags": "政府采购, 数字政府, 中小企业",
+      "id": 332,
+      "added_at": "2026-05-30 04:16:33"
+    },
+    {
+      "title": "One Group, Clearly, Is Deranged",
+      "url": "https://paulkrugman.substack.com/p/whos-deranged-exactly",
+      "summary": "Paul Krugman, describing a few striking data visualizations:\n\n\n  YouGov’s surveys subdivide Republicans into those who do and those\nwho don’t support MAGA — and the economic views of these two\ngroups are very different. A remarkable 65 percent of non-MAGA\nRepublicans say that the economy is getting worse, while only 11\npercent say that it is getting better. [...]\n\nAside from MAGA Republicans, Americans are bunched at the upper\nleft, with few people seeing the economy getting better and the\nvast ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-05-29",
+      "summary_zh": "本文引用YouGov最新调查数据，将共和党人细分为MAGA支持者和非MAGA支持者两组进行对比分析。结果显示，这两类群体对经济状况的认知存在巨大差异——高达65%的非MAGA共和党人对经济前景持不同看法，而MAGA共和党人的观点则明显偏向一致，凸显出美国政治内部观点分化的现状。",
+      "why_matters": "通过直观的数据对比揭示美国政治生态中不同群体的认知差异，信息量丰富且论证有力。",
+      "tags": "美国政治, 民调数据, 社会分歧",
+      "id": 330,
+      "added_at": "2026-05-30 04:16:33"
+    },
+    {
+      "title": "It's hard to justify buying a Framework 12",
+      "url": "https://www.jeffgeerling.com/blog/2026/its-hard-to-justify-framework-12/",
+      "summary": "My nephew just graduated high school, and wants a laptop. When he decides what computer to buy, price (or more precisely, value) is the most important attribute.\nApple's MacBook Neo upended the 'value laptop' equation—Apple's not supposed to be both the cheapest option and the best value... but it seems like that's squarely where the Neo landed for the good-but-cheap laptop category.\n\n\n\nMy nephew is also my godson, and to kick off his computing journey, I thought I'd let him choose from a Framew",
+      "source": "jeffgeerling.com",
+      "category": "blog",
+      "published": "2026-05-29",
+      "summary_zh": "文章作者谈到刚高中毕业的侄子想买笔记本电脑，而价格（或者说性价比）是其最看重的因素。作者指出苹果MacBook Neo颠覆了传统的“性价比笔记本电脑”等式——苹果本不该同时成为最便宜且最具性价比的选择，但现在却成了现实。文章暗示售价较低的Framework 12笔记本在整体价值上反而难以与MacBook Neo竞争。",
+      "why_matters": "文章从一个普通消费者的视角，客观分析了当前笔记本电脑市场的性价比格局变化，对正在选购电脑的读者有参考价值。",
+      "tags": "笔记本电脑, 性价比, 苹果, Framework",
+      "id": 328,
+      "added_at": "2026-05-30 04:16:33"
+    },
+    {
+      "title": "Anthropic's run-rate revenue hits $47 billion",
+      "url": "https://simonwillison.net/2026/May/29/anthropic/#atom-everything",
+      "summary": "The most interesting thing about Anthropic's $65B Series H announcement is this line (emphasis mine):\n\nSince our Series G in February, adoption has continued to grow across global enterprise customers, and our run-rate revenue crossed $47 billion earlier this month.\n\nAnthropic have made a bit of a habit of sharing their \"run-rate revenue\" in this kind of announcement, which is an annualized projection of their current revenue - typically calculated by taking the most recent month and multiplying",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-05-29",
+      "summary_zh": "Anthropic刚完成65亿美元H轮融资，融资文件中透露其年化收入已突破470亿美元。自今年2月G轮融资以来，公司在全球企业客户中的采用率持续增长，AI行业竞争愈发激烈。",
+      "why_matters": "了解当前AI领域融资和收入格局的重要参考，展现AI行业的爆发式增长态势。",
+      "tags": "AI融资，Anthropic，人工智能",
+      "id": 326,
+      "added_at": "2026-05-30 04:16:33"
+    },
+    {
+      "title": "datasette 1.0a31",
+      "url": "https://simonwillison.net/2026/May/29/datasette/#atom-everything",
+      "summary": "Release: datasette 1.0a31\n        Another significant alpha release, with two new headline features.\n\nDatasette now offers users with the necessary permissions the ability to both execute write queries against their database and to save stored queries (renamed from \"canned queries\") both privately and for use by other members of their Datasette instance.\n\nThere's more detail in SQL write queries and stored queries in Datasette 1.0a31 on the Datasette blog, which now has three posts introducing n",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-05-29",
+      "summary_zh": "Datasette 1.0a31版本发布，这是又一个重要的alpha版本更新。新增两大主要功能：拥有相应权限的用户现在可以执行写查询操作，以及可以将查询保存为存储查询（已从\"canned queries\"更名为\"stored queries\"），并支持私有保存方式。",
+      "why_matters": "这是Datasette数据库工具的重要迭代，添加了写入能力和私有查询存储功能，对需要修改数据的用户很有帮助。",
+      "tags": "Datasette, 数据库工具, Python",
+      "id": 324,
+      "added_at": "2026-05-30 04:16:33"
+    },
+    {
       "title": "Hermes Agent v0.15.1 (2026.5.29) — The Patch Release",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.29",
       "source": "hermes-agent",
@@ -4087,5 +4256,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-29 14:20:14"
+  "last_updated": "2026-05-30 04:16:33"
 }
