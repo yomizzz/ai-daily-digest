@@ -293,18 +293,36 @@
     <header>
         <h1>🤖 每日 AI 资讯精选</h1>
         <p class="subtitle">自动聚合优质内容，AI 生成中文摘要</p>
-        <p class="last-updated">最后更新：2026-05-29 04:15:09</p>
+        <p class="last-updated">最后更新：2026-05-29 14:20:14</p>
     </header>
 
     <main>
         <div class="filter-bar">
             <button class="filter-btn active" data-filter="all">全部</button>
 <button class="filter-btn" data-filter="blog">blog</button><button class="filter-btn" data-filter="hermes">hermes</button><button class="filter-btn" data-filter="openclaw">openclaw</button><button class="filter-btn" data-filter="security">security</button>
-            <span class="article-count">共 320 篇</span>
+            <span class="article-count">共 323 篇</span>
         </div>
 
         <div class="articles" id="articles">
-<div class="article" data-category="blog">
+<div class="article" data-category="hermes">
+    <div class="article-header">
+        <a href="detail/d5dbd5ccd8bd.html" class="article-title">Hermes Agent v0.15.1 (2026.5.29) — The Patch Release</a>
+        <span class="category-tag">hermes</span>
+    </div>
+    <div class="article-meta">hermes-agent · 2026-05-29</div>
+    <p class="article-summary"><ul class="summary-list"><li>修复仪表板无限重新加载循环问题（v0.15.0 在 loopback 模式下的紧急热修复）</li><li>修复 kanban worker SIGTERM 问题</li><li>统一 `/model` picker 选择器</li><li>支持 `/yolo` session 绕过</li><li>更新完整的 19,932 条目 skills.sh 目录</li><li>恢复 `.md` 媒体文件交付功能</li><li>增强 gateway probe-stepdown 安全机制</li></ul></p>
+    <div class="article-why">💡 <a href="detail/d5dbd5ccd8bd.html" style="color:var(--color-link);text-decoration:none;">查看中文摘要与详情 →</a></div>
+<div class="tags">标签：Hermes Agent</div>
+</div><div class="article" data-category="hermes">
+    <div class="article-header">
+        <a href="detail/3b9063a55b5d.html" class="article-title">Hermes Agent v0.15.0 (2026.5.28) — The Velocity Release</a>
+        <span class="category-tag">hermes</span>
+    </div>
+    <div class="article-meta">hermes-agent · 2026-05-29</div>
+    <p class="article-summary"><ul class="summary-list"><li>核心代码大幅精简：run_agent.py 从 16,083 行缩减至 3,821 行（-76%），重构为 14 个 agent/* 模块</li><li>Kanban 升级为完整多代理平台，新增 orchestrator 自动分解、swarm 拓扑、定时任务、per-task worktree 和 per-task 模型覆盖等 104 项 PR</li><li>性能持续优化：启动时间再减 1 秒，per-conversation 函数调用减少 47%，hermes --version 基准测试超越 Codex CLI</li></ul></p>
+    <div class="article-why">💡 <a href="detail/3b9063a55b5d.html" style="color:var(--color-link);text-decoration:none;">查看中文摘要与详情 →</a></div>
+<div class="tags">标签：Hermes Agent</div>
+</div><div class="article" data-category="blog">
     <div class="article-header">
         <a href="detail/8bd99519af2f.html" class="article-title">Nitpicking the shell history scene in ‘Tron: Legacy’</a>
         <span class="category-tag">blog</span>
@@ -439,6 +457,15 @@
     <p class="article-summary">文章探讨了3D打印机热床是否能作为FM收音机天线使用的问题。作者Pooch from Repkord注意到，PCB热床上的走线与嵌入式天线有着相似的结构，产生了将热床改造成收音天线的想法。文中描述了具体的实验尝试过程和结果。</p>
     <div class="article-why">💡 <a href="detail/54f9da57fb95.html" style="color:var(--color-link);text-decoration:none;">有趣的跨界实验，将日常3D打印耗材与无线电技术结合，展示了创意改造的无限可能。 →</a></div>
 <div class="tags">标签：3D打印, 天线实验, 创客DIY</div>
+</div><div class="article" data-category="openclaw">
+    <div class="article-header">
+        <a href="detail/04cbdfa5f155.html" class="article-title">openclaw 2026.5.27</a>
+        <span class="category-tag">openclaw</span>
+    </div>
+    <div class="article-meta">openclaw · 2026-05-28</div>
+    <p class="article-summary"><ul class="summary-list"><li>新增核心OpenAI兼容embedding provider，支持本地和托管OpenAI样式端点</li><li>新增Pixverse视频生成provider及API区域选择功能</li><li>DeepInfra模型目录浏览支持加载完整凭证感知模型集</li><li>VLLM thinking参数已接入配置</li><li>Claude CLI OAuth支持PI auth profiles加载</li><li>Telegram消息发送采用持久化出站传递机制</li><li>iMessage抑制重复的本地执行审批提示</li></ul></p>
+    <div class="article-why">💡 <a href="detail/04cbdfa5f155.html" style="color:var(--color-link);text-decoration:none;">查看新增功能与 Bug 修复详情 →</a></div>
+<div class="tags">标签：OpenClaw</div>
 </div><div class="article" data-category="blog">
     <div class="article-header">
         <a href="detail/9e83a0e24628.html" class="article-title">SQLAlchemy 2 In Practice - Solutions to the Exercises</a>

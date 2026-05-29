@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.15.1 (2026.5.29) — The Patch Release",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.29",
+      "source": "hermes-agent",
+      "published": "2026-05-29",
+      "category": "hermes",
+      "summary_zh": "- 修复仪表板无限重新加载循环问题（v0.15.0 在 loopback 模式下的紧急热修复）\n- 修复 kanban worker SIGTERM 问题\n- 统一 `/model` picker 选择器\n- 支持 `/yolo` session 绕过\n- 更新完整的 19,932 条目 skills.sh 目录\n- 恢复 `.md` 媒体文件交付功能\n- 增强 gateway probe-stepdown 安全机制\n- 优化 web-URL 重定向传递\n- 为 kanban worker 添加引用图片的视觉识别功能\n- 默认启用 hindsight observation\n- Docker 新增 `--insecure` 环境变量显式选项\n- 改进 MCP server bare-command PATH 解析\n- 修复 arm64 架构 PR-build 缓存问题",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "Hermes Agent v0.15.0 (2026.5.28) — The Velocity Release",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.28",
+      "source": "hermes-agent",
+      "published": "2026-05-29",
+      "category": "hermes",
+      "summary_zh": "- 核心代码大幅精简：run_agent.py 从 16,083 行缩减至 3,821 行（-76%），重构为 14 个 agent/* 模块\n- Kanban 升级为完整多代理平台，新增 orchestrator 自动分解、swarm 拓扑、定时任务、per-task worktree 和 per-task 模型覆盖等 104 项 PR\n- 性能持续优化：启动时间再减 1 秒，per-conversation 函数调用减少 47%，hermes --version 基准测试超越 Codex CLI\n- session_search 性能提升 4,500 倍且转为免费功能\n- 新增 Promptware 防御机制，抵御 Brainworm 类攻击\n- 集成 Bitwarden Secrets Manager，统一管理多 provider API keys\n- Skill bundles 功能：单个 slash 命令可加载完整工作流\n- Ink TUI 新增多会话 orchestrator\n- 图像生成：新增 Krea 2 Medium/Large 和 FAL provider（插件形式）\n- MCP catalog 获 Nous 批准，新增交互式 picker 和 OpenHands 编排技能\n- ntfy 成为第 23 个支持的消息通知平台\n- xAI 深度集成：Web Search 插件、xai-oauth hermes proxy upstream、退役模型检测与迁移（hermes migrate xai）、自然 TTS 语音标签停顿、base_url 泄露防护、Grok 的 OpenAI 风格执行指南",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Nitpicking the shell history scene in ‘Tron: Legacy’",
       "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/tron-legacy/",
       "summary": "A detailed look at a still from a 16-year-old film, which I recently found to make a good educational exercise, with the bonus of being fun.",
@@ -194,6 +214,18 @@
       "tags": "3D打印, 天线实验, 创客DIY",
       "id": 306,
       "added_at": "2026-05-29 04:15:09"
+    },
+    {
+      "title": "openclaw 2026.5.27",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.27",
+      "source": "openclaw",
+      "published": "2026-05-28",
+      "category": "openclaw",
+      "summary": "- 新增核心OpenAI兼容embedding provider，支持本地和托管OpenAI样式端点\n- 新增Pixverse视频生成provider及API区域选择功能\n- DeepInfra模型目录浏览支持加载完整凭证感知模型集\n- VLLM thinking参数已接入配置\n- Claude CLI OAuth支持PI auth profiles加载\n- Telegram消息发送采用持久化出站传递机制\n- iMessage抑制重复的本地执行审批提示\n- Google Chat在私信中停止线程发送\n- ClawHub新增插件显示元数据，优化目录列表命名\n- 心跳运行时模板从文档资产中独立，添加遗留模板兼容性修复\n\n🐛 Bug 修复：- 安全隔离：群组提示文本与系统提示路由分离，阻止有副作用的命令包装器和unsafe Node运行时环境覆盖\n- 安全隔离：拒绝无认证Tailscale暴露和不受信任的Microsoft Teams服务URL\n- 安全隔离：实施`/allowlist configWrites`源策略，节点/设备角色审批需管理员权限\n- Codex可靠性：运行时模型优先解析，工作区内存通过工具路由，应用服务器客户端在故障后保留\n- Codex可靠性：本地hook relay生成跨重启保留，避免虚假的运行时live switches\n- 性能优化：会话读取、插件元数据、认证环境等减少热路径重新发现\n- 通道稳定性：Slack保留清理期间的最终回复，Matrix提及规则更严格\n- 通道稳定性：Discord公会请求检查更严格，恢复的工具警告工件不再进入成功回复",
+      "features": "- 新增核心OpenAI兼容embedding provider，支持本地和托管OpenAI样式端点\n- 新增Pixverse视频生成provider及API区域选择功能\n- DeepInfra模型目录浏览支持加载完整凭证感知模型集\n- VLLM thinking参数已接入配置\n- Claude CLI OAuth支持PI auth profiles加载\n- Telegram消息发送采用持久化出站传递机制\n- iMessage抑制重复的本地执行审批提示\n- Google Chat在私信中停止线程发送\n- ClawHub新增插件显示元数据，优化目录列表命名\n- 心跳运行时模板从文档资产中独立，添加遗留模板兼容性修复",
+      "bug_fixes": "- 安全隔离：群组提示文本与系统提示路由分离，阻止有副作用的命令包装器和unsafe Node运行时环境覆盖\n- 安全隔离：拒绝无认证Tailscale暴露和不受信任的Microsoft Teams服务URL\n- 安全隔离：实施`/allowlist configWrites`源策略，节点/设备角色审批需管理员权限\n- Codex可靠性：运行时模型优先解析，工作区内存通过工具路由，应用服务器客户端在故障后保留\n- Codex可靠性：本地hook relay生成跨重启保留，避免虚假的运行时live switches\n- 性能优化：会话读取、插件元数据、认证环境等减少热路径重新发现\n- 通道稳定性：Slack保留清理期间的最终回复，Matrix提及规则更严格\n- 通道稳定性：Discord公会请求检查更严格，恢复的工具警告工件不再进入成功回复",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
     },
     {
       "title": "SQLAlchemy 2 In Practice - Solutions to the Exercises",
@@ -4055,5 +4087,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-29 04:15:09"
+  "last_updated": "2026-05-29 14:20:14"
 }

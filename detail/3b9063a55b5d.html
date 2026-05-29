@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>Hermes Agent v0.15.0 (2026.5.28) — The Velocity Release</title>
     <style>
 
         :root {
@@ -287,56 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-05-29 14:20:14</p>
+        <h1>Hermes Agent v0.15.0 (2026.5.28) — The Velocity Release</h1>
+        <p><span class="category-tag">hermes</span> hermes-agent · 2026-05-29</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 1 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="release">
-    <div class="release-header">
-        <div style="display:flex;align-items:center;flex-wrap:wrap;">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.5.27" target="_blank" class="release-title">openclaw 2026.5.27</a>
-            <span class="release-tag">v2026.5.27</span>
-        </div>
-        <span class="release-date">2026-05-28</span>
-    </div>
-<div class="release-section">
-    <div class="release-section-title">🆕 新增功能</div>
-    <div class="release-card"><ul class="summary-list"><li>- 新增核心OpenAI兼容embedding provider，支持本地和托管OpenAI样式端点</li><li>- 新增Pixverse视频生成provider及API区域选择功能</li><li>- DeepInfra模型目录浏览支持加载完整凭证感知模型集</li><li>- VLLM thinking参数已接入配置</li><li>- Claude CLI OAuth支持PI auth profiles加载</li><li>- Telegram消息发送采用持久化出站传递机制</li><li>- iMessage抑制重复的本地执行审批提示</li><li>- Google Chat在私信中停止线程发送</li><li>- ClawHub新增插件显示元数据，优化目录列表命名</li><li>- 心跳运行时模板从文档资产中独立，添加遗留模板兼容性修复</li></ul></div>
-</div><div class="release-section">
-    <div class="release-section-title">🐛 Bug 修复</div>
-    <div class="release-card"><ul class="summary-list"><li>- 安全隔离：群组提示文本与系统提示路由分离，阻止有副作用的命令包装器和unsafe Node运行时环境覆盖</li><li>- 安全隔离：拒绝无认证Tailscale暴露和不受信任的Microsoft Teams服务URL</li><li>- 安全隔离：实施`/allowlist configWrites`源策略，节点/设备角色审批需管理员权限</li><li>- Codex可靠性：运行时模型优先解析，工作区内存通过工具路由，应用服务器客户端在故障后保留</li><li>- Codex可靠性：本地hook relay生成跨重启保留，避免虚假的运行时live switches</li><li>- 性能优化：会话读取、插件元数据、认证环境等减少热路径重新发现</li><li>- 通道稳定性：Slack保留清理期间的最终回复，Matrix提及规则更严格</li><li>- 通道稳定性：Discord公会请求检查更严格，恢复的工具警告工件不再进入成功回复</li></ul></div>
-</div>
-</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><ul class="summary-list"><li>核心代码大幅精简：run_agent.py 从 16,083 行缩减至 3,821 行（-76%），重构为 14 个 agent/* 模块</li><li>Kanban 升级为完整多代理平台，新增 orchestrator 自动分解、swarm 拓扑、定时任务、per-task worktree 和 per-task 模型覆盖等 104 项 PR</li><li>性能持续优化：启动时间再减 1 秒，per-conversation 函数调用减少 47%，hermes --version 基准测试超越 Codex CLI</li><li>session_search 性能提升 4,500 倍且转为免费功能</li><li>新增 Promptware 防御机制，抵御 Brainworm 类攻击</li><li>集成 Bitwarden Secrets Manager，统一管理多 provider API keys</li><li>Skill bundles 功能：单个 slash 命令可加载完整工作流</li><li>Ink TUI 新增多会话 orchestrator</li><li>图像生成：新增 Krea 2 Medium/Large 和 FAL provider（插件形式）</li><li>MCP catalog 获 Nous 批准，新增交互式 picker 和 OpenHands 编排技能</li><li>ntfy 成为第 23 个支持的消息通知平台</li><li>xAI 深度集成：Web Search 插件、xai-oauth hermes proxy upstream、退役模型检测与迁移（hermes migrate xai）、自然 TTS 语音标签停顿、base_url 泄露防护、Grok 的 OpenAI 风格执行指南</li></ul></div>
+<div class="tags">标签：Hermes Agent</div>
+        <div class="detail-why">💡 查看中文摘要与详情</div>
+        <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.28" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>
