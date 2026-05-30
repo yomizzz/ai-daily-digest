@@ -1,6 +1,149 @@
 {
   "articles": [
     {
+      "title": "Reading List 05/30/26",
+      "url": "https://www.construction-physics.com/p/reading-list-053026",
+      "summary": "A California chemical leak, weapons-grade plutonium for nuclear reactor startups, a startup that will clean your house to get robot training data, Blue Origin&#8217;s rocket explosion, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-05-30",
+      "summary_zh": "本期阅读清单汇集了近期多条科技与工程领域的新闻，包括加州化学品泄漏事件、核武器级钚材料在核反应堆启动中的应用、某初创公司通过派人清洁房屋来采集机器人训练数据的商业模式，以及蓝色起源公司的火箭爆炸事故等。",
+      "why_matters": "这份综合性的工程科技阅读清单适合希望快速了解行业动态的读者，内容涵盖核能、机器人、航天等多个热门领域。",
+      "tags": "科技新闻, 工程事故, 行业动态",
+      "id": 358,
+      "added_at": "2026-05-31 03:08:13"
+    },
+    {
+      "title": "This Week in Package Management: 30 May 2026",
+      "url": "https://nesbitt.io/2026/05/30/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-05-30",
+      "summary_zh": "这篇文章是 package management 领域的每周资讯汇总，日期标注为2026年5月30日。从原文摘要来看，内容涵盖包管理领域的版本发布、安全公告和相关文章，但具体文章内容尚未提供。",
+      "why_matters": "适合关注包管理生态动态的开发者追踪行业最新信息。",
+      "tags": "包管理，软件开发，开源生态",
+      "id": 356,
+      "added_at": "2026-05-31 03:08:13"
+    },
+    {
+      "title": "Notes from May 2026",
+      "url": "https://evanhahn.com/notes-from-may-2026/",
+      "summary": "My blog turned 16 this month! I did nothing to celebrate, but made some little tools and clicked some links about tech ethics.\nThings from me this month\nI published four little tools this month:\n\nZIP Shrinker, a web app that shrinks ZIP files with higher compression ratios\nA command line tool to do (completely offline) translation\nOpen Link in Unloaded Tab, a Firefox extension to open links without loading them\npng-cmp, a command line tool to compare PNG pixel data\n\nI also did some work on Helme",
+      "source": "evanhahn.com",
+      "category": "blog",
+      "published": "2026-05-30",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 354,
+      "added_at": "2026-05-31 03:08:13"
+    },
+    {
+      "title": "On first looking into JAX",
+      "url": "https://www.gilesthomas.com/2026/05/on-first-looking-into-jax",
+      "summary": "Much have I travell'd in the realms of gold,\n  And many goodly states and kingdoms seen;\n  Round many western islands have I been\n  Which bards in fealty to Apollo hold.\n  Oft of one wide expanse had I been told\n  That deep-brow'd Homer ruled as his demesne;\n  Yet did I never breathe its pure serene\n  Till I heard Chapman speak out loud and bold:\n  Then felt I like some watcher of the skies\n  When a new planet swims into his ken;\n  Or like stout Cortez when with eagle eyes\n  He star'd at the Pac",
+      "source": "gilesthomas.com",
+      "category": "blog",
+      "published": "2026-05-30",
+      "summary_zh": "JAX 是 Google 开发的高性能机器学习框架，结合了 Autograd 的自动微分能力和 XLA 的编译器优化。本文探讨了作者初次接触 JAX 的体验，分析其在数值计算和机器学习研究中的应用优势，包括即时编译（JIT）、向量化映射（vmap）和自动并行等核心特性。",
+      "why_matters": "适合想了解或入门 JAX 框架的机器学习开发者阅读，帮助快速把握 JAX 的核心理念和使用方法。",
+      "tags": "JAX，机器学习框架，Google，自动微分",
+      "id": 352,
+      "added_at": "2026-05-31 03:08:13"
+    },
+    {
+      "title": "Microcode inside the Intel 8087 floating-point chip: register exchange",
+      "url": "http://www.righto.com/2026/05/microcode-inside-intel-8087-floating.html",
+      "summary": "In 1980, Intel introduced the 8087 floating-point chip, a co-processor that made floating-point operations\nup to 100 times faster.\nThis chip was highly influential, and today most processors use the floating-point standard introduced by the 8087.\nThe 8087 uses complicated algorithms to accurately compute functions such as square roots, tangents, and exponentials.\nThese algorithms are implemented inside the chip in low-level code called microcode.\nI'm part of a group, the Opcode Collective, that ",
+      "source": "righto.com",
+      "category": "blog",
+      "published": "2026-05-30",
+      "summary_zh": "本文深入分析了Intel 8087浮点协处理器的微码实现，揭示这款1980年推出的芯片如何通过精心设计的复杂算法实现高精度浮点运算，其中重点解析了寄存器交换机制的具体工作原理。",
+      "why_matters": "适合对计算机硬件发展历史、芯片逆向工程和底层系统设计感兴趣的读者。",
+      "tags": "Intel 8087，微码分析，浮点运算",
+      "id": 350,
+      "added_at": "2026-05-31 03:08:13"
+    },
+    {
+      "title": "Our servers mostly don't seem to have high peak power usage",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/tech/ServersLowMaxPowerConsumption",
+      "summary": "I wrote a bit ago about how our servers seem to have surprisingly\nlow power consumption, where I looked\nat IPMI\nbased power consumption information to look at their current, typical\npower usage and found that several of them were sitting at lower\npower usage than my desktops. I'm still interested in typical or\naverage power usage for reasons beyond the scope of this entry, but\nnow I'm also interested in maximum power usage that we've observed.\n\nOne reason to be interested in maximum power usage ",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-05-30",
+      "summary_zh": "作者通过IPMI智能平台管理接口持续监测服务器的实际功耗，发现服务器的典型功率消耗远低于预期，部分服务器的用电量甚至低于普通台式机。这一发现挑战了业界对服务器高功耗的固有认知，揭示了现代服务器在低负载状态下的出色能效表现。",
+      "why_matters": "为数据中心能耗管理提供了真实数据参考，打破“服务器必然高耗电”的刻板印象，对评估服务器实际运行成本具有参考价值。",
+      "tags": "服务器运维, 功耗监控, 数据中心能效",
+      "id": 348,
+      "added_at": "2026-05-31 03:08:13"
+    },
+    {
+      "title": "Pluralistic: Carneyism without Carney (30 May 2026)",
+      "url": "https://pluralistic.net/2026/05/30/rupture/",
+      "summary": "Today's links Carneyism without Carney: Eh? Hey look at this: Delights to delectate. Object permanence: Replacing pharma patents with bounties; USTR v cheap leukemia meds; Plutocrats x wealth segregation; Anonymous Analytics; Scott Walker sells off donors; Anonymization v metadata; Probably; Amazon warehouse workers are the future of Amazon coders; Warcraft eggs; Brainwashing school; People who don't know The Onion is satire; \"Company Town\"; America is a scam. Upcoming appearances: London, Kansa",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-05-30",
+      "summary_zh": "这是一篇2026年5月30日发布的链接集锦文章，汇集了多个值得关注的议题。文章涉及用“奖金制度”替代药品专利的可能性、美国政府与廉价白血病药物的政策博弈、富豪阶层与财富隔离现象、匿名分析与元数据保护的技术讨论，以及亚马逊相关话题。这些看似零散的主题实则反映了当代科技与政策交织的复杂生态。",
+      "why_matters": "适合关注科技政策、数字权利和社会公平议题的读者快速浏览一周热点。",
+      "tags": "科技政策, 数字隐私, 社会公平",
+      "id": 346,
+      "added_at": "2026-05-31 03:08:13"
+    },
+    {
+      "title": "Yours Truly on TBPN Yesterday",
+      "url": "https://www.youtube.com/live/sQVwLUxFdMY?t=1997",
+      "summary": "Fun show, good questions I thought.\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-05-30",
+      "summary_zh": "本文记录了作者（John Gruber）参加TBPN播客节目录制的内容，作者表示这是一次有趣的节目体验，对节目中提出的问题感到满意，但具体讨论细节需查看原文或节目内容才能了解。",
+      "why_matters": "作为知名科技评论人John Gruber的访谈节目，读者可以了解他对科技行业的观点和见解。",
+      "tags": "播客，科技访谈，Daring Fireball",
+      "id": 344,
+      "added_at": "2026-05-31 03:08:13"
+    },
+    {
+      "title": "Daniel Jalkut on AI",
+      "url": "https://mastodon.social/@danielpunkass/116639318125898071",
+      "summary": "Daniel Jalkut, on Mastodon (cross-posted to Bluesky and Threads):\n\n\n  My take on AI is, essentially, everybody who’s against it is too\nagainst it and everybody who’s for it is too for it.\n\n\nI concur with this take completely.\n\n(Sidenote: The different reply threads on the three networks speak loudly to the cultural and algorithmic differences between them. Good lord has Meta steered Threads into “make people argumentative” engagement.)\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-05-30",
+      "summary_zh": "Daniel Jalkut在Mastodon上分享了他对AI的看法，认为目前反对AI的人过于极端，同时支持AI的人也过于极端。作者对此观点表示完全赞同，并指出在Mastodon、Bluesky和Threads三个社交平台上，同一内容的讨论氛围差异明显，反映出网络上对AI议题的极端化倾向。",
+      "why_matters": "文章提出的\"中间立场\"观点简洁有力，呼吁人们对AI技术保持理性思考，避免非黑即白的极端态度。",
+      "tags": "AI观点，极端化，理性思考",
+      "id": 342,
+      "added_at": "2026-05-31 03:08:13"
+    },
+    {
+      "title": "Meta Is Launching Instagram, Facebook, and WhatsApp Subscriptions for ‘Fun Features’",
+      "url": "https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/",
+      "summary": "Sarah Perez, reporting for TechCrunch:\n\n\n  Meta is doubling down on its subscription offerings. On Wednesday,\nthe social networking giant announced it’s now rolling out its\nconsumer subscription plans globally for its flagship apps,\nInstagram, Facebook, and WhatsApp, and beginning tests of new\nsubscriptions for businesses, creators, and Meta AI users.\n\nFor a few dollars per month, consumers subscribing to\nInstagram Plus ($3.99/mo), Facebook Plus ($3.99/mo), or\nWhatsApp Plus ($2.99/mo) will gain ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-05-30",
+      "summary_zh": "Meta公司宣布将其消费者订阅服务扩展至Instagram、Facebook和WhatsApp三大旗舰应用，并在全球范围内推出测试新订阅功能。此举表明Meta正加大力度多元化其收入来源，通过提供“趣味功能”的付费订阅模式吸引用户付费升级。",
+      "why_matters": "反映了社交媒体平台从广告主导向订阅模式转型的行业趋势，了解大型科技公司商业策略变化的重要参考。",
+      "tags": "Meta、订阅服务、Instagram、商业模式",
+      "id": 340,
+      "added_at": "2026-05-31 03:08:13"
+    },
+    {
+      "title": "Quoting Daniel Jalkut",
+      "url": "https://simonwillison.net/2026/May/30/daniel-jalkut/#atom-everything",
+      "summary": "My take on AI is, essentially, everybody who’s against it is too against it and everybody who’s for it is too for it.\n&mdash; Daniel Jalkut, via John Gruber\n\n    Tags: ai",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-05-30",
+      "summary_zh": "技术博主 Daniel Jalkut 对人工智能态度发表了简明观点，认为当前围绕 AI 的争议中存在两个极端：反对者往往反对得过于激进，而支持者也常支持得过于狂热。在他看来，这两种极端立场都偏离了理性讨论的轨道。",
+      "why_matters": "一句话精准概括 AI 争议中的双方偏颇，值得对 AI 话题感兴趣的读者深思。",
+      "tags": "ai, 科技观点, 理性思考",
+      "id": 338,
+      "added_at": "2026-05-31 03:08:13"
+    },
+    {
       "title": "What's going on with Gemini?",
       "url": "https://martinalderson.com/posts/whats-going-on-with-gemini/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
       "summary": "Google's Gemini 3.5 Flash was the headline model at I/O - fast, but expensive and middling at coding. Why it makes more sense as a model built for Google itself, the TPU advantage, and Google's real weakness in coding agents.",
@@ -4266,5 +4409,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-30 13:52:25"
+  "last_updated": "2026-05-31 03:08:13"
 }
