@@ -190,6 +190,16 @@
       "tags": "Hermes Agent"
     },
     {
+      "title": "Hermes Agent v0.15.2 (2026.5.29.2)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.29.2",
+      "source": "hermes-agent",
+      "published": "2026-05-29",
+      "category": "hermes",
+      "summary_zh": "- 修复打包问题：将 plugin.yaml 清单文件正确包含在 wheel 和 sdist 发布包中",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Nitpicking the shell history scene in ‘Tron: Legacy’",
       "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/tron-legacy/",
       "summary": "A detailed look at a still from a 16-year-old film, which I recently found to make a good educational exercise, with the bonus of being fun.",
@@ -4256,5 +4266,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-30 04:16:33"
+  "last_updated": "2026-05-30 13:52:25"
 }
