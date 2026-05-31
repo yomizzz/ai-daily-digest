@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "title": "A day in the threatened forests of the Central Highlands",
+      "url": "https://hey.paris/posts/threatened-forests/",
+      "summary": "We spent today in some of the forests up in lutruwita/Tasmania&rsquo;s Central Highlands that are being logged, or are about to be. It was a Bob Brown Foundation Threatened Forest Open Day. It was sobering and a bit sad. Also fascinating, and the forest is beautiful.\n\n    \n      \n    The marquee, set up in the forest.\nIt rained pretty much all day. The marquee was up in the middle of the forest and we stood under it while a few people talked. They went through what&rsquo;s happening to these for",
+      "source": "hey.paris",
+      "category": "blog",
+      "published": "2026-05-31",
+      "summary_zh": "作者参加了在澳大利亚塔斯马尼亚中央高地举办的受威胁森林开放日活动，亲眼见证了正在或即将被采伐的原始森林。这次实地探访让作者感到警醒与伤感，同时也为森林的自然之美所打动。",
+      "why_matters": "以第一人称视角真实记录了原始森林面临的砍伐威胁，引发对环境保护的思考。",
+      "tags": "森林保护，塔斯马尼亚，环境危机，自然之美",
+      "id": 362,
+      "added_at": "2026-06-01 03:11:03"
+    },
+    {
+      "title": "Ahoy, DECmate II! the little PDP-8 that could",
+      "url": "https://oldvcr.blogspot.com/2026/05/ahoy-decmate-ii-little-pdp-8-that-could.html",
+      "summary": "In 1982, as we mentioned at length with our history of the DEC Professional, Digital Equipment Corporation attempted to keep their PDP-11 minicomputer market-relevant by turning the venerable architecture into a largely incompatible desktop microcomputer. But that wasn't the only PDP-series mini it happened to, and it wasn't even the first: the PDP-8 actually got the shrink-ray treatment several years before, and not content to merely make it into a smaller general purpose computer, DEC turned i",
+      "source": "oldvcr.blogspot.com",
+      "category": "blog",
+      "published": "2026-05-31",
+      "summary_zh": "暂无摘要",
+      "why_matters": "适合对计算机历史、复古技术、DEC公司历史感兴趣的读者",
+      "tags": "",
+      "id": 360,
+      "added_at": "2026-06-01 03:11:03"
+    },
+    {
+      "title": "Another Gaussian approximation",
+      "url": "https://www.johndcook.com/blog/2026/05/31/another-gaussian-approximation/",
+      "summary": "The function (1 + cos(x))/2 gives a fair approximation to the Gaussian density exp(−x²) You can make the approximation much better by raising it to a power. The function ((1 + cos(x))/2)4 gives a good lower bound and ((1 + cos(x))/2)3.5597 gives a good upper bound. More on that here. There are other ways of [&#8230;]\nThe post Another Gaussian approximation first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-05-31",
+      "summary_zh": "本文介绍了一种使用三角函数(1+cos(x))/2近似高斯密度函数e^(-x²)的方法。通过对该函数进行幂次运算可以显著提升近似精度，其中指数为4时给出良好的下界，指数为3.5597时给出良好的上界。这种近似方法为高斯函数提供了一种简洁的替代表示。",
+      "why_matters": "对于需要简化高斯函数计算或构建替代函数的研究者和开发者，这篇简短的技术分析提供了实用且优雅的解决方案。",
+      "tags": "高斯近似，函数逼近，三角函数",
+      "id": 358,
+      "added_at": "2026-06-01 03:11:03"
+    },
+    {
+      "title": "Who are the actors in the UK's 2015 passport?",
+      "url": "https://shkspr.mobi/blog/2026/05/who-are-the-actors-in-the-uks-2015-passport/",
+      "summary": "I got nerdsniped by a bloody Reddit post!  In 2015, the UK Government launched a new passport design. It immediately attracted negative press for its designers&#039; \"sexist\" decision to feature more men than women.  The government has been accused of sexism over the new UK passport design, which commemorates the achievements of two women but seven men.  It&#039;s true that there are only two named women - …",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-05-31",
+      "summary_zh": "2015年英国政府推出了新版护照设计，因封面人物中男性形象多于女性而引发广泛争议，被批评存在性别偏见。该文章深入探讨了新版护照设计的具体内容以及引发争议的原因，分析了设计师在人物选择上的考量。",
+      "why_matters": "文章以英国护照设计争议为切入点，揭示了公共设计决策背后的性别议题思考，值得关注社会设计公平性的读者一读。",
+      "tags": "英国护照, 性别平等, 公共政策",
+      "id": 356,
+      "added_at": "2026-06-01 03:11:03"
+    },
+    {
+      "title": "Build agents, not pipelines",
+      "url": "https://seangoedecke.com/build-agents-not-pipelines/",
+      "summary": "There are only two ways to use LLMs in a computer program: as part of a pipeline, or as an agent. In other words, either you express the control flow of the program in code, or you give a LLM tools and allow it to manage the control flow itself1.\nHere’s how you might structure a trivial “summarize a bunch of information and email it to me” program as a pipeline:\ncontext = gather_context(various, data, sources)\nllm_response = llm_summarize(context)\nsummary = parse(llm_response)\nemail_me(summary, ",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-05-31",
+      "summary_zh": "本文探讨了在计算机程序中使用LLM的两种模式：管道(pipeline)和代理(agent)。管道模式由代码控制程序执行流程，代理模式则赋予LLM工具让其自行管理控制流。作者的核心观点是建议采用代理模式进行开发，而非依赖传统的管道式设计。",
+      "why_matters": "对LLM应用架构进行了清晰的概念区分，帮助开发者理解何时应让AI自主决策而非按预设流程执行。",
+      "tags": "AI应用架构, LLM开发模式, 智能代理",
+      "id": 354,
+      "added_at": "2026-06-01 03:11:03"
+    },
+    {
+      "title": "Quoting Karen Kwok for Reuters Breakingviews",
+      "url": "https://simonwillison.net/2026/May/31/anthropic-run-rate/#atom-everything",
+      "summary": "Anthropic defines “run-rate revenue” in two parts. Use the last 28 days of sales ⁠from customers charged on a consumption basis and multiply it by 13. Then, multiply the monthly subscription take by 12, ​and add the two together.\n&mdash; Karen Kwok for Reuters Breakingviews, citing \"a person familiar with the matter\"\n\n    Tags: anthropic, ai",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-05-31",
+      "summary_zh": "本文介绍了AI公司Anthropic对“运行率收入”的定义方式，采用两部分计算：先将最近28天的消费型客户收入乘以13，再将月度订阅收入乘以12，两者相加得出年度运行率收入预估。这一财务指标计算方法反映了AI公司常见的混合商业模式。",
+      "why_matters": "简洁明了地解释了AI公司如何用简化的公式估算年度收入，对于理解AI行业财务指标很有帮助。",
+      "tags": "Anthropic, 财务指标, AI公司",
+      "id": 352,
+      "added_at": "2026-06-01 03:11:03"
+    },
+    {
+      "title": "The solution might be cancelling my AI subscription",
+      "url": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/#atom-everything",
+      "summary": "The solution might be cancelling my AI subscription\nI find this post by David Wilson very relatable. David lists 16+ projects he's spun up with AI tooling, and concludes:\n\nI didn't mean to build most of these things. Usually the Claude session started with something like \"write a quick script for X\", and one hour later the result is not a quick script for X, nor in the usual case is my problem solved, whatever the original itch happened to be.\nOn that last point, this technology is horrific for ",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-05-31",
+      "summary_zh": "作者分享了一篇令他产生共鸣的文章，David Wilson列举了自己用AI工具创建的16个以上项目，这些项目往往源于简单的请求如“帮我写个X脚本”，却逐渐演变成更大规模的项目。作者认为这种由AI辅助导致的项目蔓延现象，可能是他考虑取消AI订阅的原因。",
+      "why_matters": "提供了真实用户对AI工具“需求蔓延”问题的反思视角，适合正在评估AI使用成本与收益的读者。",
+      "tags": "AI订阅, 项目蔓延, 工具反思",
+      "id": 350,
+      "added_at": "2026-06-01 03:11:03"
+    },
+    {
       "title": "openclaw 2026.5.28",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.28",
       "source": "openclaw",
@@ -4421,5 +4512,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-31 14:24:23"
+  "last_updated": "2026-06-01 03:11:03"
 }
