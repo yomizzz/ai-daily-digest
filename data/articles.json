@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.5.28",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.28",
+      "source": "openclaw",
+      "published": "2026-05-31",
+      "category": "openclaw",
+      "summary": "- Agent/Codex 运行时恢复更稳定，子代理保持隔离，钩子上下文保持本地，锁释放更安全\n- 跨平台消息传递安全性提升，覆盖 Matrix、iMessage、Slack、Discord、WhatsApp、Telegram、Teams\n- iOS Pro UI 全面刷新，支持 Pro Command、Chat、Agents、Settings 及实时 Talk 回放\n- 浏览器和自动化输入校验更严格，拒绝格式错误值\n- 新增 Claude Opus 4.8、Fal Krea 图像模型、NVIDIA 精选模型、MiniMax 流式音乐响应支持\n- CLI/认证/doctor 路径更快失败并更清晰恢复\n- Plugin SDK 新增回复载荷发送钩子\n- PDF 工具支持加密 PDF 提取\n- 新增 GitHub Copilot agent 运行时和 Codex Supervisor 插件包\n- GitHub Copilot 和 Tokenjuice 发布为官方按需安装插件\n- 新增 Workboard agent 协调工具\n- Discord 进度草稿显示评论\n- 新增策略对比、入口通道合规和沙箱姿态合规检查\n- ClawHub 新增插件显示名和技能验证\n- 状态输出显示活动子代理详情\n\n🐛 Bug 修复：- 部分修复内容被截断，无法提取完整修复列表",
+      "features": "- Agent/Codex 运行时恢复更稳定，子代理保持隔离，钩子上下文保持本地，锁释放更安全\n- 跨平台消息传递安全性提升，覆盖 Matrix、iMessage、Slack、Discord、WhatsApp、Telegram、Teams\n- iOS Pro UI 全面刷新，支持 Pro Command、Chat、Agents、Settings 及实时 Talk 回放\n- 浏览器和自动化输入校验更严格，拒绝格式错误值\n- 新增 Claude Opus 4.8、Fal Krea 图像模型、NVIDIA 精选模型、MiniMax 流式音乐响应支持\n- CLI/认证/doctor 路径更快失败并更清晰恢复\n- Plugin SDK 新增回复载荷发送钩子\n- PDF 工具支持加密 PDF 提取\n- 新增 GitHub Copilot agent 运行时和 Codex Supervisor 插件包\n- GitHub Copilot 和 Tokenjuice 发布为官方按需安装插件\n- 新增 Workboard agent 协调工具\n- Discord 进度草稿显示评论\n- 新增策略对比、入口通道合规和沙箱姿态合规检查\n- ClawHub 新增插件显示名和技能验证\n- 状态输出显示活动子代理详情",
+      "bug_fixes": "- 部分修复内容被截断，无法提取完整修复列表",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Reading List 05/30/26",
       "url": "https://www.construction-physics.com/p/reading-list-053026",
       "summary": "A California chemical leak, weapons-grade plutonium for nuclear reactor startups, a startup that will clean your house to get robot training data, Blue Origin&#8217;s rocket explosion, and more.",
@@ -4409,5 +4421,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-05-31 03:08:13"
+  "last_updated": "2026-05-31 14:24:23"
 }
