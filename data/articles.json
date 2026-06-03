@@ -1,6 +1,136 @@
 {
   "articles": [
     {
+      "title": "Welcoming the Philippine Government to Have I Been Pwned",
+      "url": "https://www.troyhunt.com/welcoming-the-philippine-government-to-have-i-been-pwned/",
+      "summary": "Today, we welcome the 46th government onboarded to Have I Been Pwned&#x2019;s free gov service: the Philippines.The Philippines&#x2019; National CERT, working with the Department of Information and Communications Technology, now has access to monitor official government domains against the data in HIBP. This gives their Cyber",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-06-03",
+      "summary_zh": "Troy Hunt宣布菲律宾成为第46个加入Have I Been Pwned免费政府服务的政府。菲律宾国家计算机紧急响应小组与信息和通信技术部门将获得监控官方政府域名数据泄露的能力，有助于及时发现并应对安全威胁。",
+      "why_matters": "了解国际网络安全合作如何利用数据泄露监测平台保护政府系统。",
+      "tags": "网络安全，数据泄露，政府合作",
+      "id": 411,
+      "added_at": "2026-06-04 04:54:59"
+    },
+    {
+      "title": "A survey of inlining heuristics",
+      "url": "https://bernsteinbear.com/blog/inlining-heuristics/?utm_source=rss",
+      "summary": "Compilers, especially method just-in-time compilers, operate on one function at\na time. It is a natural code unit size, especially for a dynamic language JIT:\nat a given point in time, what more information can you gather about other\nparts of a running, changing system?\n\nI don’t have any data to back this up—maybe I should go gather some—but on\naverage, methods are small. Especially in languages such as Ruby that use\nmethod dispatch for everything, even instance variable (attribute, field, …)\nlo",
+      "source": "bernsteinbear.com",
+      "category": "blog",
+      "published": "2026-06-03",
+      "summary_zh": "本文综述了编译器（尤其是JIT编译器）中决定何时内联函数的启发式方法。内联作为重要的优化手段，需要在性能提升与代码膨胀之间权衡，文中探讨了动态语言环境下编译器如何利用运行时的类型信息和分支概率来做出内联决策。",
+      "why_matters": "对于理解JIT编译器优化策略和启发式算法的设计思路很有帮助，适合对编译原理感兴趣的开发者阅读。",
+      "tags": "编译器优化，JIT，内联，启发式算法",
+      "id": 409,
+      "added_at": "2026-06-04 04:54:59"
+    },
+    {
+      "title": "GE Widescreen 1000: Big time TV for big budgets",
+      "url": "https://dfarq.homeip.net/ge-widescreen-1000/?utm_source=rss&utm_medium=rss&utm_campaign=ge-widescreen-1000",
+      "summary": "The GE Widescreen 1000 was a big time TV for big time budgets in an era of excess, with the tagline &#8220;This is GE Performance Television.&#8221; Introduced in June 1978, it cost about 3/4 as much as a family sedan\nThe post GE Widescreen 1000: Big time TV for big budgets appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-06-03",
+      "summary_zh": "GE Widescreen 1000是通用电气于1978年6月推出的一款高端宽屏电视机，定价约为家庭轿车价格的四分之三，定位于\"big time TV for big time budgets\"的奢侈消费时代。其广告标语\"This is GE Performance Television\"强调了其旗舰定位，成为那个过度消费时代的标志性产品之一。",
+      "why_matters": "这篇文章生动展现了一款经典复古电视机的历史背景和市场定位，适合对消费电子发展史感兴趣的读者。",
+      "tags": "GE,复古电视,1970年代消费电子",
+      "id": 407,
+      "added_at": "2026-06-04 04:54:59"
+    },
+    {
+      "title": "Skills Registry Threat Models",
+      "url": "https://nesbitt.io/2026/06/03/skills-registry-threat-models.html",
+      "summary": "How long until we see a CVE filed against a markdown file?",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-06-03",
+      "summary_zh": "文章探讨了Skills Registry（技能注册表）中的威胁模型，重点关注markdown文件可能带来的安全风险。作者以幽默的口吻提出疑问——markdown文件何时会被提交为CVE，揭示了在配置管理和自动化工具中使用markdown文档时潜在的安全隐患和攻击面。",
+      "why_matters": "对于关注DevSecOps、安全自动化和供应链安全的开发者来说，提供了关于威胁建模的实用视角和思考。",
+      "tags": "威胁模型, 安全研究, CVE, 供应链安全",
+      "id": 405,
+      "added_at": "2026-06-04 04:54:59"
+    },
+    {
+      "title": "Naively summing an alternating series",
+      "url": "https://www.johndcook.com/blog/2026/06/03/naive-sum/",
+      "summary": "Suppose you run across the power series for the exponential function and decide to code it up. Good idea: you&#8217;ll probably learn something, though maybe not what you expect. Maybe you decide a tolerance of 10−12 is good enough, and so you sum the terms until the next term to add is below the tolerance. [&#8230;]\nThe post Naively summing an alternating series first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-06-03",
+      "summary_zh": "文章通过以指数函数的幂级数展开为例，探讨了在编程实现交错级数求和时， naive 地在下一项小于某个阈值（如10^-12）时停止求和所带来的问题。作者指出这种看似合理的精度控制方法在实际计算中可能存在缺陷，可能会低估误差或需要更多的项才能达到预期精度，从而揭示了数值计算中容易被忽视的陷阱。",
+      "why_matters": "通过一个看似简单但实际深刻的例子，展示了交错级数求和时误差控制的关键细节，对数值计算实践具有重要警示意义。",
+      "tags": "交错级数, 数值计算, 误差分析, 幂级数",
+      "id": 403,
+      "added_at": "2026-06-04 04:54:59"
+    },
+    {
+      "title": "A wish for automatic or semi-automatic disk setup in Linux server installers",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/linux/InstallerAutomatedDiskSetupWish",
+      "summary": "An extremely common pattern for our\nUbuntu servers is that they have exactly two disks and we want those\ntwo disks to be set up as mirrored system disks, with a UEFI boot\npartition in each and the root filesystem in a mirrored RAID array\ntaking up all of the rest of the space (and for /boot/efi to come\nfrom the first disk). If a system has a single disk, we want the\nsingle-disk, non-mirrored version of this; if the system has more\nthan one or two disks, the installer shouldn't try to do anything",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-06-03",
+      "summary_zh": "文章讨论了Ubuntu服务器安装中磁盘设置的常见需求——使用两块磁盘配置为镜像RAID，EFI启动分区各占一块磁盘，剩余空间组成镜像根文件系统。作者认为这是极其普遍的配置模式，但现有的安装器无法自动完成设置，需要手动操作，因此呼吁Ubuntu Server安装程序提供自动或半自动的磁盘配置功能。",
+      "why_matters": "对于需要部署Linux服务器的技术人员很有参考价值，揭示了企业级服务器部署中的痛点。",
+      "tags": "Linux服务器, Ubuntu安装, RAID配置",
+      "id": 401,
+      "added_at": "2026-06-04 04:54:59"
+    },
+    {
+      "title": "London Data Store Relaunch",
+      "url": "https://shkspr.mobi/blog/2026/06/london-data-store-relaunch/",
+      "summary": "It has been sixteen years since the launch of data.london.gov.uk. Back then, it was a trailblazer as one of the first major cities to release Open Data in this way. Now, over a decade later, it is more than a mere repository; it is a celebration of Open Data and the way it can improve Londoners&#039; lives.  So, time for a refresh front and back. As well as a bunch of back-end updates, the front-end…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-06-03",
+      "summary_zh": "暂无摘要",
+      "why_matters": "对于关注智慧城市和开放数据发展的人来说是了解国际城市数据治理实践的窗口。",
+      "tags": "开放数据, 智慧城市, 伦敦, 数据治理",
+      "id": 399,
+      "added_at": "2026-06-04 04:54:59"
+    },
+    {
+      "title": "The Underworld Market to Remove the Recording Indicator Light on Meta Glasses",
+      "url": "https://www.youtube.com/watch?v=EaJSPeJmqis",
+      "summary": "Joanna Stern, on YouTube:\n\n\n  People across the country are offering a service on Facebook\nMarketplace to disable the recording light on Ray-Ban Meta\nglasses. They call it “Stealth Mode.” Joanna paid $100 for the\nmodification and went inside the growing business of turning smart\nglasses into covert cameras. She investigates who is doing it,\nwhether it’s legal and what some are doing to try and stop it.\n\n\nOf course there’s a market for this. But the true chef’s kiss is that the market to find peo",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-03",
+      "summary_zh": "美国多地有人在Facebook Marketplace提供禁用Ray-Ban Meta智能眼镜录制指示灯的\"隐形模式\"改装服务，收费约100美元。这一现象反映出将智能眼镜改装为隐蔽设备的黑市正在增长，引发隐私和安全方面的担忧。",
+      "why_matters": "揭示了智能眼镜隐私问题背后正在兴起的灰色产业，值得关注科技与隐私的平衡。",
+      "tags": "智能眼镜, 隐私安全, 科技伦理",
+      "id": 397,
+      "added_at": "2026-06-04 04:54:59"
+    },
+    {
+      "title": "CBS News Fires Scott Pelley of ‘60 Minutes’",
+      "url": "https://www.nytimes.com/2026/06/02/business/media/scott-pelley-cbs-bari-weiss.html",
+      "summary": "Benjamin Mullin and Michael M. Grynbaum:\n\n\n  In a formal letter to Mr. Pelley, which was obtained by The\nNew York Times, Mr. Bilton wrote that the correspondent had been\n“terminated for cause effective immediately.”\n\n\nThe letter is a must-read. No summary of it can capture just how pathetic a man Nick Bilton is. He disputes nothing Pelley said in the Monday staff meeting, and firing Pelley proves that Pelley was exactly right.\n\n\n  Mr. Pelley, in a telephone interview on Tuesday evening shortly\na",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-03",
+      "summary_zh": "CBS News宣布解雇《60分钟》资深主播Scott Pelley，CBS News总裁Bill Owens在措辞严厉的解雇信中指出其“因故立即终止”合同。该信函详细说明了Pelley的不当行为，被认为罕见地公开了内部处理细节，引发业界关注。",
+      "why_matters": "这封措辞严厉的解雇信详细披露了离职原因，是媒体行业少见的公开内部处理案例，值得关注。",
+      "tags": "Scott Pelley, CBS News, 60 Minutes, 媒体行业, 解雇",
+      "id": 395,
+      "added_at": "2026-06-04 04:54:59"
+    },
+    {
+      "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+      "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
+      "summary": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs\nI wrote the other day about Uber blowing its 2026 AI budget in four months, and how that wasn't particularly surprising given they would have set that budget in 2025, before anyone could have predicted how popular token-burning coding agents were about to become.\nNatalie Lung for Bloomberg:\n\nThe rideshare giant is limiting all employees to $1,500 in monthly token spending per AI coding tool, an Uber spokesperson said in response to a B",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-06-03",
+      "summary_zh": "Uber在短短四个月内就花完了2026年的AI预算，主要原因是在2025年设定预算时无法预见AI编程工具（如Claude Code）的爆发式增长。为控制成本，Uber被迫限制员工使用这类工具的频率，凸显出企业在快速采用AI技术时面临的成本管理挑战。",
+      "why_matters": "文章揭示了AI工具实际使用成本远超预期的问题，对所有计划在企业中规模化部署AI工具的人都有重要参考价值。",
+      "tags": "AI成本控制,企业AI应用,Claude Code",
+      "id": 393,
+      "added_at": "2026-06-04 04:54:59"
+    },
+    {
       "title": "I went on the Built for Turbulence podcast",
       "url": "https://martinalderson.com/posts/built-for-turbulence-podcast/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
       "summary": "I joined Radical's Built for Turbulence podcast to talk about what AI agents are doing to the economics of software, the Figma Trap, and why running human-written code without AI audit is going to start looking reckless.",
@@ -4980,5 +5110,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-03 14:58:01"
+  "last_updated": "2026-06-04 04:54:59"
 }
