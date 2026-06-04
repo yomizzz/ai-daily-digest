@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.6.1",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.1",
+      "source": "openclaw",
+      "published": "2026-06-04",
+      "category": "openclaw",
+      "summary": "- Agents 和 CLI 运行时在工具调用中断、会话绑定断开、压缩传递和媒体重试时能更干净地恢复\n- Telegram、WhatsApp、iMessage、Slack、Discord、Teams 等多个渠道的移动交付稳定性提升\n- Provider 和插件请求增加了更完善的超时、重试、OAuth 生命周期和媒体下载保护机制\n- Skills、session 元数据、gateway 状态、插件元数据和存储写入在热路径上减少了重复计算\n- Skills 和插件加载对禁用快照和加载器失败的处理更加清晰\n- Workboard 新增多代理规划和运行跟踪的编排原语和协调工具\n- SecretRef 插件清单和外部 Copilot/Tokenjuice 插件增加了更广泛的集成能力\n- Skill Workshop 新增完整的 Control UI 流程，包括提案列表、今日视图、文件预览、审查状态和可重用会话路由\n- Chat 和 Control UI 启动路径优化了历史加载、流式增量更新、Markdown 处理跳过、本地草稿保持和发送后清空逻辑\n- 新增 MiniMax M3 模型支持、账户 OAuth 端点、Google/Vertex 目录修复和 OpenRouter SQLite 模型缓存\n- iMessage 监控状态和插件安装账本迁移至 SQLite 后端存储，提升重启恢复速度\n- CI 和发布流程增加了日志、响应体和就绪探测的边界限制，避免测试停滞\n- Tokenjuice 和 GitHub Copilot agent 运行时作为官方插件发布\n- iOS 新增托管推送中继默认设置、实时通话播放和 iPad 显示布局支持\n- Code mode 新增内部命名空间和 MCP API 文件支持\n- Control UI 新增 Dreaming 标签代理选择器和更稳定的编辑器控件\n\n🐛 Bug 修复：- 无",
+      "features": "- Agents 和 CLI 运行时在工具调用中断、会话绑定断开、压缩传递和媒体重试时能更干净地恢复\n- Telegram、WhatsApp、iMessage、Slack、Discord、Teams 等多个渠道的移动交付稳定性提升\n- Provider 和插件请求增加了更完善的超时、重试、OAuth 生命周期和媒体下载保护机制\n- Skills、session 元数据、gateway 状态、插件元数据和存储写入在热路径上减少了重复计算\n- Skills 和插件加载对禁用快照和加载器失败的处理更加清晰\n- Workboard 新增多代理规划和运行跟踪的编排原语和协调工具\n- SecretRef 插件清单和外部 Copilot/Tokenjuice 插件增加了更广泛的集成能力\n- Skill Workshop 新增完整的 Control UI 流程，包括提案列表、今日视图、文件预览、审查状态和可重用会话路由\n- Chat 和 Control UI 启动路径优化了历史加载、流式增量更新、Markdown 处理跳过、本地草稿保持和发送后清空逻辑\n- 新增 MiniMax M3 模型支持、账户 OAuth 端点、Google/Vertex 目录修复和 OpenRouter SQLite 模型缓存\n- iMessage 监控状态和插件安装账本迁移至 SQLite 后端存储，提升重启恢复速度\n- CI 和发布流程增加了日志、响应体和就绪探测的边界限制，避免测试停滞\n- Tokenjuice 和 GitHub Copilot agent 运行时作为官方插件发布\n- iOS 新增托管推送中继默认设置、实时通话播放和 iPad 显示布局支持\n- Code mode 新增内部命名空间和 MCP API 文件支持\n- Control UI 新增 Dreaming 标签代理选择器和更稳定的编辑器控件",
+      "bug_fixes": "- 无",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Welcoming the Philippine Government to Have I Been Pwned",
       "url": "https://www.troyhunt.com/welcoming-the-philippine-government-to-have-i-been-pwned/",
       "summary": "Today, we welcome the 46th government onboarded to Have I Been Pwned&#x2019;s free gov service: the Philippines.The Philippines&#x2019; National CERT, working with the Department of Information and Communications Technology, now has access to monitor official government domains against the data in HIBP. This gives their Cyber",
@@ -5110,5 +5122,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-04 04:54:59"
+  "last_updated": "2026-06-04 14:47:56"
 }
