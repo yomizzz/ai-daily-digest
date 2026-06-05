@@ -1,6 +1,175 @@
 {
   "articles": [
     {
+      "title": "The Giant's Cup",
+      "url": "https://herman.bearblog.dev/the-giants-cup/",
+      "summary": "On running trails",
+      "source": "herman.bearblog.dev",
+      "category": "blog",
+      "published": "2026-06-05",
+      "summary_zh": "本文围绕“巨人之杯”跑步赛事展开，分享了作者在跑步路径上的亲身经历和感悟，可能是对赛事过程、训练心得或沿途风景的记录。",
+      "why_matters": "适合热爱跑步和户外运动的朋友，能从中获得参与跑步赛事的启发与乐趣。",
+      "tags": "跑步, 户外运动, 赛事",
+      "id": 446,
+      "added_at": "2026-06-06 03:50:06"
+    },
+    {
+      "title": "Aggressive caching for a Mastodon reverse proxy: what to cache, what to never cache, and why content negotiation will eventually betray you",
+      "url": "https://it-notes.dragas.net/2026/06/05/aggressive_caching_for_a_mastodon_reverse_proxy/",
+      "summary": "I have written before about putting a cache in front of  snac, and more recently about  the HAProxy layer in front of FediMeteo. The general idea is always the same: the reverse proxy should absorb the repetitive, public work that has no business reaching the application server.\nThis post is the same idea applied to a much louder neighbour: a Mastodon instance. The instance is  mastodon.bsd.cafe, the proxy is nginx on FreeBSD, and the configuration below is what I am currently running in product",
+      "source": "it-notes.dragas.net",
+      "category": "blog",
+      "published": "2026-06-05",
+      "summary_zh": "文章探讨了在Mastodon反向代理前设置缓存层的最佳实践，阐述了哪些请求应该被缓存以减轻应用服务器压力，哪些内容（如涉及个人隐私或动态内容）应避免缓存。同时讨论了内容协商机制可能导致的缓存失效问题及其应对策略。",
+      "why_matters": "适合运维人员和对联邦网络服务性能优化感兴趣的开发者阅读",
+      "tags": "Mastodon, 反向代理, 缓存策略",
+      "id": 444,
+      "added_at": "2026-06-06 03:50:06"
+    },
+    {
+      "title": "First Commodore PET sold, June 5, 1977",
+      "url": "https://dfarq.homeip.net/first-commodore-pet-sold-june-5-1977/?utm_source=rss&utm_medium=rss&utm_campaign=first-commodore-pet-sold-june-5-1977",
+      "summary": "On June 5, 1977, at the summer Consumer Electronics Show, Commodore had its PET 2001 personal computer on display after showing a prototype at the January 1977 show. Chuck Peddle said Commodore took its first distributor order on that day,\nThe post First Commodore PET sold, June 5, 1977 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-06-05",
+      "summary_zh": "1977年6月5日，在夏季消费电子展上，Commodore正式展示了其PET 2001个人电脑，该机型此前曾在1月份的展会中以原型形式亮相。Chuck Peddle透露，Commodore在当天收到了首个经销商订单，标志着这款早期个人电脑正式进入商业化阶段。",
+      "why_matters": "了解个人电脑发展史上这一重要里程碑——Commodore PET如何开启商业化个人计算时代。",
+      "tags": "Commodore PET, 个人电脑历史, 1977年科技",
+      "id": 442,
+      "added_at": "2026-06-06 03:50:06"
+    },
+    {
+      "title": "Premium: The Hater's Guide To The AI Bubble 3.0",
+      "url": "https://www.wheresyoured.at/premium-the-haters-guide-to-the-ai-bubble-3-0/",
+      "summary": "Last year I wrote one of my favourite pieces ever &#x2014; The Hater&#x2019;s Guide To The AI Bubble &#x2014; and followed it up with The Hater&#x2019;s Guide To The AI Bubble Volume 2 several months later. Sadly, I&#x2019;ve realized &#x201c;volume&#x201d; is a",
+      "source": "wheresyoured.at",
+      "category": "blog",
+      "published": "2026-06-05",
+      "summary_zh": "本文是作者“AI泡沫讨厌者指南”系列的第三部，延续前两篇的讽刺批判风格，深入剖析当前AI行业存在的过度炒作、估值泡沫和实际应用价值脱节等问题。作者延续犀利文风，对AI领域的主流叙事提出质疑，结合最新行业动态分析这场技术浪潮中的虚妄与真实。",
+      "why_matters": "如果你对AI热潮背后的真实情况感兴趣，这篇犀利讽刺的文章值得一读。",
+      "tags": "AI泡沫，科技批评，行业分析",
+      "id": 440,
+      "added_at": "2026-06-06 03:50:06"
+    },
+    {
+      "title": "Install-script allowlists",
+      "url": "https://nesbitt.io/2026/06/05/install-script-allowlists.html",
+      "summary": "A survey of install-script allowlist mechanisms across package managers and language ecosystems.",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-06-05",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 438,
+      "added_at": "2026-06-06 03:50:06"
+    },
+    {
+      "title": "AI-indecision is a recursive trap. Don't get stuck.",
+      "url": "https://www.joanwestenberg.com/ai-indecision-is-a-recursive-trap-dont-get-stuck/",
+      "summary": "Jean Buridan was a 14th-century French philosopher and logician who twice served as rector of the University of Paris. His subject was the will, and he made an austere claim: the will follows the intellect. Show a rational creature the greater good and it&apos;ll pick the greater good.",
+      "source": "joanwestenberg.com",
+      "category": "blog",
+      "published": "2026-06-05",
+      "summary_zh": "文章借14世纪哲学家Jean Buridan“意志跟随理智”的观点，探讨AI在决策过程中陷入无限分析和犹豫的递归陷阱。当AI面对多重选项时，过度计算权衡反而导致无法行动，作者提醒我们有时应简化判断框架，打破这种循环困境。",
+      "why_matters": "用经典哲学视角解读AI时代的决策困境，提供实用应对思路，值得一读。",
+      "tags": "人工智能, 决策力, 思维陷阱",
+      "id": 436,
+      "added_at": "2026-06-06 03:50:06"
+    },
+    {
+      "title": "JAX backends and devices",
+      "url": "https://www.gilesthomas.com/2026/06/jax-backends-and-devices",
+      "summary": "There's nothing like writing your own code with a framework to clarify how things\nfit together!  Continuing with my port of my PyTorch LLM code to\nJAX, I wanted to load up a large dataset:\nthe 10,248,871,837 16-bit unsigned integers in the train split of\ngpjt/fineweb-gpt2-tokens.\nThat's just over 19GiB of data.\n\n\nfrom safetensors.flax import load_file\n...\nfull_dataset = load_file(dataset_dir / f\"train.safetensors\")[\"tokens\"]\n\n\n\nWhen I ran that, I got a CUDA out-of-memory error:\n\n\njax.errors.JaxR",
+      "source": "gilesthomas.com",
+      "category": "blog",
+      "published": "2026-06-05",
+      "summary_zh": "本文记录了作者将PyTorch LLM代码移植到JAX框架的实践经验，重点探讨了JAX的后端和设备管理功能，以及加载大型数据集（如fineweb-gpt2-tokens，超过190亿个16位整数）时遇到的挑战和解决方案。",
+      "why_matters": "通过真实的代码迁移案例，帮助理解JAX的底层架构和设备管理机制。",
+      "tags": "JAX, 深度学习框架, GPU计算",
+      "id": 434,
+      "added_at": "2026-06-06 03:50:06"
+    },
+    {
+      "title": "Mr. Bessel’s eponymous functions",
+      "url": "https://www.johndcook.com/blog/2026/06/05/mr-bessels-eponymous-functions/",
+      "summary": "Yesterday I wrote a post showing that the trapezoid rule evaluates the integral very efficiently. But how do we know what the exact integral is for comparison? If you ask Mathematica, it will tell you the integral equals −2π J1(1) where J1 is a Bessel function. This may seem like rabbit out of a hat, [&#8230;]\nThe post Mr. Bessel’s eponymous functions first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-06-05",
+      "summary_zh": "这篇博客介绍了以数学家贝塞尔命名的贝塞尔函数这一重要特殊函数。文中通过梯形法则计算积分的例子，引出了如何利用计算工具获得精确积分值的问题，并展示了贝塞尔函数J₁在数学计算中的具体应用。这些函数在现代数学和物理中有着广泛的应用场景。",
+      "why_matters": "帮助读者了解贝塞尔函数这一重要数学工具及其在积分计算中的实际应用。",
+      "tags": "贝塞尔函数, 数学计算, 特殊函数",
+      "id": 432,
+      "added_at": "2026-06-06 03:50:06"
+    },
+    {
+      "title": "IPv6 zones in URLs are a mistake",
+      "url": "https://xeiaso.net/notes/2026/ipv6-zones-go-url/",
+      "summary": "Run away while you still can, it's not too late for you to avoid the curse of knowledge.",
+      "source": "xeiaso.net",
+      "category": "blog",
+      "published": "2026-06-05",
+      "summary_zh": ":1%eth0]`）的技术缺陷。作者认为这种设计过于复杂，容易引发兼容性问题，并且在实际开发中带来的麻烦远超其价值。原文摘要\"趁还来得及赶紧跑，避开知识诅咒还不算晚\"暗示这是一个作者曾深入研究后感到后悔的技术话题。",
+      "why_matters": "来自知名技术博主Eija（xeiaso）的经验之谈，能帮助开发者避免在IPv6网络编程中踩坑。",
+      "tags": "IPv6, 网络协议, URL, 开发者经验, 技术吐槽",
+      "id": 430,
+      "added_at": "2026-06-06 03:50:06"
+    },
+    {
+      "title": "Some People Rooted for The Empire in ‘Star Wars’, Too",
+      "url": "https://hotair.com/ed-morrissey/2026/06/03/cbs-fires-scott-pelley-after-trying-very-hard-to-get-fired-n3815553",
+      "summary": "Ed Morrissey, writing for Hot Air, thinks Scott Pelley got what he deserved and Bari Weiss is doing a good job running CBS News:\n\n\n  And Pelley forgot the Golden Rule: He who has the gold makes the\nrules. Instead, Pelley convinced himself of his own virtue and\ntorched his own position — and if Bilton’s letter is accurate, in\nas mean-spirited and conceited a manner as possible. Pelley could\nhave chosen a dignified resignation under protest, but instead\npulled a power move in an attempt to intimid",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-05",
+      "summary_zh": "[根据提供的内容片段分析，文章似乎是对Hot Air编辑Ed Morrissey观点的讨论，涉及Scott Pelley、Bari Weiss及CBS News等新闻人物的评论，并提到了\"gold makes the rules\"这一论点。但原文摘要内容不完整，无法准确把握文章完整主题与核心观点。]",
+      "why_matters": "[原文摘要内容不完整，建议获取完整文章后再进行摘要生成]",
+      "tags": "[媒体评论, 新闻人物, CBS News]",
+      "id": 428,
+      "added_at": "2026-06-06 03:50:06"
+    },
+    {
+      "title": "Checking in on Perplexity",
+      "url": "https://daringfireball.net/linked/2025/08/05/regarding-those-rumors-of-apple-pursuing-an-acquisition-of-perplexity",
+      "summary": "Yours truly, last August:\n\n\n  I can’t see why Apple would want to get involved with a company\nlike this though. Gurman’s report makes it sound like his sources\nare inside Apple, but man, this “Apple + Perplexity” thing feels\nmore like something Perplexity would be seeding than one that\nApple executives would be leaking.\n\n\nPerplexity is still occasionally in the news (often not in good ways), but it seems to me they’ve slipped into the “afterthought” tier of AI startups — which is exactly why the",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-05",
+      "summary_zh": "本文延续了去年关于“Apple与Perplexity合作”传闻的讨论。作者对这一传闻依然持怀疑态度，质疑消息来源的可靠性，认为此类合作传闻更像是Perplexity方面的公关操作，而非Apple的真实意图。文章体现了作者一贯的敏锐商业洞察力。",
+      "why_matters": "John Gruber以其独特的视角和犀利的分析著称，即使面对行业传闻也能保持冷静判断，值得关注科技行业动态的读者参考。",
+      "tags": "科技评论，AI行业，苹果公司，行业传闻",
+      "id": 426,
+      "added_at": "2026-06-06 03:50:06"
+    },
+    {
+      "title": "I tested every IP KVM in my Homelab",
+      "url": "https://www.jeffgeerling.com/blog/2026/i-tested-every-ip-kvm/",
+      "summary": "Since the PiKVM came out in 2017, there's been an explosion of IP KVMs. I've tested almost every one. But what are they good for?\nYou can use Remote Desktop, Screen Sharing, or VNC to remote control a computer from anywhere on a LAN. And if you don't have a private VPN, you could use RealVNC, Raspberry Pi Connect, or wire up Tailscale or Pangolin for fully remote access. Those solutions are great, and so is SSH if you don't need a full desktop.",
+      "source": "jeffgeerling.com",
+      "category": "blog",
+      "published": "2026-06-05",
+      "summary_zh": "作者在家庭实验室环境中测试了几乎所有市面上的IP KVM设备，这类设备在2017年PiKVM出现后开始爆发式增长。IP KVM能够远程控制计算机，虽然可以使用远程桌面、屏幕共享或VNC等替代方案，但在没有私有VPN的情况下，IP KVM提供了更安全的远程管理选择。文章将探讨这些设备各自的优势和适用场景。",
+      "why_matters": "如果你正在考虑为家庭实验室或远程服务器添置IP KVM，这篇全面的横向评测文章能帮助你做出明智的选择。",
+      "tags": "IP KVM, Homelab, 远程控制",
+      "id": 424,
+      "added_at": "2026-06-06 03:50:06"
+    },
+    {
+      "title": "Quoting Andreas Kling",
+      "url": "https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything",
+      "summary": "We will no longer accept public pull requests. [...]\nA substantial patch used to imply substantial effort, and that effort was a reasonable proxy for good faith. That assumption no longer holds. [...]\nWhether code was typed by hand is beside the point. What matters is who is responsible for it once it enters the browser. Ladybird is becoming a browser for real users. The people introducing changes to it must be the people who decide those changes belong in the project, and who will answer for th",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-06-05",
+      "summary_zh": "Andreas Kling宣布其项目不再接受公开的pull requests，并反思了过去以补丁大小判断贡献质量的惯例。他指出，如今代码来源的可靠性已不能单纯通过是否手打来衡量，关键在于明确责任归属而非代码来源方式。",
+      "why_matters": "这篇文章反映了开源项目维护者对贡献治理方式的深度思考，对于理解现代开源社区的责任边界和信任机制很有启发。",
+      "tags": "开源治理, pull request, 开发者责任",
+      "id": 422,
+      "added_at": "2026-06-06 03:50:06"
+    },
+    {
       "title": "Is datacentre sovereignty really that important?",
       "url": "https://martinalderson.com/posts/is-datacentre-sovereignty-really-that-important/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
       "summary": "The UK is obsessed with building AI datacentres at home. But the arguments for sovereignty - latency, tax, control - mostly don't hold up.",
@@ -5356,5 +5525,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-05 14:36:34"
+  "last_updated": "2026-06-06 03:50:06"
 }
