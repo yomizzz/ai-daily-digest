@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.16.0 (2026.6.5) — The Surface Release",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.6.5",
+      "source": "hermes-agent",
+      "published": "2026-06-06",
+      "category": "hermes",
+      "summary_zh": "- 全新原生桌面应用发布：支持 macOS/Linux/Windows，一键安装、应用内自动更新、拖拽文件上传、内联模型选择器、并发多会话、完整简体中文翻译、支持远程 gateway（OAuth/用户名密码认证）\n- Web 管理面板全面升级：新增浏览器端管理控制台，涵盖 MCP 目录、消息频道、凭证、webhooks、记忆管理、可插拔认证（OIDC/用户名密码）\n- 首次设置流程优化：新增\"通过 Nous Portal 快速设置\"，从安装到发送首条消息仅需数秒\n- 默认技能集精简：移除冗余技能，按实际需求配置\n- NVIDIA/skills 加入可信技能中心：可从 Skills Hub 直接添加\n- 模型选择器全局模糊搜索：桌面端、Web 端、TUI、CLI 全部支持\n- 新增 `/undo` 命令：支持撤销最近 N 轮对话\n- 修复 2 个 P0 和 62 个 P1 问题，关闭 399 个 issue\n- 安全修复：CVE-2026-48710 Starlette 依赖更新、SSRF 防护加固、子进程凭证隔离",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "The Giant's Cup",
       "url": "https://herman.bearblog.dev/the-giants-cup/",
       "summary": "On running trails",
@@ -5525,5 +5535,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-06 03:50:06"
+  "last_updated": "2026-06-06 13:57:52"
 }
