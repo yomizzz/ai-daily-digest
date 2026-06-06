@@ -1,6 +1,136 @@
 {
   "articles": [
     {
+      "title": "Our Great War is a Spiritual War",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/06/06/our-great-war.html",
+      "summary": "I often come back to the question of why this is happening. Why do people want the centralized world? Why do people want the administered reality? Why do people want to be managed? Why do people not want root?",
+      "source": "geohot.github.io",
+      "category": "blog",
+      "published": "2026-06-06",
+      "summary_zh": "本文从哲学和精神层面探讨人类为何普遍接受中心化的权力结构和被管理的生活方式，而非追求自主与自由。作者通过“为什么人们不想要root（系统最高权限）？”这一隐喻，质疑人类对控制与管理的顺从现象，认为人类正在经历一场精神层面的战争。",
+      "why_matters": "GeoHot从技术极客的视角反思人类社会的权力结构，观点独特且发人深省。",
+      "tags": "技术哲学, 自由与控制, 社会反思",
+      "id": 454,
+      "added_at": "2026-06-07 03:14:16"
+    },
+    {
+      "title": "Reading List 06/06/26",
+      "url": "https://www.construction-physics.com/p/reading-list-060626",
+      "summary": "Chatbots replacing realtors, Chinese synthetic diamonds, Australian batteries, Meta&#8217;s data center tents, and more",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-06-06",
+      "summary_zh": "本阅读清单汇集了多个前沿科技与商业动态，包括聊天机器人如何逐步取代房地产经纪人、中国合成钻石产业的发展、澳大利亚储能电池技术的突破，以及Meta采用帐篷式模块化数据中心的创新方案。这些话题反映了人工智能与传统行业融合、新能源技术应用以及科技基础设施创新等趋势。",
+      "why_matters": "快速了解本周科技与商业领域的重要进展，适合关注行业趋势的读者。",
+      "tags": "科技动态，人工智能，新能源",
+      "id": 452,
+      "added_at": "2026-06-07 03:14:16"
+    },
+    {
+      "title": "This Week in Package Management: 6 June 2026",
+      "url": "https://nesbitt.io/2026/06/06/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-06-06",
+      "summary_zh": "本文是2026年6月第一周的包管理领域周报，汇总了该周内各包管理生态系统的版本发布、安全公告及相关技术文章。内容覆盖npm、PyPI、RubyGems等主流包管理平台，为开发者提供最新的行业动态。",
+      "why_matters": "适合需要跟进包管理生态动态的开发者和技术团队。",
+      "tags": "包管理, 周报, 开源生态",
+      "id": 450,
+      "added_at": "2026-06-07 03:14:16"
+    },
+    {
+      "title": "In pursuit of desirable difficulties",
+      "url": "https://www.joanwestenberg.com/in-pursuit-of-desirable-difficulties/",
+      "summary": "The psychologist Robert Bjork called them desirable difficulties. Learning sticks better when practice is made harder, rather than easier. Students who have to struggle to retrieve an answer remember it longer - and clearer - than students who are handed the same answer with minimal effort on their part. The",
+      "source": "joanwestenberg.com",
+      "category": "blog",
+      "published": "2026-06-06",
+      "summary_zh": "本文介绍了心理学家Robert Bjork提出的“理想困难”概念，指出学习效果与努力程度成正比——需要主动回忆的知识比被动接受的知识记得更持久、更清晰。实验表明，尽管困难的学习方式起初让人感觉进展缓慢，但长远来看反而能显著提升记忆效果。这提醒我们，传统学习中追求的“轻松掌握”可能恰恰是记忆的大敌。",
+      "why_matters": "颠覆你对学习效率的认知，揭示为什么“越费力的学习方式反而记得越牢”的科学原理。",
+      "tags": "学习方法,认知心理学,记忆技巧",
+      "id": 448,
+      "added_at": "2026-06-07 03:14:16"
+    },
+    {
+      "title": "From Kepler to Bessel",
+      "url": "https://www.johndcook.com/blog/2026/06/06/from-kepler-to-bessel/",
+      "summary": "The previous post very briefly said that the integral representation for Bessel functions was motived by solving Kepler&#8217;s equation. This post will go into more detail. Kepler&#8217;s equation There are multiple ways to describe the position of a planet in an elliptical orbit around a star. For historical reasons, these descriptions have arcane names such [&#8230;]\nThe post From Kepler to Bessel first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-06-06",
+      "summary_zh": "2-3句话总结核心内容",
+      "why_matters": "1句话说明为什么值得看",
+      "tags": "1-3个标签",
+      "id": 446,
+      "added_at": "2026-06-07 03:14:16"
+    },
+    {
+      "title": "Communities of Not",
+      "url": "https://lucumr.pocoo.org/2026/6/6/communities-of-not/",
+      "summary": "There is a strange thing that happens in communities that gather around\nabstinence from something: identity from opposition.  At their best these\ncommunities are not just negative: childfree spaces can be about autonomy,\nchoice and acceptance, anti-car spaces about safer streets and transit, and\nLLM-skeptical developer spaces about the future of labor, code quality and\nslop1.  But the thing being refused often does not go away and instead\nbecomes the main subject of the community&#8217;s identit",
+      "source": "lucumr.pocoo.org",
+      "category": "blog",
+      "published": "2026-06-06",
+      "summary_zh": "文章探讨了一种有趣的社会现象——围绕“禁绝某物”而形成的社区，成员的身份认同往往来自于对某事物的共同反对。无论是childfree（无子女生活）、anti-car（反汽车）还是LLM相关社区，其核心并非单纯的否定，而是在对立中寻求自主、选择与归属感。",
+      "why_matters": "视角独特，能帮助读者理解非主流社区的文化逻辑与身份建构方式。",
+      "tags": "社区文化, 身份认同, 对立与归属",
+      "id": 444,
+      "added_at": "2026-06-07 03:14:16"
+    },
+    {
+      "title": "There's still no point in gigabit broadband",
+      "url": "https://shkspr.mobi/blog/2026/06/theres-still-no-point-in-gigabit-broadband/",
+      "summary": "Six years ago, I nearly got my ISP to upgrade our fibre connection to 1Gbps. As I said at the time:  This is a curmudgeonly post which is going to look ridiculously outdated in a few years.  What&#039;s the point of Gigabit broadband?  Well, it&#039;s a few years later and Virgin Media have just given me their Gig1 package for £30 per month. Nice! With all the inflation related price rises, it&#039;s great to …",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-06-06",
+      "summary_zh": "作者回顾六年前曾质疑千兆宽带的必要性，如今Virgin Media推出千兆服务后，作者仍然认为普通用户实际使用中很难真正用满百兆带宽，当前内容和服务生态还无法充分发挥千兆网络的优势。千兆宽带更多是营销噱头而非刚需，除非有特殊需求，否则家庭用户没有必要为此多花钱。",
+      "why_matters": "对考虑升级网络套餐的普通用户有参考价值，能帮助理性评估是否真的需要花更多钱购买超高带宽。",
+      "tags": "千兆宽带, 网络升级, 性价比",
+      "id": 442,
+      "added_at": "2026-06-07 03:14:16"
+    },
+    {
+      "title": "Pluralistic: Criticizing the everything machine (06 Jun 2026)",
+      "url": "https://pluralistic.net/2026/06/06/applied-counterescatology/",
+      "summary": "Today's links Criticizing the everything machine: It slices, it dices, it even makes paperclips! Hey look at this: Delights to delectate. Object permanence: Parliament v DRM; Colbert's commencement; Counterfeiting x luxury goods; Joule thief; Lean-back media. Upcoming appearances: Kansas City, LA, Menlo Park, Toronto, NYC, Edinburgh, South Bend. Recent appearances: Where I've been. Latest books: You keep readin' em, I'll keep writin' 'em. Upcoming books: Like I said, I'll keep writin' 'em. Colop",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-06-06",
+      "summary_zh": "这篇文章是Cory Doctorow的Pluralistic专栏，批评了所谓的“万能机器”（likely指通用AI或大型科技平台）。作者通过多个话题——包括DRM与立法、假冒奢侈品、节能装置Joule thief以及“后仰式”媒体消费——来探讨技术垄断和数字权利问题，体现了其一贯的科技批判视角。",
+      "why_matters": "Cory Doctorow对AI和科技巨头一贯持批判态度，如果关心数字权利和科技对社会的影响，这篇文章值得关注。",
+      "tags": "AI批评, 数字权利, 科技批判",
+      "id": 440,
+      "added_at": "2026-06-07 03:14:16"
+    },
+    {
+      "title": "Running Python code in a sandbox with MicroPython and WASM",
+      "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything",
+      "summary": "I've been experimenting with different approaches to running code in a sandbox for several years now, but my latest attempt feels like it might finally have all of the characteristics I've been looking for. I've released it as an alpha package called micropython-wasm, and I'm using it for a code execution sandbox plugin for Datasette Agent called datasette-agent-micropython.\n\n  Why do I want a sandbox?\n  What I want from a sandbox\n  WebAssembly looks really promising here\n  MicroPython in WebAss",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-06-06",
+      "summary_zh": "作者分享了使用MicroPython和WebAssembly技术构建沙箱代码执行环境的最新尝试。该方案结合了MicroPython的轻量级特性和WASM的安全隔离能力，发布为名为micropython-wasm的alpha包。作者表示这个方案终于满足了他多年来寻找的所有特性需求。",
+      "why_matters": "如果你对代码安全沙箱、WebAssembly应用或Python运行时技术感兴趣，这篇文章提供了一个创新的技术组合方案，值得参考。",
+      "tags": "WebAssembly, MicroPython, 沙箱安全, 代码执行",
+      "id": 438,
+      "added_at": "2026-06-07 03:14:16"
+    },
+    {
+      "title": "micropython-wasm 0.1a2",
+      "url": "https://simonwillison.net/2026/Jun/6/micropython-wasm/#atom-everything",
+      "summary": "Release: micropython-wasm 0.1a2\n        I added a CLI to micropython-wasm (issue #7), inspired by the first draft of the blog entry when I realized it would be a great way to illustrate the Try it yourself section.\n    \n    \n        Tags: python, sandboxing, webassembly, micropython",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-06-06",
+      "summary_zh": "micropython-wasm 0.1a2 版本发布，新增了命令行工具（CLI）。这一功能让用户可以在终端中更方便地体验 WebAssembly 版本的 MicroPython，使得博客文章中的“Try it yourself”演示更加便捷。",
+      "why_matters": "展示了如何通过命令行在本地运行 WebAssembly 编译的 MicroPython，适合对 Python 沙箱执行和 WebAssembly 技术感兴趣的开发者。",
+      "tags": "python, webassembly, sandboxing",
+      "id": 436,
+      "added_at": "2026-06-07 03:14:16"
+    },
+    {
       "title": "Hermes Agent v0.16.0 (2026.6.5) — The Surface Release",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.6.5",
       "source": "hermes-agent",
@@ -5535,5 +5665,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-06 13:57:52"
+  "last_updated": "2026-06-07 03:14:16"
 }
