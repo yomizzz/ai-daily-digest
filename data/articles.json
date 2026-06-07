@@ -1,6 +1,110 @@
 {
   "articles": [
     {
+      "title": "KPN Interactieve TV zonder Experia Box",
+      "url": "https://berthub.eu/articles/posts/kpn-interactieve-tv-zelf-doen/",
+      "summary": "Ik ben een heel tevreden klant van KPN Internet. Om diverse redenen gebruik ik de Experia Box niet, maar ik wil wel graag TV kunnen kijken met de KPN Interactieve TV Set Top Box (&ldquo;5202&rdquo;). Vroeger ging dat &ldquo;vanzelf goed&rdquo;, tegenwoordig is daar wat werk voor nodig.\nUPDATE Juni 2026 (na 5 jaar!): de instructies werken weer, er is een update geweest in het igmpproxy.conf bestand. Ook heb ik een tip toegevoegd hoe de ontvanger terug te brengen naar fabrieksinstellingen, wat bij",
+      "source": "berthub.eu",
+      "category": "blog",
+      "published": "2026-06-07",
+      "summary_zh": "本文作者分享了KPN用户如何在不使用Experia Box的情况下，通过KPN Interactieve TV机顶盒（型号5202）观看电视的技术方案。文章指出过去配置相对简单，现在需要额外设置，并预告将在6月2日更新更多内容。",
+      "why_matters": "适合KPN用户了解路由器与机顶盒的替代配置方案。",
+      "tags": "KPN, Interactieve TV, 机顶盒配置",
+      "id": 460,
+      "added_at": "2026-06-08 03:15:09"
+    },
+    {
+      "title": "Thoughts on starting new projects with LLM agents",
+      "url": "https://eli.thegreenplace.net/2026/thoughts-on-starting-new-projects-with-llm-agents/",
+      "summary": "A few months ago I wrote about using LLM agents to help restructuring one of my\nPython projects.\nIt's worth beginning by saying that the\nrewrite has been successful by all reasonable measures; I've been able to\ncontinue maintaining that project since then without an issue.\nIn this post, I …",
+      "source": "eli.thegreenplace.net",
+      "category": "blog",
+      "published": "2026-06-07",
+      "summary_zh": "作者分享了使用LLM agents重构Python项目的经验，表示重写获得了成功，项目维护变得顺畅。文章总结了作者在实践中积累的思考和见解，为开发者提供了在实际项目中使用LLM agents的参考。",
+      "why_matters": "作者以亲身实践验证了LLM agents辅助项目开发的可行性，对希望尝试AI辅助开发的开发者具有借鉴意义。",
+      "tags": "LLM Agents, Python重构, AI辅助开发",
+      "id": 458,
+      "added_at": "2026-06-08 03:15:09"
+    },
+    {
+      "title": "A crank formula for π",
+      "url": "https://www.johndcook.com/blog/2026/06/07/a-crank-formula-for-%cf%80/",
+      "summary": "I ran across a cranky formula for π based on physical constants here and decided to play around with it. The source describes λ as &#8220;wavelength (chosen in the microwave region)&#8221; and I thought perhaps you could chose a value of λ to make the equation work. But as a comment pointed out, the bracketed [&#8230;]\nThe post A crank formula for π first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-06-07",
+      "summary_zh": "本文讨论了一个基于物理常数推导出的π“曲柄公式”，作者尝试通过选择微波区域的波长值来验证或调整该公式，但评论指出该方法存在根本性局限。这提醒我们数学恒等式不能通过随意选择物理参数来“创造”π值。",
+      "why_matters": "适合对数学常数探索和物理公式推导感兴趣的读者，能帮助理解数学真理的不可伪造性。",
+      "tags": "圆周率π, 数学趣题, 物理常数, 科学思辨",
+      "id": 456,
+      "added_at": "2026-06-08 03:15:09"
+    },
+    {
+      "title": "The Laplace limit",
+      "url": "https://www.johndcook.com/blog/2026/06/07/the-laplace-limit/",
+      "summary": "The previous post discussed how to solve Kepler&#8217;s equation M = E − e sin(E) using a sine series. You could also solve Kepler&#8217;s equation using a power series, which Lagrange did in 1771. Both approaches express E as a function of e and M, but from different perspectives. Bessel though of his solution as a sum of sines in M, [&#8230;]\nThe post The Laplace limit first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-06-07",
+      "summary_zh": "暂无摘要",
+      "why_matters": "说明为什么值得看，可以强调这篇文章帮助理解历史数学方法和开普勒方程求解的不同技术路线。",
+      "tags": "1-3个标签，逗号分隔。可以包括：开普勒方程, 数学史, 幂级数, 拉格朗日, 贝塞尔函数等。",
+      "id": 454,
+      "added_at": "2026-06-08 03:15:09"
+    },
+    {
+      "title": "Powering up a module from the IBM 604: an electronic calculator from 1948",
+      "url": "http://www.righto.com/2026/06/ibm-604-thyraton-tube-module.html",
+      "summary": "1948 was an interesting time for computing.\nFor decades, businesses had used punch card equipment that added and sorted electromechanically.\nNow these electromechanical relays and counting wheels were being used to build room-filling general-purpose computers such as Harvard Mark I (1944)\nand IBM's SSEC (1948).\nBut slow electromechanical mechanisms were already becoming obsolete.\nWorld War II had fostered the development of electronics and vacuum tubes for radio, radar, and navigation.\nElectroni",
+      "source": "righto.com",
+      "category": "blog",
+      "published": "2026-06-07",
+      "summary_zh": "1948年标志着计算技术从机电时代向电子时代的重要过渡。IBM 604电子计算模块采用电子管技术，能够快速执行算术运算，相比当时依赖继电器和计数轮的机电设备实现了显著的性能提升。本文深入解析604模块的电子电路设计，揭示了早期电子计算系统的工作原理。",
+      "why_matters": "对于计算机历史爱好者和电子技术研究者而言，这篇文章提供了难得的技术细节，展示了70多年前电子计算先驱的设计思路。",
+      "tags": "IBM 604, 电子计算, 计算器历史, 1940年代技术",
+      "id": 452,
+      "added_at": "2026-06-08 03:15:09"
+    },
+    {
+      "title": "'Vim' has many faces",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/unix/VimManyFaces",
+      "summary": "One of the problems I have when talking about 'vim' is that in\npractice, there are several versions of 'vim'. I don't mean 'version'\nin the sense of release numbers (although Vim has lots of releases\nand things change in them over time), but more in how people approach\nand use Vim. Even more than GNU Emacs, I feel that Vim has turned\ninto an editor that has multiple faces, so the 'vim' that you use\nmay not be the 'vim' that I use.\n\n(Which version or face of Vim you see depends in part on what yo",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-06-07",
+      "summary_zh": "文章探讨了Vim在实际使用中呈现出多种不同“面孔”的现象。作者指出，人们谈论Vim时往往忽略了一个关键问题：不同用户对Vim的理解和使用方式存在显著差异，这种差异不仅仅体现在版本号上，更体现在使用者的理念和方法论层面。",
+      "why_matters": "帮助读者理解Vim生态的多样性，避免对这一工具的简单化认知。",
+      "tags": "Vim, 文本编辑器, 使用理念",
+      "id": 450,
+      "added_at": "2026-06-08 03:15:09"
+    },
+    {
+      "title": "A new era for software testing",
+      "url": "http://antirez.com/news/168",
+      "summary": "Automatic programming dramatically speeds up writing software in certain use cases and in the right hands. In my experience the output does not reach the structural quality and economy of complexity of the best hand-written software. However, not all the software is stellar, and my feeling is that automatic programming surpasses most of the times (and if well managed) the quality of decently developed hand-written code.\n\nYet, there is a tradeoff between quality and time, in the case of writing n",
+      "source": "antirez.com",
+      "category": "blog",
+      "published": "2026-06-07",
+      "summary_zh": "文章探讨了自动编程（AI辅助编程）时代的软件测试变革。作者antirez认为，自动编程在特定场景下能显著提升软件开发效率，但生成代码的结构质量和复杂度控制往往不及优秀的手写代码。软件质量参差不齐，AI生成代码的整体水准仍有提升空间。",
+      "why_matters": "Redis创始人基于实战经验分享对AI编程工具的客观评价，值得技术决策者参考。",
+      "tags": "AI编程, 软件测试, 技术趋势",
+      "id": 448,
+      "added_at": "2026-06-08 03:15:09"
+    },
+    {
+      "title": "Halide Mark III",
+      "url": "https://www.lux.camera/halide-mark-iii/",
+      "summary": "Ben Sandofsky, writing on the Lux Camera blog:\n\n\n  After decades of shooting digital, I returned to analog\nphotography in 2023. I thought it would be challenging, given the\nlimited selection of film stocks, only to be surprised by how\nfreeing it felt. It felt so much better to have a handful of\namazing choices rather than photo-editor with thousands of\npresets. We owe that to film engineers who spent years developing\nversatile film stocks that work in a variety of situations.\n\nInspired by “Less,",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-07",
+      "summary_zh": "开发者Ben Sandofsky分享了他在2023年重新回归胶片摄影的经历，尽管胶片选择有限，却意外感受到前所未有的自由与轻松感。这与他开发的Halide相机应用的设计理念相契合——Halide Mark III正是致力于在数码摄影中重现这种简洁、专注的拍摄体验。",
+      "why_matters": "Halide开发者亲述从数码回归胶片的心路历程，揭示了这款专业相机App的设计哲学由来。",
+      "tags": "胶片摄影，Halide相机，iOS应用",
+      "id": 446,
+      "added_at": "2026-06-08 03:15:09"
+    },
+    {
       "title": "Our Great War is a Spiritual War",
       "url": "https://geohot.github.io//blog/jekyll/update/2026/06/06/our-great-war.html",
       "summary": "I often come back to the question of why this is happening. Why do people want the centralized world? Why do people want the administered reality? Why do people want to be managed? Why do people not want root?",
@@ -5665,5 +5769,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-07 14:34:46"
+  "last_updated": "2026-06-08 03:15:09"
 }
