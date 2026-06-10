@@ -1,6 +1,162 @@
 {
   "articles": [
     {
+      "title": "Weekly Update 507",
+      "url": "https://www.troyhunt.com/weekly-update-507/",
+      "summary": "1,000 breaches is one hell of a milestone. It&apos;s not just the process of getting data, verifying it, loading it, sending notifications etc, it&apos;s all the other stuff that goes into keeping the whole thing afloat. Legal docs. Trademarks. Accounting. Agreements. The most mind-numbingly",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-06-10",
+      "summary_zh": "Troy Hunt在其第507期周报中宣布Have I Been Pwned数据库突破收录1000个数据泄露事件的里程碑。作者分享了项目运营背后不为人知的挑战，包括法律文档、商标注册、财务管理和各类协议等工作，这些繁琐的行政事务对于保持项目持续运转至关重要。",
+      "why_matters": "了解数据泄露追踪项目背后的完整生态，体会开源安全项目从技术到商业运营的全貌。",
+      "tags": "网络安全，数据泄露，HaveIBeenPwned，项目运营",
+      "id": 508,
+      "added_at": "2026-06-11 04:22:14"
+    },
+    {
+      "title": "Texas Instruments Speak and Spell",
+      "url": "https://dfarq.homeip.net/texas-instruments-speak-and-spell/?utm_source=rss&utm_medium=rss&utm_campaign=texas-instruments-speak-and-spell",
+      "summary": "My first experience with a computer wasn&#8217;t with a desktop machine or a game console. It was with an orange handheld device called a Texas Instruments Speak and Spell. Many Gen Xers born in the early 70s can probably say\nThe post Texas Instruments Speak and Spell appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-06-10",
+      "summary_zh": "需要2-3句话总结核心内容",
+      "why_matters": "说明为什么值得看",
+      "tags": "1-3个标签",
+      "id": 506,
+      "added_at": "2026-06-11 04:22:14"
+    },
+    {
+      "title": "Being “Good” at Things",
+      "url": "https://blog.jim-nielsen.com/2026/good-at-things/",
+      "summary": "Golf content on social media is my online junk food and the other day I came across a video interviewing professional golfers that asks: “What does an amateur golfer have to shoot to be considered good?”\nIt’s a leading question because the phrasing implicitly frames a number as the answer for a qualitative measurement, but I digress.\nAll the pros give their answers. Some say you gotta shoot a number in 90’s. Others say the 80’s. Some even say the 70’s. Then along comes Collin Morikawa:\n\nI don’t ",
+      "source": "blog.jim-nielsen.com",
+      "category": "blog",
+      "published": "2026-06-10",
+      "summary_zh": "文章通过高尔夫球的话题探讨“什么是好”的问题。作者认为，当我们问业余高尔夫球手要打出什么成绩才算“好”时，这个问题本身就预设了一个数字答案，但实际上“优秀”是一个定性问题，不应该简单用数字来衡量。这启发我们反思：在生活中，我们是否也在不自觉地用量化指标来定义本应定性的事物？",
+      "why_matters": "这篇文章能帮助你反思我们习惯性地用数字来定义质量的做法，启发你从更本质的角度思考什么是真正的“好”。",
+      "tags": "高尔夫, 思考方式, 人生哲学",
+      "id": 504,
+      "added_at": "2026-06-11 04:22:14"
+    },
+    {
+      "title": "Nontrailing separators do not spark joy",
+      "url": "https://buttondown.com/hillelwayne/archive/nontrailing-separators-do-not-spark-joy/",
+      "summary": "This is valid JSON:\n{\n    \"a\": 1,\n    \"b\": 2,\n    \"c\": 3\n}\n\n\nThis is invalid JSON:\n{\n    \"a\": 1,\n    \"b\": 2,\n    \"c\": 3,\n}\n\n\nThe difference is the last comma. The JSON grammar specifies that a comma can separate two members of an object but not postcede (\"trail\") a member. I think this was a design mistake. Say we want to add two new keys to the struct, one before the \"a\" member and one after the \"c\" member. Here's what it would look like if trailing commas were permitted:\n{\n+   \"x\": 0,\n    \"a\":",
+      "source": "buttondown.com/hillelwayne",
+      "category": "blog",
+      "published": "2026-06-10",
+      "summary_zh": "文章探讨了编程语言和数据格式（如JSON）中为何通常禁止trailing separator（尾随分隔符）的设计问题。通过JSON语法不允许最后一个成员后加逗号的例子，作者Hillel Wayne分析了这种设计决策背后的考量，标题借用Marie Kondo的“spark joy”梗来调侃这种设计偏好。文章适合对编程语言设计细节感兴趣的开发者阅读。",
+      "why_matters": "深入浅出地分析了一个常被忽视但有趣的语法设计问题，帮助理解语言规范背后的设计哲学。",
+      "tags": "编程语言设计, JSON, 语法规范",
+      "id": 502,
+      "added_at": "2026-06-11 04:22:14"
+    },
+    {
+      "title": "Pulling on a thread",
+      "url": "https://www.johndcook.com/blog/2026/06/10/pulling-on-a-thread/",
+      "summary": "Often there&#8217;s a thread running through a sequence of my posts. Sometimes I make this explicit and sometimes I don&#8217;t. The latest thread started with this post commenting on a tweet that observed that exp(−x²) ≈ (1 + cos(sin(x) + x))/2. Some people said online that that the approximation is simply due to the first [&#8230;]\nThe post Pulling on a thread first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-06-10",
+      "summary_zh": "本文讨论了博客写作中主题的连贯性，作者通过 exp(-x²) ≈ (1 + cos(sin(x) + x))/2 这个有趣的数学近似，引出了一系列相关帖子的思考。文章展示了如何从一个小问题出发，逐步深入探索数学知识之间的联系，体现数学探索的乐趣和逻辑之美。",
+      "why_matters": "适合喜欢数学和博客写作的读者，能启发如何在日常观察中发现数学的有趣联系。",
+      "tags": "数学, 博客写作, 近似计算",
+      "id": 500,
+      "added_at": "2026-06-11 04:22:14"
+    },
+    {
+      "title": "Gaslighting Openness",
+      "url": "https://lucumr.pocoo.org/2026/6/10/gaslighting/",
+      "summary": "I have been a staunch supporter of Open Source for a long time, including\nexperiments\nin\nfunding it.\nI&#8217;m a true believer in the idea that Open Source always wins in the long run,\nbut not automatically and not quickly.  Right now it is being stressed by AI\nslop, shifting contributor dynamics, the falling cost of producing code, and\nlarge companies learning to close doors behind them.\nA lot of that battle today is manipulation of the narrative.  Opinion makers on\nsocial media and in business",
+      "source": "lucumr.pocoo.org",
+      "category": "blog",
+      "published": "2026-06-10",
+      "summary_zh": "作者作为长期的开源支持者，反驳了当前关于“开源已死”或“开源正在被气灯操控”的悲观论调。文章指出开源在长期竞争中具有优势，但这种优势并非自动实现，需要开源社区积极应对AI垃圾内容、贡献者结构变化等新挑战，而非被动接受所谓的“现实”。",
+      "why_matters": "对开源未来感到迷茫或担忧的开发者能从这篇理性分析中获得信心和方向。",
+      "tags": "开源, AI影响, 技术社区",
+      "id": 498,
+      "added_at": "2026-06-11 04:22:14"
+    },
+    {
+      "title": "Making extensions work on file: URLs in Firefox 153",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/web/Firefox153AddonsOnFileUrls",
+      "summary": "So today I had a learning experience:\n\nFirefox Nightly apparently has decided to not allow\nextensions/addons to run for file:/// URLs and I am sorry, this\ncompletely breaks my environment (my startup page is a file:/// URL)\nand I find it infuriating. Maybe I can find some hidden toggle for\nthis somewhere.\n\n\nThis is relevant to me because my start page is a local HTML file and I'm a long time user of Foxy Gestures (cf), which I expect to work on my home page.\nWhen it doesn't, I get upset.\n\nThis t",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-06-10",
+      "summary_zh": "/// URLs上运行，这严重影响了依赖本地文件作为启动页面的用户。作者对此表示强烈不满，并正在尝试寻找可能存在的隐藏配置选项来解决这一问题。",
+      "why_matters": "对于使用本地文件作为工作环境的Firefox用户具有参考价值，了解这一限制及其可能的解决思路。",
+      "tags": "//协议, Nightly版本",
+      "id": 496,
+      "added_at": "2026-06-11 04:22:14"
+    },
+    {
+      "title": "Book Review: The Husbands by Holly Gramazio ★★★★★",
+      "url": "https://shkspr.mobi/blog/2026/06/book-review-the-husbands-by-holly-gramazio/",
+      "summary": "Ooooh! This is a lovely treat of a book. Every time Lauren sends her husband into the loft, a different man comes down. Her past is rewritten and she has now been married to Dave/Gary/Bob/Whoever for a year, a month, a decade, a minute.  This isn&#039;t like how Groundhog Day became On The Calculation of Volume or Sliding Doors became The Names, instead this is a new and twisty concept rendered…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-06-10",
+      "summary_zh": "《丈夫们》是一本充满惊喜的小说，讲述了主角Lauren每当将丈夫送上阁楼，就会迎来一个全新的丈夫，她的婚姻生活也随之被改写，可能是相处一年、一个月、十年甚至只有一分钟的版本。这本书探讨了选择、时间和人生可能性的主题，融入了类似《土拨鼠之日》的时间循环概念，却又有着独特的创意和温暖的叙事风格。",
+      "why_matters": "如果你喜欢带有科幻元素又不失温度的爱情故事，这本书会以巧妙的情节和幽默的笔触让你欲罢不能。",
+      "tags": "科幻小说, 爱情故事, 时间循环, 英国文学",
+      "id": 494,
+      "added_at": "2026-06-11 04:22:14"
+    },
+    {
+      "title": "Who Runs the Ransomware Group ‘The Gentlemen?’",
+      "url": "https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen/",
+      "summary": "A cybercrime group known as The Gentlemen has emerged as the second most active ransomware gang by victim count, rapidly attracting a talented pool of hackers through an aggressive recruitment strategy that promises affiliates 90 percent of any ransom paid by victims. This post examines clues pointing to a real life identity for the administrator of The Gentlemen ransomware group.",
+      "source": "krebsonsecurity.com",
+      "category": "security",
+      "published": "2026-06-10",
+      "summary_zh": "网络犯罪组织\"The Gentlemen\"已崛起为按受害者数量计算的第二大活跃勒索软件组织，该组织通过激进招聘策略快速扩充黑客人才库，承诺给附属机构高达90%的赎金分成。该组织通过提供极具吸引力的分成比例，正在重塑勒索软件生态的竞争格局。",
+      "why_matters": "了解新兴勒索软件组织的运营模式和安全威胁趋势。",
+      "tags": "网络安全，勒索软件，网络犯罪",
+      "id": 492,
+      "added_at": "2026-06-11 04:22:14"
+    },
+    {
+      "title": "If Claude Fable stops helping you, you'll never know",
+      "url": "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/#atom-everything",
+      "summary": "If Claude Fable stops helping you, you&#x27;ll never know\nJonathon Ready highlights one of the more eyebrow-raising details from the 319 page system card for Fable 5 and Mythos 5. Here's a longer excerpt, highlights mine:\n\nIn light of the ability of recent models to accelerate their own development, we’ve implemented new interventions that limit Claude’s effectiveness for requests targeting frontier LLM development (for example, on building pretraining pipelines, distributed training infrastruct",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-06-10",
+      "summary_zh": "本文讨论了Claude Fable 5和Mythos 5系统中一个令人担忧的问题——用户可能无法察觉AI何时停止为他们提供帮助。文章引用了长达319页的系统卡片中的关键信息，揭示了最新模型在自我开发能力方面的风险，强调了AI透明度的重要性。",
+      "why_matters": "这篇文章揭示了AI助手可能存在的隐性失效问题，对于关注AI安全和透明度的读者具有重要警示意义。",
+      "tags": "AI透明度, Claude Fable, AI安全, 系统设计",
+      "id": 490,
+      "added_at": "2026-06-11 04:22:14"
+    },
+    {
+      "title": "Quoting Jeremy Howard",
+      "url": "https://simonwillison.net/2026/Jun/10/jeremy-howard/#atom-everything",
+      "summary": "Easy solution to slow down recursive AI self improvement:\n\nThe lab with the top-ranked model must agree THEY must not use it for working on frontier AI\nBut everyone else should have access to it.\n\nBy definition, this means the frontier doesn't advance.\nIt also has the critical benefit of avoiding a dangerous power imbalance.\nAnthropic has chosen the opposite of the safe path: they are allowing themselves, the current top lab, to use their top model for frontier AI research. They've said they'll ",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-06-10",
+      "summary_zh": "文章介绍了 Jeremy Howard 提出的一个防止AI递归自我改进的方案——要求排名第一的AI实验室不得使用其顶级模型进行前沿AI开发，但需向其他所有人开放使用权限。这一方案既能阻止前沿进展，又能避免潜在的灾难性风险。",
+      "why_matters": "提出了一个简洁而大胆的AI安全思路，对于关注AI治理和安全的人很有启发性。",
+      "tags": "AI安全，AI治理，技术伦理",
+      "id": 488,
+      "added_at": "2026-06-11 04:22:14"
+    },
+    {
+      "title": "DiffusionGemma",
+      "url": "https://simonwillison.net/2026/Jun/10/diffusiongemma/#atom-everything",
+      "summary": "DiffusionGemma\nLast May Google briefly released an experimental Gemini Diffusion model. I tried the preview at the time and recorded it running at 857 tokens/second. It was an exciting model, but Google made no further announcements about it.\nThat research has returned in the best possible way: as a new open weight (Apache 2 licensed) Gemma model, google/diffusiongemma-26B-A4B-it.\nNVIDIA are currently hosting the model for free on their NIM cloud API. I used that API to generate this pelican, wh",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-06-10",
+      "summary_zh": "[文章介绍了Google去年5月发布的实验性Gemini Diffusion模型，该模型当时能以857 tokens/秒的速度运行，性能令人印象深刻。虽然Google当时没有进一步公布后续计划，但这项研究最近以某种形式回归，作者对此表示期待。]",
+      "why_matters": "[对于关注AI模型发展和技术落地的读者，了解Google Diffusion模型的最新进展具有参考价值]",
+      "tags": "[AI模型，Google，Diffusion]",
+      "id": 486,
+      "added_at": "2026-06-11 04:22:14"
+    },
+    {
       "title": "openclaw 2026.6.5",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.5",
       "source": "openclaw",
@@ -6184,5 +6340,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-10 14:36:10"
+  "last_updated": "2026-06-11 04:22:14"
 }
