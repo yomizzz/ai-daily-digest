@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>Incorruptible</title>
     <style>
 
         :root {
@@ -287,56 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-06-10 14:36:10</p>
+        <h1>Incorruptible</h1>
+        <p><span class="category-tag">blog</span> steveblank.com · 2026-06-09</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 1 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="release">
-    <div class="release-header">
-        <div style="display:flex;align-items:center;flex-wrap:wrap;">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.6.5" target="_blank" class="release-title">openclaw 2026.6.5</a>
-            <span class="release-tag">v2026.6.5</span>
-        </div>
-        <span class="release-date">2026-06-09</span>
-    </div>
-<div class="release-section">
-    <div class="release-section-title">🆕 新增功能</div>
-    <div class="release-card"><ul class="summary-list"><li>- QQBot 在原生投递前剥离模型推理脚手架，防止 `&lt;thinking&gt;` 内容泄露到频道回复</li><li>- MCP 工具结果强制转换资源链接、音频、畸形图像等非文本/图像块，防止 Anthropic 400 错误</li><li>- Anthropic 扩展思考会话支持提示缓存过期或 Gateway 重启后自动恢复</li><li>- Parallel 现已作为捆绑 web_search 提供商集成，支持 API_KEY 发现和引导选择器</li><li>- Google Vertex ADC 用户获得静态目录行和运行时模型解析，单提供商冷却恢复更可靠</li><li>- Matrix 支持语音笔记预检、线程阅读/回复保留及 QA 覆盖</li><li>- 认证配置文件迁移至 SQLite，官方 npm 插件安装记录保留可信引脚</li><li>- Agent、工具和提供商循环加强 MCP 租约时间戳、本地工具目录等验证，减少隐藏重试</li><li>- macOS 节点模式不再悄悄自重新连接，减少伴侣应用会话抖动</li><li>- 升级和服务路径更安全：cron JSON 迁移、WhatsApp 启动等待有限界、禁用账户清理</li></ul></div>
-</div><div class="release-section">
-    <div class="release-section-title">🐛 Bug 修复</div>
-    <div class="release-card"><ul class="summary-list"><li>- QQBot 修复频道内容边界，防止推理/思考内容泄露</li></ul></div>
-</div>
-</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><p>《Incorruptible》探讨了为什么优秀公司会走向衰落，而伟大公司如何保持卓越。Eric Ries的这本书不仅提供了战术层面的思考方式，更重要的是改变了读者看待商业世界的方式。它揭示了企业保持“廉洁”、持续创新的关键要素。</p></div>
+<div class="tags">标签：精益创业，企业管理，创新思维</div>
+        <div class="detail-why">💡 这本书如同“吞下红色药丸”，能彻底改变你对创业和公司治理的认知框架。</div>
+        <a href="https://steveblank.com/2026/06/09/incorruptible/" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>

@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.6.5",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.5",
+      "source": "openclaw",
+      "published": "2026-06-10",
+      "category": "openclaw",
+      "summary": "- QQBot 在原生投递前剥离模型推理脚手架，防止 `<thinking>` 内容泄露到频道回复\n- MCP 工具结果强制转换资源链接、音频、畸形图像等非文本/图像块，防止 Anthropic 400 错误\n- Anthropic 扩展思考会话支持提示缓存过期或 Gateway 重启后自动恢复\n- Parallel 现已作为捆绑 web_search 提供商集成，支持 API_KEY 发现和引导选择器\n- Google Vertex ADC 用户获得静态目录行和运行时模型解析，单提供商冷却恢复更可靠\n- Matrix 支持语音笔记预检、线程阅读/回复保留及 QA 覆盖\n- 认证配置文件迁移至 SQLite，官方 npm 插件安装记录保留可信引脚\n- Agent、工具和提供商循环加强 MCP 租约时间戳、本地工具目录等验证，减少隐藏重试\n- macOS 节点模式不再悄悄自重新连接，减少伴侣应用会话抖动\n- 升级和服务路径更安全：cron JSON 迁移、WhatsApp 启动等待有限界、禁用账户清理\n\n🐛 Bug 修复：- QQBot 修复频道内容边界，防止推理/思考内容泄露",
+      "features": "- QQBot 在原生投递前剥离模型推理脚手架，防止 `<thinking>` 内容泄露到频道回复\n- MCP 工具结果强制转换资源链接、音频、畸形图像等非文本/图像块，防止 Anthropic 400 错误\n- Anthropic 扩展思考会话支持提示缓存过期或 Gateway 重启后自动恢复\n- Parallel 现已作为捆绑 web_search 提供商集成，支持 API_KEY 发现和引导选择器\n- Google Vertex ADC 用户获得静态目录行和运行时模型解析，单提供商冷却恢复更可靠\n- Matrix 支持语音笔记预检、线程阅读/回复保留及 QA 覆盖\n- 认证配置文件迁移至 SQLite，官方 npm 插件安装记录保留可信引脚\n- Agent、工具和提供商循环加强 MCP 租约时间戳、本地工具目录等验证，减少隐藏重试\n- macOS 节点模式不再悄悄自重新连接，减少伴侣应用会话抖动\n- 升级和服务路径更安全：cron JSON 迁移、WhatsApp 启动等待有限界、禁用账户清理",
+      "bug_fixes": "- QQBot 修复频道内容边界，防止推理/思考内容泄露",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Stop eating Lady Gaga's Oreos",
       "url": "https://www.experimental-history.com/p/stop-eating-lady-gagas-oreos",
       "summary": "OR: The Great Switcheroo",
@@ -6172,5 +6184,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-10 04:04:30"
+  "last_updated": "2026-06-10 14:36:10"
 }
