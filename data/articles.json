@@ -1,6 +1,149 @@
 {
   "articles": [
     {
+      "title": "Hacking Google with A.I. for $500,000",
+      "url": "https://brutecat.com/articles/hacking-google-with-ai",
+      "summary": "What happens when you unleash an AI across all of Google's infrastructure? 1,500 APIs, 3,600 keys, and $500,000 in bounties later, here's what I found.",
+      "source": "brutecat.com",
+      "category": "blog",
+      "published": "2026-06-11",
+      "summary_zh": "本文讲述了一位安全研究人员利用AI工具对Google基础设施进行大规模安全测试的过程，在扫描1,500个API后发现3,600个暴露的密钥，最终获得50万美元漏洞赏金的故事。这一案例展示了AI在安全研究领域的强大能力，同时揭示了大型科技公司基础设施中潜在的安全隐患。",
+      "why_matters": "通过真实案例展示AI在网络安全中的实际应用，既有技术深度又有刺激性，适合对AI应用和安全领域感兴趣的读者。",
+      "tags": "AI安全, 漏洞赏金, 网络安全",
+      "id": 518,
+      "added_at": "2026-06-12 04:17:46"
+    },
+    {
+      "title": "The failed 3Com and US Robotics merger",
+      "url": "https://dfarq.homeip.net/the-failed-3com-and-us-robotics-merger/?utm_source=rss&utm_medium=rss&utm_campaign=the-failed-3com-and-us-robotics-merger",
+      "summary": "On June 12, 1997, 3Com and US Robotics merged at a cost of $8.5 billion. At the time, it was the merger of the two biggest names in their respective fields, and it seemed poised to become a telecommunications giant.\nThe post The failed 3Com and US Robotics merger appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-06-11",
+      "summary_zh": "1997年6月12日，网络设备公司3Com以85亿美元收购US Robotics，成为当时各自领域最大公司的合并案，业界曾预期其将崛起为电信巨头。然而这次备受瞩目的合并最终以失败告终，成为科技行业并购史上的一个重要案例。",
+      "why_matters": "揭示了大型科技并购失败的深层原因，对理解企业整合与商业决策具有警示意义。",
+      "tags": "商业并购, 科技史, 3Com, US Robotics, 电信行业",
+      "id": 516,
+      "added_at": "2026-06-12 04:17:46"
+    },
+    {
+      "title": "Biological Evolution and Information Acquisition",
+      "url": "https://www.construction-physics.com/p/biological-evolution-and-information",
+      "summary": "A few weeks ago we looked at a simulation of technological evolution by economist Brian Arthur, in which he was able to start with simple building blocks (such as a NAND gate) and evolve surprisingly complex circuits (such as a 12-way AND gate or a 4-bit adder) by randomly combining increasingly useful existing components.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-06-11",
+      "summary_zh": "文章探讨了Brian Arthur的经济学模拟实验，展示了从简单构建块（如NAND门）通过随机组合可以进化出复杂电路（如12路AND门或4位加法器）。这一研究揭示了进化过程中信息获取和累积的机制，暗示复杂系统可能通过逐步组合简单元件而涌现。",
+      "why_matters": "提供了一个有趣的视角，连接技术进化与生物进化中的信息获取机制，适合对复杂系统演化感兴趣的读者。",
+      "tags": "技术进化, 信息获取, Brian Arthur, 复杂系统, 模拟实验",
+      "id": 514,
+      "added_at": "2026-06-12 04:17:46"
+    },
+    {
+      "title": "What Happened to tea.xyz",
+      "url": "https://nesbitt.io/2026/06/11/what-happened-to-tea.html",
+      "summary": "Reading the tea leaves",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-06-11",
+      "summary_zh": "本文分析了tea.xyz这一加密货币项目近期发生的变化或事件，该项目曾在Web3和开源软件激励领域引发关注。原文标题“Reading the tea leaves”暗示文章旨在通过蛛丝马迹解读项目走向，可能涉及代币价格波动、团队动态或生态发展等关键信息，为读者提供对该项目现状的深入洞察。",
+      "why_matters": "适合关注加密货币开源激励赛道及tea项目生态变化的读者，提供项目动态分析与趋势解读。",
+      "tags": "Web3, 加密货币, 开源软件",
+      "id": 512,
+      "added_at": "2026-06-12 04:17:46"
+    },
+    {
+      "title": "Solving a chess puzzle with Claude and Prolog",
+      "url": "https://www.johndcook.com/blog/2026/06/11/prolog-claude/",
+      "summary": "Prolog is the original logic programming language. The name comes from programming in logic. More specifically, the name comes from programmation en logique because the inventor of the language, Philippe Roussel, is French. Prolog has its advantages and disadvantages. One of the advantages is that the language represents logical problems directly. One of the disadvantages [&#8230;]\nThe post Solving a chess puzzle with Claude and Prolog first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-06-11",
+      "summary_zh": "本文介绍如何使用Prolog逻辑编程语言（结合Claude AI）解决国际象棋谜题。Prolog的名称源自“programming in logic”，由法国人Philippe Roussel发明，其核心优势在于通过逻辑推理而非传统命令式编程来解决问题。文章展示了逻辑编程在处理棋类游戏等需要复杂推理的场景中的独特应用。",
+      "why_matters": "展示了AI辅助编程与传统逻辑语言结合解决问题的创新思路，适合对编程和AI应用感兴趣的读者。",
+      "tags": "Prolog, 逻辑编程, Claude, 国际象棋, AI编程",
+      "id": 510,
+      "added_at": "2026-06-12 04:17:46"
+    },
+    {
+      "title": "Pluralistic: The world has moved on (11 Jun 2026)",
+      "url": "https://pluralistic.net/2026/06/11/lapsarianism/",
+      "summary": "Today's links The world has moved on: Notes from the enshittocene. Hey look at this: Delights to delectate. Object permanence: \"Jpod\"; Barlow v Glickman; Cyclist v bike lanes; Judge v copyright trolls; \"The Uncertain Places\"; Thatcher v Palin; NY v Time Warner; Banks v negative interest rates; Keeping the new web decentralized; \"Prisoners' Inventions.\" Upcoming appearances: LA, Menlo Park, Toronto, NYC, Philadelphia, Chicago, Edinburgh, South Bend. Recent appearances: Where I've been. Latest boo",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-06-11",
+      "summary_zh": "这篇文章是Cory Doctorow的每日专栏，围绕“enshittocene”（平台腐化时代）概念展开，汇集了多个领域的话题，包括科技平台的伦理问题、版权纠纷、城市交通政策争议，以及媒体与金融领域的事件。文章反映了互联网时代用户权益与商业利益之间的持续张力。",
+      "why_matters": "适合关注互联网治理、科技伦理和数字权利议题的读者，能快速了解一周内的重要科技政策动态。",
+      "tags": "平台治理, 数字版权, 科技伦理, 互联网政策",
+      "id": 508,
+      "added_at": "2026-06-12 04:17:46"
+    },
+    {
+      "title": "★ Sweet Jeebus, MacOS 27 Golden Gate Removes the Dumb Icons From Menu Items",
+      "url": "https://daringfireball.net/2026/06/macos_27_golden_gate_removes_the_dumb_icons_from_menu_items",
+      "summary": "This is my favorite news from all of WWDC this week. I mean that. In a small way I mean it because I so loathe this aspect of MacOS Tahoe. But in a large way I mean it because it’s proof that the rot has been rooted out of Apple’s software design team.",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-11",
+      "summary_zh": "苹果在WWDC上宣布新版macOS将移除菜单栏项目中那些被认为多余的图标，这成为大会最受关注的变化之一。原文作者对此表示高度赞赏，认为这证明了苹果软件设计团队已经“清除积弊”，恢复了应有的设计品味。",
+      "why_matters": "简短而精准地传达了macOS设计的核心理念转变。",
+      "tags": "macOS,WWDC,UI设计",
+      "id": 506,
+      "added_at": "2026-06-12 04:17:46"
+    },
+    {
+      "title": "Craig Federighi Details Apple’s Collaboration With Google for Siri AI — Live, on Stage",
+      "url": "https://9to5mac.com/2026/06/08/craig-federighi-details-apples-collaboration-with-google-for-siri-ai-in-ios-27/",
+      "summary": "Chance Miller, at 9to5Mac on Monday:\n\n\n  Apple’s Siri team, led by Craig Federighi, held a post-WWDC\nkeynote tech talk with members of the press this afternoon to\ntalk through iOS 27 and the new Siri AI. During the talk,\nFederighi shared more details about Apple’s collaboration with\nGoogle. Federighi was joined by Amar Subramanya (vice president\nof AI), Mike Rockwell (Siri lead), and Sebastien Marineau-Mes\n(software VP).\n\nOn the Google collaboration, Federighi explained:\n\n\n  Of course, we don’t ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-11",
+      "summary_zh": "Apple在WWDC后举办了一场技术演讲，Siri团队负责人Craig Federighi出席并分享了iOS 27及新版Siri AI的更多细节。演讲中，Federighi首次详细披露了Apple与Google在AI领域的合作情况，揭示了两家科技巨头在人工智能方面的深度协作关系。",
+      "why_matters": "了解Apple未来AI战略布局以及与Google合作内幕的重要报道。",
+      "tags": "Apple, Siri, Google, AI合作, WWDC",
+      "id": 504,
+      "added_at": "2026-06-12 04:17:46"
+    },
+    {
+      "title": "Anthropic Walks Back Policy That Could Have ‘Sabotaged’ AI Researchers Using Claude",
+      "url": "https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/#atom-everything",
+      "summary": "Anthropic Walks Back Policy That Could Have ‘Sabotaged’ AI Researchers Using Claude\nBig scoop for Maxwell Zeff at Wired:\n\n“We’re changing Fable 5’s safeguards for frontier LLM development to make them visible.” Anthropic said in a statement to WIRED. “We made the wrong tradeoff and we apologize for not getting the balance right.”\n\nThere's been a huge outcry about Anthropic's policy, tucked away in their system card, that Claude Fable/Mythos would identify \"requests targeting frontier LLM develop",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-06-11",
+      "summary_zh": "Anthropic撤回了一项可能“破坏”AI研究人员使用Claude的政策，承认在Fable 5的安全措施上做出了错误的权衡，并为此道歉。该公司表示将让安全措施更加透明可见。这是Anthropic在AI安全与开放性之间寻求平衡的一次调整。",
+      "why_matters": "揭示了AI公司在安全和开放之间面临的政策挑战，对关注AI行业发展的人有重要参考价值。",
+      "tags": "Anthropic, AI政策, Claude",
+      "id": 502,
+      "added_at": "2026-06-12 04:17:46"
+    },
+    {
+      "title": "asyncinject 0.7",
+      "url": "https://simonwillison.net/2026/Jun/11/asyncinject/#atom-everything",
+      "summary": "Release: asyncinject 0.7\n        I built this utility library to support an asyncio dependency injection pattern a few years ago. I was using it with Datasette and Claude Fable 5 spotted some bugs in the dependency which it then fixed for me. It's a very proactive model!\n    \n    \n        Tags: async, projects, python, claude-mythos",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-06-11",
+      "summary_zh": "asyncinject 0.7版本正式发布，这是一个作者为支持asyncio依赖注入模式而构建的工具库，已应用于Datasette项目中。值得注意的是，AI助手Claude Fable 5在测试过程中主动发现了依赖中的bug并自动完成了修复，展示了AI在代码维护方面的积极主动性。",
+      "why_matters": "展示了AI代码助手从发现问题到自动修复的完整流程，体现了AI辅助开发的新范式。",
+      "tags": "asyncio，依赖注入，AI辅助编程",
+      "id": 500,
+      "added_at": "2026-06-12 04:17:46"
+    },
+    {
+      "title": "datasette 1.0a33",
+      "url": "https://simonwillison.net/2026/Jun/11/datasette/#atom-everything",
+      "summary": "Release: datasette 1.0a33\n        This alpha is a significant step on the road to a stable 1.0, finally extending the ?_extra= pattern I introduced in Datasette 1.0a3 to cover queries and rows in addition to tables. That pattern is also now documented!\nI wrote a whole lot more about the new release on the Datasette project blog: Datasette 1.0a33 with JSON extras in the API.\nBecause API explorer tools are almost free to build now I had Claude Fable 5 in Claude Code (for the plan) and GPT-5.5 xhig",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-06-11",
+      "summary_zh": "Datasette 1.0a33版本发布，这是迈向稳定1.0版本的重要一步。新版本将?_extra=查询模式扩展到queries和rows（此前仅支持tables），并新增了官方文档说明。该模式允许用户获取超出默认限制的额外查询结果和行数据。",
+      "why_matters": "如果你使用Datasette进行数据探索和分析，这个版本增强了查询灵活性，值得升级体验。",
+      "tags": "开源工具,Python,数据可视化",
+      "id": 498,
+      "added_at": "2026-06-12 04:17:46"
+    },
+    {
       "title": "Weekly Update 507",
       "url": "https://www.troyhunt.com/weekly-update-507/",
       "summary": "1,000 breaches is one hell of a milestone. It&apos;s not just the process of getting data, verifying it, loading it, sending notifications etc, it&apos;s all the other stuff that goes into keeping the whole thing afloat. Legal docs. Trademarks. Accounting. Agreements. The most mind-numbingly",
@@ -6340,5 +6483,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-11 14:54:25"
+  "last_updated": "2026-06-12 04:17:46"
 }
