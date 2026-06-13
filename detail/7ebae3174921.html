@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>Why disk warranties are useful at work but not for me at home</title>
     <style>
 
         :root {
@@ -287,56 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-06-13 14:21:46</p>
+        <h1>Why disk warranties are useful at work but not for me at home</h1>
+        <p><span class="category-tag">blog</span> utcc.utoronto.ca/~cks · 2026-06-12</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 1 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="release">
-    <div class="release-header">
-        <div style="display:flex;align-items:center;flex-wrap:wrap;">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.6.6" target="_blank" class="release-title">openclaw 2026.6.6</a>
-            <span class="release-tag">v2026.6.6</span>
-        </div>
-        <span class="release-date">2026-06-12</span>
-    </div>
-<div class="release-section">
-    <div class="release-section-title">🆕 新增功能</div>
-    <div class="release-card"><ul class="summary-list"><li>- **安全边界全面收紧**：跨transcripts、sandbox binds、host环境、MCP stdio、Codex HTTP等关键模块加强安全检查，超时执行审批默认拒绝。</li><li>- **Telegram投递优化**：账户范围主题路由至正确agent、流式文本工具调用支持、`/compact`命令适配通用入口、回拨处理使用具体API。</li><li>- **iMessage恢复投递改进**：支持始终在线入站重启、持久回显标记、块流阻塞、空闲审批发现、强化出站传输。</li><li>- **浏览器/MCP连接增强**：现有会话CDP支持、WebSocket验证、`cdpUrl`默认配置、Streamable HTTP环回传输、OAuth/SSE授权修正。</li><li>- **控制UI性能提升**：缓存模型元数据、移除启动目录等待、延迟加载斜杠命令、首次事件追踪及慢回复诊断。</li><li>- **提供商支持扩展**：OpenRouter OAuth onboarding、Claude Fable 5自适应思考、Codex会话正确压缩所有权、本地模型跳过guardian审查。</li><li>- **CLI进度事件**：发射Claude CLI注释进度事件，将工具间注释桥接至频道进度。</li><li>- **可观测性改进**：诊断频道捕获工具输入/输出内容、首次assistant事件追踪、慢初始回复警告。</li><li>- **插件/ClawHub改进**：可复用包发布、试运行跳过发布审批、报告托管插件版本漂移、 retired Skill Workshop配置警告。</li><li>- **内存/提供商优化**：llama.cpp运行时移入provider插件、批量文件嵌入、持久化agent模型目录缓存。</li><li>- **频道/移动端改进**：QQBot群组提及开关、iPad/iPhone控制面优化、TUI页脚显示活动连接主机。</li><li>- **运行时性能优化**：TUI运行时插件预热、插件自动启用去重、`/models`派生注册表扫描风暴停止、文本增量快照修剪。</li></ul></div>
-</div><div class="release-section">
-    <div class="release-section-title">🐛 Bug 修复</div>
-    <div class="release-card"><ul class="summary-list"><li>- **代理/会话恢复**：会话重绑定后丢弃过时审批跟进、按身份移除已耗尽回复队列项、恢复过时主回复和可见回复、保持Codex上下文引擎压缩所有权、SDK会话项目思考目录兼容性、短速率限制窗口重试同模型assistant调用、默认压缩超时降至180秒、保持provider故障终端生命周期状态正确。</li><li>- **用户可见内容边界**：抑制Codex/Harmony协议伪影、中和浏览器和LanceDB内存媒体指令、编辑转录图像、通过源抑制保留原生`/compact`回复。</li></ul></div>
-</div>
-</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><p>作者基于多年使用家庭桌面电脑的经验，指出磁盘保修对个人用户价值有限。虽然硬盘有时会在保修期内损坏，但由于使用软件RAID镜像提供数据保护，且家用硬盘容量小、价格便宜，个人用户并不急需快速更换。相比之下，企业环境中硬盘容量大、价值高、业务连续性要求强，保修服务更有实际意义。</p></div>
+<div class="tags">标签：磁盘保修，RAID，数据备份，IT运维</div>
+        <div class="detail-why">💡 通过个人vs企业场景的对比，帮助读者理解磁盘保修的实际价值差异，观点务实且富有经验洞察。</div>
+        <a href="https://utcc.utoronto.ca/~cks/space/blog/tech/DiskWarrantyHomeVsWork" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>

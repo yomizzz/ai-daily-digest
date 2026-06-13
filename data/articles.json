@@ -131,6 +131,18 @@
       "added_at": "2026-06-13 04:03:33"
     },
     {
+      "title": "openclaw 2026.6.6",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.6",
+      "source": "openclaw",
+      "published": "2026-06-12",
+      "category": "openclaw",
+      "summary": "- **安全边界全面收紧**：跨transcripts、sandbox binds、host环境、MCP stdio、Codex HTTP等关键模块加强安全检查，超时执行审批默认拒绝。\n- **Telegram投递优化**：账户范围主题路由至正确agent、流式文本工具调用支持、`/compact`命令适配通用入口、回拨处理使用具体API。\n- **iMessage恢复投递改进**：支持始终在线入站重启、持久回显标记、块流阻塞、空闲审批发现、强化出站传输。\n- **浏览器/MCP连接增强**：现有会话CDP支持、WebSocket验证、`cdpUrl`默认配置、Streamable HTTP环回传输、OAuth/SSE授权修正。\n- **控制UI性能提升**：缓存模型元数据、移除启动目录等待、延迟加载斜杠命令、首次事件追踪及慢回复诊断。\n- **提供商支持扩展**：OpenRouter OAuth onboarding、Claude Fable 5自适应思考、Codex会话正确压缩所有权、本地模型跳过guardian审查。\n- **CLI进度事件**：发射Claude CLI注释进度事件，将工具间注释桥接至频道进度。\n- **可观测性改进**：诊断频道捕获工具输入/输出内容、首次assistant事件追踪、慢初始回复警告。\n- **插件/ClawHub改进**：可复用包发布、试运行跳过发布审批、报告托管插件版本漂移、 retired Skill Workshop配置警告。\n- **内存/提供商优化**：llama.cpp运行时移入provider插件、批量文件嵌入、持久化agent模型目录缓存。\n- **频道/移动端改进**：QQBot群组提及开关、iPad/iPhone控制面优化、TUI页脚显示活动连接主机。\n- **运行时性能优化**：TUI运行时插件预热、插件自动启用去重、`/models`派生注册表扫描风暴停止、文本增量快照修剪。\n\n🐛 Bug 修复：- **代理/会话恢复**：会话重绑定后丢弃过时审批跟进、按身份移除已耗尽回复队列项、恢复过时主回复和可见回复、保持Codex上下文引擎压缩所有权、SDK会话项目思考目录兼容性、短速率限制窗口重试同模型assistant调用、默认压缩超时降至180秒、保持provider故障终端生命周期状态正确。\n- **用户可见内容边界**：抑制Codex/Harmony协议伪影、中和浏览器和LanceDB内存媒体指令、编辑转录图像、通过源抑制保留原生`/compact`回复。",
+      "features": "- **安全边界全面收紧**：跨transcripts、sandbox binds、host环境、MCP stdio、Codex HTTP等关键模块加强安全检查，超时执行审批默认拒绝。\n- **Telegram投递优化**：账户范围主题路由至正确agent、流式文本工具调用支持、`/compact`命令适配通用入口、回拨处理使用具体API。\n- **iMessage恢复投递改进**：支持始终在线入站重启、持久回显标记、块流阻塞、空闲审批发现、强化出站传输。\n- **浏览器/MCP连接增强**：现有会话CDP支持、WebSocket验证、`cdpUrl`默认配置、Streamable HTTP环回传输、OAuth/SSE授权修正。\n- **控制UI性能提升**：缓存模型元数据、移除启动目录等待、延迟加载斜杠命令、首次事件追踪及慢回复诊断。\n- **提供商支持扩展**：OpenRouter OAuth onboarding、Claude Fable 5自适应思考、Codex会话正确压缩所有权、本地模型跳过guardian审查。\n- **CLI进度事件**：发射Claude CLI注释进度事件，将工具间注释桥接至频道进度。\n- **可观测性改进**：诊断频道捕获工具输入/输出内容、首次assistant事件追踪、慢初始回复警告。\n- **插件/ClawHub改进**：可复用包发布、试运行跳过发布审批、报告托管插件版本漂移、 retired Skill Workshop配置警告。\n- **内存/提供商优化**：llama.cpp运行时移入provider插件、批量文件嵌入、持久化agent模型目录缓存。\n- **频道/移动端改进**：QQBot群组提及开关、iPad/iPhone控制面优化、TUI页脚显示活动连接主机。\n- **运行时性能优化**：TUI运行时插件预热、插件自动启用去重、`/models`派生注册表扫描风暴停止、文本增量快照修剪。",
+      "bug_fixes": "- **代理/会话恢复**：会话重绑定后丢弃过时审批跟进、按身份移除已耗尽回复队列项、恢复过时主回复和可见回复、保持Codex上下文引擎压缩所有权、SDK会话项目思考目录兼容性、短速率限制窗口重试同模型assistant调用、默认压缩超时降至180秒、保持provider故障终端生命周期状态正确。\n- **用户可见内容边界**：抑制Codex/Harmony协议伪影、中和浏览器和LanceDB内存媒体指令、编辑转录图像、通过源抑制保留原生`/compact`回复。",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Hacking Google with A.I. for $500,000",
       "url": "https://brutecat.com/articles/hacking-google-with-ai",
       "summary": "What happens when you unleash an AI across all of Google's infrastructure? 1,500 APIs, 3,600 keys, and $500,000 in bounties later, here's what I found.",
@@ -6613,5 +6625,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-13 04:03:33"
+  "last_updated": "2026-06-13 14:21:46"
 }
