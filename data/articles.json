@@ -1,6 +1,136 @@
 {
   "articles": [
     {
+      "title": "Reading List 06/13/2026",
+      "url": "https://www.construction-physics.com/p/reading-list-06132026",
+      "summary": "Homes being built on top of libraries, Patriot missile manufacturing, an effort to construct new US coal plants, a tunnel between the US and Russia, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-06-13",
+      "summary_zh": "本文为一份建筑物理学阅读列表，汇集了多个领域的工程趣闻，包括图书馆上方建造住宅、爱国者导弹制造、美国新建燃煤电厂计划以及美俄海底隧道构想等话题。这些内容展示了建筑与物理原理在现代工业和基础设施中的广泛应用。",
+      "why_matters": "适合对建筑工程、基础设施建设和物理应用感兴趣的读者，内容涵盖军事、能源和交通等领域的创新项目。",
+      "tags": "阅读列表, 建筑工程, 建筑物理",
+      "id": 538,
+      "added_at": "2026-06-14 03:18:10"
+    },
+    {
+      "title": "This Week in Package Management: 13 June 2026",
+      "url": "https://nesbitt.io/2026/06/13/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-06-13",
+      "summary_zh": "本文是2026年6月13日的包管理领域周报，汇总了本周各主要包管理器（如npm、pip、cargo等）的重要版本更新、安全公告及相关技术文章，为开发者提供行业动态概览。",
+      "why_matters": "适合开发者快速了解包管理生态的最新变化，确保项目依赖的安全性和时效性。",
+      "tags": "包管理, 开源生态, 安全更新",
+      "id": 536,
+      "added_at": "2026-06-14 03:18:10"
+    },
+    {
+      "title": "Dangerous Technology For Americans Only",
+      "url": "https://lucumr.pocoo.org/2026/6/13/americans-only/",
+      "summary": "There is a bit of schadenfreude on Twitter right now about Anthropic being hit\nby the US government&#8217;s export control directive to suspend access to Fable and\nMythos.  Anthropic and\ntheir leadership have spent a lot of time and effort describing its own\ntechnology as dangerous and in need of strict controls and regulation.  Now that\nthe US government appears to have taken that framing seriously and told them to\nturn it off for foreign nationals I can see why people are making fun of that\nsi",
+      "source": "lucumr.pocoo.org",
+      "category": "blog",
+      "published": "2026-06-13",
+      "summary_zh": "Anthropic因美国政府出口管制指令被迫暂停Fable和Mythos的访问权限。讽刺的是，这家公司此前一直大力宣扬AI技术危险、需要严格监管，如今却成为被限制的对象，体现了其\"自食其果\"的尴尬处境。",
+      "why_matters": "揭示了AI公司\"AI危险论\"的讽刺性后果，观点辛辣独特。",
+      "tags": "AI监管,出口管制,讽刺评论",
+      "id": 534,
+      "added_at": "2026-06-14 03:18:10"
+    },
+    {
+      "title": "The adder at the heart of Intel's 8087 floating-point chip",
+      "url": "http://www.righto.com/2026/06/intel-8087-adder-reverse-engineered.html",
+      "summary": "In 1980, Intel released the Intel 8087 floating-point coprocessor, a chip that could make math up to 100 times faster.\nAs well as arithmetic and square roots, the 8087 computed\ntranscendental functions including tangent, exponentiation, and logarithms.\nBut it all depended on a 69-bit adder:\n\"The arithmetic heart of the floating-point\nexecution unit is centered about a nanomachine comprised of the adder and its related registers, shifters and control circuitry,\"\nas the patent describes it.\nIn thi",
+      "source": "righto.com",
+      "category": "blog",
+      "published": "2026-06-13",
+      "summary_zh": "本文介绍了Intel在1980年发布的8087浮点协处理器，该芯片能将数学运算速度提升高达100倍。除了执行基本算术运算和平方根计算外，8087还能计算正切、指数、对数等超越函数，而这些强大功能的核心都依赖于一个仅69位的加法器，展示了硬件设计中的精妙权衡。",
+      "why_matters": "文章深入剖析了经典芯片的内部架构，通过详细的技术分析让读者理解现代浮点运算的奠基原理。",
+      "tags": "硬件历史，芯片设计，浮点运算",
+      "id": 532,
+      "added_at": "2026-06-14 03:18:10"
+    },
+    {
+      "title": "Running a modern email system requires non-trivial staff time",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/sysadmin/MailSystemsPeopleCost",
+      "summary": "In a comment on my entry on universities, email, and the issues of\nrunning things in house, I\nmentioned that our departmental\nemail system has a non-trivial cost in both hardware and staff time.\nFor the hardware costs I can easily count servers, but things are more fuzzy for the staff time\nside of things so I'm not going to try to come up with a number\n(especially because our email system itself is somewhat complex\nbecause we have a number of unusual features, such as our simple\nmailing lists). ",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-06-13",
+      "summary_zh": "本文探讨了运行现代电子邮件系统的真实成本，作者以自己所在的部门为例，指出邮件系统不仅需要硬件投入，更需要投入大量的员工时间进行维护和管理。作者强调，虽然硬件成本可以量化，但人员时间成本往往被忽视且难以精确统计，这给机构运营带来了隐性挑战。",
+      "why_matters": "揭示了邮件系统运维中常被低估的人力成本，帮助技术决策者全面评估自建vs外包方案的优劣。",
+      "tags": "邮件系统运维，IT成本管理，技术人力资源",
+      "id": 530,
+      "added_at": "2026-06-14 03:18:10"
+    },
+    {
+      "title": "Pluralistic: Shareholder supremacy and the precog CEO (13 Jun 2026)",
+      "url": "https://pluralistic.net/2026/06/13/minority-shareholder-report/",
+      "summary": "Today's links Shareholder supremacy and the precog CEO: A bright line test that's totally unfalsifiable. Hey look at this: Delights to delectate. Object permanence: Msft v Linux geeks; James Joyce scholars v Joyce estate; iPod sweatshops; Pratchett initiates assisted suicide; Lego-making machine made of Lego; Laid off workers v gag clauses; The ACCESS Act. Upcoming appearances: LA, Menlo Park, Toronto, NYC, Philadelphia, Chicago, Edinburgh, South Bend. Recent appearances: Where I've been. Latest",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-06-13",
+      "summary_zh": "这篇文章是对“股东至上主义”商业逻辑的批评性讨论，探讨了所谓的“precog CEO”（预测型CEO）概念，并质疑某些商业理论缺乏可证伪性的问题。同时文章作为链接集锦，涵盖了科技界历史争议（如微软与Linux社区、乔伊斯遗产纠纷）、制造业伦理（iPod血汗工厂）、文化评论（Pratchett与辅助自杀）以及科技产品趣闻（Lego制作机器）等多元话题。",
+      "why_matters": "集合了科技伦理、商业哲学和社会评论的链接合集，视角独特且涉猎广泛，适合对科技行业和社会议题有思考的读者。",
+      "tags": "股东至上主义, 科技伦理, 链接集锦",
+      "id": 528,
+      "added_at": "2026-06-14 03:18:10"
+    },
+    {
+      "title": "U.S. Government Directs Anthropic to Shut Down Fable 5 and Mythos 5 Models on National Security Grounds",
+      "url": "https://www.anthropic.com/news/fable-mythos-access",
+      "summary": "Anthropic:\n\n\n  The US government, citing national security authorities, has\nissued an export control directive to suspend all access to Fable\n5 and Mythos 5 by any foreign national, whether inside or outside\nthe United States, including foreign national Anthropic employees.\nThe net effect of this order is that we must abruptly disable\nFable 5 and Mythos 5 for all our customers to ensure compliance.\nAccess to all other Anthropic models will not be affected.\n\nWe received the directive from the gov",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-13",
+      "summary_zh": "美国政府以国家安全为由，向AI公司Anthropic下达出口管制指令，要求暂停所有外国人访问Fable 5和Mythos 5两款AI模型，无论其身处美国境内还是境外。此举波及Anthropic的海外员工，凸显了AI技术出口管制正成为大国科技博弈的新焦点。",
+      "why_matters": "了解美国如何运用国家安全权力限制AI技术出口的最新案例。",
+      "tags": "AI监管，出口管制，国家安全",
+      "id": 526,
+      "added_at": "2026-06-14 03:18:10"
+    },
+    {
+      "title": "Apple’s Private Cloud Compute Is Severely Limited for Third-Party Developers",
+      "url": "https://developer.apple.com/private-cloud-compute/",
+      "summary": "From Apple’s Developer site:\n\n\n  To ensure getting started with a large cloud model is as\naccessible as possible, developers in the App Store Small Business\nProgram with fewer than two million first time App Store downloads\nwill be able to use Apple Foundation Models running on Private\nCloud Compute (PCC) with no cloud API cost. The model provides\naccess to frontier level intelligence with unparalleled privacy\nprotections. This makes it easy for small developers to get\nstarted building intellige",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-13",
+      "summary_zh": "Apple的Private Cloud Compute对第三方开发者设置了严格限制，只有App Store小型企业计划成员且首次下载量低于200万次的开发者才能使用Apple Foundation Models。这意味着绝大多数开发者将被排除在外，无法访问苹果的云端AI能力。",
+      "why_matters": "了解Apple AI服务对开发者的准入门槛，对计划接入Apple AI功能的开发者至关重要。",
+      "tags": "Apple, Private Cloud Compute, 开发者限制",
+      "id": 524,
+      "added_at": "2026-06-14 03:18:10"
+    },
+    {
+      "title": "Trump’s Name (Set in the Wrong Font, of Course) Has Been Removed From the Kennedy Center",
+      "url": "https://apple.news/ANLNtQOeuSkiJ35tzkYw9oA",
+      "summary": "Jonathan Edwards reporting for The Washington Post:\n\n\n  President Donald Trump’s name is off the Kennedy Center.\n\nCrews at the performing arts venue started removing it from the\nfront of the building around 3 a.m., several hours after the\ncenter missed a federal judge’s two-week deadline to do so.\nThe judge had ruled that the decision by the center’s board of\ntrustees to rename it was illegal.\n\n\nA perfect metaphor for the work ahead of us.\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-13",
+      "summary_zh": "特朗普的名字已从肯尼迪中心大楼正面前移除，施工人员于凌晨约3点开始作业。此前肯尼迪中心未能满足联邦法官设定的两周移除期限，这一举措标志着围绕前总统特朗普在肯尼迪中心遗留标识的争议画上句号。",
+      "why_matters": "这条新闻反映美国政治与文化机构之间复杂关系的最新进展，展示了法律执行力与行政执行之间的博弈。",
+      "tags": "特朗普，肯尼迪中心，美国政治，法律争议",
+      "id": 522,
+      "added_at": "2026-06-14 03:18:10"
+    },
+    {
+      "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
+      "url": "https://simonwillison.net/2026/Jun/13/us-government-directive-to-suspend-access/#atom-everything",
+      "summary": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5\nWell this is nuts:\n\nThe US government, citing national security authorities, has issued an export control directive to suspend all access to Fable 5 and Mythos 5 by any foreign national, whether inside or outside the United States, including foreign national Anthropic employees. The net effect of this order is that we must abruptly disable Fable 5 and Mythos 5 for all our customers to ensure compliance. Access to ",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-06-13",
+      "summary_zh": "美国政府以国家安全为由，发布出口管制指令，要求暂停所有外国国民对Fable 5和Mythos 5的访问权限，无论其位于境内还是境外。这一举措引发了技术社区的广泛关注和争议。",
+      "why_matters": "反映了AI/技术出口管制政策的最新动向，对关注技术政策和技术获取的人士具有参考价值。",
+      "tags": "出口管制，国家安全，技术政策",
+      "id": 520,
+      "added_at": "2026-06-14 03:18:10"
+    },
+    {
       "title": "I Am Not a Reverse Centaur",
       "url": "https://blog.miguelgrinberg.com/post/i-am-not-a-reverse-centaur",
       "summary": "About a year ago I wrote on this blog about how coding with LLMs would not work for me, even if there were no ethical or environmental concerns preventing me to use them. I'm not going to repeat the arguments I made that time because my views on the subject haven' t changed. What has changed, however, is that the number of contributions I receive on my open source projects has gone up, and nearly all are now made with LLMs.\nThe other day I had a very depressing thought regarding this. All these ",
@@ -6625,5 +6755,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-13 14:21:46"
+  "last_updated": "2026-06-14 03:18:10"
 }
