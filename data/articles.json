@@ -1,6 +1,58 @@
 {
   "articles": [
     {
+      "title": "Building a serial and VGA \"everything console\"",
+      "url": "https://oldvcr.blogspot.com/2026/06/building-serial-and-vga-everything.html",
+      "summary": "Some of our recent (and some upcoming) projects are oriented to systems with serial consoles, but it's been getting pretty old dragging around old CRT terminals or tying up Mac laptops with a serial port. I'd like something that's self-contained, a little more portable and a bit less heavy. I'm sure there's any number of all-in-one setups you can buy to do this, but I'm cheap, so I'm going to DIY it.\n\n\n\nWe'll start with this used, slightly abused IBM 1U console that I got for $120 (shipped) from",
+      "source": "oldvcr.blogspot.com",
+      "category": "blog",
+      "published": "2026-06-14",
+      "summary_zh": "作者为了解决在项目中需要使用串行控制台时，需要拖着笨重的CRT终端或占用笔记本电脑串口的问题，自己动手制作了一台集成串行接口和VGA显示功能的便携式“万能控制台”。这个设备具有自包含、便携、轻量的特点，可以替代传统方案，让串行调试工作更加方便。",
+      "why_matters": "这是一个实用且有趣的DIY电子项目，适合喜欢老式计算机系统、嵌入式开发或需要串行调试的技术爱好者参考。",
+      "tags": "串行控制台, VGA, DIY, 电子制作",
+      "id": 536,
+      "added_at": "2026-06-15 03:18:21"
+    },
+    {
+      "title": "Plugins case study: Pluggy",
+      "url": "https://eli.thegreenplace.net/2026/plugins-case-study-pluggy/",
+      "summary": "Recently I came upon Pluggy,\na Python library for developing plugin systems. It was originally developed\nas part of the pytest project - known for its rich plugin ecosystem - and\nlater extracted into a standalone library. You're supposed to reach out for\nPluggy if you want to add a plugin system …",
+      "source": "eli.thegreenplace.net",
+      "category": "blog",
+      "published": "2026-06-14",
+      "summary_zh": "Pluggy是一个用于开发插件系统的Python库，最初作为pytest项目（以丰富的插件生态著称）的一部分开发，后来被提取为独立的开源库。该库提供了标准化的插件机制，适合需要在应用中集成插件扩展功能的开发者参考学习。",
+      "why_matters": "展示了如何从实际成熟项目中抽取通用插件系统解决方案的实践经验。",
+      "tags": "Python、插件系统、pytest、架构设计",
+      "id": 534,
+      "added_at": "2026-06-15 03:18:21"
+    },
+    {
+      "title": "Linux distribution packaging and third party 'package' systems",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/linux/DistrosAndOtherPackageManagers",
+      "summary": "If you look at it from the right angle, the existence of third party\npackage systems that sit on top of Linux distributions is rather odd.\nAfter all, these distributions already have packaging systems, yet\nhere people are, ignoring them and writing new ones. A while back on\nthe Fediverse, I said something on this general topic:\n\nI have feelings and some of the feelings are that everyone screwed\nthis up, for actually natural reasons. I don't think any distro\nsolved the 'how do we let people easil",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-06-14",
+      "summary_zh": "文章探讨了一个看似矛盾的现象：Linux 发行版已有成熟的原生包管理系统，却仍存在大量第三方包系统（如 snap、flatpak）与之并存。作者从独特视角分析了这种“叠床架屋”做法背后的合理性，可能涉及桌面应用分发、跨发行版兼容性或沙盒安全等需求。",
+      "why_matters": "帮助理解 Linux 包管理生态的深层逻辑，适合对桌面 Linux 感兴趣的读者。",
+      "tags": "Linux, 包管理系统, 桌面应用",
+      "id": 532,
+      "added_at": "2026-06-15 03:18:21"
+    },
+    {
+      "title": "Did Frank Sinatra really think \"Something\" was a Lennon/McCartney song?",
+      "url": "https://shkspr.mobi/blog/2026/06/did-frank-sinatra-really-think-something-was-a-lennon-mccartney-song/",
+      "summary": "Read enough articles about The Beatles and you&#039;ll repeatedly hit the claim that Frank Sinatra frequently introduced his cover of George Harrison&#039;s \"Something\" as his \"favourite Lennon &#38; McCartney number.\"  Much like the misquote about Ringo not being the best drummer in The Beatles, I think this might be one of those semi-apocryphal lines which has taken on a life of its own.  Here&#039;s what Paul…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-06-14",
+      "summary_zh": "文章探讨了一个关于Frank Sinatra的常见说法——他经常介绍自己翻唱的《Something》是他“最喜爱的Lennon & McCartney作品”。作者指出这个说法很可能是误传，因为《Something》实际上是George Harrison创作的作品，并非Lennon & McCartney的作品。作者认为这个说法类似于“Ringo不是最佳鼓手”这样的都市传说，值得质疑。",
+      "why_matters": "对于音乐爱好者和 Beatles 粉丝来说，这篇文章揭示了一个可能被广泛引用的错误说法，提供了新的视角来审视音乐史中的常见误解。",
+      "tags": "The Beatles, Frank Sinatra, 音乐史, 都市传说, Something",
+      "id": 530,
+      "added_at": "2026-06-15 03:18:21"
+    },
+    {
       "title": "Reading List 06/13/2026",
       "url": "https://www.construction-physics.com/p/reading-list-06132026",
       "summary": "Homes being built on top of libraries, Patriot missile manufacturing, an effort to construct new US coal plants, a tunnel between the US and Russia, and more.",
@@ -6755,5 +6807,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-14 14:46:28"
+  "last_updated": "2026-06-15 03:18:21"
 }
