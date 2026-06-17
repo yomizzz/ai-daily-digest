@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.6.8",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.8",
+      "source": "openclaw",
+      "published": "2026-06-17",
+      "category": "openclaw",
+      "summary": "- Telegram 消息渲染增强：支持表格、列表、可展开引用块、保留换行符及 CLI 回复功能\n- WhatsApp 现已支持配置的 ACP 绑定功能\n- 新增 GLM-5.2 和 Claude Haiku 4.5 模型支持，规范化 provider ID 和 SecretRef 认证管理\n- `/usage` 命令和回复钩子新增原生页脚渲染器、默认模板和固定小数格式\n- 无密钥搜索提供商（Parallel Free、DuckDuckGo 等）改为明确选择加入，而非自动回退\n- WebChat 回滚保留流式传输，桌面会话选择器保持可交互\n- 工作区文件默认折叠，iOS 重新连接前台网关改善\n- 超大 OpenAI 嵌入批次在 431 秒前分割，SQLite 在 NFS 上避免使用 WAL 模式\n- `/btw` 命令支持 CLI 回退会话\n- Gemini CLI 使用隔离运行目录，防止机器凭证覆盖用户配置\n- Discord 自动线程标题生成增加 60 秒超时和 4096 token 预算限制\n\n🐛 Bug 修复：- 修复账户范围 DM 发送策略和 Telegram 富文本消息渲染问题\n- 修复 Slack 消息发送钩子和贡献消息工具模式可选性问题\n- 修复同一渠道生成的媒体完成和渠道分块处理问题\n- 修复 Gemini CLI 中环境凭证意外覆盖用户配置的问题\n- 修复 Discord 自动线程标题生成超出限制的问题",
+      "features": "- Telegram 消息渲染增强：支持表格、列表、可展开引用块、保留换行符及 CLI 回复功能\n- WhatsApp 现已支持配置的 ACP 绑定功能\n- 新增 GLM-5.2 和 Claude Haiku 4.5 模型支持，规范化 provider ID 和 SecretRef 认证管理\n- `/usage` 命令和回复钩子新增原生页脚渲染器、默认模板和固定小数格式\n- 无密钥搜索提供商（Parallel Free、DuckDuckGo 等）改为明确选择加入，而非自动回退\n- WebChat 回滚保留流式传输，桌面会话选择器保持可交互\n- 工作区文件默认折叠，iOS 重新连接前台网关改善\n- 超大 OpenAI 嵌入批次在 431 秒前分割，SQLite 在 NFS 上避免使用 WAL 模式\n- `/btw` 命令支持 CLI 回退会话\n- Gemini CLI 使用隔离运行目录，防止机器凭证覆盖用户配置\n- Discord 自动线程标题生成增加 60 秒超时和 4096 token 预算限制",
+      "bug_fixes": "- 修复账户范围 DM 发送策略和 Telegram 富文本消息渲染问题\n- 修复 Slack 消息发送钩子和贡献消息工具模式可选性问题\n- 修复同一渠道生成的媒体完成和渠道分块处理问题\n- 修复 Gemini CLI 中环境凭证意外覆盖用户配置的问题\n- 修复 Discord 自动线程标题生成超出限制的问题",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Lean Launch Pad 2026 @ Stanford – Lessons Learned Presentations",
       "url": "https://steveblank.com/2026/06/16/lean-launch-pad-2026-stanford-lessons-learned-presentations/",
       "summary": "We just finished the 16th annual Lean LaunchPad class at Stanford. In those 16 years, the class has gone from a radical idea &#8211; that the Lean method could provide a more productive framework for new startups &#8211; to something that everyone agrees is a way to build new startups. The class had gotten so [&#8230;]",
@@ -7288,5 +7300,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-17 04:50:04"
+  "last_updated": "2026-06-17 15:17:46"
 }
