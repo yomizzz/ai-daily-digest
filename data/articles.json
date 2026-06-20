@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.17.0 (v2026.6.19)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.6.19",
+      "source": "hermes-agent",
+      "published": "2026-06-20",
+      "category": "hermes",
+      "summary_zh": "- **iMessage 支持**：新增基于 Photon Spectrum 的 iMessage 平台插件，运行 `hermes photon login` 后可直接收发 iMessage，无需 Mac 中继或 BlueBubbles\n- **Raft 网络集成**：作为网关通道加入 Raft agent 网络，通过 wake-channel 桥接连接，支持隐私合约设计（仅传输元数据）\n- **桌面应用大幅增强**：新增可绑定键盘快捷键、原生通知（按类型开关）、子代理 watch-windows 流式监控、Composer 模型选择器（支持预设）、RTL/bidi 文本自动识别、可调整大小的 VS Code 风格终端、支持安装任意 VS Code 主题\n- **子代理后台运行**：子代理现可在后台独立运行\n- **图像生成支持编辑**：图像生成功能新增编辑能力\n- **Composer 模型访问**：通过 xAI Grok 订阅可调用 Cursor 的 Composer 模型\n- **仪表盘重构**：新增完整个人资料构建器和安全登录系统\n- **Skills Hub 重新设计**：浏览器界面全面改进\n- **memory 工具升级**：记忆工具获重大功能更新\n- **成本优化**：减少辅助模型在日常运行中的预算消耗\n- **安全更新**：修复 300+ issues，包含安全专项修复",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Jay Miner, Atari and Amiga computer designer",
       "url": "https://dfarq.homeip.net/jay-miner-atari-and-amiga-computer-designer/?utm_source=rss&utm_medium=rss&utm_campaign=jay-miner-atari-and-amiga-computer-designer",
       "summary": "I&#8217;m just going to put this out there. Jay Miner is my hero. He designed the Atari 2600 game console, the Atari 8-bit computers, and the Amiga computer. But he made contributions to humanity outside of that, working on medical\nThe post Jay Miner, Atari and Amiga computer designer appeared first on The Silicon Underground.",
@@ -7846,5 +7856,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-20 03:38:48"
+  "last_updated": "2026-06-20 14:26:25"
 }
