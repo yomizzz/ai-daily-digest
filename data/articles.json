@@ -1,6 +1,110 @@
 {
   "articles": [
     {
+      "title": "Bobby Prince has died",
+      "url": "https://oldvcr.blogspot.com/2026/06/bobby-prince-has-died.html",
+      "summary": "Bobby Prince, '90s FPS game musician extraordinare and longtime id Software associate, has died at 81. Now, prior to that, there were things like Commander Keen and Eat Your Vegetables, which were cute and amusing yet almost completely orthogonal to his later output. Correspondingly, his transitional work in Wolfenstein 3D was fine (especially The Ultimate Challenge) but clearly all of a particular genre, and his otherwise solid contributions to Duke Nukem 3D and Rise of the Triad ended up overs",
+      "source": "oldvcr.blogspot.com",
+      "category": "blog",
+      "published": "2026-06-20",
+      "summary_zh": "Bobby Prince是90年代FPS游戏的杰出音乐家，也是id Software的长期合作伙伴，于近日去世，享年81岁。他为《Doom》《Wolfenstein 3D》等经典游戏创作的音乐已成为游戏史上的标志性作品，早期还参与过《Commander Keen》等作品的配乐工作。",
+      "why_matters": "对于游戏玩家和音乐爱好者而言，这是一篇了解幕后英雄Bobby Prince的简短致敬文章。",
+      "tags": "游戏音乐，id Software，经典游戏",
+      "id": 629,
+      "added_at": "2026-06-21 03:19:23"
+    },
+    {
+      "title": "Reading List 06/20/26",
+      "url": "https://www.construction-physics.com/p/reading-list-062026",
+      "summary": "A new housing bill, General Motors joining the grid-scale battery game, skepticism about data center delays, solid-state air conditioning, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-06-20",
+      "summary_zh": "本文为construction-physics.com的阅读列表，精选涵盖建筑与物理交叉领域的热点内容，主要包括美国新住房法案进展、通用汽车布局电网级储能电池、数据中心建设延迟现象的质疑与讨论，以及固态空调技术突破等多个主题，为读者提供多元化的行业资讯。",
+      "why_matters": "适合关注建筑行业、能源转型及前沿技术发展的读者快速了解近期领域动态。",
+      "tags": "住房政策，储能技术，空调创新，数据中心",
+      "id": 627,
+      "added_at": "2026-06-21 03:19:23"
+    },
+    {
+      "title": "This Week in Package Management: 20 June 2026",
+      "url": "https://nesbitt.io/2026/06/20/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-06-20",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 625,
+      "added_at": "2026-06-21 03:19:23"
+    },
+    {
+      "title": "Limiting web server bandwidth the brute force way",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/web/ServerBruteForceBandwidthLimit",
+      "summary": "A while back on the Fediverse, I mentioned something about our\ndepartmental web server:\n\nWow, people do some extremely slow downloads from work's main web\nserver. We roll logs at midnight and Apache wrote the last log\nrecord to the old file at 03:58 (for a request that had started at\n23:27).\n\n(For our sins we've become a load-bearing source of ML image\ntraining data, for the \"CIFAR\" image dataset. We average 40\nMbytes/sec outgoing web server bandwidth most days.)\n\n\n(This also got mentioned in pa",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-06-20",
+      "summary_zh": "27持续到凌晨03:58才完成，占用了数小时的带宽资源。文章介绍了一种“brute force”式的带宽限制方案，旨在防止个别用户长时间占用带宽影响其他用户。",
+      "why_matters": "为需要快速解决Web服务器带宽被滥用问题的运维人员提供实用的解决思路。",
+      "tags": "Web服务器, 带宽限制, Apache, Linux运维",
+      "id": 623,
+      "added_at": "2026-06-21 03:19:23"
+    },
+    {
+      "title": "Pluralistic: How the Epstein Class recruits (20 Jun 2026)",
+      "url": "https://pluralistic.net/2026/06/20/any-club-that-would-have-me/",
+      "summary": "Today's links How the Epstein Class recruits: Oh wait, THAT'S what this was?! Hey look at this: Delights to delectate. Object permanence: MPAA blasted in WSJ; RFID skimmers; Post-Soviet inventions; \"Farthing\"; \"Dirty, Drunk and Punk\"; Dweb v founders' frailty; Tax cheating made simple; Oregon v corporate medicine. Upcoming appearances: Toronto, NYC, Philadelphia, Chicago, London, Edinburgh, Sydney, Melbourne, Brighton, London, South Bend. Recent appearances: Where I've been. Latest books: You ke",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-06-20",
+      "summary_zh": "Pluralistic博客发布了一篇关于“Epstein Class”招募机制的讨论文章，并汇集了当日多个科技与社会热点话题，包括MPAA遭受WSJ批评、RFID技术安全风险、苏联解体后的发明创造等，并涉及“Farthing”、“Dirty, Drunk and Punk”等书籍推荐，以及去中心化网络与创始人脆弱性、简单逃税方法、俄勒冈州对公司诉讼等话题。",
+      "why_matters": "Cory Doctorow的Pluralistic以独特的视角将科技、政治、文化话题巧妙串联，提供深度评论与丰富链接，适合关注数字权利与社会议题的读者。",
+      "tags": "科技评论, 数字权利, 社会热点",
+      "id": 621,
+      "added_at": "2026-06-21 03:19:23"
+    },
+    {
+      "title": "I know Kung-fu",
+      "url": "https://idiallo.com/blog/i-know-kung-fu",
+      "summary": "Remember that scene in the Matrix where Neo is strapped into the chair and Link uploads all sorts of martial arts into his mind? When Neo wakes up, he says \"I know Kung-fu,\" then proceeds to demonstrate his skill in a battle with Morpheus. That was a pretty amazing scene. But if you suspend your disbelief for a second, it also suggests that when you have all the information at your fingertips, knowledge is just a matter of uploading it into your mind.\t\t\tThe directors of the movie conveniently sk",
+      "source": "idiallo.com",
+      "category": "blog",
+      "published": "2026-06-20",
+      "summary_zh": "本文以《黑客帝国》中Neo通过上传程序瞬间掌握功夫的经典场景为切入点，探讨了科幻电影中的“知识上传”概念及其与现代科技发展的联系。作者认为，虽然电影中的技术目前仍属幻想，但其中蕴含的学习与知识传递理念值得思考。",
+      "why_matters": "以经典电影场景引发对知识获取与技术未来的深度思考。",
+      "tags": "科幻电影，技术未来，知识学习",
+      "id": 619,
+      "added_at": "2026-06-21 03:19:23"
+    },
+    {
+      "title": "‘What’s the Deal With Old Guys and Giant Glasses?’",
+      "url": "https://www.youtube.com/watch?v=8DYGxn6Xvt0",
+      "summary": "Early adoption of new technology is generally considered a young-person thing, but maybe Snap Specs will turn that notion on its head. Direct sales in retirement homes?\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-20",
+      "summary_zh": "文章探讨了一个有趣的现象——通常被视为年轻人专利的新科技早期采用，是否会因Snap Spectacles而改变。文章暗示该产品可能将目标市场扩展到养老院群体，颠覆了人们对科技产品主流用户群的固有认知。",
+      "why_matters": "文章以幽默独特的视角探讨了科技产品用户群体的刻板印象，观点新颖有趣。",
+      "tags": "科技产品, Snap Spectacles, 用户群体",
+      "id": 617,
+      "added_at": "2026-06-21 03:19:23"
+    },
+    {
+      "title": "Another One for the ‘Sorry, We Used to Be Crap’ Truth-in-Advertising File: Carlsberg Beer",
+      "url": "https://www.independent.co.uk/news/business/news/carlsberg-probably-not-best-beer-in-world-lager-brewer-a8874016.html",
+      "summary": "Ben Chapman, reporting for The Independent in 2019:\n\n\n  After 40 years of advertising its lager as “Probably the best beer\nin the world”, Danish brewer Carlsberg has confessed that the\nfamous slogan may not be true. Reacting to falling sales and\nincreasingly harsh comments from drinkers about the taste of its\nbeer, Carlsberg has launched a new recipe along with a more honest\napproach to marketing.\n\nThe campaign declares: “Probably not the best beer in the world.\nSo we’ve changed it. Somewhere al",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-20",
+      "summary_zh": "丹麦啤酒品牌嘉士伯使用了40年的经典广告语“可能是世界上最好的啤酒”，终于在2019年承认这一说法可能并不属实。此次承认正值公司销量下滑、消费者批评日益增多的压力下做出的战略性调整，反映了广告宣传与产品实际品质之间的巨大落差。",
+      "why_matters": "这篇文章揭示了一个经典营销案例的戏剧性转折，展现了品牌营销与消费者真实体验之间的矛盾。",
+      "tags": "",
+      "id": 615,
+      "added_at": "2026-06-21 03:19:23"
+    },
+    {
       "title": "Hermes Agent v0.17.0 (v2026.6.19)",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.6.19",
       "source": "hermes-agent",
@@ -7856,5 +7960,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-20 14:26:25"
+  "last_updated": "2026-06-21 03:19:23"
 }
