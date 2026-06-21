@@ -1,6 +1,44 @@
 {
   "articles": [
     {
+      "title": "The doom justifies the valuation",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/06/21/the-doom-justifies-the-valuation.html",
+      "summary": "I’ve been in Berkeley for the last 2 weeks. I haven’t really been back here for a while, and it’s worse than you can believe. This is a cult of atheistic hedonists needing AI doom to be true to justify their life choices. Or acceleration. Or something. They need to make impact. I mean, narcissism of small differences to an extent, but I stopped long before these people did. If San Francisco was nuked tomorrow, the world would feel a weight off their shoulders. 内卷",
+      "source": "geohot.github.io",
+      "category": "blog",
+      "published": "2026-06-21",
+      "summary_zh": "I’ve been in Berkeley for the last 2 weeks. I haven’t really been back here for a while, and it’s worse than you can believe. This is a cult of atheistic hedonists needing AI doom to be true to justif",
+      "why_matters": "摘要生成失败，请查看原文",
+      "id": 628,
+      "added_at": "2026-06-22 03:24:37"
+    },
+    {
+      "title": "On Vulgar Materialism",
+      "url": "https://borretti.me/article/on-vulgar-materialism",
+      "summary": "Or, sufficiently advanced cynicism is indistinguishable from naïveté.",
+      "source": "borretti.me",
+      "category": "blog",
+      "published": "2026-06-21",
+      "summary_zh": "文章探讨了“粗俗唯物主义”这一概念，讨论了极端犬儒主义与天真之间的界限问题。当人们将唯物主义观点推至极端时，其表现可能与不加思索的天真无异，揭示了哲学立场走向极端后产生的悖论。",
+      "why_matters": "短小精悍的哲学随笔，适合思考日常生活中习以为常的世界观。",
+      "tags": "哲学, 唯物主义, 犬儒主义",
+      "id": 626,
+      "added_at": "2026-06-22 03:24:37"
+    },
+    {
+      "title": "PyPy and Python 3 for us",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/python/PyPyAndPython3ForUs",
+      "summary": "Ever since I started using PyPy and then had it quietly work fine\nfor years, I've been keeping it in mind as a\ngenerally easy way to speed up any Python program that could benefit\nfrom a performance boost (which programs PyPy could accelerate\nsometimes surprised me). But that was in\nthe era when most everything we had was Python 2 based. Now that I'm\nmoving more and more things to Python 3, there's a little issue\nopening up that I've been thinking about. That issue is what versions\nof (C)Python ",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-06-21",
+      "summary_zh": "本文作者分享了多年使用PyPy加速Python程序的经验。作者指出PyPy能够以简单的方式提升Python程序的性能，且其加速效果往往出人意料，即使对于某些看似不可能受益的程序也能带来性能提升。PyPy在Python 3时代的应用也是本文关注的重点。",
+      "why_matters": "适合想了解PyPy实际应用效果和经验的Python开发者阅读。",
+      "tags": "PyPy, Python性能优化, Python3",
+      "id": 624,
+      "added_at": "2026-06-22 03:24:37"
+    },
+    {
       "title": "openclaw 2026.6.9",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.9",
       "source": "openclaw",
@@ -7972,5 +8010,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-21 14:55:52"
+  "last_updated": "2026-06-22 03:24:37"
 }
