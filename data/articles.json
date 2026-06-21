@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.6.9",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.9",
+      "source": "openclaw",
+      "published": "2026-06-21",
+      "category": "openclaw",
+      "summary": "- Telegram 支持富文本 HTML 格式，保留 Markdown 和贴纸路径，改进进度草稿和命令输出渲染\n- Agent 恢复能力增强：重试机制、终端结果处理、压缩后使用保持、对话历史修复\n- Codex 集成增强：自动插件批准、GPT-5.3 Spark OAuth 路由、远程节点 exec 动态工具\n- 官方提供商插件作为独立 npm 包发布，Gateway 启动时自动加载已安装渠道插件\n- Control UI 新增会话工作区侧边栏和插件健康状态显示\n- iOS 支持 Apple Watch 控制，Android 显示聊天上下文\n- Codex Hosted Search 可用，搜索提供商保留密钥验证，ClawHub 技能安装保留来源验证\n- Gemini CLI OAuth 代理支持改进\n- 新增 OpenTelemetry 日志导出功能\n- QA 测试场景迁移至 YAML 格式\n\n🐛 Bug 修复：- 修复调试输出中敏感信息泄露、阻止内部 HTTP 会话覆盖\n- 修复仅思考和空回复的重试问题，防止重复钩子执行\n- 修复 Telegram 富文本传递、表格渲染、动作错误处理\n- 修复 WhatsApp 媒体故障后开场文本丢失、Mattermost 线程回复不完整\n- 修复网络文件系统上 SQLite WAL 问题、重新索引残留、JSON/历史记录部分损坏",
+      "features": "- Telegram 支持富文本 HTML 格式，保留 Markdown 和贴纸路径，改进进度草稿和命令输出渲染\n- Agent 恢复能力增强：重试机制、终端结果处理、压缩后使用保持、对话历史修复\n- Codex 集成增强：自动插件批准、GPT-5.3 Spark OAuth 路由、远程节点 exec 动态工具\n- 官方提供商插件作为独立 npm 包发布，Gateway 启动时自动加载已安装渠道插件\n- Control UI 新增会话工作区侧边栏和插件健康状态显示\n- iOS 支持 Apple Watch 控制，Android 显示聊天上下文\n- Codex Hosted Search 可用，搜索提供商保留密钥验证，ClawHub 技能安装保留来源验证\n- Gemini CLI OAuth 代理支持改进\n- 新增 OpenTelemetry 日志导出功能\n- QA 测试场景迁移至 YAML 格式",
+      "bug_fixes": "- 修复调试输出中敏感信息泄露、阻止内部 HTTP 会话覆盖\n- 修复仅思考和空回复的重试问题，防止重复钩子执行\n- 修复 Telegram 富文本传递、表格渲染、动作错误处理\n- 修复 WhatsApp 媒体故障后开场文本丢失、Mattermost 线程回复不完整\n- 修复网络文件系统上 SQLite WAL 问题、重新索引残留、JSON/历史记录部分损坏",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Bobby Prince has died",
       "url": "https://oldvcr.blogspot.com/2026/06/bobby-prince-has-died.html",
       "summary": "Bobby Prince, '90s FPS game musician extraordinare and longtime id Software associate, has died at 81. Now, prior to that, there were things like Commander Keen and Eat Your Vegetables, which were cute and amusing yet almost completely orthogonal to his later output. Correspondingly, his transitional work in Wolfenstein 3D was fine (especially The Ultimate Challenge) but clearly all of a particular genre, and his otherwise solid contributions to Duke Nukem 3D and Rise of the Triad ended up overs",
@@ -7960,5 +7972,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-21 03:19:23"
+  "last_updated": "2026-06-21 14:55:52"
 }
