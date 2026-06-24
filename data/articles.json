@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.6.10",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.10",
+      "source": "openclaw",
+      "published": "2026-06-24",
+      "category": "openclaw",
+      "summary": "- **自动快速对话模式**：支持短对话自动启用快速模式，长对话恢复普通模式，具有边界回退和交付行为\n- **更可靠的模型路由**：Zai 模型合成、GLM 过载故障转移和原生推理级别选择现在更一致地遵循活动模型目录\n- **更安全的会话和频道状态**：频道切换时重置陈旧的 origin 字段，cron 交付意识保持附着在目标会话\n- **受信任策略在钩子组合中保留**：组合的钩子注册表保留批准敏感流程所需的受信任工具策略\n- **SDK 转录身份目标 API**：添加了 SDK 转录身份目标 API\n- **Provider 插件安装后注册表刷新**：设置安装 provider 插件后刷新注册表元数据，确保使用新安装的 provider\n\n🐛 Bug 修复：- **快速模式状态规范化**：修复回退截止边界、重复进度事件可见性和 Codex 服务层状态规范化问题\n- **模型和交付边缘情况**：Zai 和 GLM 故障转移路径使用正确的运行时元数据\n- **会话频道状态隔离**：频道切换时重置陈旧的 per-channel origin 字段，修复跨会话泄漏问题\n- **GLM 模型路由修复**：为合成的 GLM-5 模型回退到 manifest baseUrl，将智谱 GLM 过载正确分类为过载状态",
+      "features": "- **自动快速对话模式**：支持短对话自动启用快速模式，长对话恢复普通模式，具有边界回退和交付行为\n- **更可靠的模型路由**：Zai 模型合成、GLM 过载故障转移和原生推理级别选择现在更一致地遵循活动模型目录\n- **更安全的会话和频道状态**：频道切换时重置陈旧的 origin 字段，cron 交付意识保持附着在目标会话\n- **受信任策略在钩子组合中保留**：组合的钩子注册表保留批准敏感流程所需的受信任工具策略\n- **SDK 转录身份目标 API**：添加了 SDK 转录身份目标 API\n- **Provider 插件安装后注册表刷新**：设置安装 provider 插件后刷新注册表元数据，确保使用新安装的 provider",
+      "bug_fixes": "- **快速模式状态规范化**：修复回退截止边界、重复进度事件可见性和 Codex 服务层状态规范化问题\n- **模型和交付边缘情况**：Zai 和 GLM 故障转移路径使用正确的运行时元数据\n- **会话频道状态隔离**：频道切换时重置陈旧的 per-channel origin 字段，修复跨会话泄漏问题\n- **GLM 模型路由修复**：为合成的 GLM-5 模型回退到 manifest baseUrl，将智谱 GLM 过载正确分类为过载状态",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "The most wonderful thing that happened to Tommy McHugh",
       "url": "https://www.experimental-history.com/p/the-most-wonderful-thing-that-happened",
       "summary": "...\"was having a stroke while doing a poo\"",
@@ -8387,5 +8399,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-24 03:58:34"
+  "last_updated": "2026-06-24 14:11:27"
 }
