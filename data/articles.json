@@ -1,6 +1,162 @@
 {
   "articles": [
     {
+      "title": "VA Linux’s transformation after leaving the hardware business",
+      "url": "https://dfarq.homeip.net/va-linuxs-transformation-after-leaving-the-hardware-business/?utm_source=rss&utm_medium=rss&utm_campaign=va-linuxs-transformation-after-leaving-the-hardware-business",
+      "summary": "In the wake of the dotcom bubble bursting, the record-setting startup VA Linux made a difficult decision. On June 26, 2001, it exited the hardware business. It was a curious decision but probably the right decision, because it survived nearly\nThe post VA Linux&#8217;s transformation after leaving the hardware business appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-06-25",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 693,
+      "added_at": "2026-06-26 03:54:35"
+    },
+    {
+      "title": "US Subways Build Too Many Cross Passages",
+      "url": "https://www.construction-physics.com/p/us-subways-build-too-many-cross-passages",
+      "summary": "I wrote the following piece for IFP&#8217;s Transit Abundance Playbook, a collection of 15 ideas to improve transit delivery in the US.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-06-25",
+      "summary_zh": "文章指出美国地铁建设存在过度设置横向通道（连接双隧道的紧急逃生通道）的问题，导致成本不必要的增加。作者通过对比国际标准和实际需求，分析了合理的通道间距应如何确定，并指出优化这一设计标准可显著降低地铁建设投资，适合需要了解公共交通基础设施成本控制和设计标准差异的读者。",
+      "why_matters": "提供了一个具体且可量化的视角，展示如何通过优化工程标准来提升公共交通建设的性价比。",
+      "tags": "地铁建设, 基础设施, 成本控制",
+      "id": 691,
+      "added_at": "2026-06-26 03:54:35"
+    },
+    {
+      "title": "Scrutineer: scanning open source without flooding maintainers",
+      "url": "https://nesbitt.io/2026/06/25/scrutineer.html",
+      "summary": "Finding the vulnerabilities is the easy part",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-06-25",
+      "summary_zh": "Scrutineer是一个用于扫描开源项目的安全工具，其核心理念是“发现漏洞是容易的部分”。该工具在扫描开源代码时注重避免向维护者发送大量通知，平衡了安全扫描的需求与项目维护者的体验，体现了对开源生态的尊重。",
+      "why_matters": "对于关注开源安全但又担心扫描工具过度打扰维护者的开发者，这个工具提供了务实的解决方案。",
+      "tags": "开源安全,漏洞扫描,开发者工具",
+      "id": 689,
+      "added_at": "2026-06-26 03:54:35"
+    },
+    {
+      "title": "The Star Trek lemma",
+      "url": "https://www.johndcook.com/blog/2026/06/24/star-trek-lemma/",
+      "summary": "I was reading an article this evening and saw a footnote to a book by Arthur Baragar [1]. This caught my eye because he was my officemate at UT for a year. I found his book on Archive.org and was surprised to see &#8220;The Star Trek Lemma&#8221; in the table of contents. What could this [&#8230;]\nThe post The Star Trek lemma first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-06-25",
+      "summary_zh": "作者在阅读文章时偶然发现前室友Arthur Baragar的著作中有一个名为\"The Star Trek Lemma\"（星际迷航引理）的数学定理，这勾起了他对学生时代的回忆，引发了他对这个有趣命名由来及背后故事的好奇。",
+      "why_matters": "展现数学家幽默感与学术生活中的人情味，小故事折射学术圈的有趣侧面。",
+      "tags": "数学趣闻, 学术生活, 星际迷航",
+      "id": 687,
+      "added_at": "2026-06-26 03:54:35"
+    },
+    {
+      "title": "Consecutive Pythagorean triangle sides",
+      "url": "https://www.johndcook.com/blog/2026/06/25/consecutive-pythagorean/",
+      "summary": "In this post we find all Pythagorean triples that contain consecutive numbers, all Pythagorean triples (a, b, c) such that a + 1 = b or b + 1 = c. a + 1 = b George Osborne wrote a paper [1] addressing the question of when the squares of two consecutive numbers is also a square. Geometrically this is asking [&#8230;]\nThe post Consecutive Pythagorean triangle sides first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-06-25",
+      "summary_zh": "本文探讨了包含连续整数的勾股三元组问题，即寻找满足 a+1=b 或 b+1=c 的勾股数 (a, b, c)。作者引用 George Osborne 的研究，分析了两个连续整数平方和为完全平方数的条件。这类问题本质上是求整数解的不定方程，涉及数论中勾股数生成公式的变形应用。",
+      "why_matters": "短小精悍的数论趣题，适合作为学习勾股数性质的拓展阅读。",
+      "tags": "勾股数, 数论, 连续整数, 数学趣题",
+      "id": 685,
+      "added_at": "2026-06-26 03:54:35"
+    },
+    {
+      "title": "Incircles and Excircles of Pythagorean triangles",
+      "url": "https://www.johndcook.com/blog/2026/06/25/incircle-excircle/",
+      "summary": "This post will reveal the connection between my two previous posts: one on the Star Trek lemma and one on Pythagorean triples. In the process of writing the latter, I looked at the Wikipedia article on Pythagorean triples and noticed this curious paragraph. In every Pythagorean triangle, the radius of the incircle and the radii of the [&#8230;]\nThe post Incircles and Excircles of Pythagorean triangles first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-06-25",
+      "summary_zh": "这篇文章揭示了勾股三角形（由整数边长组成的直角三角形）与其内切圆、外切圆半径之间的数学联系。作者通过分析维基百科上关于勾股三元组的条目，发现了一个有趣的性质，并将这一主题与之前探讨的“星际迷航引理”联系起来，为读者展现了勾股数理论中一个不那么为人熟知但颇具美感的几何关系。",
+      "why_matters": "文章将数论与几何巧妙结合，通过一个具体例子展示了勾股三角形内切圆与外切圆之间的内在联系，适合对数学探索感兴趣的读者。",
+      "tags": "勾股定理，数论，几何数学，数学趣题",
+      "id": 683,
+      "added_at": "2026-06-26 03:54:35"
+    },
+    {
+      "title": "Hart’s theorem",
+      "url": "https://www.johndcook.com/blog/2026/06/25/harts-theorem/",
+      "summary": "Hart&#8217;s theorem says If a triangle be formed by the arcs of three circles, the inscribed and the three escribed circles are all tangent to a new circle or line. Here &#8220;triangle&#8221; means a three-sided figure whose sides are portions of a circle. The inscribed circle is the largest circle that can fit inside the [&#8230;]\nThe post Hart’s theorem first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-06-25",
+      "summary_zh": "Hart定理描述了一种特殊几何构型的性质：当“三角形”的三条边由圆弧组成时，其内切圆和三个旁切圆都会与同一个新圆或直线相切。这一定理将经典几何中圆与三角形相切的关系推广到了更一般的圆弧三角形情形，展现了几何学中对称与相切关系的优美特性。",
+      "why_matters": "对于几何爱好者而言，Hart定理是一个简洁优美但鲜为人知的几何结论，展示了圆与切线之间精妙的数学关系。",
+      "tags": "几何学, 圆, 数学定理",
+      "id": 681,
+      "added_at": "2026-06-26 03:54:35"
+    },
+    {
+      "title": "The case of the DLL that was not present in memory despite not being formally unloaded, part 1",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260625-00/?p=112467",
+      "summary": "Figuring out how it went missing.\nThe post The case of the DLL that was not present in memory despite not being formally unloaded, part 1 appeared first on The Old New Thing.",
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "category": "blog",
+      "published": "2026-06-25",
+      "summary_zh": "本文讲述了作者遇到的一个DLL加载异常案例——DLL明明没有被显式卸载，却不在内存中。作者通过逐步排查，最终发现是进程退出时的某些操作导致DLL被意外卸载，尽管表面上没有调用FreeLibrary。这类底层Windows机制问题需要深入理解DLL引用计数和进程终止时的清理行为。",
+      "why_matters": "展示了Windows系统底层调试的思路与技巧，适合对系统内核和DLL加载机制感兴趣的开发者学习。",
+      "tags": "Windows内核,DLL调试,进程生命周期",
+      "id": 679,
+      "added_at": "2026-06-26 03:54:35"
+    },
+    {
+      "title": "Raymond’s hot take on Hainanese chicken",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260625-01/?p=112469",
+      "summary": "Subtlety.\nThe post Raymond&#8217;s hot take on Hainanese chicken appeared first on The Old New Thing.",
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "category": "blog",
+      "published": "2026-06-25",
+      "summary_zh": "微软技术博客作者Raymond Chen分享了他对海南鸡饭的个人见解。作为一位经常撰写Windows开发历史和技术深度文章的博主，他难得地跨界到美食评论领域，以其独特的视角和幽默风格探讨这道流行菜肴。“Subtlety”（微妙）这个词暗示他可能对海南鸡的调味或烹饪手法有着独到的观察。",
+      "why_matters": "看惯了技术文章的读者难得见到Raymond Chen聊美食，这种跨界内容既有趣又能了解博主的另一面。",
+      "tags": "海南鸡饭, Raymond Chen, 美食评论",
+      "id": 677,
+      "added_at": "2026-06-26 03:54:35"
+    },
+    {
+      "title": "Some things on '<code>systemctl kexec</code>' as compared to '<code>kexec -e</code>'",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/linux/SystemctlKexecVsKexec",
+      "summary": "Suppose, unfortunately not hypothetically, that you have some machines\nthat the Ubuntu 26.04 LTS installer kernel sometimes gets a kernel\noops during a\nnetwork based reinstall (we don't think this is a hardware flaw, but\nwho knows; these machines were stable on 24.04). Further suppose that\nyou're not network booting these\nmachines but instead you're using kexec to boot them into the\ninstaller environment. This creates\nan awkward situation, where the over the network installer may have\ngotten far",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-06-25",
+      "summary_zh": "本文对比了Linux系统中使用systemctl kexec与直接使用kexec -e命令进行内核快速重启的区别。作者通过实际遇到的问题（Ubuntu 26.04 LTS安装器内核在网络重装时出现kernel oops）出发，深入分析了这两种方法在执行内核切换时的行为差异，并指出在某些场景下直接使用kexec -e可能比通过systemctl调用更为可靠。",
+      "why_matters": "对于需要深入理解Linux系统启动机制和进行内核调试的系统管理员来说，这篇文章提供了宝贵的实践经验和技术细节。",
+      "tags": "Linux系统管理,kexec,内核调试",
+      "id": 675,
+      "added_at": "2026-06-26 03:54:35"
+    },
+    {
+      "title": "Pluralistic: Jailbreaking isn't theft (25 Jun 2026)",
+      "url": "https://pluralistic.net/2026/06/25/thieve-different/",
+      "summary": "Today's links Jailbreaking isn't theft: It wasn't progress when they did it, it's not piracy when we do it back to them. Hey look at this: Delights to delectate. Object permanence: Major AI breakthrough; Disney v Pooh tombstone; Vancouver riot kiss; Farage admits Brexit lies; Protecting the web from its founders; Sanders x Hillary; Surveillance pricing v your dollars. Upcoming appearances: Philadelphia, Chicago, London, Edinburgh, Sydney, Melbourne, Brighton, London, South Bend. Recent appearanc",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-06-25",
+      "summary_zh": "本文讨论了“越狱”(Jailbreaking)的合法性问题，作者认为当大公司对产品进行解锁和改造时被视为技术进步，而用户对自己的设备进行越狱时却被指责为盗版，这种双重标准是不合理的。文章还探讨了AI领域的重大突破，以及其他科技新闻热点。",
+      "why_matters": "文章从一个独特的视角审视技术权利问题，对数字时代的所有权和控制权进行了深入思考，适合关注科技政策和数字权利的读者。",
+      "tags": "数字权利，技术政策，用户自由",
+      "id": 673,
+      "added_at": "2026-06-26 03:54:35"
+    },
+    {
+      "title": "Apple Raises Prices on Most Products by 15–25 Percent, but Not iPhones, Watches, or AirPods",
+      "url": "https://www.wsj.com/tech/apple-raises-prices-on-macs-ipads-by-200-or-more-on-some-models-a7463f99?st=zse57R",
+      "summary": "Rolfe Winkler, reporting for The Wall Street Journal (gift link):\n\n\n  The company briefly took down its Apple Online Store early this\nmorning as it typically does when announcing new products. When it\ncame back online, the price tags for Mac computers rose roughly\n15% to 20% and iPad prices rose 15% to 25%.\n\nAmong the price increases, the base MacBook Air rose $200 to\n$1,299; the base MacBook Pro increased $300 to $1,999; the\nentry-level MacBook Neo increased $100 to $699. The iPad Air\nincreased",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-25",
+      "summary_zh": "Apple近日上调了大部分产品售价，Mac电脑和iPad价格涨幅分别达到15%-20%和15%，整体涨幅约15%-25%。不过iPhone、Apple Watch和AirPods本次并未调价，公司官网商店在调价期间短暂下线。",
+      "why_matters": "了解Apple最新定价策略，判断是否影响你的购买计划。",
+      "tags": "Apple, 数码产品, 价格上涨",
+      "id": 671,
+      "added_at": "2026-06-26 03:54:35"
+    },
+    {
       "title": "Weekly Update 509",
       "url": "https://www.troyhunt.com/weekly-update-509/",
       "summary": "I know enough about home cinema audiovisual to know there&apos;s a lot I don&apos;t know. It&apos;s conscious incompetence, if you like, which is different to the unconscious incompetence most people have on the topic. That&apos;s not to sound derogatory (it&apos;s",
@@ -8581,5 +8737,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-25 14:12:30"
+  "last_updated": "2026-06-26 03:54:35"
 }
