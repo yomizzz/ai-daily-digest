@@ -1,6 +1,123 @@
 {
   "articles": [
     {
+      "title": "Reading List 06/27/26",
+      "url": "https://www.construction-physics.com/p/reading-list-062726",
+      "summary": "Trump refuses to sign a housing bill, the high cost of US-made doors, slow trucking, why we stopped making new land, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-06-27",
+      "summary_zh": "本期阅读清单汇集了近期建筑与经济领域的热点话题，涵盖住房政策（特朗普拒绝签署住房法案）、制造业成本（美国制造的门成本高昂）、物流效率（卡车运输缓慢）以及土地开发策略（为何停止创造新土地）等内容，为读者提供建筑行业多维度的深度洞察。",
+      "why_matters": "这份阅读清单以建筑物理为视角，串联起政策、经济、物流等多个领域，适合希望了解建筑行业全貌的读者。",
+      "tags": "建筑经济，住房政策，行业动态",
+      "id": 713,
+      "added_at": "2026-06-28 03:13:27"
+    },
+    {
+      "title": "This Week in Package Management: 27 June 2026",
+      "url": "https://nesbitt.io/2026/06/27/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-06-27",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 711,
+      "added_at": "2026-06-28 03:13:27"
+    },
+    {
+      "title": "Writing down harmonic numbers",
+      "url": "https://www.johndcook.com/blog/2026/06/26/writing-down-harmonic-numbers/",
+      "summary": "The nth harmonic number is the sum of the reciprocals of the first n positive integers. Hn = 1 + 1/2 + 1/3 + 1/4 + … + 1/n The product of all the denominators is n!, so you could write Hn as a fraction Hn = p/q where p = n! Hn is an integer and q = n!. While [&#8230;]\nThe post Writing down harmonic numbers first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-06-27",
+      "summary_zh": "文章介绍了第n个调和数Hₙ的定义（1到n的倒数之和），并探讨了如何将调和数写成分数形式。由于所有分母的乘积为n!，调和数可以表示为分子p和分母q的形式，其中p = n!·Hₙ是整数，q = n!。文章深入分析了调和数分子分母的数学性质。",
+      "why_matters": "适合对数论和离散数学感兴趣的读者，帮助理解调和数的精确表示方法。",
+      "tags": "调和数, 离散数学, 数论",
+      "id": 709,
+      "added_at": "2026-06-28 03:13:27"
+    },
+    {
+      "title": "Height of harmonic numbers",
+      "url": "https://www.johndcook.com/blog/2026/06/27/height-of-harmonic-numbers/",
+      "summary": "The previous post looked at writing the harmonic numbers as reduced fractions and estimating the number of digits in the numerator and denominator based on asymptotics. This is a follow up post with plots. We&#8217;ll choose our base b to be 2. And we&#8217;ll look at the total number of bits in both the numerator and [&#8230;]\nThe post Height of harmonic numbers first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-06-27",
+      "summary_zh": "本文是前一篇关于调和数最简分数表示研究的续篇，通过可视化图表分析调和数的“高度”（即分子和分母的位数）。文章选择以2为底数，对调和数进行深入研究，并展示了分子和分母总比特数的变化趋势，帮助读者直观理解调和数增长规律。",
+      "why_matters": "通过直观的可视化图表，帮助理解抽象的数论概念，适合对数学和数论感兴趣的读者深入研究调和数的性质。",
+      "tags": "调和数, 数论, 数学可视化",
+      "id": 707,
+      "added_at": "2026-06-28 03:13:27"
+    },
+    {
+      "title": "When will the decimals in a/b repeat?",
+      "url": "https://www.johndcook.com/blog/2026/06/27/decimal-period/",
+      "summary": "The previous post looked at how many digits are in the reduced fraction for the nth harmonic number. I was curious about how long the cycle of digits in a harmonic number might be. I wrote about the period length for the digits of fractions almost a decade ago. This post includes code so I can [&#8230;]\nThe post When will the decimals in a/b repeat? first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-06-27",
+      "summary_zh": "这篇文章探讨了分数化为小数时循环节长度的规律，延续了作者十年前关于循环小数周期的研究，并通过代码实现来分析和演示循环节的计算方法。",
+      "why_matters": "作者用代码直观地展示了数论中循环小数的周期规律，适合对数学与编程结合感兴趣的读者。",
+      "tags": "数学, 数论, 循环小数, 编程",
+      "id": 705,
+      "added_at": "2026-06-28 03:13:27"
+    },
+    {
+      "title": "How your Ubuntu 26.04 server boots with a software RAID array root filesystem",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/linux/Ubuntu2604ServerSoftwareRaidBoot",
+      "summary": "One answer to how your Ubuntu 26.04 server boots when its root\nfilesystem is on a software RAID array is that it just does and you\ndon't need to think about it. Unfortunately this wasn't the case in\nthe pre-beta version. That's\nbeen fixed since (contrary to what I thought until now), but that raises\nthe question of what changed between 24.04 LTS and 26.04 LTS to cause\nand then fix this.\n\nAt some point between 24.04 and 26.04, Canonical switched from booting\nservers using initramfs-tools (and an ",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-06-27",
+      "summary_zh": "本文探讨Ubuntu 26.04服务器在软件RAID阵列上启动的工作机制。作者指出，Ubuntu现已能顺利处理root文件系统位于软件RAID的情况，这与早期预发布版本的问题形成对比。文章可能涉及启动过程中initramfs、GRUB及RAID驱动的加载顺序等关键技术细节。",
+      "why_matters": "适合系统管理员和DevOps工程师阅读，特别是需要部署软件RAID环境的Ubuntu服务器用户。",
+      "tags": "Ubuntu, 软件RAID, 服务器运维, 系统启动",
+      "id": 703,
+      "added_at": "2026-06-28 03:13:27"
+    },
+    {
+      "title": "Pluralistic: Zuckerberg's increasingly bizarre war on whistleblowers (27 Jun 2026)",
+      "url": "https://pluralistic.net/2026/06/27/zuckerstreisand-2/",
+      "summary": "Today's links Zuckerberg's increasingly bizarre war on whistleblowers: Under no circumstances should you rush out and read the book that prompted Mark Zuckerberg to demand $111m and eternal auctorial silence. Hey look at this: Delights to delectate. Object permanence: Flame warriors; Cryptography and casinos; TSA v dying 95 year old woman's adult diaper; Neoliberalism and Brexit; Beyond solutionism; How Thiel cheated with his Roth; Inequality's stabilizer; Palm Pilot school; Gillmor on PR flacks",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-06-27",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 701,
+      "added_at": "2026-06-28 03:13:27"
+    },
+    {
+      "title": "All Chinese Models Will Be Illegal in 3... 2... 1...",
+      "url": "https://idiallo.com/blog/all-chinese-models-will-be-illegal",
+      "summary": "The Washington Post reported that the US government will decide who can use state-of-the-art LLMs. After the ban of Fable and the limitations coming to ChatGPT 5.6, what's next? My bet is Chinese models.\t\t\tFor all of Anthropic's doomsaying and propping up of their secret model Mythos, several open-weight models have proven capable of similar feats, and at a fraction of the cost. DeepSeek rocked the AI world in December 2024 with their initial release, nearly sending shockwaves through American s",
+      "source": "idiallo.com",
+      "category": "blog",
+      "published": "2026-06-27",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 699,
+      "added_at": "2026-06-28 03:13:27"
+    },
+    {
+      "title": "Saying the obvious thing",
+      "url": "https://seangoedecke.com/saying-the-obvious-thing/",
+      "summary": "Stating the obvious is surprisingly useful. Most of your knowledge lives below the threshold of conscious awareness, so it’s possible for a piece of writing to remind you of what you already know. It’s common to know you don’t like something without being quite sure why, and reading an obvious statement (such as “accuracy matters, even when you agree with the broad strokes”) can help clarify why you find certain things distasteful.\nSometimes you can see some obvious truth that nobody seems to be",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-06-27",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 697,
+      "added_at": "2026-06-28 03:13:27"
+    },
+    {
       "title": "Spyglass: A web browsing pioneer’s IPO",
       "url": "https://dfarq.homeip.net/spyglass-a-web-browsing-pioneers-ipo/?utm_source=rss&utm_medium=rss&utm_campaign=spyglass-a-web-browsing-pioneers-ipo",
       "summary": "Quick: Who was the first browser manufacturer to hold an IPO in the dotcom era? Netscape? WRONG! Its competitor Spyglass beat it out, holding its IPO June 27, 1995. Its IPO did rather well too, issuing two million shares at\nThe post Spyglass: A web browsing pioneer&#8217;s IPO appeared first on The Silicon Underground.",
@@ -8919,5 +9036,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-27 13:56:58"
+  "last_updated": "2026-06-28 03:13:27"
 }
