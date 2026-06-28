@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>How your Ubuntu 26.04 server boots with a software RAID array root filesystem</title>
     <style>
 
         :root {
@@ -287,41 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-06-28 14:23:32</p>
+        <h1>How your Ubuntu 26.04 server boots with a software RAID array root filesystem</h1>
+        <p><span class="category-tag">blog</span> utcc.utoronto.ca/~cks · 2026-06-27</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 0 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="no-updates">暂无更新记录</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><p>本文探讨Ubuntu 26.04服务器在软件RAID阵列上启动的工作机制。作者指出，Ubuntu现已能顺利处理root文件系统位于软件RAID的情况，这与早期预发布版本的问题形成对比。文章可能涉及启动过程中initramfs、GRUB及RAID驱动的加载顺序等关键技术细节。</p></div>
+<div class="tags">标签：Ubuntu, 软件RAID, 服务器运维, 系统启动</div>
+        <div class="detail-why">💡 适合系统管理员和DevOps工程师阅读，特别是需要部署软件RAID环境的Ubuntu服务器用户。</div>
+        <a href="https://utcc.utoronto.ca/~cks/space/blog/linux/Ubuntu2604ServerSoftwareRaidBoot" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>
