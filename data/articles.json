@@ -1,6 +1,84 @@
 {
   "articles": [
     {
+      "title": "Working around dragons with the Lemote Yeeloong laptop and OpenBSD",
+      "url": "https://oldvcr.blogspot.com/2026/06/working-around-dragons-with-lemote.html",
+      "summary": "Behold: the Guru of GNU! (Photo by Habib Mhenni, Wikimedia Commons, CC BY-SA 3.0.)\n\n\n\nTrue enlightment only comes from a truly free computing experience, probably! And while there is no nerd who lacks an opinion on Richard Stallman personally, likewise let none claim he does not practice what he preaches. Why, the very laptop in front of him was selected deliberately because it can operate with no binary blobs and no firmware you couldn't examine or replace with your own, and runs his choice of ",
+      "source": "oldvcr.blogspot.com",
+      "category": "blog",
+      "published": "2026-06-28",
+      "summary_zh": "本文记录了作者在Lemote Yeeloong笔记本电脑上安装和配置OpenBSD操作系统的实践经验。Yeeloong是一款采用国产龙芯处理器的便携设备，作者分享了在此小众硬件平台上绕过兼容性问题、安装开源系统的过程，并探讨了追求真正自由计算体验的理念。",
+      "why_matters": "对于想在非x86架构设备上运行开源操作系统的用户，本文的实践经验和故障排除方法具有较高参考价值。",
+      "tags": "OpenBSD, 龙芯笔记本, 自由软件, 硬件兼容",
+      "id": 716,
+      "added_at": "2026-06-29 03:11:50"
+    },
+    {
+      "title": "Brace expansion tree",
+      "url": "https://www.johndcook.com/blog/2026/06/27/brace-expansion-tree/",
+      "summary": "Here&#8217;s a crazy bash one-liner I found via an article by Peter Krumins: echo {w,t,}h{e{n{,ce{,forth}},re{,in,fore,with{,al}}},ither,at} This prints 30 English words: when, whence, whenceforth, where, wherein, wherefore, wherewith, wherewithal, whither, what, then, thence, thenceforth, there, therein, therefore, therewith, therewithal, thither, that, hen, hence, henceforth, here, herein, herefore, herewith, herewithal, hither, hat This post will explain how [&#8230;]\nThe post Brace expansion",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-06-28",
+      "summary_zh": "文章介绍了一个令人惊叹的Bash单行命令，该命令巧妙利用大括号展开（brace expansion）特性，通过嵌套的大括号结构一次性生成30个英语单词，如when、whence、where、wherein等。文章展示了Shell脚本在文本生成方面的强大能力和创造性用法。",
+      "why_matters": "展示了Bash大括号展开的高级技巧，能够帮助读者领略命令行工具的巧妙与强大。",
+      "tags": "Bash, 命令行技巧, Shell编程",
+      "id": 714,
+      "added_at": "2026-06-29 03:11:50"
+    },
+    {
+      "title": "Examining circuit boards from the Space Shuttle's I/O Processor",
+      "url": "http://www.righto.com/2026/06/space-shuttle-io-processor-boards.html",
+      "summary": "The Space Shuttle's five1 general-purpose computers played a critical role in each flight: controlling the\nengines, monitoring thousands of sensors, displaying data to the astronauts, and navigating\nthe Shuttle.\nEach computer consisted of two 60-pound aluminum-alloy boxes: the box on the right is the CPU, a\n32-bit processor that executed 420,000 instructions per second.\nThese computers were designed before microprocessors became popular, so the processor was\nbuilt from multiple boards crammed wi",
+      "source": "righto.com",
+      "category": "blog",
+      "published": "2026-06-28",
+      "summary_zh": "文章对NASA航天飞机上I/O处理器的电路板进行了详细的技术逆向分析，揭示了这个关键计算系统的硬件架构和功能设计。航天飞机配备了5台通用计算机，每个计算机由两个约60磅重的铝合金机箱组成，I/O处理器负责处理传感器数据采集、显示输出和通信等关键任务。通过对电路板的深入拆解，展示了上世纪70-80年代NASA航天级计算硬件的精密工程设计和可靠性标准。",
+      "why_matters": "这是难得一见的航天级硬件内部构造分析，适合对航天工程和计算机硬件历史感兴趣的读者。",
+      "tags": "航天飞机, 硬件逆向工程, NASA技术, 计算机硬件",
+      "id": 712,
+      "added_at": "2026-06-29 03:11:50"
+    },
+    {
+      "title": "Go interfaces, reflection, and binary size",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/programming/GoInterfacesReflectAndBinarySize",
+      "summary": "Recently an interesting series of commits landed in Prometheus with the goal of reducing the size of the\nPrometheus binary by allowing the Go linker to remove more unused code\n(something it's quite good at in general,\nalthough the linker is also deliberately limited in this). The commit with the message that's most\ninformative about what is going on and why is discovery/gce: keep\n[Google Cloud] Compute SD client from defeating dead-code elimination,\nand you can read the full details in it. The s",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-06-28",
+      "summary_zh": "本文探讨了Go语言中接口和反射机制对二进制文件大小的影响，以及Prometheus项目为减小二进制体积而进行的优化工作。文章解释了Go链接器在移除未使用代码方面的能力和局限性，并介绍了如何通过特定手段让链接器更积极地清理未使用的代码，从而达到缩减二进制文件大小的目的。",
+      "why_matters": "深入理解Go语言底层机制对性能优化的影响，对关注Go二进制体积优化的开发者很有参考价值。",
+      "tags": "Go语言, 二进制优化, Prometheus, 链接器, 反射",
+      "id": 710,
+      "added_at": "2026-06-29 03:11:50"
+    },
+    {
+      "title": "The Laziest Generation",
+      "url": "https://idiallo.com/blog/the-laziest-generation",
+      "summary": "I don't understand why this generation can't afford a home. When my grandfather was 18, he had already saved enough money from his paper route and various odd jobs to buy his first home. By the time my father turned 26, he was already married, had his first child, and was moving into his first home. We lived frugally, and our parents taught us the value of spending wisely.\t\t\tToday's man-children, at the ripe old age of 40, still cannot afford a home. Yet they have no problem eating out every day",
+      "source": "idiallo.com",
+      "category": "blog",
+      "published": "2026-06-28",
+      "summary_zh": "文章通过对比祖孙三代的经历，批评当代年轻人买不起房的现象。作者指出祖父18岁就能靠送报和零工攒钱买房，父亲26岁已结婚生子买房，而当代年轻人却难以负担房产。然而文章未充分考虑房价上涨、工资停滞、学生贷款等经济因素的变化，其“懒惰”的标签化批评存在偏颇。",
+      "why_matters": "尽管观点有失偏颇，但文章触及了代际经济压力这一重要议题，有助于引发对当代年轻人困境的思考。",
+      "tags": "代际对比, 房产压力, 经济评论",
+      "id": 708,
+      "added_at": "2026-06-29 03:11:50"
+    },
+    {
+      "title": "PuffPal, an App for Accessing Cannabis Clubs, Leaked 1 Million Users’ Passports",
+      "url": "https://www.theverge.com/tech/947157/passports-data-breach-cannabis-club-systems-nefos-puffpal?view_token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjdjV0Y5TTBuM0ciLCJwIjoiL3RlY2gvOTQ3MTU3L3Bhc3Nwb3J0cy1kYXRhLWJyZWFjaC1jYW5uYWJpcy1jbHViLXN5c3RlbXMtbmVmb3MtcHVmZnBhbCIsImV4cCI6MTc4MzA5NDY0NiwiaWF0IjoxNzgyNjYyNjQ2fQ.7SjX6B8AAGhzsdrtD5asJWBwzQvTDUD31hWte7K1oec",
+      "summary": "Sean Hollister, writing for The Verge (gift link):\n\n\n  If you’ve visited a cannabis club in Spain, [Sammy] Azdoufal says, chances\nare your photo ID was among them — and possibly your phone\nnumber, address, your favorite strains of cannabis, and how much\nyou consumed each month while there. Azdoufal says celebrities are\nin the database, too, and visitors from all over the world,\nincluding 30,000 from the United States. “They have famous\npeople,” says Azdoufal. “People who don’t want everyone to k",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-28",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 706,
+      "added_at": "2026-06-29 03:11:50"
+    },
+    {
       "title": "Reading List 06/27/26",
       "url": "https://www.construction-physics.com/p/reading-list-062726",
       "summary": "Trump refuses to sign a housing bill, the high cost of US-made doors, slow trucking, why we stopped making new land, and more.",
@@ -9036,5 +9114,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-28 14:23:28"
+  "last_updated": "2026-06-29 03:11:50"
 }
