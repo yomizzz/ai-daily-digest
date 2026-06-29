@@ -1,6 +1,149 @@
 {
   "articles": [
     {
+      "title": "What happened to Altavista",
+      "url": "https://dfarq.homeip.net/what-happened-to-altavista/?utm_source=rss&utm_medium=rss&utm_campaign=what-happened-to-altavista",
+      "summary": "For as long as I can remember, my home page has been about:blank. But for a good chunk of the 1990s, I would have done well to set it to altavista.digital.com. Here&#8217;s what happened to Altavista, the search engine that\nThe post What happened to Altavista appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-06-29",
+      "summary_zh": "文章回顾了90年代互联网搜索巨头Altavista的兴衰史。作者回忆了当时人们将Altavista设为浏览器首页的普遍现象，讲述了这款曾经领先的搜索引擎如何从巅峰走向衰落，最终被竞争对手超越并淡出市场的过程。",
+      "why_matters": "对于了解互联网发展历史和科技公司兴衰规律的读者具有启发意义。",
+      "tags": "互联网历史，搜索引擎，Altavista",
+      "id": 732,
+      "added_at": "2026-06-30 03:52:18"
+    },
+    {
+      "title": "Unbundling the standard library",
+      "url": "https://nesbitt.io/2026/06/29/unbundling-the-standard-library.html",
+      "summary": "Batteries no longer included, available separately on aisle four",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-06-29",
+      "summary_zh": "文章探讨了编程语言标准库从“大一统”向“模块化”转变的趋势。以Python为代表的“batteries included”理念正受到挑战，现代开发更倾向于将标准库功能拆分为独立可选的包，让开发者按需取用，而非全部预装。这一变化反映了软件生态向更轻量、更灵活方向发展的趋势。",
+      "why_matters": "对于关注编程语言发展趋势和软件工程最佳实践的开发者具有启发意义。",
+      "tags": "编程语言, 标准库, 模块化设计, 软件工程",
+      "id": 730,
+      "added_at": "2026-06-30 03:52:18"
+    },
+    {
+      "title": "Who you gonna believe: Grok or the docs?",
+      "url": "https://www.johndcook.com/blog/2026/06/29/who-you-gonna-believe/",
+      "summary": "The calculator utility bc has a minimal math library. For example, there&#8217;s no tangent function because you&#8217;re expected take the ratio of sine and cosine. (The Gnu version of bc does have a function for tangent, but the POSIX version does not.) And yet bc includes support for Bessel functions J(x). The bc function j [&#8230;]\nThe post Who you gonna believe: Grok or the docs? first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-06-29",
+      "summary_zh": "文章探讨了bc计算器的数学库设计理念。bc作为Unix经典计算器，其数学库非常精简，例如未实现tan函数（需用sin/cos替代），但却包含Bessel函数支持。这反映了Unix工具“专注单一功能”的设计哲学——Bessel函数需要高精度的特殊算法实现，普通用户难以自行编写，而三角函数的基本替代方案足够简单。",
+      "why_matters": "适合对Unix工具设计哲学和计算器数学库实现感兴趣的开发者阅读，能引发对“工具职责边界”设计原则的思考。",
+      "tags": "bc计算器, Unix工具设计, 数学函数库",
+      "id": 728,
+      "added_at": "2026-06-30 03:52:18"
+    },
+    {
+      "title": "There's a plague of Googlebot impersonation going on (in June 2026)",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/web/GooglebotImpersonatorPlague",
+      "summary": "A while back I wrote about how claiming to be Googlebot is now a bad\nidea, where I noted that there were (reports\nof) malicious crawlers out there impersonating Googlebot and other\nlegitimate big crawlers and at the same time, Google and other crawler\noperators published the IP address ranges their crawlers used. You\ncould put these two together to block these impersonators:\n\nAnything claiming to be Googlebot that is not from a listed Google\nIP is extremely suspicious and in this day and age of ",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-06-29",
+      "summary_zh": "文章探讨了恶意爬虫冒充Googlebot等合法搜索引擎爬虫的问题。作者指出，这种冒充行为现在已经变得很常见，造成了安全风险。文章还提到，Google和其他爬虫运营商已公开了其爬虫使用的IP地址范围，这为网站管理员提供了验证爬虫身份的方法，帮助他们区分真正的Googlebot和假冒者。",
+      "why_matters": "对于网站管理员和网络安全从业者，了解爬虫冒充问题及其应对措施具有实际参考价值。",
+      "tags": "Googlebot, 网络爬虫, 网站安全, 身份验证",
+      "id": 726,
+      "added_at": "2026-06-30 03:52:18"
+    },
+    {
+      "title": "Pluralistic: Gemini is better than search because Google enshittified search (29 Jun 2026)",
+      "url": "https://pluralistic.net/2026/06/29/arsonist-firefighters/",
+      "summary": "Today's links Gemini is better than search because Google enshittified search: We're All Trying To Find The Guy Who Did This. Hey look at this: Delights to delectate. Object permanence: Microsoft antitrust overturned; Scammer carves C64; RIP Jim Baen; GOP rep to constituent's child: \"drop dead\" (literally); CCTVs jacked for botnet; Olympic profitability lie; Human factors in health infosec; Exfiltration via computer fans; Congress's summer schedule: 9 working days; Antitrust is political antigra",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-06-29",
+      "summary_zh": "文章指出Google的搜索引擎因追求利润已严重腐化（enshittification），反而不如其AI产品Gemini好用。作者批评了科技巨头先提供优质服务吸引用户、再逐步降低质量以最大化收益的商业模式，并引用多个案例说明这一现象的普遍性。",
+      "why_matters": "对于关心互联网服务质量下降和科技平台治理的读者，这篇文章提供了犀利的分析和独特的视角。",
+      "tags": "搜索引擎，AI助手，平台治理，enshittification，Google",
+      "id": 724,
+      "added_at": "2026-06-30 03:52:18"
+    },
+    {
+      "title": "I turned my prologue into a short video",
+      "url": "https://idiallo.com/byte-size/my-prologue-to-short-video",
+      "summary": "It's hard to write a whole book. So for now at least, I've turned the prologue of my book into a short video. I hope you enjoy it.",
+      "source": "idiallo.com",
+      "category": "blog",
+      "published": "2026-06-29",
+      "summary_zh": "作者正在创作一本书，但觉得完成整本书工程量很大，于是决定先将书中的序言部分制作成一段短视频来呈现。作为创作过程中的一个尝试和过渡，他希望这个视频能够被观众所喜欢。",
+      "why_matters": "对于创作者来说，这是一个将长篇写作与视觉表达结合的有趣实验，展示了一种灵活调整创作方式的思路。",
+      "tags": "创作心得,写作过程,短视频",
+      "id": 722,
+      "added_at": "2026-06-30 03:52:18"
+    },
+    {
+      "title": "The New York Times: ‘Om Malik, Whose Blog Shaped How Silicon Valley Saw Itself, Dies at 59’",
+      "url": "https://www.nytimes.com/2026/06/26/technology/om-malik-dead.html?unlocked_article_code=1.t1A.AyPT.p7GhDrDcJSfa",
+      "summary": "Clay Risen, writing for The New York Times (gift link):\n\n\n  Mr. Malik started his blog just as the dot-com bubble burst,\nleading to a recession that also took down many of the journalism\nstart-ups that wrote about tech, like The Industry Standard and\nInside.com. He was among the most prominent of the writers who\nquickly filled the gap, covering Silicon Valley with a mixture of\nhot scoops and sharp opinions that quickly made Gigaom a\nmust-read.\n\n“The Android OS leaves me feeling like one feels th",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-29",
+      "summary_zh": "Om Malik是一位在科技博客界具有重要影响力的作家，他在互联网泡沫破裂、经济衰退的背景下创办了科技博客，见证了《Industry Standard》、《Inside.com》等众多科技媒体初创公司的兴衰。作为当时最知名的科技博主之一，他的博客深刻塑造了硅谷的自我认知方式和对外形象，于59岁去世。",
+      "why_matters": "了解硅谷科技媒体发展史和一位影响深远的科技评论者的绝佳窗口。",
+      "tags": "Om Malik，讣告，科技博客，硅谷历史，媒体评论",
+      "id": 720,
+      "added_at": "2026-06-30 03:52:18"
+    },
+    {
+      "title": "Matt Mullenweg: ‘All Roads Lead to Om’",
+      "url": "https://ma.tt/2026/06/om-forever/",
+      "summary": "Matt Mullenweg:\n\n\n  Fundamentally, Om was a lover of humanity. He became a fast\n“regular” everywhere he went. He wouldn’t just buy coffee, he\nwould also learn the name and story of every barista, the dogs and\npeople in South Park. His deep curiosity and respect weren’t just\nfor the fine and famous. It extended to every soul that crossed\nhis path. His encyclopedic knowledge and photographic memory\ncreated connections not just in San Francisco, but all around the\nworld wherever we traveled. (I nee",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-29",
+      "summary_zh": "这篇文章通过Matt Mullenweg的视角，描述了一位名叫Om的人如何以真诚和好奇心对待身边的每一个人。Om每到一处都会努力了解周围人的故事，无论是咖啡师还是路人，他都以平等和尊重的态度去认识他们，展现出对人性深深的热爱。",
+      "why_matters": "这篇文章提醒我们，真正的连接来自于对每一个普通人的尊重和好奇，而不是只关注名人或精英。",
+      "tags": "人物特写，人际关系，真诚相待，社区文化",
+      "id": 718,
+      "added_at": "2026-06-30 03:52:18"
+    },
+    {
+      "title": "Daniel Agee: ‘Remembering Om’",
+      "url": "https://glass.photo/highlights/remembering-om",
+      "summary": "Daniel Agee, an early member of the team at Glass, writing on the Glass blog:\n\n\n  It’s not lost on us that Om’s photography, often taken in frozen\nlands in or around the arctic circle, was the polar opposite of\nhis personality. While he focused on subtle shapes and hidden\nlandscapes, he was the sun of any group he was in. Folks just\nnaturally fell into his orbit.\n\n\nAgee’s lovely piece is replete with photos by Om. \n\n\n  A veteran of the internet publishing space, he was one of the\nfirst to take t",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-06-29",
+      "summary_zh": "这是一篇 Google Glass 团队早期成员 Daniel Agee 撰写的纪念文章，悼念已故的摄影师 Om。Om 的摄影风格聚焦于北极圈冰冻地区的微妙自然景观，作品安静内敛，但他的性格却如同太阳般热情温暖，形成鲜明对比。文章表达了对这位才华横溢却过早离世队友的深切怀念。",
+      "why_matters": "文章以独特的视角展现了 Om 作为艺术家的双重特质——作品冷峻而性格温暖，读来令人动容。",
+      "tags": "人物悼念，Google Glass，摄影艺术",
+      "id": 716,
+      "added_at": "2026-06-30 03:52:18"
+    },
+    {
+      "title": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding",
+      "url": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
+      "summary": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding\nThis is an interesting new open weights (MIT licensed) model, the first model release from DeepReinforce.\n\n[...] with variants including 9B Dense, 31B Dense, 35B MoE, and 397B MoE. Built on top of pretrained Gemma 4 and Qwen 3.5, it achieves state-of-the-art performance among open-source models of comparable size on coding benchmarks.\n\nAs far as I can tell the licenses of those underlying models is compatible with being used in this way - Gemm",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-06-29",
+      "summary_zh": "暂无摘要",
+      "why_matters": "强调这是开源LLM领域的创新尝试，Self-Scaffolding技术值得关注",
+      "tags": "LLM, 开源模型, 编程代理, Agentic Coding, Self-Scaffolding",
+      "id": 714,
+      "added_at": "2026-06-30 03:52:18"
+    },
+    {
+      "title": "Count the number of Safari tabs",
+      "url": "https://simonwillison.net/2026/Jun/29/safari-tab-count/#atom-everything",
+      "summary": "Tiniest TIL, using AppleScript to count the number of open browser tabs in Safari:\nosascript -e 'tell application \"Safari\" to count tabs of every window'\n\n\n\n    Tags: safari, til, applescript",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-06-29",
+      "summary_zh": "本文介绍了一个利用AppleScript统计Safari浏览器中打开标签页数量的技巧。通过在终端执行简单命令 `osascript -e 'tell application \"Safari\" to count tabs of every window'` 即可快速获取当前所有窗口中的标签页总数。这是一个非常实用的命令行小技巧，适合需要了解浏览器打开状态的场景。",
+      "why_matters": "简洁实用的命令行技巧，5秒学会却能显著提升效率。",
+      "tags": "Safari, AppleScript, 命令行",
+      "id": 712,
+      "added_at": "2026-06-30 03:52:18"
+    },
+    {
       "title": "Working around dragons with the Lemote Yeeloong laptop and OpenBSD",
       "url": "https://oldvcr.blogspot.com/2026/06/working-around-dragons-with-lemote.html",
       "summary": "Behold: the Guru of GNU! (Photo by Habib Mhenni, Wikimedia Commons, CC BY-SA 3.0.)\n\n\n\nTrue enlightment only comes from a truly free computing experience, probably! And while there is no nerd who lacks an opinion on Richard Stallman personally, likewise let none claim he does not practice what he preaches. Why, the very laptop in front of him was selected deliberately because it can operate with no binary blobs and no firmware you couldn't examine or replace with your own, and runs his choice of ",
@@ -9114,5 +9257,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-06-29 14:54:30"
+  "last_updated": "2026-06-30 03:52:18"
 }
