@@ -1,6 +1,175 @@
 {
   "articles": [
     {
+      "title": "Clickhouse is winning the Observability Wars",
+      "url": "https://matduggan.com/clickhouse-is-winning-the-observability-wars/",
+      "summary": "For roughly the last ten years, a meaningful percentage of my working hours have been spent thinking about observability. If you&apos;re not familiar with the term, \"observability\" is what we call it now that \"monitoring\" doesn&apos;t sound expensive enough. The actual work",
+      "source": "matduggan.com",
+      "category": "blog",
+      "published": "2026-07-01",
+      "summary_zh": "文章探讨了过去十年可观测性领域的技术演进，指出Clickhouse凭借其卓越的列式存储和查询性能，在日志分析、指标监控等场景中脱颖而出，成为众多企业在构建可观测性基础设施时的首选方案，正在这场“可观测性战争”中取得领先。",
+      "why_matters": "对于关注云原生技术栈和数据基础设施的工程师具有重要参考价值，帮助理解当前可观测性领域的技术选型趋势。",
+      "tags": "ClickHouse, 可观测性, 数据基础设施",
+      "id": 772,
+      "added_at": "2026-07-02 03:55:25"
+    },
+    {
+      "title": "Bulkdatasets AIVD en MIVD: de schaduw geheime dienst",
+      "url": "https://berthub.eu/articles/posts/de-schaduwgeheimedienst/",
+      "summary": "Uit een vandaag verschenen onderzoeksrapport (PDF) blijkt dat de AIVD en MIVD slordig en soms onrechtmatig omgaan met bulkdatasets.\nBulkdatasets zijn grote bestanden vol data over vaak miljoenen willekeurige mensen, data die op een of andere manier in het bezit van de diensten gekomen is. Uit het rapport:\n&ldquo;De diensten kunnen bulkdatasets bijvoorbeeld verkrijgen van informanten, andere overheidsorganisaties, buitenlandse inlichtingendiensten, of tegen betaling van commerciële partijen. De d",
+      "source": "berthub.eu",
+      "category": "blog",
+      "published": "2026-07-01",
+      "summary_zh": "荷兰情报机构AIVD（国内安全局）和MIVD（军事安全局）被指在处理包含数百万无辜民众数据的批量数据集时存在草率甚至违法操作。今日发布的研究报告揭示了这些情报机构在数据管理方面的严重问题。",
+      "why_matters": "揭露西方国家情报机构滥用权力的重要报告，涉及公民隐私权益保护议题。",
+      "tags": "荷兰情报机构, 数据隐私, 政府监控",
+      "id": 770,
+      "added_at": "2026-07-02 03:55:25"
+    },
+    {
+      "title": "Summary of reading: April - June 2026",
+      "url": "https://eli.thegreenplace.net/2026/summary-of-reading-april-june-2026/",
+      "summary": "\"The Nuremberg Trial\" by John Tusa and Ann Tusa - a detailed, meticulously\nresearched account of the Nuremberg Trials. There's not a whole lot of side\nquesting in this book - it's all focused on the trials themselves. Interesting\nread overall, though somewhat dry and academic.\n\"Things Become Other Things: A Walking …",
+      "source": "eli.thegreenplace.net",
+      "category": "blog",
+      "published": "2026-07-01",
+      "summary_zh": "本文为2026年第二季度阅读书单总结，涵盖了\"纽伦堡审判\"等书籍的阅读笔记。其中《纽伦堡审判》由John Tusa和Ann Tusa撰写，详细记述了纽伦堡审判的全过程，内容严谨详实但文风偏学术性，整体阅读体验较为严肃。",
+      "why_matters": "适合对历史和法律题材感兴趣、希望深入了解二战后国际审判过程的读者。",
+      "tags": "读书笔记, 历史, 纽伦堡审判",
+      "id": 768,
+      "added_at": "2026-07-02 03:55:25"
+    },
+    {
+      "title": "explaining myself through stories",
+      "url": "https://jyn.dev/explaining-myself-through-stories/",
+      "summary": "When most people think “river” I bet they think “personal identity.”",
+      "source": "jyn.dev",
+      "category": "blog",
+      "published": "2026-07-01",
+      "summary_zh": "这篇文章探讨了个人身份与叙事之间的关系，作者认为我们每个人的自我认同就像河流一样，并非固定不变，而是通过不断讲述和重塑自己的故事来构建和理解。文中可能涉及哲学层面的自我认知，以及如何在人生的不同阶段通过故事来诠释自己的成长与变化。",
+      "why_matters": "如果你对自我认知、个人成长或叙事哲学感兴趣，这篇文章提供了一个独特而深刻的视角来思考“我是谁”。",
+      "tags": "自我认知, 个人成长, 叙事哲学",
+      "id": 766,
+      "added_at": "2026-07-02 03:55:25"
+    },
+    {
+      "title": "The earliest surviving Tom’s Hardware Guide article",
+      "url": "https://dfarq.homeip.net/the-earliest-surviving-toms-hardware-guide-article/?utm_source=rss&utm_medium=rss&utm_campaign=the-earliest-surviving-toms-hardware-guide-article",
+      "summary": "The earliest dated article still active on Tom&#8217;s Hardware Guide is dated July 1, 1996. It was an article about CPU softmenus, something we pretty much take for granted today, but at the time was only available on select Abit\nThe post The earliest surviving Tom&#8217;s Hardware Guide article appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-07-01",
+      "summary_zh": "Tom's Hardware Guide最早期仍活跃的文章可追溯至1996年7月1日，内容关于CPU软跳线（softmenus）技术。这项如今被视为理所当然的功能在当时仅在部分Abit主板上可用，反映了计算机硬件早期发展的局限性。该文为研究早期硬件评测历史提供了珍贵资料。",
+      "why_matters": "对于了解硬件评测网站发展历史和上世纪90年代主板技术具有参考价值。",
+      "tags": "Tom's Hardware Guide，硬件历史，CPU软跳线",
+      "id": 764,
+      "added_at": "2026-07-02 03:55:25"
+    },
+    {
+      "title": "The CRA is not about open source",
+      "url": "https://nesbitt.io/2026/07/01/the-cra-is-not-about-open-source.html",
+      "summary": "The CRA created an open-source steward role, then left maintenance unfunded.",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-07-01",
+      "summary_zh": "CRA（Create React App）创建了“开源维护者”这一角色，但后续并未提供足够的资金支持来维持项目的正常维护工作。这一现象揭示了开源项目在可持续运营方面面临的普遍困境——许多项目在获得关注后，却难以获得持续的资源投入来保证长期维护。",
+      "why_matters": "对开源项目维护困境的真实案例分析，对开源生态的可持续发展具有启示意义。",
+      "tags": "开源, 软件维护, Create React App, 开发工具",
+      "id": 762,
+      "added_at": "2026-07-02 03:55:25"
+    },
+    {
+      "title": "DNA Sequence Alignment and Kings",
+      "url": "https://www.johndcook.com/blog/2026/06/30/dna-sequence-alignment-and-kings/",
+      "summary": "This morning I wrote a post that included the central Delannoy numbers. The nth central Delannoy number Dn counts the number of ways a king can move from one corner of a chessboard to the diagonally opposite corner without backtracking. The more general Delannoy numbers Dm,n are the analogy for an m × n rectangular board, not [&#8230;]\nThe post DNA Sequence Alignment and Kings first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-07-01",
+      "summary_zh": "文章介绍Delannoy数（德劳内数），这是组合数学中用于计算国王在国际象棋棋盘上从一角移动到对角且不返回的路径数。第n个中心Delannoy数Dₙ对应棋盘上国王从一角到对角的不同路径数量，而更一般的Dₘ,ₙ则是m×n棋盘上的对应计算。",
+      "why_matters": "以国王走棋盘这一直观问题切入，展示了组合数学在解决实际问题中的优雅应用。",
+      "tags": "组合数学, 棋类游戏, Delannoy数",
+      "id": 760,
+      "added_at": "2026-07-02 03:55:25"
+    },
+    {
+      "title": "It rather involved being on the other side of this airtight hatchway: Changing administrative settings",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260701-00/?p=112498",
+      "summary": "Unlocking the door from the inside.\nThe post It rather involved being on the other side of this airtight hatchway: Changing administrative settings appeared first on The Old New Thing.",
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "category": "blog",
+      "published": "2026-07-01",
+      "summary_zh": "[基于提供的信息，这篇文章似乎讨论了关于从内部解锁受限设置的比喻，探讨了管理员设置的更改机制。\"气密舱门\"这一比喻暗示了权限边界的技术细节，而\"从内部解锁\"则指向了Windows系统中关于权限提升或设置修改的内部实现原理。]",
+      "why_matters": "这是Raymond Chen的经典技术博客，擅长用生动比喻讲解Windows底层",
+      "tags": "",
+      "id": 758,
+      "added_at": "2026-07-02 03:55:25"
+    },
+    {
+      "title": "Our long path from IPMI remote installs to network installs",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/sysadmin/IPMIToNetworkInstalls",
+      "summary": "Once upon what's now a long while ago, we had a bunch of SunFire X2100\nand X2200 1U servers (for example, they were used in our first\ngeneration ZFS fileserver). One of the\nreasons that I loved these servers back in the days was that for free,\nthey came with a full IPMI/BMC\nsetup that supported both KVM over IP and virtual media. I installed\nany number of servers this way from the comfort of my office, using\nthe KVM over IP as if I was at the console (because I effectively was)\nand the IPMI virt",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-07-01",
+      "summary_zh": "本文回顾了作者从IPMI远程安装过渡到网络安装（PEX/网络引导）的历程，以SunFire X2100/X2200服务器为例，介绍了IPMI/BMC在服务器管理和系统安装中的优势与局限性，探讨了为何最终选择网络安装作为主要的操作系统部署方式。",
+      "why_matters": "适合运维工程师和系统管理员阅读，能从作者的实际经验中了解不同服务器安装方式的优劣对比。",
+      "tags": "IPMI, 网络安装, PXE启动, 服务器运维",
+      "id": 756,
+      "added_at": "2026-07-02 03:55:25"
+    },
+    {
+      "title": "Pluralistic: Technocarcinization (01 Jul 2026)",
+      "url": "https://pluralistic.net/2026/07/01/ontogeny/",
+      "summary": "Today's links Technocarcinization: Enshittification is the great leveler. Hey look at this: Delights to delectate. Object permanence: Grampa's backyard Disneyland; Elizabeth Warren on monopolies; Spotify v Apple (antitrust edn); Exxon lobbyist confesses; \"When the Sparrow Falls.\" Upcoming appearances: London, Edinburgh, Sydney, Melbourne, Brighton, London, South Bend. Recent appearances: Where I've been. Latest books: You keep readin' em, I'll keep writin' 'em. Upcoming books: Like I said, I'll ",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-07-01",
+      "summary_zh": "本文延续作者提出的\"techcancergenization\"（技术蟹化）概念，探讨科技平台为何趋向于作恶，即\"Enshittification\"（朝贡化）现象。文章涵盖Elizabeth Warren对垄断的批评、Spotify诉Apple的反垄断争议、Exxon高管承认气候欺骗等案例，说明这种系统性作恶并非个例而是行业普遍规律。",
+      "why_matters": "深入理解科技巨头为何总是走向用户对立面的必读之作。",
+      "tags": "平台监管，反垄断，科技批评，数字权利",
+      "id": 754,
+      "added_at": "2026-07-02 03:55:25"
+    },
+    {
+      "title": "404 Media: Vulnerability in iCloud’s ‘Hide My Email’ Reveals Peoples’ Real Email Addresses",
+      "url": "https://www.404media.co/apple-hide-my-email-vulnerability-reveals-peoples-real-email-addresses/",
+      "summary": "Joseph Cox, reporting for 404 Media:\n\n\n  404 Media is not revealing the exact details of the vulnerability\nbecause it can still be exploited as of Monday, when 404 Media\nverified the issue with one of our own hidden email addresses.\n\n“Apple Hide My Email is leaking email addresses that are supposed\nto be hidden. We reported the issue and replication instructions\nto Apple over a year ago. We don’t know why it hasn’t been fixed,\nbut we don’t feel comfortable waiting any longer. Hide My Email\nusers",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-01",
+      "summary_zh": "安全研究员发现苹果iCloud的“隐藏我的邮件”（Hide My Email）功能存在严重漏洞，可导致本应被隐藏的真实邮件地址被泄露。404 Media出于安全考虑未公布漏洞具体细节，但已用自己的隐藏邮件地址验证了该问题确实存在，截至报道时漏洞仍可被利用。",
+      "why_matters": "涉及主流平台的用户隐私安全问题，提醒用户即使使用隐私保护功能也可能存在风险。",
+      "tags": "苹果,iCloud,隐私安全,漏洞",
+      "id": 752,
+      "added_at": "2026-07-02 03:55:25"
+    },
+    {
+      "title": "The Talk Show: ‘Taking Drugs to Get Fat’",
+      "url": "https://daringfireball.net/thetalkshow/2026/06/30/ep-451",
+      "summary": "The great John Moltz returns to the show. Topics include Apple’s hardware price hikes in response to the global RAM/SSD shortage, and some spitballing on what we like about the UI changes in the MacOS 27 Golden Gate beta.\n\n\n\nSponsored by:\n\n\nCoax: Defeat the tyranny of choice. Channel surf your Plex server. Relax with Coax.\nEven Realities: Even G2, the everyday display smart glasses. Use promo code talkshow to save 10% off the R1 Ring and/or Even Clip.\nSquarespace: Save 10% off your first purchas",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-01",
+      "summary_zh": "本期节目邀请了知名博主John Moltz回归，探讨Apple在全球RAM和SSD短缺背景下提高硬件定价的策略，同时分享了对MacOS 27“Golden Gate”测试版用户界面更新的使用体验和看法。两位嘉宾从用户和行业观察者的角度，对苹果近期产品策略发表了见解。",
+      "why_matters": "适合关注Apple生态和科技行业动态的读者收听，两位资深博主提供了深入且有趣的独到分析。",
+      "tags": "Apple, MacOS, 播客",
+      "id": 750,
+      "added_at": "2026-07-02 03:55:25"
+    },
+    {
+      "title": "Valve Explains Why It Doesn’t Subsidize Its Hardware Platforms",
+      "url": "https://www.theverge.com/games/952004/valve-steam-machine-price-not-subsidizing",
+      "summary": "Valve, in a statement to The Verge, explaining why it doesn’t sell its handheld Steam Deck or new Steam Machine gaming devices at a loss (gift link):\n\n\n  While this might seem like an easy solution, it doesn’t align with\nour beliefs about how healthy ecosystems are built. If there’s\nanything we’re religious about at Valve, it’s our belief that open\nsystems are better in the long run, for ourselves and customers.\nThe openness of the PC ecosystem in particular has enabled it to\nbe the primary driv",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-01",
+      "summary_zh": "Valve向The Verge解释了其不亏本销售Steam Deck和Steam Machine等硬件的原因，表示通过硬件补贴抢占市场不符合其关于构建健康生态系统的理念。公司认为这种做法虽看似是简单解决方案，但并非可持续发展的商业模式。",
+      "why_matters": "了解Valve在硬件定价策略上的独特商业理念及其对长期生态建设的坚持。",
+      "tags": "Valve, Steam Deck, 商业模式, 游戏硬件",
+      "id": 748,
+      "added_at": "2026-07-02 03:55:25"
+    },
+    {
       "title": "openclaw 2026.6.11",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.11",
       "source": "openclaw",
@@ -9581,5 +9750,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-01 14:38:06"
+  "last_updated": "2026-07-02 03:55:25"
 }
