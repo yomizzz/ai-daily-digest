@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.6.11",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.11",
+      "source": "openclaw",
+      "published": "2026-07-01",
+      "category": "openclaw",
+      "summary": "- Feishu 语音回复气泡显示音频时长，方便接收者预览\n- QQBot 群管理员可自定义 slash 命令的可见范围\n- Telegram 进度模式聊天的旧进度气泡自动清除，保持对话整洁\n- 推理模型的心跳检查现在可选择显示 Thinking 消息\n\n🐛 Bug 修复：- 修复 Google Chat 新私信被误识别为群组对话的问题\n- 修复 Discord 和 Telegram 回复在会话切换时丢失上下文\n- 修复后台图片、视频、音乐结果发错聊天的问题\n- 修复 Telegram 引用回复时答案错误跳转到历史消息\n- 修复 QQBot 私有命令在群组中暴露或静默失败\n- 修复心跳检查在 Telegram 等渠道暴露内部推理内容\n- 修复 iMessage 链接预览延迟导致命令和消息分离\n- 修复 Discord 消息工具回复触发虚假失败警告\n- 修复 WhatsApp 群组在重连时丢失上下文\n- 修复 OpenClaw 错误回复自己延迟的 iMessage 回显\n- 修复 Telegram webhook 在重启期间的短暂消息丢失",
+      "features": "- Feishu 语音回复气泡显示音频时长，方便接收者预览\n- QQBot 群管理员可自定义 slash 命令的可见范围\n- Telegram 进度模式聊天的旧进度气泡自动清除，保持对话整洁\n- 推理模型的心跳检查现在可选择显示 Thinking 消息",
+      "bug_fixes": "- 修复 Google Chat 新私信被误识别为群组对话的问题\n- 修复 Discord 和 Telegram 回复在会话切换时丢失上下文\n- 修复后台图片、视频、音乐结果发错聊天的问题\n- 修复 Telegram 引用回复时答案错误跳转到历史消息\n- 修复 QQBot 私有命令在群组中暴露或静默失败\n- 修复心跳检查在 Telegram 等渠道暴露内部推理内容\n- 修复 iMessage 链接预览延迟导致命令和消息分离\n- 修复 Discord 消息工具回复触发虚假失败警告\n- 修复 WhatsApp 群组在重连时丢失上下文\n- 修复 OpenClaw 错误回复自己延迟的 iMessage 回显\n- 修复 Telegram webhook 在重启期间的短暂消息丢失",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Weekly Update 510: Live From Mallorca with Scott Helme",
       "url": "https://www.troyhunt.com/weekly-update-510/",
       "summary": "How&apos;s the view?! Back to business, it&apos;s now 8 years ago that Scott and I thought it would be a cool idea to build Why no HTTPS? We used the site to shame companies for not implementing their transport later security property, and to make it",
@@ -9569,5 +9581,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-01 03:52:33"
+  "last_updated": "2026-07-01 14:38:06"
 }
