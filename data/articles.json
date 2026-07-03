@@ -1,6 +1,136 @@
 {
   "articles": [
     {
+      "title": "Swimming Pools, Pee, and Trying to Delete Your Data From the Internet",
+      "url": "https://www.troyhunt.com/swimming-pools-pee-and-trying-to-delete-your-data-from-the-internet/",
+      "summary": "I can&apos;t recall if someone else originally came up with this saying or if I said it in some off-the-cuff comment and it just propagated, but since it&apos;s often attributed back to me, I&apos;ll relay it here regardless:Trying to delete yourself",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-07-03",
+      "summary_zh": "本文讨论了数据删除的困难性——就像在尿液已经混入的游泳池中无法清除一样，一旦个人数据进入互联网，删除它几乎是不可能的。作者Troy Hunt通过这个生动的比喻，探讨了现代数字时代数据隐私的挑战，以及个人在保护自己在线信息方面面临的实际困境。",
+      "why_matters": "用形象的比喻解释了为何\"从互联网删除数据\"在现实中难以实现，对关注数字隐私的读者很有启发意义。",
+      "tags": "数据隐私,网络安全,数字生活",
+      "id": 794,
+      "added_at": "2026-07-04 03:12:05"
+    },
+    {
+      "title": "Midnight Train to Stockholm",
+      "url": "https://matduggan.com/midnight-train-to-stockholm/",
+      "summary": "I was recently summoned to a meeting in Stockholm, a city I had somehow managed to avoid despite living in Copenhagen for years. My Swedish experience, up to this point, consisted entirely of trips to Malm&#xf6; &#x2014; the closest Swedish city to Denmark and, more importantly, home to a",
+      "source": "matduggan.com",
+      "category": "blog",
+      "published": "2026-07-03",
+      "summary_zh": "作者住在丹麦哥本哈根多年，却一直未去过瑞典斯德哥尔摩，仅去过最近的马尔默市。此次因工作需要，乘坐午夜火车前往斯德哥尔摩参加会议，开启了一段迟来的瑞典首都之旅。",
+      "why_matters": "作者以轻松幽默的笔触，讲述了一个“拖延”多年才成行的北欧城市探访故事，适合喜欢旅行见闻和北欧生活的读者。",
+      "tags": "旅行见闻, 北欧生活, 个人经历",
+      "id": 792,
+      "added_at": "2026-07-04 03:12:05"
+    },
+    {
+      "title": "Compute!’s Gazette magazine, 1983-1995",
+      "url": "https://dfarq.homeip.net/computes-gazette-magazine-1983-1995/?utm_source=rss&utm_medium=rss&utm_campaign=computes-gazette-magazine-1983-1995",
+      "summary": "In July 1983, one of my personal favorite Commodore computer magazines of all time, Compute!&#8217;s Gazette, was born. An offshoot of the general computer magazine Compute!, Gazette&#8217;s first issue was dated July 1983 and quickly proved successful, closely following the\nThe post Compute!&#8217;s Gazette magazine, 1983-1995 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-07-03",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 790,
+      "added_at": "2026-07-04 03:12:05"
+    },
+    {
+      "title": "The Life and Times of Maxis, Part 1: SimEverything",
+      "url": "https://www.filfre.net/2026/07/the-life-and-times-of-maxis-part-1-simeverything/",
+      "summary": "This article tells part of the story of Maxis Software. I&#8217;m still to this day just blown away by continental drift and things like that, stuff that most people think sounds pretty boring. &#8212; Will Wright Gamers are both extremely dedicated to and really good at preserving the history of their hobby. Seldom has a [&#8230;]",
+      "source": "filfre.net",
+      "category": "blog",
+      "published": "2026-07-03",
+      "summary_zh": "这篇文章回顾了Maxis Software的早期发展历程，讲述了创始人Will Wright如何从对模拟和系统模拟的兴趣出发，创立了这家以《模拟城市》系列闻名于世的游戏公司。文章通过Will Wright本人对大陆漂移等自然系统模拟的痴迷，展现了模拟游戏诞生的思想根源，以及游戏产业中玩家群体对保存游戏历史的热情。",
+      "why_matters": "了解模拟游戏教父Will Wright和Maxis的创业故事，感受模拟类游戏背后独特的创意理念。",
+      "tags": "Maxis, Will Wright, 模拟游戏历史",
+      "id": 788,
+      "added_at": "2026-07-04 03:12:05"
+    },
+    {
+      "title": "The Fall and Rise of Screwworm",
+      "url": "https://www.construction-physics.com/p/the-fall-and-rise-of-screwworm",
+      "summary": "Every spring, as sure as the seasons, and for generations unknown, screwworms began their annual march northward from their overwintering sanctuaries in Mexico and South Texas.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-07-03",
+      "summary_zh": "这篇文章讲述了螺旋锥蝇这种致命害虫从严重威胁美国畜牧业，到被人类成功通过释放不育雄蝇技术彻底消灭的历程。文章可能探讨了这一生物防治史上里程碑式的成功案例，以及后来该害虫在部分地区卷土重来的新挑战。",
+      "why_matters": "一个用科技力量战胜自然灾害的经典范例，展现了创新思维如何解决百年农业难题。",
+      "tags": "农业害虫, 生物防治, 科技创新",
+      "id": 786,
+      "added_at": "2026-07-04 03:12:05"
+    },
+    {
+      "title": "How did we conclude that CcNamespace.dll was the ringleader of a group of DLLs that unloaded prematurely?",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260703-00/?p=112504",
+      "summary": "Contextual clues.\nThe post How did we conclude that <TT>CcNamespace.dll</TT> was the ringleader of a group of DLLs that unloaded prematurely? appeared first on The Old New Thing.",
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "category": "blog",
+      "published": "2026-07-03",
+      "summary_zh": "本文讲述了微软工程师如何通过分析上下文线索（Contextual clues），追踪并定位到 CcNamespace.dll 是导致一组 DLL 过早卸载的根源。文章展示了一个典型的 Windows 调试案例，强调在缺乏直接证据时，间接证据和环境信息对于问题诊断的重要价值。",
+      "why_matters": "体现了 Windows 调试中\"顺藤摸瓜\"的思维方式，是学习系统级问题排查的经典案例。",
+      "tags": "Windows调试,DLL加载,故障排查",
+      "id": 784,
+      "added_at": "2026-07-04 03:12:05"
+    },
+    {
+      "title": "Discovering rsync's -W option and our use for it",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/sysadmin/RsyncWOptionUse",
+      "summary": "Suppose, not hypothetically, that you use rsync to push an encrypted backup file from the\nmachine it's created on to a fileserver, where it will be backed up by your\nregular backup system. Because this encrypted\nbackup file is backed up every day, you only need one copy of it on\nthe filesystem, so you use and reuse a fixed name for the file. In\nother words, we're using rsync somewhat as if it was scp, but\nwith better control over what remote files can be written and (not)\nread.\n\nWhen you push (o",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-07-03",
+      "summary_zh": "本文介绍作者发现rsync的-W选项并将其应用于加密备份文件的同步场景。由于加密备份文件是每日整体生成的新文件，作者利用rsync的-W选项（强制完整文件传输）来跳过增量检测的校验开销，从而提高备份效率。",
+      "why_matters": "如果你也在用rsync同步频繁变化但需要整体替换的文件，这篇文章提供了实用的性能优化思路。",
+      "tags": "rsync, 备份优化, Linux工具",
+      "id": 782,
+      "added_at": "2026-07-04 03:12:05"
+    },
+    {
+      "title": "Pluralistic: CARDiac, syntax coloring, view source and vibe code (03 Jul 2026)",
+      "url": "https://pluralistic.net/2026/07/03/rod-logic/",
+      "summary": "Today's links CARDiac, syntax coloring, view source and vibe code: With great abstraction comes great power comes great responsibility comes great loss of fidelity. Hey look at this: Delights to delectate. Object permanence: Real elections v reality TV; Copyright troll loses license; Who gets fed housing subsidies? Trump x forced labor. Upcoming appearances: London, Edinburgh, Sydney, Melbourne, Brighton, London, South Bend. Recent appearances: Where I've been. Latest books: You keep readin' em,",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-07-03",
+      "summary_zh": "本文是Cory Doctorow的Pluralistic博客精选集，探讨了抽象化技术（如语法高亮、氛围编程）的力量与代价，以及当前数字环境中选举真实性、版权执法等社会议题。作者指出，随着技术抽象层级的增加，我们获得了强大的能力，但也面临着责任与信息失真的挑战。",
+      "why_matters": "适合关注数字权利、技术哲学和当代社会议题的读者，特别是对\"抽象化代价\"这一核心观点感兴趣的群体。",
+      "tags": "技术哲学, 数字权利, 社会观察",
+      "id": 780,
+      "added_at": "2026-07-04 03:12:05"
+    },
+    {
+      "title": "June 2026 newsletter",
+      "url": "https://simonwillison.net/2026/Jul/3/june-newsletter/#atom-everything",
+      "summary": "The June edition of my sponsors-only monthly newsletter is out. If you are a sponsor (or if you start a sponsorship now) you can access it here.\nThis month:\n\nClaude Fable 5, GPT-5.6, and US export restrictions\nGLM-5.2 is the new best open weights model\nTokenmaxxing is so over\nDatasette Apps\nsqlite-utils and shot-scraper and Datasette\nMiscellaneous WASM projects\nOther model releases\nWhat I'm using\n\nHere's a copy of the May newsletter as a preview of what you'll get. Pay $10/month to stay a month ",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-03",
+      "summary_zh": "Simon Willison的6月赞助者专属月度通讯已发布，本期涵盖Claude Fable 5、GPT-5.6及美国出口限制政策动态，介绍GLM-5.2作为新晋最佳开源权重模型的进展，探讨Tokenmaxxing概念已过时的观点，并涉及Datasette Apps和sqlite-u等工具更新。",
+      "why_matters": "Simon Willison是知名AI技术博主，其newsletter深度分析当月AI领域重要进展，适合关注AI技术发展动态的读者。",
+      "tags": "AI资讯, 开源模型, Simon Willison",
+      "id": 778,
+      "added_at": "2026-07-04 03:12:05"
+    },
+    {
+      "title": "Fable's judgement",
+      "url": "https://simonwillison.net/2026/Jul/3/judgement/#atom-everything",
+      "summary": "One of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work.\nThe example they gave was testing. You can tell Fable \"only use automated testing for larger features, don't update and run tests for small copy or design changes\" - but it's better to just tell Fable to use its own judgement when deci",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-03",
+      "summary_zh": "文章分享了Claude Code团队的一个实用建议：应该让Fable和Opus等AI代理使用自己的判断力，而不是过度指令它们具体应该如何工作。以测试为例，过度具体的指令可能反而限制了AI的发挥空间。让AI自主决策能带来更好的效果。",
+      "why_matters": "对于使用AI编程工具的开发者来说，学会\"放手\"让AI自主判断是提升效率的关键技巧。",
+      "tags": "AI工具使用, 编程效率, Claude Code",
+      "id": 776,
+      "added_at": "2026-07-04 03:12:05"
+    },
+    {
       "title": "Digitale Autonomie 2.0: en nu echt",
       "url": "https://berthub.eu/articles/posts/digitale-autonomie-2-0-surf-privacy-security/",
       "summary": "Afgelopen 25 juni deed ik het openingspraatje van de Surf Privacy en Security Conferentie. Nou heb ik vaker over digitale autonomie gesproken, maar deze keer heb ik het nadrukkelijk meer over wat er nu moet gebeuren. Of zoals de titel zegt &ldquo;en nu echt&rdquo;. Ondanks dat ik nu letterlijk meer dan 50 praatjes over dit onderwerp heb gegeven had ik nog niet eerder de moeite genomen een goed transcript te maken.",
@@ -9942,5 +10072,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-03 13:58:04"
+  "last_updated": "2026-07-04 03:12:05"
 }
