@@ -1,6 +1,84 @@
 {
   "articles": [
     {
+      "title": "Reading List 07/04/26",
+      "url": "https://www.construction-physics.com/p/reading-list-070426",
+      "summary": "Households without homeowners insurance, crackdowns on AI chip smuggling, Japan&#8217;s two electrical frequencies, Meta&#8217;s AI compute business, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-07-04",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 796,
+      "added_at": "2026-07-05 03:04:56"
+    },
+    {
+      "title": "This Week in Package Management: 4 July 2026",
+      "url": "https://nesbitt.io/2026/07/04/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-07-04",
+      "summary_zh": "本文汇总了2026年7月第一周包管理器领域的最新动态，包括各主流包管理工具的版本更新、安全公告以及行业相关文章，涵盖npm、pip、cargo等生态系统的最新进展，为开发者提供一站式行业资讯概览。",
+      "why_matters": "适合需要快速了解包管理器生态一周变化的开发者，能帮助把握工具链更新动态和安全趋势。",
+      "tags": "包管理器, 开源生态, 开发工具",
+      "id": 794,
+      "added_at": "2026-07-05 03:04:56"
+    },
+    {
+      "title": "Does additional data always reduce posterior variance?",
+      "url": "https://www.johndcook.com/blog/2026/07/03/does-additional-data-always-reduce-posterior-variance/",
+      "summary": "A discussion over lunch today brought up the fact that additional data does not always decrease the size of a confidence interval. This post will look at this from a Bayesian perspective. In general, new information reduces your uncertainty regarding whatever you&#8217;re estimating. The posterior distribution becomes more concentrated as more data are collected. That&#8217;s [&#8230;]\nThe post Does additional data always reduce posterior variance? first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-07-04",
+      "summary_zh": "文章探讨了一个违反直觉的统计学现象：直觉上认为增加数据量应该缩小置信区间，但实际上并非总是如此。作者从贝叶斯统计视角出发，分析了“后验方差”是否一定会随着新数据的加入而减小这一核心问题，揭示了数据与不确定性之间并非简单的线性关系。",
+      "why_matters": "帮助你建立更准确的统计直觉，理解为什么“更多数据=更小误差”这一常见认知可能是错的。",
+      "tags": "贝叶斯统计，置信区间，统计学直觉，概率论",
+      "id": 792,
+      "added_at": "2026-07-05 03:04:56"
+    },
+    {
+      "title": "Go maps, hashes of map keys, and pointers: a little surprise",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/programming/GoMapsHashesAndPointers",
+      "summary": "Go's maps are famously\nimplemented as hash tables, which is the only reasonable choice. The\nimplementation has gotten somewhat more complicated since I looked\nat how maps store their values and keys due to the\nmove to swiss tables, and these\ndays you find the comments about how they work in\ninternal/runtime/maps/map.go,\nbut the core is still the same. Recently, a documentation commit\nlanded in the Go development tree that opened my eyes to a bit of\nsubtle complexity I hadn't considered before in",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-07-04",
+      "summary_zh": "本文探讨了Go语言中map的底层实现机制。Go的map传统上使用hash表实现，这是唯一合理的选择。近年来Go的map实现已迁移到swiss tables，代码注释中详细说明了其工作原理，作者通过本文分享了这一变化中的一些意外发现。",
+      "why_matters": "深入理解Go map内部实现的好材料，特别是了解swiss tables带来的变化。",
+      "tags": "Go语言, Maps, Swiss Tables, 源码解读",
+      "id": 790,
+      "added_at": "2026-07-05 03:04:56"
+    },
+    {
+      "title": "Combined 1D and 2D Barcodes",
+      "url": "https://shkspr.mobi/blog/2026/07/combined-1d-and-2d-barcodes/",
+      "summary": "This was a little idea gnawing at the back of my brain. The humble barcode has been in use since the 1970s. In the next few years it will likely be replaced with a 2D QR Code.  I couldn&#039;t find anyone who&#039;d made a QR code with an embedded UPC - so I decided to make one.    If you move your phone close to the code (so it can&#039;t see the squares in the corners) it should read the number in the 1D…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-07-04",
+      "summary_zh": "作者提出了一个有趣的想法，将传统的1D条形码（如UPC）嵌入到现代2D QR码中。条形码自1970年代开始使用，而QR码可能在未来取代它。作者通过实际制作验证了这个创意的可行性，将经典与现代技术结合在一起。",
+      "why_matters": "展示了一个将传统1D条形码与2D QR码融合的创新实验，适合对条形码技术和创意项目感兴趣的读者。",
+      "tags": "二维码, 条形码, 技术创意",
+      "id": 788,
+      "added_at": "2026-07-05 03:04:56"
+    },
+    {
+      "title": "Fantastical 4.1.15 Adds Calendar Mirroring",
+      "url": "https://flexibits.com/blog/2026/06/double-booked-never-heard-of-it-meet-calendar-mirroring-in-fantastical/",
+      "summary": "Flexibits:\n\n\n  Calendar Mirroring allows you to connect two separate calendars\n(like work and personal) so that events from one automatically\nshow up on the other.\n\nThe best part? No event information is sent to Flexibits servers\nor saved outside of your device.\n\nYou can choose to show full event details or just block the time\nout as a mysterious, professional “Busy”. Your coworkers don’t\nneed to know you’re getting a root canal, they just need to know\nyou’re unavailable.\n\n\nIn Flexibits’s exampl",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-04",
+      "summary_zh": "日历应用Fantastical在4.1.15版本中新增了Calendar Mirroring功能，允许用户将两个独立日历（如工作与个人）关联，使事件自动同步显示。该功能强调隐私保护，所有事件数据仅在本地设备处理，不会发送到Flexibits服务器或保存到云端。",
+      "why_matters": "对于需要管理多个日历但又注重隐私的用户来说，这个功能提供了便捷的同步体验和可靠的数据安全保障。",
+      "tags": "Fantastical, 日历同步, 隐私保护",
+      "id": 786,
+      "added_at": "2026-07-05 03:04:56"
+    },
+    {
       "title": "Swimming Pools, Pee, and Trying to Delete Your Data From the Internet",
       "url": "https://www.troyhunt.com/swimming-pools-pee-and-trying-to-delete-your-data-from-the-internet/",
       "summary": "I can&apos;t recall if someone else originally came up with this saying or if I said it in some off-the-cuff comment and it just propagated, but since it&apos;s often attributed back to me, I&apos;ll relay it here regardless:Trying to delete yourself",
@@ -10072,5 +10150,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-04 13:50:35"
+  "last_updated": "2026-07-05 03:04:56"
 }
