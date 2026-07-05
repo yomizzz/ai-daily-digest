@@ -1,6 +1,45 @@
 {
   "articles": [
     {
+      "title": "Travel notes: PLDI Boulder",
+      "url": "https://bernsteinbear.com/blog/travel-notes-pldi-boulder/?utm_source=rss",
+      "summary": "I had another excellent PLDI this\npast June. It was my fourth1. I continued to meet new people and learn\nnew things!\n\nOverall: I got to meet a lot of new people, which was exciting. I had some good\nchats about research. I asked a question at a talk! I got to show Aaron and\nJacob PLDI and see them enjoy it. I missed hanging out with CF Bolz-Tereick and\nChris Fallin, the usual suspects at conferences I attend. I’m looking forward\nto next year.\n\nThis post is more about the conference than the town ",
+      "source": "bernsteinbear.com",
+      "category": "blog",
+      "published": "2026-07-05",
+      "summary_zh": "作者参加了在Boulder举办的PLDI会议，这是他第4次参会。他在会上结识了许多新朋友，进行了关于研究的深入交流，并在一个演讲中提出了问题。他还见到了Aaron和Jacob两位朋友。整篇文章分享了参会的愉快经历和收获。",
+      "why_matters": "适合想了解学术会议参会体验、增进对学术交流氛围认识的读者。",
+      "tags": "PLDI, 学术会议, 编程语言",
+      "id": 796,
+      "added_at": "2026-07-06 03:09:55"
+    },
+    {
+      "title": "sqlite-utils 4.0rc2",
+      "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils/#atom-everything",
+      "summary": "Release: sqlite-utils 4.0rc2\n        See sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25).",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-05",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 794,
+      "added_at": "2026-07-06 03:09:55"
+    },
+    {
+      "title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
+      "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
+      "summary": "I wrote about the sqlite-utils 4.0rc1 release a couple of weeks ago. Since we only have Claude Fable on our Max subscriptions for a few more days, I decided to see if it could help me get to a 4.0 stable release that I felt truly comfortable about, since I try to keep to SemVer and like my incompatible major versions to be as rare as possible.\nI started with this prompt, in Claude Code for web on my iPhone:\n\nFinal review before shipping a stable 4.0 release - very important to spot any last minu",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-05",
+      "summary_zh": "sqlite-utils 4.0rc2发布，大部分代码由Claude Fable编写（花费约149.25美元）。作者Simon Willison在Claude Fable订阅即将到期前，利用AI辅助完成了这个他认为\"真正满意\"的稳定版本，同时遵循语义化版本控制并注重兼容性。",
+      "why_matters": "展示了如何有效利用AI编程助手来提升开源项目的质量和开发效率。",
+      "tags": "sqlite-utils, Claude, AI编程, Python, 开源工具",
+      "id": 792,
+      "added_at": "2026-07-06 03:09:55"
+    },
+    {
       "title": "Reading List 07/04/26",
       "url": "https://www.construction-physics.com/p/reading-list-070426",
       "summary": "Households without homeowners insurance, crackdowns on AI chip smuggling, Japan&#8217;s two electrical frequencies, Meta&#8217;s AI compute business, and more.",
@@ -10150,5 +10189,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-05 14:09:48"
+  "last_updated": "2026-07-06 03:09:55"
 }
