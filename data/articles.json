@@ -1,6 +1,136 @@
 {
   "articles": [
     {
+      "title": "Kort geding aandeelhouders Solvinity",
+      "url": "https://berthub.eu/articles/posts/kort-geding-aandeelhouder-solvinity/",
+      "summary": "Gisteren deed ik op Mastodon live verslag van het kort geding van de aandeelhouders van Solvinity tegen de staatssecretaris van Digitale Economie en Soevereiniteit. Gek genoeg zag ik in de rechtbank dingen die ik later in het nieuws niet of weinig vernam.\nPers en media waren in grote getale op komen draven, wat leidde tot de volgende artikelen:\nAD: Nederlandse overheid wilde bedrijf achter DigiD niet zelf kopen, stelt Solvinity in rechtbank NRC: Met harde woorden vecht Solvinity, het bedrijf ach",
+      "source": "berthub.eu",
+      "category": "blog",
+      "published": "2026-07-07",
+      "summary_zh": "作者在荷兰法庭旁听了Solvinity公司股东针对数字经济与主权国务秘书提起的紧急法律程序，并在Mastodon上进行现场报道。作者指出在法庭上观察到的一些细节，在后续的新闻报道中并未出现或被忽视。",
+      "why_matters": "了解荷兰数字经济治理与司法实践的一手观察视角。",
+      "tags": "荷兰科技, 数字主权, 法律案例",
+      "id": 830,
+      "added_at": "2026-07-08 03:50:33"
+    },
+    {
+      "title": "Ray Kassar, former Atari CEO",
+      "url": "https://dfarq.homeip.net/ray-kassar-former-atari-ceo/?utm_source=rss&utm_medium=rss&utm_campaign=ray-kassar-former-atari-ceo",
+      "summary": "Raymond Edward Kassar was born January 2, 1928 and died December 10, 2017, aged 89, in Vero Beach, Florida. Ray Kassar was president, and later CEO, of Atari Inc. from 1978 to 1983. Atari&#8217;s parent company, Warner Bros, hired him\nThe post Ray Kassar, former Atari CEO appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-07-07",
+      "summary_zh": "Ray Kassar（1928-2017）于1978年至1983年担任Atari公司总裁兼CEO，是雅达利黄金时代的重要领导者。在华纳兄弟收购Atari后，他被聘为掌门人，主导了公司的发展与扩张。2017年12月，Kassar在佛罗里达州维罗海滩去世，享年89岁。",
+      "why_matters": "了解电子游戏行业早期发展史和一位关键人物的管理风格。",
+      "tags": "Ray Kassar, Atari, 游戏行业历史, 华纳兄弟, CEO",
+      "id": 828,
+      "added_at": "2026-07-08 03:50:33"
+    },
+    {
+      "title": "Let AI Burn",
+      "url": "https://www.wheresyoured.at/let-ai-burn/",
+      "summary": "If you liked this piece, you should subscribe to my premium newsletter. It&#x2019;s $70 a year, or $7 a month, and in return you get a weekly newsletter that&#x2019;s usually anywhere from 5,000 to 18,000 words, including vast, detailed analyses of NVIDIA, Anthropic and",
+      "source": "wheresyoured.at",
+      "category": "blog",
+      "published": "2026-07-07",
+      "summary_zh": "本文探讨了AI行业的竞争格局与发展态势，文章标题暗示作者主张让AI市场自由竞争、不过度干预。从文中提及的NVIDIA、Anthropic等公司分析可以看出，作者对当前AI产业的投资热点和竞争态势进行了深入探讨，对AI领域的技术发展和商业化路径持独特见解。",
+      "why_matters": "作者对AI行业有独到见解，文章观点犀利，适合关注AI行业动态和投资趋势的读者参考。",
+      "tags": "AI行业，NVIDIA，Anthropic，投资分析",
+      "id": 826,
+      "added_at": "2026-07-08 03:50:33"
+    },
+    {
+      "title": "Content addressing in package managers",
+      "url": "https://nesbitt.io/2026/07/07/content-addressing-in-package-managers.html",
+      "summary": "Names are for humans, hashes are for everything else",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-07-07",
+      "summary_zh": "文章探讨了包管理器如何通过内容寻址（content addressing）技术，用内容哈希值而非名称来标识和管理依赖包。这种设计解决了包管理器长期面临的依赖地狱、可重现构建和供应链安全等问题，让不同包管理器和版本可以共享同一个内容地址，实现跨生态的依赖复用。",
+      "why_matters": "深入理解现代包管理器底层设计原理的佳作，帮助开发者理解为何\"名字是给人类用的，hash是给其他所有东西用的\"这一核心理念。",
+      "tags": "包管理器, 内容寻址, 依赖管理, 开发者工具",
+      "id": 824,
+      "added_at": "2026-07-08 03:50:33"
+    },
+    {
+      "title": "How did Windows 95 decide that a setup program ran?",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260707-00/?p=112508",
+      "summary": "It used some heuristics.\nThe post How did Windows 95 decide that a setup program ran? appeared first on The Old New Thing.",
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "category": "blog",
+      "published": "2026-07-07",
+      "summary_zh": "文章揭示了Windows 95如何通过启发式方法（heuristics）来判断安装程序是否正在运行。Raymond Chen作为Windows开发团队成员，分享了这个操作系统内部判断逻辑的技术细节，展现了早期Windows系统在用户体验和系统检测方面的设计考量。",
+      "why_matters": "适合对Windows历史和操作系统底层机制感兴趣的开发者，能了解经典软件设计背后的思路。",
+      "tags": "Windows 95, 操作系统原理, 技术历史",
+      "id": 822,
+      "added_at": "2026-07-08 03:50:33"
+    },
+    {
+      "title": "Using Linux <code>tc</code> to limit the outgoing bandwidth of a web server",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/linux/TcLimitServiceBandwidth",
+      "summary": "Suppose, not hypothetically, that you have a web server that's using\nas much of your server's bandwidth as it can get and you would like it to use\nless bandwidth than that, so that you can get a word in edgewise (for\nbackups, for example) or just because you don't feel like donating\n1/10th of your outgoing bandwidth in apparent perpetuity to people who\nshould be building local caches. There are various ways you might do\nthis, for example using FreeBSD pf on your perimeter firewall, but the\nlowes",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-07-07",
+      "summary_zh": "文章介绍了如何利用Linux的tc（traffic control）工具限制Web服务器的出站带宽，解决Web服务占用过多带宽导致其他任务（如备份）无法正常进行的问题。通过HTB（分层令牌桶）队列规则，可以精细控制不同类型流量的带宽分配，确保系统管理员能够保留足够的带宽用于其他重要任务。",
+      "why_matters": "实用且轻量的服务器带宽管理方案，适合需要控制资源占用的服务器运维场景。",
+      "tags": "Linux, tc命令, 带宽限制, 服务器管理",
+      "id": 820,
+      "added_at": "2026-07-08 03:50:33"
+    },
+    {
+      "title": "Pluralistic: How US states and international trustbusters can beat Big Tech (07 Jul 2026)",
+      "url": "https://pluralistic.net/2026/07/07/going-global/",
+      "summary": "Today's links How US states and international trustbusters can beat Big Tech: Their common enemies are Trump and his tech giants. Hey look at this: Delights to delectate. Object permanence: Sex work synonyms; Carthedral; French pirates; Suffragette surveillance; Hidden library apartments; \"The Meaning of July the Fourth for the Negro\" x James Earl Jones; Farage quits; Peak indifference; Self publishing; Pepsi spies try to buy Coke formula; Steal this wiki; SF is the only lit people care enough a",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-07-07",
+      "summary_zh": "文章探讨美国各州和国际反垄断执法机构如何联手对抗大型科技公司的垄断行为，指出他们的共同挑战来自特朗普政府与科技巨头的联盟关系，并介绍了多个相关话题领域的最新动态。",
+      "why_matters": "提供了从地方政府到国际层面的多维视角来理解当前科技反垄断斗争的复杂性。",
+      "tags": "科技反垄断, 大型科技公司, 数字监管",
+      "id": 818,
+      "added_at": "2026-07-08 03:50:33"
+    },
+    {
+      "title": "OS 27 Developer Beta 3 Enables New ‘Pace’ and ‘Expressivity’ Sliders for Siri’s New Voices",
+      "url": "https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta/",
+      "summary": "Sarah Perez, writing for TechCrunch:\n\n\n  With the latest iOS 27 developer beta, Apple is giving testers an\nearly look at one of the upcoming improvements to its AI-powered\nSiri: the ability to adjust how quickly and expressively\nthe AI assistant speaks. In iOS 27 beta 3, out today, Apple has\nenabled the voice controls for “Pace” and “Expressivity” that were\npreviously labeled as “Coming soon” in the first developer beta\nreleases.\n\n\nI started running developer beta 1 on a spare iPhone the day it ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-07",
+      "summary_zh": "苹果在iOS 27开发者测试版3中为Siri推出新的语音控制功能，用户可以分别调节Siri说话的“速度”和“表达力”两个滑块。这是苹果AI助手Siri在Apple Intelligence框架下的又一项改进，旨在让用户获得更个性化的语音交互体验。",
+      "why_matters": "了解苹果如何在AI语音助手领域持续优化用户体验的参考案例。",
+      "tags": "Apple, Siri, iOS 27, Apple Intelligence, 语音助手",
+      "id": 816,
+      "added_at": "2026-07-08 03:50:33"
+    },
+    {
+      "title": "Blog about things you don't understand yet",
+      "url": "https://seangoedecke.com/blog-about-things-you-dont-understand-yet/",
+      "summary": "Every post I publish represents at least two things I’ve learned: the thing that prompted me to write the post, and the thing I learned in the course of writing it. If I don’t learn anything new while I’m writing, it’s not interesting enough to publish.\nTypically I learn way more than two things. For instance, in my o3 geoguessr post, I started out with the idea that most AI prompts probably don’t work, and I ended up learning that newer OpenAI models have lost o3’s ability to geolocate. That’s ",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-07-07",
+      "summary_zh": "作者认为写博客应该选择自己尚未完全理解的题目，因为写作过程本身就是最好的学习方式。每发表一篇文章，至少能学到两件事——促使你动笔的疑问，以及在写作过程中发现的新知识。如果写的时候没有学到任何新东西，那这篇文章可能也不值得发布。",
+      "why_matters": "颠覆了“先学会再写”的常规思维，揭示了“写作即学习”的高效成长方式。",
+      "tags": "写作方法论, 学习方法, 个人成长",
+      "id": 814,
+      "added_at": "2026-07-08 03:50:33"
+    },
+    {
+      "title": "sqlite-utils 4.0, now with database schema migrations",
+      "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything",
+      "summary": "This morning I released sqlite-utils 4.0, the 124th release of that project and the first major version bump since 3.0 in November 2020. In addition to some small but significant breaking changes (described in this upgrade guide), this version introduces three major features: database migrations, nested transactions (via a new db.atomic() method), and support for compound foreign keys.\nDatabase schema migrations using sqlite-utils\nSchema migrations define a sequence of changes to be made to a SQ",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-07",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 812,
+      "added_at": "2026-07-08 03:50:33"
+    },
+    {
       "title": "My blog has moved",
       "url": "https://mjg59.dreamwidth.org/74260.html",
       "summary": "A reminder that I am no longer here, but am instead here. The new RSS feed is here. If you're still reading this for some reason other than being on Dreamwidth, please update your feed. comments",
@@ -10410,5 +10540,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-07 14:13:17"
+  "last_updated": "2026-07-08 03:50:33"
 }
