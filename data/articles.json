@@ -1,6 +1,175 @@
 {
   "articles": [
     {
+      "title": "Gary Kildall’s death investigation",
+      "url": "https://dfarq.homeip.net/gary-kildalls-death-investigation/?utm_source=rss&utm_medium=rss&utm_campaign=gary-kildalls-death-investigation",
+      "summary": "Gary Kildall&#8217;s death investigation, or the seeming lack thereof, has taken on mythical proportions. Gary Kildall&#8217;s story seems to have that effect on people. Just like the story of Kildall allegedly going flying instead of meeting with IBM in August\nThe post Gary Kildall&#8217;s death investigation appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-07-10",
+      "summary_zh": "2-3句话总结核心内容",
+      "why_matters": "为什么值得看",
+      "tags": "1-3个，用逗号分隔",
+      "id": 876,
+      "added_at": "2026-07-11 03:24:21"
+    },
+    {
+      "title": "This Week on The Analog Antiquarian",
+      "url": "https://www.filfre.net/2026/07/this-week-on-the-analog-antiquarian/",
+      "summary": "Opus 4: Henry VI, Part 3",
+      "source": "filfre.net",
+      "category": "blog",
+      "published": "2026-07-10",
+      "summary_zh": "本文是\"The Analog Antiquarian\"博客系列的第四篇文章，讨论莎士比亚历史剧《亨利六世》第三部分。博主可能结合复古计算或模拟游戏的角度，分析这部戏剧的历史背景、人物塑造或与早期电子游戏/互动叙事的关联。",
+      "why_matters": "适合对莎士比亚历史剧、复古游戏文化或历史游戏化主题感兴趣的读者。",
+      "tags": "莎士比亚, 亨利六世, 复古游戏, 历史剧",
+      "id": 874,
+      "added_at": "2026-07-11 03:24:21"
+    },
+    {
+      "title": "Premium: The Hater's Guide To The Memory Crisis",
+      "url": "https://www.wheresyoured.at/premium-the-haters-guide-to-the-memory-crisis/",
+      "summary": "Hi premium readers! I&#x2019;ll be taking a week off of the premium next week &#x2014; July 17 &#x2014; to have some well-earned rest. This will mark only the second time I&#x2019;ve missed a premium piece since I started this newsletter in June 2025, and I",
+      "source": "wheresyoured.at",
+      "category": "blog",
+      "published": "2026-07-10",
+      "summary_zh": "这篇是Premium时事通讯的编辑通知，作者宣布将于下周（7月17日）休假一周，暂时停止更新内容。这是该通讯自2025年6月创办以来的第二次停更，显示出创作者对保持更新节奏的重视，即使在休假期间也不忘告知读者。",
+      "why_matters": "虽然只是篇简单的休刊通知，但体现了优质内容创作者对读者负责任的态度。",
+      "tags": "Premium通讯, 休刊通知, 内容创作",
+      "id": 872,
+      "added_at": "2026-07-11 03:24:21"
+    },
+    {
+      "title": "Adam Brown – A deep but accessible introduction to general relativity",
+      "url": "https://www.dwarkesh.com/p/adam-brown-gr",
+      "summary": "And why black holes are the ultimate power plants.",
+      "source": "dwarkesh.com",
+      "category": "blog",
+      "published": "2026-07-10",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 870,
+      "added_at": "2026-07-11 03:24:21"
+    },
+    {
+      "title": "Package Management as Org Chart",
+      "url": "https://nesbitt.io/2026/07/10/package-management-as-org-chart.html",
+      "summary": "Conway's Law applied to dependency management designs.",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-07-10",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 868,
+      "added_at": "2026-07-11 03:24:21"
+    },
+    {
+      "title": "The case of the mysterious changes to integers when there shouldn’t have been any code generation effect",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260710-00/?p=112514",
+      "summary": "Decoding where those integer came from.\nThe post The case of the mysterious changes to integers when there shouldn&#8217;t have been any code generation effect appeared first on The Old New Thing.",
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "category": "blog",
+      "published": "2026-07-10",
+      "summary_zh": "这篇文章讲述了作者在调试过程中遇到的整数神秘变化问题，尽管代码中没有明显的代码生成逻辑导致这种变化。通过深入追踪和分析，作者揭示了这些意外整数修改的真正来源——很可能是由编译器优化、内存布局或其他非显式的代码行为导致的。故事展示了在排查看似不可能的bug时，需要从多个角度审视代码执行环境。",
+      "why_matters": "经典的调试推理过程，适合学习系统级调试思维和问题分析方法。",
+      "tags": "调试技巧,编译器优化,bug排查",
+      "id": 866,
+      "added_at": "2026-07-11 03:24:21"
+    },
+    {
+      "title": "An unusual way for your DHCP server to run out of dynamic IPs",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/sysadmin/DHCPServerAndScreamingHost",
+      "summary": "Today I shared a brief war story on the Fediverse:\n\nToday's new and exciting failure mode for a DHCP server handing out\nleases to dynamic clients: have something on your network that\nanswers pings for absolutely every IP address (yes, it was broken).\nThe ISC DHCP server pings what it thinks is a free IP before handing\nit out (to be sure), so if something answers all of those pings you\nhave no 'free' IPs on your network and no one gets a dynamic IP.\n\n(Technically this was like a day or two ago.)\n",
+      "source": "utcc.utoronto.ca/~cks",
+      "category": "blog",
+      "published": "2026-07-10",
+      "summary_zh": "文章分享了一个DHCP服务器的罕见故障案例——网络中某台设备（已损坏）会对所有IP地址响应ping请求，导致ISC DHCP服务器误认为这些IP已被使用而拒绝分配。由于DHCP服务器在分配前会ping检测IP是否空闲，这种\"幽灵占位\"现象最终耗尽了服务器的可分配地址池。",
+      "why_matters": "案例展示了网络故障的连锁反应，启发我们排查问题时需考虑边缘场景。",
+      "tags": "DHCP,网络故障,网络排查,ISC DHCP",
+      "id": 864,
+      "added_at": "2026-07-11 03:24:21"
+    },
+    {
+      "title": "Game Review: Lovers In A Dangerous Spacetime ★★★☆☆",
+      "url": "https://shkspr.mobi/blog/2026/07/game-review-lovers-in-a-dangerous-spacetime/",
+      "summary": "My new year&#039;s resolution is to play more video games with my wife. Specifically co-operative games.  I hate playing competitively; it&#039;s rubbish to achieve victory at the expense of someone else. So I asked for recommendations and picked the cheapest things which looked reasonable.  Several people recommended Lovers In A Dangerous Spacetime. It&#039;s a neat little game which is just short enough to…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-07-10",
+      "summary_zh": "本文是一位作者与妻子共同体验合作类游戏的新年计划，他们选择了《Lovers In A Dangerous Spacetime》这款太空主题的同屏双人对战游戏。评测给出了3.5星的评价，认为这款游戏虽然价格实惠且适合情侣同乐，但并非完美无缺。文章主要表达了对合作而非竞争类游戏的偏好。",
+      "why_matters": "适合想寻找双人合作游戏的情侣或朋友参考，作者的真实家庭游戏体验分享具有参考价值。",
+      "tags": "游戏评测, 合作游戏, 双人游戏",
+      "id": 862,
+      "added_at": "2026-07-11 03:24:21"
+    },
+    {
+      "title": "Pluralistic: \"Rights for robots\" and the AI slavery fantasy (10 Jul 2026)",
+      "url": "https://pluralistic.net/2026/07/10/posthuman-as-in-no-humans/",
+      "summary": "Today's links \"Rights for robots\" and the AI slavery fantasy: When we were robots in Egypt&#8230; Hey look at this: Delights to delectate. Object permanence: Awkward questions for the entertainment industry; ISP v record label death penalty; Coming out on Splash Mountain; Negative Swiss bond yields; Are We Having Fun Yet? Upcoming appearances: London, Edinburgh, Sydney, Melbourne, Brighton, London, South Bend. Recent appearances: Where I've been. Latest books: You keep readin' em, I'll keep writ",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-07-10",
+      "summary_zh": "这篇文章探讨了“机器人权利”与“AI奴隶制”之间的复杂关系，通过历史隐喻和当代技术伦理问题，质疑我们是否应该给予人工智能某种形式的权利或道德考量，同时审视了娱乐产业、唱片业等领域在技术变革中面临的法律和道德困境。",
+      "why_matters": "文章以独特的视角将AI发展与人类历史上的奴隶制问题进行对比，引发对技术伦理的深度思考。",
+      "tags": "AI权利，技术伦理，机器人奴隶制",
+      "id": 860,
+      "added_at": "2026-07-11 03:24:21"
+    },
+    {
+      "title": "Shocking No One, Fidji Simo, Would-Be Usurper, Is Out at OpenAI",
+      "url": "https://www.wsj.com/tech/openai-top-executive-fidji-simo-to-step-down-c3daca47?st=NfBZTe",
+      "summary": "Berber Jin and Anissa Gardizy, reporting for The Wall Street Journal (gift link):\n\n\n  Fidji Simo, OpenAI’s No. 2 executive, plans to step down from her\nfull-time role after an extended medical leave. She communicated\nher decision in a note to staff Thursday, saying that her medical\ncondition had worsened and her road to recovery would be much\nlonger than anticipated. She will become a part-time adviser to\nthe company. [...]\n\nThe company abruptly pivoted its focus to building AI-powered\ncoding to",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-10",
+      "summary_zh": "OpenAI二号高管Fidji Simo在长期医疗休假后宣布将离职，她在周四给员工的信中表示因医疗状况恶化做出此决定。Simo曾是苹果高管，于2021年加入OpenAI担任应用CEO，此次离职对这家AI公司的高层管理又是一大变动。",
+      "why_matters": "了解OpenAI近期高层动荡及关键人物变动",
+      "tags": "OpenAI, Fidji Simo, 科技公司高管",
+      "id": 858,
+      "added_at": "2026-07-11 03:24:21"
+    },
+    {
+      "title": "QuadRF can spot drones and see WiFi through my wall",
+      "url": "https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/",
+      "summary": "The QuadRF (pictured above) a phased-array radio built around a Raspberry Pi 5 and an FPGA board with picosecond-level timing. It does advanced signal processing and beamforming.\nIt can see WiFi through walls and track drones in flight.\nIf the open source community can come up with something like this, just imagine what governments are capable of.\nWhen you plug a computer into a network, tools like Wireshark can show all the hidden traffic you might not even know is there. WiFi packets are the s",
+      "source": "jeffgeerling.com",
+      "category": "blog",
+      "published": "2026-07-10",
+      "summary_zh": "QuadRF是一款基于Raspberry Pi 5和FPGA的相控阵射频系统，采用皮秒级计时精度，具备先进的信号处理和波束成形能力。该设备能够穿透墙壁检测WiFi信号，并可追踪飞行中的无人机，展示了开源社区在射频技术领域的创新潜力。",
+      "why_matters": "展示了如何利用开源硬件和消费级组件实现原本需要专业设备才能完成的射频感知功能，对硬件极客和射频技术爱好者具有启发价值。",
+      "tags": "树莓派, 相控阵雷达, 开源硬件, 射频技术",
+      "id": 856,
+      "added_at": "2026-07-11 03:24:21"
+    },
+    {
+      "title": "Quoting OpenAI",
+      "url": "https://simonwillison.net/2026/Jul/10/openai/#atom-everything",
+      "summary": "[...] Work on web and mobile runs in the cloud. Work in the desktop app can also use local files and desktop apps with your permission. At launch, cloud Work conversations do not appear in desktop Work; desktop Work threads and local files remain on that computer.\n&mdash; OpenAI, trying (unsuccessfully) to clarify ChatGPT Work\n\n    Tags: openai, chatgpt, ai",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-10",
+      "summary_zh": "这篇文章引用了OpenAI关于ChatGPT Work功能在不同平台上工作方式的说明。Web和移动端的Work运行在云端，而桌面应用可以访问本地文件和本地应用。值得注意的是，云端Work对话与桌面Work相互独立，数据不会跨平台同步。",
+      "why_matters": "了解ChatGPT Work功能在不同平台间的数据隔离机制，有助于用户更好地管理工作和隐私。",
+      "tags": "OpenAI, ChatGPT, Work功能, 平台差异",
+      "id": 854,
+      "added_at": "2026-07-11 03:24:21"
+    },
+    {
+      "title": "Quoting Nilay Patel",
+      "url": "https://simonwillison.net/2026/Jul/10/nilay-patel/#atom-everything",
+      "summary": "The reality is to make augmented reality glasses, you need to put a camera next to your eyes that is continuously recording everything you see and processing that to put information over it.\nThere is not another way around it. And there's certainly not a chip that can fit in the stem of a glasses that is both powerful enough and power miserly enough to do that in real time.\nYou have to send that data to a cloud. You gotta do it. [...] Or you can build something the size of a Vision Pro with a ba",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-10",
+      "summary_zh": "文章指出增强现实眼镜的核心技术现实——要在用户眼前叠加虚拟信息，必须在眼镜上安装摄像头持续录制用户视野并进行实时处理，别无他法，且现有芯片技术尚无法做到小型化到可嵌入镜腿的程度。",
+      "why_matters": "帮助读者认清AR眼镜炒作背后的技术真相，避免被不切实际的营销概念误导。",
+      "tags": "增强现实, AR眼镜, 技术局限",
+      "id": 852,
+      "added_at": "2026-07-11 03:24:21"
+    },
+    {
       "title": "Monorail: Pioneering $999 PCs from 1996",
       "url": "https://dfarq.homeip.net/monorail-the-pioneering-999-pc-from-1996/?utm_source=rss&utm_medium=rss&utm_campaign=monorail-the-pioneering-999-pc-from-1996",
       "summary": "Monorail was a short-lived PC vendor from the late 1990s and early 2000s. Founded November 2, 1995, they were the first company to sell a Pentium-class PC including a display for under $1,000. And Monorail PCs were the first desktop\nThe post Monorail: Pioneering $999 PCs from 1996 appeared first on The Silicon Underground.",
@@ -10924,5 +11093,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-10 14:08:53"
+  "last_updated": "2026-07-11 03:24:21"
 }
