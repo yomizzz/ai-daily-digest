@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "title": "I love LLMs, I hate hype",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html",
+      "summary": "I think from this blog you may misunderestimate how absolutely giddy I am about AI. I did hacking from 2007-2014, after that my whole career has been devoted to AI. I love the progress. I’m so excited for the new LLMs, self driving cars, video generation models, and coding agents. I set up a Linux box with opencode on my local GLM-5.2 last week and wow like just saying install tmux with the geohot configuration works; the Year of the Linux Desktop is finally here!",
+      "source": "geohot.github.io",
+      "category": "blog",
+      "published": "2026-07-12",
+      "summary_zh": "作者geohot分享了他对AI领域的真实看法，表达了对大型语言模型（LLM）、自动驾驶、视频生成模型等技术的热情，但同时强调他讨厌行业中的炒作现象。文章体现了一位从黑客转型为AI研究者的技术爱好者对AI发展的理性态度。",
+      "why_matters": "文章来自知名黑客geohot，观点直接真实，适合想要了解技术圈对AI炒作现象真实看法的读者。",
+      "tags": "AI观点, 技术反思, LLM",
+      "id": 892,
+      "added_at": "2026-07-13 03:00:05"
+    },
+    {
+      "title": "Posterior mean",
+      "url": "https://www.johndcook.com/blog/2026/07/12/posterior-mean/",
+      "summary": "Common sense says that what you believe after seeing new data should be some sort of compromise between what you believed before and what the new data says. You don&#8217;t want to ignore previous information or new information. How much should new data change your prior beliefs? When prior judgment and new information are in [&#8230;]\nThe post Posterior mean first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-07-12",
+      "summary_zh": "文章解释了贝叶斯统计中“后验均值”的概念，说明在获得新数据后，我们的信念应该是原有认知与新信息之间的平衡与妥协。后验均值正是这种妥协的数学表达，它综合了先验知识和新的观察证据，帮助我们量化信念应该如何更新。",
+      "why_matters": "适合想理解贝叶斯推断基础概念的读者，文章深入浅出地阐明了一个核心统计思想。",
+      "tags": "贝叶斯统计, 后验分布, 统计推断",
+      "id": 890,
+      "added_at": "2026-07-13 03:00:05"
+    },
+    {
+      "title": "Another Ridiculous Interrail Holiday - 6,379Km and 13 Countries over 7 weeks",
+      "url": "https://shkspr.mobi/blog/2026/07/another-ridiculous-interrail-holiday-6379km-and-13-countries-over-7-weeks/",
+      "summary": "Last year, my wife and I went on a 5,025 Km Interrail adventure. We got the month-long unlimited pass and saw 10 Countries in 30 Days. That was a bit too intense. So this year we got the 15 travel days in 2 months package. We grabbed the 1st class tickets when they went on sale in December.  Here&#039;s how our journey ended up:    The trip included two ferries - one overnight - which had a small…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-07-12",
+      "summary_zh": "作者与妻子进行了第二次Interrail铁路旅行，这次跨越6379公里穿越13个国家，历时7周。相比去年30天10国过于密集的行程，他们选择了2个月内15天的通票套餐，并提前购买了促销的一等座车票，让旅途更加从容舒适。",
+      "why_matters": "真实的欧洲铁路旅行经验分享，适合计划自助游或对火车旅行感兴趣的读者。",
+      "tags": "旅行见闻, 欧洲铁路, Interrail, 自助游",
+      "id": 888,
+      "added_at": "2026-07-13 03:00:05"
+    },
+    {
+      "title": "Stacks — HyperCard Player for Modern MacOS",
+      "url": "https://morphing.cloud/hypercard/",
+      "summary": "Well this is just delightful:\n\n\n  \nRun HyperCard stacks directly on your modern Mac. No emulator\nrequired!\nBrowse the Internet Archive’s HyperCard collection and run\nstacks with one-click.\nPeriod-accurate typography.\nSound, instruments, and MacinTalk speech synthesis.\nCross-stack navigation.\n\n\n\nStacks is a really beautiful native Mac app, and its presentation of classic HyperCard stacks is exquisitely faithful to the era. It’s simultaneously Mac-assed 2026-style and Mac-assed 1987-style. Cracker",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-12",
+      "summary_zh": "Stacks是一款运行在现代MacOS上的HyperCard播放器，可直接在Mac上运行HyperCard stacks而无需模拟器，支持浏览互联网档案馆的HyperCard收藏并一键运行。它具备时代准确的排版效果，兼容声音、乐器和MacinTalk语音合成功能。",
+      "why_matters": "对于怀念经典Mac软件或对早期计算历史感兴趣的用户，这是体验HyperCard魅力的绝佳工具。",
+      "tags": "MacOS, HyperCard, 怀旧软件, Apple历史",
+      "id": 886,
+      "added_at": "2026-07-13 03:00:05"
+    },
+    {
+      "title": "Lunacy — Jeff Halter’s Lunatic Fringe Player",
+      "url": "https://morphing.cloud/lunacy/",
+      "summary": "After linking to Stacks, his remarkable new modern HyperCard player, I made the terrible mistake of clicking around the rest of Jeff Halter’s website, and fell upon Lunacy:\n\n\n  Created by Ben Haller and released in the early ’90s as\npart of the Macintosh More After Dark software package, Lunatic\nFringe was unique among screensavers in that it was not just a\npassive animation to watch, but an interactive game! Toggling the\nCaps Lock key while the screensaver was running popped you into a\nspace sh",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-12",
+      "summary_zh": "本文介绍了Jeff Halter网站上的Lunatic Fringe Player项目，这是对90年代经典Mac软件Lunacy的现代重现。Lunacy最初由Ben Haller开发，作为Macintosh \"More After Dark\"软件包的一部分发布，是一款类似HyperCard的多媒体播放器。用户可通过这个现代项目重温经典的Mac多媒体体验。",
+      "why_matters": "适合对Mac历史和复古软件感兴趣的读者，可了解经典Mac软件的现代重制。",
+      "tags": "Mac软件,复古重现,HyperCard",
+      "id": 884,
+      "added_at": "2026-07-13 03:00:05"
+    },
+    {
+      "title": "Sam Altman and Elon Musk Argue Over Who’s Running the Bigger Scam",
+      "url": "https://x.com/sama/status/2075982617976230043",
+      "summary": "Elon Musk, linking to his own tweet from March that “Sam Altman is super good at scamming”:\n\n\n  He takes scamming to a whole new level\n\n\nSam Altman:\n\n\n  homeboy you’re the one sellling public market investors on short-term space datacenters\n\n\nMusk:\n\n\n  We start flying them next year. Maybe you can come see them if\nyour parole officer approves.\n\nAfter stealing an open source AI charity, you then stole all of\nApple’s phone technology! Wow.\n\nWhat do you plan for an encore? That’s tough to beat.\n\n\n(",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-12",
+      "summary_zh": "Elon Musk和Sam Altman在社交媒体上展开公开争论，互相指控对方在进行“诈骗”。Musk指责Altman是“诈骗高手”，而Altman反驳称Musk才是向公众投资者推销“短期太空数据中心”的人。这场口水战反映出AI领域与太空技术领域之间的竞争与分歧。",
+      "why_matters": "这场科技大佬之间的公开互怼，揭示了当前AI与太空技术领域的竞争态势和争议焦点。",
+      "tags": "科技人物, 社交媒体争论, AI与太空技术",
+      "id": 882,
+      "added_at": "2026-07-13 03:00:05"
+    },
+    {
+      "title": "TwoMillionKit: Use Private Cloud Compute in MacOS 27 Foundation Models Without an Entitlement",
+      "url": "https://github.com/insidegui/TwoMillionKit",
+      "summary": "Guilherme Rambo:\n\n\n  Apple ships the fm command-line tool in macOS 27, which can be\nused to run inference with the local system model or Private Cloud\nCompute from Terminal or scripts. You know what else can run\ncommand-line tools? Mac apps! 😃\n\nI decided to spend some of my Codex tokens and take GPT 5.6 Sol\nfor a spin. I asked it to create this Swift package. All it does\nis provide a LanguageModel implementation that uses the fm\ncommand-line tool under the hood, meaning that any Mac app can use\n",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-12",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 880,
+      "added_at": "2026-07-13 03:00:05"
+    },
+    {
       "title": "Goede geluiden over digitale autonomie",
       "url": "https://berthub.eu/articles/posts/goede-geluiden-over-digitale-autonomie/",
       "summary": "De Tweede Kamer is met reces, en de out of office replies vanuit de overheid beginnen indrukwekkende vormen aan te nemen. Kunnen ze in Amerika nog wat van leren.\nMaar, er worden nog steeds dingen gepubliceerd, en het is opvallend hoeveel goeds er recent gezegd is over digitale autonomie.\nDe tl;dr is dat er een duidelijke wending zichtbaar is. Na een decennium van ontkenning publiceren allerhande stukken overheid nu ronkende teksten over digitale autonomie en staan die teksten ook vol goede voorn",
@@ -11288,5 +11379,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-12 13:32:50"
+  "last_updated": "2026-07-13 03:00:05"
 }
