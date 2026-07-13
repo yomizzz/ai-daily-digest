@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "title": "Code Red worm, July 13, 2001",
+      "url": "https://dfarq.homeip.net/code-red-worm-july-13-2001/?utm_source=rss&utm_medium=rss&utm_campaign=code-red-worm-july-13-2001",
+      "summary": "Code Red was a computer worm that exploited one of the earliest notorious Microsoft vulnerabilities, a buffer overflow in Microsoft IIS. It is credited as the first large scale mixed threat attack against enterprise networks. Code Red was released July\nThe post Code Red worm, July 13, 2001 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-07-13",
+      "summary_zh": "2-3句话总结核心内容",
+      "why_matters": "1句话说明为什么值得看",
+      "tags": "1-3个标签",
+      "id": 899,
+      "added_at": "2026-07-14 03:20:58"
+    },
+    {
+      "title": "Mandatory Update: A Short Story",
+      "url": "https://micahflee.com/mandatory-update-a-short-story/",
+      "summary": "Guess what? Lately I&apos;ve been nerding out on creative writing. I even joined a local fiction writers group where we meet up at coffee shops. Like, in person!Anyway, I submitted a short story to the DEF CON 34 Creative Writing Short Story Contest. My story is called",
+      "source": "micahflee.com",
+      "category": "blog",
+      "published": "2026-07-13",
+      "summary_zh": "安全研究员Micah Lee分享了他近期对创意写作的热情，介绍了他加入当地小说写作小组的经历，以及他向DEF CON 34大会创意写作比赛提交短篇故事《Mandatory Update》的过程，展现了技术社区成员在专业领域之外的创作一面。",
+      "why_matters": "展示了安全社区成员的多元兴趣和创作热情，是了解DEF CON文化多样性的有趣窗口。",
+      "tags": "创意写作，技术社区，DEF CON，短篇故事",
+      "id": 897,
+      "added_at": "2026-07-14 03:20:58"
+    },
+    {
+      "title": "Why don’t we just make the entire stack out of guard pages?",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260713-00/?p=112528",
+      "summary": "Guard pages all the way down?\nThe post Why don&#8217;t we just make the entire stack out of guard pages? appeared first on The Old New Thing.",
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "category": "blog",
+      "published": "2026-07-13",
+      "summary_zh": "这篇博客探讨了一个有趣的问题：既然保护页面（guard pages）能有效检测栈溢出等内存错误，为什么不把整个栈都设置为保护页面？作者解释了其原因——如果栈完全由保护页面组成，程序每次访问栈数据（包括函数调用、参数传递、局部变量读写等）都会触发访问异常，导致程序根本无法正常运行。保护页面的设计需要在安全检测和正常功能之间取得平衡，仅在栈的边界放置保护页面是最佳方案。",
+      "why_matters": "通过这个看似简单却深刻的问题，帮助读者理解操作系统内存管理中保护机制的设计哲学和安全边界的重要性。",
+      "tags": "内存管理，栈保护，系统编程",
+      "id": 895,
+      "added_at": "2026-07-14 03:20:58"
+    },
+    {
+      "title": "Pluralistic: Why aren't AI companies competing directly with their customers? (13 Jul 2026)",
+      "url": "https://pluralistic.net/2026/07/13/go-meta-meta/",
+      "summary": "Today's links Why aren't AI companies competing directly with their customers? Why sell picks and shovels if you've already struck gold? Hey look at this: Delights to delectate. Object permanence: Pro-logging Lorax; Anti-DRM picture book; Whose cops did America train? Day on a Device; Theresa May x Fresh Prince; Ratfucking Corbyn supporters; Infosec v W3C DRM; Remix Public Enemy; Hungary's Cold War cartoons; America is unpaving its roads; Olympic overruns are world champions; Vivendi lobbyist is",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-07-13",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 893,
+      "added_at": "2026-07-14 03:20:58"
+    },
+    {
+      "title": "Control the ideas, not the code",
+      "url": "http://antirez.com/news/169",
+      "summary": "Look at the past history of this blog. There are many blog posts about programming with AI, a few of them date back to January 2024 (like this: https://antirez.com/news/140). I’m a relatively well regarded programmer, after all. I don’t have the need to still be in the “loop” as a old man that seeks for relevance, I recently rejoined Redis, and now I also am developing a new open source software for local LLM inference that received a good welcome in the community. Why I keep doing this, of sayi",
+      "source": "antirez.com",
+      "category": "blog",
+      "published": "2026-07-13",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 891,
+      "added_at": "2026-07-14 03:20:58"
+    },
+    {
+      "title": "Remember Musk’s Suit Alleging a Conspiracy Between Apple and OpenAI?",
+      "url": "https://arstechnica.com/tech-policy/2025/08/elon-musk-sues-apple-openai-to-block-exclusive-iphone-chatgpt-integration/",
+      "summary": "Ashley Belanger, reporting for Ars Technica back in August 2025:\n\n\n  After a public outburst over Grok’s App Store rankings,\non Monday, Elon Musk followed through on his threat to sue Apple\nand OpenAI.\n\nAt first, Musk appeared fixated on ChatGPT consistently topping\nApple’s “Must Have” app list — which Grok has never made — claiming Apple seemed to preference OpenAI, an Apple partner, over\nall chatbot rivals. But Musk’s filing shows that the X\nand xAI owner isn’t just trying to push for more Gro",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-13",
+      "summary_zh": "2025年8月，Elon Musk在公开表达对Grok在App Store排名不满后，正式对Apple和OpenAI提起诉讼，指控两者之间存在某种合谋关系。这一诉讼源于Musk长期对ChatGPT在苹果“必备应用”榜单上持续占据榜首位置的不满。",
+      "why_matters": "了解科技巨头之间竞争与法律纠纷的深度报道，有助于理解AI行业的市场格局和利益博弈。",
+      "tags": "Elon Musk, Apple, OpenAI, 诉讼, AI竞争",
+      "id": 889,
+      "added_at": "2026-07-14 03:20:58"
+    },
+    {
+      "title": "Lessons Learned from CISA’s Recent GitHub Leak",
+      "url": "https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/",
+      "summary": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued a postmortem on a data leak in which a contractor published dozens of internal CISA credentials -- including AWS Govcloud keys -- in a public GitHub repository for almost six months before being notified by KrebsOnSecurity. Experts say the gaps identified in the agency's initial response provide important lessons that all security teams should absorb.",
+      "source": "krebsonsecurity.com",
+      "category": "security",
+      "published": "2026-07-13",
+      "summary_zh": "CISA（美国网络安全和基础设施安全局）发布了一份事件复盘报告，披露其一家承包商在公开的GitHub仓库中泄露了数十个内部凭证，包括敏感的AWS Govcloud密钥长达近六个月。值得注意的是，这一严重的安全漏洞是由安全记者KrebsOnSecurity发现并通知CISA的，而非机构自身的监测机制。该事件再次暴露了第三方供应商管理中的安全风险，以及持续监控敏感凭证的重要性。",
+      "why_matters": "揭示了政府机构在第三方供应链安全管理中的漏洞，对任何涉及代码托管和凭证管理的组织都有警示意义。",
+      "tags": "数据泄露, 供应链安全, GitHub安全",
+      "id": 887,
+      "added_at": "2026-07-14 03:20:58"
+    },
+    {
       "title": "I love LLMs, I hate hype",
       "url": "https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html",
       "summary": "I think from this blog you may misunderestimate how absolutely giddy I am about AI. I did hacking from 2007-2014, after that my whole career has been devoted to AI. I love the progress. I’m so excited for the new LLMs, self driving cars, video generation models, and coding agents. I set up a Linux box with opencode on my local GLM-5.2 last week and wow like just saying install tmux with the geohot configuration works; the Year of the Linux Desktop is finally here!",
@@ -11379,5 +11470,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-13 13:41:58"
+  "last_updated": "2026-07-14 03:20:58"
 }
