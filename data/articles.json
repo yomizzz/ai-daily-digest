@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.7.1",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.1",
+      "source": "openclaw",
+      "published": "2026-07-14",
+      "category": "openclaw",
+      "summary": "- 新增 Featherless、Claude Sonnet 5、Mythos 5、Meta Muse Spark 1.1、ClawRouter 等模型支持\n- 优化控制UI和原生macOS聊天：最小化可搜索侧边栏、紧凑上下文环、推理滑块等\n- 新增对话式入门引导：AI引导提供商设置、模型判断审批、凭证掩码提示\n- iOS和Android支持离线预缓存会话，Apple Watch支持完整语音交互\n- 支持生成式会话标题、Gateway分组、未读状态、fork、archive等组织功能\n- Telegram集成Codex配对、运行控制、消息保留和恢复机制\n- Android聊天代理选择器支持直接在聊天界面切换\n- Gateway主机状态显示：系统信息、CPU、内存、磁盘详情\n- iOS离线聊天：保护性每网关缓存、断开连接禁用发送\n- Slack进度指示器默认使用原生线程状态和加载消息\n- 控制UI Talk控件和Cron模型选择功能\n- GitHub issues和pull requests状态预览卡片\n- Logbook工作日志插件：屏幕快照生成时间线和日报\n\n🐛 Bug 修复：- 修复容器迁移在Gateway就绪前执行的问题\n- 修复可恢复的遗留状态阻塞启动的问题\n- 修复重复非正常启动后重启抖动问题，改为进入安全模式",
+      "features": "- 新增 Featherless、Claude Sonnet 5、Mythos 5、Meta Muse Spark 1.1、ClawRouter 等模型支持\n- 优化控制UI和原生macOS聊天：最小化可搜索侧边栏、紧凑上下文环、推理滑块等\n- 新增对话式入门引导：AI引导提供商设置、模型判断审批、凭证掩码提示\n- iOS和Android支持离线预缓存会话，Apple Watch支持完整语音交互\n- 支持生成式会话标题、Gateway分组、未读状态、fork、archive等组织功能\n- Telegram集成Codex配对、运行控制、消息保留和恢复机制\n- Android聊天代理选择器支持直接在聊天界面切换\n- Gateway主机状态显示：系统信息、CPU、内存、磁盘详情\n- iOS离线聊天：保护性每网关缓存、断开连接禁用发送\n- Slack进度指示器默认使用原生线程状态和加载消息\n- 控制UI Talk控件和Cron模型选择功能\n- GitHub issues和pull requests状态预览卡片\n- Logbook工作日志插件：屏幕快照生成时间线和日报",
+      "bug_fixes": "- 修复容器迁移在Gateway就绪前执行的问题\n- 修复可恢复的遗留状态阻塞启动的问题\n- 修复重复非正常启动后重启抖动问题，改为进入安全模式",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Code Red worm, July 13, 2001",
       "url": "https://dfarq.homeip.net/code-red-worm-july-13-2001/?utm_source=rss&utm_medium=rss&utm_campaign=code-red-worm-july-13-2001",
       "summary": "Code Red was a computer worm that exploited one of the earliest notorious Microsoft vulnerabilities, a buffer overflow in Microsoft IIS. It is credited as the first large scale mixed threat attack against enterprise networks. Code Red was released July\nThe post Code Red worm, July 13, 2001 appeared first on The Silicon Underground.",
@@ -11470,5 +11482,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-14 03:20:58"
+  "last_updated": "2026-07-14 12:55:23"
 }
