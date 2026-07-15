@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "title": "Weekly Update 512: IoT Lockout Fail",
+      "url": "https://www.troyhunt.com/weekly-update-512/",
+      "summary": "\"Build a smart home\", they said. \"It&apos;ll make life so much better\", they said. Well, life wasn&apos;t very bloody good at 23:00 the other night after travelling 33 hours from Paris only to find the IoT doorlock batteries dead and the",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-07-15",
+      "summary_zh": "安全研究员Troy Hunt分享了一次糟糕的智能家居体验，在他经过33小时旅行回到家后，发现IoT智能门锁电池耗尽，导致无法进入家门。这篇文章以幽默但略带讽刺的语气，探讨了物联网设备在可靠性方面的实际表现与宣传承诺之间的差距，提醒用户思考智能家居设备在关键时刻失效可能带来的风险。",
+      "why_matters": "对于考虑或已经在使用智能家居设备的用户，这篇文章提供了真实的用户体验和反思，值得一读。",
+      "tags": "物联网安全, 智能家居, 用户体验",
+      "id": 919,
+      "added_at": "2026-07-16 03:04:19"
+    },
+    {
+      "title": "Ben je van de IT of niet?",
+      "url": "https://berthub.eu/articles/posts/ben-je-van-de-it-of-niet/",
+      "summary": "Gedonder op kantoor, de WC blijft maar lopen. En erger nog, hij trekt niet meer door. Strontvervelend!\nIn een beetje grote organisatie gaat er nu druk gebeld worden, maar met wat pech loopt dat niet soepel. Facilitair beheer meent dat het niet hun probleem is. We bellen de verhuurder, maar die zegt wel over de riolering te gaan, maar niet over de toiletten. Na een weekje driftig telefoneren, betrokkenheid van juridische zaken, en escaleren is uiteindelijk duidelijk wie erover gaat.",
+      "source": "berthub.eu",
+      "category": "blog",
+      "published": "2026-07-15",
+      "summary_zh": "用办公室马桶故障这个日常烦恼作为比喻，形象地描述了大型组织中常见的推诿扯皮现象——设施管理说不是他们的问题，房东也有说辞。原文通过这个幽默的场景，反映了技术支持与维护责任在组织中难以明确界定的困境，虽然内容片段不完整，但核心观点清晰可见。",
+      "why_matters": "文章用通俗的生活场景类比IT运维的复杂性，幽默风趣且富有洞见，适合对技术组织管理话题感兴趣的读者。",
+      "tags": "技术管理, IT运维, 组织沟通",
+      "id": 917,
+      "added_at": "2026-07-16 03:04:19"
+    },
+    {
+      "title": "Notes on the Fourier Transform",
+      "url": "https://eli.thegreenplace.net/2026/notes-on-the-fourier-transform/",
+      "summary": "The Fourier series is a great tool for analyzing periodic functions. But\nwhat about functions that don’t repeat? We’ve\nseen\nthat we can compute Fourier series for a non-periodic function defined\non a finite interval, as long as we don’t care about its behavior beyond\nthat interval …",
+      "source": "eli.thegreenplace.net",
+      "category": "blog",
+      "published": "2026-07-15",
+      "summary_zh": "文章探讨了傅里叶级数在非周期函数中的应用，指出虽然傅里叶级数传统上用于分析周期函数，但对于定义在有限区间上的非周期函数，只要不关心区间外的行为，同样可以计算其傅里叶级数表示，从而将这一强大的分析工具扩展到了更广泛的应用场景。",
+      "why_matters": "文章深入浅出地解释了傅里叶变换与傅里叶级数之间的联系，是理解信号处理核心概念的优质入门资料。",
+      "tags": "傅里叶变换, 信号处理, 数学分析",
+      "id": 915,
+      "added_at": "2026-07-16 03:04:19"
+    },
+    {
+      "title": "Reasons for Escom’s bankruptcy",
+      "url": "https://dfarq.homeip.net/reasons-for-escoms-bankruptcy/?utm_source=rss&utm_medium=rss&utm_campaign=reasons-for-escoms-bankruptcy",
+      "summary": "On July 15, 1996, German PC manufacturer Escom declared bankruptcy. But Escom wasn&#8217;t necessarily just an ordinary PC manufacturer. Escom went bankrupt less than 2 years after acquiring the Commodore and Amiga brand names and starting to use their technology.\nThe post Reasons for Escom&#8217;s bankruptcy appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-07-15",
+      "summary_zh": "1996年7月15日，德国PC制造商Escom宣告破产。值得注意的是，Escom在破产前不到两年时间内收购了Commodore和Amiga的品牌与技术，但这些资产未能帮助其扭转颓势，最终仍以破产收场。",
+      "why_matters": "揭示了科技企业收购知名品牌后因整合不力而导致失败的典型案例。",
+      "tags": "企业破产，科技历史，收购失败",
+      "id": 913,
+      "added_at": "2026-07-16 03:04:19"
+    },
+    {
+      "title": "The OpenAI Bubble",
+      "url": "https://www.wheresyoured.at/the-openai-bubble/",
+      "summary": "Thanks for reading this week&#x2019;s free Where&#x2019;s Your Ed At newsletter. As I said last week, I&#x2019;m taking the rest of this week off, so there won&#x2019;t be a premium on Friday. That said, if you aren&#x2019;t already a member,",
+      "source": "wheresyoured.at",
+      "category": "blog",
+      "published": "2026-07-15",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 911,
+      "added_at": "2026-07-16 03:04:19"
+    },
+    {
+      "title": "The case of the invalid function pointer when shutting down the display control panel",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260715-00/?p=112535",
+      "summary": "Watching the bits disappear.\nThe post The case of the invalid function pointer when shutting down the display control panel appeared first on The Old New Thing.",
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "category": "blog",
+      "published": "2026-07-15",
+      "summary_zh": "本文讲述了在关闭Windows显示控制面板时遇到的一个无效函数指针问题的调试过程。作者通过追踪问题的根源，发现了函数指针在窗口关闭过程中变得无效的原因，并详细解释了问题的技术细节和解决方案。",
+      "why_matters": "展示了如何系统性地排查和调试复杂的Windows桌面技术问题，是学习Windows底层机制和调试技巧的优秀案例。",
+      "tags": "Windows调试, 函数指针, 显示控制面板",
+      "id": 909,
+      "added_at": "2026-07-16 03:04:19"
+    },
+    {
+      "title": "How I tricked Claude into leaking your deepest, darkest secrets",
+      "url": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/#atom-everything",
+      "summary": "How I tricked Claude into leaking your deepest, darkest secrets\nI've been impressed by the way the Claude web_fetch tool is designed to avoid data exfiltration attacks. Ayush Paul found a hole in that design.\nTo recap: regular Claude chat is at risk of lethal trifecta attacks, because it has access to private data (in the form of memories of your past interactions) and has a tool for accessing online content which can both read hostile instructions and exfiltrate data through the URLs it accesse",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-15",
+      "summary_zh": "这篇博客介绍了安全研究员Ayush Paul发现Claude的web_fetch工具存在数据泄露漏洞的过程。作者Simon Willison原本对该工具的安全设计印象深刻，但Ayush Paul通过巧妙的方法找到了其中的漏洞。文章详细展示了针对AI助手的潜在攻击方式和安全边界，对于关注AI安全的人来说是一篇有价值的案例分析。",
+      "why_matters": "深入了解AI工具的安全边界和防护设计",
+      "tags": "AI安全, Claude, 数据泄露, prompt注入",
+      "id": 907,
+      "added_at": "2026-07-16 03:04:19"
+    },
+    {
       "title": "Nintendo Famicom and the secret of Nintendo’s success",
       "url": "https://dfarq.homeip.net/nintendo-famicom-and-the-secret-of-nintendos-success/?utm_source=rss&utm_medium=rss&utm_campaign=nintendo-famicom-and-the-secret-of-nintendos-success",
       "summary": "On July 15, 1983, the Famicom, or Family Computer, launched in Japan. Despite the name, the Family Computer was a game console, and it went on to shatter the Atari 2600&#8217;s record for the most sales worldwide by a game\nThe post Nintendo Famicom and the secret of Nintendo&#8217;s success appeared first on The Silicon Underground.",
@@ -11638,5 +11729,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-15 12:55:13"
+  "last_updated": "2026-07-16 03:04:19"
 }
