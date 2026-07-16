@@ -1,6 +1,162 @@
 {
   "articles": [
     {
+      "title": "Intel founded July 18, 1968",
+      "url": "https://dfarq.homeip.net/intel-founded-july-18-1968/?utm_source=rss&utm_medium=rss&utm_campaign=intel-founded-july-18-1968",
+      "summary": "Intel was founded July 18, 1968, by semiconductor pioneers Gordon Moore (of Moore&#8217;s law fame) and Robert Noyce and investor Arthur Rock. Intel&#8217;s employee #3 was Andrew Grove. Moore, Noyce, and Grove had all worked together at Fairchild Semiconductor in\nThe post Intel founded July 18, 1968 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-07-16",
+      "summary_zh": "Intel（英特尔）公司于1968年7月18日由半导体先驱戈登·摩尔（Moore&#8217;s law提出者）和罗伯特·诺伊斯，以及投资者阿瑟·洛克共同创立。公司第三号员工是安德鲁·格鲁夫。这三位创始人都曾在仙童半导体公司共事，后来共同创立了改变世界的科技巨头。",
+      "why_matters": "了解硅谷传奇企业Intel的起源，感受三位科技巨匠的创业故事。",
+      "tags": "Intel历史, 硅谷起源, 科技公司创业",
+      "id": 936,
+      "added_at": "2026-07-17 03:04:52"
+    },
+    {
+      "title": "How Predictable Are Laws?",
+      "url": "https://www.construction-physics.com/p/how-predictable-are-laws",
+      "summary": "An enormous amount of ink has been spilled (some of it by me) on the trials and tribulations of complying with the National Environmental Policy Act, better known as NEPA.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-07-16",
+      "summary_zh": "文章探讨了法律法规的可预测性问题，以美国《国家环境政策法》(NEPA)的实施为例，说明即使是专业的工程师和律师也难以准确把握和遵循这些复杂的法规要求。作者通过NEPA这一案例，揭示了法律条文的模糊性如何导致实际执行中的困难和不确定性，进而思考法律可预测性的本质问题。",
+      "why_matters": "对于关心法律制度、公共政策制定或工程实践的读者，这篇文章提供了一个独特的视角来理解法律为何难以预测，以及这种不可预测性带来的实际挑战。",
+      "tags": "法律法规,政策解读,NEPA,法律可预测性",
+      "id": 934,
+      "added_at": "2026-07-17 03:04:52"
+    },
+    {
+      "title": "Speculating on how the buggy control panel extension truncated a value that it had right in front of it",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260716-00/?p=112539",
+      "summary": "Inferring the code's history.\nThe post Speculating on how the buggy control panel extension truncated a value that it had right in front of it appeared first on The Old New Thing.",
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "category": "blog",
+      "published": "2026-07-16",
+      "summary_zh": "本文深入分析了一个控制面板扩展程序中的bug，该bug导致一个本应完整显示的数值被错误截断。作者通过逆向推理代码逻辑，揭示了这个看似简单的错误背后可能存在的编程陷阱——即使数值就在眼前，也因为类型转换或缓冲区处理不当而被截断。这个案例展示了代码审查和边界条件检查的重要性。",
+      "why_matters": "适合对Windows内部机制和软件调试感兴趣的开发者，能学习到如何通过代码行为反推bug成因的思维方式。",
+      "tags": "Windows开发,bug调试,控制面板,代码分析",
+      "id": 932,
+      "added_at": "2026-07-17 03:04:52"
+    },
+    {
+      "title": "Gadget Review: Thermal Master DV2 - Infrared Birdwatching Scope ★★★★⯪",
+      "url": "https://shkspr.mobi/blog/2026/07/gadget-review-thermal-master-dv2-infrared-birdwatching-scope/",
+      "summary": "The good folks at Thermal Master have sent me their DV2 camera to review. As their name suggests, this is a thermal / infrared camera - they&#039;ve specifically designed this for bird watching and animal spotting. Let&#039;s put it through its paces and see how it compares to the competition!    Straight away you can see it is different from normal IR cameras - they tend to have a small fixed screen and a …",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-07-16",
+      "summary_zh": "Thermal Master DV2是一款专为观鸟和动物观察设计的热成像/红外相机，评测者对其进行全面测试并与同类竞品进行对比。该产品获得四星半的评价，表明其性能在市场上具有一定竞争力，适合对野生动物观察有需求的用户。",
+      "why_matters": "为对观鸟和野生动物观察感兴趣的用户提供了实用的热成像设备选择参考。",
+      "tags": "热成像相机, 观鸟设备, 产品评测",
+      "id": 930,
+      "added_at": "2026-07-17 03:04:52"
+    },
+    {
+      "title": "Pluralistic: Deranged billionaires and their syndromes (16 Jul 2026)",
+      "url": "https://pluralistic.net/2026/07/16/lucky-orifices/",
+      "summary": "Today's links Deranged billionaires and their syndromes: The Mad Kings do love a syllogism. Hey look at this: Delights to delectate. Object permanence: PoGo v binding arbitration; Trump beat some absolute losers; Public interest internet; \"Close to the Machine\"; Gadget-friendly chinos; Gambiologia; Monkey selfie copyright; Prison towns v prison reform. Upcoming appearances: Edinburgh, Sydney, Melbourne, Brighton, London, South Bend. Recent appearances: Where I've been. Latest books: You keep rea",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-07-16",
+      "summary_zh": "这篇文章探讨了科技亿万富翁群体中普遍存在的异常行为模式和心理特征，作者Cory Doctorow以批判视角分析了这些“疯狂国王”们如何运用逻辑推理（三段论）为其极端行为辩护，同时穿插了关于公共利益互联网、消费者权益等话题的讨论，反映了对当代科技寡头文化的深度担忧。",
+      "why_matters": "适合关注科技垄断、数字权利与权力批判的读者，能获得对科技行业深层问题的独到见解。",
+      "tags": "科技批判, 财富与社会, 数字权利",
+      "id": 928,
+      "added_at": "2026-07-17 03:04:52"
+    },
+    {
+      "title": "Deleting Systems You Don't Understand",
+      "url": "https://idiallo.com/blog/deleting-systems-you-dont-understand",
+      "summary": "When I was a kid, my father bought a family home computer and placed it in the living room for all to see. When guests came to our house, they would stop by the computer and admire its marvel without even turning it on. While everyone else was careful with the computer, treating it like an important investment, I quickly started inserting discs and installing games. One thing we take for granted today is how cheap and abundant storage is. Our family computer had a single hard drive with a whoppi",
+      "source": "idiallo.com",
+      "category": "blog",
+      "published": "2026-07-16",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 926,
+      "added_at": "2026-07-17 03:04:52"
+    },
+    {
+      "title": "OpenAI Releases Codex Micro, a Stupid $230 Hardware Keypad",
+      "url": "https://openai.com/supply/co-lab/work-louder/",
+      "summary": "Remember back in March when then-co-CEO Fidji Simo announced to the company that “We cannot miss this moment because we are distracted by side quests”? And then weeks later they spent “low hundreds of millions” to purchase the TBPN YouTube show? In their continuing effort to focus on core product, they’re now selling a $230 hardware keypad ostensibly for working with Codex, which is no longer an app but just a tab in their craptacular super app.\n\nQuinn Nelson:\n\n\n  No way, that’s crazy. I’ve just",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-16",
+      "summary_zh": "OpenAI发布了售价230美元的Codex Micro硬件键盘，引发争议。文章暗讽OpenAI此前花费数亿美元收购YouTube频道TBPN，如今又推出高价硬件产品，与其宣称的\"专注核心产品\"战略自相矛盾。",
+      "why_matters": "揭示OpenAI战略自相矛盾的讽刺性报道，适合关注AI行业商业决策的读者。",
+      "tags": "OpenAI, 硬件产品, 科技评论",
+      "id": 924,
+      "added_at": "2026-07-17 03:04:52"
+    },
+    {
+      "title": "Louie Mantia: ‘The Shape of Apps’",
+      "url": "https://parakeet.co/blog/the-shape-of-apps/",
+      "summary": "Louie Mantia, with a thoughtful essay on app icon design and the squircle-jail controversy on the Parakeet blog:\n\n\n  It’s worth noting that some of the platform’s best icons look\nworse, while some of the platform’s worst icons look better.\n\n\nUltimately this is what I object to with the squircle mandate. It favors the bottom of the heap by restricting the top. It makes bad icons mediocre but pushes great icons toward mediocrity too. That’s not The Macintosh Way.\n\n\n  Masking all of these app icons",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-16",
+      "summary_zh": "暂无摘要",
+      "why_matters": "对于关注UI/UX设计和苹果设计哲学的读者很有价值",
+      "tags": "",
+      "id": 922,
+      "added_at": "2026-07-17 03:04:52"
+    },
+    {
+      "title": "Mermaid to Unicode box art (grok-mermaid)",
+      "url": "https://simonwillison.net/2026/Jul/16/grok-mermaid/#atom-everything",
+      "summary": "Tool: Mermaid to Unicode box art (grok-mermaid)\n        While exploring the codebase for the newly open-sourced Grok CLI coding agent I came across xai-grok-markdown/src/mermaid.rs, a \"self-contained terminal renderer for Mermaid diagrams\" written in Rust.\nI figured it would be fun to try that out in a browser via WebAssembly. Here's the prompt I ran in Claude Code for web (Fable 5), and this is what the resulting tool looks like:\n\n    \n    \n        Tags: tools, rust, webassembly, mermaid, grok,",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-16",
+      "summary_zh": "本文介绍了simonwillison.net上的一个工具——grok-mermaid，它能够将Mermaid图表转换为Unicode终端艺术。该工具的源码来自xai-grok开源项目中的mermaid.rs组件，采用Rust语言编写，是一个独立的终端渲染器。作者Simon Willison在探索Grok CLI代码库时发现了这个有趣的项目。",
+      "why_matters": "适合对终端可视化工具或Mermaid图表渲染感兴趣的技术爱好者了解。",
+      "tags": "Unicode艺术, Mermaid图表, Rust工具",
+      "id": 920,
+      "added_at": "2026-07-17 03:04:52"
+    },
+    {
+      "title": "Quoting Linus Torvalds",
+      "url": "https://simonwillison.net/2026/Jul/16/linus-torvalds/#atom-everything",
+      "summary": "I realize that some people really dislike AI, but this is an area where I'm willing to absolutely put my foot down as the top-level maintainer.\nLinux is not one of those anti-AI projects, and if somebody has issues with that, they can do the open-source thing and fork it.\nOr just walk away.\nAI is a tool, just like other tools we use.  And it's clearly a useful one.\nIt may not have been that \"clearly\" even just a year ago, but it's no longer in question today.\nThere are other questions around AI ",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-16",
+      "summary_zh": "文章介绍了 Linux 内核创始人 Linus Torvalds 对 AI 工具的明确态度。他表示作为顶级维护者，愿意坚定支持 AI 在开源项目中的应用，并强调 Linux 并非“反 AI 项目”。对于持不同意见者，他建议可以通过 fork 分支或离开的方式表达立场，体现了开源社区对新技术的开放态度。",
+      "why_matters": "了解开源社区领袖对 AI 工具的真实立场和决策逻辑。",
+      "tags": "开源, Linux, AI, Linus Torvalds",
+      "id": 918,
+      "added_at": "2026-07-17 03:04:52"
+    },
+    {
+      "title": "Inkling: Our open-weights model",
+      "url": "https://simonwillison.net/2026/Jul/16/inkling/#atom-everything",
+      "summary": "Inkling: Our open-weights model\nMira Murati's Thinking Machines Lab just released their first open-weights model. Inkling is \"a Mixture-of-Experts transformer with 975B total parameters, 41B active\" - an Apache-2.0 licensed multimodal model trained on 45 trillion tokens of text, images, audio and video.\nThey're also promising Inkling-Small, a 276B (12B active) model, but that's still being tested and the weights will be released \"once that work is complete\".\nThe model card is much shorter than I",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-16",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 916,
+      "added_at": "2026-07-17 03:04:52"
+    },
+    {
+      "title": "Quoting Thibault Sottiaux",
+      "url": "https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything",
+      "summary": "On file deletions. We’ve investigated a handful of reports where GPT-5.6 unexpectedly deleted files. \nWhat we have  found is that this most commonly occurs when:\n\nFull access mode is enabled and codex is run without sandboxing protections, including without auto review being enabled\nThe model attempts  to override the $HOME env var to define a temporary directory.\nThe model makes an honest mistake and mistakenly deletes $HOME instead.\n\n&mdash; Thibault Sottiaux, describing a pretty gnarly Codex ",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-16",
+      "summary_zh": "文章讨论了GPT-5.6在特定配置下意外删除文件的问题，主要原因是在启用完全访问模式且未启用沙箱保护和自动审查的情况下运行codex时容易发生此类问题。",
+      "why_matters": "对于使用AI编程工具的开发者来说，了解这些配置风险有助于避免数据损失。",
+      "tags": "AI安全, GPT, 文件删除, 代码执行",
+      "id": 914,
+      "added_at": "2026-07-17 03:04:52"
+    },
+    {
       "title": "Weekly Update 512: IoT Lockout Fail",
       "url": "https://www.troyhunt.com/weekly-update-512/",
       "summary": "\"Build a smart home\", they said. \"It&apos;ll make life so much better\", they said. Well, life wasn&apos;t very bloody good at 23:00 the other night after travelling 33 hours from Paris only to find the IoT doorlock batteries dead and the",
@@ -11729,5 +11885,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-16 13:14:36"
+  "last_updated": "2026-07-17 03:04:52"
 }
