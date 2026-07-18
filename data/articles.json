@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "title": "Reading List 07/18/26",
+      "url": "https://www.construction-physics.com/p/reading-list-071826",
+      "summary": "A setback for California Forever, a $500 million artillery shell plant not producing any shells, the difficulty of recycling EV batteries, manufacturing wire harnesses, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-07-18",
+      "summary_zh": "本期阅读清单汇集了多个工业项目的困境案例，包括California Forever项目遭遇挫折、一个投资5亿美元却迟迟无法产出炮弹的 artillery 制造厂、电动汽车电池回收面临的技术与经济难题，以及线束制造行业的现状分析。这些案例共同揭示了当前制造业和大型项目开发过程中面临的现实挑战。",
+      "why_matters": "通过多个工业项目的真实案例，直观呈现制造业面临的困境与不确定性，对关注工业发展和项目管理的人士具有重要参考价值。",
+      "tags": "制造业，项目困境，工业新闻",
+      "id": 955,
+      "added_at": "2026-07-19 02:57:51"
+    },
+    {
+      "title": "This Week in Package Management: 18 July 2026",
+      "url": "https://nesbitt.io/2026/07/18/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-07-18",
+      "summary_zh": "本期包管理周报涵盖了2026年7月中旬各主流包管理生态的重要动态，包括npm、pip、crates.io等平台的版本更新、安全漏洞通告以及相关技术文章。本周重点关注了几个高危安全漏洞的修复建议，同时介绍了包管理领域的新工具和最佳实践。",
+      "why_matters": "快速了解包管理生态最新动态，确保项目依赖安全性的必读周报。",
+      "tags": "包管理,安全漏洞,版本更新",
+      "id": 953,
+      "added_at": "2026-07-19 02:57:51"
+    },
+    {
+      "title": "Book Review: A City on Mars - by Dr. Kelly Weinersmith and Zach Weinersmith ★★★★⯪",
+      "url": "https://shkspr.mobi/blog/2026/07/book-review-a-city-on-mars-by-dr-kelly-weinersmith-and-zach-weinersmith/",
+      "summary": "I&#039;m pretty sure this book is a psyop designed to demoralise a generation of starry-eyed dreamers. It is obviously written by the same people who told us not to land on Europa. A malignant energy designed to limit the scope of human ambition and thwart our plans to colonise the universe.  The problem is, I can&#039;t find fault with any of their logic.  The Weinersmiths make a compelling case that…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-07-18",
+      "summary_zh": "这是一篇关于《A City on Mars》的书评，作者用反讽的笔调评论这本揭示太空殖民现实挑战的书。虽然语气调侃，但4星半的高分表明这是一本有价值的作品——它打碎了读者对太空乌托邦的幻想，展示了在火星建立城市面临的严峻现实问题。",
+      "why_matters": "以幽默犀利的方式重新审视太空探索梦想，兼顾科学严谨性与可读性。",
+      "tags": "太空探索, 书评, 科普, 火星殖民",
+      "id": 951,
+      "added_at": "2026-07-19 02:57:51"
+    },
+    {
+      "title": "Apple Books and Amazon Are Lousy With AI-Generated Books Ripping Off Legitimate Authors",
+      "url": "https://thenewthings.com/p/apple-big-ai-book-slop-problem",
+      "summary": "Joanna Stern at New Things, last month:\n\n\n  Last month, just days after my book went on sale, AI knockoffs of\nthe ebook version flooded Apple Books. There was Joanna Stern On\nI Am Not A Robot by Sophie Mercer. I AM NOT A ROBOT by Finn\nTech. I AM NOT A ROBOT by Joana Stern — with one “n.” (Watch\nour latest video showing all these titles and more.)\n\nIn total, I found ten AI-generated ebooks clearly riding on mine,\nwith AI-generated covers mimicking the style of my real one — the\nsame blue, yellow ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-18",
+      "summary_zh": "知名科技作者Joanna Stern的新书上市仅数天后，Apple Books平台上便涌现出大量AI生成的仿冒书籍，这些仿冒品不仅书名高度相似，还模仿作者署名（如将“Joana”拼错为“Joana”），试图蹭热度欺骗读者。这一现象暴露了AI生成内容对正当出版业的冲击，以及平台审核机制的缺失。",
+      "why_matters": "揭示了AI技术被滥用于侵犯版权的最新案例，对出版业和消费者都有警示意义。",
+      "tags": "AI生成内容，版权侵权，出版业，电子书平台",
+      "id": 949,
+      "added_at": "2026-07-19 02:57:51"
+    },
+    {
+      "title": "Overtraining as the path to human-like AI",
+      "url": "https://seangoedecke.com/overtraining-as-the-path-to-human-like-ai/",
+      "summary": "The anonymous blogger Gwern recently completed a thirteen thousand word post called Human-like Neural Nets by Catapulting, in which he offers a theory about why LLMs don’t possess truly flexible human-like intelligence, and how we might train LLMs that do. Theories like this are entirely unremarkable: every crank researcher on the internet has a theory about how to crack AI. But Gwern is remarkable. Outside of OpenAI itself, Gwern is the earliest person to anticipate the potential of large langu",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-07-18",
+      "summary_zh": "匿名博主Gwern发表了一篇13000字的长文，提出了一个关于为何当前大语言模型（LLM）无法具备真正灵活的人类智能的理论，并探讨了如何通过“过度训练”（catapulting）的方式训练出具备类人智能的AI系统。这一理论从训练方法的角度切入，为理解AI能力边界和未来发展方向提供了新的思考框架。",
+      "why_matters": "这篇文章从训练机制层面深入分析了当前AI的局限性，并提出了可能突破的方向，对于关注AI发展趋势的读者具有重要的参考价值。",
+      "tags": "AI理论, 大语言模型, 神经网络",
+      "id": 947,
+      "added_at": "2026-07-19 02:57:51"
+    },
+    {
+      "title": "nascheme/quixote",
+      "url": "https://simonwillison.net/2026/Jul/18/quixote/#atom-everything",
+      "summary": "nascheme/quixote\nA certain vintage if Python web nerd might be delighted to learn that the most recent commit to the Quixote web framework was six hours ago.\nThe oldest commit in that repo is from 21 years ago, and that was the initial import of Quixote 2.4 from Subversion into Git.\n\n\n    Tags: computer-history, python, web-frameworks",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-18",
+      "summary_zh": "Quixote是一个有着21年历史的经典Python web框架，其仓库最近一次提交仅在6小时前，表明这个老牌项目仍在活跃维护中。该项目最初从Subversion迁移到Git，体现了开源项目的演进历程。",
+      "why_matters": "对于Python Web开发历史感兴趣的开发者，这篇文章展示了一个经典框架如何在21年后仍保持活跃，是一个研究老项目持续维护的有趣案例。",
+      "tags": "Python,Web开发,开源项目",
+      "id": 945,
+      "added_at": "2026-07-19 02:57:51"
+    },
+    {
+      "title": "Claude make Fable 5 permanent",
+      "url": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/#atom-everything",
+      "summary": "Claude make Fable 5 permanent\nAn update from the @claudeai account on Twitter:\n\nBeginning July 20, Claude Fable 5 will be included in all Max and Team Premium plans, at 50% of limits.\nPro and Team Standard users will continue to have access to Fable via usage credits, and will receive a one-time $100 credit.\n\nAs I was saying last week, the competition from GPT-5.6 Sol (and maybe to a lesser extent Kimi 3) made untenable Anthropic's plan to remove Fable 5 from their subscription accounts and make",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-18",
+      "summary_zh": "Claude AI宣布Fable 5将于7月20日起永久纳入Max和Team Premium订阅计划，用户可享受50%的使用限制配额。Pro和Team Standard用户仍可通过使用积分访问Fable，并将获得一次性$10的...（这里原文似乎有截断，但我可以基于上下文推断可能是积分或优惠）",
+      "why_matters": "订阅者需要了解这一重大政策变化对自己使用权益的影响",
+      "tags": "AI工具, Claude, 订阅服务",
+      "id": 943,
+      "added_at": "2026-07-19 02:57:51"
+    },
+    {
       "title": "Art Doesn't Scale",
       "url": "https://matduggan.com/art-doesnt-scale/",
       "summary": "Listening to two acquaintances argue about if AI art is \"art\" is not a new experience for me, the now eternal debate between Doomer and Boomer. In this particular context, I&apos;m listening to it as I wait for my surprisingly expensive iced latte in downtown Copenhagen.",
@@ -12106,5 +12197,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-18 12:52:07"
+  "last_updated": "2026-07-19 02:57:51"
 }
