@@ -1,6 +1,84 @@
 {
   "articles": [
     {
+      "title": "Sum of low squares",
+      "url": "https://www.johndcook.com/blog/2026/07/19/sum-of-low-squares/",
+      "summary": "Squares, high and low Let p be an odd prime number. Then half the numbers from 1 through p − 1 are squares and half are not. That is, for half of numbers 1 ≤ k &#60; p, the equation x² = k mod p has a solution. The traditional name for these numbers is [&#8230;]\nThe post Sum of low squares first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-07-19",
+      "summary_zh": "这篇文章探讨了奇素数p的模运算中二次剩余的性质。对于任意奇素数p，1到p-1之间恰好有一半的数是平方（即存在x使得x²≡k mod p），另一半则不是。这些“低平方”（二次剩余）具有一些有趣的数学性质，文章深入分析了它们的和与分布规律。",
+      "why_matters": "通过简洁的数学分析，揭示了奇素数二次剩余中一个优美而深刻的对称性质。",
+      "tags": "数论，二次剩余，素数，模运算",
+      "id": 960,
+      "added_at": "2026-07-20 02:59:45"
+    },
+    {
+      "title": "★ Mornings in Cupertino Have the Aroma of Napalm Once Again",
+      "url": "https://daringfireball.net/2026/07/mornings_in_cupertino_have_the_aroma_of_napalm_once_again",
+      "summary": "I think maybe John Ternus is more of a “*Hey, what* would *Steve have done here?*” kind of guy.\nWhat would Steve Jobs do with this OpenAI situation? He’d go to war.",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-19",
+      "summary_zh": "本文批评苹果公司在与OpenAI合作中的立场过于软弱。作者认为，如果乔布斯在世，面对OpenAI的复杂局面，他会采取更强硬的谈判态度，而不是接受现有的交易条款。文章暗示现任领导层缺乏乔布斯那种“为产品而战”的决心。",
+      "why_matters": "如果你关心苹果公司的AI战略方向和公司文化，这篇文章提供了一个独特而犀利的视角来审视当前苹果的决策。",
+      "tags": "苹果公司，OpenAI，Steve Jobs，企业文化",
+      "id": 958,
+      "added_at": "2026-07-20 02:59:45"
+    },
+    {
+      "title": "9to5Mac Uncovers Dozens of Disguised Gambling Apps on the App Store in Brazil",
+      "url": "https://9to5mac.com/2026/07/17/investigation-reveals-dozens-of-disguised-gambling-apps-on-the-app-store-in-brazil/",
+      "summary": "9to5Mac:\n\n\n  Brazilian users browsing the App Store rankings in categories\nsuch as Navigation, Travel, and Weather have noticed a growing\nnumber of poorly made games appearing among the top results, many\nof them featuring AI-generated illustrations of animals as their\napp icons.\n\nAs it turns out, these are so-called jacket apps, which are just a\nfront for hidden betting and gambling apps. A 9to5Mac\ninvestigation has uncovered more than 60 apps that behave exactly\nas depicted in their App Store s",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-19",
+      "summary_zh": "9to5Mac调查发现，巴西App Store的导航、旅游、天气等类别排名中出现大量伪装成正常应用的低质量赌博游戏，这些应用使用AI生成的动物图片作为图标，欺骗用户下载。目前已发现数十款此类伪装应用。",
+      "why_matters": "揭示了App Store审核漏洞，提醒用户警惕伪装成工具类的赌博应用。",
+      "tags": "App Store, 赌博应用, 应用审核, 巴西市场",
+      "id": 956,
+      "added_at": "2026-07-20 02:59:45"
+    },
+    {
+      "title": "Impro is a handbook for running a cult",
+      "url": "https://seangoedecke.com/impro/",
+      "summary": "Here’s the big idea in Keith Johnstone’s book Impro:\n\nChildren are naturally creative, but are violently formed into repressed adults by Western culture and education\nThe process of becoming more creative and expressive is largely a process of unlearning these habits of repression\nImprov — improvisational comedy — is thus not just the skeleton key for learning to act, but for unlocking a more authentically human way of life\n\nThis take doesn’t sound particularly original, but references to Impro ",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-07-19",
+      "summary_zh": "这篇文章介绍了Keith Johnstone的著作《Impro》。书中指出，儿童天生具有创造力，但西方文化和教育体系会将其压制成压抑的成年人。要重获创造力和表达能力，关键在于“去学习”这些后天习得的压抑习惯，即兴表演正是实现这一目标的有效途径。",
+      "why_matters": "揭示了创造力被压制的根源，并提供了通过即兴表演释放创造力的实用方法。",
+      "tags": "即兴表演, 创造力, 自我成长",
+      "id": 954,
+      "added_at": "2026-07-20 02:59:45"
+    },
+    {
+      "title": "Claude Code uses Bun written in Rust now",
+      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/#atom-everything",
+      "summary": "In Rewriting Bun in Rust Jarred Sumner made the following claim:\n\nClaude Code v2.1.181 (released June 17th) and later use the Rust port of Bun. Startup got 10% faster on Linux but otherwise, barely anyone noticed. Boring is good.\n\nI decided to have a poke at my own Claude Code installation to see if I could find evidence that it was using Bun written in Rust.\nI found these two commands convincing:\nstrings ~/.local/bin/claude | grep -m1 'Bun v1'\n\nFor me this outputs Bun v1.4.0 (macOS arm64). The ",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-19",
+      "summary_zh": "Claude Code在v2.1.181版本中将运行时从原版Bun切换为Rust重写的Bun版本。虽然Linux平台启动速度提升约10%，但普通用户几乎感知不到差异。开发者Jarred Sumner对此评价\"Boring is good\"，暗示这种平稳过渡正是理想的技术演进状态。",
+      "why_matters": "这篇文章用一个具体案例说明了一个重要原则——优秀的底层技术更迭应该让用户无感，\"无聊\"才是好的技术迁移。",
+      "tags": "技术迁移, Bun, Claude Code, Rust",
+      "id": 952,
+      "added_at": "2026-07-20 02:59:45"
+    },
+    {
+      "title": "AI Mania Is Eviscerating Global Decision-Making",
+      "url": "https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything",
+      "summary": "AI Mania Is Eviscerating Global Decision-Making\nHere's an entertaining perspective from Nik Suresh on the AI mania that is overwhelming the large companies that he consults with. It's crammed with spicy anecdotes from anonymous sources.\n\nIn one extreme case, I have seen an executive confess that they had never even used ChatGPT or any AI tool in their life, immediately after producing a technical strategy for an organisation with $2B+ in revenue which was entirely centered around AI.\n\nHere's a r",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-19",
+      "summary_zh": "文章揭示了当前AI狂热如何严重影响全球企业的决策能力。作者Nik Suresh通过多个匿名来源分享了大型企业在盲目追逐AI潮流过程中出现的种种问题，包括高管们承认对AI技术的误解和不当决策。这些案例警示人们在AI时代保持理性思考的重要性。",
+      "why_matters": "揭露企业AI热潮背后决策危机的深度观察，提供了难得的内部视角。",
+      "tags": "AI决策，企业管理，技术反思",
+      "id": 950,
+      "added_at": "2026-07-20 02:59:45"
+    },
+    {
       "title": "Reading List 07/18/26",
       "url": "https://www.construction-physics.com/p/reading-list-071826",
       "summary": "A setback for California Forever, a $500 million artillery shell plant not producing any shells, the difficulty of recycling EV batteries, manufacturing wire harnesses, and more.",
@@ -12197,5 +12275,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-19 13:26:44"
+  "last_updated": "2026-07-20 02:59:45"
 }
