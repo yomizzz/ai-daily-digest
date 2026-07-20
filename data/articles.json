@@ -1,6 +1,175 @@
 {
   "articles": [
     {
+      "title": "Why I Stopped \"Creating Content\"",
+      "url": "https://refactoringenglish.com/blog/why-i-stopped-creating-content/",
+      "summary": "The first time I saw Michelangelo&rsquo;s David in person, I wept. Never in my life have I witnessed a more beautiful piece of content.\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n \n \n\n\n\n\n\n\nI wasn&rsquo;t the only one who felt that way. Museum patrons all around me were looking up from their phones to admire David as well. Despite it being legacy content, David was so scrollstoppingly captivating that it generated stronger engagement than TikTok and Instagram combined, despite those platforms offering fresh",
+      "source": "refactoringenglish.com",
+      "category": "blog",
+      "published": "2026-07-20",
+      "summary_zh": "作者参观米开朗基罗的大卫雕像时深受触动，将其称为“最美丽的内容”，反思了现代社交媒体时代人们机械“生产内容”的现象，认为真正的艺术创作与被动追求流量和互动的内容产出有着本质区别，真正的创作应当能够打动人心、传递深层情感。",
+      "why_matters": "对当下内容创作者反思创作初心、区分艺术与流量生产有启发意义。",
+      "tags": "创作哲学，艺术与内容，创作初心",
+      "id": 980,
+      "added_at": "2026-07-21 03:34:58"
+    },
+    {
+      "title": "I added a blogroll",
+      "url": "https://matduggan.com/i-added-a-blogroll/",
+      "summary": "I realized that it might be nice if you happen to stumble on this website if I had a way to recommend other websites you might enjoy. As it turns out this is a \"blogroll\", a concept I have never heard of before today but whatever. It&apos;",
+      "source": "matduggan.com",
+      "category": "blog",
+      "published": "2026-07-20",
+      "summary_zh": "作者在个人网站上添加了一个“blogroll”（博客链接列表）功能，以便访客在浏览网站时能发现其他可能感兴趣的网站。作者表示这是他之前从未听说过的概念，今天才了解并决定添加。",
+      "why_matters": "适合对博客文化和早期互联网生态感兴趣的读者。",
+      "tags": "blogroll, 个人博客, 网站推荐",
+      "id": 978,
+      "added_at": "2026-07-21 03:34:58"
+    },
+    {
+      "title": "OpenTK: nu ook met Internetconsultaties & notificaties",
+      "url": "https://berthub.eu/articles/posts/opentk-internetconsultaties/",
+      "summary": "Sinds 2024 run ik OpenTK, met als doel zo goed mogelijk te laten zien wat er in de Tweede Kamer allemaal gebeurt. En, om daar ook nuttige email-notificaties over te versturen.\nOpenTK is begonnen omdat ik (vanuit de Internetwereld) ineens geconfronteerd werd met een wet die over DNS (mijn hobby) ging en over een paar dagen in stemming zou komen. Dat was heel erg schrikken en ik dacht, dat kan ons nooit meer gebeuren.",
+      "source": "berthub.eu",
+      "category": "blog",
+      "published": "2026-07-20",
+      "summary_zh": "OpenTK是一个由个人从2024年开始运行的荷兰议会追踪项目，旨在全面展示荷兰第二议院（Tweede Kamer）的动态活动，并提供相关电子邮件通知服务。该项目的诞生源于作者在互联网领域突然遭遇一项与DNS相关的立法，推动其开始关注和记录议会的决策过程。",
+      "why_matters": "为关注荷兰政治动态和立法进程的中文读者提供了一个简洁的入口。",
+      "tags": "荷兰政治，议会追踪，开源工具",
+      "id": 976,
+      "added_at": "2026-07-21 03:34:58"
+    },
+    {
+      "title": "The MCI Worldcom merger, bankruptcy, and scandal",
+      "url": "https://dfarq.homeip.net/the-mci-worldcom-merger-bankruptcy-and-scandal/?utm_source=rss&utm_medium=rss&utm_campaign=the-mci-worldcom-merger-bankruptcy-and-scandal",
+      "summary": "On November 4th, 1997, MCI and Worldcom merged in a deal worth $37 billion. This was an attempt by two large telecommunications companies to to combine and rival AT&#38;T, but instead it turned into one of the biggest scandals and\nThe post The MCI Worldcom merger, bankruptcy, and scandal appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-07-20",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 974,
+      "added_at": "2026-07-21 03:34:58"
+    },
+    {
+      "title": "Memory Safety's Hardest Problem",
+      "url": "https://matklad.github.io/2026/07/20/memory-safety-hardest-problem.html",
+      "summary": "Uplifting a lobsters comment for easier reference.",
+      "source": "matklad.github.io",
+      "category": "blog",
+      "published": "2026-07-20",
+      "summary_zh": "文章深入探讨内存安全领域中最具挑战性的问题，作者转发了lobsters上的相关讨论并进行了整理。核心观点认为，实现内存安全不仅仅是选择Rust这样的安全语言那么简单，还涉及性能开销、现有代码迁移、与其他系统交互等多方面的权衡取舍。",
+      "why_matters": "对于关心系统编程安全性的开发者而言，这篇文章能帮助理清对内存安全的认知边界，理解为什么某些看似简单的解决方案在实际中面临重重困难。",
+      "tags": "内存安全, Rust语言, 系统编程",
+      "id": 972,
+      "added_at": "2026-07-21 03:34:58"
+    },
+    {
+      "title": "Solving a chess puzzle with Grok 4.5",
+      "url": "https://www.johndcook.com/blog/2026/07/20/grok-chess/",
+      "summary": "I&#8217;ve written several posts about using Claude or ChatGPT to generate Prolog or Lean code to solve a chess puzzle. I didn&#8217;t think Grok would be up to the task, though I didn&#8217;t try it. I&#8217;ve heard good things about Grok 4.5, so I gave it a shot. It did great. Here&#8217;s the problem, a [&#8230;]\nThe post Solving a chess puzzle with Grok 4.5 first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-07-20",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 970,
+      "added_at": "2026-07-21 03:34:58"
+    },
+    {
+      "title": "Volume to Area ratio for Regular Solids",
+      "url": "https://www.johndcook.com/blog/2026/07/20/volume-area-regular-solids/",
+      "summary": "The volume of a sphere of radius r is V = 4πr³ / 3 and the surface area is A = 4πr² and so the ratio of volume to area is V / A = r / 3. Surprisingly, the same ratio holds for all regular solids if r is the radius of the largest sphere [&#8230;]\nThe post Volume to Area ratio for Regular Solids first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-07-20",
+      "summary_zh": "文章揭示了一个令人惊讶的数学事实——球体的体积与面积比（V/A = r/3）同样适用于所有正多面体，只要使用内切球半径作为参数。这说明了一个优雅的数学普适规律在看似不同的几何形状中同样成立。",
+      "why_matters": "展示了数学中一个简洁优美且不为人熟知的普适规律，连接了几何与算术。",
+      "tags": "数学，几何，正多面体",
+      "id": 968,
+      "added_at": "2026-07-21 03:34:58"
+    },
+    {
+      "title": "Making an agile version of a Windows Runtime delegate in C++/WinRT, part 1",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260720-00/?p=112545",
+      "summary": "The easy case is easy.\nThe post Making an agile version of a Windows Runtime delegate in C++/WinRT, part 1 appeared first on The Old New Thing.",
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "category": "blog",
+      "published": "2026-07-20",
+      "summary_zh": "C++/WinRT中处理Windows Runtime委托的敏捷版本，涉及WinRT委托的跨线程调用问题。文章讨论了简单场景下的解决方案，为后续复杂情况奠定基础。",
+      "why_matters": "Raymond Chen的经典技术博客，深入剖析WinRT异步编程的线程模型细节。",
+      "tags": "C++/WinRT, Windows Runtime, 多线程, COM编程",
+      "id": 966,
+      "added_at": "2026-07-21 03:34:58"
+    },
+    {
+      "title": "Public Transport - Don't Make Me Think!",
+      "url": "https://shkspr.mobi/blog/2026/07/public-transport-dont-make-me-think/",
+      "summary": "In the last year, I&#039;ve been through over a dozen cities and used public transport in all of them.  It is wild just how confusing and complex buying a ticket can be. While some cities obviously take a user-centred approach to ticketing, others appear to take a Kafkaesque delight in a bureaucratic maze of zones, apps, and intricate restrictions.  One of the seminal texts in computer systems design…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-07-20",
+      "summary_zh": "作者在过去一年走访了十几个城市，发现公共交通购票体验差异巨大。部分城市采用以用户为中心的设计理念，购票流程清晰便捷；而另一些城市则充满官僚式的繁琐与混乱，让乘客感到困惑和沮丧。这一现象反映出城市管理者在公共服务设计上存在明显的理念差距。",
+      "why_matters": "文章以亲身经历揭示了公共服务设计中“以人为本”理念的重要性，对思考智慧城市建设有启发意义。",
+      "tags": "公共交通,用户体验,智慧城市",
+      "id": 964,
+      "added_at": "2026-07-21 03:34:58"
+    },
+    {
+      "title": "‘Who’s Afraid of Chinese Models?’",
+      "url": "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
+      "summary": "Ben Thompson, on the hype regarding Kimi K3, at Stratechery:\n\n\n  This is a point that bears repeating: because U.S. open weight\nmodel makers must follow the frontier labs’ terms of service, they\n(1) are worse than Chinese alternatives and (2) end up distilling\nthe distillation, just with a detour through Chinese labs.\nWouldn’t it be better if western open weight model makers could go\nto the source?\n\nTo that end, here’s an even more interesting question around\ndistillation: why exactly is it bad?",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-20",
+      "summary_zh": "文章指出美国开放权重模型因必须遵守前沿实验室的服务条款，面临两大困境：一是性能不及中国同类模型，二是实际上只是在“蒸馏的蒸馏”，绕了弯路才达到同样的效果。这一观点揭示了当前AI开源生态中美国模型的局限性，以及中国模型在某些方面的竞争优势。",
+      "why_matters": "为理解当前AI开源领域的竞争格局提供了独特视角，揭示了开放权重模型背后被忽视的结构性限制。",
+      "tags": "AI模型, 开源生态, 中美竞争",
+      "id": 962,
+      "added_at": "2026-07-21 03:34:58"
+    },
+    {
+      "title": "Quoting Sam Altman",
+      "url": "https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything",
+      "summary": "We have been having extensive discussions around open source strategy. We will discuss it more at our next board meeting, but one thing we’d like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that. We’d like to do it soon, before Stability or someone else does. In general, we think this helps discourage others from releasing similarly-powerful models, and makes it harder for new efforts to get funded.\n&mdas",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-20",
+      "summary_zh": "本文报道了OpenAI关于开源策略的最新讨论，计划开发一款具有GPT-3近似能力且能在消费级硬件本地运行的语言模型并开源发布。这反映了AI领域对于本地化部署和开源解决方案日益增长的需求。",
+      "why_matters": "揭示了AI开源趋势的重要信号，了解大模型本地化部署的最新发展动态。",
+      "tags": "开源AI, 本地部署, GPT-3, 人工智能",
+      "id": 960,
+      "added_at": "2026-07-21 03:34:58"
+    },
+    {
+      "title": "Who’s Afraid of Chinese Models?",
+      "url": "https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models/#atom-everything",
+      "summary": "Who’s Afraid of Chinese Models?\nInteresting proposal from Ben Thompson that both addresses the hypocrisy of labs outlawing distillation against their models despite training on unlicensed data, and could help US open models compete more effectively with their Chinese counterparts:\n\nThe U.S. should pass a law that (1) makes explicit that collecting data for training models is fair use, and (2) bars terms of service that forbid distillation, for U.S. companies at a minimum. Stopping distillation —",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-20",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 958,
+      "added_at": "2026-07-21 03:34:58"
+    },
+    {
+      "title": "Reverse-engineering is cheap now",
+      "url": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything",
+      "summary": "I keep hearing anecdotes from people who used coding agents to reverse-engineer and automate devices in their homes.\nI think this is an interesting illustration of the impact of the reduced cost of writing code.\nPrior to agents, it was entirely possible to reverse-engineer home devices. The problem was the ROI - was it really worth all of that effort? More importantly, any experienced programmer knows that undocumented, unstable APIs like that may well change or break in the future. Is that init",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-20",
+      "summary_zh": "文章探讨了AI编码智能体如何大幅降低了逆向工程的技术门槛。通过智能体辅助，普通人也能轻松实现家庭设备的逆向工程与自动化，这在以前虽然技术上可行，但需要投入大量时间和专业知识。作者认为这生动体现了“编写代码成本下降”所带来的深远影响。",
+      "why_matters": "帮助你理解AI工具如何让曾经高门槛的技术工作变得触手可及。",
+      "tags": "AI编码智能体,逆向工程,技术民主化",
+      "id": 956,
+      "added_at": "2026-07-21 03:34:58"
+    },
+    {
       "title": "Sum of low squares",
       "url": "https://www.johndcook.com/blog/2026/07/19/sum-of-low-squares/",
       "summary": "Squares, high and low Let p be an odd prime number. Then half the numbers from 1 through p − 1 are squares and half are not. That is, for half of numbers 1 ≤ k &#60; p, the equation x² = k mod p has a solution. The traditional name for these numbers is [&#8230;]\nThe post Sum of low squares first appeared on John D. Cook.",
@@ -12275,5 +12444,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-20 13:44:12"
+  "last_updated": "2026-07-21 03:34:58"
 }
