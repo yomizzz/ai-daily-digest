@@ -1,6 +1,162 @@
 {
   "articles": [
     {
+      "title": "Blog Jamboree 2026: The Winners",
+      "url": "https://www.experimental-history.com/p/blog-jamboree-2026-the-winners",
+      "summary": "yeehaw",
+      "source": "experimental-history.com",
+      "category": "blog",
+      "published": "2026-07-21",
+      "summary_zh": "本文介绍了2026年Blog Jamboree博客竞赛的获奖者名单。文章可能展示了获奖博客的特点和获奖原因，表彰了在博客创作中表现突出的作者。对于关注博客圈和内容创作的读者来说，了解这些优秀博客的亮点具有参考价值。",
+      "why_matters": "了解博客创作领域的优秀范例和趋势。",
+      "tags": "博客竞赛, 获奖作品, 内容创作",
+      "id": 992,
+      "added_at": "2026-07-22 03:13:11"
+    },
+    {
+      "title": "Weekly Update 513: Clauding The Home Network",
+      "url": "https://www.troyhunt.com/weekly-update-513/",
+      "summary": "I reckon this week&apos;s video on how Claude is tying together info from UniFi, Home Assistant and the Pi-Hole is an absolute ripper. Or at least the concept is - if ever there was an actual value proposition for AI it&apos;s taking lots of noise and",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-07-21",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 990,
+      "added_at": "2026-07-22 03:13:11"
+    },
+    {
+      "title": "For a Business, Should Making (Extra) Money Be Incidental?",
+      "url": "https://simone.org/business-money-incidental/",
+      "summary": "Humans are desire-driven machines: a business should help dissipate desires by satisfying them without exploiting you.",
+      "source": "simone.org",
+      "category": "blog",
+      "published": "2026-07-21",
+      "summary_zh": "文章探讨了商业的本质目的，作者质疑企业是否应把盈利放在首位。他提出企业真正的价值在于帮助人类满足欲望、解决需求，而非单纯追求利润最大化。当企业真正服务于人类需求时，盈利应该是自然产生的副产品而非终极目标。",
+      "why_matters": "帮助你重新思考商业的本质，回归以人为中心的经营哲学。",
+      "tags": "商业哲学, 企业使命, 以人为本",
+      "id": 988,
+      "added_at": "2026-07-22 03:13:11"
+    },
+    {
+      "title": "Kan een Amerikaans bedrijf met encryptie de Amerikaanse overheid buiten de deur houden?",
+      "url": "https://berthub.eu/articles/posts/kan-een-amerikaans-bedrijf-zo-versleutelen-dat-amerikanen-er-niet-bijkunnen/",
+      "summary": "Het is inmiddels duidelijk dat zelfs maar deels Amerikaanse bedrijven met allerhande middelen gedwongen kunnen worden om onze data te overhandigen aan de Amerikaanse overheid.\nOok kan de dienstverlening gestaakt worden na een enkel briefje op Whitehouse.gov, wat zonder enige rechterlijke toetsing geplaatst kan worden.\nTegen deze beide dingen is met papier niets te doen. Geen speciale afspraak zal je redden uit dit probleem (dit ook volgens de Landsadvocaat).\nMaar, er is dan soms nog de hoop om d",
+      "source": "berthub.eu",
+      "category": "blog",
+      "published": "2026-07-21",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 986,
+      "added_at": "2026-07-22 03:13:11"
+    },
+    {
+      "title": "The First Microsoft Product",
+      "url": "https://dfarq.homeip.net/the-first-microsoft-product/?utm_source=rss&utm_medium=rss&utm_campaign=the-first-microsoft-product",
+      "summary": "On January 2, 1975, Microsoft announced Altair Basic, their first product. It was a programming language for the MITS Altair 8800 computer, a product that let people write their own software for the new computer. The makers of the computer\nThe post The First Microsoft Product appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-07-21",
+      "summary_zh": "1975年1月2日，微软发布了其首款产品——Altair Basic，这是一款为MITS Altair 8800计算机设计的编程语言，使人们能够为这台早期个人电脑编写自己的软件，标志着微软公司的正式起步。",
+      "why_matters": "了解科技巨头微软如何从一个小公司起步的珍贵历史资料。",
+      "tags": "微软历史, Altair Basic, 科技创业",
+      "id": 984,
+      "added_at": "2026-07-22 03:13:11"
+    },
+    {
+      "title": "–end-of-options",
+      "url": "https://nesbitt.io/2026/07/21/end-of-options.html",
+      "summary": "The git flag I assumed was an LLM hallucination",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-07-21",
+      "summary_zh": "作者在使用Git时遇到了一个陌生的命令行选项，最初以为这是大语言模型产生的幻觉（可能是询问AI时得到的建议）。经过验证后发现这个选项确实存在且有实际用途，作者记录了自己的探索过程，提醒开发者在使用AI辅助编程时需要注意验证其输出的准确性。",
+      "why_matters": "对于经常使用Git和AI辅助编程的开发者来说，这篇文章既介绍了一个实用的Git选项，也提醒我们AI输出需要验证。",
+      "tags": "Git, LLM幻觉, 命令行工具",
+      "id": 982,
+      "added_at": "2026-07-22 03:13:11"
+    },
+    {
+      "title": "Locally everywhere does not imply everywhere",
+      "url": "https://www.johndcook.com/blog/2026/07/21/jacobian-conjecture/",
+      "summary": "A couple days ago, Levent Alpöge, a mathematician working at Anthropic, discovered a counterexample to the Jacobian conjecture using Claude Fable 5. I was curious whether most mathematicians were trying to prove or disprove the conjecture, so I asked Claude. Before a counterexample to the Jacobian conjecture was found, did most mathematicians believe it was [&#8230;]\nThe post Locally everywhere does not imply everywhere first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-07-21",
+      "summary_zh": "文章讨论了Anthropic数学家Levent Alpöge使用AI工具Claude发现Jacobian猜想反例的进展。作者探究了数学界对这一著名猜想的主流态度——究竟是想证明还是反驳它。文章标题“局部处处成立不意味着整体处处成立”暗示了这类数学猜想的一个核心困境。",
+      "why_matters": "对于关心AI辅助数学研究进展的读者，了解AI在解决重大数学难题上的最新实践案例。",
+      "tags": "Jacobian猜想, AI数学研究, 反例, Anthropic, 数学证明",
+      "id": 980,
+      "added_at": "2026-07-22 03:13:11"
+    },
+    {
+      "title": "Forensic accounting in Python",
+      "url": "https://www.johndcook.com/blog/2026/07/21/forensic-accounting-in-python/",
+      "summary": "I recently had a project in which I had to reverse engineer a data analysis. There was some ambiguity regarding which of several possibilities someone chose for several of the variables, something analogous to the following example. Suppose you have three numbers with uncertain values with a known, or at least purported, sum. The first [&#8230;]\nThe post Forensic accounting in Python first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-07-21",
+      "summary_zh": "本文介绍了使用Python进行法务会计和数据分析逆向工程的方法。作者通过一个具体项目案例，展示了如何处理数据中存在的多个不确定变量的选择问题，从而还原原始数据分析的逻辑过程。",
+      "why_matters": "展示了Python在法务会计和数据审计中的实际应用价值。",
+      "tags": "Python, 法务会计, 数据分析, 逆向工程",
+      "id": 978,
+      "added_at": "2026-07-22 03:13:11"
+    },
+    {
+      "title": "Making an agile version of a Windows Runtime delegate in C++/WinRT, part 2",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260721-00/?p=112550",
+      "summary": "Short-circuiting the easiest case.\nThe post Making an agile version of a Windows Runtime delegate in C++/WinRT, part 2 appeared first on The Old New Thing.",
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "category": "blog",
+      "published": "2026-07-21",
+      "summary_zh": "本文是C++/WinRT中实现Windows Runtime委托敏捷版本的第二部分，主要讨论如何针对最简单的情况进行短路优化。通过识别和简化那些不需要复杂线程处理的委托类型，可以提升性能并减少不必要的开销。文章延续了前作的技术细节，深入探讨了实现技巧。",
+      "why_matters": "对于使用C++/WinRT开发Windows应用的开发者，深入理解委托的线程安全模型和敏捷性实现很有价值。",
+      "tags": "C++/WinRT, Windows Runtime, 多线程编程",
+      "id": 976,
+      "added_at": "2026-07-22 03:13:11"
+    },
+    {
+      "title": "Pluralistic: Dealing with dickovers (21 Jul 2026) dickovers",
+      "url": "https://pluralistic.net/2026/07/21/dickovers/",
+      "summary": "Today's links Dealing with dickovers: The web is an open platform, and that matters. Hey look at this: Delights to delectate. Object permanence: Broadcast's bad week; Congress v wifi; EFF v DRM law; Snowden and bunnie's smartphone smartcase. Upcoming appearances: Edinburgh, Sydney, Melbourne, Brighton, London, South Bend. Recent appearances: Where I've been. Latest books: You keep readin' em, I'll keep writin' 'em. Upcoming books: Like I said, I'll keep writin' 'em. Colophon: All the rest. Deali",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-07-21",
+      "summary_zh": "本文探讨了互联网作为开放平台的重要性，讨论了如何应对网络不当行为“dickovers”。文章还涉及近期多个科技政策议题，包括广播行业困境、国会对WiFi的监管争议、电子前沿基金会(EFF)与DRM法律的对抗，以及Snowden与bunnie合作的智能手机智能保护壳项目。",
+      "why_matters": "作者Cory Doctorow一如既往地以独特视角整合科技、版权与网络政策议题，内容紧凑且富有洞见。",
+      "tags": "网络开放平台, 科技政策, 数字权利",
+      "id": 974,
+      "added_at": "2026-07-22 03:13:11"
+    },
+    {
+      "title": "A Fireside Chat with Cat and Thariq from the Claude Code team",
+      "url": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything",
+      "summary": "Earlier this month I hosted a fireside chat session at the AI Engineer World's Fair with Cat Wu and Thariq Shihipar from Anthropic's Claude Code team. We talked about Claude Code, Claude Tag, Fable, coding agent security, evals, tool design, and how Anthropic use these tools themselves.\nThe full video of the session is now available on YouTube. Below is an edited copy of the transcript, with extra links and my own bolded highlights.\n \n\nA few top-level notes if you don't want to watch the video o",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-21",
+      "summary_zh": "Simon Willison在AI Engineer World's Fair与Anthropic Claude Code团队成员Cat Wu和Thariq Shihipar进行了一场炉边对话，深入探讨了Claude Code、Claude Tag、Fable等工具的开发思路，重点讨论了编码代理的安全性问题、评估方法以及Anthropic内部如何使用这些工具的实践经验。",
+      "why_matters": "这是了解Claude Code团队内部思考和产品设计理念的难得机会，适合关注AI编程工具和代理安全的技术人员观看。",
+      "tags": "Claude Code, AI编程工具, Anthropic, 编码代理",
+      "id": 972,
+      "added_at": "2026-07-22 03:13:11"
+    },
+    {
+      "title": "Nativ: Run AI models locally on your Mac",
+      "url": "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
+      "summary": "Nativ: Run AI models locally on your Mac\nPrince Canuma is the developer behind the excellent MLX-VLM Python library for running vision-LLMs using MLX on a Mac.\nI'm really excited about his new project, which wraps MLX in a full macOS desktop application. It's similar in shape to LM Studio, providing both a chat interface and a localhost API server for accessing models.\nThe app picked up MLX models I had already tried that were present in my Hugging Face cache directory, which was a nice touch.\n\n",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-21",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 970,
+      "added_at": "2026-07-22 03:13:11"
+    },
+    {
       "title": "Hermes Agent v0.19.0 (2026.7.20) — The Quicksilver Release",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.20",
       "source": "hermes-agent",
@@ -12454,5 +12610,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-21 13:24:52"
+  "last_updated": "2026-07-22 03:13:11"
 }
