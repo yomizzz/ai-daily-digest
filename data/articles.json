@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.19.0 (2026.7.20) — The Quicksilver Release",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.20",
+      "source": "hermes-agent",
+      "published": "2026-07-21",
+      "category": "hermes",
+      "summary_zh": "- 性能大幅提升：各平台首 token 响应时间降低约 80%，推理流默认启用\n- 桌面应用速度优化：markdown 流式渲染提速 14 倍，diff 虚拟化渲染，会话切换更流畅\n- TUI 终端界面支持 markdown 增量渲染\n- 新增 Bitwarden 和 1Password 密码管理器集成\n- 支持在终端内管理 Nous 订阅\n- 智能审批功能默认开启，可自动判断标记命令\n- 实时监控：可观察子代理工作过程\n- 持久化交付：响应通过持久账本机制，在网关崩溃时仍可恢复",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Why I Stopped \"Creating Content\"",
       "url": "https://refactoringenglish.com/blog/why-i-stopped-creating-content/",
       "summary": "The first time I saw Michelangelo&rsquo;s David in person, I wept. Never in my life have I witnessed a more beautiful piece of content.\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n \n \n\n\n\n\n\n\nI wasn&rsquo;t the only one who felt that way. Museum patrons all around me were looking up from their phones to admire David as well. Despite it being legacy content, David was so scrollstoppingly captivating that it generated stronger engagement than TikTok and Instagram combined, despite those platforms offering fresh",
@@ -12444,5 +12454,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-21 03:34:58"
+  "last_updated": "2026-07-21 13:24:52"
 }
