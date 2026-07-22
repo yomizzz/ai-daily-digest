@@ -1,6 +1,136 @@
 {
   "articles": [
     {
+      "title": "Amiga 1000: Ten years ahead of its time",
+      "url": "https://dfarq.homeip.net/amiga-1000-ten-years-ahead-of-its-time/?utm_source=rss&utm_medium=rss&utm_campaign=amiga-1000-ten-years-ahead-of-its-time",
+      "summary": "On July 23, 1985, Commodore introduced its Amiga 1000 computer. And let&#8217;s just say the world wasn&#8217;t ready for it yet. Dave Haynie, a Commodore engineer who worked on the later models, has said there was no such thing as\nThe post Amiga 1000: Ten years ahead of its time appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-07-22",
+      "summary_zh": "Amiga 1000于1985年由Commodore公司推出，被认为是当时技术远超时代的革命性产品。文章通过当时参与开发的工程师Dave Haynie的视角，回顾了这款计算机如何以其先进的图形和音频能力，在个人电脑历史上留下浓墨重彩的一笔，以及它为何在那个时代显得如此超前。",
+      "why_matters": "对于计算机历史爱好者和怀旧科技玩家来说，这是一篇了解80年代最具创新性个人电脑的入门好文。",
+      "tags": "Amiga 1000, Commodore, 复古电脑, 计算机历史",
+      "id": 1000,
+      "added_at": "2026-07-23 03:06:23"
+    },
+    {
+      "title": "The Subprime Data Center Crisis",
+      "url": "https://www.wheresyoured.at/the-subprime-data-center-crisis/",
+      "summary": "Thanks for reading this week&#x2019;s free Where&#x2019;s Your Ed At newsletter. Friday&#x2019;s premium newsletter will ask the simple question: Is Oracle dying?&#xa0;It&#x2019;s been one year since I launched the premium newsletter, and I&#x2019;ve decided to extend the discount",
+      "source": "wheresyoured.at",
+      "category": "blog",
+      "published": "2026-07-22",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 998,
+      "added_at": "2026-07-23 03:06:23"
+    },
+    {
+      "title": "When sine of x degrees equals sine of x radians",
+      "url": "https://www.johndcook.com/blog/2026/07/22/degrees-radians/",
+      "summary": "Ordinarily the sine of x radians and the sine of x degrees are very different numbers. Having your calculator in radian mode when it should be in degree mode, or vice versa, results in a major error. But sometimes it doesn&#8217;t matter. A trivial example is when x = 0. A more interesting example is [&#8230;]\nThe post When sine of x degrees equals sine of x radians first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-07-22",
+      "summary_zh": "文章探讨了一个有趣的数学问题——何时一个角的正弦值在弧度制和角度制下相等。作者从平凡解x=0出发，通过将角度转换为弧度（乘以π/180），建立一个方程进行求解，发现除了零之外还存在更精确的非平凡解，并且这些解的数值非常接近整数，这是一个令人惊讶的数学现象。",
+      "why_matters": "展示了一个看似平凡却蕴含深刻数学洞察的问题，揭示了弧度与角度制之间奇妙的数值关系。",
+      "tags": "数学, 三角函数, 弧度与角度制, 有趣的数学问题",
+      "id": 996,
+      "added_at": "2026-07-23 03:06:23"
+    },
+    {
+      "title": "Does creatine make you smarter?",
+      "url": "https://dynomight.net/creatine/",
+      "summary": "And why does the brain use creatine anyway?",
+      "source": "dynomight.net",
+      "category": "blog",
+      "published": "2026-07-22",
+      "summary_zh": "这篇文章探讨了肌酸（creatine）是否具有提升认知功能的作用，并深入分析了大脑为何会利用肌酸这一物质。作者从生物学机制出发，检视了相关科学研究证据，讨论了肌酸对大脑能量代谢的影响及其可能的认知益处。",
+      "why_matters": "如果你对脑科学、运动营养或认知增强感兴趣，这篇文章能帮你了解肌酸在认知领域的研究现状和科学依据。",
+      "tags": "肌酸, 认知科学, 大脑能量代谢, 营养学",
+      "id": 994,
+      "added_at": "2026-07-23 03:06:23"
+    },
+    {
+      "title": "Everyone Should Know SIMD",
+      "url": "https://mitchellh.com/writing/everyone-should-know-simd",
+      "summary": "",
+      "source": "mitchellh.com",
+      "category": "blog",
+      "published": "2026-07-22",
+      "summary_zh": "文章介绍 SIMD（单指令多数据）技术的基本概念和应用场景，解释这种并行计算方法如何通过一条指令同时处理多个数据来提升性能，并探讨为什么现代开发者应该了解这一技术原理。",
+      "why_matters": "适合想了解底层性能优化和并行计算的开发者，通俗易懂地入门 SIMD 概念。",
+      "tags": "SIMD, 并行计算, 性能优化, 底层原理",
+      "id": 992,
+      "added_at": "2026-07-23 03:06:23"
+    },
+    {
+      "title": "Scattered thoughts on social geolocation",
+      "url": "https://shkspr.mobi/blog/2026/07/scattered-thoughts-on-social-geolocation/",
+      "summary": "I want to be able to share my location with my friends on social media. Twitter (RIP) had a way to attach an optional location to a post. Facebook still lets me check in to venues. But neither ActivityPub (Mastodon) nor AT Protocol (BlueSky) allow me to do that.  I&#039;ve been banging on about this for a while so was delighted to be invited to chat with the GeoSocial Task Force on their monthly call. …",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-07-22",
+      "summary_zh": "文章讨论了社交媒体地理位置功能的现状。作者怀念Twitter曾提供的位置标记功能和Facebook的签到功能，并批评当前去中心化社交协议ActivityPub（Mastodon）和AT Protocol（BlueSky）都没有内置地理定位功能，无法满足用户分享位置的需求。",
+      "why_matters": "对于关注去中心化社交网络发展及隐私问题的用户，了解当前开放协议的局限性。",
+      "tags": "地理定位, 去中心化社交, ActivityPub, AT Protocol",
+      "id": 990,
+      "added_at": "2026-07-23 03:06:23"
+    },
+    {
+      "title": "Pluralistic: Trump's America can't even win a rigged game (22 Jul 2026)",
+      "url": "https://pluralistic.net/2026/07/22/table-flipper/",
+      "summary": "Today's links Trump's America can't even win a rigged game: America has created a post-American world. Hey look at this: Delights to delectate. Object permanence: \"Fagin\"; Scott McCloud on comics' future; Laurie Penny on Milo Yiannopoulos; Singaporean regulator rap; Conservatives as bitter rubes. Upcoming appearances: Edinburgh, Sydney, Melbourne, Brighton, London, South Bend. Recent appearances: Where I've been. Latest books: You keep readin' em, I'll keep writin' 'em. Upcoming books: Like I sa",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-07-22",
+      "summary_zh": "本文分析了美国在全球格局中影响力的相对衰落，指出即使在有利于美国的国际秩序下，美国也难以维持其主导地位。文章还推荐了多篇关于漫画未来、网络文化评论及媒体批评的精彩文章，涵盖从创作者视角到政治评论的多元话题。",
+      "why_matters": "如果你关心国际政治格局变化和媒体文化评论，这篇文章提供了独特的批判性视角和丰富的延伸阅读资源。",
+      "tags": "国际政治, 媒体评论, 文化批评",
+      "id": 988,
+      "added_at": "2026-07-23 03:06:23"
+    },
+    {
+      "title": "Not just development, distribution of software may change as well",
+      "url": "http://antirez.com/news/170",
+      "summary": "Even if you are as averse to semver as I used to be in the course of my programming activity, you can still think of open source software distribution as something that used to follow a fixed number of steps. There is a branch where developments happen, and this branch oftentimes happens to be not really ready for reliable work. Then you freeze the developments for a certain amount of time (even if, in the meantime, the work can continue on some new unstable branch), fix bugs, ask people to test",
+      "source": "antirez.com",
+      "category": "blog",
+      "published": "2026-07-22",
+      "summary_zh": "文章探讨开源软件分发模式可能发生的变革。作者从对语义化版本控制(semver)的反思出发，指出传统开源软件遵循的“开发分支→发布”的固定流程正在发生改变，并分析了这一趋势对开源生态的潜在影响。",
+      "why_matters": "antirez作为Redis创始人，从资深开源开发者的视角分享对软件分发未来的洞察，值得关注开源实践的开发者阅读。",
+      "tags": "开源软件, 软件分发, 版本管理",
+      "id": 986,
+      "added_at": "2026-07-23 03:06:23"
+    },
+    {
+      "title": "LG to Ban Residential Proxies from Smart TV Apps",
+      "url": "https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps/",
+      "summary": "The home appliance giant LG Electronics USA said this week it plans to suspend any apps built for its smart TVs that turn one's television into an always-on residential proxy node. The move comes less than a month after researchers found that more than 42 percent of games and other apps available for download on LG's webOS store allow unknown third-parties to route their Internet traffic through a user's TV.",
+      "source": "krebsonsecurity.com",
+      "category": "security",
+      "published": "2026-07-22",
+      "summary_zh": "LG电子美国公司宣布将禁止任何将智能电视变为住宅代理节点的应用程序。此前安全研究发现，大量智能电视应用存在将用户设备变成代理节点的安全隐患，可能被滥用于网络攻击等非法活动。LG此次主动采取措施，旨在保护用户隐私和网络安全。",
+      "why_matters": "了解智能电视隐私安全风险及行业应对措施，对于智能家居用户具有重要参考价值。",
+      "tags": "智能电视, 网络安全, 隐私保护",
+      "id": 984,
+      "added_at": "2026-07-23 03:06:23"
+    },
+    {
+      "title": "Open Sauce and GPS time were my summer AI Antiseptics",
+      "url": "https://www.jeffgeerling.com/blog/2026/open-sauce-gps-time-badge/",
+      "summary": "In the midst of our AI slop revolution, traveling to the West coast for Open Sauce this past weekend was the perfect antiseptic for rising costs, summer heat, and online divisiveness.\nIt's ironic, then, that I used Claude to vibe code my Tufty GPS Time Badge.\n\n\n\nPartly due to time constraints, and partly because I wanted to see if I could complete a personal project end-to-end, without editing a line of code, I throw my requirements at Claude and ultimately came up with this 2141-line MicroPytho",
+      "source": "jeffgeerling.com",
+      "category": "blog",
+      "published": "2026-07-22",
+      "summary_zh": "作者参加了在西海岸举办的Open Sauce活动，认为这是对抗AI垃圾信息、上涨成本、酷暑和网上对立氛围的完美“消毒剂”。然而颇具讽刺意味的是，他随后使用Claude AI通过“氛围编码”方式开发了一个Tufty GPS时间徽章项目。",
+      "why_matters": "文章将技术实践与反技术潮流的反思相结合，展现了作者在AI时代寻找平衡的独特视角。",
+      "tags": "AI编程, Open Sauce, 个人项目",
+      "id": 982,
+      "added_at": "2026-07-23 03:06:23"
+    },
+    {
       "title": "Blog Jamboree 2026: The Winners",
       "url": "https://www.experimental-history.com/p/blog-jamboree-2026-the-winners",
       "summary": "yeehaw",
@@ -12610,5 +12740,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-22 13:23:33"
+  "last_updated": "2026-07-23 03:06:23"
 }
