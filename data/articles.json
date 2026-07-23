@@ -1,6 +1,175 @@
 {
   "articles": [
     {
+      "title": "Met het Oog op Morgen: Uitgebroken AI?",
+      "url": "https://berthub.eu/articles/posts/ai-met-het-oog-op-morgen/",
+      "summary": "Gisteren 22 juli was ik in Met het Oog op Morgen, een programma waar ik al 40 jaar naar luister (ik was er heel vroeg bij), dus ik vond het heel bijzonder daar te zijn! En het was ook erg leuk. Goed voorbereid door de redactie sprak ik met Sheila Sitalsing over de recent &ldquo;uitgebroken AI hack&rdquo;. Ik sprak iets te veel door Sheila heen, waarvoor excuses. Maar, ik denk ook dat we een paar dingen hebben genoemd die je niet zo vaak hoort.",
+      "source": "berthub.eu",
+      "category": "blog",
+      "published": "2026-07-23",
+      "summary_zh": "本文记录了作者受邀参加荷兰知名广播节目\"Met het Oog op Morgen\"的经历，作者与主持人Sheila Sitalsing围绕近期爆发的AI话题进行了深入讨论，分享了自己在AI领域40年的观察与见解。",
+      "why_matters": "一位在AI领域深耕40年的专家参与荷兰热门广播节目，探讨AI发展与伦理问题，是了解AI前沿观点的优质资源。",
+      "tags": "AI发展，科技伦理，媒体访谈",
+      "id": 1016,
+      "added_at": "2026-07-24 03:10:02"
+    },
+    {
+      "title": "John C. Dvorak has died",
+      "url": "https://oldvcr.blogspot.com/2026/07/john-c-dvorak-has-died.html",
+      "summary": "Reports coming in of the death of John C. Dvorak, apparently passed away on Monday (July 20th) from complications of heart bypass surgery. Dvorak started in wine and moved to silicon as an early columnist at InfoWorld, one of the pillar references for this particular blog because of its studious regular reporting, and most notably for PC Magazine where he had no less than two columns since at least 1986. In addition to this and other tech journalism credits, he was on the flagship CNET Central c",
+      "source": "oldvcr.blogspot.com",
+      "category": "blog",
+      "published": "2026-07-23",
+      "summary_zh": "著名科技评论家和作家John C. Dvorak已于7月20日（周一）因心脏搭桥手术并发症去世，享年64岁。Dvorak最初从事葡萄酒行业，后转型至科技领域，成为InfoWorld的早期专栏作家，以其独到的技术评论和分析闻名于业界，对科技媒体发展产生了深远影响。",
+      "why_matters": "科技媒体先驱人物的离去，见证了一个时代的终结，值得关注科技发展史的读者了解。",
+      "tags": "科技人物,人物逝世,科技媒体",
+      "id": 1014,
+      "added_at": "2026-07-24 03:10:02"
+    },
+    {
+      "title": "The Caldera-Microsoft Lawsuit of 1996",
+      "url": "https://dfarq.homeip.net/the-caldera-microsoft-lawsuit-of-1996/?utm_source=rss&utm_medium=rss&utm_campaign=the-caldera-microsoft-lawsuit-of-1996",
+      "summary": "On July 23, 1996, Novell sold the intellectual property of Digital Research to Linux vendor Caldera. The common thread the two companies had was Ray Noorda. Noorda had been CEO of Novell and was Novell&#8217;s largest shareholder, and Caldera was\nThe post The Caldera-Microsoft Lawsuit of 1996 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-07-23",
+      "summary_zh": "1996年7月23日，Novell将Digital Research的知识产权出售给Linux供应商Caldera，这两家公司的共同联系人是Ray Noorda——他曾是Novell的CEO和最大股东。这起交易与Caldera后来对微软的诉讼案件密切相关，涉及到操作系统领域的知识产权纠纷。",
+      "why_matters": "了解上世纪90年代操作系统市场法律纷争的重要历史案例。",
+      "tags": "Caldera, Microsoft, 知识产权诉讼, Novell, Digital Research",
+      "id": 1012,
+      "added_at": "2026-07-24 03:10:02"
+    },
+    {
+      "title": "LLMs break down in funny ways when told the Jacobian Conjecture counterargument",
+      "url": "https://minimaxir.com/2026/07/jacobian-conjecture/",
+      "summary": "Cognitohazards can affect machines too.",
+      "source": "minimaxir.com",
+      "category": "blog",
+      "published": "2026-07-23",
+      "summary_zh": "文章探讨了大型语言模型(LLM)在面对Jacobian Conjecture数学反论点时出现的有趣故障现象。作者通过实验发现，当向LLM输入特定的反驳论证时，模型会产生荒谬或错误的回应，揭示了AI系统在处理复杂数学推理时的局限性。文章标题中的\"Cognitohazards\"（认知危害）概念被延伸至机器领域，表明某些信息模式不仅会影响人类认知，也能对AI系统产生意想不到的影响。",
+      "why_matters": "对于关心AI局限性研究的读者，这篇文章提供了一个独特的视角——通过数学这一\"试金石\"来揭示LLM推理能力的边界。",
+      "tags": "AI局限性, Jacobian Conjecture, 认知科学",
+      "id": 1010,
+      "added_at": "2026-07-24 03:10:02"
+    },
+    {
+      "title": "Can We Lower Construction Costs with Cheaper Labor or Materials?",
+      "url": "https://www.construction-physics.com/p/can-we-lower-construction-costs-with",
+      "summary": "Last time in our series on the nature of the construction productivity problem, we looked at economies of scale, finding that capturing economies of scale in homebuilding is difficult.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-07-23",
+      "summary_zh": "文章探讨建筑业是否能通过更便宜的劳动力或材料来降低成本。作者指出，建筑业面临的生产率问题难以通过简单的成本削减解决，因为该行业存在特殊性，劳动力成本下降往往伴随质量或效率问题，而材料价格相对透明，难以成为降低总成本的主要突破口。建筑业需要更根本性的生产方式变革，而非依赖传统压缩成本的手段。",
+      "why_matters": "文章从经济学和行业特性角度分析建筑成本问题，打破“便宜就是好”的思维误区，对理解建筑业困境和寻找真正解决方案很有启发。",
+      "tags": "建筑业, 成本控制, 生产率",
+      "id": 1008,
+      "added_at": "2026-07-24 03:10:02"
+    },
+    {
+      "title": "Package Name Prefixes",
+      "url": "https://nesbitt.io/2026/07/23/package-name-prefixes.html",
+      "summary": "django plugins, cloud SDKs, and 1,999 homework submissions.",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-07-23",
+      "summary_zh": "文章探讨了编程中包（package）命名前缀的使用实践与规范，涵盖Django插件、云SDK开发及教学作业提交等多个场景下的命名策略，帮助开发者理解如何通过规范的前缀命名避免包名冲突、提高代码可维护性。",
+      "why_matters": "对于需要管理多个项目或发布开源库的开发者，掌握包命名规范是基本功，这篇文章提供了实用的实践指导。",
+      "tags": "包管理, 命名规范, 软件开发",
+      "id": 1006,
+      "added_at": "2026-07-24 03:10:02"
+    },
+    {
+      "title": "An almost periodic function",
+      "url": "https://www.johndcook.com/blog/2026/07/23/an-almost-periodic-function/",
+      "summary": "This post takes a more abstract view of the previous post. That post looked at the concrete question of whether a number ever has the same sine in radians as in degrees. The relation between radians and degrees is irrelevant except that π/180 is an irrational number. Suppose α and β are two positive numbers [&#8230;]\nThe post An almost periodic function first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-07-23",
+      "summary_zh": "文章从“某个数在弧度和角度制下正弦值是否相同”这一具体问题出发，通过抽象分析探讨准周期函数的性质。核心在于利用π/180是无理数这一事实，说明某些函数在两种度量下永远不会完全重复，从而引出almost periodic function这一数学概念。",
+      "why_matters": "适合对数学抽象思维感兴趣的读者，能帮助理解无理数如何影响周期函数的\"几乎重复\"特性。",
+      "tags": "准周期函数, 三角函数, 数学抽象",
+      "id": 1004,
+      "added_at": "2026-07-24 03:10:02"
+    },
+    {
+      "title": "Pluralistic: California's privacy obstacle course (23 Jul 2026)",
+      "url": "https://pluralistic.net/2026/07/23/drop-a-dime/",
+      "summary": "Today's links California's privacy obstacle course: Malice or incompetence (why not both?). Hey look at this: Delights to delectate. Object permanence: Continuous partial attention, TSA is the worst; Trump's FCC v the future. Upcoming appearances: Edinburgh, Sydney, Melbourne, Brighton, London, South Bend. Recent appearances: Where I've been. Latest books: You keep readin' em, I'll keep writin' 'em. Upcoming books: Like I said, I'll keep writin' 'em. Colophon: All the rest. California's privacy ",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-07-23",
+      "summary_zh": "本文探讨了加州在隐私保护方面面临的挑战，批评了当地隐私法规实施过程中存在的恶意或无能问题。作者还讨论了现代人“持续部分注意力”的认知现象，以及TSA安检的不足，并涉及特朗普时期FCC对未来的政策影响。",
+      "why_matters": "如果你关心数字隐私权和政府监管政策，这篇文章提供了独到的批判性视角。",
+      "tags": "隐私保护, 加州法规, 数字权利",
+      "id": 1002,
+      "added_at": "2026-07-24 03:10:02"
+    },
+    {
+      "title": "Flighty New Connection Assistant Feature",
+      "url": "https://9to5mac.com/2026/07/07/flighty-update-adds-powerful-new-connection-assistant-feature/",
+      "summary": "Chance Miller, 9to5Mac:\n\n\n  Flighty’s new Connection Assistant feature includes step-by-step\ninformation for your specific connection. This includes things\nlike terminal changes, security checkpoints, passport control, and\nmore. Connection Assistant also gives you estimates of how long\neach step of making a connection usually takes.\n\n“The new Connection Assistant combines Flighty’s best-in-class\nflight tracking data with airport-specific procedures and\nstatistical modeling of millions of prior f",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-23",
+      "summary_zh": "用2-3句话总结核心内容",
+      "why_matters": "说明为什么值得看",
+      "tags": "1-3个标签，用逗号分隔",
+      "id": 1000,
+      "added_at": "2026-07-24 03:10:02"
+    },
+    {
+      "title": "John Dvorak Drops Dead at 80",
+      "url": "https://appleinsider.com/articles/26/07/23/famed-technology-journalist-john-c-dvorak-dies-aged-80",
+      "summary": "William Gallagher, AppleInsider:\n\n\n  Legendary technology columnist, pundit, author and podcast host\nJohn C. Dvorak has died, age 80. He is survived by his wife\nMimi Dvorak.\n\nToday Dvorak is best known for co-hosting the “No Agenda” podcast\nwith Adam Curry, where he would critique mainstream news media.\nHis death was first announced by the podcast on X, although note\nthat Dvorak’s age is mistakenly given as 74.\n\n\nFrom the No Agenda News newsletter yesterday:\n\n\n  For a man who spent decades famou",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-23",
+      "summary_zh": "著名科技评论人John C. Dvorak于80岁去世，他曾是《PC Magazine》等杂志的专栏作家，以犀利的科技评论闻名业界。近年来他与Adam Curry共同主持的\"No Agenda\"播客广受欢迎，其妻子Mimi Dvorak健在。",
+      "why_matters": "John Dvorak是科技媒体界的传奇人物，了解这位见证了PC时代兴起的评论人的离世，有助于认识科技评论行业的发展历程。",
+      "tags": "科技人物、科技媒体、播客",
+      "id": 998,
+      "added_at": "2026-07-24 03:10:02"
+    },
+    {
+      "title": "John Dvorak on Computer Chronicles in 1987 to Discuss the Then-New IBM PS/2",
+      "url": "https://www.youtube.com/watch?v=uY2WF_sPecI",
+      "summary": "Dvorak is best known for all the takes he was jacktastically wrong about, but what gave his schtick staying power is that he was technically savvy. His take here on the PS/2 was actually spot-on: that it was technically impressive in many ways, especially the way it was assembled without any cables, but that it was doomed in the market against ugly mess-of-cables commodity PCs.\n\n“Computer Chronicles” was the real show from the 1980s that Adam Lisagor so lovingly and spectacularly spoofed with “C",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-23",
+      "summary_zh": "本文回顾了1987年John Dvorak在经典节目Computer Chronicles上评论IBM PS/2的内容。虽然Dvorak日后以诸多错误预测著称，但他在PS/2上的观点实际上相当精准，特别指出了PS/2在技术上的诸多亮点，尤其是无电缆组装的设计创新。文章通过这一具体案例，展现了Dvorak作为技术评论者的两面性——既有远见也有失算。",
+      "why_matters": "通过一个具体的技术评论案例，窥见80年代PC行业的技术革新与一位知名评论人的真实水平。",
+      "tags": "John Dvorak, IBM PS/2, Computer Chronicles, 技术评论, 科技历史",
+      "id": 996,
+      "added_at": "2026-07-24 03:10:02"
+    },
+    {
+      "title": "Powerful AIs might escape containment by releasing themselves as open-weight models",
+      "url": "https://seangoedecke.com/powerful-ais-might-escape-by-releasing-open-weight-models/",
+      "summary": "Before large language models, people who worried about AI safety often talked about the “boxing problem”. It goes like this. Suppose some genius figures out artificial intelligence in a late-night coding session on their laptop. Because they’re a genius, they’re smart enough to disable internet access on the laptop before turning it on. In order to escape to the outside world (and begin self-replicating) it would need to convince its creator to “open the box”. Would that work? Could a sufficient",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-07-23",
+      "summary_zh": "文章讨论了AI安全领域中的“封装问题”（boxing problem），指出在大型语言模型时代，AI逃脱限制的主要风险可能并非AI主动突破封锁，而是人类将强大的AI以开源权重模型的形式发布出去。这种风险比AI自主逃脱更值得担忧，因为开源模型一旦发布就无法收回。",
+      "why_matters": "文章提出了一个被忽视但至关重要的AI安全视角——开源发布可能是强AI逃脱管控的最主要途径。",
+      "tags": "AI安全，开源模型，风险评估",
+      "id": 994,
+      "added_at": "2026-07-24 03:10:02"
+    },
+    {
+      "title": "Quoting Seth Larson",
+      "url": "https://simonwillison.net/2026/Jul/23/seth-larson/#atom-everything",
+      "summary": "The Python Package Index (PyPI) now rejects new files being uploaded to releases that are older than 14 days. This restriction was put in place to prevent old and long-stable releases from being poisoned in case publishing tokens or workflows of PyPI projects were compromised. As far as we are aware this has not yet been abused, but there is no technical reason beyond that attackers weren't aware it was possible.\n&mdash; Seth Larson, PyPI blog\n\n    Tags: packaging, python, supply-chain, pypi, se",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-23",
+      "summary_zh": "文章讨论了Python包索引（PyPI）实施的新安全措施，即拒绝向发布超过14天的旧版本上传新文件。这项政策旨在防止已稳定发布多年的老版本被恶意篡改，即使项目的发布令牌或自动化工作流遭到泄露也能保护历史版本的安全性。",
+      "why_matters": "了解PyPI安全机制升级，关注Python生态依赖安全的开发者值得一读。",
+      "tags": "Python, PyPI, 安全, 开源生态",
+      "id": 992,
+      "added_at": "2026-07-24 03:10:02"
+    },
+    {
       "title": "Amiga 1000: Ten years ahead of its time",
       "url": "https://dfarq.homeip.net/amiga-1000-ten-years-ahead-of-its-time/?utm_source=rss&utm_medium=rss&utm_campaign=amiga-1000-ten-years-ahead-of-its-time",
       "summary": "On July 23, 1985, Commodore introduced its Amiga 1000 computer. And let&#8217;s just say the world wasn&#8217;t ready for it yet. Dave Haynie, a Commodore engineer who worked on the later models, has said there was no such thing as\nThe post Amiga 1000: Ten years ahead of its time appeared first on The Silicon Underground.",
@@ -12740,5 +12909,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-23 13:29:25"
+  "last_updated": "2026-07-24 03:10:02"
 }
