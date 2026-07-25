@@ -1,6 +1,175 @@
 {
   "articles": [
     {
+      "title": "Reading List 07/25/26",
+      "url": "https://www.construction-physics.com/p/reading-list-072526",
+      "summary": "China&#8217;s EV subsidies, the future of aeroderivative gas turbines, a US-Saudi nuclear deal, defective roadway guardrails, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-07-25",
+      "summary_zh": "本文为Construction Physics网站的阅读清单，涵盖了中国电动车补贴政策、航空衍生燃气轮机的技术前景、美沙核能协议以及道路护栏质量等议题，汇集了建筑与物理工程领域的多个热点话题，为读者提供行业资讯速览。",
+      "why_matters": "适合快速了解建筑物理与工程领域近期重要动态的资讯合集。",
+      "tags": "工程建设，能源技术，安全监管",
+      "id": 1043,
+      "added_at": "2026-07-26 03:02:21"
+    },
+    {
+      "title": "This Week in Package Management: 25 July 2026",
+      "url": "https://nesbitt.io/2026/07/25/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-07-25",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1041,
+      "added_at": "2026-07-26 03:02:21"
+    },
+    {
+      "title": "Excel column numbering",
+      "url": "https://www.johndcook.com/blog/2026/07/25/excel-column-numbering/",
+      "summary": "I was working with a wide spreadsheet from a client the other day and I had to convert between Excel column labels and column numbers. I had never paid attention to how Excel labels columns and implicitly thought it was base 26 using letters rather than digits. But then I realized that&#8217;s not right. Excel [&#8230;]\nThe post Excel column numbering first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-07-25",
+      "summary_zh": "本文探讨了Excel列标签与列编号之间的转换问题。作者原本以为Excel使用的是类似26进制的系统（用字母代替数字0-25），但深入分析后发现实际情况与直觉不符。Excel的列编号系统有其独特的编码规则，与常规进制转换有所不同。",
+      "why_matters": "简短的技术分析，揭示了Excel列编号系统中容易被忽视的细节，适合程序员和技术爱好者阅读。",
+      "tags": "Excel, 进制转换, 算法",
+      "id": 1039,
+      "added_at": "2026-07-26 03:02:21"
+    },
+    {
+      "title": "Some Quick Thoughts on EMF Camp 2026",
+      "url": "https://shkspr.mobi/blog/2026/07/some-quick-thoughts-on-emf-camp-2026/",
+      "summary": "I&#039;ve performed a talk at the last three EMFs - so this time I decided to go purely as a tourist. It made things much more relaxing. No waking up from a stress dream that my laptop didn&#039;t work. No casually dropping my talk into every conversation to build up an audience. No queueing for the loos five minutes before going on. No adrenaline spikes or come downs.  It was bliss!  After several…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-07-25",
+      "summary_zh": "作者连续参加三届EMF（电磁场）大会并做过演讲后，这次选择纯粹以游客身份参加，发现体验更加轻松自在。没有了演讲压力，不再需要为演讲做各种准备和推广，也不用在谈话中刻意提及来吸引观众，可以真正享受活动本身的乐趣。",
+      "why_matters": "适合所有参与社区活动的人阅读，提供了关于如何平衡参与与放松的有趣视角。",
+      "tags": "EMF Camp, 技术大会, 个人感悟",
+      "id": 1037,
+      "added_at": "2026-07-26 03:02:21"
+    },
+    {
+      "title": "Pluralistic: Apple's robo-repo (25 Jul 2026)",
+      "url": "https://pluralistic.net/2026/07/25/cruel-cruelty-oh-cruelty/",
+      "summary": "Today's links Apple's robo-repo: Privatizing the risk premium, socializing its costs. Hey look at this: Delights to delectate. Object permanence: Printed batteries; Monopoly credit cards; Mapping airport power outlets; EMI loves pirates; Mexican indigenous phone co-op; Sewer cover textiles; Surge pricing v antitrust; Carbon offsets v forest fires; Charter schools as money laundries. Upcoming appearances: Edinburgh, Sydney, Melbourne, Brighton, London, South Bend. Recent appearances: Where I've b",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-07-25",
+      "summary_zh": "本文延续Pluralistic一贯的风格，延续Cory Doctorow对大型科技公司的批评视角，深入分析了苹果公司“机器人项目”（robo-repo）的商业模式。核心观点指出苹果将高风险项目的潜在损失转嫁给社会公众，同时将利润私有化，这种做法本质上是将风险溢价社会化、成本公共化的体现。文章还整合了多个科技趣闻，包括印刷电池、机场电源插座地图等创新话题。",
+      "why_matters": "Cory Doctorow对科技巨头的犀利批评视角，揭示了大型科技公司“收益私有化、风险社会化”的运作逻辑。",
+      "tags": "苹果公司, 科技批评, 商业模式, Cory Doctorow",
+      "id": 1035,
+      "added_at": "2026-07-26 03:02:21"
+    },
+    {
+      "title": "Being Linux Torvalds",
+      "url": "http://antirez.com/news/171",
+      "summary": "(This blog post was adapted from the transcription obtained from my YouTube video at https://www.youtube.com/watch?v=l6lxgYeVZqs)\n\nWhen Linus Torvalds developed the first Linux kernel, he had studied the Minix sources, he had studied computer architecture, he had the base knowledge needed, and he was obviously a very brilliant programmer. But that operation of writing a minimal yet working Unix kernel for the 386 (at the beginning Linux was, let's say, mono-architecture) was something within the",
+      "source": "antirez.com",
+      "category": "blog",
+      "published": "2026-07-25",
+      "summary_zh": "本文由Redis作者antirez撰写，通过YouTube视频转录而成，深入探讨了Linus Torvalds在开发首个Linux内核时所具备的技术储备与背景条件。文章指出，Torvalds并非横空出世的天才，而是通过系统学习Minix源码和计算机架构知识，积累了扎实的基础，最终催生了Linux内核的诞生。",
+      "why_matters": "开源领域传奇开发者的视角解读另一位传奇人物，对于理解技术成长路径和开源文化极有价值。",
+      "tags": "Linux Torvalds, 开源历史, 技术人物, antirez",
+      "id": 1033,
+      "added_at": "2026-07-26 03:02:21"
+    },
+    {
+      "title": "bIRC — A New Native IRC Client for Mac",
+      "url": "https://birc.app/",
+      "summary": "For a long time the best native Mac IRC client was Textual, but although Textual still works, it’s been sunset by the author. Not to fear, however. Fredrik Blank just launched bIRC:\n\n\n  Creating an IRC client in 2026 is not something that will pay the\nbills : ) It would be just for the joy of programming. But the\namount of work involved always made me throw the thought aside.\n\nBut one night when I had nothing better to do, I started\nimplementing the good old spec in Swift (RFC 2812). And then I ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-25",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1031,
+      "added_at": "2026-07-26 03:02:21"
+    },
+    {
+      "title": "Measles Cases Hit New Record in U.S., as Stupid-Americans Reject Vaccines",
+      "url": "https://www.nytimes.com/2026/07/24/well/measles-record-united-states-numbers.html?unlocked_article_code=1.0VA.4jBf.vqAYN4Bwu807",
+      "summary": "Teddy Rosenbluth, reporting for The New York Times:\n\n\n  On Friday, the Centers for Disease Control and Prevention\nannounced that there have been 2,318 confirmed cases of measles so\nfar this year. The case count toppled the record set last\nyear, when measles infected more than 2,200 Americans and\nkilled two unvaccinated children. More measles\ncases have been reported in the United States in the last two\nyears than in all the years from 2000 through 2024 combined.\n\nReversing course on measles woul",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-25",
+      "summary_zh": "美国疾病控制与预防中心宣布，截至今年美国已确诊2318例麻疹病例，刷新了去年创下的超过2200人感染的记录。病例激增与部分社区疫苗接种率下降密切相关。专家警告麻疹具有高度传染性，接种疫苗是预防的关键措施。",
+      "why_matters": "了解当前美国公共卫生危机的最新动态，以及疫苗接种对公共健康的重要性。",
+      "tags": "麻疹疫情, 疫苗接种, 公共卫生",
+      "id": 1029,
+      "added_at": "2026-07-26 03:02:21"
+    },
+    {
+      "title": "Apple Maps to Power Navigation Experience for Ford’s New EVs",
+      "url": "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/",
+      "summary": "Apple Newsroom:\n\n\n  Apple and Ford today announced that Apple Maps will be integrated\ndirectly into Ford’s upcoming Universal Electric Vehicle (UEV)\nPlatform through Apple’s new MapKit for Automotive SDK. Coming to\nFord’s UEV Platform in 2027, this integration will deliver a\nbeautiful and easy-to-use navigation experience powered by Apple\nMaps directly to the vehicle’s displays. Road-level Maps\ninformation will also enable Ford’s Latitude AI team to build a\nseamless hands-free driving experience",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-25",
+      "summary_zh": "苹果与福特今日宣布达成合作，Apple Maps将整合至福特全新通用电动车平台（UEV），通过苹果新推出的MapKit for Automotive SDK实现深度集成。该功能预计2027年随UEV平台一同推出，将为用户提供原生、原生级的导航体验。苹果此举标志着其汽车软件业务持续扩张，进一步深化在智能车载系统领域的布局。",
+      "why_matters": "了解苹果如何通过软件服务渗透传统车企，加速汽车智能化竞争。",
+      "tags": "Apple Maps, 福特汽车, 智能车载系统, MapKit",
+      "id": 1027,
+      "added_at": "2026-07-26 03:02:21"
+    },
+    {
+      "title": "Court Grants SerpApi’s Motion to Dismiss Google Lawsuit",
+      "url": "https://serpapi.com/blog/google-v-serpapi-the-court-granted-our-motion-to-dismiss/",
+      "summary": "Julien Khaleghy, CEO of SerpApi:\n\n\n  The U.S. District Court for the Northern District of California\ngranted our motion to dismiss Google’s lawsuit, marking a win not\njust for SerpApi, but for all who depend on an open internet.\nWe’re pleased that the court rejected Google’s attempts to expand\nthe DMCA to assert control over access to public pages. The\ninternet’s founding principle — open access to usable information — is essential to driving innovation and ensuring everyone\nbenefits from the pr",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-25",
+      "summary_zh": "美国加州北区联邦地区法院批准了搜索引擎API服务提供商SerpApi的驳回动议，正式驳回Google提起的诉讼。SerpApi首席执行官Julien Khaleghy表示，这不仅是SerpApi的胜利，也关乎所有依赖开放互联网的人的权益。法院同时拒绝了Google试图扩展某些权利的主张。",
+      "why_matters": "此案涉及科技巨头与第三方服务商之间的权益边界，对理解互联网开放性原则与商业创新的平衡具有重要参考价值。",
+      "tags": "SerpApi，Google诉讼，开放互联网",
+      "id": 1025,
+      "added_at": "2026-07-26 03:02:21"
+    },
+    {
+      "title": "EU Fines Google $1 Billion for DMA Competition Violations, Including Making Search Results More Useful",
+      "url": "https://digital-markets-act.ec.europa.eu/commission-fines-google-eur890-million-breaches-digital-markets-act-2026-07-23_en",
+      "summary": "The European Commission on Thursday:\n\n\n  The Commission found that Google gives preferential treatment to\nits own services, including shopping, hotels, transport and sports\nresults, over those of third parties in Google Search, thereby\nbreaching its obligations under the DMA.\n\nGoogle displays its own services more prominently in search\nresults, including at the top of the search results page or by\nusing enhanced visuals and filters, while similar third-party\nservices do not have the same promine",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-25",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1023,
+      "added_at": "2026-07-26 03:02:21"
+    },
+    {
+      "title": "‘AI Mania Is Eviscerating Global Decision-Making’",
+      "url": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/",
+      "summary": "Fascinating essay by Nikhil Suresh:\n\n\n  On a trip overseas, I had the privilege of a meeting with one of\nthe Fortune 500 executives mentioned at the beginning of the post,\nwho will remain anonymous so that they are not executed by firing\nsquad by their board. As we were chatting, it became clear that\nthey were very switched-on and technically competent, and they\nalso happened to be at a company that had committed to the usual\nbattery of exorbitant claims about their recent innovations — we’ve 10",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-25",
+      "summary_zh": "文章探讨了当前AI热潮对全球商业决策的负面影响，指出Fortune 500高管在AI浪潮的压力下做出糟糕决策的现象。作者通过与一位匿名高管的会面经历，揭示了企业盲目追逐AI趋势而忽视实际业务价值的危险倾向。",
+      "why_matters": "文章以独特的视角揭示了AI热潮下的商业决策危机，对理解当前科技泡沫具有重要参考价值。",
+      "tags": "AI热潮, 商业决策, 科技反思",
+      "id": 1021,
+      "added_at": "2026-07-26 03:02:21"
+    },
+    {
+      "title": "Quoting Boris Cherny",
+      "url": "https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything",
+      "summary": "More than any of these eval scores, what is most exciting to me is something else: Opus 5 is our least prompt injectable model yet. It is a bit buried in the system card, but across PI evals and red teaming, Opus 5 is very hard to prompt inject successfully.\n&mdash; Boris Cherny, here's that System Card section, page 73\n\n    Tags: prompt-injection, anthropic, claude, generative-ai, ai, llms, boris-cherny",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-25",
+      "summary_zh": "Boris Cherny指出，相比各种评估分数，Opus 5最令人兴奋的亮点是其出色的抗prompt injection能力。该模型在PI评估和红队测试中表现出色，prompt injection攻击成功率极低，尽管这一优势在官方系统文档中被淡化了。",
+      "why_matters": "对于关注AI安全性的读者，这篇文章揭示了Opus 5在对抗prompt injection方面的突破性进展，是了解大模型安全发展的重要参考。",
+      "tags": "AI安全,Prompt Injection,Opus 5",
+      "id": 1019,
+      "added_at": "2026-07-26 03:02:21"
+    },
+    {
       "title": "Matrox",
       "url": "https://www.abortretry.fail/p/matrox",
       "summary": "Graphics for Professionals",
@@ -13091,5 +13260,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-25 13:18:52"
+  "last_updated": "2026-07-26 03:02:21"
 }
