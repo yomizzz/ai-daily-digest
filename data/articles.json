@@ -1,6 +1,45 @@
 {
   "articles": [
     {
+      "title": "Weekly Update 514: This Week in Data Breaches",
+      "url": "https://www.troyhunt.com/weekly-update-514/",
+      "summary": "The Origin Energy breach down here in Aus is all over the news this week, and as with many breaches, it&apos;s multi-faceted. You&apos;ve got them leading with \"don&apos;t worry, your credit card is fine\", the hacker leading with \"they didn&",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-07-26",
+      "summary_zh": "本期数据泄露周报重点报道了澳大利亚能源公司Origin Energy遭受的数据泄露事件，该事件成为本周新闻焦点。文章分析了数据泄露事件的多面性特点，涉及公司方面“信用卡信息未受影响”的安抚声明与黑客方面的不同说法之间的对比，揭示了此类事件信息传播的复杂性。",
+      "why_matters": "适合关注网络安全和数据隐私动态的读者快速了解本周重要数据泄露事件。",
+      "tags": "数据泄露, 网络安全, 隐私保护",
+      "id": 1036,
+      "added_at": "2026-07-27 03:05:22"
+    },
+    {
+      "title": "exp_q",
+      "url": "https://www.johndcook.com/blog/2026/07/26/exp-q/",
+      "summary": "The function expq(x) is defined by taking the power series for exp(x) and keeping only the terms whose index is a multiple of q. For example, exp2(x) keeps only the even-numbered terms in the exponential power series and so equals cosh(x). In general, The first sum uses Iverson&#8217;s bracket notation: a Boolean expression in brackets [&#8230;]\nThe post exp_q first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-07-26",
+      "summary_zh": "exp_q(x)函数通过对指数函数exp(x)的幂级数进行选择性求和得到，只保留索引为q的倍数的项。例如exp_2(x)仅保留偶数项，因此等于cosh(x)。该函数展示了通过简单的级数修改可以构造出新的特殊函数。",
+      "why_matters": "对于数学爱好者和需要处理特殊函数的研究者，了解这类通过级数构造的新函数有助于拓展对函数性质的理解。",
+      "tags": "数学, 幂级数, 特殊函数",
+      "id": 1034,
+      "added_at": "2026-07-27 03:05:22"
+    },
+    {
+      "title": "Book Review: Dungeon Crawler Carl by Matt Dinniman ★★⯪☆☆",
+      "url": "https://shkspr.mobi/blog/2026/07/book-review-dungeon-crawler-carl-by-matt-dinniman/",
+      "summary": "To call this derivative is an understatement. But that&#039;s what this genre demands; rehash all your favourite media properties into something new. It&#039;s the literary equivalent of having your Transformers™ fight your He-Man© toys.  The plot, such as it is, features the Vogon Constructor Fleet destroying Earth due to a late beurecratic appeal, forcing people to play The Hunger Games, while a Twitch …",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-07-26",
+      "summary_zh": "本文是对Matt Dinniman所著《Dungeon Crawler Carl》的书评。评论指出该作品虽然属于衍生性质，但这种风格正是此类作品的典型特征——将各种流行文化元素（如《变形金刚》《希曼》等）重新组合创新，融合了《银河系漫游指南》中的Vogon Constructor Fleet等设定，形成独特的类型文学风格。",
+      "why_matters": "适合喜欢流行文化混搭、轻松有趣奇幻冒险类型的读者。",
+      "tags": "书评, 奇幻小说, 流行文化",
+      "id": 1032,
+      "added_at": "2026-07-27 03:05:22"
+    },
+    {
       "title": "Reading List 07/25/26",
       "url": "https://www.construction-physics.com/p/reading-list-072526",
       "summary": "China&#8217;s EV subsidies, the future of aeroderivative gas turbines, a US-Saudi nuclear deal, defective roadway guardrails, and more.",
@@ -13260,5 +13299,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-26 13:36:26"
+  "last_updated": "2026-07-27 03:05:22"
 }
