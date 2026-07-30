@@ -1,6 +1,149 @@
 {
   "articles": [
     {
+      "title": "When Nintendo sued Blockbuster",
+      "url": "https://dfarq.homeip.net/when-nintendo-sued-blockbuster/?utm_source=rss&utm_medium=rss&utm_campaign=when-nintendo-sued-blockbuster",
+      "summary": "Here&#8217;s a late &#8217;80s memory you may not have thought about in a while. Do you remember going to the video rental store to rent a video game and getting the cartridge but not getting the instruction booklet? The reason\nThe post When Nintendo sued Blockbuster appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-07-30",
+      "summary_zh": "本文回顾了80年代末游戏租赁行业的一段有趣历史，讲述了消费者在音像店租借游戏卡带时只能拿到卡带而没有说明书的奇特现象。文章揭示了这一现象背后任天堂与百视达之间的法律纠纷，展现了早期游戏产业在版权保护和商业模式之间面临的冲突与博弈。",
+      "why_matters": "了解游戏产业早期版权保护历史的趣味窗口。",
+      "tags": "游戏产业, 知识产权, 80年代回忆",
+      "id": 1093,
+      "added_at": "2026-07-31 03:16:44"
+    },
+    {
+      "title": "Why Is Everyone Trying to Build a Solid-State Battery?",
+      "url": "https://www.construction-physics.com/p/why-is-everyone-trying-to-build-a",
+      "summary": "A battery technology that&#8217;s getting a lot of attention is solid-state batteries, lithium-ion batteries that replace the liquid electrolyte with a solid material.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-07-30",
+      "summary_zh": "固态电池是一种用固体材料替代传统液态电解质的锂离子电池技术，近年来成为能源领域的热门研究方向。相比传统锂电池，固态电池具有更高的能量密度、更安全（避免液态电解质易燃问题）、更长的循环寿命等潜在优势，吸引众多企业和研究机构投入研发。",
+      "why_matters": "帮助快速了解固态电池技术的基本概念、行业热度及主要优势，是入门该领域的简洁科普文。",
+      "tags": "固态电池，新能源汽车，电池技术",
+      "id": 1091,
+      "added_at": "2026-07-31 03:16:44"
+    },
+    {
+      "title": "Wheels, Bottles and Images",
+      "url": "https://nesbitt.io/2026/07/30/wheels-bottles-images.html",
+      "summary": "Any sufficiently advanced package manager is indistinguishable from a container registry.",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-07-30",
+      "summary_zh": "文章探讨了现代包管理器与容器镜像仓库之间的界限日益模糊的现象。随着包管理工具功能不断进化，它们在存储、分发和依赖解析等方面与容器注册表展现出越来越多的相似性。作者通过Wheels、Bottles等包格式与容器镜像的类比，阐述了这一技术演进趋势对软件生态的深远影响。",
+      "why_matters": "深入浅出地分析了包管理器和容器技术的融合趋势，适合关注DevOps和软件分发的技术人员阅读。",
+      "tags": "包管理器, 容器技术, 软件分发",
+      "id": 1089,
+      "added_at": "2026-07-31 03:16:44"
+    },
+    {
+      "title": "Why do OpenAI's GPT-2 weights beat mine?  Part two: the bugfix",
+      "url": "https://www.gilesthomas.com/2026/07/why-do-openai-gpt2-weights-beat-mine-2-the-bugfix",
+      "summary": "I'm digging into why my GPT-2 style models score worse on an instruction-following eval than OpenAI's original weights;\nI gave the details in this post.\n\nWhile I was writing up the results of my first experiment into possible causes,\nI ran the post past ChatGPT -- I always use an \"editorial board\" of AIs to check my\nposts for flow, style, and any technical errors (though all writing is always mine).\nIt took a look at the eval code that I was running, and highlighted a bug.\n\nLuckily, it doesn't c",
+      "source": "gilesthomas.com",
+      "category": "blog",
+      "published": "2026-07-30",
+      "summary_zh": "本文是作者调查GPT-2风格模型性能差距的第二部分。作者发现自己的模型在指令遵循评估中表现不如OpenAI原始权重，经过深入排查，找到了导致性能差异的关键问题并进行了修复。文章展示了完整的问题定位和解决过程，对从事语言模型训练和调试的开发者具有实践参考价值。",
+      "why_matters": "作者详细记录了从发现问题到定位根因再到修复的全过程，是学习模型调试思路的优质案例。",
+      "tags": "GPT-2, 模型调试, 深度学习",
+      "id": 1087,
+      "added_at": "2026-07-31 03:16:44"
+    },
+    {
+      "title": "So you want to use plants to reduce CO₂",
+      "url": "https://dynomight.net/plants/",
+      "summary": "You face certain challenges",
+      "source": "dynomight.net",
+      "category": "blog",
+      "published": "2026-07-30",
+      "summary_zh": "文章探讨了利用植物吸收二氧化碳来应对气候变化的可行性与局限性，指出这一方案看似简单直观，但实际执行中面临生物量积累速度慢、土地资源竞争、光合作用效率有限等现实挑战，并分析了不同方案之间的成本效益差异。",
+      "why_matters": "科学理性地拆解了“种树减碳”背后的复杂现实，避免了对简单解决方案的过度乐观。",
+      "tags": "气候变化,碳中和,植物固碳,环境科学",
+      "id": 1085,
+      "added_at": "2026-07-31 03:16:44"
+    },
+    {
+      "title": "Are political journalists always wrong?",
+      "url": "https://shkspr.mobi/blog/2026/07/are-political-journalists-always-wrong/",
+      "summary": "I&#039;ve mostly tuned out of reading the news. But, once in a while, a headline will be shared on social media and I&#039;ll momentarily stare into the abyss.  There has recently been a change in UK Prime Minister. I neither know nor care whether that&#039;s a good thing. What I do know is that Senior Political Correspondents collectively shat their pants with excitement at being able to breathlessly report…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-07-30",
+      "summary_zh": "作者反思自己对新闻的疏离态度，表示虽然大部分时间不看新闻，但偶尔仍会被社交媒体上的新闻标题吸引。他对英国首相更替持冷漠态度，并以此为例探讨政治记者的判断是否总是准确的问题。",
+      "why_matters": "揭示媒体与政治报道中的矛盾，展现新闻消费方式的转变。标签：政治新闻，新闻消费，媒体批评",
+      "tags": "",
+      "id": 1083,
+      "added_at": "2026-07-31 03:16:44"
+    },
+    {
+      "title": "Pluralistic: The stupidest imaginable excuses for surveillance pricing (30 Jul 2026)",
+      "url": "https://pluralistic.net/2026/07/30/pay-for-privacy/",
+      "summary": "Today's links The stupidest imaginable excuses for surveillance pricing: Since 1850, San Francisco's Chamber of Commerce has been pissing in our mouths and calling it rain. Hey look at this: Delights to delectate. Object permanence: RIP Wau Holland; Diebold voting machines suck; How to steal an RFID-locked car; Pirates are big spenders; You can't fight enshittification. Upcoming appearances: Edinburgh, Sydney, Melbourne, Brighton, London, South Bend. Recent appearances: Where I've been. Latest b",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-07-30",
+      "summary_zh": "本文批判了企业实施“监视定价”（surveillance pricing）策略的种种借口，指出企业通过追踪消费者数据来制定个性化价格的做法的虚伪性和危害性。同时悼念了德国黑客先驱Wau Holland，并提及了Diebold投票机的安全漏洞问题，揭示了商业技术监控对个人权益的威胁。",
+      "why_matters": "文章以犀利视角揭露了企业用技术手段进行价格歧视的荒谬借口，是了解数字时代消费者权益问题的入门佳作。",
+      "tags": "监视定价, 消费者权益, 数字隐私",
+      "id": 1081,
+      "added_at": "2026-07-31 03:16:44"
+    },
+    {
+      "title": "The Differences Between the New ‘Apple Upgrade’ and the Old ‘iPhone Upgrade Program’",
+      "url": "https://9to5mac.com/2026/07/30/apple-upgrade-vs-iphone-upgrade-program-here-are-the-key-differences/",
+      "summary": "Ryan Christoffel, writing for 9to5Mac:\n\n\n  Apple Upgrade launched this week, and the iPhone Upgrade Program\nis being discontinued as a result. But despite some similarities,\nthe two offerings are not the same. Here are the key differences.\n\n\nI wrote yesterday that there seemingly is no catch with the new Apple Upgrade program, but there’s at least one, which Christoffel’s piece doesn’t note. When you lease an iPhone through Apple Upgrade, you need a cellular account on one of the big three U.S. ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-30",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1079,
+      "added_at": "2026-07-31 03:16:44"
+    },
+    {
+      "title": "Looking for the Catch in Apple Upgrade",
+      "url": "https://www.theatlantic.com/technology/2026/07/apple-lease-upgrade-program/688106/",
+      "summary": "Damon Beres, writing for The Atlantic under the hed/subhed: “The New iPhone Underclass: Apple’s rental program is a trap”:\n\n\n  The Klarna plan — “Apple Upgrade,” which replaces the iPhone\nUpgrade Program — is truly, legally, a lease. This is confusing!\nAnd it’s confusing in part because this is not how Klarna, a\nwell-known buy-now, pay-later service, typically operates: When\nyou use Klarna for clothing from Shein or lip kits at Sephora or\nan Xbox at GameStop, you’re paying back a loan, exactly a",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-30",
+      "summary_zh": "文章揭示苹果新推出的\"Apple Upgrade\"计划本质上是与Klarna合作的租赁服务，而非传统的购买或升级计划。作者指出这种安排可能对消费者不利，将用户锁定在持续付费的模式中，形成一种新的\"iPhone底层阶级\"。文章提醒读者在选择这类金融服务前需仔细了解条款。",
+      "why_matters": "揭露了苹果新型消费模式背后的金融陷阱，对考虑购买苹果产品的消费者有重要警示意义。",
+      "tags": "苹果, 消费陷阱, 科技评论",
+      "id": 1077,
+      "added_at": "2026-07-31 03:16:44"
+    },
+    {
+      "title": "Read This Before You Buy That TV Streaming Stick",
+      "url": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/",
+      "summary": "Security experts have been sounding the alarm for years about the risks of using generic TV boxes that promise unlimited content streaming for a one-time fee, warning that they secretly rent the user's Internet connection out to strangers. But a groundbreaking new analysis finds these devices also routinely spoof themselves as mobile phones clicking ads on AI-generated websites as part of sprawling operation that seeks to defraud online merchants and advertising networks.",
+      "source": "krebsonsecurity.com",
+      "category": "security",
+      "published": "2026-07-30",
+      "summary_zh": "安全专家多年警告廉价流媒体电视盒存在风险，这些设备不仅将用户网络带宽出售给陌生人，新分析还揭示了更多安全隐患。文章提醒消费者在购买此类设备前应充分了解可能带来的隐私和网络风险。",
+      "why_matters": "帮助消费者识别流媒体设备的安全隐患，避免因贪图便宜而忽视潜在的网络安全和隐私泄露风险。",
+      "tags": "流媒体设备, 网络安全, 隐私保护, 消费者警示",
+      "id": 1075,
+      "added_at": "2026-07-31 03:16:44"
+    },
+    {
+      "title": "Quoting Bruce Schneier",
+      "url": "https://simonwillison.net/2026/Jul/30/bruce-schneier/#atom-everything",
+      "summary": "The writing assignments I give my students are gym tasks, not work tasks. I ask them to write policy memos not because the world needs more policy memos. I assign them because the very act of writing, which includes thinking and outlining and drafting and editing, making and criticizing and revising arguments, will help develop the critical thinking skills they will need in their future careers. And without this constant mental exercise, those skills will atrophy. Employers are already noticing.",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-07-30",
+      "summary_zh": "文章讨论了教育中写作训练的本质意义，作者将写作作业比作“健身任务”而非“工作任务”——目的不在于产出成果本身，而在于写作过程中包含的思考、构思、草拟、编辑、批评与修改等环节对能力的锻炼。这种将学习过程视为技能训练的理念，强调了教育中过程优于结果的价值取向。",
+      "why_matters": "对于教育工作者和对学习方法论感兴趣的读者，这篇文章提供了关于学习目的的深刻洞见。",
+      "tags": "教育理念, 写作训练, 学习方法",
+      "id": 1073,
+      "added_at": "2026-07-31 03:16:44"
+    },
+    {
       "title": "AI: Overwegingen voor wie erover gaat",
       "url": "https://berthub.eu/articles/posts/ai-voor-wie-erover-gaat/",
       "summary": "Onlangs presenteerde ik kort na elkaar bij het Netwerk van Publieke Dienstverleners en bij de Adviesraad Wetenschap, Technologie en Innovatie over AI. In deze twee verschillende maar korte presentaties hoopte ik wat inzichten te delen die nuttig zijn voor mensen die nu aan het stuur zitten, mensen die keuzes kunnen of moeten maken over AI-beleid. Dank aan NPD en AWTI voor de uitnodigingen en de stimulerende discussies!\nDit artikel is gebaseerd op deze twee verschillende presentaties.",
@@ -13793,5 +13936,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-30 13:12:57"
+  "last_updated": "2026-07-31 03:16:44"
 }
