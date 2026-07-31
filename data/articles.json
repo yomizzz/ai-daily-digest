@@ -1,6 +1,175 @@
 {
   "articles": [
     {
+      "title": "AI: Considerations for people who make decisions",
+      "url": "https://berthub.eu/articles/posts/ai-for-decision-makers/",
+      "summary": "Recently I gave two presentations in quick succession to the Dutch Network of Government Service Providers and the Dutch Advisory Council for Science, Technology and Innovation about AI. In these two different and brief presentations, I hoped to share some insights that would be useful to the people currently at the helm, the people who can or must make decisions about AI policy. Many thanks to the NPD and AWTI for the invitations and the stimulating discussions!",
+      "source": "berthub.eu",
+      "category": "blog",
+      "published": "2026-07-31",
+      "summary_zh": "本文基于作者在荷兰政府服务机构及荷兰科学技术创新咨询委员会的两次演讲，针对政策制定者和决策者分享AI应用的关键考量。内容涵盖AI技术的实际影响、实施AI项目时需关注的要点，以及如何做出明智的AI相关决策。",
+      "why_matters": "为政府和企业决策者提供了一份简明实用的AI认知指南",
+      "tags": "AI政策, 决策指南, 技术应用",
+      "id": 1109,
+      "added_at": "2026-08-01 03:16:35"
+    },
+    {
+      "title": "Windows NT 4.0: Released to Manufacturing July 31, 1996",
+      "url": "https://dfarq.homeip.net/windows-nt-4-0-released-to-manufacturing-july-31-1996/?utm_source=rss&utm_medium=rss&utm_campaign=windows-nt-4-0-released-to-manufacturing-july-31-1996",
+      "summary": "It was 30 years ago this week, on July 31, 1996, that Microsoft released Windows NT 4.0 to manufacturing. The workstation version appeared on store shelves a month later, with the server version following in September. In many ways, version\nThe post Windows NT 4.0: Released to Manufacturing July 31, 1996 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-07-31",
+      "summary_zh": "1996年7月31日，微软发布了Windows NT 4.0操作系统，工作站版本于一个月后上市，服务器版本则在同年9月推出。Windows NT 4.0是微软重要的企业级操作系统产品，在当时具有里程碑意义。",
+      "why_matters": "了解微软操作系统发展历程和1990年代科技史的经典回顾。",
+      "tags": "Windows NT, 微软历史, 操作系统发展",
+      "id": 1107,
+      "added_at": "2026-08-01 03:16:35"
+    },
+    {
+      "title": "Y2K Will Be Quite Okay",
+      "url": "https://www.filfre.net/2026/07/y2k-will-be-quite-okay/",
+      "summary": "Hi, folks&#8230; I&#8217;ll have the last article in the series on Maxis Software for you next week. Today, I&#8217;m happy to say that the new ebook, covering the historical year 1999, is available, and on a far more timely basis than the last one at that. My thanks go to Richard Lindner, for developing the [&#8230;]",
+      "source": "filfre.net",
+      "category": "blog",
+      "published": "2026-07-31",
+      "summary_zh": "本文是filfre.net网站的一篇文章，作者宣布Maxis Software系列文章的最后一篇将于下周发布，同时推出了一本关于1999年历史的新电子书。作者对Richard Lindner表示感谢。文章标题暗示Y2K（千年虫）问题将会得到妥善解决，不会造成严重后果。",
+      "why_matters": "适合对90年代科技历史、游戏软件发展史和Y2K问题感兴趣的读者。",
+      "tags": "Y2K千年虫, Maxis软件, 科技史, 电子书",
+      "id": 1105,
+      "added_at": "2026-08-01 03:16:35"
+    },
+    {
+      "title": "Premium: AI Is Getting Way Too Expensive",
+      "url": "https://www.wheresyoured.at/premium-ai-is-getting-way-too-expensive/",
+      "summary": "A great deal of the discussion of the so-called benefits or problems with AI comes down to the theoretical jobs that are (or are not) lost as a result of things LLMs can (or cannot do), or the equally theoretical productivity benefits that&#x2019;ll come from using LLMs",
+      "source": "wheresyoured.at",
+      "category": "blog",
+      "published": "2026-07-31",
+      "summary_zh": "文章批评了当前关于AI的讨论过于理论化，忽视了其实际成本问题。许多关于AI替代人类工作或提升生产力的讨论缺乏实证支撑，而随着AI技术发展，其应用成本正在变得愈发高昂。作者呼吁业界和公众更务实地看待AI技术的局限性与经济现实。",
+      "why_matters": "对AI持审慎态度的分析视角，揭示了技术热潮背后被忽视的成本与实际问题。",
+      "tags": "AI成本, 技术反思, 科技评论",
+      "id": 1103,
+      "added_at": "2026-08-01 03:16:35"
+    },
+    {
+      "title": "The AI Phrasebook",
+      "url": "https://nesbitt.io/2026/07/31/the-ai-phrasebook.html",
+      "summary": "We have autonomous agents at home.",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-07-31",
+      "summary_zh": "本文探讨了AI领域的专业术语解读，以“autonomous agents”（自主代理）在家庭环境中的应用为切入点，帮助读者理解AI技术中的关键概念。文章以实用的“phrasebook”（短语手册）形式呈现，适合希望快速掌握AI专业词汇的读者。",
+      "why_matters": "以简洁实用的小册子形式系统整理AI核心术语，助你快速读懂AI技术文档和新闻。",
+      "tags": "AI术语, 自主代理, 技术科普",
+      "id": 1101,
+      "added_at": "2026-08-01 03:16:35"
+    },
+    {
+      "title": "Notes from July 2026",
+      "url": "https://evanhahn.com/notes-from-july-2026/",
+      "summary": "July! What a month!\nThings I did this July\n\n\nGave a talk, for ClimateAction.tech&rsquo;s &ldquo;Responsible AI Series&rdquo;, &ldquo;What I know about local language models&rdquo;. &ldquo;Responsible AI&rdquo; can feel like a bit of an oxymoron at times, but I hope I shared something useful.\n\n\nParticipated in the Zelda Dungeon Marathon. My first time playing a video game (The Legend of Zelda: Oracle of Seasons) on stream!\n\n\nReleased a new version of Helmet, my Node security headers package. Most",
+      "source": "evanhahn.com",
+      "category": "blog",
+      "published": "2026-07-31",
+      "summary_zh": "本文是作者Evan Hahn的2026年7月月度笔记，记录了该月的主要活动。作者在ClimateAction.tech的“负责任AI系列”活动中进行了一次关于本地语言模型的演讲，分享了自己在这一领域的实践经验。此外，文中还提到了Parti项目相关的内容。",
+      "why_matters": "适合关注AI实践与个人月度复盘的人群阅读，可了解AI从业者的日常工作与思考。",
+      "tags": "AI实践, 月度总结, 技术演讲",
+      "id": 1099,
+      "added_at": "2026-08-01 03:16:35"
+    },
+    {
+      "title": "Why do OpenAI's GPT-2 weights beat mine?  Part three: testing overtraining",
+      "url": "https://www.gilesthomas.com/2026/07/why-do-openai-gpt2-weights-beat-mine-3-overtraining",
+      "summary": "The GPT-2-style models that I've been training work really well, and I've even\nmanaged to train some that perform better than the original OpenAI small model\nin terms of cross entropy loss on a test set.  But\nas I wrote previously,\nthere's a mystery: why do they perform worse on my instruction fine-tuning evaluation?\n\nI had various theories about why that might be, and to me, the most plausible-seeming of them\nwas the amount of data they were trained with.  As best I can find out, OpenAI's model",
+      "source": "gilesthomas.com",
+      "category": "blog",
+      "published": "2026-07-31",
+      "summary_zh": "作者在训练 GPT-2 风格模型时发现，尽管某些模型在测试集交叉熵损失上表现优于原始 OpenAI 小模型，但指令微调后的表现却更差。本篇文章作为系列第三部分，通过测试过拟合现象来探究这一谜题，分析模型训练过程中可能存在的泛化问题。",
+      "why_matters": "适合对大语言模型训练调优感兴趣的开发者阅读，提供了关于模型性能与泛化能力关系的实战洞察。",
+      "tags": "GPT-2, 模型训练, 过拟合, 深度学习, NLP",
+      "id": 1097,
+      "added_at": "2026-08-01 03:16:35"
+    },
+    {
+      "title": "Solving the RK4 design equations",
+      "url": "https://www.johndcook.com/blog/2026/07/31/runge-kutta-design/",
+      "summary": "I was digging into the Runge-Kutta method for solving differential equations and a line from [1] piqued my curiosity. These calculations, which are not reproduced in Kutta&#8217;s paper (they are however in Huen (1900)), are very tedious. The calculations are a set of eight constraints that the parameters of a fourth-order Runge-Kutta method must satisfy. [&#8230;]\nThe post Solving the RK4 design equations first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-07-31",
+      "summary_zh": "本文探讨了四阶Runge-Kutta方法（RK4）的设计方程求解问题。作者指出，Kutta原始论文中并未给出这些推导计算，而相关约束条件的详细求解过程出现在后来Huen（1900）的文献中。文章梳理了这组八个约束方程的求解思路，帮助读者理解RK4系数是如何被确定下来的。",
+      "why_matters": "适合对数值方法底层原理感兴趣的朋友，可作为理解Runge-Kutta方法历史渊源和推导细节的参考资料。",
+      "tags": "Runge-Kutta方法, 数值分析, 微分方程求解",
+      "id": 1095,
+      "added_at": "2026-08-01 03:16:35"
+    },
+    {
+      "title": "Energizing a vacuum-tube flip-flop module from a 1948 IBM system",
+      "url": "http://www.righto.com/2026/07/ibm-604-trigger-tube-module.html",
+      "summary": "In 1948, IBM introduced the 604 Electronic Calculating Punch.\nThis machine was a programmable calculator, about the size of a double refrigerator.\nIt was not quite a computer, but was programmed by plugging wires into a plugboard.\nThis machine read numbers from a punch card, performed up to 60 calculations on these numbers,\nand then recorded the results by punching holes in the card.1\nIt processed 100 cards per minute&mdash;over one card per second&mdash;and IBM advertised it\nas the equivalent o",
+      "source": "righto.com",
+      "category": "blog",
+      "published": "2026-07-31",
+      "summary_zh": "本文介绍作者为1948年IBM 604电子计算穿孔机中的真空管触发器模块进行逆向工程与通电测试的经历。604机器约双门冰箱大小，通过插线板编程，可从打孔卡读取数据并执行多达60次计算。作者详细分析了触发器模块的电路结构，用现代电源为老旧的真空管供电，展示了如何让这些70多年前的电子元件重新工作。",
+      "why_matters": "适合对老式计算机历史和真空管技术感兴趣的读者，可从中了解早期电子计算设备的工作原理与修复过程。",
+      "tags": "真空管，IBM，逆向工程，老式计算机",
+      "id": 1093,
+      "added_at": "2026-08-01 03:16:35"
+    },
+    {
+      "title": "Pluralistic: Better to beg forgiveness (31 Jul 2026)",
+      "url": "https://pluralistic.net/2026/07/31/just-do-it/",
+      "summary": "Today's links Better to beg forgiveness: Don't ring the doorbell at the house of no unless you absolutely must. Hey look at this: Delights to delectate. Object permanence: RIP Poul Anderson; P2P at PC Forum; Waitress handed her own stolen ID by carded diner; PDX bans fixies; Digital Economy Bill was a stitch up; NZ copyright disconnection flowchart; Fry v Widdicombe on Catholic Church; Moxie Marlinspike profile; V&#38;A bans sketching; Gernsback's intro to the first Amazing Stories; \"Simplicity.",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-07-31",
+      "summary_zh": "这篇文章延续了Cory Doctorow的写作风格，以\"Don't ring the doorbell at the house of no unless you absolutely must\"这一通俗表达开篇，暗示了在某些情况下“先斩后奏”可能比循规蹈矩更为有效。文章涵盖了多个话题，包括纪念已故科幻作家Poul Anderson、讨论P2P技术在PC论坛的发展、关注一名服务员被持卡用餐者归还自己被盗身份证的趣闻，以及Portland禁止固定齿轮自行车和Digital Economy Bill等科技政策相关议题。",
+      "why_matters": "Cory Doctorow的文章一贯以独特的视角将技术、政策与社会议题巧妙融合，提供深思熟虑的观点。",
+      "tags": "科技政策, 数字权利, 社会观察",
+      "id": 1091,
+      "added_at": "2026-08-01 03:16:35"
+    },
+    {
+      "title": "★ Temu Is a Comically Bad App",
+      "url": "https://daringfireball.net/2026/07/temu_is_a_comically_bad_app",
+      "summary": "Shop like a billionaire.",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-07-31",
+      "summary_zh": "本文是对 Temu 购物应用的批评性评测，作者以幽默犀利的语言指出这款应用在用户体验、设计和功能方面存在的诸多问题，暗示其宣称的“像亿万富翁一样购物” slogan 与实际糟糕的使用体验形成讽刺对比。",
+      "why_matters": "如果你想了解专业科技评论人对 Temu 这类新兴电商平台的真实看法，这篇文章值得一读。",
+      "tags": "App评测, Temu, 电商, 产品批评",
+      "id": 1089,
+      "added_at": "2026-08-01 03:16:35"
+    },
+    {
+      "title": "AI models need moral support to make discoveries",
+      "url": "https://seangoedecke.com/ai-models-need-moral-support/",
+      "summary": "One recent development in AI is its ability to solve some long-standing problems in mathematics. In 2024 and 2025, this was a trickle: once or twice a year somebody would say that an LLM came up with a proof, and then everyone would argue over whether that counted as “real” mathematical innovation. In 2026, it’s a flood. Almost every day I see some new LLM-produced mathematical result.\nPrompt “engineering”\nPerhaps the most curious thing about these AI discoveries is how easy the prompting is. Th",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-07-31",
+      "summary_zh": "本文探讨了AI语言模型在数学领域的最新进展，指出2024-2025年间LLM已能独立提出数学证明，但学界对于这是否属于“真正”的数学创新仍存在激烈争论。这一争议背后反映了人们对技术创造性与人类智慧本质的深层思考。",
+      "why_matters": "帮助理解AI在学术研究中的真实定位，以及我们如何重新定义“创新”这一概念。",
+      "tags": "AI, 数学, 技术伦理",
+      "id": 1087,
+      "added_at": "2026-08-01 03:16:35"
+    },
+    {
+      "title": "Getting 25 Gbps Thunderbolt Ethernet on my Mac Studio",
+      "url": "https://www.jeffgeerling.com/blog/2026/getting-25g-ethernet-mac-thunderbolt/",
+      "summary": "I've been using the built-in 10 Gigabit Ethernet on my Mac Studio for a few years. It works fine: I can edit 4K video straight off my NAS over the network, and run backups at around 1 GB/sec.\nBut... I want more. I upgraded my rack and my NAS to 25 GbE a couple years ago, and wanted to upgrade my main workstation, too.",
+      "source": "jeffgeerling.com",
+      "category": "blog",
+      "published": "2026-07-31",
+      "summary_zh": "作者多年来一直使用Mac Studio内置的10GbE网络，能够流畅地进行4K视频编辑和高速备份。但随着NAS和机架升级到25GbE，作者希望将Mac Studio也升级到25Gbps的速度，充分利用Thunderbolt接口的高带宽潜力。",
+      "why_matters": "文章展示了如何利用Mac Studio的Thunderbolt接口突破内置千兆/万兆网络的限制，对于有高速网络存储需求的用户很有参考价值。",
+      "tags": "Mac Studio, 25GbE, Thunderbolt, 网络升级",
+      "id": 1085,
+      "added_at": "2026-08-01 03:16:35"
+    },
+    {
       "title": "Hermes Agent v0.19.1 (v2026.7.30)",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.30",
       "source": "hermes-agent",
@@ -13946,5 +14115,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-31 13:39:41"
+  "last_updated": "2026-08-01 03:16:35"
 }
