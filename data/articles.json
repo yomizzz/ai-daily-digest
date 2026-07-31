@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.19.1 (v2026.7.30)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.30",
+      "source": "hermes-agent",
+      "published": "2026-07-31",
+      "category": "hermes",
+      "summary_zh": "- 补丁版本，整合了 v0.19.0 以来超过 1000 个 PR\n- 为下游消费者（Docker 镜像、托管部署、新安装）提供稳定标记版本",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "When Nintendo sued Blockbuster",
       "url": "https://dfarq.homeip.net/when-nintendo-sued-blockbuster/?utm_source=rss&utm_medium=rss&utm_campaign=when-nintendo-sued-blockbuster",
       "summary": "Here&#8217;s a late &#8217;80s memory you may not have thought about in a while. Do you remember going to the video rental store to rent a video game and getting the cartridge but not getting the instruction booklet? The reason\nThe post When Nintendo sued Blockbuster appeared first on The Silicon Underground.",
@@ -13936,5 +13946,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-07-31 03:16:44"
+  "last_updated": "2026-07-31 13:39:41"
 }
