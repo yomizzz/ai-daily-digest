@@ -1,6 +1,110 @@
 {
   "articles": [
     {
+      "title": "Reading List 08/01/26",
+      "url": "https://www.construction-physics.com/p/reading-list-080126",
+      "summary": "Pepper-spray drones, China&#8217;s chip Manhattan Project, Commonwealth Fusion&#8217;s fundraise, and a proposed Dulles Airport renovation.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-08-01",
+      "summary_zh": "本文汇总了多个前沿科技与基础设施领域的最新动态，包括军用无人机技术的新进展、中国在芯片领域的重大投入计划、聚变能公司的融资情况以及华盛顿 Dulles 机场的改造提案，涵盖国防、能源、芯片和交通四大热点方向。",
+      "why_matters": "一份简洁的技术新闻速览，适合快速了解近期科技与基建领域的跨界动态。",
+      "tags": "科技新闻，基础设施，工程动态",
+      "id": 1112,
+      "added_at": "2026-08-02 03:01:01"
+    },
+    {
+      "title": "This Week in Package Management: 1 August 2026",
+      "url": "https://nesbitt.io/2026/08/01/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-08-01",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1110,
+      "added_at": "2026-08-02 03:01:01"
+    },
+    {
+      "title": "Runge-Kutta order versus stages",
+      "url": "https://www.johndcook.com/blog/2026/08/01/butcher-barrier/",
+      "summary": "The textbook version of the Runge-Kutta method for solving differential equations has 4 stages and has 4th order error. For lower order versions of RK the number of stages s also matches the order of the error p. But in order to achieve error on the order of p ≥ 5, you need more than p [&#8230;]\nThe post Runge-Kutta order versus stages first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-08-01",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1108,
+      "added_at": "2026-08-02 03:01:01"
+    },
+    {
+      "title": "Counting rooted trees",
+      "url": "https://www.johndcook.com/blog/2026/08/01/counting-rooted-trees/",
+      "summary": "Combinatorial problems can be interesting for their own sake, but they are more interesting when there is a connection to a problem outside combinatorics, and the more unexpected the connection the better. Counting the number of unlabeled rooted trees [1] with n nodes is a pure mathematics problem. Designing numerical methods for solving differential equations [&#8230;]\nThe post Counting rooted trees first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-08-01",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1106,
+      "added_at": "2026-08-02 03:01:01"
+    },
+    {
+      "title": "Gadget Review: HIKMICRO D02 Thermal Camera ★★★★★",
+      "url": "https://shkspr.mobi/blog/2026/08/gadget-review-hikmicro-d02-thermal-camera/",
+      "summary": "The good folks at Hikmicro have sent me their D02 Infrared Camera to review. It&#039;s part of their \"Eco\" series of thermal imagers - designed to be easy to use around the home and relatively cheap.  Despite the no-fills appearance, it packs in a lot of features which put some more expensive models to shame. It even works with Linux. Shove in a USB-C cable to grab the photos or even use it as a…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-08-01",
+      "summary_zh": "本文是对HIKMICRO D02红外热成像相机的评测，该产品属于Eco系列，主打家庭日常使用和亲民价格。尽管外观设计简洁朴素，但功能配置丰富，在易用性和性价比方面可与更高价位的产品相媲美，适合对热成像有需求的普通用户入门选择。",
+      "why_matters": "为家庭用户提供了经济实惠且功能实用的热成像解决方案，值得关注。",
+      "tags": "热成像仪, 评测, HIKMICRO",
+      "id": 1104,
+      "added_at": "2026-08-02 03:01:01"
+    },
+    {
+      "title": "Pluralistic: Why businesses lie about AI (01 Aug 2026)",
+      "url": "https://pluralistic.net/2026/08/01/dare-snot/",
+      "summary": "Today's links Why businesses lie about AI: Humoring the boss all the way into bankruptcy. Hey look at this: Delights to delectate. Object permanence: Vinge x NYT; Syklarov x publishers; Human hair castles; Gingrich's bot army; Accessibility v Web DRM; David Byrne x WinXP; Furries don't fuck in fursuits; AI's pogo-stick grift. Upcoming appearances: Edinburgh, Sydney, Melbourne, Brighton, London, South Bend. Recent appearances: Where I've been. Latest books: You keep readin' em, I'll keep writin' ",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-08-01",
+      "summary_zh": "Cory Doctorow在本文中分析了企业为何会在AI问题上撒谎和误导公众，认为根本原因在于中层管理者为了讨好老板而不顾技术现实盲目吹捧AI，这种自欺欺人的做法最终可能导致企业走向破产。文章通过多个领域案例，揭示了AI狂热背后隐藏的商业泡沫和认知偏差。",
+      "why_matters": "文章以辛辣的视角戳破AI行业的谎言泡沫，揭示企业盲目追风背后的管理病态，值得关注科技产业动态的读者深思。",
+      "tags": "人工智能, 科技评论, 商业伦理",
+      "id": 1102,
+      "added_at": "2026-08-02 03:01:01"
+    },
+    {
+      "title": "Apple Q3 2026 Results",
+      "url": "https://sixcolors.com/post/2026/07/apple-announces-record-q3-results/",
+      "summary": "Jason Snell:\n\n\n  On Thursday, Apple announced record third-quarter earnings,\nwith total revenue of $109.4B, up 16 percent from the year-ago\nquarter. iPhone revenue was up 22%, Mac revenue was up 10.4%,\nServices revenue was up 12%, and Wearables revenue was up 6%. iPad\nrevenue was down 6%.\n\n\nSix Colors also has their usual transcript of the analyst call, Tim Cook’s 90th and final one. \n\nOver at MacRumors, Juli Clover wrote a retrospective on Tim Cook’s 15-year run as CEO:\n\n\n  When Cook took over ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-01",
+      "summary_zh": "Apple 2026年第三季度实现总收入1094亿美元，创历史新高，同比增长16%。各业务线表现分化：iPhone增长最为强劲（+22%），Mac（+10.4%）、服务（+12%）和可穿戴设备（+6%）均实现增长，但iPad收入下滑6%。",
+      "why_matters": "反映Apple核心产品iPhone强劲增长动能及服务业务持续盈利能力。",
+      "tags": "Apple, 财报, 业绩增长",
+      "id": 1100,
+      "added_at": "2026-08-02 03:01:01"
+    },
+    {
+      "title": "The Apple Upgrade Situation",
+      "url": "https://randsinrepose.com/archives/the-apple-upgrade-situation/",
+      "summary": "Michael Lopp, at Rands in Repose:\n\n\n  I have felt since it was announced that the Apple iPhone Upgrade\nProgram has not just been a deal, but a steal. The\nspecifics:\n\n\nYou apply for a loan for a full-price iPhone at 0%.\nIf approved, your payments are split over 24 months.\nPay for 24 months, and the phone is yours.\n\n\nThat was just the deal; the steal was that it was low effort every\nsingle year to get a new phone. I’d re-up for a new phone, and\nApple would forgive the remaining payments of the loa",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-01",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1098,
+      "added_at": "2026-08-02 03:01:01"
+    },
+    {
       "title": "AI: Considerations for people who make decisions",
       "url": "https://berthub.eu/articles/posts/ai-for-decision-makers/",
       "summary": "Recently I gave two presentations in quick succession to the Dutch Network of Government Service Providers and the Dutch Advisory Council for Science, Technology and Innovation about AI. In these two different and brief presentations, I hoped to share some insights that would be useful to the people currently at the helm, the people who can or must make decisions about AI policy. Many thanks to the NPD and AWTI for the invitations and the stimulating discussions!",
@@ -14115,5 +14219,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-01 13:31:38"
+  "last_updated": "2026-08-02 03:01:01"
 }
