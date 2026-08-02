@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "title": "I'm (mostly) picking models on speed now, not intelligence",
+      "url": "https://martinalderson.com/posts/speed-vs-intelligence/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
+      "summary": "For the first time I'm choosing my daily driver models on tokens per second rather than raw intelligence. Why ~100tok/s might be the new 100ms, where the speed gains stop mattering, and the price war that's coming.",
+      "source": "martinalderson.com",
+      "category": "blog",
+      "published": "2026-08-02",
+      "summary_zh": "本文作者表示自己首次开始根据AI模型的响应速度（tokens per second）而非原始智能水平来选择日常使用的主力模型。文章探讨了约100tok/s为何可能成为新的“100ms”延迟标准门槛，分析了速度提升在何时达到边际效用递减，并预测AI领域即将迎来价格战。",
+      "why_matters": "对于关注AI应用落地的读者，本文提供了关于模型选择的新视角，帮助理解速度在实际使用中的重要性。",
+      "tags": "AI模型, 性能优化, 行业趋势",
+      "id": 1118,
+      "added_at": "2026-08-03 03:01:49"
+    },
+    {
+      "title": "MkLinux and the pimped-out Apple Workgroup Server 9150",
+      "url": "https://oldvcr.blogspot.com/2026/08/mklinux-and-pimped-out-apple-workgroup.html",
+      "summary": "As is typical here in the Floodgap lab, it all started so innocently: rebuilding a flaky Apple Workgroup Server 9150, the odd duck of the Workgroup Server line and older cousin to our beloved Apple Network Server. And then I just had to pimp it out for MkLinux.\n\n\n\nBefore the sui generis IBM AIX-based Apple Network Server, one of our favourite machines here at Floodgap, there were the WGSes, the Workgroup Servers, Apple's well-intentioned but conflictingly received line of Macintosh rebadges hopp",
+      "source": "oldvcr.blogspot.com",
+      "category": "blog",
+      "published": "2026-08-02",
+      "summary_zh": "本文记录了作者在Apple Workgroup Server 9150上安装MkLinux的过程。作为Workgroup Server系列中比较独特的一员，9150与后来的Apple Network Server有着血缘关系。作者通过改装和升级，在这台老旧服务器上成功运行了MkLinux系统，展现了经典苹果硬件与开源Linux系统的有趣结合。",
+      "why_matters": "对于喜欢复古苹果硬件和Linux历史的爱好者来说，这是一篇难得的技术实践记录，展示了如何让老旧设备重获新生。",
+      "tags": "MkLinux, Apple Workgroup Server 9150, 复古硬件改装",
+      "id": 1116,
+      "added_at": "2026-08-03 03:01:49"
+    },
+    {
+      "title": "Mathematics Without Mathematicians",
+      "url": "https://borretti.me/article/mathematics-without-mathematicians",
+      "summary": "We must know. We shall not know.",
+      "source": "borretti.me",
+      "category": "blog",
+      "published": "2026-08-02",
+      "summary_zh": "文章探讨了数学知识与人类认知之间的张力，通过引用希尔伯特的名言“We must know. We shall not know”（我们必须知道，我们不会知道），阐述人类对数学真理的永恒追求与认知局限性之间的矛盾，揭示数学作为人类智慧结晶却永远无法被完全理解的深刻悖论。",
+      "why_matters": "篇幅精炼却哲理深刻，用简洁有力的格言道出知识追求的本质，值得反复品味思考。",
+      "tags": "数学哲学,认知局限,希尔伯特",
+      "id": 1114,
+      "added_at": "2026-08-03 03:01:49"
+    },
+    {
+      "title": "Estimating a cumulative sum",
+      "url": "https://www.johndcook.com/blog/2026/08/02/estimating-a-cumulative-sum/",
+      "summary": "In this post I mentioned two series which I denoted t(n) and c(n). The former is the number of unlabeled rooted trees with n nodes. The latter is the cumulative sum of the former, i.e. The sequence c(n) is also the number of constrains on an n-step Runge-Kutta method; that&#8217;s how I became interested in it. Now the t(n) sequence has [&#8230;]\nThe post Estimating a cumulative sum first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-08-02",
+      "summary_zh": "文章探讨了两个数学序列——t(n)（未标记根树的节点数量）和c(n)（t(n)的累计和）。作者指出c(n)序列同时也是n步Runge-Kutta方法的约束数量，而这正是研究该序列的实际应用背景。",
+      "why_matters": "适合对组合数学和数值分析交叉领域感兴趣的读者，可了解树枚举与常微分方程数值解法之间的有趣联系。",
+      "tags": "组合数学，Runge-Kutta方法，序列与级数",
+      "id": 1112,
+      "added_at": "2026-08-03 03:01:49"
+    },
+    {
+      "title": "Giving and taking credit in big tech companies",
+      "url": "https://seangoedecke.com/giving-and-taking-credit/",
+      "summary": "Engineers often complain that visibility should be their manager’s job. In other words, they think engineers should be able to focus on the code, while their manager figures out who’s doing well and rewards them.\nThis attitude is an extension of the “school fantasy”: the idea that your workplace should operate by the same rules as your school or university. After all, you didn’t have to worry about “visibility” during your education. You simply did the assignments and tests you were given, and i",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-08-02",
+      "summary_zh": "在大型科技公司中，许多工程师认为做好本职工作就够了，功劳的“可见性”应该是管理者的责任。作者指出这种心态源于学生时代的“学校幻想”——成绩会自动被老师看到和认可。然而，职场现实完全不同：你需要主动争取和展示自己的贡献，否则很可能被忽视或被他人抢占功劳。",
+      "why_matters": "揭示了科技行业职场中一个常见但少被直说的真相，帮助职场人摆脱学生思维。",
+      "tags": "职场成长，科技行业，职业发展",
+      "id": 1110,
+      "added_at": "2026-08-03 03:01:49"
+    },
+    {
+      "title": "July 2026 newsletter",
+      "url": "https://simonwillison.net/2026/Aug/2/july-newsletter/#atom-everything",
+      "summary": "The June edition of my sponsors-only monthly newsletter is out. If you are a sponsor (or if you start a sponsorship now) you can access it here.\nThis month:\n\nAccidental cyberattacks by OpenAl and Anthropic models under test\nGPT-5.6 Sol, Terra, and Luna\nClaude Opus 5\nKimi K3 and DeepSeek-V4-Flash-0731\nOpen letters about Al development\nA fireside chat and a podcast\nReigniting my interest in MCP\nOther model releases\nMy projects\nWhat I'm using at the moment\n\nHere's a copy of the June newsletter as a",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-08-02",
+      "summary_zh": "本篇为Simon Willison网站2026年6月会员专属月度通讯的发布通知，当期内容涵盖多个重要AI模型动态，包括OpenAI和Anthropic模型在测试中引发的意外网络安全事件，以及GPT-5.6系列、Claude Opus 5、Kimi K3和DeepSeek-V4-Flash等最新模型发布或更新信息。",
+      "why_matters": "汇总当月AI领域关键进展，适合关注大模型竞争态势的读者快速了解行业动态。",
+      "tags": "AI模型，月度通讯，AI行业动态",
+      "id": 1108,
+      "added_at": "2026-08-03 03:01:49"
+    },
+    {
+      "title": "Open letters about AI development",
+      "url": "https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything",
+      "summary": "Open letters about AI development\nI wrote this summary of the past few weeks of open letters as a section of my sponsors-only newsletter but I've decided to share it here as well.\nOpen Weights and American AI Leadership was shepherded by Microsoft, dated July 24th, and signed by 235 AI-adjacent companies including NVIDIA (see Jensen's first ever tweet), Amazon, Y Combinator, The Linux Foundation, and (a later signer) OpenAI.\nIt's clearly an argument designed to counter any instincts by the curre",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-08-02",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1106,
+      "added_at": "2026-08-03 03:01:49"
+    },
+    {
       "title": "Reading List 08/01/26",
       "url": "https://www.construction-physics.com/p/reading-list-080126",
       "summary": "Pepper-spray drones, China&#8217;s chip Manhattan Project, Commonwealth Fusion&#8217;s fundraise, and a proposed Dulles Airport renovation.",
@@ -14219,5 +14310,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-02 13:31:43"
+  "last_updated": "2026-08-03 03:01:49"
 }
