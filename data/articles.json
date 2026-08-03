@@ -1,6 +1,175 @@
 {
   "articles": [
     {
+      "title": "Weekly Update 515",
+      "url": "https://www.troyhunt.com/weekly-update-515/",
+      "summary": "Apparently, Aussies are so obsessed with coffee that it&apos;s referred to as the coffee capital of the world down here (some bits, at least). \"But what about Italy?\" people ask. Having spent a lot of time in a lot of Italy, no, it&apos;s just",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-08-03",
+      "summary_zh": "这篇文章是Troy Hunt的每周更新第515期，从澳大利亚咖啡文化话题切入（讨论澳洲是否可称为\"咖啡之都\"），但原文摘要被截断，无法获取完整的技术内容或主题要点。",
+      "why_matters": "Troy Hunt的文章通常包含数据泄露、安全漏洞等技术见解，建议获取完整版本以获取实质内容。",
+      "tags": "安全资讯, 技术博客, Troy Hunt",
+      "id": 1137,
+      "added_at": "2026-08-04 03:26:03"
+    },
+    {
+      "title": "Welcoming the Nepalese Government to Have I Been Pwned",
+      "url": "https://www.troyhunt.com/welcoming-the-nepalese-government-to-have-i-been-pwned/",
+      "summary": "Today, we welcome the 47th government onboarded to Have I Been Pwned&#x2019;s free gov service: Nepal. Their National Cyber Security Centre now has access to monitor Nepalese government domains against the data in HIBP. This gives the NCSC the ability to identify exposure across government email addresses and",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-08-03",
+      "summary_zh": "Have I Been Pwned（HIBP）迎来第47个政府用户——尼泊尔。尼泊尔国家网络安全中心（NCSC）现已获得HIBP免费政府服务权限，可监控该国政府域名是否出现在数据泄露事件中，及时识别政府邮箱账户的泄露风险，提升国家网络安全防护能力。",
+      "why_matters": "了解国际数据安全合作案例及政府如何利用公开数据泄露数据库加强网络安全防护。",
+      "tags": "数据安全, 政府合作, 网络安全",
+      "id": 1135,
+      "added_at": "2026-08-04 03:26:03"
+    },
+    {
+      "title": "The Caldera-SCO merger of 2000",
+      "url": "https://dfarq.homeip.net/the-caldera-sco-merger-of-2000/?utm_source=rss&utm_medium=rss&utm_campaign=the-caldera-sco-merger-of-2000",
+      "summary": "On August 2, 2000, a second-tier Linux vendor acquired a struggling Unix vendor. The merger received some press, but if you weren&#8217;t really following Linux at the time, it would have been easy enough to miss. But the merger of\nThe post The Caldera-SCO merger of 2000 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-08-03",
+      "summary_zh": "2000年8月2日，二线Linux厂商Caldera收购了陷入困境的Unix厂商SCO。这起并购虽获得一定媒体关注，但因当时Linux市场关注度有限，容易被忽视。文章回顾了这一对Linux和Unix行业格局具有影响意义的重要并购事件。",
+      "why_matters": "了解Linux发展史上Unix与Linux厂商整合的重要案例。",
+      "tags": "Caldera, SCO, Linux历史",
+      "id": 1133,
+      "added_at": "2026-08-04 03:26:03"
+    },
+    {
+      "title": "Review: Job-Less Utopia",
+      "url": "https://borretti.me/article/review-job-less-utopia",
+      "summary": "Review of Marcus Hutter's Job-Less Utopia.",
+      "source": "borretti.me",
+      "category": "blog",
+      "published": "2026-08-03",
+      "summary_zh": "[Marcus Hutter 提出的人工通用智能(AGI)理论框架下，探讨AI高度发展后可能实现的\"无工作乌托邦\"愿景。文章从技术可行性角度审视了这一未来图景，分析了自动化对就业的影响以及人类在AI主导世界中的角色定位。]",
+      "why_matters": "[对于关注AI未来发展和社会影响的人来说，这篇文章提供了基于严谨技术理论的独特视角]",
+      "tags": "[人工智能, 未来预测, 科技哲学, 就业变革]",
+      "id": 1131,
+      "added_at": "2026-08-04 03:26:03"
+    },
+    {
+      "title": "Why smarter AI models could drive up compute prices 10x",
+      "url": "https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive-video",
+      "summary": "The end of cheap compute?",
+      "source": "dwarkesh.com",
+      "category": "blog",
+      "published": "2026-08-03",
+      "summary_zh": "随着AI模型变得越来越智能，对计算资源的需求也急剧增长。文章指出，这种趋势可能导致计算成本上涨10倍，预示着“廉价计算时代”的终结。对于AI开发者和投资者而言，理解算力成本的变化趋势将成为制定战略决策的关键因素。",
+      "why_matters": "深入分析AI发展与算力成本关系的必读之作，帮助理解AI行业面临的经济挑战。",
+      "tags": "AI发展,算力成本,技术经济",
+      "id": 1129,
+      "added_at": "2026-08-04 03:26:03"
+    },
+    {
+      "title": "Agentic coding techniques",
+      "url": "https://micahflee.com/agentic-coding-techniques/",
+      "summary": "Since LLMs have been available, I&apos;ve been doing a lot of coding using agents. Unlike shoving AI into every app, replacing customer support with chatbots, generating endless streams of slop, etc., agentic coding is actually useful. If used right &#x2013; and, crucially, by someone who understands and reviews",
+      "source": "micahflee.com",
+      "category": "blog",
+      "published": "2026-08-03",
+      "summary_zh": "文章探讨了如何有效利用AI代理（Agent）进行编程开发。作者认为，相比于将AI生硬嵌入各类应用、替代客服或批量生成垃圾内容等做法，代理式编程是LLM真正有价值的使用场景之一。关键在于正确使用AI代理，且使用者需要真正理解自己在做什么。",
+      "why_matters": "为开发者提供了关于AI编程代理实用价值的深度思考，避免盲目追逐AI热点。",
+      "tags": "AI编程, 开发工具, LLM应用",
+      "id": 1127,
+      "added_at": "2026-08-04 03:26:03"
+    },
+    {
+      "title": "Pluralistic: Dualism (03 Aug 2026)",
+      "url": "https://pluralistic.net/2026/08/03/andor/",
+      "summary": "Today's links Dualism: Why not both? Hey look at this: Delights to delectate. Object permanence: UK's Great Firewall falls; Mint the coins; Virtual pets v DRM; Getty copyfrauds 47,000 photos; Net Mexico-US illegal migration is zero; Build a wall (around Trump Tower); Remote-hacking big rigs; Collectible AOL CDs; Indefinite Gitmo; Circuit City rips DVDs; Real Names policies are abusive failures; Escher in a water drop; Maximally code-like bugs. Upcoming appearances: Edinburgh, Sydney, Melbourne, ",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-08-03",
+      "summary_zh": "这是一篇来自Pluralistic博客的每日链接集合文章，主题围绕“二元论”(Dualism)展开，探讨“为何不能两者兼有？”的哲学思考。文章还涵盖了本周多个科技和社会热点话题，包括英国互联网管控政策变化、图片版权争议、移民数据以及网络安全等议题，展现了博客内容广泛且多元的特点。",
+      "why_matters": "Pluralistic是知名科技评论人Cory Doctorow的每日博客，文风幽默、视角独特，适合",
+      "tags": "",
+      "id": 1125,
+      "added_at": "2026-08-04 03:26:03"
+    },
+    {
+      "title": "Invisible Problems",
+      "url": "https://idiallo.com/blog/invisible-problems",
+      "summary": "During the pandemic, we completed one of our largest projects at work. To celebrate, since we couldn't meet in person, we all ordered food on DoorDash and played an online escape room game together. We were on a Zoom call, helping each other out and having fun. The first challenge was to escape a jail cell.\t\t\tTo escape, each of us had to find clues in our own cell to figure out how to open the doors. We each had to find an object that solved a piece of the puzzle, and once we put them all togeth",
+      "source": "idiallo.com",
+      "category": "blog",
+      "published": "2026-08-03",
+      "summary_zh": "文章讲述了在疫情期间，团队成员完成了一个重要项目后，通过线上订餐和玩密室逃脱游戏的方式进行庆祝。虽然无法面对面聚会，但大家在Zoom通话中互相帮助、合作完成任务，体现了远程工作环境下团队凝聚力和归属感的重要构建方式。",
+      "why_matters": "文章以轻松的故事展现了远程办公时代如何保持团队活力和同事间的人际联系，对当下混合办公模式有启发意义。",
+      "tags": "远程工作，团队建设，疫情期间",
+      "id": 1123,
+      "added_at": "2026-08-04 03:26:03"
+    },
+    {
+      "title": "Truth Social Launches Paid Early Access to Trump Posts",
+      "url": "https://www.npr.org/2026/08/01/nx-s1-5912219/trump-truth-social-access-insider-trading",
+      "summary": "Bobby Allyn, reporting for NPR:\n\n\n  Trump Media & Technology Group is now shopping to traders\nand investors a premium version of Truth Social delivering early\naccess to the feeds of high-profile users, including the\npresident. Starting Saturday, for a fee of up to $100,000 a month,\ntrading firms can access “Truth API” to get a glimpse of the\npresident’s often market-moving announcements about\neconomic policy and global affairs before the rest of the world.\n\nTrump’s media company says customers h",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-03",
+      "summary_zh": "Truth Social推出了付费高级版本，允许交易公司支付每月最高10万美元的费用，获取包括前总统特朗普在内的高知名度用户的早期内容访问权。这是Truth Social首次尝试通过向交易公司和投资者提供数据服务来增加收入来源。",
+      "why_matters": "揭示了社交媒体平台将内容访问权商品化的商业模式新动向。",
+      "tags": "Truth Social, 特朗普, 付费订阅, 社交媒体商业化",
+      "id": 1121,
+      "added_at": "2026-08-04 03:26:03"
+    },
+    {
+      "title": "Ulysses S. Grant on the Future Dividing Line",
+      "url": "https://www.snopes.com/fact-check/grant-next-civil-war/",
+      "summary": "Ulysses S. Grant, in 1875:\n\n\n  Where the citizen is sovereign and the official the servant, where\nno power is exercised except by the will of the people, it is\nimportant that the sovereign — the people — should possess\nintelligence.\n\nThe free school is the promoter of that intelligence which is to\npreserve us as a free nation. If we are to have another contest in\nthe near future of our national existence, I predict that the\ndividing line will not be Mason and Dixon’s, but between\npatriotism and ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-03",
+      "summary_zh": "本文引用美国前总统格兰特1875年的观点，强调在公民为主权者、官员为公仆的民主制度下，公民必须具备智慧。他特别指出，免费学校是培养公民智慧的关键场所，因为民主制度的有效运转取决于公民的受教育程度。",
+      "why_matters": "这段150多年前的洞见至今仍揭示了教育与民主之间不可分割的联系。",
+      "tags": "民主制度, 公民教育, 格兰特",
+      "id": 1119,
+      "added_at": "2026-08-04 03:26:03"
+    },
+    {
+      "title": "★ Why Apple Requires a Cellular Account Through a Big Three Carrier to Lease an iPhone",
+      "url": "https://daringfireball.net/2026/08/followup_big_three_carrier_requirement",
+      "summary": "For many years now, part of the co-marketing agreements between Apple and the Big Three is Apple agreeing to require a postpaid account with a Big Three carrier for all “special” iPhone financing deals, including the old iPhone Upgrade Program and the new Apple Upgrade leasing.",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-03",
+      "summary_zh": "本文揭示了Apple与AT&T、Verizon、T-Mobile三大运营商之间的长期合作机制。Apple通过要求用户开通后付费账户来换取运营商的联合营销支持，这使得用户若想通过iPhone Upgrade Program或Apple Upgrade等特殊融资方案购买iPhone，必须先成为三大运营商的客户。这反映了Apple与运营商之间深度的商业绑定关系。",
+      "why_matters": "揭示了Apple产品定价与运营商策略之间的隐秘关联，帮助理解科技巨头的商业生态布局。",
+      "tags": "Apple, iPhone融资, 运营商合作, 商业策略",
+      "id": 1117,
+      "added_at": "2026-08-04 03:26:03"
+    },
+    {
+      "title": "Devtools must be open source (exe.dev)",
+      "url": "https://simonwillison.net/2026/Aug/3/devtools-must-be-open-source-exedev/#atom-everything",
+      "summary": "My comment on Devtools must be open source (exe.dev) &mdash; Hacker News.One of the arguments for open source software for end-users has always been the freedom to examine and modify how that software works.\nThe reality for most people - even expert programmers - has been that the freedom is more about being able to lean on other people to do that. Most people can't justify the time commitment needed to read and then modify the code for tools they use very often.\nI think LLMs have changed that e",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-08-03",
+      "summary_zh": "文章讨论了开发者工具（Devtools）必须开源的观点。作者指出，开源软件为用户提供了检查和修改软件运行方式的自由，但这种自由对于大多数用户——甚至专家程序员——来说往往难以真正实现。作者认为开发者工具尤其需要开源，因为它们直接影响开发者的工作方式和效率。",
+      "why_matters": "Simon Willison 从实际角度分析了开发者工具开源的必要性和挑战，观点深刻且务实。",
+      "tags": "开源, 开发者工具, 软件自由",
+      "id": 1115,
+      "added_at": "2026-08-04 03:26:03"
+    },
+    {
+      "title": "Quoting David Crawshaw's prompt",
+      "url": "https://simonwillison.net/2026/Aug/3/david-crawshaw/#atom-everything",
+      "summary": "Set up a nightly cron job that executes the prompt: fetch upstream changes to the <software> and rebase all local changes on top of upstream. Check that the software works as intended and replace the current version.\n&mdash; David Crawshaw&#x27;s prompt, Devtools must be open source\n\n    Tags: prompt-engineering, coding-agents, generative-ai, ai, llms, open-source",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-08-03",
+      "summary_zh": "本文引用了David Crawshaw关于开源开发工具自动化维护的提示。该提示建议设置一个夜间cron任务，自动获取上游代码变更、在本地修改基础上rebase、检查功能正常后替换当前版本，从而实现开发工具的自动化迭代更新。",
+      "why_matters": "提供了一个简洁实用的开源软件持续维护工作流思路，适合开发者参考借鉴。",
+      "tags": "prompt, 开源, 自动化, DevOps",
+      "id": 1113,
+      "added_at": "2026-08-04 03:26:03"
+    },
+    {
       "title": "I'm (mostly) picking models on speed now, not intelligence",
       "url": "https://martinalderson.com/posts/speed-vs-intelligence/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
       "summary": "For the first time I'm choosing my daily driver models on tokens per second rather than raw intelligence. Why ~100tok/s might be the new 100ms, where the speed gains stop mattering, and the price war that's coming.",
@@ -14310,5 +14479,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-03 13:47:22"
+  "last_updated": "2026-08-04 03:26:03"
 }
