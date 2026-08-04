@@ -1,6 +1,40 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.20.0 (2026.8.3)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.3",
+      "source": "hermes-agent",
+      "published": "2026-08-04",
+      "category": "hermes",
+      "summary_zh": "- 新增实时语音对话功能，支持流式TTS、语音打断、设备端唤醒词和免手控制，覆盖 CLI、桌面及所有音频网关平台\n- 支持 A2A v1.0 协议，可与其他 Agent 进行通信协作\n- 新增签名出站 Webhook，可向外部系统推送事件通知\n- 引入 grounded research 机制，提供可验证的引用来源和事实核查功能\n- 桌面应用升级为开发平台，新增 artifacts 实时预览、插件 SDK、快捷入口和多窗口支持\n- CLI 新增强大命令，包括 ! shell 执行模式、/init、/diff、/context、/focus 等\n- 上下文压缩策略优化，更加智能和温和\n- 工具层新增自恢复机制，遇到故障可自动重试，无需依赖模型猜测",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "openclaw 2026.7.1-2",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-2",
+      "source": "openclaw",
+      "published": "2026-08-04",
+      "category": "openclaw",
+      "summary": "无\n\n🐛 Bug 修复：- 修复 npm 插件更新兼容性问题，接受新版 npm 客户端的单例数组元数据格式，使官方插件能正常安装和更新",
+      "features": "无",
+      "bug_fixes": "- 修复 npm 插件更新兼容性问题，接受新版 npm 客户端的单例数组元数据格式，使官方插件能正常安装和更新",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
+      "title": "openclaw 2026.7.1-1",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-1",
+      "source": "openclaw",
+      "published": "2026-08-04",
+      "category": "openclaw",
+      "summary": "无\n\n🐛 Bug 修复：- 修复 Codex 进度回复问题，确保应用服务器在发送进度消息后继续运行至最终响应\n- 修复 Memory Core 启动时的恢复问题，解决网关陷入重启循环，保持向量存储损坏可重试\n- 修复 WSL 状态权限问题，在状态路径已私有时允许受保护的 chmod 操作\n- 修复遗留迁移恢复问题，不再阻止健康的启动升级\n- 修复托管插件更新问题，恢复过期的 npm 锁定元数据使插件正常更新",
+      "features": "无",
+      "bug_fixes": "- 修复 Codex 进度回复问题，确保应用服务器在发送进度消息后继续运行至最终响应\n- 修复 Memory Core 启动时的恢复问题，解决网关陷入重启循环，保持向量存储损坏可重试\n- 修复 WSL 状态权限问题，在状态路径已私有时允许受保护的 chmod 操作\n- 修复遗留迁移恢复问题，不再阻止健康的启动升级\n- 修复托管插件更新问题，恢复过期的 npm 锁定元数据使插件正常更新",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Weekly Update 515",
       "url": "https://www.troyhunt.com/weekly-update-515/",
       "summary": "Apparently, Aussies are so obsessed with coffee that it&apos;s referred to as the coffee capital of the world down here (some bits, at least). \"But what about Italy?\" people ask. Having spent a lot of time in a lot of Italy, no, it&apos;s just",
@@ -14479,5 +14513,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-04 03:26:03"
+  "last_updated": "2026-08-04 13:19:10"
 }
