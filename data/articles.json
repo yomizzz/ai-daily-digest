@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "title": "Reading List 08/08/2026",
+      "url": "https://www.construction-physics.com/p/reading-list-08082026",
+      "summary": "The Endangered Species Act and housing production, why it&#8217;s hard for LEGO to use 3D printing, robotic welding and shipbuilding, modular data centers, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-08-08",
+      "summary_zh": "这篇文章是2026年8月8日的阅读列表，汇集了建筑与物理领域的多个热点话题，包括《濒危物种法》对住房建设的影响、传统玩具制造业采用3D打印的困境、工业机器人在造船领域的应用，以及模块化数据中心的建设趋势。这些内容反映了当前建筑与制造业面临的技术挑战与政策约束。",
+      "why_matters": "适合关注建筑行业技术创新与政策影响的读者快速了解行业动态。",
+      "tags": "建筑业, 技术创新, 阅读列表, 产业趋势",
+      "id": 1204,
+      "added_at": "2026-08-09 02:28:34"
+    },
+    {
+      "title": "This Week in Package Management: 8 August 2026",
+      "url": "https://nesbitt.io/2026/08/08/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-08-08",
+      "summary_zh": "本文汇总了2026年8月8日当周包管理领域的最新动态，涵盖主流包管理器（如npm、pip、cargo等）的新版本发布、安全漏洞通报以及行业相关技术文章的精选推荐，为开发者提供一周内的关键更新概览。",
+      "why_matters": "适合希望快速了解包管理生态最新变化的开发者，节省逐一追踪各平台动态的时间。",
+      "tags": "包管理，开发者工具，技术周报",
+      "id": 1202,
+      "added_at": "2026-08-09 02:28:34"
+    },
+    {
+      "title": "Corrupted apostrophes",
+      "url": "https://www.johndcook.com/blog/2026/08/07/corrupted-apostrophes/",
+      "summary": "I have a program that shares files between my laptop and my phone. It works well, except for apostrophes. When I type an apostrophe ' on my laptop, it becomes â€&#x2122; on my phone. And when I type 's on my phone, it becomes 痴 on my laptop. Apparently the phone turns the apostrophe (U+0027) [&#8230;]\nThe post Corrupted apostrophes first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-08-08",
+      "summary_zh": "作者在使用程序同步笔记本电脑和手机之间的文件时，遇到撇号字符显示乱码的问题。笔记本电脑输入的撇号（'）在手机上显示为 â€™，而手机上输入的 's 在笔记本电脑上显示为“痴”。问题的根源在于手机对撇号字符的编码处理不当，将标准撇号（U+0027）错误地转换了。",
+      "why_matters": "对程序员和经常在不同设备间同步文件的用户来说，这是一个典型的字符编码问题案例，值得参考和了解。",
+      "tags": "字符编码, 文件同步, 技术调试",
+      "id": 1200,
+      "added_at": "2026-08-09 02:28:34"
+    },
+    {
+      "title": "[RSS Club] I got an NLnet grant!",
+      "url": "https://shkspr.mobi/blog/2026/08/rss-club-i-got-an-nlnet-grant/",
+      "summary": "Pssst! This post is only available to RSS/Atom subscribers. Tell your friends to subscribe  😊.  Just a quick one today, a more detailed blog coming soon - but I thought I&#039;d give RSS Club Members (you!) a sneak peek.  A few months ago I saw a post on Mastodon from NLnet - they were looking for Open Source projects to apply for grant funding. The deadline was less than 24 hours away, so I rushed in …",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-08-08",
+      "summary_zh": "博客作者shkspr宣布获得NLnet资助，用于支持其开放网络/互联网相关项目。作者透露几个月前在Mastodon上看到NLnet的招募信息后提交了申请，并成功获得资助。更多详细信息将在后续博客文章中公布。",
+      "why_matters": "展示了独立开发者通过开放网络社区项目获得资助的案例，对关注开放网络生态的读者有参考价值。",
+      "tags": "NLnet, RSS, 开放网络",
+      "id": 1198,
+      "added_at": "2026-08-09 02:28:34"
+    },
+    {
+      "title": "Pluralistic: Digital sewer socialism (08 Aug 2026)",
+      "url": "https://pluralistic.net/2026/08/08/find-yourself-a-city/",
+      "summary": "Today's links Digital sewer socialism: Mamdani's Public Interest Technologists are what DOGE should have been. Hey look at this: Delights to delectate. Object permanence: Robot garage takes hostages; Thermostat ransomware; Correlate audience exhalations; Judges x TOR; Expectations management. Upcoming appearances: Edinburgh, Sydney, Melbourne, Brighton, London, South Bend. Recent appearances: Where I've been. Latest books: You keep readin' em, I'll keep writin' 'em. Upcoming books: Like I said, ",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-08-08",
+      "summary_zh": "本文探讨了“公共利益技术专家”（Public Interest Technologists）这一新兴概念，将其与美国政府效率部门（DOGE）进行对比，指出这些关注公共利益的 technologists 本应是政府技术改革的正确方向。文章还涉及近期多个技术新闻，包括机器人安全、勒索软件、网络隐私以及司法技术等相关议题。",
+      "why_matters": "文章以独特的视角审视政府技术项目，兼具批判性和前瞻性，适合关注数字治理和技术政策的读者。",
+      "tags": "数字治理, 技术政策, 公共利益",
+      "id": 1196,
+      "added_at": "2026-08-09 02:28:34"
+    },
+    {
+      "title": "Quoting John Gruber",
+      "url": "https://simonwillison.net/2026/Aug/8/john-gruber/#atom-everything",
+      "summary": "Me, I try to get into the mindset of playing live music, not recording a studio album. Except when I’m writing a piece where I really want it to be an album. Those aren’t rare, per se, but they’re occasional. If I tried to make every post a hall-of-famer I’d never get anything out.\nI’m aiming for professionalism. I’m performing live in front of an audience — not just jamming in my garage or bedroom, fucking around. So I’m careful and concentrate. I want to hit every note, in time. But at my best",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-08-08",
+      "summary_zh": "作者将写博客比作演奏现场音乐，强调保持自然流畅的创作节奏，而非追求每篇都是完美的录音室专辑。但他也承认，偶尔会创作一些精心打磨的“专辑级”作品，并指出如果强求每篇文章都成为精品，反而会导致无法持续输出。",
+      "why_matters": "对于内容创作者而言，这篇文章提供了关于创作节奏与质量平衡的深刻洞察，值得一读。",
+      "tags": "创作心态, 写作技巧, 内容创作",
+      "id": 1194,
+      "added_at": "2026-08-09 02:28:34"
+    },
+    {
+      "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
+      "url": "https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/#atom-everything",
+      "summary": "My comment on Now we have a timeline of the OpenAI accidental attack against Hugging Face &mdash; Hacker News.I think one of the most interesting details here might be tucked away in that first bulletin point:\n\nMay 7: OpenAI starts a new training run for an experimental, unreleased model. (Do they mean an evaluation run? They say training run in the video, and later mention a “reward signal to judge how well they’re doing”, so I guess this really was about training a model, not evaluating one th",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-08-08",
+      "summary_zh": "本文详细披露了OpenAI一次意外攻击Hugging Face事件的时间线。作者Simon Willison分析了该事件的关键细节，其中提到5月7日OpenAI启动了一个针对实验性未发布模型的新训练运行。文章揭示了AI安全事件中容易被忽视的技术细节，对理解AI系统的安全风险具有重要参考价值。",
+      "why_matters": "如果你关注AI安全领域，这篇文章提供了详细的事件时间线和专业的技术分析。",
+      "tags": "AI安全, OpenAI, Hugging Face, 技术事件",
+      "id": 1192,
+      "added_at": "2026-08-09 02:28:34"
+    },
+    {
       "title": "Netscape: The IPO that went boom on its way up and down",
       "url": "https://dfarq.homeip.net/netscape-the-ipo-that-went-boom-on-its-way-up-and-down/?utm_source=rss&utm_medium=rss&utm_campaign=netscape-the-ipo-that-went-boom-on-its-way-up-and-down",
       "summary": "The early star of the dot-com boom wasn&#8217;t Amazon or Ebay, it was Netscape, a company who produced a web browser of the same name. It went boom high and it went boom fast as it rose. And when it\nThe post Netscape: The IPO that went boom on its way up and down appeared first on The Silicon Underground.",
@@ -15332,5 +15423,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-08 11:37:31"
+  "last_updated": "2026-08-09 02:28:34"
 }
