@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>This Week in Package Management: 8 August 2026</title>
     <style>
 
         :root {
@@ -287,71 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-08-09 11:46:49</p>
+        <h1>This Week in Package Management: 8 August 2026</h1>
+        <p><span class="category-tag">blog</span> nesbitt.io · 2026-08-08</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 2 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="release">
-    <div class="release-header">
-        <div style="display:flex;align-items:center;flex-wrap:wrap;">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.6.34" target="_blank" class="release-title">openclaw 2026.6.34</a>
-            <span class="release-tag">v2026.6.34</span>
-        </div>
-        <span class="release-date">2026-08-08</span>
-    </div>
-<div class="release-section">
-    <div class="release-section-title">🆕 新增功能</div>
-    <div class="release-card"><ul class="summary-list"><li>- 沙盒浏览器路由、可信 DNS 目标等网络边界拒绝不安全访问路径，提升安全性</li><li>- 保留会话写入、提供商回退、流进度处理和 stdio 故障恢复，增强代理运行弹性</li><li>- 待处理通道工作恢复后继续执行，确认消息支持幂等处理，提升通道稳定性</li><li>- 命令和状态界面保护仅所有者操作，防止凭据泄露到 URL 或摘要中</li><li>- SQLite 检查点、工作区读取、网关进程信号等本地运行时状态更稳健</li></ul></div>
-</div><div class="release-section">
-    <div class="release-section-title">🐛 Bug 修复</div>
-    <div class="release-card"><ul class="summary-list"><li>- OpenCode Go：使用 `hy3` 而非失效的 `hy3-preview` 别名</li><li>- Codex 原生子代理：保留父应用服务器订阅并正确识别多代理 V2 子活动</li><li>- 依赖安全：更新 brace-expansion、PostCSS、fast-uri、ip-address 和 Undici 版本</li><li>- 执行传输安全：浏览器、沙盒、exec、MCP 和密钥解析路径拒绝不安全输入</li><li>- 交付通道稳定性：出站收据、通道生命周期、健康监控在重试和过载下干净恢复</li><li>- 网关存储可靠性：插件响应、进程探测、工作区引导和 SQLite 写入容忍瞬态故障</li></ul></div>
-</div>
-</div><div class="release">
-    <div class="release-header">
-        <div style="display:flex;align-items:center;flex-wrap:wrap;">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.6.33" target="_blank" class="release-title">openclaw 2026.6.33</a>
-            <span class="release-tag">v2026.6.33</span>
-        </div>
-        <span class="release-date">2026-08-08</span>
-    </div>
-<div class="release-section">
-    <div class="release-section-title">🆕 新增功能</div>
-    <div class="release-card"><ul class="summary-list"><li>- 网络和密钥边界更安全：provider streams、Discord REST响应和日志限制恶意响应大小，Telegram凭证从诊断中排除</li><li>- 长运行agent更可靠：运行释放、存活检查和看门狗语义区分真正的卡顿和活跃的长模型调用</li><li>- 通道传递更强：Discord重连不再丢弃排队消息，Telegram bot-to-bot和回复栅栏处理保留预期的线程和授权结果</li><li>- 凭证恢复更安全：服务重启保留SecretRef支持的Telegram凭证，OAuth修复不再覆盖已有效的目标配置文件</li><li>- 支持extended-stable更新通道：包安装可选择该通道并接收可用性通知，不会静默回退到其他版本线</li><li>- 审批和工具授权增强：Codex app-server命令需实际人工/插件批准，exec自动审查绑定到解析后的命令</li><li>- 外部MCP客户端使用短生命周期会话绑定授权，不再继承子进程权限</li><li>- Gateway消息操作保留受信任请求者来源并拒绝不受信任调用者</li></ul></div>
-</div><div class="release-section">
-    <div class="release-section-title">🐛 Bug 修复</div>
-    <div class="release-card"><ul class="summary-list"><li>- Gateway HTTP在未认证处理前拒绝不允许的浏览器来源</li><li>- 权限修复限制在预期范围内，MCP状态输出编辑敏感信息</li><li>- agent-run缓存有界限，锁探测不再泄漏文件描述符</li><li>- 心跳读取在瞬态文件系统竞争下存活</li><li>- Anthropic兼容的部分流不再在大小边界处挂起</li><li>- OpenAI Realtime使用正确的身份验证和转录秘密流</li><li>- Twilio请求在持续流量下被拒绝</li><li>- 损坏的排队的通道行被墓碑化而不会阻止后续工作</li><li>- Telegram令牌即使分散在日志块中也会被编辑</li></ul></div>
-</div>
-</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><p>本文汇总了2026年8月8日当周包管理领域的最新动态，涵盖主流包管理器（如npm、pip、cargo等）的新版本发布、安全漏洞通报以及行业相关技术文章的精选推荐，为开发者提供一周内的关键更新概览。</p></div>
+<div class="tags">标签：包管理，开发者工具，技术周报</div>
+        <div class="detail-why">💡 适合希望快速了解包管理生态最新变化的开发者，节省逐一追踪各平台动态的时间。</div>
+        <a href="https://nesbitt.io/2026/08/08/this-week-in-package-management.html" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>

@@ -92,6 +92,30 @@
       "added_at": "2026-08-09 02:28:34"
     },
     {
+      "title": "openclaw 2026.6.34",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.34",
+      "source": "openclaw",
+      "published": "2026-08-08",
+      "category": "openclaw",
+      "summary": "- 沙盒浏览器路由、可信 DNS 目标等网络边界拒绝不安全访问路径，提升安全性\n- 保留会话写入、提供商回退、流进度处理和 stdio 故障恢复，增强代理运行弹性\n- 待处理通道工作恢复后继续执行，确认消息支持幂等处理，提升通道稳定性\n- 命令和状态界面保护仅所有者操作，防止凭据泄露到 URL 或摘要中\n- SQLite 检查点、工作区读取、网关进程信号等本地运行时状态更稳健\n\n🐛 Bug 修复：- OpenCode Go：使用 `hy3` 而非失效的 `hy3-preview` 别名\n- Codex 原生子代理：保留父应用服务器订阅并正确识别多代理 V2 子活动\n- 依赖安全：更新 brace-expansion、PostCSS、fast-uri、ip-address 和 Undici 版本\n- 执行传输安全：浏览器、沙盒、exec、MCP 和密钥解析路径拒绝不安全输入\n- 交付通道稳定性：出站收据、通道生命周期、健康监控在重试和过载下干净恢复\n- 网关存储可靠性：插件响应、进程探测、工作区引导和 SQLite 写入容忍瞬态故障",
+      "features": "- 沙盒浏览器路由、可信 DNS 目标等网络边界拒绝不安全访问路径，提升安全性\n- 保留会话写入、提供商回退、流进度处理和 stdio 故障恢复，增强代理运行弹性\n- 待处理通道工作恢复后继续执行，确认消息支持幂等处理，提升通道稳定性\n- 命令和状态界面保护仅所有者操作，防止凭据泄露到 URL 或摘要中\n- SQLite 检查点、工作区读取、网关进程信号等本地运行时状态更稳健",
+      "bug_fixes": "- OpenCode Go：使用 `hy3` 而非失效的 `hy3-preview` 别名\n- Codex 原生子代理：保留父应用服务器订阅并正确识别多代理 V2 子活动\n- 依赖安全：更新 brace-expansion、PostCSS、fast-uri、ip-address 和 Undici 版本\n- 执行传输安全：浏览器、沙盒、exec、MCP 和密钥解析路径拒绝不安全输入\n- 交付通道稳定性：出站收据、通道生命周期、健康监控在重试和过载下干净恢复\n- 网关存储可靠性：插件响应、进程探测、工作区引导和 SQLite 写入容忍瞬态故障",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
+      "title": "openclaw 2026.6.33",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.33",
+      "source": "openclaw",
+      "published": "2026-08-08",
+      "category": "openclaw",
+      "summary": "- 网络和密钥边界更安全：provider streams、Discord REST响应和日志限制恶意响应大小，Telegram凭证从诊断中排除\n- 长运行agent更可靠：运行释放、存活检查和看门狗语义区分真正的卡顿和活跃的长模型调用\n- 通道传递更强：Discord重连不再丢弃排队消息，Telegram bot-to-bot和回复栅栏处理保留预期的线程和授权结果\n- 凭证恢复更安全：服务重启保留SecretRef支持的Telegram凭证，OAuth修复不再覆盖已有效的目标配置文件\n- 支持extended-stable更新通道：包安装可选择该通道并接收可用性通知，不会静默回退到其他版本线\n- 审批和工具授权增强：Codex app-server命令需实际人工/插件批准，exec自动审查绑定到解析后的命令\n- 外部MCP客户端使用短生命周期会话绑定授权，不再继承子进程权限\n- Gateway消息操作保留受信任请求者来源并拒绝不受信任调用者\n\n🐛 Bug 修复：- Gateway HTTP在未认证处理前拒绝不允许的浏览器来源\n- 权限修复限制在预期范围内，MCP状态输出编辑敏感信息\n- agent-run缓存有界限，锁探测不再泄漏文件描述符\n- 心跳读取在瞬态文件系统竞争下存活\n- Anthropic兼容的部分流不再在大小边界处挂起\n- OpenAI Realtime使用正确的身份验证和转录秘密流\n- Twilio请求在持续流量下被拒绝\n- 损坏的排队的通道行被墓碑化而不会阻止后续工作\n- Telegram令牌即使分散在日志块中也会被编辑",
+      "features": "- 网络和密钥边界更安全：provider streams、Discord REST响应和日志限制恶意响应大小，Telegram凭证从诊断中排除\n- 长运行agent更可靠：运行释放、存活检查和看门狗语义区分真正的卡顿和活跃的长模型调用\n- 通道传递更强：Discord重连不再丢弃排队消息，Telegram bot-to-bot和回复栅栏处理保留预期的线程和授权结果\n- 凭证恢复更安全：服务重启保留SecretRef支持的Telegram凭证，OAuth修复不再覆盖已有效的目标配置文件\n- 支持extended-stable更新通道：包安装可选择该通道并接收可用性通知，不会静默回退到其他版本线\n- 审批和工具授权增强：Codex app-server命令需实际人工/插件批准，exec自动审查绑定到解析后的命令\n- 外部MCP客户端使用短生命周期会话绑定授权，不再继承子进程权限\n- Gateway消息操作保留受信任请求者来源并拒绝不受信任调用者",
+      "bug_fixes": "- Gateway HTTP在未认证处理前拒绝不允许的浏览器来源\n- 权限修复限制在预期范围内，MCP状态输出编辑敏感信息\n- agent-run缓存有界限，锁探测不再泄漏文件描述符\n- 心跳读取在瞬态文件系统竞争下存活\n- Anthropic兼容的部分流不再在大小边界处挂起\n- OpenAI Realtime使用正确的身份验证和转录秘密流\n- Twilio请求在持续流量下被拒绝\n- 损坏的排队的通道行被墓碑化而不会阻止后续工作\n- Telegram令牌即使分散在日志块中也会被编辑",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Netscape: The IPO that went boom on its way up and down",
       "url": "https://dfarq.homeip.net/netscape-the-ipo-that-went-boom-on-its-way-up-and-down/?utm_source=rss&utm_medium=rss&utm_campaign=netscape-the-ipo-that-went-boom-on-its-way-up-and-down",
       "summary": "The early star of the dot-com boom wasn&#8217;t Amazon or Ebay, it was Netscape, a company who produced a web browser of the same name. It went boom high and it went boom fast as it rose. And when it\nThe post Netscape: The IPO that went boom on its way up and down appeared first on The Silicon Underground.",
@@ -15423,5 +15447,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-09 02:28:34"
+  "last_updated": "2026-08-09 11:46:49"
 }
