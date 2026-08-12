@@ -1,6 +1,149 @@
 {
   "articles": [
     {
+      "title": "Weekly Update 516: Live From Vietnam",
+      "url": "https://www.troyhunt.com/weekly-update-516/",
+      "summary": "A little wind noise, a little connectivity flakiness, and a little lip-sync issues from YouTube, but look at that view! &#x1f929; Back to business, it&apos;s the Brinks Home FAQ I found most interesting this week. I mean, how do you write your own FAQ then fail to",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-08-12",
+      "summary_zh": "Troy Hunt分享了他在越南录制本期视频周更新的经历，虽然遇到了风声干扰和网络不稳定等技术问题，但表示风景很美。本期他重点讨论了Brinks Home的FAQ案例，质疑该公司如何写出自己的FAQ却存在明显漏洞的有趣现象。",
+      "why_matters": "适合关注网络安全和隐私话题的读者，能了解Troy Hunt对安全FAQ的专业点评视角。",
+      "tags": "网络安全，FAQ案例分析，视频周更",
+      "id": 1258,
+      "added_at": "2026-08-13 02:55:31"
+    },
+    {
+      "title": "OTel Isn't Going Well (And I Made A Spreadsheet About It)",
+      "url": "https://matduggan.com/otel-isnt-going-well-and-i-made-a-spreadsheet-about-it/",
+      "summary": "For years now one of the most reliable complaints I hear when I try to drag a team off their vendor specific SDK and onto OpenTelemetry is some variation of: \"why does it seem like this isn&apos;t done yet?\"Vendor SDKs for observability are, to put",
+      "source": "matduggan.com",
+      "category": "blog",
+      "published": "2026-08-12",
+      "summary_zh": "文章指出OpenTelemetry（OTel）在实际采用中遇到了诸多困难，作者通过制作电子表格的方式，系统性地梳理了从厂商特定SDK迁移到OTel过程中存在的问题。文章揭示了一个普遍现象：尽管OTel被寄予厚望，但很多团队在实际迁移时发现其成熟度和易用性仍未达到预期，导致采用率低于预期。",
+      "why_matters": "对于关注可观测性技术发展的工程师和技术负责人，这篇文章提供了一个务实的视角，帮助评估OTel的实际落地挑战。",
+      "tags": "OpenTelemetry,可观测性,云原生,开发者工具",
+      "id": 1256,
+      "added_at": "2026-08-13 02:55:31"
+    },
+    {
+      "title": "IBM PC introduced, August 12, 1981",
+      "url": "https://dfarq.homeip.net/ibm-pc-introduced-august-12-1981/?utm_source=rss&utm_medium=rss&utm_campaign=ibm-pc-introduced-august-12-1981",
+      "summary": "45 years ago today, IBM introduced the original IBM PC. This computer changed the industry and change the world. There is no shortage of analysis about its impact, but I find a lot of it self-serving and, in some cases\nThe post IBM PC introduced, August 12, 1981 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-08-12",
+      "summary_zh": "1981年8月12日，IBM正式推出了第一代IBM PC，这台个人电脑深刻改变了整个科技行业和世界。文章回顾了这一历史性时刻，并对现有大量分析IBM PC影响力的观点提出了不同看法，认为其中不少分析存在自利动机或不够客观。",
+      "why_matters": "了解IBM PC历史意义及反思现有评价的独特视角。",
+      "tags": "IBM PC, 个人电脑历史, 科技行业变革",
+      "id": 1254,
+      "added_at": "2026-08-13 02:55:31"
+    },
+    {
+      "title": "Books I Enjoyed In 2026H1",
+      "url": "https://borretti.me/article/books-i-enjoyed-in-2026-h1",
+      "summary": "A list.",
+      "source": "borretti.me",
+      "category": "blog",
+      "published": "2026-08-12",
+      "summary_zh": "作者分享了2026年上半年阅读并喜爱的书籍清单，涵盖多个类别的推荐作品。",
+      "why_matters": "适合想要发现优质阅读材料或了解他人阅读偏好的读者。",
+      "tags": "读书, 书单, 阅读推荐",
+      "id": 1252,
+      "added_at": "2026-08-13 02:55:31"
+    },
+    {
+      "title": "Cryptic but consistent",
+      "url": "https://www.johndcook.com/blog/2026/08/12/cryptic-but-consistent/",
+      "summary": "Suppose you&#8217;ve never worked at the command line and you&#8217;re reading a book about the bash shell. You read that !$ is a shortcut to refer to the last word of the previous command. That little fact will almost certainly not stick in your head for a couple reasons. First, you probably see no need [&#8230;]\nThe post Cryptic but consistent first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-08-12",
+      "summary_zh": "文章以bash shell中的 !$ 快捷键为例，探讨了初学者面对命令行界面时难以记住抽象语法的困境。作者指出，虽然这些命令符号看起来神秘难懂，但背后其实遵循着一致的逻辑规则，一旦理解这种内在一致性，就能更有效地学习和掌握命令行工具。",
+      "why_matters": "帮助命令行初学者理解看似杂乱的命令背后其实有章可循，转变学习心态。",
+      "tags": "命令行,Bash,学习技巧",
+      "id": 1250,
+      "added_at": "2026-08-13 02:55:31"
+    },
+    {
+      "title": "Pluralistic: Model collapse (12 Aug 2026)",
+      "url": "https://pluralistic.net/2026/08/12/insurance-value-of-biodiversity/",
+      "summary": "Today's links Model collapse: Living in a world that's trained on itself. Hey look at this: Delights to delectate. Object permanence: Wired v Dutch hackers; NYT v DMCA; Hair gel terrorist threat does not exist; AT&#38;T merger is a screwjob; Smart cities are stupid; RIP Reaganomics. Upcoming appearances: Edinburgh, Sydney, Melbourne, Brighton, London, South Bend. Recent appearances: Where I've been. Latest books: You keep readin' em, I'll keep writin' 'em. Upcoming books: Like I said, I'll keep ",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-08-12",
+      "summary_zh": "本文探讨了“模型崩溃”（Model Collapse）现象，即AI模型在使用自身生成内容进行训练后产生的性能退化问题。作者Cory Doctorow分析了当互联网内容逐渐被AI生成文本主导时，可能导致AI系统陷入自我训练的恶性循环，最终影响整个AI生态系统的质量。此外，文章还涵盖了科技行业的其他热点话题，包括黑客行为、版权争议、企业并购及智慧城市等议题。",
+      "why_matters": "深入浅出地分析了AI时代的数据质量问题，是理解AI未来发展趋势的重要参考。",
+      "tags": "人工智能, 模型崩溃, 科技评论",
+      "id": 1248,
+      "added_at": "2026-08-13 02:55:31"
+    },
+    {
+      "title": "Where Did the Productivity Gains Go?",
+      "url": "https://idiallo.com/blog/where-did-the-productivity-gains-go",
+      "summary": "There is a machine called Productivity, and on this machine there is a knob and a button. The knob increases productivity, and the button is labeled \"reset.\"\t\t\tMy job was data entry at a non-profit. It was my first job in the US where I didn't have to lift heavy objects. My main task was entering collected donations into a database. The data source was email attachments, which came in various formats. Excel files, Word files, and some directly embedded in the email body. The database itself was ",
+      "source": "idiallo.com",
+      "category": "blog",
+      "published": "2026-08-12",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1246,
+      "added_at": "2026-08-13 02:55:31"
+    },
+    {
+      "title": "Nature Is Healing",
+      "url": "https://mastodon.social/@BasicAppleGuy/117073366339407186",
+      "summary": "Basic Apple Guy:\n\n\n  Apple just dropped the hardest icon glow-up for the new Chess icon\nin macOS 27 Beta 5.\n\n\n\n\n\nThis is not just a tweak or small improvement. This is the difference between total shit and a really nice icon.\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-12",
+      "summary_zh": "Apple在macOS 27 Beta 5中为国际象棋应用图标进行了重大视觉更新，改变了以往被批评为“糟糕”的设计，使其成为一款精美的图标。这是Apple对细节设计持续打磨的体现。",
+      "why_matters": "简短有趣的Apple设计动态，适合关注macOS视觉演变的用户。",
+      "tags": "Apple，macOS，图标设计",
+      "id": 1244,
+      "added_at": "2026-08-13 02:55:31"
+    },
+    {
+      "title": "Reed Jobs Tells a Neuroscience Story",
+      "url": "https://x.com/sabrinahalper/status/2086964813788258588?s=46",
+      "summary": "Watch this. No words needed, everyone can feel it. Genes are a hell of a thing.\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-12",
+      "summary_zh": "Reed Jobs在演讲中展示了一个与神经科学相关的视觉化故事，通过直观的呈现方式让观众感受到基因与神经科学之间的深刻联系，整个展示以情感共鸣为核心，无需过多言语解释。",
+      "why_matters": "展示了科技与生命科学交叉领域的情感力量，适合关注生物医疗投资的读者。",
+      "tags": "神经科学, 基因, Reed Jobs, 生物医疗, 演讲分享",
+      "id": 1242,
+      "added_at": "2026-08-13 02:55:31"
+    },
+    {
+      "title": "App Store Scam of the Week: ‘TabControl Extension’ for Safari",
+      "url": "https://lapcatsoftware.com/articles/2026/8/4.html",
+      "summary": "Jeff Johnson:\n\n\n  These purported reviews, all but one of which is 5 stars, are all\nin English. Yet none of them is in the US App Store. I also looked\nat other English-speaking countries such as Australia and\nCanada but found no reviews. Also suspicious is that the name\nof every reviewer was a first name followed by an initial for the\nlast name. If you’ve ever looked through App Store user reviews,\nit’s unusual to find this naming format. In most cases, the name\non App Store user reviews is a un",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-12",
+      "summary_zh": "daringfireball.net的Jeff Johnson揭露了App Store上一款名为\"TabControl Extension\"的Safari扩展骗局。该骗局的特点是：几乎所有评论都是5星，且都是英文用户，但这些评论既不在美国App Store，也不在澳大利亚、加拿大等其他英语国家的商店中。更可疑的是，所有评论者的名字都只是名字（first name）而非全名，显示出虚假评论的典型特征。",
+      "why_matters": "揭露了App Store中存在的有组织的虚假评论骗局，提醒用户谨慎对待看似完美的高分应用。",
+      "tags": "App Store, 骗局, 虚假评论",
+      "id": 1240,
+      "added_at": "2026-08-13 02:55:31"
+    },
+    {
+      "title": "Quoting Florian Herrengt",
+      "url": "https://simonwillison.net/2026/Aug/12/florian-herrengt/#atom-everything",
+      "summary": "But then users start to report a weird bug. It's the 4th time your team has been trying to fix it. I mean... asking AI to fix it. Unfortunately, it seems like not even Fable can figure it out.\nYou go talk to the person who worked on this feature.\n\"So where does the data come from?\"\n\"Hmm... actually I don't know. Let me ask Claude.\"\nYou sit next to each other watching an endless wall of text appear on the screen. Neither of you has any idea whether any of it is true but Claude seems very confiden",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-08-12",
+      "summary_zh": "文章通过一个反复出现的bug修复案例，展示了团队多次使用AI工具（包括Fable）尝试解决却未能成功的经历，最终通过直接与功能开发人员沟通数据来源才找到问题所在。这个故事揭示了AI辅助调试的局限性，以及在复杂系统中，对代码和数据流的深入理解仍不可替代。",
+      "why_matters": "真实案例说明了AI编程助手的边界，提醒我们在依赖AI的同时不能忽视基础的技术理解和直接沟通的重要性。",
+      "tags": "AI辅助编程, 软件调试, 技术沟通",
+      "id": 1238,
+      "added_at": "2026-08-13 02:55:31"
+    },
+    {
       "title": "Red Hat’s successful 1999 IPO",
       "url": "https://dfarq.homeip.net/red-hats-successful-1999-ipo/?utm_source=rss&utm_medium=rss&utm_campaign=red-hats-successful-1999-ipo",
       "summary": "It was 27 years ago this week, on Aug 11, 1999, that Red Hat, the Linux vendor, conducted its IPO. It was not the biggest IPO of 1999, and it wasn&#8217;t even the biggest Linux-related IPO of 1999. But Red\nThe post Red Hat&#8217;s successful 1999 IPO appeared first on The Silicon Underground.",
@@ -15928,5 +16071,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-12 12:10:53"
+  "last_updated": "2026-08-13 02:55:31"
 }
