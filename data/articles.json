@@ -1,6 +1,136 @@
 {
   "articles": [
     {
+      "title": "Another partial SSI trick with canonicalize",
+      "url": "https://bernsteinbear.com/blog/more-partial-ssi/?utm_source=rss",
+      "summary": "After reading Chris Fallin’s aegraph\npost, new ZJIT contributor dak2\nlanded a block-local version of the canonicalize function in\n#16828.\n\nThe pseudocode of the block-local canonicalize function looks like this:\n\nfor block in function.reverse_post_order():\n    rewrite_map = {}\n    for insn in block.insns:\n        insn.operands.map_in_place(lambda o: rewrite_map.get(o, o))\n        if insn.opcode == \"GuardType\":\n            rewrite_map[insn.val] = insn\n\n\nAs a refresher, this turns IR like this:\n\nv",
+      "source": "bernsteinbear.com",
+      "category": "blog",
+      "published": "2026-08-13",
+      "summary_zh": "本文介绍了ZJIT项目中dak2实现的一个block-local版本的canonicalize函数，该实现受到Chris Fallin的aegraph研究的启发。文章通过伪代码展示了canonicalize函数在函数逆后序遍历中如何为每个基本块构建rewrite_map并进行指令重写的过程，这是SSI（Static Single Information）形式转换的一个实用技巧。",
+      "why_matters": "对于关注编译器优化和JIT实现的技术人员，了解这种block-local的canonicalize实现方式有助于理解现代编译器中的控制流等价转换技术。",
+      "tags": "编译器优化, JIT, SSI, 编程语言实现",
+      "id": 1267,
+      "added_at": "2026-08-14 02:56:20"
+    },
+    {
+      "title": "IBM 5170 PC/AT",
+      "url": "https://dfarq.homeip.net/ibm-5170-pc-at/?utm_source=rss&utm_medium=rss&utm_campaign=ibm-5170-pc-at",
+      "summary": "The IBM 5170 PC/AT, launched August 14, 1984, is a very popular retro PC, for several reasons. It was the last of the open architecture IBM PCs. And from 1984 to about mid-1987, it was the fastest and most expensive\nThe post IBM 5170 PC/AT appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-08-13",
+      "summary_zh": "IBM 5170 PC/AT于1984年8月14日发布，是一款极具影响力的复古电脑。它是IBM最后一款采用开放架构的个人电脑，从1984年到1987年中期一直是当时最快且价格最高的PC产品，在个人电脑发展史上具有里程碑意义。",
+      "why_matters": "了解IBM PC/AT的历史地位和技术特点，感受80年代高端个人电脑的魅力。",
+      "tags": "IBM PC/AT, 复古电脑, 个人电脑历史",
+      "id": 1265,
+      "added_at": "2026-08-14 02:56:20"
+    },
+    {
+      "title": "Supplier Security Questionnaire",
+      "url": "https://nesbitt.io/2026/08/13/supplier-security-questionnaire.html",
+      "summary": "Estimated time to complete: 20 minutes.",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-08-13",
+      "summary_zh": "可以基于标题推测这是一篇关于供应商安全问卷的指南或说明文件",
+      "why_matters": "对于需要进行供应商安全评估的人来说很有参考价值",
+      "tags": "网络安全, 安全评估, 供应链管理",
+      "id": 1263,
+      "added_at": "2026-08-14 02:56:20"
+    },
+    {
+      "title": "Constructing Hadamard matrices",
+      "url": "https://www.johndcook.com/blog/2026/08/13/constructing-hadamard-matrices/",
+      "summary": "A Hadamard matrix is an orthogonal matrix whose entires are all either 1 or − 1. For example is a Hadamard matrix of order 2. True to Stigler&#8217;s law of eponymy, James Joseph Sylvester investigated Hadamard matrices before Jacques Hadamard. Sylvester saw how to bootstrap the example above into more examples. If H is a [&#8230;]\nThe post Constructing Hadamard matrices first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-08-13",
+      "summary_zh": "Hadamard矩阵是一种元素仅为1或-1的正交矩阵，文章介绍了这类矩阵的构造方法。历史上James Joseph Sylvester早于Jacques Hadamard研究此类矩阵，并发现了从小阶矩阵递推构造更大阶矩阵的方法。文章还结合Stigler命名定律讨论了这一数学概念的命名争议。",
+      "why_matters": "适合对组合数学和矩阵理论感兴趣的读者，能了解Hadamard矩阵的基本概念与构造思路。",
+      "tags": "Hadamard矩阵, 线性代数, 数学史",
+      "id": 1261,
+      "added_at": "2026-08-14 02:56:20"
+    },
+    {
+      "title": "Book Review: Coding Literacy by Annette Vee ★★⯪☆☆",
+      "url": "https://shkspr.mobi/blog/2026/08/book-review-coding-literacy-by-annette-vee/",
+      "summary": "This is a disappointing and frustrating book - not least because it so nearly hits the mark.  The subtitle is \"How Computer Programming Is Changing Writing\" - but it never gets close to discussing that topic, let alone deeply examining it. Instead, it is a book mostly focussed on the history of what we mean by \"literacy\" and, by contrast, what it meant to be \"illiterate\".  As per the standard…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-08-13",
+      "summary_zh": "这是一篇对Annette Vee所著《Coding Literacy》的书评，作者批评该书\"令人失望\"。虽然副标题承诺探讨\"计算机编程如何改变写作\"，但实际内容主要聚焦于编程的历史，几乎没有深入讨论编程对写作实践的影响。评论者认为这本书本可以更好，但最终未能达到其标题所暗示的深度。",
+      "why_matters": "如果你想了解编程史可能有用，但期望探讨编程对写作影响的人恐怕会失望。",
+      "tags": "书评, 编程教育, 书籍批评",
+      "id": 1259,
+      "added_at": "2026-08-14 02:56:20"
+    },
+    {
+      "title": "Edinburgh Fringe - Eleanor Morton: The Mermaid ★★★⯪☆",
+      "url": "https://shkspr.mobi/blog/2026/08/edinburgh-fringe-eleanor-morton-the-mermaid/",
+      "summary": "The undisputed queen of short-form viral video comedy snacks takes to the stage. Well, swims to the stage.  The Mermaid is a delightful and gentle amble through the confusing world of a girl who just wants to become a mermaid. Less standup and more storytelling, nevertheless it packs in the laughs with some rather clever jokes, a bit of bawdy humour, and - a rarity on The Fringe - a decently…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-08-13",
+      "summary_zh": "短视频喜剧红人Eleanor Morton在爱丁堡艺穗节带来单人秀《The Mermaid》，以一位想成为美人鱼的女孩为主角，通过温柔而有趣的故事讲述方式，带领观众探索成长中的困惑与梦想。节目虽非传统单口喜剧形式，却笑声密集、节奏轻快，展现了她在短格式喜剧之外的舞台掌控力。",
+      "why_matters": "如果你喜欢她短视频里那种精炼有趣的风格，这个将故事与幽默完美融合的现场秀值得一看。",
+      "tags": "单口喜剧, Edinburgh Fringe, 故事型喜剧",
+      "id": 1257,
+      "added_at": "2026-08-14 02:56:20"
+    },
+    {
+      "title": "Edinburgh Fringe: Hot Flush – A Bold, We’re Old(ish) Burlesque Show ★★★☆☆",
+      "url": "https://shkspr.mobi/blog/2026/08/edinburgh-fringe-hot-flush-a-bold-were-oldish-burlesque-show/",
+      "summary": "Are menopausal women hot? It is often said that pornographic actresses move straight from \"barely legal\" to \"MILF\" without so much as moment in between. Unlike the fringe&#039;s other burlesque shows - which seem to exclusively feature nymphettes and twinks with nary a grey hair between them - Hot Flush focuses on the over 40s.  Look, you probably don&#039;t want to read a review of how tempting I found…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-08-13",
+      "summary_zh": "这篇文章点评了爱丁堡边缘艺术节上一个名为\"Hot Flush\"的滑稽变装秀，该表演聚焦于更年期女性主题，在满是年轻面孔的burlesque界独树一帜。与通常只展示年轻肉体的同类表演不同，这部作品大胆探讨了中年女性的身体与魅力，具有一定的颠覆性和创新意义。",
+      "why_matters": "如果你厌倦了千篇一律的burlesque表演，这部以更年期女性为主角的作品会带来耳目一新的观感。",
+      "tags": "Edinburgh Fringe, Burlesque, 更年期主题",
+      "id": 1255,
+      "added_at": "2026-08-14 02:56:20"
+    },
+    {
+      "title": "Edinburgh Fringe: Miscast Sondheim ★★☆☆☆",
+      "url": "https://shkspr.mobi/blog/2026/08/edinburgh-fringe-miscast-sondheim/",
+      "summary": "I&#039;m not sure what they&#039;re teaching at LAMDA, but it certainly isn&#039;t vocal projection. We were forewarned about the technical difficulties - but if a trained stage singer can&#039;t reach the 6th row of a tiny theatre, that can&#039;t be blamed on the backstage team.  The show advertises itself as:  What happens when you take Sondheim’s most beloved music and turn it on its head? Ingénues become villains, vi…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-08-13",
+      "summary_zh": "在爱丁堡艺穗节上演的这部Sondheim音乐剧因演员声乐投射能力不足而大打折扣，即使在小型剧场也难以让后排观众听清台词。尽管制作方提前预警了技术问题，但作为专业舞台歌手无法胜任基础的声音传达要求，令人质疑其专业训练背景。该剧仅获得二星评价，整体表现令人失望。",
+      "why_matters": "仅适合对Sondheim音乐有强烈兴趣且能接受不完美演绎的观众，普通观众建议跳过。",
+      "tags": "爱丁堡艺穗节, Sondheim, 音乐剧评论, 戏剧",
+      "id": 1253,
+      "added_at": "2026-08-14 02:56:20"
+    },
+    {
+      "title": "Google Design Pisses Its Pants on Twitter/X",
+      "url": "https://x.com/googledesign/status/2087195277094695096",
+      "summary": "A few years ago I’d have looked at this post and maybe leaned toward the idea that a precocious 8th grader somewhere hacked into the @GoogleDesign Twitter account and tried to pass off their little to-do app as having come from Google’s design team. But this is apparently real. I almost hope it’s AI slop and that there aren’t any human designers there who think anything in this app has appropriate proportions or is aesthetically pleasing.\n\n(Here’s an XCancel link for the x.com averse. You can ju",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-13",
+      "summary_zh": "John Gruber 批评 Google Design 在 Twitter/X 上的帖子表现业余得像是被黑或由 AI 生成，他回忆几年前遇到这种情况会认为是个早熟的8年级学生所为，但现在这显然就是 Google Design 的真实内容，暗指 Google 的社交媒体运营出现了令人尴尬的失误。",
+      "why_matters": "Gruber 以犀利幽默的笔锋评论硅谷大公司的社媒翻车事件，值得一读以了解科技界的有趣舆论。",
+      "tags": "科技评论,Google,社交媒体,Twitter",
+      "id": 1251,
+      "added_at": "2026-08-14 02:56:20"
+    },
+    {
+      "title": "Ceramic Shield 2 Is the Real Deal",
+      "url": "https://www.tomsguide.com/phones/iphones/iphone-17-and-iphone-air-durability-testing-heres-how-the-new-iphones-stand-up-to-bending-scratching-and-dropping",
+      "summary": "Philip Michaels, writing last September for Tom’s Guide:\n\n\n  iPhone 17 torture test videos done by JerryRigEverything\nindicate that Ceramic Shield 2 certainly resists scratching, with\nscratch testing leaving only light scratches at level 7 on the\nMohs scale of hardness. Scratches typically show up on glass at\nlevels 5 or 6 on that scale.\n\n“Ceramic Shield 2 is indeed the best we’ve ever seen,”\nJerryRigEverything remarks in the iPhone 17 Pro testing\nvideo.\n\nThat backs up Apple’s own Ceramic Shield",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-13",
+      "summary_zh": "iPhone 17采用的Ceramic Shield 2屏幕玻璃在JerryRigEverything的刮擦测试中表现优异，直到莫氏硬度等级7级才出现轻微刮痕，证明其抗刮擦能力较前代产品有明显提升，是目前智能手机屏幕保护玻璃中的佼佼者。",
+      "why_matters": "如果你关心手机屏幕耐用性，想了解Ceramic Shield 2是否值得信赖，这篇文章提供了直观的测试数据验证。",
+      "tags": "iPhone 17, Ceramic Shield 2, 屏幕测试, 手机耐用性",
+      "id": 1249,
+      "added_at": "2026-08-14 02:56:20"
+    },
+    {
       "title": "Weekly Update 516: Live From Vietnam",
       "url": "https://www.troyhunt.com/weekly-update-516/",
       "summary": "A little wind noise, a little connectivity flakiness, and a little lip-sync issues from YouTube, but look at that view! &#x1f929; Back to business, it&apos;s the Brinks Home FAQ I found most interesting this week. I mean, how do you write your own FAQ then fail to",
@@ -16071,5 +16201,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-13 12:15:28"
+  "last_updated": "2026-08-14 02:56:20"
 }
