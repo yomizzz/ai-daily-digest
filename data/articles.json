@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "title": "Thoughts on visiting the Edinburgh Fringe as a newbie",
+      "url": "https://shkspr.mobi/blog/2026/08/thoughts-on-the-edinburgh-fringe-as-a-newbie/",
+      "summary": "This was my first ever time at The Fringe™. Here are some scattered thoughts looking at the good, the bad, and the annoying aspects of this madly extravagant exhibition of talent. We saw 23 shows together, and one separate show each. There were more hits than misses, but the frustration of wasting your time on a bad show is rather heavy when there are literally hundreds of other shows on offer.  P…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-08-16",
+      "summary_zh": "作者首次参加爱丁堡边缘艺术节，体验了这个全球最大的艺术盛会。他们共观看了25场演出，整体成功率高于失败率，但也不可避免地遇到了一些浪费时间的情况。文章分享了艺术节体验中的亮点、不足与令人懊恼的方面，为其他新手提供了实用的参考。",
+      "why_matters": "为计划参加爱丁堡边缘艺术节的新人提供了真实的第一手体验与建议。",
+      "tags": "爱丁堡边缘艺术节, 戏剧演出, 艺术节体验",
+      "id": 1296,
+      "added_at": "2026-08-17 02:20:19"
+    },
+    {
+      "title": "XCancel — An Unofficial Twitter/X Mirror",
+      "url": "https://xcancel.com/about",
+      "summary": "XCancel:\n\n\n  XCancel is an instance of Nitter.\n\nNitter is a free and open source alternative Twitter front-end\nfocused on privacy and performance. The source is available on\nGitHub at https://github.com/zedeus/nitter [...]\n\nUsing an instance of Nitter (hosted on a VPS for example), you can\nbrowse Twitter without JavaScript while retaining your privacy. In\naddition to respecting your privacy, Nitter is on average around\n15 times lighter than Twitter, and in most cases serves pages\nfaster (eg. tim",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-16",
+      "summary_zh": "XCancel是基于Nitter构建的非官方Twitter/X镜像网站。Nitter是一款专注于隐私保护的开源Twitter前端替代方案，性能优异，其源代码托管在GitHub上。用户通过部署Nitter实例即可在保护隐私的前提下浏览Twitter内容。",
+      "why_matters": "适合注重隐私、厌倦Twitter官方追踪的用户尝试使用。",
+      "tags": "隐私保护, 开源项目, Twitter替代方案",
+      "id": 1294,
+      "added_at": "2026-08-17 02:20:19"
+    },
+    {
+      "title": "Trump Administration ‘Not in Favor’ of Apple Using Chinese RAM",
+      "url": "https://www.wsj.com/tech/apple-china-memory-chip-plan-57773a83?st=vfe1SA",
+      "summary": "The Wall Street Journal (gift link):\n\n\n  To help alleviate the supply crunch, Apple is looking to Chinese\nmanufacturers.\n\n“The Trump administration is not in favor of that,” Lutnick said\nin an interview after touring an Apple manufacturing facility in\nHouston. There have to be “other solutions to the memory issue,\nbut it’s not great American companies using Chinese memory.”\n\nAsked if he has relayed that message to Apple, Lutnick said\n“plainly.”\n\n\nBut:\n\n\n  U.S. government rules require American c",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-16",
+      "summary_zh": "苹果公司因供应链紧张考虑采用中国制造商的内存产品，但特朗普政府明确表示反对。商务部长卢特尼克在参观苹果位于休斯顿的制造设施后强调，政府认为必须寻求“其他解决方案”，暗示将推动美国本土供应链发展。此事件反映出中美科技博弈背景下，美国政府正积极干预企业供应链决策。",
+      "why_matters": "了解美国政府如何直接介入企业供应链选择的典型案例。",
+      "tags": "特朗普政府, 苹果供应链, 中美科技博弈, 美国制造业",
+      "id": 1292,
+      "added_at": "2026-08-17 02:20:19"
+    },
+    {
+      "title": "‘Anthropic’s Weak Watermarks Appease a Weak Law’",
+      "url": "https://blog.j11y.io/2026-08-12_Anthropics-weak-watermarks-appease-a-weak-law/",
+      "summary": "James Padolsey, on the Claude-text-watermarking-to-comply-with-an-EU-regulation imbroglio:\n\n\n  The same thought that led to this law could have applied to\ncalculators at the time of their inception, had their outputs\nrevealed themselves through artefacts. Thankfully, a sum borne of\nthe brain is treated no differently from one produced by a\ncalculator. Likewise with spellcheckers. To make assistance\nsuspect only once the tool becomes capable enough to compose a\nwhole sentence is not a principled ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-16",
+      "summary_zh": "本文讨论了Anthropic公司为遵守欧盟AI法规而在Claude模型输出中添加的\"弱水印\"技术。作者认为这项法规本身存在缺陷——类似于如果早期计算器能通过输出特征被识别，也需要被管制的荒谬逻辑。真正的人类思维产物与AI生成内容之间的本质差异，并不能通过这种表面化的水印技术来解决。",
+      "why_matters": "文章以独特视角批判了当前AI监管政策的形式主义倾向，启发读者思考什么才是真正有效的AI治理方式。",
+      "tags": "AI监管,技术政策,欧盟法规",
+      "id": 1290,
+      "added_at": "2026-08-17 02:20:19"
+    },
+    {
+      "title": "The Information Profiles Cami Clark, Dario Amodei’s Wife, Ivanka Trump’s Friend, One-Time Would-Be Pornographer, and Anthropic’s ‘First Lady’",
+      "url": "https://www.theinformation.com/articles/anthropics-first-lady-took-winding-road-top?rc=jfy0lk",
+      "summary": "Cory Weinberg, Jemima McEvoy, Jessica E. Lessin, and Stephanie Palazzolo, writing for the paywalled-without-gift-links The Information:\n\n\n  As Amodei has hopscotched the globe to preach about the potential\nand risks of AI — from New Delhi to Davos to Sun Valley — Clark\nhas almost always been near his side. Several people who know the\ncouple describe Clark as Amodei’s emotional ballast, someone he\nhas sought counsel from during the turbulence of Anthropic’s\ngrowth and clashes with Washington over",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-16",
+      "summary_zh": "本文深入报道了Anthropic联合创始人Dario Amodei之妻Cami Clark的背景与角色。Clark曾是成人娱乐行业的从业者，如今转型为AI行业高管的伴侣，并凭借与Ivanka Trump的私人友谊，在科技圈建立起独特的社交网络。作为Amodei的伴侣，她在其遍布全球的AI推广活动中几乎形影不离，被称为Anthropic的“非官方第一夫人”。",
+      "why_matters": "揭示了AI行业顶级人物背后不为人知的家庭背景与社交关系，视角独特、信息密度高。",
+      "tags": "Anthropic, Dario Amodei, AI行业, 科技人物, 深度报道",
+      "id": 1288,
+      "added_at": "2026-08-17 02:20:19"
+    },
+    {
+      "title": "AI text watermarking is not a big deal",
+      "url": "https://seangoedecke.com/ai-text-watermarking-is-not-a-big-deal/",
+      "summary": "People are pretty unhappy about Anthropic’s recent announcement that they’re planning to include a hidden watermark in Claude model outputs. Will this lead to a mass exodus from Anthropic models? Will the introduction of watermarking be a meaningful change for users?\nNo. AI text watermarking is not a big deal. It doesn’t make the text worse, it doesn’t make AI outputs more detectable in practice, it doesn’t violate user privacy, and everyone’s going to be doing it by 2027 regardless.\nWatermarked",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-08-16",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1286,
+      "added_at": "2026-08-17 02:20:19"
+    },
+    {
+      "title": "Quoting Dario Amodei",
+      "url": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
+      "summary": "I do agree that the public has a negative view of AI (and that this is a big problem), but I don’t think it is primarily caused by me or any other AI leader warning about AI’s risks.  I think it is fundamentally a crisis of trust.  I think that ordinary people don’t trust companies, governments, or the tech industry and always suspect that we are cooking up some new way to screw them over.  The causes of this go back decades and AI is just the latest iteration of it.  I don’t think that a glitzy",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-08-16",
+      "summary_zh": "Anthropic CEO Dario Amodei认为公众对AI的负面看法并非主要由AI领袖们对风险的警告所导致，而是根源于一场“信任危机”——普通人对科技公司、政府等机构缺乏信任。他指出这一问题比单纯的AI风险认知更为根本，需要从根本上重建公众信任。",
+      "why_matters": "来自顶级AI公司CEO对AI信任危机的深度反思，对于理解当前AI发展困境具有重要参考价值。",
+      "tags": "AI治理,信任危机,科技伦理",
+      "id": 1284,
+      "added_at": "2026-08-17 02:20:19"
+    },
+    {
       "title": "Training a Reinforcement Learning Model to Play Bonk.io",
       "url": "https://blog.pixelmelt.dev/training-a-reinforcement-learning-model-to-play-bonk-io/",
       "summary": "Dissecting a web game to re implement the physics engine and train a neural network on it.",
@@ -16522,5 +16613,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-16 11:03:40"
+  "last_updated": "2026-08-17 02:20:19"
 }
