@@ -1,6 +1,84 @@
 {
   "articles": [
     {
+      "title": "When the Internet reached half of US households",
+      "url": "https://dfarq.homeip.net/when-the-internet-reached-half-of-us-households/?utm_source=rss&utm_medium=rss&utm_campaign=when-the-internet-reached-half-of-us-households",
+      "summary": "August 17, 2000 was a major milestone for the Internet. You could argue it&#8217;s the day the Internet went mainstream, completing the transition from something computer science students used in college to something their parents would use to buy books\nThe post When the Internet reached half of US households appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-08-17",
+      "summary_zh": "2000年8月17日是互联网发展史上的重要里程碑，美国半数家庭开始接入互联网。这一天标志着互联网完成了从高校学生和科技爱好者专用工具，向普通家庭日常用品的关键转变，互联网正式进入主流社会。",
+      "why_matters": "文章以具体日期为切入点，回顾了互联网走向大众的关键时刻，能帮助读者理解科技如何改变日常生活。",
+      "tags": "互联网历史, 科技发展, 美国科技",
+      "id": 1302,
+      "added_at": "2026-08-18 02:29:59"
+    },
+    {
+      "title": "Proportion of 1s in a Hadamard matrix",
+      "url": "https://www.johndcook.com/blog/2026/08/16/proportion-of-1s-in-a-hadamard-matrix/",
+      "summary": "The first post in the recent series of posts on Hadamard matrices describes a way of constructing new Hadamard matrices from two other Hadamard matrices by taking their Kronecker product. Starting with a Hadamard matrix H0 and a Hadamard matrix G, you can construct a sequence of Hadamard matrices by Hn+1 = G ⊗ Hn for  [&#8230;]\nThe post Proportion of 1s in a Hadamard matrix first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-08-17",
+      "summary_zh": "本文介绍如何通过Kronecker积（张量积）从两个已知的Hadamard矩阵构造新的Hadamard矩阵。通过选取初始矩阵H₀和另一个矩阵G，可以迭代生成一系列Hadamard矩阵，展示了矩阵构造的递推方法。",
+      "why_matters": "适合对组合数学或矩阵理论感兴趣的读者，提供了Hadamard矩阵构造的实用技巧。",
+      "tags": "Hadamard矩阵，Kronecker积，矩阵构造",
+      "id": 1300,
+      "added_at": "2026-08-18 02:29:59"
+    },
+    {
+      "title": "How do functions like alloca allocate memory from the stack?",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260817-40/?p=112617",
+      "summary": "The usual probing.\nThe post How do functions like <CODE>alloca</CODE> allocate memory from the stack? appeared first on The Old New Thing.",
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "category": "blog",
+      "published": "2026-08-17",
+      "summary_zh": "文章解释了alloca函数如何在栈上分配内存——它通过调整栈指针（sp）来\"探测\"所需的栈空间，而不是像malloc那样进行真正的内存分配。这种方法使得alloca的分配速度极快，因为只需要几条汇编指令即可完成，但也会带来栈溢出的风险，因为分配的内存会在函数返回时自动释放。",
+      "why_matters": "深入浅出地剖析了栈内存分配的核心机制，是理解C语言底层内存管理的经典之作。",
+      "tags": "栈内存，alloca，C语言底层机制",
+      "id": 1298,
+      "added_at": "2026-08-18 02:29:59"
+    },
+    {
+      "title": "And then the men with guns tell you to do it anyway",
+      "url": "https://shkspr.mobi/blog/2026/08/and-then-the-men-with-guns-tell-you-to-do-it-anyway/",
+      "summary": "In early February 2011 Egypt was in the middle of a political revolution. One morning, everyone&#039;s phones suddenly pinged with an alert.  The Armed Forces asks Egypt&#039;s honest and loyal men to confront the traitors and criminals and protect our people and honour and our precious Egypt.  A series of messages arrived all ostensibly from the network provider Vodafone. All pro-regime and all with the…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-08-17",
+      "summary_zh": "本文描述了2011年埃及革命期间，武装部队通过手机短信向全国民众推送政治宣传信息的事件。这一现象反映了技术在政治权力运作中的双重作用——既是信息传播的工具，也可能成为权力机构控制舆论的武器。文章引发人们思考：在技术高度渗透日常生活的今天，个人如何在政治动荡中保持独立思考。",
+      "why_matters": "文章以小见大，通过一个简单的手机推送事件，揭示了技术、权力与个人自由之间的深层关系。",
+      "tags": "技术政治，埃及革命，手机推送，数字时代",
+      "id": 1296,
+      "added_at": "2026-08-18 02:29:59"
+    },
+    {
+      "title": "Pluralistic: Jennifer Jenkins' 'Music Copyright, Creativity, and Culture' (17 Aug 2026)",
+      "url": "https://pluralistic.net/2026/08/17/great-sousas-ghost/",
+      "summary": "Today's links Jennifer Jenkins' 'Music Copyright, Creativity, and Culture': The definitive textbook (with comics!). Hey look at this: Delights to delectate. Object permanence: Hair-gel bombers v bras; Hair-gel bombers v chemistry; AOL digs for spammer's platinum; Stross on infosec in 2061; In-game Ponzi; Snowden on Shadow Brokers hack; Life v understanding advanced math; \"Greatest of Marlys!\"; Housing and precarity; LLMs as slot-machines for coders; Hypercard's backstory; Pirate Party; Fanbois' ",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-08-17",
+      "summary_zh": "本文介绍了Jennifer Jenkins的《音乐版权、创意与文化》一书，这是一部关于音乐版权领域的权威教材，独特之处在于采用漫画形式呈现复杂法律概念，让学术内容更加生动易懂。文章还附带推荐了一系列科技趣闻，包括发胶炸弹案例、垃圾邮件挖掘事件以及科幻作家Stross对未来信息安全的设想等。",
+      "why_matters": "适合对版权法、音乐产业或数字文化感兴趣，希望以轻松方式理解复杂法律议题的读者。",
+      "tags": "音乐版权, 数字文化, 法律科普",
+      "id": 1294,
+      "added_at": "2026-08-18 02:29:59"
+    },
+    {
+      "title": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
+      "url": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
+      "summary": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility\nExcellent piece of reporting from 404 Media. For a while now there have been stories of book dealers receiving orders for large volumes of books from apparently price-insensitive anonymous customers, widely suspected to be companies looking to scan them for AI training (see my previous coverage of Anthropic's book scanning from June 2025.)\n404 Media investigated with an AirTag!\n\nIn July, one bookseller told me they r",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-08-17",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1292,
+      "added_at": "2026-08-18 02:29:59"
+    },
+    {
       "title": "Hermes Agent v0.20.2 (2026.8.16)",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.16",
       "source": "hermes-agent",
@@ -16623,5 +16701,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-17 11:03:39"
+  "last_updated": "2026-08-18 02:29:59"
 }
