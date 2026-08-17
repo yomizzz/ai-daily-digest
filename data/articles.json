@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.20.2 (2026.8.16)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.16",
+      "source": "hermes-agent",
+      "published": "2026-08-17",
+      "category": "hermes",
+      "summary_zh": "- 此版本为补丁版本，汇总了自 v0.20.1 以来的约 397 个合并 PR\n- 为下游消费者（Docker 镜像、托管部署、新安装）提供稳定标记版本",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Thoughts on visiting the Edinburgh Fringe as a newbie",
       "url": "https://shkspr.mobi/blog/2026/08/thoughts-on-the-edinburgh-fringe-as-a-newbie/",
       "summary": "This was my first ever time at The Fringe™. Here are some scattered thoughts looking at the good, the bad, and the annoying aspects of this madly extravagant exhibition of talent. We saw 23 shows together, and one separate show each. There were more hits than misses, but the frustration of wasting your time on a bad show is rather heavy when there are literally hundreds of other shows on offer.  P…",
@@ -16613,5 +16623,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-17 02:20:19"
+  "last_updated": "2026-08-17 11:03:39"
 }
