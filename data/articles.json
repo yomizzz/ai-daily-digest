@@ -219,6 +219,16 @@
       "tags": "Hermes Agent"
     },
     {
+      "title": "Hermes Agent v0.20.4 (2026.8.18)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.18",
+      "source": "hermes-agent",
+      "published": "2026-08-18",
+      "category": "hermes",
+      "summary_zh": "- 补丁版本，整合了自v0.20.3以来约74个PR的合并\n- 为Docker镜像、托管部署和新安装提供稳定版本标签",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "When the Internet reached half of US households",
       "url": "https://dfarq.homeip.net/when-the-internet-reached-half-of-us-households/?utm_source=rss&utm_medium=rss&utm_campaign=when-the-internet-reached-half-of-us-households",
       "summary": "August 17, 2000 was a major milestone for the Internet. You could argue it&#8217;s the day the Internet went mainstream, completing the transition from something computer science students used in college to something their parents would use to buy books\nThe post When the Internet reached half of US households appeared first on The Silicon Underground.",
@@ -16919,5 +16929,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-19 02:30:10"
+  "last_updated": "2026-08-19 11:00:59"
 }
