@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "title": "Adobe Systems IPO August 20, 1986",
+      "url": "https://dfarq.homeip.net/adobe-systems-ipo-august-20-1986/?utm_source=rss&utm_medium=rss&utm_campaign=adobe-systems-ipo-august-20-1986",
+      "summary": "On August 20, 1986, Adobe Systems held its initial public offering. Priced at around $11 per share, Adobe has split its stock six times since. Adobe: The sleeper tech stock of 1986 1986 was a good year for tech stocks.\nThe post Adobe Systems IPO August 20, 1986 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-08-20",
+      "summary_zh": "1986年8月20日，Adobe Systems成功上市，IPO定价约为每股11美元，此后该公司股票经历了6次拆分。Adobe被视为1986年表现突出的“沉睡者”科技股，同年整体科技股市场也相当景气。",
+      "why_matters": "了解科技巨头Adobe的早期发展历程，感受经典投资案例的历史价值。",
+      "tags": "Adobe，IPO，投资历史，科技股",
+      "id": 1334,
+      "added_at": "2026-08-21 02:30:51"
+    },
+    {
+      "title": "A Sloppy Interface Is a Security Liability ￼",
+      "url": "https://blog.jim-nielsen.com/2026/sloppy-ui-is-security-liability/",
+      "summary": "In his talk “Why AI Is Breaking Software Security As We Know It” (my notes here), Feross Aboukhadijeh talks about the Axios npm incident and how the maintainer got phished by succumbing to (amongst other things) a faux Microsoft Teams interface:\n\nthis is the kind of thing that AI makes easy to do, because it can vibe code that whole fake Microsoft Teams interface pretty trivially\n\nYou’ve probably seen these: interfaces designed to look like some other product in order to provide a facade of auth",
+      "source": "blog.jim-nielsen.com",
+      "category": "blog",
+      "published": "2026-08-20",
+      "summary_zh": "文章讨论了草率/简陋的界面设计如何成为安全隐患，以Axios npm维护者被钓鱼事件为例，说明攻击者利用伪造的Microsoft Teams界面骗取信任。文中指出AI技术的普及使得创建逼真的钓鱼界面变得前所未有地简单，加剧了这类安全威胁。",
+      "why_matters": "对于关注网络安全和UI设计的开发者很有参考价值，能帮助理解界面设计细节与安全的关系。",
+      "tags": "网络安全, UI设计, 钓鱼攻击, AI风险",
+      "id": 1332,
+      "added_at": "2026-08-21 02:30:51"
+    },
+    {
+      "title": "Our Servants Will Do That For Us",
+      "url": "https://borretti.me/article/our-servants-will-do-that-for-us",
+      "summary": "Why the post-scarcity utopia is unlikely.",
+      "source": "borretti.me",
+      "category": "blog",
+      "published": "2026-08-20",
+      "summary_zh": "这篇文章探讨了为何在技术日益发达、自动化程度不断提高的今天，真正的后稀缺乌托邦仍然难以实现。作者指出，稀缺性不仅仅源于生产能力的不足，更深层次的原因在于资源分配的不平等、权力结构的存在以及人类欲望的无限扩张。单纯的技术进步无法从根本上解决这些社会结构性障碍。",
+      "why_matters": "文章从独特的视角分析了技术乐观主义的局限性，对理解未来社会变革具有启发意义。",
+      "tags": "后稀缺乌托邦，技术哲学，社会结构，自动化",
+      "id": 1330,
+      "added_at": "2026-08-21 02:30:51"
+    },
+    {
+      "title": "Issues in the Repo",
+      "url": "https://nesbitt.io/2026/08/20/issues-in-the-repo.html",
+      "summary": "refs/bugs, refs/notes, refs/heads/ticgit, or a directory full of YAML.",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-08-20",
+      "summary_zh": "本文探讨了在Git仓库中管理Issues的多种方案，包括利用refs/bugs、refs/notes等Git refs存储issue信息、使用ticgit等基于Git的issue追踪工具，以及通过YAML文件直接管理issue数据。文章比较了这些方法的优缺点，为开发者选择适合的issue管理方案提供参考。",
+      "why_matters": "适合想了解Git原生功能在issue追踪领域应用的开发者。",
+      "tags": "Git技巧, Issue追踪, 开发工具",
+      "id": 1328,
+      "added_at": "2026-08-21 02:30:51"
+    },
+    {
+      "title": "Use the built-in GELU, don't roll your own!",
+      "url": "https://www.gilesthomas.com/2026/08/built-in-gelu",
+      "summary": "Unsurprisingly, PyTorch's own built-in GELU function\nis faster than the hand-rolled one I've been using to date.  But I was surprised at\nhow much faster using it made things when training my models.  I discovered this\naccidentally just now while working on something unrelated, but am logging the details\nhere for anyone else that might find it useful.\n\nThe headline numbers: the same code, training the same model on the same data, ran\nat about:\n\n\n21,000 tokens per second using the hand-rolled GELU",
+      "source": "gilesthomas.com",
+      "category": "blog",
+      "published": "2026-08-20",
+      "summary_zh": "作者发现PyTorch内置的GELU激活函数比自己手写的版本性能更好，不仅执行速度更快，在训练模型时带来的速度提升更加显著。作者原本一直使用自己编写的GELU实现，这次是偶然在处理其他问题时发现了这一差异。",
+      "why_matters": "对于使用GELU的深度学习开发者，这是一个简单有效的性能优化建议，值得尝试。",
+      "tags": "PyTorch,GELU函数,深度学习优化,性能调优",
+      "id": 1326,
+      "added_at": "2026-08-21 02:30:51"
+    },
+    {
+      "title": "AI-generated ASCII diagrams",
+      "url": "https://www.johndcook.com/blog/2026/08/20/ai-generated-ascii-diagrams/",
+      "summary": "I like AI-generated ASCII diagrams. Because nobody would ask AI to generate ASCII diagrams, and so, it&#8217;s congruous. I like incongruity [1]. Aside from the incongruity of using a gazillion-parameter neural network to make 1970&#8217;s style ASCII art, ASCII diagrams have some uses. They&#8217;re absolutely tiny compared to image files. But more importantly they can [&#8230;]\nThe post AI-generated ASCII diagrams first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-08-20",
+      "summary_zh": "作者认为AI生成的ASCII图表很有意思，主要原因是其“反差萌”——用拥有数十亿参数的神经网络来制作具有1970年代风格的ASCII艺术，这种巨大的技术落差本身就充满趣味性。除了这种反差带来的吸引力外，ASCII图表在实际中也有一些应用场景。",
+      "why_matters": "文章从一个独特视角展现了AI应用的趣味性，探讨了技术发展中“高大上”与“复古”碰撞的有趣现象。",
+      "tags": "AI应用, ASCII艺术, 技术幽默",
+      "id": 1324,
+      "added_at": "2026-08-21 02:30:51"
+    },
+    {
+      "title": "Getting the Steam Deck LCD working on a Raspberry Pi",
+      "url": "https://www.jeffgeerling.com/blog/2026/steam-deck-lcd-pi-hat/",
+      "summary": "The BOE TV070WXM-TV0 LCD used in the original Steam Deck can be had for around $30. It's a serviceable 7\" touchscreen with 400 nits of brightness and a resolution of 1280x800 (for a sharp 216 ppi).\n\n\n\nThe specs are a lot nicer than the Pi 7\" Touch Display, which costs twice as much, with giant bezels and half the resolution!\nUntil today, the Steam Deck LCD didn't work with a Raspberry Pi. But the folks at Scandent were trying to standardize on a mass-market touchscreen for one of their own devic",
+      "source": "jeffgeerling.com",
+      "category": "blog",
+      "published": "2026-08-20",
+      "summary_zh": "本文介绍了将Steam Deck原装BOE TV070WXM-TV0 LCD屏幕（约30美元）改造应用于树莓派的方法。该屏幕拥有7英寸触控、400尼特亮度、1280x800分辨率（216 ppi）的出色规格，性能远超价格是其两倍的树莓派官方7寸屏，且边框更小。对于想要低成本获得高质量小型显示屏的创客极具参考价值。",
+      "why_matters": "为树莓派爱好者提供了一个性价比极高的屏幕改造方案，实操性强。",
+      "tags": "Steam Deck, 树莓派, 硬件改造, DIY",
+      "id": 1322,
+      "added_at": "2026-08-21 02:30:51"
+    },
+    {
       "title": "MOS Technology founded August 19, 1974",
       "url": "https://dfarq.homeip.net/mos-technology-founded-august-19-1974/?utm_source=rss&utm_medium=rss&utm_campaign=mos-technology-founded-august-19-1974",
       "summary": "On August 19, 1974, Chuck Peddle, Bill Mensch, Rod Orgill, Harry Bawcom, Ray Hirt, Terry Holdt, Wil Mathys, and Mike Janes quit their jobs at Motorola to venture out on their own, founding MOS Technology. The eight had worked on\nThe post MOS Technology founded August 19, 1974 appeared first on The Silicon Underground.",
@@ -17007,5 +17098,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-20 11:00:20"
+  "last_updated": "2026-08-21 02:30:51"
 }
