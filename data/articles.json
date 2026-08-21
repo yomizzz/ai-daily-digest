@@ -1,6 +1,175 @@
 {
   "articles": [
     {
+      "title": "In Purgatory Everyone Likes Crepes: My Time at a Greek All-Inclusive",
+      "url": "https://matduggan.com/in-purgatory-everyone-likes-crepes-my-time-at-a-greek-all-inclusive/",
+      "summary": "I can&#x2019;t remember the last time I was actually hot. It&#x2019;s a thought that keeps looping through my head as I stand next to a children&#x2019;s play structure in a Greek all-inclusive waterpark. The sun is beating down on an international community of",
+      "source": "matduggan.com",
+      "category": "blog",
+      "published": "2026-08-21",
+      "summary_zh": "作者在希腊一家全包式度假村度过了充满矛盾体验的时光。文中描绘了阳光炙烤下的水上乐园场景，以及来自世界各地的游客们在这片“度假炼狱”中享受美食与休闲的状态。标题中的“炼狱”暗示了作者对全包式度假村又爱又恨的复杂情感。",
+      "why_matters": "文章以幽默犀利的视角，探讨了现代旅游业中全包式度假的甜蜜与束缚，语言生动有趣。",
+      "tags": "希腊旅行, 全包式度假, 旅行随笔",
+      "id": 1353,
+      "added_at": "2026-08-22 02:29:17"
+    },
+    {
+      "title": "Microsoft QuickBasic remembered",
+      "url": "https://dfarq.homeip.net/microsoft-quickbasic-remembered/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-quickbasic-remembered",
+      "summary": "Microsoft QuickBasic was a commercially available programming language for MS-DOS, initially released August 18, 1985. Qbasic, the Basic interpreter included with MS-DOS versions 5 and 6, was a cut-down version of QuickBasic. Most notably, the bundled version lacked the ability\nThe post Microsoft QuickBasic remembered appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-08-21",
+      "summary_zh": "Microsoft QuickBasic是微软于1985年8月18日发布的MS-DOS商业编程语言，而随后MS-DOS 5和6版本附带的Qbasic是其精简版解释器，主要阉割了编译能力等功能。作为一款经典编程工具，QuickBasic承载了众多早期程序员的学习记忆。",
+      "why_matters": "适合对编程历史或软件开发演进感兴趣的读者，尤其是怀念DOS时代编程经历的开发者。",
+      "tags": "QuickBasic, DOS编程, 编程语言历史",
+      "id": 1351,
+      "added_at": "2026-08-22 02:29:17"
+    },
+    {
+      "title": "A Need for Speed",
+      "url": "https://www.filfre.net/2026/08/a-need-for-speed/",
+      "summary": "Looking back from the vantage point of today, it&#8217;s hard for even me to believe, but it&#8217;s true all the same: I used to be a full-blown car guy. I bought my first car, a 1966 Volkswagen Beetle, for $800 in 1989, when I was sixteen years old. The bad thing about a Beetle was [&#8230;]",
+      "source": "filfre.net",
+      "category": "blog",
+      "published": "2026-08-21",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1349,
+      "added_at": "2026-08-22 02:29:17"
+    },
+    {
+      "title": "How would you know whether an ancient culture had zero?",
+      "url": "https://www.johndcook.com/blog/2026/08/21/ancient-number-system/",
+      "summary": "A few weeks ago I wrote about the number system used in labeling spreadsheet columns. Labels run from A through Z, then AA through AZ, etc. This looks a lot like base 26, but it&#8217;s not quite the same. It has no analog of zero. If Z were like zero, Y would be followed by [&#8230;]\nThe post How would you know whether an ancient culture had zero? first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-08-21",
+      "summary_zh": "文章通过电子表格列标签系统（A-Z, AA-AZ等看似26进制却无零的表示法）作为类比，探讨如何判断古代文化是否真正拥有“零”的概念。作者指出，仅有占位符号不足以证明零的存在，需要从书写习惯、数学功能等多个维度来考证。",
+      "why_matters": "以生活化的类比（电子表格列标签）解释抽象的数学史问题，深入浅出，适合对数字历史感兴趣的读者。",
+      "tags": "数学史, 零的概念, 进制系统",
+      "id": 1347,
+      "added_at": "2026-08-22 02:29:17"
+    },
+    {
+      "title": "Reducing C++ template bloat by factoring out the type-dependent portions of the function, practical exam",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260821-00/?p=112632",
+      "summary": "Applying our principles.\nThe post Reducing C++ template bloat by factoring out the type-dependent portions of the function, practical exam appeared first on The Old New Thing.",
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "category": "blog",
+      "published": "2026-08-21",
+      "summary_zh": "本文是作者前一篇关于减少C++模板膨胀原则的实际应用案例，展示了如何通过将函数中类型依赖的部分提取出来，从而有效减少模板代码膨胀的问题，并通过具体代码示例演示了这一优化技巧的实际效果。",
+      "why_matters": "对于使用C++模板的开发者来说是实用的优化指南，提供了可操作的代码重构思路。",
+      "tags": "C++模板优化, 代码膨胀, 模板元编程",
+      "id": 1345,
+      "added_at": "2026-08-22 02:29:17"
+    },
+    {
+      "title": "Book Review: An Immense World - How Animal Senses Reveal the Hidden Realms Around Us by Ed Yong ★★★☆☆",
+      "url": "https://shkspr.mobi/blog/2026/08/book-review-an-immense-world-how-animal-senses-reveal-the-hidden-realms-around-us-by-ed-yong/",
+      "summary": "This is a detailed examination of the various senses possessed by animals. Some will be intimately familiar to you - like sight and sound - whereas some will seem strange and uncanny - like magnetic detection and electro-sensing. Some straddle an almost understandable space like echolocation or tetra-chromatic vision.  This isn&#039;t a game of Top Trumps where all the animals are ranked by power.…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-08-21",
+      "summary_zh": "本文是对埃德·杨（Ed Yong）所著《An Immense World》一书的详细书评，作者深入探讨了动物王国的各种奇异感官世界——从我们熟悉的视觉与听觉，到陌生而神秘的磁感与电感受，再到介于两者之间的回声定位与四色视觉等，揭示了每种生物都生活在各自独特的感知现实中。",
+      "why_matters": "对于渴望拓展认知边界、深入了解动物感知奥秘的读者而言，这是一本兼具科学严谨性与阅读趣味性的优秀科普作品。",
+      "tags": "动物感官，科普书评，生物学",
+      "id": 1343,
+      "added_at": "2026-08-22 02:29:17"
+    },
+    {
+      "title": "How Bluesky and Threads Sneak Their Logos Into iOS Screenshots",
+      "url": "https://timmarinin.net/2026/bluesky-screenshots/",
+      "summary": "Bluesky and Threads both pull the same trick: When you take a screenshot on iOS of an individual tweet, they replace the “Follow” button in their user interface with their logo. Tim Marinin noticed this in the Bluesky app, got curious, and because they publish the app’s source code, he dug in to figure out how they do this:\n\n\n  The answer was in the file literally called GrowthHack.tsx,\nintroduced in January 2026 by mozzius. But it merely\nused a dependency, so to understand I looked into package",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-21",
+      "summary_zh": "Bluesky和Threads两大社交平台在iOS端采用了相同的隐蔽营销策略：当用户截图时，平台会将界面中的“Follow”按钮自动替换为各自的Logo。开发者Tim Marinin在Bluesky的开源代码中发现了这一机制，并揭开了这一巧妙设计的实现方式。",
+      "why_matters": "揭示了社交平台如何在用户无意识的情况下进行品牌曝光，展现了科技产品设计中隐藏的营销智慧。",
+      "tags": "iOS开发,社交媒体,UI设计,品牌营销",
+      "id": 1341,
+      "added_at": "2026-08-22 02:29:17"
+    },
+    {
+      "title": "Bluesky Is Full of Anti-AI Zealots",
+      "url": "https://bsky.app/profile/masnick.com/post/3mtk7cuvbok2x",
+      "summary": "Mike Masnick, in a thread on Bluesky:\n\n\n  Multiple people I know have told me that they love the idea of\nBluesky, and want it to succeed, but have abandoned it for X\nbecause they use agentic tools in their work and find them\nincredibly useful, and feel that any mention of their usage here\nleads to hate and ridicule.\n\nI wouldn’t bring this up if it was just one person, but it was\nmultiple people since the beginning of August who mentioned in\npassing something to the effect of either “I’d spend mo",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-21",
+      "summary_zh": "许多用户表示虽然认可Bluesky的理念并希望它成功，但因为工作需要使用AI代理工具，而平台上任何提及AI使用的情况都会招致强烈反对和指责，最终导致他们放弃Bluesky转向X平台。这反映出Bluesky社区对AI工具存在过于激进的排斥态度。",
+      "why_matters": "揭示了社交平台在对待AI工具态度上的争议，探讨了理想主义与实际需求之间的冲突。",
+      "tags": "Bluesky, AI工具争议, 社交媒体社区",
+      "id": 1339,
+      "added_at": "2026-08-22 02:29:17"
+    },
+    {
+      "title": "Bluesky’s Active User Base Is Shrinking, and Remains Tiny Compared to Threads and Twitter/X",
+      "url": "https://techcrunch.com/2026/08/11/blueskys-active-user-base-is-shrinking-as-its-focus-expands-beyond-the-app/",
+      "summary": "Sarah Perez, writing at TechCrunch last week:\n\n\n  Decentralized social network Bluesky was one of the bigger\nbeneficiaries of the exodus from Elon Musk’s X in November\n2024, following the U.S. elections. But now, nearly two years\nlater, the social network and would-be X competitor is struggling\nto hold on to its momentum.\n\nAccording to data from digital intelligence provider\nSimilarweb, Bluesky’s mobile app had 10.4 million monthly\nactive users worldwide in June 2026, down 27.2% year-over-year. ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-21",
+      "summary_zh": "社交媒体平台Bluesky在2024年美国大选后因用户从X出走而短暂获益，但近两年后活跃用户数量开始下滑。与Threads和X/Twitter相比，Bluesky的用户规模仍然微乎其微，这个被寄予厚望的X替代者正面临增长困境。",
+      "why_matters": "揭示了去中心化社交媒体在商业化竞争中的真实挑战。",
+      "tags": "Bluesky, 社交媒体, 用户增长",
+      "id": 1337,
+      "added_at": "2026-08-22 02:29:17"
+    },
+    {
+      "title": "★ When New DF Posts Drop in a Forest and No One Is There to Read Them",
+      "url": "https://daringfireball.net/2026/08/df_posts_drop_in_a_forest",
+      "summary": "https://daringfireball.net/",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-21",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1335,
+      "added_at": "2026-08-22 02:29:17"
+    },
+    {
+      "title": "Readers can't identify watermarked AI text",
+      "url": "https://seangoedecke.com/readers-cant-identify-watermarked-ai-text/",
+      "summary": "In the last few weeks, I’ve been complaining that everyone is wrong about AI watermarking: it isn’t really anti-consumer and it doesn’t make the outputs any worse. The watermarking papers demonstrate1 that this is true, but I thought it might be interesting to put it to a practical test. Given examples of watermarked and unwatermarked answers to the same prompt, could readers tell which is which?\nTo find out, I vibed up2 https://sgoedecke.github.io/watermark-quiz/, a static site that quizzes rea",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-08-21",
+      "summary_zh": "作者通过实际测试验证了一个反直觉的发现：AI文本水印并不会让输出质量变差，读者也无法有效识别哪些文本带有AI水印。这一结果表明，此前广泛讨论的“AI水印反消费者”观点可能存在误解，主流批评者可能都错了。",
+      "why_matters": "这是一篇用实验数据挑战主流观点的文章，适合关心AI技术和伦理争议的读者。",
+      "tags": "AI水印，人工智能，文本检测，技术伦理",
+      "id": 1333,
+      "added_at": "2026-08-22 02:29:17"
+    },
+    {
+      "title": "Quoting Matt Webb",
+      "url": "https://simonwillison.net/2026/Aug/21/matt-webb/",
+      "summary": "After I released version 1.0, I figured I would have to do the rotations myself. So I sat down with ChatGPT and I didn’t get it to write the code, but I got it to educate me. With a patient, interactive tutor, I was able to finally do what I hadn’t by reading books and asking mathematician friends – I learnt how to use quaternions just enough to make the app work.\nSo learning doesn’t stop just because I outsource a bunch of thinking to AI. It pushes me to learn more. I like that as an outcome.\n&",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-08-21",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1331,
+      "added_at": "2026-08-22 02:29:17"
+    },
+    {
+      "title": "Stop Making TUIs",
+      "url": "https://simonwillison.net/2026/Aug/21/stop-making-tuis/",
+      "summary": "Stop Making TUIs\nThomas Ptacek advocates for building real native user interfaces for even the smallest of personal tools, because coding agents have reduced the cost of getting a usable-enough GUI up and running to almost nothing.\nI wrote about my vibe-coded bandwidth and GPU monitoring macOS task bar apps back in March, and I'm still using both of those on a daily basis.\nI'm not habitually knocking out real UIs for my other projects yet, but I'm running out of excuses!\nThomas:\n\nIf you haven’t ",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-08-21",
+      "summary_zh": "文章讨论了Thomas Ptacek提出的观点，建议开发者停止制作TUIs（终端用户界面），转而为各种个人工具构建真正的原生GUI。作者认为AI编码工具的出现已将创建可用GUI的成本降至极低，并分享了自己通过vibe-coding方式快速搭建macOS带宽和GPU监控应用的经验。",
+      "why_matters": "对于考虑是否继续使用终端界面还是构建原生应用的开发者，这篇文章提供了有价值的视角转变建议。",
+      "tags": "用户界面设计,AI编程工具,原生应用开发",
+      "id": 1329,
+      "added_at": "2026-08-22 02:29:17"
+    },
+    {
       "title": "Adobe Systems IPO August 20, 1986",
       "url": "https://dfarq.homeip.net/adobe-systems-ipo-august-20-1986/?utm_source=rss&utm_medium=rss&utm_campaign=adobe-systems-ipo-august-20-1986",
       "summary": "On August 20, 1986, Adobe Systems held its initial public offering. Priced at around $11 per share, Adobe has split its stock six times since. Adobe: The sleeper tech stock of 1986 1986 was a good year for tech stocks.\nThe post Adobe Systems IPO August 20, 1986 appeared first on The Silicon Underground.",
@@ -17098,5 +17267,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-21 11:06:38"
+  "last_updated": "2026-08-22 02:29:17"
 }
