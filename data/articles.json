@@ -170,6 +170,16 @@
       "added_at": "2026-08-22 02:29:17"
     },
     {
+      "title": "Hermes Agent v0.20.5 (v2026.8.19)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.19",
+      "source": "hermes-agent",
+      "published": "2026-08-21",
+      "category": "hermes",
+      "summary_zh": "- 此版本为补丁版本，汇总了自 v0.20.4 以来的约 323 个 PR 合并\n- 为下游消费者（Docker 镜像、托管部署、新安装）提供稳定的标签版本",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Adobe Systems IPO August 20, 1986",
       "url": "https://dfarq.homeip.net/adobe-systems-ipo-august-20-1986/?utm_source=rss&utm_medium=rss&utm_campaign=adobe-systems-ipo-august-20-1986",
       "summary": "On August 20, 1986, Adobe Systems held its initial public offering. Priced at around $11 per share, Adobe has split its stock six times since. Adobe: The sleeper tech stock of 1986 1986 was a good year for tech stocks.\nThe post Adobe Systems IPO August 20, 1986 appeared first on The Silicon Underground.",
@@ -17267,5 +17277,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-22 02:29:17"
+  "last_updated": "2026-08-22 10:57:29"
 }
