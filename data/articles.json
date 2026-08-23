@@ -1,6 +1,71 @@
 {
   "articles": [
     {
+      "title": "Welcoming the Sri Lankan Government to Have I Been Pwned",
+      "url": "https://www.troyhunt.com/welcoming-the-sri-lankan-government-to-have-i-been-pwned/",
+      "summary": "Today, we welcome the 48th government onboarded to Have I Been Pwned&#x2019;s free gov service: Sri Lanka. Sri Lanka CERT now has access to monitor Sri Lankan government domains against the data in HIBP, helping identify exposed government accounts and respond when they appear in new data breaches.",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-08-23",
+      "summary_zh": "Have I Been Pwned迎来第48位政府用户——斯里兰卡。斯里兰卡CERT现已获得访问权限，可监控该国政府域名是否出现在HIBP数据库中，从而及时发现暴露的政府账户，并在新数据泄露事件中快速响应。",
+      "why_matters": "了解网络安全平台如何帮助各国政府提升数据泄露应对能力。",
+      "tags": "网络安全,数据泄露,政府安全",
+      "id": 1362,
+      "added_at": "2026-08-24 02:20:52"
+    },
+    {
+      "title": "The difference orbit inclination makes",
+      "url": "https://www.johndcook.com/blog/2026/08/22/inclination/",
+      "summary": "Suppose you wanted to find the distance between Earth and Mars over time. To first approximation, both planets orbit the sun in elliptic orbits in the same plane. If you wanted to be more accurate, you&#8217;d need to take into account the fact that the orbit of Mars is tilted about 1.85° relative to the [&#8230;]\nThe post The difference orbit inclination makes first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-08-23",
+      "summary_zh": "文章讨论了计算地球与火星距离时轨道倾角的影响。作者指出，初步估算时可假设两颗行星在同一平面内做椭圆运动，但若需更高精度，则必须考虑火星轨道相对于地球轨道存在约1.85度的倾角，这一微小倾角会对距离计算产生可测量的影响。",
+      "why_matters": "适合对天体力学或轨道计算感兴趣的技术读者，文章以具体例子说明了近似模型与精确模型之间的差异。",
+      "tags": "轨道力学, 火星轨道, 天体距离计算",
+      "id": 1360,
+      "added_at": "2026-08-24 02:20:52"
+    },
+    {
+      "title": "Why special function terminology is arcane",
+      "url": "https://www.johndcook.com/blog/2026/08/23/arcane-terminology/",
+      "summary": "Special functions are special because they&#8217;re useful. They can also be shrouded in arcane terminology. These two facts are related. The more widely useful a function is, the more likely it is that the function will be discovered independently multiple times. Independent discoveries lead to varying definitions and notations. For example, there are two widely [&#8230;]\nThe post Why special function terminology is arcane first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-08-23",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1358,
+      "added_at": "2026-08-24 02:20:52"
+    },
+    {
+      "title": "Death to px, long live ch!",
+      "url": "https://shkspr.mobi/blog/2026/08/death-to-px-long-live-ch/",
+      "summary": "Pixels are a lie. Even if you think you&#039;re drawing something with \"pixel perfect\" accuracy, your monitor is lying to you. There is no grid of platonically perfect squares.  In CSS, pixels are a double lie:  Note that 1px doesn&#039;t necessarily equal one physical device pixel. On HD displays, it may span multiple physical pixels. Similarly, 1cm in CSS often doesn&#039;t correspond to one hundredth of SI…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-08-23",
+      "summary_zh": "本文揭示了CSS中px（像素）单位的本质问题——它并非真正的物理像素，尤其在高清显示器上，1px并不等于一个设备像素，实际上是一个\"双重谎言\"。作者认为ch单位（基于字体字符宽度）是一个更可靠、更符合实际阅读体验的选择。",
+      "why_matters": "对于前端开发者来说，这篇文章能帮助你理解为什么\"像素完美\"是个伪概念，以及如何选择更合理的长度单位。",
+      "tags": "CSS布局, 前端开发, 响应式设计",
+      "id": 1356,
+      "added_at": "2026-08-24 02:20:52"
+    },
+    {
+      "title": "Cooper Sharp Proves That American Cheese Can Be Great Cheese",
+      "url": "https://sixcolors.com/member/2026/08/this-week-in-apple-lets-fight/",
+      "summary": "John Moltz, in his weekly members-only column for Six Colors (no gift links, but Moltz’s column is worth the subscription in and of itself):\n\n\n  This week Anthropic announced that in order to identify AI from\nhuman-generated content it would be watermarking all text it\ngenerates by subtly altering the randomness at which its models\npicked the next word. While this might seem a perfectly cromulent\nmeans of accomplishing a worthy goal, it really rubbed John Gruber\nthe wrong way, as if someone sugg",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-23",
+      "summary_zh": "Cooper Sharp奶酪打破了人们对美式加工奶酪的固有偏见，证明了这种常被忽视的奶酪品种实际上可以成为高品质的选择。文章通过品尝体验和详细评测，展现了Cooper Sharp在风味、质地和用途上的出色表现，为美式奶酪正名。",
+      "why_matters": "如果你对美式奶酪持有偏见，这篇文章将用事实和数据说服你重新审视这种常被低估的奶酪。",
+      "tags": "美食评测, 奶酪, Cooper Sharp, 美式奶酪",
+      "id": 1354,
+      "added_at": "2026-08-24 02:20:52"
+    },
+    {
       "title": "Concurrent Servers: Part 8 - Go",
       "url": "https://eli.thegreenplace.net/2026/concurrent-servers-part-8-go/",
       "summary": "This is part 8 in a series of posts on writing concurrent network servers. In\nthis part, we'll switch to Go and see how it tackles the challenges described\nearlier in the series.\nAll posts in the series:\n\nPart 1 - Introduction\nPart 2 - Threads\nPart 3 - Event-driven\nPart 4 - libuv …",
@@ -17420,5 +17485,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-23 11:06:24"
+  "last_updated": "2026-08-24 02:20:52"
 }
