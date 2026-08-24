@@ -1,6 +1,123 @@
 {
   "articles": [
     {
+      "title": "Weekly Update 518: IoT Doorlock Nirvana with UniFi",
+      "url": "https://www.troyhunt.com/weekly-update-518/",
+      "summary": "I genuinely think I&apos;ve nailed the IoT door lock situation! Well, Ubiquiti has, but I think I&apos;ve worked out how to put it all into a residential house and have it make sense. There are a few basic tenets:Main power (never have to rely on",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-08-24",
+      "summary_zh": "本文是Troy Hunt分享的UniFi智能门锁实战部署经验。作者总结了在住宅中部署IoT门锁的几个基本原则，强调主电源供电的重要性，以及如何避免依赖不稳定的无线连接。这是一个经过实践验证的智能家居安全方案。",
+      "why_matters": "来自安全专家的实战经验，提供可靠且实用的IoT门锁部署思路。",
+      "tags": "物联网, 智能家居, 门锁安全, UniFi, 智能家居部署",
+      "id": 1375,
+      "added_at": "2026-08-25 02:32:13"
+    },
+    {
+      "title": "Windows 95 released August 24, 1995",
+      "url": "https://dfarq.homeip.net/happy-20th-birthday-to-windows-95/?utm_source=rss&utm_medium=rss&utm_campaign=happy-20th-birthday-to-windows-95",
+      "summary": "It was on August 24, 1995 that Windows 95 was released, amidst much anticipation. It was the most widely anticipated Windows release of all time, and the runner up really isn&#8217;t close. The idea of people lining up for blocks\nThe post Windows 95 released August 24, 1995 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-08-24",
+      "summary_zh": "Windows 95于1995年8月24日正式发布，这是有史以来最受期待的Windows版本发布，引起了人们沿街排队长达数个街区的盛况，充分体现了这款操作系统在当时的影响力。",
+      "why_matters": "回顾科技史上具有里程碑意义的操作系统发布，感受90年代计算机革命的标志性时刻。",
+      "tags": "Windows 95, 科技史, 1995年",
+      "id": 1373,
+      "added_at": "2026-08-25 02:32:13"
+    },
+    {
+      "title": "The von Mises-Fisher distribution",
+      "url": "https://www.johndcook.com/blog/2026/08/24/von-mises-fisher/",
+      "summary": "Probability density function must integrate to 1, and so if you know a density function up to a constant, the constant is determined. When you&#8217;re looking at a probability density f(x) for the first time, it helps to ignore the normalizing constant. Concentrate on the part of the function involving x and know that the normalizing [&#8230;]\nThe post The von Mises-Fisher distribution first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-08-24",
+      "summary_zh": "本文介绍von Mises-Fisher分布，这是一种定义在单位球面上的概率分布，常用于方向统计学。核心观点是理解概率密度函数时应先忽略其正则化常数，专注于函数的主要结构，这样更容易把握分布的本质特征。该分布与高斯分布类似但作用于球面空间，在数据分析、机器学习等领域有广泛应用。",
+      "why_matters": "作者通过直观的角度帮助读者理解概率分布的构造思路，对学习方向统计和高维数据分析很有帮助。",
+      "tags": "概率分布, 方向统计学, 数学分析",
+      "id": 1371,
+      "added_at": "2026-08-25 02:32:13"
+    },
+    {
+      "title": "Three-term recurrences",
+      "url": "https://www.johndcook.com/blog/2026/08/24/three-term-recurrences/",
+      "summary": "There many examples of families of functions where each function can be computed as a linear combination of the two previous terms where a and b are functions of x but not on n. This is called a three-term recurrence formula. It&#8217;s amazing how often you can run into three-term recurrence formulas. There are theorems that give conditions [&#8230;]\nThe post Three-term recurrences first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-08-24",
+      "summary_zh": "三项递推公式是指一类函数族，其中每个函数可以表示为前两项的线性组合，系数仅与变量x相关而与序号n无关。这类递推公式在特殊函数、概率分布和数值计算等领域有着广泛应用，是连接离散数学与连续函数的重要工具。",
+      "why_matters": "三项递推公式是理解许多数学函数计算规律的关键钥匙，掌握这一概念有助于简化复杂函数的求解过程。",
+      "tags": "数学理论, 递推公式, 数值计算",
+      "id": 1369,
+      "added_at": "2026-08-25 02:32:13"
+    },
+    {
+      "title": "Anger, Anxiety and Agency",
+      "url": "https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/",
+      "summary": "Sean Goedecke wrote a post arguing that you should never be angry at\nwork — a post\nwith which I strongly agree.  Anger can be a useful signal, but being angry at\nwork rarely improves the situation.  More often, it makes life worse for the\npeople around you, many of whom have no more power over the source of your anger\nthan you do.  I did learn that lesson, but it did not come naturally.  One thing\nin particular that I learned is that in a company there is a shared vision, and\nif you don&#8217;t ",
+      "source": "lucumr.pocoo.org",
+      "category": "blog",
+      "published": "2026-08-24",
+      "summary_zh": "文章赞同在工作场所应避免发怒的观点。作者指出，虽然愤怒可以是一种有用的信号，但在工作中生气很少能改善情况，反而常常让周围的人（尤其是那些缺乏权力的人）的生活变得更加困难。文章探讨了如何在职场中更好地管理自己的情绪。",
+      "why_matters": "提供了实用的职场情绪管理建议，帮助读者理解为何工作中应避免愤怒，以及如何将愤怒转化为建设性的行动。",
+      "tags": "职场, 情绪管理, 心理健康",
+      "id": 1367,
+      "added_at": "2026-08-25 02:32:13"
+    },
+    {
+      "title": "Why do audience members choose specific shows at the Edinburgh Fringe?",
+      "url": "https://shkspr.mobi/blog/2026/08/why-do-audience-members-choose-specific-shows-at-the-edinburgh-fringe/",
+      "summary": "On our recent trip to the Edinburgh Fringe, I was bemused by just how little effort performers put in to finding out why people had selected their show. Taking a show to the Edinburgh Fringe is ridiculously expensive with some performers paying tens of thousands of pounds. The way performers recoup the costs of performing is by getting people to pay to see a show.  Acts are spending huge amounts…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-08-24",
+      "summary_zh": "本文探讨爱丁堡边缘艺术节（Edinburgh Fringe）中观众选择演出的原因。作者指出，表演者往往忽视对观众选择行为的研究，导致在营销策略上存在盲区。文章强调，参与这一艺术节成本高昂（部分表演者花费数万英镑），但表演者对观众决策过程了解不足，这可能影响他们的投资回报。",
+      "why_matters": "文章以独特视角揭示艺术节营销中的信息不对称问题，对表演者和艺术节组织者都有启发意义。",
+      "tags": "爱丁堡边缘艺术节，观众行为，表演艺术，营销策略",
+      "id": 1365,
+      "added_at": "2026-08-25 02:32:13"
+    },
+    {
+      "title": "More on TestFlight’s Screwy Sort Order",
+      "url": "https://daringfireball.net/2026/08/apple_testflight_list_sort_order",
+      "summary": "I complained last week that starting with an update last month, the list of apps I’m testing in Apple’s TestFlight app has been sorted alphabetically, rather than by recency. Whatever is going on with this sort order, it isn’t affecting everyone. John Siracusa, amongst many others, has the same problem I do — his list is now alphabetical, and it’s driving him nuts too. Ryan Booker, amongst many others, still has his list sorted by recency.\n\nThe weird thing is, back on August 13, the iPhone versi",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-24",
+      "summary_zh": "本文是作者对苹果TestFlight应用排序方式变更的进一步讨论。该应用在上月更新后将测试应用列表从按最近更新时间排序改为按字母顺序排列，这对需要快速访问最近更新应用的开发者造成不便。作者指出这一问题并非普遍存在，但确实影响了部分用户。",
+      "why_matters": "对于iOS/macOS开发者而言，了解这一细微但影响使用效率的变更有助于优化日常开发工作流程。",
+      "tags": "TestFlight, Apple, 开发工具, 用户体验",
+      "id": 1363,
+      "added_at": "2026-08-25 02:32:13"
+    },
+    {
+      "title": "BitCam: The 1-Bit Camera App Turns 2.0",
+      "url": "https://bitcam-app.com/",
+      "summary": "10 years ago I wrote about BitCam 1.0:\n\n\n  Gorgeous, unbelievably faithful one-bit camera app for iPhone done\nin the style of the original Mac. A lovely tribute to Bill\nAtkinson’s remarkable dithering algorithm. “Catnip for\nold-school Mac users,” says John Siracusa. Check out the\nfun recent-hire-at-Apple Chris Espinosa is having with it.\n\n\nOriginally a creation of The Iconfactory, BitCam is now in the good hands of Héliographe (coiners of the best icon-design zinger ever). Version 2.0 has everyt",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-24",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1361,
+      "added_at": "2026-08-25 02:32:13"
+    },
+    {
+      "title": "Your executable is a SQLite database",
+      "url": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/",
+      "summary": "Your executable is a SQLite database\nFarid Zakaria describes a neat Linux pattern for creating a SQLite database file that can be directly used as an executable binary.\nThe trick sets the SQLite file format's 4-byte application ID (68 bytes into the file) to SELF, standing for Structured Executable & Linkable Format.  The various components of the ELF executable format are then arranged into a number of different SQLite tables, using this schema.\nTheir self-exec interpreter (C code here) can the",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-08-24",
+      "summary_zh": "文章介绍了一种巧妙的Linux技巧，通过将SQLite数据库文件的application ID（第68字节处）设置为“SELF”（Structured Executable Linkable Format），使该数据库文件同时具备可执行属性。这种将数据文件与可执行程序合二为一的做法展示了Linux文件格式的灵活性和可扩展性。",
+      "why_matters": "展示了如何利用SQLite文件格式特性实现一种有趣而实用的技术方案，拓宽对文件系统的认知。",
+      "tags": "SQLite, Linux技巧, 文件格式",
+      "id": 1359,
+      "added_at": "2026-08-25 02:32:13"
+    },
+    {
       "title": "Welcoming the Sri Lankan Government to Have I Been Pwned",
       "url": "https://www.troyhunt.com/welcoming-the-sri-lankan-government-to-have-i-been-pwned/",
       "summary": "Today, we welcome the 48th government onboarded to Have I Been Pwned&#x2019;s free gov service: Sri Lanka. Sri Lanka CERT now has access to monitor Sri Lankan government domains against the data in HIBP, helping identify exposed government accounts and respond when they appear in new data breaches.",
@@ -17485,5 +17602,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-24 11:07:19"
+  "last_updated": "2026-08-25 02:32:13"
 }
