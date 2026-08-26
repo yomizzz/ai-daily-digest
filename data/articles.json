@@ -1,6 +1,149 @@
 {
   "articles": [
     {
+      "title": "Digg v4 and lessons not learned",
+      "url": "https://dfarq.homeip.net/digg-v4-and-lessons-not-learned/?utm_source=rss&utm_medium=rss&utm_campaign=digg-v4-and-lessons-not-learned",
+      "summary": "Digg was a high flying news aggregation site from the early web 2.0 era that still exists today, but really in name only. It serves as a cautionary too for why high profile websites tend not to make major changes\nThe post Digg v4 and lessons not learned appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-08-26",
+      "summary_zh": "Digg曾是Web 2.0时代的热门新闻聚合网站，其v4版本进行了重大改版却遭遇用户强烈反对，导致大量用户流失。这个案例成为了互联网产品发展的重要警示：即使是备受欢迎的平台，在进行重大变革时也必须充分考虑用户习惯和接受度，否则可能带来灾难性后果。",
+      "why_matters": "对于产品经理和创业者来说，了解Digg v4的失败教训有助于避免在产品迭代中犯类似错误。",
+      "tags": "产品设计, 用户体验, 互联网案例, Web 2.0",
+      "id": 1403,
+      "added_at": "2026-08-27 03:44:30"
+    },
+    {
+      "title": "Ultraspherical",
+      "url": "https://www.johndcook.com/blog/2026/08/26/ultraspherical/",
+      "summary": "When I hear the term ultraspherical I think of something extremely spherical. For example, a baseball is spherical, but a billiard ball is more spherical. Maybe a highly polished billiard ball is ultraspherical. Using this line of thought, the term ultraspherical polynomial is inexplicable. This is an example of the arcane terminology I wrote about recently. In [&#8230;]\nThe post Ultraspherical first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-08-26",
+      "summary_zh": "本文以幽默的视角探讨了“ultraspherical”（超球面）这个词的命名。作者从日常经验出发，假设“超球面”应该意味着“非常、极其球形”，并以棒球、台球等为例进行形象说明。然而这个看似直观的理解与数学中的ultraspherical polynomial（超球面多项式）这一专业术语的含义大相径庭，揭示了数学术语命名与日常直觉之间的有趣差异。",
+      "why_matters": "用轻松幽默的方式解释了数学术语命名背后的故事，帮助读者理解专业数学概念与日常语言理解的差异，是一篇寓教于乐的数学科普短文。",
+      "tags": "数学术语, 概念解释, 幽默科普",
+      "id": 1401,
+      "added_at": "2026-08-27 03:44:30"
+    },
+    {
+      "title": "Junk solutions",
+      "url": "https://www.johndcook.com/blog/2026/08/26/junk-solutions/",
+      "summary": "When you&#8217;re interested in studying a family of functions, it can be useful to look at a differential equation that the functions solve. This is a theme I&#8217;ve written about several times, most recently here and here, but also three years ago here. Orthogonal polynomials are mathematically elegant as well as very useful in applications [1]. [&#8230;]\nThe post Junk solutions first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-08-26",
+      "summary_zh": "通过研究函数族满足的微分方程来理解其性质是数学分析中的重要方法，作者探讨了这一主题与正交多项式等领域的联系，展示了微分方程在函数研究中的实用价值。",
+      "why_matters": "适合对数学分析和微分方程应用感兴趣的读者，提供了独特的数学视角。",
+      "tags": "微分方程，正交多项式，数学分析",
+      "id": 1399,
+      "added_at": "2026-08-27 03:44:30"
+    },
+    {
+      "title": "What is the quality of software that AI writes?",
+      "url": "https://www.johndcook.com/blog/2026/08/26/what-is-the-quality-of-software-that-ai-writes/",
+      "summary": "AI-powered coding agents increase productivity for many developers. But do these agents produce good-quality code? Some say this doesn&#8217;t matter, we are heading toward dark software factories with source code never inspected, and maybe we should eliminate source code altogether&#8212;&#8220;source code is the new assembly code&#8221;. Others have a different view. Humans sometimes need to [&#8230;]\nThe post What is the quality of software that AI writes? first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-08-26",
+      "summary_zh": "AI编程工具确实提升了开发者的工作效率，但这些工具生成的代码质量如何仍是值得探讨的问题。文章指出，有人认为代码质量已不再重要，人类正迈向“暗软件工厂”模式——源代码可能永远无需人工检查，甚至有人主张彻底取消源代码这一概念。",
+      "why_matters": "文章引发了关于AI编程时代软件开发本质的深层思考，探讨了效率与质量、人工审查的必要性之间的权衡问题。",
+      "tags": "AI编程, 代码质量, 软件开发未来",
+      "id": 1397,
+      "added_at": "2026-08-27 03:44:30"
+    },
+    {
+      "title": "How to make VS Code go back to the old UI",
+      "url": "https://xeiaso.net/notes/2026/vscode-ui-revert/",
+      "summary": "What do you wanna bet someone's gonna get promoted for deleting this workaround from the code?",
+      "source": "xeiaso.net",
+      "category": "blog",
+      "published": "2026-08-26",
+      "summary_zh": "本文介绍了如何让VS Code回退到旧版用户界面的方法。文章针对近期VS Code更新后界面变化较大这一问题，提供了绕过新UI的解决方案。同时文章暗示这种非官方的变通方法可能随时被移除，呼吁用户珍惜当前的可行方案。",
+      "why_matters": "如果你不习惯VS Code新版界面，这篇文章提供了实用的回退方案。",
+      "tags": "VS Code, 界面定制, 开发工具",
+      "id": 1395,
+      "added_at": "2026-08-27 03:44:30"
+    },
+    {
+      "title": "If your VS Code remotes stopped working, downgrade to v1.124.x",
+      "url": "https://xeiaso.net/notes/2026/vscode-remotes-not-working-downgrade/",
+      "summary": "Quality software reigns again",
+      "source": "xeiaso.net",
+      "category": "blog",
+      "published": "2026-08-26",
+      "summary_zh": "VS Code在更新到某版本后，其Remote功能（远程开发扩展）出现故障，导致用户无法正常连接远程服务器或容器。用户反馈该问题后，社区建议暂时降级至v1.124.x版本以恢复功能。此事件再次凸显了软件版本更新可能带来的兼容性问题，以及在使用开发工具时保留稳定版本的重要性。",
+      "why_matters": "对于使用VS Code远程开发功能的开发者，这是个实用的故障排除指南。",
+      "tags": "VS Code, 开发工具, 版本降级",
+      "id": 1393,
+      "added_at": "2026-08-27 03:44:30"
+    },
+    {
+      "title": "Gadget Review: Thermal Master P3 Macro Lens ★★★★⯪",
+      "url": "https://shkspr.mobi/blog/2026/08/gadget-review-thermal-master-p3-macro-lens/",
+      "summary": "The good folks at Thermal Master have sent me their latest camera to review - and it is a bit different to all the others I&#039;ve tried.    Whereas previous cameras are good for bird watching, or wildlife spotting, or finding leaks at home - the P3 has a manual macro lens and is specifically designed for getting close-up and personal with your electronics.  Yup! See just how hot your CPU is getting…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-08-26",
+      "summary_zh": "Thermal Master P3是一款配备手动微距镜头的热成像相机，与传统热成像设备侧重于远距离观测（如观鸟、野生动物观察或查找漏水点）不同，P3专注于近距离微距拍摄，能够捕捉细微的热成像细节。该产品获得了4.5星评价，在热成像设备市场中具有独特定位。",
+      "why_matters": "如果你需要一款能进行微距热成像拍摄的设备，P3是目前少数具有手动微距镜头的专业选择。",
+      "tags": "热成像相机, 微距摄影, 科技评测",
+      "id": 1391,
+      "added_at": "2026-08-27 03:44:30"
+    },
+    {
+      "title": "Pluralistic: The age of disinvention (25 Aug 2026)",
+      "url": "https://pluralistic.net/2026/08/25/gammamax/",
+      "summary": "Today's links The age of disinvention: 🟥1️⃣2️⃣0️⃣0️⃣🟥1️⃣2️⃣0️⃣0️⃣🟥️1️⃣2️⃣0️⃣0️⃣🟥1️⃣2️⃣0️⃣0️⃣🟥1️⃣2️⃣0️⃣0️⃣🟥1️⃣2️⃣0️⃣0️⃣🟥 Hey look at this: Delights to delectate. Object permanence: Metacrap; CmdrTaco retires; Chalk memorial for Jack Layton; By all means tread on these people. Upcoming appearances: Sydney, Melbourne, Brighton, London, South Bend. Recent appearances: Where I've been. Latest books: You keep readin' em, I'll keep writin' 'em. Upcoming books: Like I said, I'll keep writin' 'em. Coloph",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-08-26",
+      "summary_zh": "本文探讨了当前科技发展中的“反发明”现象，作者认为现代社会对技术的盲目崇拜已带来诸多负面效应，呼吁人们重新审视和反思某些技术存在的必要性。文章延续了Pluralistic一贯的批判视角，结合当下科技社会的种种问题，提出了对技术创新进行更审慎思考的观点。",
+      "why_matters": "适合关注科技与社会关系、思考技术发展利弊的读者，提供了一个反思数字时代的新角度。",
+      "tags": "科技批判, 社会反思, 数字生活",
+      "id": 1389,
+      "added_at": "2026-08-27 03:44:30"
+    },
+    {
+      "title": "‘Surprise and Shine’ Apple Event: Wednesday 9 September",
+      "url": "https://9to5mac.com/2026/08/26/apple-officially-announces-iphone-18-pro-foldable-event/",
+      "summary": "Zac Hall, 9to5Mac:\n\n\n  Apple has officially announced its next product event, where it\nwill unveil the iPhone 18 Pro lineup and its first foldable\niPhone. The event will take place on September 9 at 10 am, PT. The\ntagline reads “Surprise and shine,” and the invitation features a\nglowing Apple logo with a sun shining through.\n\n\nApple generally prefers Tuesdays, but on years when Labor Day falls in the second week of September, they move it to Wednesday.\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-26",
+      "summary_zh": "苹果官方宣布将于9月9日上午10点（太平洋时间）举办新品发布会，主题为\"Surprise and Shine\"（惊喜与闪耀），邀请函上出现了发光的苹果标志。活动预计将推出iPhone 18 Pro系列以及旗下首款折叠屏iPhone。",
+      "why_matters": "这是苹果首次推出折叠屏iPhone，标志着其产品线的重大突破，值得关注。",
+      "tags": "苹果发布会，iPhone 18 Pro，折叠屏iPhone",
+      "id": 1387,
+      "added_at": "2026-08-27 03:44:30"
+    },
+    {
+      "title": "Apple Polishing Cloth Is Now Just $9",
+      "url": "https://9to5mac.com/2026/08/25/apple-releases-new-polishing-cloth-for-9/",
+      "summary": "Chance Miller:\n\n\n  Not to be overshadowed by the new Mac mini and Mac\nStudio, Apple today has also released an updated version of\nits Polishing Cloth. In an age of everything getting more\nexpensive, the new Polishing Cloth is cheaper than before at\n$9 (down from $19). [...]\n\nApple released the Polishing Cloth in October 2021 and\nsold out almost instantly. While it has become a meme, it\nis genuinely a good polishing cloth for your Apple gear.\n\n\nMoore’s Law comes for everything eventually.\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-08-26",
+      "summary_zh": "Apple推出了更新版的抛光布，售价从之前的19美元下调至9美元，成为本次发布会中的一大亮点。在物价普遍上涨的时代背景下，这款配件不升反降，引发了网友热议。",
+      "why_matters": "苹果配件定价逆势下调的新闻较为罕见，适合作为科技行业趣闻了解。",
+      "tags": "Apple, 配件, 科技趣闻",
+      "id": 1385,
+      "added_at": "2026-08-27 03:44:30"
+    },
+    {
+      "title": "Quoting Paul Dix",
+      "url": "https://simonwillison.net/2026/Aug/26/paul-dix/",
+      "summary": "The fact that AI wrote 1M LOC and then refined it over the course of the next couple of months to produce a reliable piece of software that is currently running on millions of developer machines is absolutely mind blowing. And you can say, “well it’s not that impressive because they had an oracle to compare against, so it was simple to go from one language to another”, but I think that’s selling this entire thing short. If you can build a verification system and give proper direction, AI can pro",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-08-26",
+      "summary_zh": "文章探讨了AI编写100万行代码并经过数月优化，最终成为在数百万开发者机器上运行的可靠软件这一令人震惊的成就，同时引述了Paul Dix对此现象的不同视角和讨论。",
+      "why_matters": "对于关注AI编程能力边界的开发者和技术观察者而言，这提供了有价值的观点碰撞。",
+      "tags": "AI编程,软件开发,人工智能",
+      "id": 1383,
+      "added_at": "2026-08-27 03:44:30"
+    },
+    {
       "title": "Forgejo hack: How to set a starting issue and pull request number",
       "url": "https://blog.miguelgrinberg.com/post/forgejo-hack-how-to-set-a-starting-issue-and-pull-request-number",
       "summary": "I'm currently working on migrating my open source projects from GitHub to a self-hosted Forgejo instance. As part of this effort I often end up looking through the Forgejo source code to figure out if there are hidden ways to configure certain things to my liking when I can't do it on the administration UI. I thought I'd start putting my discoveries in writing here, in case they can help others. So here goes the first one.\nOne of the aspects of the migration that is tricky is how to transition i",
@@ -17797,5 +17940,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-26 11:09:26"
+  "last_updated": "2026-08-27 03:44:30"
 }
