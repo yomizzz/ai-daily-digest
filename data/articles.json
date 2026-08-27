@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.20.6 (v2026.8.27)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.27",
+      "source": "hermes-agent",
+      "published": "2026-08-27",
+      "category": "hermes",
+      "summary_zh": "- 补丁版本，汇总了自 v0.20.5 以来约 525 个 PR 的更新\n- 为下游消费者（Docker 镜像、托管部署、新安装）提供稳定标记版本",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Digg v4 and lessons not learned",
       "url": "https://dfarq.homeip.net/digg-v4-and-lessons-not-learned/?utm_source=rss&utm_medium=rss&utm_campaign=digg-v4-and-lessons-not-learned",
       "summary": "Digg was a high flying news aggregation site from the early web 2.0 era that still exists today, but really in name only. It serves as a cautionary too for why high profile websites tend not to make major changes\nThe post Digg v4 and lessons not learned appeared first on The Silicon Underground.",
@@ -17940,5 +17950,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-27 03:44:30"
+  "last_updated": "2026-08-27 20:37:59"
 }
