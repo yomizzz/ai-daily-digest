@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>Why do OpenAI's GPT-2 weights beat mine?  Part four: digging into dropout</title>
     <style>
 
         :root {
@@ -287,41 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-08-28 22:10:46</p>
+        <h1>Why do OpenAI's GPT-2 weights beat mine?  Part four: digging into dropout</h1>
+        <p><span class="category-tag">blog</span> gilesthomas.com · 2026-08-27</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 0 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="no-updates">暂无更新记录</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><p>作者在训练自定义GPT-2模型时发现一个矛盾现象：模型在测试集损失（loss）指标上已超越OpenAI的GPT-2 small，但在指令微调任务中的实际表现却不如原版模型。为探究原因，作者深入分析了dropout机制对模型泛化能力的影响，指出技术指标与实际任务表现之间可能存在差距，需要关注训练过程中的正则化策略。</p></div>
+<div class="tags">标签：Dropout, 模型训练, 过拟合, 深度学习</div>
+        <div class="detail-why">💡 作者坦诚分享了模型训练中的真实困惑，并提供了深入的技术分析，对理解和优化大语言模型训练过程很有参考价值。</div>
+        <a href="https://www.gilesthomas.com/2026/08/why-do-openai-gpt2-weights-beat-mine-4-ift-dropout" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>
