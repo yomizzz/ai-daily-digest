@@ -1,6 +1,71 @@
 {
   "articles": [
     {
+      "title": "Forgejo Hack #2: Integration with Read The Docs",
+      "url": "https://blog.miguelgrinberg.com/post/forgejo-hack-2-integration-with-read-the-docs",
+      "summary": "In this second Forgejo Hack installment I'll tell you how to connect a git repository that lives in your self-hosted Forgejo instance to Read the Docs, so that commits to the repository automatically trigger documentation builds, exactly like it works with GitHub.",
+      "source": "miguelgrinberg.com",
+      "category": "blog",
+      "published": "2026-08-30",
+      "summary_zh": "本文是Forgejo Hack系列的第二篇，介绍了如何将自托管Forgejo实例中的Git仓库与Read the Docs服务进行集成，使代码提交能够自动触发文档构建。该方案为使用Forgejo的用户提供了与GitHub+Read the Docs类似的自动化文档部署体验，无需依赖第三方平台即可实现自托管项目的文档托管。",
+      "why_matters": "为自托管Forgejo用户提供实用的文档自动化部署方案，值得参考。",
+      "tags": "Forgejo, Read the Docs, 自动化部署",
+      "id": 1448,
+      "added_at": "2026-08-31 04:30:36"
+    },
+    {
+      "title": "Apple prevails over Franklin, August 30, 1983",
+      "url": "https://dfarq.homeip.net/apple-prevails-over-franklin-august-30-1983/?utm_source=rss&utm_medium=rss&utm_campaign=apple-prevails-over-franklin-august-30-1983",
+      "summary": "Prior to August 1983, the concept of copyright applying to computer software wasn&#8217;t settled law. Companies had sued one another for copyright violation, but prior to Apple taking Franklin Computer to court for copying the ROMs and the operating system\nThe post Apple prevails over Franklin, August 30, 1983 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-08-30",
+      "summary_zh": "本文介绍了1983年8月30日苹果公司起诉Franklin计算机公司侵犯其计算机操作系统版权的里程碑案件。在该案判决前，计算机软件是否受版权保护尚无定论。此案最终确立了软件可以获得版权保护的原则，对后来的软件知识产权保护产生了深远影响。",
+      "why_matters": "了解计算机软件版权发展史的关键案例，对于理解现代软件知识产权保护体系具有重要参考价值。",
+      "tags": "软件版权, 苹果公司, 知识产权, 法律案例",
+      "id": 1446,
+      "added_at": "2026-08-31 04:30:36"
+    },
+    {
+      "title": "Cores in space: The core memory module from a 1980 Spacelab computer",
+      "url": "http://www.righto.com/2026/08/spacelab-core-memory.html",
+      "summary": "Spacelab was a reusable laboratory that could be carried in the Space Shuttle's cargo bay, providing lab space for astronauts\nand experiments.1\nBecause Spacelab was a European project, it used a French-built minicomputer, the Mitra 125 MS,2\nrather than the Shuttle's main computers, IBM-built AP-101 systems.\nFor storage, the Spacelab computer contained 128 kilobytes of RAM.\nRather than silicon memory, the computer used magnetic core memory, with each bit stored in a tiny ferrite ring.\nIn this art",
+      "source": "righto.com",
+      "category": "blog",
+      "published": "2026-08-30",
+      "summary_zh": "本文介绍了1980年Spacelab（太空实验室）项目中使用的法国Mitra 125 MS小型计算机，重点分析其核心内存（magnetic core memory）模块的结构与工作原理。作者Ken Shirriff通过逆向工程技术，详细展示了核心内存如何利用磁环矩阵存储数据，以及这种早期存储技术如何在航天计算机中得到应用。",
+      "why_matters": "适合对计算机历史、航天技术或硬件逆向工程感兴趣的读者，通过详实的技术分析了解航天时代的计算机硬件细节。",
+      "tags": "核心内存，计算机历史，航天技术",
+      "id": 1444,
+      "added_at": "2026-08-31 04:30:36"
+    },
+    {
+      "title": "New Pebble Weather App + Software Updates",
+      "url": "https://repebble.com/blog/new-pebble-weather-app-software-updates",
+      "summary": "All Pebble Time 2 invites have been sent and we're now in-stock! It’s been a long Time coming, but if you have been waiting, now is your…",
+      "source": "ericmigi.com",
+      "category": "blog",
+      "published": "2026-08-30",
+      "summary_zh": "Pebble Time 2的所有邀请已发送完毕，产品现已开放购买，无需等待即可直接下单。同时，Pebble还发布了新的天气应用和软件更新，为用户提供更好的使用体验。这对于期待已久的用户来说是一个好消息。",
+      "why_matters": "如果你对Pebble智能手表感兴趣，这是了解其最新产品动态和软件功能更新的实用资讯。",
+      "tags": "Pebble, 智能手表, 软件更新, 科技产品",
+      "id": 1442,
+      "added_at": "2026-08-31 04:30:36"
+    },
+    {
+      "title": "You have to beat the models at something",
+      "url": "https://seangoedecke.com/you-have-to-beat-the-models-at-something/",
+      "summary": "In 2025, I wrote that software engineers ought to be assessed by “value over replacement”: not how much money they made for their company, but how much they would have made compared to the average engineer in their position. I’ve always found it vaguely silly when engineers put “built a product that made $X” on their resumes, when they just did the JIRA tickets that came across their desk.\nToday, value over replacement is even more important. A replacement-level engineer in the 2010s was fine: m",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-08-30",
+      "summary_zh": "文章讨论了在AI时代软件工程师如何证明自身价值的问题。作者认为应采用\"价值替代\"而非绝对产出来评估工程师的能力，即与同等职位的平均工程师相比的相对贡献。面对AI模型的竞争，工程师需要找到自己独特的优势领域，在某些方面超越AI才能保持竞争力。",
+      "why_matters": "对于思考AI时代职业发展和个人竞争力很有启发意义。",
+      "tags": "AI时代, 职业发展, 软件工程师, 人机竞争",
+      "id": 1440,
+      "added_at": "2026-08-31 04:30:36"
+    },
+    {
       "title": "What GLM-5.3 Flash running on Chinese hardware actually means",
       "url": "https://martinalderson.com/posts/glm-5-3-flash-chinese-hardware/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
       "summary": "Z.AI ran a full model release on domestically manufactured Chinese chips. Impressive, but EUV lithography is a hard wall and the gap with Western inference hardware is more likely to widen than close.",
@@ -18535,5 +18600,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-30 16:05:42"
+  "last_updated": "2026-08-31 04:30:36"
 }
