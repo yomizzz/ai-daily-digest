@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "title": "Reducing codebase cognitive debt through... quizzes?",
+      "url": "https://martinalderson.com/posts/codebase-cognitive-debt-quizzes/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
+      "summary": "A simple technique for keeping up with a codebase that coding agents are changing faster than you can read: ask the agent to quiz you on it.",
+      "source": "martinalderson.com",
+      "category": "blog",
+      "published": "2026-08-31",
+      "summary_zh": "AI编程工具正在快速改变代码库，开发者难以跟上所有变更。作者建议让AI代理定期对你进行“测验”，通过问答形式检验你对代码库最新变化的理解程度，从而保持对代码的认知更新。这是一个低成本、高效率的维护代码库认知的技巧。",
+      "why_matters": "对于使用AI编程工具的开发者来说，这是一个简单实用的认知管理方法，能有效避免被代码变更“甩开”。",
+      "tags": "AI编程工具, 代码库管理, 开发者效率",
+      "id": 1458,
+      "added_at": "2026-09-01 06:18:51"
+    },
+    {
+      "title": "Adobe’s August 1994 acquisition of Aldus",
+      "url": "https://dfarq.homeip.net/adobes-august-1994-acquisition-of-aldus/?utm_source=rss&utm_medium=rss&utm_campaign=adobes-august-1994-acquisition-of-aldus",
+      "summary": "On August 31, 1994, software publisher Adobe bought Aldus for $446 million. Both companies were known for graphics products. Aldus&#8217; most popular product was Pagemaker, a page layout program. Adobe&#8217;s most popular products were illustrator and Photoshop. The three products\nThe post Adobe&#8217;s August 1994 acquisition of Aldus appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-08-31",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1456,
+      "added_at": "2026-09-01 06:18:51"
+    },
+    {
+      "title": "My Experience Has Nuance, Yours Is a Data Point",
+      "url": "https://blog.jim-nielsen.com/2026/nuance-for-me-none-for-you/",
+      "summary": "Eric Bailey has a fun little post about how we need more than a few icons to express the nuance of our shared human experience.\nFor example, he suggests Netflix provide some feedback buttons to indicate the kinds of experiences we all share consuming and rating media:\n\n“Just because I expressed interest in this show does not mean I want to be inundated with recommendations for its genre”\n“Disregard [that I pressed ‘thumbs up’] my cat walked over the keyboard”\n“I am making bad choices and hatewat",
+      "source": "blog.jim-nielsen.com",
+      "category": "blog",
+      "published": "2026-08-31",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1454,
+      "added_at": "2026-09-01 06:18:51"
+    },
+    {
+      "title": "The rise and fall of agent civilizations",
+      "url": "https://www.dwarkesh.com/p/openai-huggingface-narration",
+      "summary": "The OpenAI/Hugging Face attack, clearly explained",
+      "source": "dwarkesh.com",
+      "category": "blog",
+      "published": "2026-08-31",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1452,
+      "added_at": "2026-09-01 06:18:51"
+    },
+    {
+      "title": "Cancelation Terminology",
+      "url": "https://matklad.github.io/2026/08/31/cancelation-terminology.html",
+      "summary": "A short note explaining the difference between synchronous cancelation, asynchronous cancelation, and graceful shutdown. I am not too attached to these specific three terms, but I want to call your attention to the three things behind them, which are important not to confuse with each other.",
+      "source": "matklad.github.io",
+      "category": "blog",
+      "published": "2026-08-31",
+      "summary_zh": "本文解释了并发编程中三个容易混淆的概念——同步取消（synchronous cancelation）、异步取消（asynchronous cancelation）和优雅关闭（graceful shutdown）的区别。作者强调，虽然不必拘泥于这些特定术语，但正确理解和使用这三种取消机制对于构建健壮的并发系统至关重要。",
+      "why_matters": "作为Rust专家matklad的短文，能帮助开发者澄清并发编程中的常见误区，提升系统设计的准确性。",
+      "tags": "并发编程，系统设计，异步编程",
+      "id": 1450,
+      "added_at": "2026-09-01 06:18:51"
+    },
+    {
+      "title": "Review: Ruined Theatre's A Midsummer Night's Dream ★★★★☆",
+      "url": "https://shkspr.mobi/blog/2026/08/review-ruined-theatres-a-midsummer-nights-dream/",
+      "summary": "The whole point about Shakespeare is that you can set the play on an intergalactic space station or an American high school and keep virtually the rest unchanged. What happens when you transpose Dream from a proscenium arch to a living wood? As the sun sets over the trees, what sprites will come out to entertain us?  Ruined Theatre brings a brilliant cast of seasoned West End performers to strut…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-08-31",
+      "summary_zh": "本文评论了Ruined Theatre剧团将莎士比亚经典喜剧《仲夏夜之梦》从传统剧院搬至户外树林的创新改编。评论探讨了莎翁作品跨时空演绎的灵活性，并关注自然环境如何为这部充满精灵和魔法的作品带来独特的舞台效果。",
+      "why_matters": "户外森林场景与《仲夏夜之梦》的梦幻氛围完美融合，带来沉浸式的观剧体验。",
+      "tags": "戏剧评论、莎士比亚、户外剧场、沉浸式体验、仲夏夜之梦、改编创新、表演艺术",
+      "id": 1448,
+      "added_at": "2026-09-01 06:18:51"
+    },
+    {
+      "title": "Here's a good way to present AI videos",
+      "url": "https://idiallo.com/blog/a-good-way-to-present-ai-videos-on-youtube",
+      "summary": "The YouTube tag marking a video as AI-generated is as insignificant as the little \"Sponsored\" text in search ads.\t\t\tI've taught my mother and her friends to check for that tag, but most, if not all, of the videos they share with me don't even have it. Even though they're clearly AI-generated.\n\n    \n\nIf deception is something we want to prevent, and our parents can't tell real videos from fake ones, wouldn't it make sense to put a warning where it's actually effective? Just like movies have warni",
+      "source": "idiallo.com",
+      "category": "blog",
+      "published": "2026-08-31",
+      "summary_zh": "文章指出YouTube的AI生成视频标识如同搜索广告中的\"Sponsored\"标签一样被忽视。作者虽尝试教导母亲识别这一标识，但实际发现她分享的视频大多明显由AI生成却并未标注，揭示了当前AI内容标识机制的失效问题。",
+      "why_matters": "以亲身体验揭示AI内容标识的漏洞，视角独特且贴近现实。",
+      "tags": "AI生成内容, YouTube, 内容标识",
+      "id": 1446,
+      "added_at": "2026-09-01 06:18:51"
+    },
+    {
       "title": "OpenClaw 2026.8.1",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.1",
       "source": "openclaw",
@@ -18612,5 +18703,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-31 16:25:50"
+  "last_updated": "2026-09-01 06:18:51"
 }
