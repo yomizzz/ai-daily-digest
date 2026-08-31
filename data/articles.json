@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "OpenClaw 2026.8.1",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.1",
+      "source": "openclaw",
+      "published": "2026-08-31",
+      "category": "openclaw",
+      "summary": "- 搜索历史对话：支持按关键词查找并重新打开相关消息\n- 跨设备云端会话：支持在配对设备或云端运行工作并迁移会话\n- 实时进度追踪：跨刷新保持进度卡片，跟踪子代理活动和累积编辑\n- 结构化问答交互：支持通过卡片、按钮或文本响应代理问题，提供跳过选项\n- 交互式仪表盘：支持在聊天中使用小部件、置顶到仪表盘及导出为图片\n- 私密凭证请求：代理可请求凭证而不暴露其值，支持受限代理替换\n- 一次性工作审批：授予自动化精确操作权限，支持后续检查或撤销\n- 音视频增强：跨上传、生成、播放保持媒体附件，支持原生播放控制\n\n🐛 Bug 修复：- 无",
+      "features": "- 搜索历史对话：支持按关键词查找并重新打开相关消息\n- 跨设备云端会话：支持在配对设备或云端运行工作并迁移会话\n- 实时进度追踪：跨刷新保持进度卡片，跟踪子代理活动和累积编辑\n- 结构化问答交互：支持通过卡片、按钮或文本响应代理问题，提供跳过选项\n- 交互式仪表盘：支持在聊天中使用小部件、置顶到仪表盘及导出为图片\n- 私密凭证请求：代理可请求凭证而不暴露其值，支持受限代理替换\n- 一次性工作审批：授予自动化精确操作权限，支持后续检查或撤销\n- 音视频增强：跨上传、生成、播放保持媒体附件，支持原生播放控制",
+      "bug_fixes": "- 无",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Forgejo Hack #2: Integration with Read The Docs",
       "url": "https://blog.miguelgrinberg.com/post/forgejo-hack-2-integration-with-read-the-docs",
       "summary": "In this second Forgejo Hack installment I'll tell you how to connect a git repository that lives in your self-hosted Forgejo instance to Read the Docs, so that commits to the repository automatically trigger documentation builds, exactly like it works with GitHub.",
@@ -18600,5 +18612,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-08-31 04:30:36"
+  "last_updated": "2026-08-31 16:25:50"
 }
