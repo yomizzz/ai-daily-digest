@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.21.0 (v2026.8.31)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.31",
+      "source": "hermes-agent",
+      "published": "2026-09-01",
+      "category": "hermes",
+      "summary_zh": "- Bot Mode 内置到桌面应用，支持多个命名代理拥有独立头像和群聊功能，代理之间及与用户可像团队般协作\n- 定时任务新增记忆和连续性功能，定时代理可在多次运行之间保持学习状态\n- 子代理支持实时中途干预控制\n- MCP 界面升级为真正的命令中心\n- 代理可驱动桌面应用内置浏览器\n- 整合 v0.20.1 至 v0.20.6 所有基础设施补丁更新",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Reducing codebase cognitive debt through... quizzes?",
       "url": "https://martinalderson.com/posts/codebase-cognitive-debt-quizzes/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
       "summary": "A simple technique for keeping up with a codebase that coding agents are changing faster than you can read: ask the agent to quiz you on it.",
@@ -18703,5 +18713,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-01 06:18:51"
+  "last_updated": "2026-09-01 15:32:24"
 }
