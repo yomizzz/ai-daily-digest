@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.8.2",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.2",
+      "source": "openclaw",
+      "published": "2026-09-02",
+      "category": "openclaw",
+      "summary": "- Home代理停靠栏：通过 Cmd/Ctrl+Shift+H 在工作区旁打开Home，支持预览或删除工作上下文快照\n- Linux桌面伴侣：支持在x86-64 Linux安装.deb或AppImage包，可从系统托盘或X11快捷键打开Quick Chat\n- 后台会话：可从New Session创建后台会话并保持云端或配对设备位置\n- 更安全的升级：保留新配置、停止不完整会话迁移、验证后恢复Gateway更新\n- 语音功能改进：内部推理不进入语音、保留工具生成的音频、修复浏览器Talk通话设置后的工作\n- 浏览器控制无需Gateway：支持macOS和Linux Chrome扩展唤醒配对的本地中继\n- 四个新主题：CRT、Manuscript、Rosé、Miami主题可离线保存并避免加载闪烁\n- 恢复清理：支持预览和删除已保留的迁移原始文件\n- 会话可见性默认调整：非沙箱会话默认与其他相同代理的会话配合工作\n- 跨会话对话：转发的消息渲染为独立气泡并带有源会话链接和发送代理身份\n- 会话组织优化：分组操作菜单、Markdown格式复制、标签页/窗口/分屏打开、编辑图标颜色、隐藏空分组\n- 可读的Beam链接：分享记录为易读的/beam/ URL命名\n- 准备好的云项目：复用快照和验证的工作区哈希\n- 插件SDK类型改进：Telegram botToken类型修正为SecretInput\n\n🐛 Bug 修复：- 修复对话在工具输出或初始确认后停止的问题，改为返回最终答案并在接受轮后显示失败\n- 修复语音功能相关问题：保持内部推理不出现在语音中、保留工具生成音频",
+      "features": "- Home代理停靠栏：通过 Cmd/Ctrl+Shift+H 在工作区旁打开Home，支持预览或删除工作上下文快照\n- Linux桌面伴侣：支持在x86-64 Linux安装.deb或AppImage包，可从系统托盘或X11快捷键打开Quick Chat\n- 后台会话：可从New Session创建后台会话并保持云端或配对设备位置\n- 更安全的升级：保留新配置、停止不完整会话迁移、验证后恢复Gateway更新\n- 语音功能改进：内部推理不进入语音、保留工具生成的音频、修复浏览器Talk通话设置后的工作\n- 浏览器控制无需Gateway：支持macOS和Linux Chrome扩展唤醒配对的本地中继\n- 四个新主题：CRT、Manuscript、Rosé、Miami主题可离线保存并避免加载闪烁\n- 恢复清理：支持预览和删除已保留的迁移原始文件\n- 会话可见性默认调整：非沙箱会话默认与其他相同代理的会话配合工作\n- 跨会话对话：转发的消息渲染为独立气泡并带有源会话链接和发送代理身份\n- 会话组织优化：分组操作菜单、Markdown格式复制、标签页/窗口/分屏打开、编辑图标颜色、隐藏空分组\n- 可读的Beam链接：分享记录为易读的/beam/ URL命名\n- 准备好的云项目：复用快照和验证的工作区哈希\n- 插件SDK类型改进：Telegram botToken类型修正为SecretInput",
+      "bug_fixes": "- 修复对话在工具输出或初始确认后停止的问题，改为返回最终答案并在接受轮后显示失败\n- 修复语音功能相关问题：保持内部推理不出现在语音中、保留工具生成音频",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Commodore 64 released September 1, 1982",
       "url": "https://dfarq.homeip.net/commodore-64-released-september-1-1982/?utm_source=rss&utm_medium=rss&utm_campaign=commodore-64-released-september-1-1982",
       "summary": "On September 1, 1982, the Commodore 64 launched. Its name referred to the amount of memory it had on board: 64 kilobytes. And it was the first computer with 64K of memory to sell for under $600. When the Commodore\nThe post Commodore 64 released September 1, 1982 appeared first on The Silicon Underground.",
@@ -18869,5 +18881,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-02 04:25:10"
+  "last_updated": "2026-09-02 14:57:57"
 }
