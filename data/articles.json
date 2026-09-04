@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.9.1",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.1",
+      "source": "openclaw",
+      "published": "2026-09-04",
+      "category": "openclaw",
+      "summary": "- **Mermaid 图表渲染**：聊天中的 Mermaid 代码块现在可渲染为图表，支持放大预览，移动端渲染失败时自动重试\n- **新安装快速入门**：检测现有 Claude Code/Codex 登录和 API 密钥，验证后直接打开 Web Dashboard\n- **个人技能库**：支持在共享 Gateway 上管理个人技能，可从 ZIP 导入并在团队 Gateway 上发布\n- **更新机制增强**：`openclaw update` 现在支持更新失败时回滚、保留配置和密钥、集成自动故障排除、等待插件就绪后再重启\n- **Gateway 稳定性提升**：高负载和大团队启动恢复、畸形 cron 行隔离、迁移警告降级处理、Windows 版重启后保持在线\n- **Codex 审批持久化**：\"始终允许\"选项对 MCP 工具生效、工具审批跟随会话状态、已批准的 CodeX 位置复用无需重复询问\n- **审批通知推送**：代理提出的配置变更或重启请求，审批卡片会推送到原始渠道（包含 Telegram）\n- **Android UI 对齐**：聊天界面、侧边栏导航和外观设置与 Web UI 一致，composer 扩展至六行，支持录音备选\n\n🐛 Bug 修复：- 无",
+      "features": "- **Mermaid 图表渲染**：聊天中的 Mermaid 代码块现在可渲染为图表，支持放大预览，移动端渲染失败时自动重试\n- **新安装快速入门**：检测现有 Claude Code/Codex 登录和 API 密钥，验证后直接打开 Web Dashboard\n- **个人技能库**：支持在共享 Gateway 上管理个人技能，可从 ZIP 导入并在团队 Gateway 上发布\n- **更新机制增强**：`openclaw update` 现在支持更新失败时回滚、保留配置和密钥、集成自动故障排除、等待插件就绪后再重启\n- **Gateway 稳定性提升**：高负载和大团队启动恢复、畸形 cron 行隔离、迁移警告降级处理、Windows 版重启后保持在线\n- **Codex 审批持久化**：\"始终允许\"选项对 MCP 工具生效、工具审批跟随会话状态、已批准的 CodeX 位置复用无需重复询问\n- **审批通知推送**：代理提出的配置变更或重启请求，审批卡片会推送到原始渠道（包含 Telegram）\n- **Android UI 对齐**：聊天界面、侧边栏导航和外观设置与 Web UI 一致，composer 扩展至六行，支持录音备选",
+      "bug_fixes": "- 无",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "You Should be Using Rootless Containers",
       "url": "https://blog.miguelgrinberg.com/post/you-should-be-using-rootless-containers",
       "summary": "The other day a serious vulnerability was disclosed in one of the newer Linux distributions (the one led by the racist, so it isn't getting a mention here). The issue was interesting because it was caused by a non-standard Docker configuration that their installer applied by default, without alerting users that this configuration was creating a security risk. The end result was that any process running on these systems had the ability to elevate itself to root, without password, sudo or any prom",
@@ -19115,5 +19127,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-04 04:24:18"
+  "last_updated": "2026-09-04 15:06:01"
 }
