@@ -1,6 +1,136 @@
 {
   "articles": [
     {
+      "title": "Reading List - 09/05/2026",
+      "url": "https://www.construction-physics.com/p/reading-list-09052026",
+      "summary": "SpaceX&#8217;s turbine blade factory, Fervo&#8217;s deal with Google, Delhi&#8217;s cheap metro, why recycling is overrated, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-09-05",
+      "summary_zh": "本期阅读列表涵盖多个前沿话题，包括SpaceX的涡轮叶片制造工厂、Fervo与Google在能源领域的合作交易、德里低成本地铁系统的创新实践，以及对回收利用实际效果的深度分析。这些内容展示了当前基础设施建设、能源转型和城市规划领域的发展动态。",
+      "why_matters": "阅读列表形式便于快速了解多个科技与工程领域的最新进展，适合关注基础设施和科技趋势的读者。",
+      "tags": "阅读清单, 基础设施, 科技动态",
+      "id": 1520,
+      "added_at": "2026-09-06 03:49:14"
+    },
+    {
+      "title": "This Week in Package Management: 5 September 2026",
+      "url": "https://nesbitt.io/2026/09/05/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-09-05",
+      "summary_zh": "本文汇总了2026年9月5日当周包管理领域的最新动态，涵盖主流包管理器的新版本发布、安全预警以及相关技术文章，为开发者提供行业资讯概览。",
+      "why_matters": "帮助开发者快速了解包管理生态最新进展，保持技术敏感度。",
+      "tags": "包管理, 开发工具, 周报, 开源生态",
+      "id": 1518,
+      "added_at": "2026-09-06 03:49:14"
+    },
+    {
+      "title": "Proof of the rank-trace theorem",
+      "url": "https://www.johndcook.com/blog/2026/09/05/proof-of-the-rank-trace-theorem/",
+      "summary": "The previous post discussed the motivation for and application of the rank-trace theorem. This post will give a proof. Suppose A is a real symmetric matrix. The rank-trace inequality says where tr is the trace operator, the sum of the elements along the diagonal of the matrix. Terse proof Here&#8217;s the proof in a nutshell: diagonalize A [&#8230;]\nThe post Proof of the rank-trace theorem first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-09-05",
+      "summary_zh": "本文是秩-迹定理（rank-trace theorem）的证明部分，假设矩阵A为实对称矩阵，介绍了迹（trace）运算符的定义——即矩阵主对角线元素的和，并给出该定理的证明过程。",
+      "why_matters": "适合希望深入理解线性代数核心定理证明过程的读者。",
+      "tags": "线性代数, 矩阵理论, 数学证明",
+      "id": 1516,
+      "added_at": "2026-09-06 03:49:14"
+    },
+    {
+      "title": "Latent Powers",
+      "url": "https://lucumr.pocoo.org/2026/9/5/latent-powers/",
+      "summary": "A few weeks ago I felt like it would be fun to see if I can make one of those\ncheap Chinese CarPlay dongles run something other than the stock firmware.  The\nidea was that rather than just forwarding CarPlay, why not do something more\ninteresting with them?  They all work quite similarly: they act as bridges\nbetween your car and the phone.  From there they deal with video and audio\nstreams and pass some other data through.  Most of them also bring up a custom\nUI for pairing and have a web interf",
+      "source": "lucumr.pocoo.org",
+      "category": "blog",
+      "published": "2026-09-05",
+      "summary_zh": "作者尝试对廉价的国产CarPlay dongle进行固件改造，突破其仅能转发CarPlay功能的限制，探索这些设备未被充分利用的潜力。文章展示了对消费级嵌入式设备的逆向工程和自定义开发的实践过程。",
+      "why_matters": "为对硬件黑客、嵌入式系统逆向工程或IoT设备改造感兴趣的读者提供了实用的案例参考。",
+      "tags": "硬件黑客, CarPlay, 逆向工程, 嵌入式系统",
+      "id": 1514,
+      "added_at": "2026-09-06 03:49:14"
+    },
+    {
+      "title": "Book Review: The Passing of the Dragon and Other Stories by Ken Liu ★★★★☆",
+      "url": "https://shkspr.mobi/blog/2026/09/book-review-the-passing-of-the-dragon-and-other-stories-by-ken-liu/",
+      "summary": "This is a gorgeous set of short stories - and a good deal more accessible than some of the heavyweight prose Liu has previously been involved with. Some of the stories contain sentences which are complex jewels to be savoured.  What I particularly like is the way he moves between almost-prosaic Earth-bound stories to the the most extraordinary flights of fancy. One story might be set in a…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-09-05",
+      "summary_zh": "这是一套华丽的短篇故事集，比肯·刘之前一些厚重晦涩的作品更易于阅读理解。故事中蕴含着复杂精美的语句，值得细细品味。作者善于在平淡的地球叙事与宏大主题之间自由穿梭，展现出独特的叙事魅力。",
+      "why_matters": "适合喜欢科幻文学、追求深度阅读体验的读者，领略当代科幻大师的文学功底。",
+      "tags": "科幻小说，短篇集，文学评论",
+      "id": 1512,
+      "added_at": "2026-09-06 03:49:14"
+    },
+    {
+      "title": "Pluralistic: Google skates (05 Sep 2026)",
+      "url": "https://pluralistic.net/2026/09/05/divorce-court/",
+      "summary": "Today's links Google skates: Another federal judge loses a game of peek-a-boo. Hey look at this: Delights to delectate. Object permanence: Memory-hacking ads; \"Dzur\"; NZ Ministry of DRM; Canadians v looking at the internet; Advice for self-publishers; Advice for writers; Why Wikipedia works. Upcoming appearances: Dąbrowa Górnicza, Warsaw, Brighton, London, Budapest, Edmonton, South Bend, Hudson, Calgary, Winnipeg, Vancouver, Victoria, Ottawa. Recent appearances: Where I've been. Latest books: Yo",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-09-05",
+      "summary_zh": "本文是Cory Doctorow的Pluralistic博客日常更新，汇集了多篇短文，涵盖谷歌面临的监管挑战、联邦法官相关判例、追踪用户行为的“记忆黑客”广告技术、新西兰数字版权政策、加拿大人对互联网的看法，以及自助出版和写作建议等多元话题。",
+      "why_matters": "适合关注数字权利、网络隐私、科技政策及独立创作的读者，提供丰富的思考角度和实用信息。",
+      "tags": "数字权利, 网络隐私, 科技政策, 自助出版",
+      "id": 1510,
+      "added_at": "2026-09-06 03:49:14"
+    },
+    {
+      "title": "Adobe Names Anil Chakravarthy as CEO, Replacing Shantanu Narayen",
+      "url": "https://www.cnbc.com/2026/09/03/adobe-anil-chakravarthy-ceo.html",
+      "summary": "Annie Palmer, CNBC:\n\n\n  Adobe on Thursday named Anil Chakravarthy as its next president\nand CEO, succeeding Shantanu Narayen, who announced he would step\ndown earlier this year. Chakravarthy, who most recently served as\npresident of Adobe’s customer experience orchestration and\nworldwide field operations, will take the helm Dec. 1, the company\nsaid. He will also join Adobe’s board.\n\n\nI’m sure promoting the head of “customer experience orchestration” to CEO will restore Adobe’s focus on creating ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-05",
+      "summary_zh": "Adobe于周四宣布任命Anil Chakravarthy为新任总裁兼首席执行官，接替此前宣布离职的Shantanu Narayen。Chakravarthy此前担任Adobe客户体验编排和全球现场运营总裁，是公司内部培养的高管。此次CEO更换标志着Adobe在经历重大转型后的新阶段。",
+      "why_matters": "了解Adobe这家创意软件巨头在AI时代的关键领导层更替，有助于把握科技行业管理层趋势。",
+      "tags": "Adobe，CEO更换，科技行业",
+      "id": 1508,
+      "added_at": "2026-09-06 03:49:14"
+    },
+    {
+      "title": "‘Bob and Van’",
+      "url": "https://marco.org/2026/09/04/bob-and-van",
+      "summary": "Marco Arment:\n\n\n  And I can’t help but feel that maybe we were better off before we\nknew everyone’s hot takes on everything.\n\nThe town coffee shop was just a coffee shop. We weren’t publicly\nshamed for going there because one of the owners was an ass. It\nwas just a place to hang out with our friends.\n\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-05",
+      "summary_zh": "Marco Arment反思社交媒体时代带来的变化，认为我们如今被迫了解并对所有人的观点表态，失去了过去相对简单的生活状态。他以镇上的咖啡店为例，说明以前人们可以在不受舆论干扰的情况下自由选择去某个地方，而不用担心因为店主的问题而被公开羞辱。",
+      "why_matters": "反映了科技界人士对社交媒体时代公共话语膨胀的深刻反思，值得思考数字时代对个人生活空间的影响。",
+      "tags": "科技评论, 社交媒体, 数字生活",
+      "id": 1506,
+      "added_at": "2026-09-06 03:49:14"
+    },
+    {
+      "title": "Gloria Steinem’s Final Essay",
+      "url": "https://www.newyorker.com/culture/life-and-letters/gloria-steinems-final-essay?cndid=66114350",
+      "summary": "Gloria Steinem, in a posthumous essay for The New Yorker:\n\n\n  For me, saying that I am a feminist has always meant that I\nbelieve in the social, economic, and political equality of all\nmales and females of all races and groups. I know this sounds too\nsimple to need a word, but equality is still the exception, not\nthe rule.\n\nMaybe we should call it egalitarianism, or even humanism. The\nproblem with humanism is that it is often interpreted as being\nanti-religion, so I don’t think it’s inclusive en",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-05",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1504,
+      "added_at": "2026-09-06 03:49:14"
+    },
+    {
+      "title": "Using Blender with coding agents on macOS",
+      "url": "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos/",
+      "summary": "TIL: Using Blender with coding agents on macOS\n        I've been having fun with Blender in ChatGPT Codex on my Mac recently. Getting it to work with coding agents is really easy: install the full Mac application from blender.org and run a prompt like this:\n\nUse the already install /Applications/Blender to render a scene of a pelican riding a bicycle\n\nIn this case I followed that up with these two prompts:\n\nOK add a background and a lot of flair\n\nThen:\n\nOK make it a whole lot better\n\nAnd got thi",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-09-05",
+      "summary_zh": "这是一篇关于如何在macOS上让Blender与AI编程助手（如ChatGPT Codex）配合使用的教程。作者发现这个集成其实非常简单，只需从blender.org安装完整的Mac应用程序，然后使用特定的提示词就能让AI代理控制Blender进行3D建模和操作。",
+      "why_matters": "提供了将AI编程助手与专业3D软件结合的实用技巧，适合想要探索AI辅助创意工作的用户参考。",
+      "tags": "Blender, AI编程助手, macOS, 工具集成, 教程",
+      "id": 1502,
+      "added_at": "2026-09-06 03:49:14"
+    },
+    {
       "title": "Support Local Variables",
       "url": "https://bernsteinbear.com/blog/support-local-variables/?utm_source=rss",
       "summary": "Discovering and supporting all of the wild semantics for local variables in\nRuby was so interesting that the ZJIT team decided to write a paper about it:\nSupport Local Variables (PDF). It’s\nalso the first bit of academic literature that documents and explains ZJIT.\n\nIt’s published at VMIL 2026, where someone on our team will be presenting it.\n\nAbstract\n\n\n  Ruby is a dynamically typed and object-oriented programming language. Its\nprimary implementation, CRuby, contains a bytecode virtual machine ",
@@ -19335,5 +19465,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-05 14:49:04"
+  "last_updated": "2026-09-06 03:49:14"
 }
