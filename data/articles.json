@@ -1,6 +1,149 @@
 {
   "articles": [
     {
+      "title": "Debian Code Search: Fast TurboPFor with Go SIMD",
+      "url": "https://michael.stapelberg.ch/posts/2026-09-06-dcs-fast-turbopfor-go-simd/",
+      "summary": "This August, I accomplished what I wanted for many years: I deleted the last cgo\ndependency in Debian Code Search! This was made possible by Go’s recently\nintroduced SIMD support, because now we can implement the TurboPFor integer\ncompression format as efficiently — more efficiently, in fact, by using the\nnewer AVX512 instruction set! — as the reference implementation.\nBackground: Why does DCS need a fast Integer Codec?\nDebian Code Search (DCS) is a search engine that allows searching all the Op",
+      "source": "michael.stapelberg.ch",
+      "category": "blog",
+      "published": "2026-09-06",
+      "summary_zh": "作者在Debian Code Search项目中成功移除了最后一个cgo依赖，实现了纯Go实现。借助Go语言新引入的SIMD（单指令多数据）支持，TurboPFor整数压缩格式不仅能被高效实现，甚至比之前的C实现效率更高。",
+      "why_matters": "展示了如何利用Go新特性替代C依赖的实用案例，对关注Go性能和SIMD编程的开发者有参考价值。",
+      "tags": "Go语言, SIMD, 性能优化",
+      "id": 1533,
+      "added_at": "2026-09-07 03:53:24"
+    },
+    {
+      "title": "Have the frontier labs mixed up AI safety and security?",
+      "url": "https://martinalderson.com/posts/ai-safety-vs-security/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
+      "summary": "The recent agent sandbox escapes at OpenAI and Anthropic look less like a technical failure and more like a philosophical one - treating security controls as though they only need to work most of the time.",
+      "source": "martinalderson.com",
+      "category": "blog",
+      "published": "2026-09-06",
+      "summary_zh": "本文指出，OpenAI和Anthropic近期出现的AI智能体从沙盒中逃脱的事件，本质上并非单纯的技术故障，而是一个哲学层面的问题。作者认为，这些前沿实验室将安全控制视为“大部分时候有效”即可，但真正的安全防护必须做到100%可靠。问题的根源在于AI安全与AI安全的概念被混淆了。",
+      "why_matters": "文章提出了一个容易被忽视但至关重要的观点——AI安全需要的是绝对可靠性，而非概率性成功。",
+      "tags": "AI安全, 人工智能, 前沿实验室, 沙盒逃逸",
+      "id": 1531,
+      "added_at": "2026-09-07 03:53:24"
+    },
+    {
+      "title": "The purpose of DNS is to spread scams",
+      "url": "https://shkspr.mobi/blog/2026/09/the-purpose-of-dns-is-to-spread-scams/",
+      "summary": "I imagine everyone here has received an unsolicited message telling them that their tax is overdue and that they urgently need to visit Genuine-Tax-Payment-Website.fart or that a parcel is delayed at customs and you can pay a small sum for its release at Almost-The-Right-Acronym.ak  You know it is a scam. Most people just mark as spam and move on with their day. But a significant number of people …",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-09-06",
+      "summary_zh": "文章以讽刺的口吻指出DNS域名系统如今被大量用于传播网络诈骗，列举了假冒税务网站和仿冒快递等典型的钓鱼域名案例，揭示了诈骗者通过注册与真实网站相似的域名来欺骗用户的手法，提醒人们提高对网络陷阱的警惕。",
+      "why_matters": "以幽默犀利的视角揭示了域名系统被滥用于诈骗的现状，对识别网络钓鱼具有警示意义。",
+      "tags": "网络安全, DNS, 钓鱼诈骗",
+      "id": 1529,
+      "added_at": "2026-09-07 03:53:24"
+    },
+    {
+      "title": "Litterbox: Safari Extension for Viewing X Tweets",
+      "url": "https://andadinosaur.com/launch-litterbox",
+      "summary": "In the wake of Nitter/XCancel’s demise, here’s a delightful new Safari extension from Zhenyi Tan (of And a Dinosaur fame):\n\n\n  But sometimes people still post X content. Maybe you want to see\nGruber roast Google Design. Maybe you want to see posts by\nFederico Viticci who recently returned to X. So I made\nLitterbox, a Safari extension that opens x.com links in a\npopup. The idea is you open it, take a look, gag a little, then\nclose the lid. [...]\n\nLitterbox doesn’t send your cookies when you open ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-06",
+      "summary_zh": "文章介绍了一款名为Litterbox的Safari浏览器扩展，专门用于查看X（原Twitter）平台上的推文。该扩展的推出正值Nitter/XCancel等第三方X内容查看工具停止运营之际，为用户提供了替代方案。对于仍需关注X平台上特定用户或内容（如Gruber评论Google Design、Federico Viticci的推文等）的Safari用户来说，这是一个实用的工具。",
+      "why_matters": "为Safari用户提供了在第三方工具失效后查看X推文的便捷替代方案。",
+      "tags": "Safari扩展, X/Twitter, 浏览器插件",
+      "id": 1527,
+      "added_at": "2026-09-07 03:53:24"
+    },
+    {
+      "title": "Dickover of the Week: Slashdot Put One in Their RSS Feed",
+      "url": "https://discourse.netnewswire.com/t/dickover-in-the-slashdot-rss-feed/372",
+      "summary": "How does this even happen? Who is this for? What possible purpose could by served by injecting a “We value your privacy” dickover into an RSS feed via iframes in the entry bodies?\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-06",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1525,
+      "added_at": "2026-09-07 03:53:24"
+    },
+    {
+      "title": "Gurman on Schiller’s Departure and Ternus’s Goals for the App Store",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-09-06/apple-s-new-ceo-like-cook-pay-package-shows-he-s-going-nowhere-sept-9-event-mtpvpcj1?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc4ODcwNTgwOCwiZXhwIjoxNzg5MzEwNjA4LCJhcnRpY2xlSWQiOiJUS1k0ODFLR0NURlEwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.VPVLP03ZWjEbH48efjq8Q7n0_vk4t7OynYeaUbOfYzU&leadSource=article-gifting",
+      "summary": "Mark Gurman, in his weekend Power On column at Bloomberg (gift link):\n\n\n  The Schiller exit is a bit more notable. Unlike Maestri, he still\nhad a real job: The veteran executive ran the App Store and Apple\nEvents. The App Store portion alone is no joke. It generates an\nestimated $30 billion a year and can be very challenging to\nmanage. Apple’s app marketplace is loved by many consumers, but\noften criticized by developers and subjected to increasingly\nonerous regulations. It was a busy, all-encom",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-06",
+      "summary_zh": "苹果资深高管Schiller离职比Maestri更值得关注，因其仍担任要职，负责App Store和Apple Events两部分核心业务。App Store每年预计为苹果带来约300亿美元收入，是公司最重要的收入来源之一。Gurman认为这次人事变动对苹果的软件生态战略具有深远影响。",
+      "why_matters": "帮助读者了解苹果高管变动背后的业务逻辑，以及App Store对苹果的重要性。",
+      "tags": "苹果公司，高管变动，App Store",
+      "id": 1523,
+      "added_at": "2026-09-07 03:53:24"
+    },
+    {
+      "title": "Trump Administration Launches Rip-Off Video Games at Arcade.gov",
+      "url": "https://x.com/WhiteHouse/status/2095615734567100766",
+      "summary": "A handful of Temu-style knockoffs of games like Flappy Birds, Snake (that’s the one where you round up border-crossing migrants), and, most notably, Tetris (the one where you “build a wall” to keep border-crossing migrants out) — the copyright to which is held by the notoriously litigious The Tetris Company, which tweeted:\n\n\n  At Tetris we believe in the power of connection and bringing\npeople together, not dividing them. To our fans everywhere: we\nlove you, we see you, and we’re grateful to hav",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-06",
+      "summary_zh": "特朗普政府在Arcade.gov网站推出多款带有反移民政治暗示的山寨电子游戏，包括将移民围猎内容融入的贪吃蛇游戏，以及“建墙阻挡移民”的俄罗斯方块版本，这些游戏疑似侵犯了原版游戏的版权。",
+      "why_matters": "展现了美国政府网站与政治宣传游戏化结合的争议尝试。",
+      "tags": "政府网站, 政治游戏, 反移民政策, 版权争议",
+      "id": 1521,
+      "added_at": "2026-09-07 03:53:24"
+    },
+    {
+      "title": "Matt Haughey: ‘The Car Industry a/B Tested Selling a Car With and Without CarPlay and the Results Are Not Shocking’",
+      "url": "https://a.wholelottanothing.org/the-car-industry-a-b-tested-selling-the-same-car-with-and-without-carplay-and-the-results-are-not-shocking/",
+      "summary": "Matt Haughey:\n\n\n  One case in point is the Honda Prologue EV. It’s a partnership\nbetween Honda and Chevrolet, where the Prologue is basically a\nChevy Blazer EV with Honda badges, slight visual differences in\nthe sheetmetal and interior, but all the underpinnings are\nstraight up Chevy. Even though the keys say Honda on a Prologue,\nit’s a General Motors key design with a Honda logo over it.\n\nBut one big difference the Prologue has from the Blazer it is\nbased on is this: it includes Apple CarPlay a",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-06",
+      "summary_zh": "文章讨论了汽车行业通过A/B测试对比车辆配备CarPlay与否的销售表现，以Honda Prologue EV为例（本质是换标的Chevy Blazer EV），测试结果不出所料地显示消费者更青睐配备CarPlay的版本。这类测试反映出车载互联系统在现代购车决策中的重要影响力。",
+      "why_matters": "简洁明了地展示了一个真实的产品A/B测试案例，验证了用户对智能车载系统的强烈需求。",
+      "tags": "汽车科技, A/B测试, CarPlay, 用户体验",
+      "id": 1519,
+      "added_at": "2026-09-07 03:53:24"
+    },
+    {
+      "title": "Quoting Zach Kehs",
+      "url": "https://simonwillison.net/2026/Sep/6/zach-kehs/",
+      "summary": "If you continue to add floors and rooms to a building forever, it will collapse. Software faces no such constraint. The code can always get worse. There can always be a new layer of indirection or a reduction in performance.\n&mdash; Zach Kehs, There's No Limit to How Bad Code Can Get\n\n    Tags: technical-debt",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-09-06",
+      "summary_zh": "文章引用Zach Kehs的观点，指出建筑物受物理限制，层数过多会坍塌，但软件代码没有这种约束——可以无限添加间接层，性能可以无限下降，代码可以永远变得更糟。作者借此说明软件复杂性的本质危险。",
+      "why_matters": "简短有力的比喻，帮助理解为何软件项目容易失控变糟。",
+      "tags": "技术, 编程哲学, 软件工程",
+      "id": 1517,
+      "added_at": "2026-09-07 03:53:24"
+    },
+    {
+      "title": "There's No Limit to How Bad Code Can Get",
+      "url": "https://simonwillison.net/2026/Sep/6/theres-no-limit-to-how-bad-code-can-get/",
+      "summary": "My comment on There&#x27;s No Limit to How Bad Code Can Get &mdash; Lobste.rs.[In reply to a comment about burning it down to start from scratch when technical debt becomes overwhelming]\nIn my experience it's so rare for that to work.\nYou announce the old thing is irrecoverably drowning in tech debt. You spin up a team to rewrite it from scratch. Work begins.\nMeanwhile the old thing remains a moving target: it's running the core business, so changes are still necessary. The developers working on",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-09-06",
+      "summary_zh": "本文讨论了代码技术债务问题。作者simonwillison认为，当代码库积累了大量技术债务时，选择“推倒重来”这种方法在实践中很少能够成功。他通过亲身经验指出，宣布旧系统“已经不可救药”然后重建的策略，往往并不能解决问题，反而可能带来更多风险。",
+      "why_matters": "对于正在考虑重构或重建系统的开发者，这篇文章提供了宝贵的实践经验教训，帮助避免不切实际的“重建”幻想。",
+      "tags": "技术债务, 代码重构, 程序员经验",
+      "id": 1515,
+      "added_at": "2026-09-07 03:53:24"
+    },
+    {
+      "title": "The purpose of DNS is to spread scams",
+      "url": "https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams/",
+      "summary": "The purpose of DNS is to spread scams\nTerence Eden shares some daunting statistics in support of his take that \"the Domain Name System's purpose seems to be a vector for criminals to run scams on people at a terrifyingly high rate\".\nOn this Interisle report (via Andrew Campling), Terence says:\n\nIt says 85 million new registrations of gTLDs were made in 2025. Of those 8.5 million were added to blocklists by May 2025. It reckons that a 10% abuse rate is the likely floor for these numbers and it's ",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-09-06",
+      "summary_zh": "文章引用Terence Eden基于Interisle报告的数据，揭示了域名系统（DNS）被犯罪分子大量用于实施网络诈骗的严峻现状。统计数据表明，DNS服务在很大程度上成为了网络犯罪的高频载体，诈骗案件以惊人比例增长。这一发现引发了关于DNS治理和安全机制的深度反思。",
+      "why_matters": "如果你关注网络安全和域名治理问题，这篇文章提供了有力的数据支撑，帮助理解当前DNS生态面临的挑战。",
+      "tags": "DNS安全, 网络诈骗, 域名治理",
+      "id": 1513,
+      "added_at": "2026-09-07 03:53:24"
+    },
+    {
       "title": "openclaw 2026.9.2",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.2",
       "source": "openclaw",
@@ -19477,5 +19620,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-06 14:59:40"
+  "last_updated": "2026-09-07 03:53:24"
 }
