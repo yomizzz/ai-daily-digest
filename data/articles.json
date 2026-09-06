@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.9.2",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.2",
+      "source": "openclaw",
+      "published": "2026-09-06",
+      "category": "openclaw",
+      "summary": "- 聊天响应优化：长对话和磁盘处理期间保持聊天、仪表盘和会话交互的响应速度\n- 可靠升级与恢复：自动更新保留设置、技能和默认代理，Git 更新后恢复 Gateway 重启\n- GPT-6 Astra 模型支持：支持文本和图像输入、Responses 工具调用和推理控制\n- 回复持久化：Gateway 重启后恢复活跃、排队和委托的回复\n- 数据备份增强：Git 备份保留含 NUL 字符的完整文本，支持 Nix 配置和凭证链接\n- 运行时设置变更：无需重启即可应用更多代理、模型、工具、渠道、浏览器等设置\n- 插件图标打包：插件图标打包到 `assets/icon.png`，减少网络请求\n- GPT-6 Astra 异步工具与引导：异步函数工具、WebSocket 引导和推理过程保留\n- macOS 浏览器登录增强：Cloudflare Access 浏览器登录和 Mac 应用集成\n- 实验性插件 UI：支持插件贡献控制 UI 页面、面板和会话操作\n- 实验性 Apple Watch 通话：Watch 独立通话功能\n- Slack 富文本回复：支持 Block Kit 布局\n- 个人连接账户：新增 Settings → Profile → Connected accounts 账户管理\n- Swarm 默认启用：编排并发子代理，支持结构化结果和实时进度\n- 仪表盘自定义：画廊浏览、可交换视图、面板位置调整、部件输入保留\n- Discord 会议笔记： occupancy 驱动的聆听模式会议捕获\n- 团队会话邀请：作曲家提及授权用户并接收临时收件箱条目\n\n🐛 Bug 修复：- 无",
+      "features": "- 聊天响应优化：长对话和磁盘处理期间保持聊天、仪表盘和会话交互的响应速度\n- 可靠升级与恢复：自动更新保留设置、技能和默认代理，Git 更新后恢复 Gateway 重启\n- GPT-6 Astra 模型支持：支持文本和图像输入、Responses 工具调用和推理控制\n- 回复持久化：Gateway 重启后恢复活跃、排队和委托的回复\n- 数据备份增强：Git 备份保留含 NUL 字符的完整文本，支持 Nix 配置和凭证链接\n- 运行时设置变更：无需重启即可应用更多代理、模型、工具、渠道、浏览器等设置\n- 插件图标打包：插件图标打包到 `assets/icon.png`，减少网络请求\n- GPT-6 Astra 异步工具与引导：异步函数工具、WebSocket 引导和推理过程保留\n- macOS 浏览器登录增强：Cloudflare Access 浏览器登录和 Mac 应用集成\n- 实验性插件 UI：支持插件贡献控制 UI 页面、面板和会话操作\n- 实验性 Apple Watch 通话：Watch 独立通话功能\n- Slack 富文本回复：支持 Block Kit 布局\n- 个人连接账户：新增 Settings → Profile → Connected accounts 账户管理\n- Swarm 默认启用：编排并发子代理，支持结构化结果和实时进度\n- 仪表盘自定义：画廊浏览、可交换视图、面板位置调整、部件输入保留\n- Discord 会议笔记： occupancy 驱动的聆听模式会议捕获\n- 团队会话邀请：作曲家提及授权用户并接收临时收件箱条目",
+      "bug_fixes": "- 无",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Reading List - 09/05/2026",
       "url": "https://www.construction-physics.com/p/reading-list-09052026",
       "summary": "SpaceX&#8217;s turbine blade factory, Fervo&#8217;s deal with Google, Delhi&#8217;s cheap metro, why recycling is overrated, and more.",
@@ -19465,5 +19477,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-06 03:49:14"
+  "last_updated": "2026-09-06 14:59:40"
 }

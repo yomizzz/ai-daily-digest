@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>Proof of the rank-trace theorem</title>
     <style>
 
         :root {
@@ -287,56 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-09-06 14:59:40</p>
+        <h1>Proof of the rank-trace theorem</h1>
+        <p><span class="category-tag">blog</span> johndcook.com · 2026-09-05</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 1 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="release">
-    <div class="release-header">
-        <div style="display:flex;align-items:center;flex-wrap:wrap;">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.9.2" target="_blank" class="release-title">openclaw 2026.9.2</a>
-            <span class="release-tag">v2026.9.2</span>
-        </div>
-        <span class="release-date">2026-09-05</span>
-    </div>
-<div class="release-section">
-    <div class="release-section-title">🆕 新增功能</div>
-    <div class="release-card"><ul class="summary-list"><li>- 聊天响应优化：长对话和磁盘处理期间保持聊天、仪表盘和会话交互的响应速度</li><li>- 可靠升级与恢复：自动更新保留设置、技能和默认代理，Git 更新后恢复 Gateway 重启</li><li>- GPT-6 Astra 模型支持：支持文本和图像输入、Responses 工具调用和推理控制</li><li>- 回复持久化：Gateway 重启后恢复活跃、排队和委托的回复</li><li>- 数据备份增强：Git 备份保留含 NUL 字符的完整文本，支持 Nix 配置和凭证链接</li><li>- 运行时设置变更：无需重启即可应用更多代理、模型、工具、渠道、浏览器等设置</li><li>- 插件图标打包：插件图标打包到 `assets/icon.png`，减少网络请求</li><li>- GPT-6 Astra 异步工具与引导：异步函数工具、WebSocket 引导和推理过程保留</li><li>- macOS 浏览器登录增强：Cloudflare Access 浏览器登录和 Mac 应用集成</li><li>- 实验性插件 UI：支持插件贡献控制 UI 页面、面板和会话操作</li><li>- 实验性 Apple Watch 通话：Watch 独立通话功能</li><li>- Slack 富文本回复：支持 Block Kit 布局</li><li>- 个人连接账户：新增 Settings → Profile → Connected accounts 账户管理</li><li>- Swarm 默认启用：编排并发子代理，支持结构化结果和实时进度</li><li>- 仪表盘自定义：画廊浏览、可交换视图、面板位置调整、部件输入保留</li><li>- Discord 会议笔记： occupancy 驱动的聆听模式会议捕获</li><li>- 团队会话邀请：作曲家提及授权用户并接收临时收件箱条目</li></ul></div>
-</div><div class="release-section">
-    <div class="release-section-title">🐛 Bug 修复</div>
-    <div class="release-card"><ul class="summary-list"><li>- 无</li></ul></div>
-</div>
-</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><p>本文是秩-迹定理（rank-trace theorem）的证明部分，假设矩阵A为实对称矩阵，介绍了迹（trace）运算符的定义——即矩阵主对角线元素的和，并给出该定理的证明过程。</p></div>
+<div class="tags">标签：线性代数, 矩阵理论, 数学证明</div>
+        <div class="detail-why">💡 适合希望深入理解线性代数核心定理证明过程的读者。</div>
+        <a href="https://www.johndcook.com/blog/2026/09/05/proof-of-the-rank-trace-theorem/" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>
