@@ -1,6 +1,110 @@
 {
   "articles": [
     {
+      "title": "The ill-fated HP-Compaq merger",
+      "url": "https://dfarq.homeip.net/the-ill-fated-hp-compaq-merger/?utm_source=rss&utm_medium=rss&utm_campaign=the-ill-fated-hp-compaq-merger",
+      "summary": "On September 6, 2001, HP announced its intention to acquire Compaq for $25 billion. It was a stunning end for what still seemed to be one of the rising stars of the PC industry. I also think it proved that\nThe post The ill-fated HP-Compaq merger appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-09-07",
+      "summary_zh": "2001年9月6日，惠普宣布以250亿美元收购康柏，这起当时震惊科技界的重大并购案，标志着PC行业格局的重大转变。文章深入分析了这一曾被视为强强联合的交易为何最终未能达到预期效果，为理解企业并购决策的风险与挑战提供了重要案例。",
+      "why_matters": "透过HP-Compaq合并案例，揭示大型科技并购中战略协同与文化整合的关键问题。",
+      "tags": "惠普, 康柏, 企业并购, PC行业, 科技史",
+      "id": 1538,
+      "added_at": "2026-09-08 05:00:55"
+    },
+    {
+      "title": "The Education of a Doomer",
+      "url": "https://borretti.me/article/the-education-of-a-doomer",
+      "summary": "How and why I went from AI optimist to AI doomer.",
+      "source": "borretti.me",
+      "category": "blog",
+      "published": "2026-09-07",
+      "summary_zh": "本文作者分享了自己从AI乐观主义者转变为AI末日论者（Doomer）的思想历程，深入剖析了驱动这一转变的关键认知因素和经历，展现了AI领域内一种严肃且具有代表性的风险观点演化路径。",
+      "why_matters": "对于关注AI发展和安全的读者，这篇文章提供了一个深度反思AI风险的思考框架，有助于理解为何越来越多AI从业者开始认真对待存在性风险问题。",
+      "tags": "人工智能风险, AI安全, 思想转变",
+      "id": 1536,
+      "added_at": "2026-09-08 05:00:55"
+    },
+    {
+      "title": "Ngram error rate",
+      "url": "https://www.johndcook.com/blog/2026/09/07/ngram-error-rate/",
+      "summary": "The Online Etymological Dictionary gives the following etymology for grok: grok (v.) &#8220;understand empathically,&#8221; 1961, an arbitrary formation by U.S. science fiction writer Robert A. Heinlein (1907-1988) in his book &#8220;Stranger in a Strange Land.&#8221; In the book it is a transliteration of a Martian word and is said to mean etymologically &#8220;to drink.&#8221; It attained [&#8230;]\nThe post Ngram error rate first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-09-07",
+      "summary_zh": "文章讨论了Google Ngram Viewer（一个基于数百万书籍的语料库工具）中的错误问题。以“grok”一词为例，质疑了在线词源词典的信息准确性，并分析了Ngram数据库在追踪词汇历史时可能出现的误差和不准确之处。",
+      "why_matters": "揭示了大数据工具在语言研究中的局限性，提醒我们不能盲目依赖数字人文工具的分析结果。",
+      "tags": "数字人文, Ngram分析, 词源学, 语言工具, Google Books",
+      "id": 1534,
+      "added_at": "2026-09-08 05:00:55"
+    },
+    {
+      "title": "Pluralistic: How corporate America built a better Roach Motel (07 Sep 2026)",
+      "url": "https://pluralistic.net/2026/09/06/hotels-california/",
+      "summary": "Today's links How corporate America built a better Roach Motel: Hostages beat customers every day. Hey look at this: Delights to delectate. Object permanence: 3-hole punches; Warner Bros v Warner Bros; Privacy wars get worse; \"Weapons of Math Destruction\"; HK elections go to pro-democracy reformers; Stock buybacks are swindles; NZ v Open source; MSFT patches DRM faster than other bugs; Wikipedia's worst arguments; Pirates x Iceland. Upcoming appearances: Brighton, London, Budapest, Edmonton, Sou",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-09-07",
+      "summary_zh": "这篇文章讨论了美国企业如何通过精心设计的锁定机制（如订阅制、自动续费、生态系统绑定等）让消费者一旦进入就难以离开，文章用\"蟑螂旅馆\"比喻这种商业策略，并指出当用户被\"扣为人质\"后，企业往往不会优先考虑用户体验。同时文章还涉及隐私保护、数学算法决策透明度以及香港民主改革等多元话题。",
+      "why_matters": "Cory Doctorow的专栏文章，以犀利视角剖析数字时代的用户锁定现象，对理解",
+      "tags": "",
+      "id": 1532,
+      "added_at": "2026-09-08 05:00:55"
+    },
+    {
+      "title": "★ And It’s True That I Stole Your Lighter, and It’s Also True That I Lost the Map",
+      "url": "https://daringfireball.net/2026/09/its_true_that_i_stole_your_lighter",
+      "summary": "What we want is a system where geographic names are determined democratically, by voting. And that is the system we in fact have.",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-07",
+      "summary_zh": "文章讨论了地理名称的命名系统，作者认为我们期望的是一个通过民主投票来决定地理名称的系统，而实际上我们现有的系统正是如此。这可能涉及维基百科、Google地图等用户贡献内容的平台如何通过众包方式确定地名。",
+      "why_matters": "适合关注互联网协作机制和地名文化讨论的读者。",
+      "tags": "互联网协作, 地理命名, 民主投票",
+      "id": 1530,
+      "added_at": "2026-09-08 05:00:55"
+    },
+    {
+      "title": "Matt Birchler’s Folding iPhone Predictions",
+      "url": "https://birchtree.me/blog/my-folding-iphone-predictions/",
+      "summary": "Matt Birchler:\n\n\n  So, yeah, I do think that, especially this year, unit sales will\nfar lag behind the 18 Pro models, the normal iPhone 18, and\nprobably the Air 2 and 18e. I think they will lag next year as\nwell for similar reasons. I don’t know if this will ever become\nthe most popular iPhone, but I do not think it will fail, and I\nthink it will sell more units every year for it’s first few years\non the market (especially if they can get the price down over that\ntime as well).\n\nMy evidence for ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-07",
+      "summary_zh": "科技博主Matt Birchler预测，今年折叠屏iPhone的销量将远低于iPhone 18 Pro、普通iPhone 18以及Air 2和18e机型。他预计明年这种情况仍将持续，折叠iPhone可能永远不会成为最受欢迎的iPhone型号。这一预测反映出市场对折叠屏iPhone的接受度可能低于预期。",
+      "why_matters": "如果你对苹果折叠屏产品的市场前景感兴趣，这篇文章提供了专业人士的分析视角。",
+      "tags": "折叠屏iPhone，iPhone销量预测，苹果产品分析",
+      "id": 1528,
+      "added_at": "2026-09-08 05:00:55"
+    },
+    {
+      "title": "The Onion’s Exclusive Interview With Larry Ellison",
+      "url": "https://theonion.com/the-onions-exclusive-interview-with-larry-ellison/",
+      "summary": "The Onion:\n\n\n  The Onion : How did you get into the entertainment industry?\n\nEllison: I remember going to the movies as a kid, and when the\nhouselights went down and that hush fell over the crowd, I’d\nthink to myself: I’d like to build a massive propaganda apparatus\none day.\n\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-07",
+      "summary_zh": "本文是讽刺网站The Onion虚构的甲骨文CEO拉里·埃里森访谈，以夸张荒诞的方式将埃里森塑造成一个怀有极权野心的角色，暗示其商业帝国类似于“宣传机器”。这是daringfireball.net分享的一篇幽默讽刺文章。",
+      "why_matters": "科技圈大佬的荒诞讽刺访谈，笑点犀利，适合轻松阅读。",
+      "tags": "科技人物，讽刺文章，拉里·埃里森",
+      "id": 1526,
+      "added_at": "2026-09-08 05:00:55"
+    },
+    {
+      "title": "McKinley 1.0",
+      "url": "https://mckinleysymbols.com/",
+      "summary": "Crackerjack new Mac app for creating and editing custom SF Symbols, from developer Amy Worrall:\n\n\n  McKinley is an all-in-one studio for drawing and annotating SF\nSymbols. It bundles vector tools with knowledge of the SF Symbols\nstructure, so you can edit one set of objects across multiple\nweights, sizes and colours. Import SVG or start from scratch, live\npreview your work using Apple’s own renderer, and export directly\nto Xcode, so you never need touch the SF Symbols app again!\n\n\nMcKinley is Ma",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-07",
+      "summary_zh": "McKinley 1.0 是一款由 Amy Worrall 开发的全新 Mac 应用，专为创建和编辑苹果 SF Symbols 而设计。该应用集矢量绘图工具与 SF Symbols 结构知识于一体，支持跨多个字重同时编辑对象。",
+      "why_matters": "为 iOS/macOS 开发者提供了一站式 SF Symbols 设计解决方案，大幅提升图标制作效率。",
+      "tags": "Mac应用, SF Symbols, 矢量设计",
+      "id": 1524,
+      "added_at": "2026-09-08 05:00:55"
+    },
+    {
       "title": "Debian Code Search: Fast TurboPFor with Go SIMD",
       "url": "https://michael.stapelberg.ch/posts/2026-09-06-dcs-fast-turbopfor-go-simd/",
       "summary": "This August, I accomplished what I wanted for many years: I deleted the last cgo\ndependency in Debian Code Search! This was made possible by Go’s recently\nintroduced SIMD support, because now we can implement the TurboPFor integer\ncompression format as efficiently — more efficiently, in fact, by using the\nnewer AVX512 instruction set! — as the reference implementation.\nBackground: Why does DCS need a fast Integer Codec?\nDebian Code Search (DCS) is a search engine that allows searching all the Op",
@@ -19620,5 +19724,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-07 15:09:50"
+  "last_updated": "2026-09-08 05:00:55"
 }
