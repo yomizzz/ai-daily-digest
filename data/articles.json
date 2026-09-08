@@ -1,6 +1,149 @@
 {
   "articles": [
     {
+      "title": "What happened to Compuserve?",
+      "url": "https://dfarq.homeip.net/what-happened-to-compuserve/?utm_source=rss&utm_medium=rss&utm_campaign=what-happened-to-compuserve",
+      "summary": "Compuserve was an online service for dialup modems from the 1970s to the 1990s. It was a way of getting online and communicating with others before the Internet was generally available to individuals. Later, it became a primary way for\nThe post What happened to Compuserve? appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-09-08",
+      "summary_zh": "CompuServe是1970至90年代期间通过拨号调制解调器运行的在线服务，在互联网向普通用户开放之前，它为人们提供了上网和交流的主要渠道，见证了互联网发展初期的重要历史阶段。",
+      "why_matters": "了解互联网诞生前的在线服务历史，感受科技发展的变迁与时代的记忆。",
+      "tags": "互联网历史，CompuServe，科技发展",
+      "id": 1552,
+      "added_at": "2026-09-09 04:36:29"
+    },
+    {
+      "title": "The Bulldozing of an Interface",
+      "url": "https://blog.jim-nielsen.com/2026/bulldoze-ui/",
+      "summary": "Marcin Wichary has a lovely article titled “Photoshop’s challenges with focus, pt. 2”. If you’re into the minutiae of interface design, this is a good ‘un. It perfectly illustrates how impossible it is to try and compare two interfaces side by side as static images.\nWhat matters in an interface is how it works, i.e. how you interface with it.\nAnd when you bulldoze an interface to build a new one, comparing the old vs. new side-by-side to make sure you “captured everything” is a lie. It’s never o",
+      "source": "blog.jim-nielsen.com",
+      "category": "blog",
+      "published": "2026-09-08",
+      "summary_zh": "文章引用了Marcin Wichary关于Photoshop焦点处理的技术文章，探讨了界面设计的复杂性。作者指出，用静态图片对比两个界面几乎是不可能的，因为真正重要的交互细节、状态变化和用户体验无法通过截图完整呈现。文章强调了理解界面“动态本质”的重要性。",
+      "why_matters": "对于从事UI/UX设计或对交互设计感兴趣的读者，本文提供了一个深刻视角——为什么看似简单的界面比较实则暗藏玄机。",
+      "tags": "界面设计, 用户体验, 交互设计",
+      "id": 1550,
+      "added_at": "2026-09-09 04:36:29"
+    },
+    {
+      "title": "Concentration Risk",
+      "url": "https://www.wheresyoured.at/concentration-risk/",
+      "summary": "If you liked this piece, you should subscribe to my premium newsletter. It&#x2019;s $70 a year, $18 a quarter, or $7 a month, and in return you get a weekly newsletter that&#x2019;s usually anywhere from 10,000 to 18,000 words, including vast, detailed analyses of",
+      "source": "wheresyoured.at",
+      "category": "blog",
+      "published": "2026-09-08",
+      "summary_zh": "无法提供完整摘要。该文章标题为“集中风险”（Concentration Risk），但提供的原文摘要被截断，仅包含付费订阅推广内容，未能获取文章核心论述。",
+      "why_matters": "因原文内容不完整，无法判断是否值得阅读。",
+      "tags": "投资风险，投资组合管理（基于标题推测）",
+      "id": 1548,
+      "added_at": "2026-09-09 04:36:29"
+    },
+    {
+      "title": "Pretraining progress is mostly coming from data",
+      "url": "https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data",
+      "summary": "Breaking down 6 years of pretraining progress into data vs model improvements",
+      "source": "dwarkesh.com",
+      "category": "blog",
+      "published": "2026-09-08",
+      "summary_zh": "文章分析了2017-2023年间大语言模型预训练进展的来源，发现大部分性能提升实际上来自数据质量和数据量的改进，而非模型架构的根本性变化。作者通过分解6年的预训练数据，揭示了模型架构在同期相对稳定的情况下，数据规模的扩展和质量的提升是推动能力进步的主要驱动力。",
+      "why_matters": "如果你想理解AI能力增长的真正来源，这篇文章提供了数据驱动的独特视角，能帮助你区分 hype 和真实的技术进步。",
+      "tags": "AI发展, 大语言模型, 数据重要性, 模型训练",
+      "id": 1546,
+      "added_at": "2026-09-09 04:36:29"
+    },
+    {
+      "title": "What’s new in git-pkgs",
+      "url": "https://nesbitt.io/2026/09/08/whats-new-in-git-pkgs.html",
+      "summary": "Small Go modules for people who build package-manager tooling.",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-09-08",
+      "summary_zh": "git-pkgs是一组为构建包管理器工具而设计的小型Go模块。文章介绍了这些模块的最新更新和新增功能，为需要开发包管理器或相关工具的开发者提供实用的代码库和开发思路。",
+      "why_matters": "如果你正在开发包管理器或相关工具，这个开源项目提供了可以直接使用的Go模块，可以大幅简化开发工作。",
+      "tags": "Go语言, 包管理器, 开源工具",
+      "id": 1544,
+      "added_at": "2026-09-09 04:36:29"
+    },
+    {
+      "title": "Navier-Stokes in the news",
+      "url": "https://www.johndcook.com/blog/2026/09/08/navier-stokes-in-the-news/",
+      "summary": "There are rumors that a long-standing math problem, one of the Millennium Prize problems, has been solved. The problem concerns technical properties of solutions to the Navier-Stokes equations [1], a set of equations that describe the dynamics of fluid flow. Popular accounts of the problem are often oversimplified and misleading. Some reports will speak of [&#8230;]\nThe post Navier-Stokes in the news first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-09-08",
+      "summary_zh": "近期有传言称，著名的千禧年数学大奖难题之一——Navier-Stokes方程解的存在性与光滑性问题可能已被解决。Navier-Stokes方程是描述流体运动的核心偏微分方程组，其解的数学性质长期困扰着数学家。该问题的突破性进展若获证实，将对数学和物理领域产生深远影响。",
+      "why_matters": "数学领域的重大进展值得持续关注，可能将改写流体力学的理论基础。",
+      "tags": "数学突破, Navier-Stokes方程, 千禧年难题, 流体力学",
+      "id": 1542,
+      "added_at": "2026-09-09 04:36:29"
+    },
+    {
+      "title": "A sample use of the winstart.bat file in Windows 95",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260908-00/?p=112679",
+      "summary": "For a driver that needs high resolution mode only in Windows.\nThe post A sample use of the <CODE>winstart.bat</CODE> file in Windows 95 appeared first on The Old New Thing.",
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "category": "blog",
+      "published": "2026-09-08",
+      "summary_zh": "这篇文章演示了在Windows 95中winstart.bat文件的实际应用场景，具体针对某些驱动程序仅在Windows系统环境下才需要启用高分辨率模式的情况。通过合理配置winstart.bat，可以确保这些特殊驱动只在合适的时机加载，展示了Windows 95启动机制的灵活性。",
+      "why_matters": "深入了解Windows 95启动流程和批处理文件在系统配置中的实际应用。",
+      "tags": "Windows 95, winstart.bat, 批处理脚本",
+      "id": 1540,
+      "added_at": "2026-09-09 04:36:29"
+    },
+    {
+      "title": "ActivityPub - Is it worth defending against replay attacks and message/signature time skew?",
+      "url": "https://shkspr.mobi/blog/2026/09/activitypub-is-it-worth-defending-against-replay-attacks-and-message-signature-time-skew/",
+      "summary": "Here&#039;s a problem that I&#039;ve found with ActivityBot - my little ActivityPub server. Sometimes it receives messages which were originally sent months ago. Why does that happen and is it risky to accept and process them?  My tl;dr is that it probably isn&#039;t worth worrying about. But I&#039;d love someone to tell me why I&#039;m wrong.  Here&#039;s my thinking:  Table of ContentsCausesIs that a problem?What are we…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-09-08",
+      "summary_zh": "文章探讨了ActivityPub服务器（如作者的ActivityBot）有时会收到数月前发送的延迟消息这一现象，分析了重放攻击和时间戳偏差（time skew）的潜在安全风险。作者认为，虽然ActivityPub作为开放协议确实存在这些技术漏洞，但从实际安全角度看，这些风险通常不值得过度担忧，建议采取务实的态度对待这类边缘情况。",
+      "why_matters": "对于关注去中心化社交网络开发和安全的开发者，这篇文章提供了关于协议安全设计与实际部署之间权衡的有价值见解。",
+      "tags": "ActivityPub, 重放攻击, 去中心化社交网络",
+      "id": 1538,
+      "added_at": "2026-09-09 04:36:29"
+    },
+    {
+      "title": "★ SuperDuper 4",
+      "url": "https://daringfireball.net/2026/09/superduper_4",
+      "summary": "SuperDuper feels like impossibly good software.",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-08",
+      "summary_zh": "SuperDuper 是一款 macOS 平台上的备份和恢复软件，以其简洁高效的操作为用户提供可靠的系统克隆和增量备份功能。该软件界面简洁直观，让备份过程变得轻松无忧，是 Mac 用户公认的优秀备份工具。原文作者对其给予了极高的评价。",
+      "why_matters": "对于 macOS 用户而言，这是一款值得信赖的备份软件首选。",
+      "tags": "Mac软件, 备份工具, 系统维护",
+      "id": 1536,
+      "added_at": "2026-09-09 04:36:29"
+    },
+    {
+      "title": "Automatically detecting AI text in my browser",
+      "url": "https://seangoedecke.com/deckard/",
+      "summary": "Automated AI text detection is currently an underserved niche. The only game in town is Pangram, which does an excellent job but desperately needs more competition. In a few years, I would be surprised if every major social network doesn’t scan new posts1 and comments for AI content in order to tag them (or simply remove them).\nI like that I can rely on Pangram to confirm my suspicions when I read something that sounds like AI. But it’d be much better if I could choose to avoid AI-generated text",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-09-08",
+      "summary_zh": "文章介绍了作者开发的浏览器扩展Pangram，该扩展可以自动检测网页中的AI生成文本。作者指出，目前自动AI文本检测是一个尚未被充分开发的功能领域，市场上缺乏竞争产品。作者预测在未来几年内，主要社交网络很可能会对发布的内容和评论进行AI内容扫描和标注。",
+      "why_matters": "对于关注AI内容识别技术发展、想了解如何在浏览器中实时检测AI文本的读者具有参考价值。",
+      "tags": "AI检测, 浏览器扩展, 工具推荐",
+      "id": 1534,
+      "added_at": "2026-09-09 04:36:29"
+    },
+    {
+      "title": "OpenNMC is an open replacement for expensive APC management cards",
+      "url": "https://www.jeffgeerling.com/blog/2026/opennmc-apc-ups-replacement-card/",
+      "summary": "UPSes are typically the most boring part of your homelab, but they're important. One of their main jobs is to give servers time to shut down safely if the power goes out. Another job is to condition your power so your servers can run smoothly.\nTo do both of those things well, you need a smart interface. And at least with APC, there are tons of older UPSes that use Network Management Cards. The one pictured below is the NMC 2, and I pulled out of my old APC Smart-UPS 2200 XL (pictured above).",
+      "source": "jeffgeerling.com",
+      "category": "blog",
+      "published": "2026-09-08",
+      "summary_zh": "OpenNMC是一个开源项目，旨在替代价格昂贵的APC UPS管理卡。该方案针对家庭实验室用户，帮助他们更经济地实现UPS的智能管理，确保在断电时服务器能够安全关机，同时对电力进行调节以保证设备稳定运行。",
+      "why_matters": "对于需要管理UPS但预算有限的家庭实验室用户，这是一个实用的开源解决方案。",
+      "tags": "开源硬件, UPS管理, 家庭实验室",
+      "id": 1532,
+      "added_at": "2026-09-09 04:36:29"
+    },
+    {
       "title": "The ill-fated HP-Compaq merger",
       "url": "https://dfarq.homeip.net/the-ill-fated-hp-compaq-merger/?utm_source=rss&utm_medium=rss&utm_campaign=the-ill-fated-hp-compaq-merger",
       "summary": "On September 6, 2001, HP announced its intention to acquire Compaq for $25 billion. It was a stunning end for what still seemed to be one of the rising stars of the PC industry. I also think it proved that\nThe post The ill-fated HP-Compaq merger appeared first on The Silicon Underground.",
@@ -19724,5 +19867,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-08 15:05:00"
+  "last_updated": "2026-09-09 04:36:29"
 }
