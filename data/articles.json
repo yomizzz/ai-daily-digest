@@ -1,6 +1,136 @@
 {
   "articles": [
     {
+      "title": "Analysing 2048 on a 3×3 board",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/small2048/",
+      "summary": "A belated writeup of a project I did in 2018, to scale the puzzle game 2048 down to a smaller board where it could be exhaustively analysed, and learn from the results.",
+      "source": "chiark.greenend.org.uk/~sgtatham",
+      "category": "blog",
+      "published": "2026-09-09",
+      "summary_zh": "本文介绍了作者在2018年开展的一个项目，将热门益智游戏2048缩小到3×3的小棋盘上进行穷举分析。通过这种方法，作者能够遍历所有可能的游戏状态，深入理解游戏机制，并从分析结果中获得关于游戏设计和策略的启示。",
+      "why_matters": "这是一个将复杂问题简化后进行深入分析的绝佳范例，展示了如何通过缩放问题规模来获得对游戏本质的洞察。",
+      "tags": "游戏分析, 算法研究, 2048, 组合数学",
+      "id": 1562,
+      "added_at": "2026-09-10 04:18:41"
+    },
+    {
+      "title": "The first VHS VCR: JVC HR-3300",
+      "url": "https://dfarq.homeip.net/the-first-vhs-vcr-jvc-hr-3300/?utm_source=rss&utm_medium=rss&utm_campaign=the-first-vhs-vcr-jvc-hr-3300",
+      "summary": "In 1986, it seemed like everyone was talking about VCRs, especially VHS VCRs. But this was an example of it taking years to become an overnight sensation. The first VHS VCR, the JVC HR-3300, was announced September 9, 1976. JVC\nThe post The first VHS VCR: JVC HR-3300 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-09-09",
+      "summary_zh": "1976年9月9日，JVC推出了世界上第一台VHS录像机HR-3300，标志着家用视频录制技术的开端。尽管VHS最终成为80年代家喻户晓的热门产品，但从发布到普及经历了近十年的发展历程，堪称“十年磨一剑”式的 Overnight Sensation。",
+      "why_matters": "了解家用录像技术发展史的入门读物，回顾那个改变家庭娱乐方式的技术革命。",
+      "tags": "VHS, 科技历史, JVC, 消费电子",
+      "id": 1560,
+      "added_at": "2026-09-10 04:18:41"
+    },
+    {
+      "title": "Don’t Let Anyone Take Away Your Big Box of Cables",
+      "url": "https://blog.jim-nielsen.com/2026/hands-off-my-cables/",
+      "summary": "Speaking of being on the internet and finding things that make you go, “Hey! It’s not just me!” I scrolled across this skeet from Tyler Gaw:\n\nI just dug to the bottom of my Big Box of Cables to find two cables that I needed for something. They've been in the bottom for 10+ years. So, \"when are you ever gonna use these?\" was today. Don't ever let anyone take your Big Box of Cables away.\n\nI laughed. I cried. I felt inspired.\nSo inspired, in fact, that I decided I was gonna do something about it.\nS",
+      "source": "blog.jim-nielsen.com",
+      "category": "blog",
+      "published": "2026-09-09",
+      "summary_zh": "本文作者在网上偶然发现了一则关于“线缆宝盒”的共鸣帖子，讲述了人们习惯保留各种旧线缆的原因。作者以轻松幽默的笔调指出，这些看似无用的旧线缆往往会在某一天派上用场，强调不要轻易丢弃自己的“线缆宝盒”。",
+      "why_matters": "文章以幽默的方式引发共鸣，揭示了科技爱好者保存旧配件的独特乐趣和实用价值。",
+      "tags": "线缆收纳, 科技生活, 怀旧共鸣",
+      "id": 1558,
+      "added_at": "2026-09-10 04:18:41"
+    },
+    {
+      "title": "The part of Navier-Stokes no one is talking about",
+      "url": "https://www.johndcook.com/blog/2026/09/09/formal-method-revolution/",
+      "summary": "Yesterday OpenAI announced a proof that settled a long-standing question about the Navier-Stokes equations from fluid dynamics. The announcement has created a lot of buzz, as one would expect. But there&#8217;s an aspect of OpenAI&#8217;s work that I haven&#8217;t seen anyone talk about: they posted a Lean 4 formal proof at the same time as [&#8230;]\nThe post The part of Navier-Stokes no one is talking about first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-09-09",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1556,
+      "added_at": "2026-09-10 04:18:41"
+    },
+    {
+      "title": "AI is an intelligence multiplier",
+      "url": "https://www.johndcook.com/blog/2026/09/09/ai-multiplier/",
+      "summary": "A rising tide may lift all boats, but the AI tide lifts some boats much more than others. By all accounts, the best programmers have had the biggest productivity boost from AI. And top tier mathematicians are using AI to settle long-standing mathematical conjectures. AI is a powerful tool, but tools don&#8217;t come to life [&#8230;]\nThe post AI is an intelligence multiplier first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-09-09",
+      "summary_zh": "文章指出AI技术如涨潮般推动各领域发展，但并非人人平等获益——顶尖程序员从中获得最大生产力提升，顶级数学家正借助AI攻克长期悬而未决的数学猜想。AI作为强大工具，对不同能力水平的人产生的杠杆效应差异显著。",
+      "why_matters": "揭示AI红利的差异化分配，提示我们关注AI对顶尖人才的放大效应。",
+      "tags": "人工智能, 生产力提升, 技术影响",
+      "id": 1554,
+      "added_at": "2026-09-10 04:18:41"
+    },
+    {
+      "title": "A 50-year-old computer-assisted proof",
+      "url": "https://www.johndcook.com/blog/2026/09/09/four-colors/",
+      "summary": "The idea of using computers to assist with proofs is not new. The first major computer-assisted proof was published in 1976, the proof of the four color theorem by Kenneth Appel and Wolfgang Haken. The authors reduced the proof of the four color theorem to verifying calculations on 1,834 configurations, each checked by a computer [&#8230;]\nThe post A 50-year-old computer-assisted proof first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-09-09",
+      "summary_zh": "应该总结计算机辅助证明的历史，特别是四色定理（1976年）的意义",
+      "why_matters": "说明为什么值得看",
+      "tags": "相关的标签",
+      "id": 1552,
+      "added_at": "2026-09-10 04:18:41"
+    },
+    {
+      "title": "Pluralistic: Anti-vax/anti-trust (09 Sep 2026)",
+      "url": "https://pluralistic.net/2026/09/09/when-it-dont-rain/",
+      "summary": "Today's links Anti-vax/anti-trust: Remembering saves lives. Hey look at this: Delights to delectate. Object permanence: Disneyland prisoner; HOAs v xeriscaping; Copyright Office x regulatory capture; The women held a vote; Open licenses v uncopyrightable subjects; Largest prison strike in history; Largest strike in history; Fingerspitzengefühl; CDT v DRM; BNL v DRM; Sugar v logos; Knit a Princess Leia wig; RIP Gutenberg founder Michael Hart; Best bitters; HK refugees x Snowden; Wells Fargo's mas",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-09-09",
+      "summary_zh": "本文是Cory Doctorow的Pluralistic博客文章集锦，主题涵盖反疫苗运动与反垄断斗争的相似性，以及记忆在公共卫生危机中的重要性。文章还讨论了住房管理协会与节水园林、版权办公室的监管俘获现象、监狱罢工运动等多个社会议题，延续了作者对数字权利、科技垄断和社会公正问题的持续关注。",
+      "why_matters": "适合关注科技与社会、版权制度及公民权利议题的读者，提供多维度的批判性思考视角。",
+      "tags": "反垄断, 数字权利, 社会公正",
+      "id": 1550,
+      "added_at": "2026-09-10 04:18:41"
+    },
+    {
+      "title": "★ The iPhone Air and iPhone 17 Pro",
+      "url": "https://daringfireball.net/2026/09/the_iphone_air_and_iphone_17_pro",
+      "summary": "One year later and it feels like both the iPhone 17 Pro and iPhone Air could be announced tomorrow, not a year ago, and would seem fresh and exciting.",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-09",
+      "summary_zh": "本文讨论了iPhone 17 Pro和iPhone Air两款产品的设计与市场表现。作者认为，距离发布已过去一年，但这两款产品依然给人新鲜感和吸引力，仿佛随时可以重新发布也不会显得过时。文章从产品设计和用户感知角度，分析了苹果在高端和中端市场的产品策略。",
+      "why_matters": "适合关注苹果产品动态和数码科技趋势的读者阅读。",
+      "tags": "iPhone, 苹果, 科技评论",
+      "id": 1548,
+      "added_at": "2026-09-10 04:18:41"
+    },
+    {
+      "title": "Why we should anthropomorphize AI agents",
+      "url": "https://seangoedecke.com/why-we-should-anthropomorphize-ai-agents/",
+      "summary": "Just over a year ago I wrote Why we should anthropomorphize LLMs. Now it’s a hot topic again, driven by Dwarkesh Patel’s description of OpenAI’s recent swarm breakout as a sequence of AI “civilizations”.\nIn 2025, my argument for anthropomorphism went like this:\n\nAIs are trained on human text, and so will trend towards acting in human-like ways by default\nAssistant AIs (today we should say agent AIs) are deliberately post-trained to have a personality\nIn general, it is morally sensible to avoid t",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-09-09",
+      "summary_zh": "文章认为我们应该对AI agents进行拟人化，因为它们是在人类文本上训练的，反映了人类的思维模式。作者延续了此前关于LLM拟人化的观点，认为这是理解和预测AI行为的有效方式，尤其在2025年AI agents快速发展的背景下更为重要。",
+      "why_matters": "作者曾准确预判了这一议题的重要性，观点具有前瞻性，对理解AI发展趋势有启发价值。",
+      "tags": "AI拟人化，人工智能，AI agents",
+      "id": 1546,
+      "added_at": "2026-09-10 04:18:41"
+    },
+    {
+      "title": "Quoting Terence Tao",
+      "url": "https://simonwillison.net/2026/Sep/9/terence-tao/",
+      "summary": "I wrote recently about how the collection of good, fruitful open problems is now being mined in a non-renewable fashion, leading to the potential scenario of these problems becoming scarce. [...]\nWe have now seen that even the rumor of someone working on a problem can trigger a massive amount of AI-powered effort to flatten it before the original research project has time to reach its full potential.  The incentives may now be pointing in the direction of no longer sharing any promising research",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-09-09",
+      "summary_zh": "文章讨论了AI在解决数学开放问题方面的进展，作者引用了数学家陶哲轩的观点，指出当前对有价值的开放问题的研究正在以“不可再生”的方式被消耗，存在这些重要问题逐渐枯竭的风险。同时，文章还提到即使是某人在研究某个问题的传言，也足以引发大量的AI研究活动。",
+      "why_matters": "对于关注AI与数学研究交叉领域的读者，这篇文章提供了关于AI驱动下数学研究现状与挑战的深入思考。",
+      "tags": "AI研究，数学开放问题，陶哲轩",
+      "id": 1544,
+      "added_at": "2026-09-10 04:18:41"
+    },
+    {
       "title": "What happened to Compuserve?",
       "url": "https://dfarq.homeip.net/what-happened-to-compuserve/?utm_source=rss&utm_medium=rss&utm_campaign=what-happened-to-compuserve",
       "summary": "Compuserve was an online service for dialup modems from the 1970s to the 1990s. It was a way of getting online and communicating with others before the Internet was generally available to individuals. Later, it became a primary way for\nThe post What happened to Compuserve? appeared first on The Silicon Underground.",
@@ -19879,5 +20009,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-09 15:13:18"
+  "last_updated": "2026-09-10 04:18:41"
 }
