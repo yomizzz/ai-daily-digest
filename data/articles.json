@@ -144,6 +144,18 @@
       "added_at": "2026-09-09 04:36:29"
     },
     {
+      "title": "openclaw 2026.9.3",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.3",
+      "source": "openclaw",
+      "published": "2026-09-08",
+      "category": "openclaw",
+      "summary": "- **更安全的更新机制：** 在隔离候选状态中预演核心和插件变更，支持 2026.9.2 迁移恢复，不中断健康运行的 Gateway\n- **性能优化：** 保留热提示缓存，减少冷会话更新和内存搜索的不必要工作，跨会话复用工作进程构建\n- **技能工作区重构：** 跨工作区在单一持久化 agent-owned 集合中管理技能，支持比较完整技能指令，通过 Doctor 安全迁移遗留技能\n- **浏览器标签页改进：** 监视 agent 页面重绘，外部链接在原生 Mac 标签页中打开，切换对话时保持关联\n- **账户统一管理：** 在 Models 设置中直接管理已连接账户和支持账户优先级\n- **对话分享功能：** 发布可撤销的会话只读视图，支持现有及未来对话文本，生成公开链接\n- **可搜索会议库：** 浏览保存笔记、搜索完整转录、下载 Markdown 或 JSONL 档案，从 Control UI 管理捕获源\n- **团队活动报告：** 可选安装团队报告功能，浏览 GitHub 活动和 Discord 讨论，支持历史存储和模型摘要\n- **MCP 提示适配器：** 返回类型化 MCP GetPromptResult，验证外部响应\n- **有界更新修复：** 支持候选验证失败时进入有界修复阶段，激活前需独立验证\n\n🐛 Bug 修复：- 无（本次更新未包含明确的 Bug 修复项）",
+      "features": "- **更安全的更新机制：** 在隔离候选状态中预演核心和插件变更，支持 2026.9.2 迁移恢复，不中断健康运行的 Gateway\n- **性能优化：** 保留热提示缓存，减少冷会话更新和内存搜索的不必要工作，跨会话复用工作进程构建\n- **技能工作区重构：** 跨工作区在单一持久化 agent-owned 集合中管理技能，支持比较完整技能指令，通过 Doctor 安全迁移遗留技能\n- **浏览器标签页改进：** 监视 agent 页面重绘，外部链接在原生 Mac 标签页中打开，切换对话时保持关联\n- **账户统一管理：** 在 Models 设置中直接管理已连接账户和支持账户优先级\n- **对话分享功能：** 发布可撤销的会话只读视图，支持现有及未来对话文本，生成公开链接\n- **可搜索会议库：** 浏览保存笔记、搜索完整转录、下载 Markdown 或 JSONL 档案，从 Control UI 管理捕获源\n- **团队活动报告：** 可选安装团队报告功能，浏览 GitHub 活动和 Discord 讨论，支持历史存储和模型摘要\n- **MCP 提示适配器：** 返回类型化 MCP GetPromptResult，验证外部响应\n- **有界更新修复：** 支持候选验证失败时进入有界修复阶段，激活前需独立验证",
+      "bug_fixes": "- 无（本次更新未包含明确的 Bug 修复项）",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "The ill-fated HP-Compaq merger",
       "url": "https://dfarq.homeip.net/the-ill-fated-hp-compaq-merger/?utm_source=rss&utm_medium=rss&utm_campaign=the-ill-fated-hp-compaq-merger",
       "summary": "On September 6, 2001, HP announced its intention to acquire Compaq for $25 billion. It was a stunning end for what still seemed to be one of the rising stars of the PC industry. I also think it proved that\nThe post The ill-fated HP-Compaq merger appeared first on The Silicon Underground.",
@@ -19867,5 +19879,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-09 04:36:29"
+  "last_updated": "2026-09-09 15:13:18"
 }

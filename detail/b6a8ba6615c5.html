@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>Pretraining progress is mostly coming from data</title>
     <style>
 
         :root {
@@ -287,56 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-09-09 15:13:18</p>
+        <h1>Pretraining progress is mostly coming from data</h1>
+        <p><span class="category-tag">blog</span> dwarkesh.com · 2026-09-08</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 1 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="release">
-    <div class="release-header">
-        <div style="display:flex;align-items:center;flex-wrap:wrap;">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.9.3" target="_blank" class="release-title">openclaw 2026.9.3</a>
-            <span class="release-tag">v2026.9.3</span>
-        </div>
-        <span class="release-date">2026-09-08</span>
-    </div>
-<div class="release-section">
-    <div class="release-section-title">🆕 新增功能</div>
-    <div class="release-card"><ul class="summary-list"><li>- **更安全的更新机制：** 在隔离候选状态中预演核心和插件变更，支持 2026.9.2 迁移恢复，不中断健康运行的 Gateway</li><li>- **性能优化：** 保留热提示缓存，减少冷会话更新和内存搜索的不必要工作，跨会话复用工作进程构建</li><li>- **技能工作区重构：** 跨工作区在单一持久化 agent-owned 集合中管理技能，支持比较完整技能指令，通过 Doctor 安全迁移遗留技能</li><li>- **浏览器标签页改进：** 监视 agent 页面重绘，外部链接在原生 Mac 标签页中打开，切换对话时保持关联</li><li>- **账户统一管理：** 在 Models 设置中直接管理已连接账户和支持账户优先级</li><li>- **对话分享功能：** 发布可撤销的会话只读视图，支持现有及未来对话文本，生成公开链接</li><li>- **可搜索会议库：** 浏览保存笔记、搜索完整转录、下载 Markdown 或 JSONL 档案，从 Control UI 管理捕获源</li><li>- **团队活动报告：** 可选安装团队报告功能，浏览 GitHub 活动和 Discord 讨论，支持历史存储和模型摘要</li><li>- **MCP 提示适配器：** 返回类型化 MCP GetPromptResult，验证外部响应</li><li>- **有界更新修复：** 支持候选验证失败时进入有界修复阶段，激活前需独立验证</li></ul></div>
-</div><div class="release-section">
-    <div class="release-section-title">🐛 Bug 修复</div>
-    <div class="release-card"><ul class="summary-list"><li>- 无（本次更新未包含明确的 Bug 修复项）</li></ul></div>
-</div>
-</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><p>文章分析了2017-2023年间大语言模型预训练进展的来源，发现大部分性能提升实际上来自数据质量和数据量的改进，而非模型架构的根本性变化。作者通过分解6年的预训练数据，揭示了模型架构在同期相对稳定的情况下，数据规模的扩展和质量的提升是推动能力进步的主要驱动力。</p></div>
+<div class="tags">标签：AI发展, 大语言模型, 数据重要性, 模型训练</div>
+        <div class="detail-why">💡 如果你想理解AI能力增长的真正来源，这篇文章提供了数据驱动的独特视角，能帮助你区分 hype 和真实的技术进步。</div>
+        <a href="https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>
