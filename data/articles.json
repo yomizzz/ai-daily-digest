@@ -1,6 +1,136 @@
 {
   "articles": [
     {
+      "title": "When the RIAA sued a 12-year-old for MP3 piracy",
+      "url": "https://dfarq.homeip.net/that-time-the-riaa-sued-a-12-year-old-for-mp3-usage/?utm_source=rss&utm_medium=rss&utm_campaign=that-time-the-riaa-sued-a-12-year-old-for-mp3-usage",
+      "summary": "It was 22 years ago this week, on Semptember 8, 2003, that the Recording Industry Association of America started suing individuals for pirating MP3 files. One of the people caught up in a lawsuit was a 12-year-old honors student who\nThe post When the RIAA sued a 12-year-old for MP3 piracy appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-09-10",
+      "summary_zh": "2003年9月8日，美国唱片工业协会(RIAA)开始对个人MP3盗版者提起诉讼，其中一名被告竟是一名12岁的优等生。这一事件反映了当时唱片业对数字音乐革命的恐慌与强硬反击，也引发了关于版权保护与未成年人权益的广泛讨论。",
+      "why_matters": "了解早期数字音乐版权之争如何影响普通人的命运，以及科技与法律碰撞下的社会反思。",
+      "tags": "数字版权，RIAA，MP3，音乐产业",
+      "id": 1573,
+      "added_at": "2026-09-11 04:20:11"
+    },
+    {
+      "title": "An Ode to Links",
+      "url": "https://blog.jim-nielsen.com/2026/ode-to-links/",
+      "summary": "A URL is a technical thing: a hostname, a path, a port, an origin, some query parameters, etc.\nBut a link is a cultural thing: an invitation, a citation, a gift, a shortcut, a connection.\nAll from a simple idea: here’s a thing that points to another thing, off you go!\nWe’ve built an entire culture around links. Just look at the language we use for them:\n\n“Drop me a link.”\n“Send me the link.”\n“Got a link?”\n“Link in bio.”\n“Link in the description.”\n“Here’s the link.”\n“Don’t click that link.”\n“Sorr",
+      "source": "blog.jim-nielsen.com",
+      "category": "blog",
+      "published": "2026-09-10",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1571,
+      "added_at": "2026-09-11 04:20:11"
+    },
+    {
+      "title": "Package Manager Trends",
+      "url": "https://nesbitt.io/2026/09/10/package-manager-trends.html",
+      "summary": "min-release-age, minimum-release-age, -Zmin-publish-age, cooldown.",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-09-10",
+      "summary_zh": "本文探讨了主流包管理器在发布机制方面的最新发展趋势，重点关注最小发布年龄（min-release-age）和冷却时间（cooldown）等配置参数。这些机制旨在通过设置包发布的延迟间隔，防止恶意包快速传播，为安全审查争取时间，同时帮助维护包生态系统的稳定性和可靠性。",
+      "why_matters": "对于关注开源生态安全和包管理工具演进的技术人员具有重要参考价值。",
+      "tags": "包管理器, 开源生态, 技术趋势",
+      "id": 1569,
+      "added_at": "2026-09-11 04:20:11"
+    },
+    {
+      "title": "AI Is Breaking This Thing We Call Trust",
+      "url": "https://terriblesoftware.org/2026/09/10/ai-is-breaking-this-thing-we-call-trust/",
+      "summary": "AI-generated work can look finished without being understood. That uncertainty erodes trust, slows reviews, and leaves colleagues doing the missing work.",
+      "source": "terriblesoftware.org",
+      "category": "blog",
+      "published": "2026-09-10",
+      "summary_zh": "文章探讨了AI生成内容对职场信任的冲击。AI可以产出看似完成的工作成果，但其中往往缺乏真正的理解和验证，这种不确定性导致同事间的信任被逐渐侵蚀。审查者不得不花费额外时间核实AI输出，同事们也在无形中承担了原本不属于他们的工作负担。这一问题在知识密集型工作中尤为突出。",
+      "why_matters": "对每一个使用AI辅助工作的人都是一次必要的警示，提醒我们正视效率与信任之间的张力。",
+      "tags": "AI伦理, 职场信任, 人工智能, 工作效率",
+      "id": 1567,
+      "added_at": "2026-09-11 04:20:11"
+    },
+    {
+      "title": "Extending Raschka's GPT-2: an MoE trained from scratch on an RTX 3090",
+      "url": "https://www.gilesthomas.com/2026/09/gpt-2-to-moe",
+      "summary": "Mixture-of-experts models are really nifty.  You get inference speed close to\na small model's, with a lot of the smarts and knowledge of a large one.  While they\nuse as much memory as an equivalently-sized dense (non-MoE) model, they're much faster.\nThe frontier labs don't publish their architectures, but Claude and ChatGPT are widely\nrumoured to be MoEs these days -- and certainly many large open-weights models like\nDeepSeek and\nKimi K3 are.\n\nIn this post, I'll show you how I added MoE support\n",
+      "source": "gilesthomas.com",
+      "category": "blog",
+      "published": "2026-09-10",
+      "summary_zh": "文章介绍了作者如何在消费级显卡RTX 3090上从零开始训练一个基于GPT-2的MoE（混合专家）模型。MoE模型能在保持接近小型模型推理速度的同时，获得大型模型的智能和能力，且虽然内存占用与同等规模的密集模型相同，但计算速度更快。文章还提到前沿实验室通常不会公开他们的MoE架构细节。",
+      "why_matters": "提供了在有限硬件条件下训练大模型的实践经验，对想学习MoE架构或尝试个人训练LLM的开发者很有参考价值。",
+      "tags": "大模型训练, MoE架构, PyTorch, 个人GPU, NLP",
+      "id": 1565,
+      "added_at": "2026-09-11 04:20:11"
+    },
+    {
+      "title": "Bayesian OCR",
+      "url": "https://www.johndcook.com/blog/2026/09/10/bayesian-ocr/",
+      "summary": "The Greek letter β (beta) and the German letter ß (eszett) look similar, especially in some fonts. Now suppose an OCR program sees some character that could be a beta or could be an eszett. It could calculate some kind of distance between between the pixel pattern of the character and the pixel patterns of [&#8230;]\nThe post Bayesian OCR first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-09-10",
+      "summary_zh": "文章介绍如何用贝叶斯方法解决OCR识别中相似字符的区分问题，以希腊字母β和德语字母ß为例。当OCR遇到难以区分的字符时，不应仅比较像素距离，而应结合先验概率（如文本中字母出现的频率）和似然度来计算后验概率，从而做出更准确的判断。这种方法比单纯的模式匹配更加科学和准确。",
+      "why_matters": "通过具体例子深入浅出地展示了贝叶斯思维在解决实际问题中的应用价值。",
+      "tags": "贝叶斯方法, OCR识别, 机器学习",
+      "id": 1563,
+      "added_at": "2026-09-11 04:20:11"
+    },
+    {
+      "title": "Put an AV test at the start of your slides",
+      "url": "https://shkspr.mobi/blog/2026/09/put-an-av-test-at-the-start-of-your-slides/",
+      "summary": "For years, I&#039;ve had a test-card at the start of my slides. Before I start my talk, I can immediately see if the aspect ratio is wrong, colours are off, or any other visual issues with the presentation.    A few years ago I was invited to give a talk and was assured that the venue was set up for audio as well as video. I dutifully filled my slides with with demo videos containing sound. None of…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-09-10",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1561,
+      "added_at": "2026-09-11 04:20:11"
+    },
+    {
+      "title": "Joanna Stern on the iPhone Duo",
+      "url": "https://youtu.be/VNzl-q0EGfg",
+      "summary": "One thing I learned from this video is that I’m way, way too careful when playing with the hands-on area demo units. I handle them like museum pieces; Stern treats them like hot dog buns.\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-10",
+      "summary_zh": "本文讨论了Joanna Stern关于iPhone Duo的评测视频。文章通过对比指出，作者本人对待Apple Store演示区设备极为谨慎，而Stern则毫不介意大力操作使用。视频展示了Stern直接、实用的评测风格——不把设备当“宝贝”供着，而是像对待日常工具那样正常使用。",
+      "why_matters": "Joanna Stern以大胆实用的评测风格著称，她的iPhone Duo测评真实展示了产品在实际使用中的表现。",
+      "tags": "iPhone Duo评测，科技视频，Joanna Stern",
+      "id": 1559,
+      "added_at": "2026-09-11 04:20:11"
+    },
+    {
+      "title": "They really do think AI might kill everyone",
+      "url": "https://seangoedecke.com/they-really-do-think-ai-might-kill-everyone/",
+      "summary": "A recent resignation tweet from an Anthropic researcher has everyone talking about the AI apocalypse again. Among other things, he said:\n\nThe people building AI earnestly believe that it could kill us all by the end of the decade.\n\nMany people found it hard to believe that AI researchers think this way. Some explained it as a PR campaign to promote AI regulation, or as self-promotion, or as a way to boost AI company stock prices. Others felt it had to be impossible, because if you really believe",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-09-10",
+      "summary_zh": "文章探讨了Anthropic公司一名研究员最近的辞职言论引发的讨论，他声称AI开发者真心相信AI可能在十年内毁灭人类。作者认为，虽然许多人难以相信AI研究者持有如此悲观的看法，但这种担忧在AI研究社区中确实存在且值得认真对待。文章呼吁人们正视AI安全问题的紧迫性。",
+      "why_matters": "了解AI从业者真实想法的窗口，提醒我们AI安全问题的严肃性。",
+      "tags": "AI安全，人工智能风险，科技伦理",
+      "id": 1557,
+      "added_at": "2026-09-11 04:20:11"
+    },
+    {
+      "title": "Quoting Calif Research",
+      "url": "https://simonwillison.net/2026/Sep/10/calif-research/",
+      "summary": "Today, we're releasing a demo of WeWorm, the first zero-click worm to spread through WeChat calls across iOS and Android. [...]\nThe victim does not need to answer the call, or interact with their phone at all. Even if they do answer, they hear nothing, and the exploit still succeeds. [...]\nWorking with AI, our team found the bug and wrote the first remote code execution (RCE) exploit in about two days. Building the worm took one more week.\nA worm at this scale used to be the kind of thing that t",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-09-10",
+      "summary_zh": "本文介绍了一款名为WeWorm的概念验证蠕虫，这是首个能够通过微信电话在iOS和Android系统间传播的零点击漏洞利用。攻击者只需拨打微信电话即可自动执行漏洞利用，目标用户无需接听电话或进行任何操作，甚至在接听后也听不到任何声音，攻击仍会成功执行。",
+      "why_matters": "作为安全研究演示，此文揭示了主流即时通讯应用中的严重安全漏洞，对理解移动端零点击攻击具有重要参考价值。",
+      "tags": "网络安全, 漏洞研究, 移动安全",
+      "id": 1555,
+      "added_at": "2026-09-11 04:20:11"
+    },
+    {
       "title": "openclaw 2026.6.35",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.35",
       "source": "openclaw",
@@ -20021,5 +20151,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-10 15:09:48"
+  "last_updated": "2026-09-11 04:20:11"
 }
