@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>The part of Navier-Stokes no one is talking about</title>
     <style>
 
         :root {
@@ -287,56 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-09-10 15:09:48</p>
+        <h1>The part of Navier-Stokes no one is talking about</h1>
+        <p><span class="category-tag">blog</span> johndcook.com · 2026-09-09</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 1 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="release">
-    <div class="release-header">
-        <div style="display:flex;align-items:center;flex-wrap:wrap;">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.6.35" target="_blank" class="release-title">openclaw 2026.6.35</a>
-            <span class="release-tag">v2026.6.35</span>
-        </div>
-        <span class="release-date">2026-09-10</span>
-    </div>
-<div class="release-section">
-    <div class="release-section-title">🆕 新增功能</div>
-    <div class="release-card"><ul class="summary-list"><li>- 增强 provider 和 channel 边界安全，限制不受信任的响应体，在昂贵操作前拒绝超大型输入</li><li>- 提升长运行任务可靠性，agent/gateway/retry/channel 路径现在能正确处理取消、重试、部分发送和流程失败</li><li>- 增强捆绑插件弹性，本地模型、浏览器、媒体和协作插件可从畸形负载、超时和瞬态故障中恢复</li><li>- 改进工具和工作区使用安全，浏览器自动化、本地工具、工作区读取等在主动 agent 运行前拒绝畸形或超大型输入</li><li>- 提升本地集成可靠性，本地模型发现、语音、会议和协作集成发出有界请求而不破坏网关</li></ul></div>
-</div><div class="release-section">
-    <div class="release-section-title">🐛 Bug 修复</div>
-    <div class="release-card"><ul class="summary-list"><li>- 修复响应和内存安全问题，provider/search/embedding/media/channel 集成在恶意负载耗尽内存前限制读取</li><li>- 修复交付和运行时恢复问题，出站重试时间、通道生命周期、中止处理、进程 I/O 和持久状态在预期故障中保持正确操作结果</li></ul></div>
-</div>
-</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><p>暂无摘要</p></div>
+
+        <div class="detail-why">💡 值得一读</div>
+        <a href="https://www.johndcook.com/blog/2026/09/09/formal-method-revolution/" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>

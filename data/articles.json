@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.6.35",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.35",
+      "source": "openclaw",
+      "published": "2026-09-10",
+      "category": "openclaw",
+      "summary": "- 增强 provider 和 channel 边界安全，限制不受信任的响应体，在昂贵操作前拒绝超大型输入\n- 提升长运行任务可靠性，agent/gateway/retry/channel 路径现在能正确处理取消、重试、部分发送和流程失败\n- 增强捆绑插件弹性，本地模型、浏览器、媒体和协作插件可从畸形负载、超时和瞬态故障中恢复\n- 改进工具和工作区使用安全，浏览器自动化、本地工具、工作区读取等在主动 agent 运行前拒绝畸形或超大型输入\n- 提升本地集成可靠性，本地模型发现、语音、会议和协作集成发出有界请求而不破坏网关\n\n🐛 Bug 修复：- 修复响应和内存安全问题，provider/search/embedding/media/channel 集成在恶意负载耗尽内存前限制读取\n- 修复交付和运行时恢复问题，出站重试时间、通道生命周期、中止处理、进程 I/O 和持久状态在预期故障中保持正确操作结果",
+      "features": "- 增强 provider 和 channel 边界安全，限制不受信任的响应体，在昂贵操作前拒绝超大型输入\n- 提升长运行任务可靠性，agent/gateway/retry/channel 路径现在能正确处理取消、重试、部分发送和流程失败\n- 增强捆绑插件弹性，本地模型、浏览器、媒体和协作插件可从畸形负载、超时和瞬态故障中恢复\n- 改进工具和工作区使用安全，浏览器自动化、本地工具、工作区读取等在主动 agent 运行前拒绝畸形或超大型输入\n- 提升本地集成可靠性，本地模型发现、语音、会议和协作集成发出有界请求而不破坏网关",
+      "bug_fixes": "- 修复响应和内存安全问题，provider/search/embedding/media/channel 集成在恶意负载耗尽内存前限制读取\n- 修复交付和运行时恢复问题，出站重试时间、通道生命周期、中止处理、进程 I/O 和持久状态在预期故障中保持正确操作结果",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Analysing 2048 on a 3×3 board",
       "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/small2048/",
       "summary": "A belated writeup of a project I did in 2018, to scale the puzzle game 2048 down to a smaller board where it could be exhaustively analysed, and learn from the results.",
@@ -20009,5 +20021,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-10 04:18:41"
+  "last_updated": "2026-09-10 15:09:48"
 }
