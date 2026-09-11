@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.9.4",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.4",
+      "source": "openclaw",
+      "published": "2026-09-11",
+      "category": "openclaw",
+      "summary": "- 兼容更新失败自动回滚：保留旧包并在验证安全后恢复配置和服务\n- 统一插件工作区：在 Control UI 发现、安装和管理捆绑插件与 ClawHub 插件\n- 云就绪 workers：本地 Git 项目或公开 GitHub 仓库可复用预热 worker 快照\n- 终端问答交互：键盘导航选择、自由文本回答、多问题提示，支持 Gateway 和本地 TUI 会话\n- GPT Image 2.5 新变体：新增 Flare 和 Sunburst 图像生成变体\n- 对话历史可靠性增强：中断流后恢复最终回复，保留超时通知，防止重复答案\n- 语音委托完成：子代理结果返回 Talk 并交付最终答案\n- 只读配置部署：OPENCLAW_CONFIG_READONLY=1 防止 OpenClaw 重写外部管理的配置\n- 聊天导航优化：左侧会话轨道、选中文本添加到编辑器、视频预览发送\n- 技能学习：可从过去工作中打开学习会话并继续\n- 命令审查改进：自动审查器可允许、拒绝或上报命令\n\n🐛 Bug 修复：- 无",
+      "features": "- 兼容更新失败自动回滚：保留旧包并在验证安全后恢复配置和服务\n- 统一插件工作区：在 Control UI 发现、安装和管理捆绑插件与 ClawHub 插件\n- 云就绪 workers：本地 Git 项目或公开 GitHub 仓库可复用预热 worker 快照\n- 终端问答交互：键盘导航选择、自由文本回答、多问题提示，支持 Gateway 和本地 TUI 会话\n- GPT Image 2.5 新变体：新增 Flare 和 Sunburst 图像生成变体\n- 对话历史可靠性增强：中断流后恢复最终回复，保留超时通知，防止重复答案\n- 语音委托完成：子代理结果返回 Talk 并交付最终答案\n- 只读配置部署：OPENCLAW_CONFIG_READONLY=1 防止 OpenClaw 重写外部管理的配置\n- 聊天导航优化：左侧会话轨道、选中文本添加到编辑器、视频预览发送\n- 技能学习：可从过去工作中打开学习会话并继续\n- 命令审查改进：自动审查器可允许、拒绝或上报命令",
+      "bug_fixes": "- 无",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "When the RIAA sued a 12-year-old for MP3 piracy",
       "url": "https://dfarq.homeip.net/that-time-the-riaa-sued-a-12-year-old-for-mp3-usage/?utm_source=rss&utm_medium=rss&utm_campaign=that-time-the-riaa-sued-a-12-year-old-for-mp3-usage",
       "summary": "It was 22 years ago this week, on Semptember 8, 2003, that the Recording Industry Association of America started suing individuals for pirating MP3 files. One of the people caught up in a lawsuit was a 12-year-old honors student who\nThe post When the RIAA sued a 12-year-old for MP3 piracy appeared first on The Silicon Underground.",
@@ -20151,5 +20163,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-11 04:20:11"
+  "last_updated": "2026-09-11 15:09:02"
 }
