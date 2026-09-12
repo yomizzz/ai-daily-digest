@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.21.2 (v2026.9.11)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.9.11",
+      "source": "hermes-agent",
+      "published": "2026-09-12",
+      "category": "hermes",
+      "summary_zh": "- 修复 `state.db` 可靠性问题：托管房间状态移至 `shared-state.db`，避免与根数据库的写入冲突\n- 仪表板改为先以只读方式打开数据库，防止启动时获取写锁导致锁冲突\n- cron 生命周期守卫改用跟踪的连接注册表访问数据库，不再使用原始 open() 取消网关的 POSIX 锁\n- `doctor --fix` 增加安全检查，拒绝无法证明安全的检查点操作\n- 修复 OpenZFS deleted dentries 和 close() 与 append_message 竞态导致的 DeletedWalGenerationError 误报\n- 修复读池在未确认 journal 模式下被分发的问题\n- 修复 WSL2 瞬态磁盘 I/O 错误导致 get_session 首次尝试失败的问题\n- 修复 \"state.db locked\" 横幅在锁已清除后才广播的延迟通知问题\n- 全文搜索索引错误不再导致整个对话失败，改为降级搜索并在后台重建索引\n- doctor 命令更准确地描述结构损坏类型，而非笼统报告为 \"FTS 写入损坏\"\n- FTS 写入探测增加对过时索引形状的检测，该形状可通过所有检查但写入实际失败\n- 修复 .recover 命令在孤儿 FTS5 阴影表上启动失败的问题\n- header-zeroed 数据库现在可正常恢复，不再被拒绝\n- 仪表板分析轮询器在故障时返回 503 状态码，而非每天生成 52 万条跟踪日志",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "I Am a Flat-Rate Monthly Responsibility Service",
       "url": "https://matduggan.com/i-am-a-flat-rate-monthly-responsibility-service/",
       "summary": "Most people, when asked why they do what they do, lie. This isn&#x2019;t because they&#x2019;re malicious but it&#x2019;s because the honest justification for a career is rarely noble. It&#x2019;s usually a combination of a decent paycheck, tolerable hours, and whatever neurosis you",
@@ -20358,5 +20368,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-12 04:21:54"
+  "last_updated": "2026-09-12 15:01:00"
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>Hermes Agent v0.21.2 (v2026.9.11)</title>
     <style>
 
         :root {
@@ -287,41 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-09-12 15:01:04</p>
+        <h1>Hermes Agent v0.21.2 (v2026.9.11)</h1>
+        <p><span class="category-tag">hermes</span> hermes-agent · 2026-09-12</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 0 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="no-updates">暂无更新记录</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><ul class="summary-list"><li>修复 `state.db` 可靠性问题：托管房间状态移至 `shared-state.db`，避免与根数据库的写入冲突</li><li>仪表板改为先以只读方式打开数据库，防止启动时获取写锁导致锁冲突</li><li>cron 生命周期守卫改用跟踪的连接注册表访问数据库，不再使用原始 open() 取消网关的 POSIX 锁</li><li>`doctor --fix` 增加安全检查，拒绝无法证明安全的检查点操作</li><li>修复 OpenZFS deleted dentries 和 close() 与 append_message 竞态导致的 DeletedWalGenerationError 误报</li><li>修复读池在未确认 journal 模式下被分发的问题</li><li>修复 WSL2 瞬态磁盘 I/O 错误导致 get_session 首次尝试失败的问题</li><li>修复 &quot;state.db locked&quot; 横幅在锁已清除后才广播的延迟通知问题</li><li>全文搜索索引错误不再导致整个对话失败，改为降级搜索并在后台重建索引</li><li>doctor 命令更准确地描述结构损坏类型，而非笼统报告为 &quot;FTS 写入损坏&quot;</li><li>FTS 写入探测增加对过时索引形状的检测，该形状可通过所有检查但写入实际失败</li><li>修复 .recover 命令在孤儿 FTS5 阴影表上启动失败的问题</li><li>header-zeroed 数据库现在可正常恢复，不再被拒绝</li><li>仪表板分析轮询器在故障时返回 503 状态码，而非每天生成 52 万条跟踪日志</li></ul></div>
+<div class="tags">标签：Hermes Agent</div>
+        <div class="detail-why">💡 查看中文摘要与详情</div>
+        <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.9.11" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>

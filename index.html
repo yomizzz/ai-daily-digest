@@ -293,18 +293,27 @@
     <header>
         <h1>🤖 每日 AI 资讯精选</h1>
         <p class="subtitle">自动聚合优质内容，AI 生成中文摘要</p>
-        <p class="last-updated">最后更新：2026-09-12 04:21:54</p>
+        <p class="last-updated">最后更新：2026-09-12 15:01:00</p>
     </header>
 
     <main>
         <div class="filter-bar">
             <button class="filter-btn active" data-filter="all">全部</button>
 <button class="filter-btn" data-filter="blog">blog</button><button class="filter-btn" data-filter="hermes">hermes</button><button class="filter-btn" data-filter="openclaw">openclaw</button><button class="filter-btn" data-filter="security">security</button>
-            <span class="article-count">共 1580 篇</span>
+            <span class="article-count">共 1581 篇</span>
         </div>
 
         <div class="articles" id="articles">
-<div class="article" data-category="blog">
+<div class="article" data-category="hermes">
+    <div class="article-header">
+        <a href="detail/08937ec17b81.html" class="article-title">Hermes Agent v0.21.2 (v2026.9.11)</a>
+        <span class="category-tag">hermes</span>
+    </div>
+    <div class="article-meta">hermes-agent · 2026-09-12</div>
+    <p class="article-summary"><ul class="summary-list"><li>修复 `state.db` 可靠性问题：托管房间状态移至 `shared-state.db`，避免与根数据库的写入冲突</li><li>仪表板改为先以只读方式打开数据库，防止启动时获取写锁导致锁冲突</li><li>cron 生命周期守卫改用跟踪的连接注册表访问数据库，不再使用原始 open() 取消网关的 POSIX 锁</li><li>`doctor --fix` 增加安全检查，拒绝无法证明安全的检查点操作</li><li>修复 OpenZFS deleted dentries 和 close() 与 append_message 竞态导致的 DeletedWalGenerationError 误报</li></ul></p>
+    <div class="article-why">💡 <a href="detail/08937ec17b81.html" style="color:var(--color-link);text-decoration:none;">查看中文摘要与详情 →</a></div>
+<div class="tags">标签：Hermes Agent</div>
+</div><div class="article" data-category="blog">
     <div class="article-header">
         <a href="detail/f2e75b04e932.html" class="article-title">I Am a Flat-Rate Monthly Responsibility Service</a>
         <span class="category-tag">blog</span>
