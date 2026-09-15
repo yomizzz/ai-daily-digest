@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.21.3 (v2026.9.14)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.9.14",
+      "source": "hermes-agent",
+      "published": "2026-09-15",
+      "category": "hermes",
+      "summary_zh": "- 修复远程仪表板会话在高频刷新时意外过期的问题（会话撤销漏洞）\n- 修复长期运行进程重复泄漏 state.db 写入句柄的问题\n- 新增 OpenRouter OAuth PKCE 登录支持\n- 新增 HEIF/HEIC/AVIF 图片格式解码\n- 新增推理难度选择器（每个模型选择器、编辑器药丸和辅助控制）\n- MCP OAuth 刷新令牌现在绑定到发行者，新增每日重新认证提醒\n- 新增多个 AI 模型：Wan 3.0、Kling 3.0/ Kling Image v3、MiniMax H3 Max Turbo、Gemini Omni Flash 1.1、Meta Muse\n- 新增 Slack 粘贴表格和 Agent Sessions API\n- 新增 Pydantic wire-contract 注册表（附带生成的 TS/OpenRPC 用于 TUI/Desktop 网关）",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Hoe wordt de overheid weer 'van de IT'?",
       "url": "https://berthub.eu/articles/posts/hoe-word-je-weer-van-de-it/",
       "summary": "De korte versie: De Nederlandse overheid &ldquo;is niet (echt) van de IT&rdquo;, en legt vrijwel altijd haar oor direct of indirect te luisteren bij een door big-tech gedomineerd ecosysteem om te bepalen wat te doen. En daardoor valt de keuze vrijwel altijd weer op Amerikaanse platformen, gerund door derden, onder Amerikaans (afluister)recht. En tegenwoordig ook vol met AI (of je nou wilt of niet).\nOm weer grip op IT te krijgen, en een eigen en autonomer pad te kiezen, moet er een hoop verandere",
@@ -20862,5 +20872,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-15 05:18:29"
+  "last_updated": "2026-09-15 15:28:18"
 }
