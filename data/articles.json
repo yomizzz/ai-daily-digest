@@ -1,6 +1,136 @@
 {
   "articles": [
     {
+      "title": "There is no epidemic of loneliness, but there is an epidemic of scurvy",
+      "url": "https://www.experimental-history.com/p/there-is-no-epidemic-of-loneliness",
+      "summary": "OR: hey buddy, your teeth are falling out",
+      "source": "experimental-history.com",
+      "category": "blog",
+      "published": "2026-09-15",
+      "summary_zh": "文章对现代社会中普遍担忧的“孤独流行病”提出质疑，通过历史对比指出营养缺乏问题（如坏血病）才是真正被忽视的健康危机。作者以坏血病这一曾夺去无数水手生命的疾病为例，暗示现代人对心理健康过度关注，而忽略了基本的生理健康需求。",
+      "why_matters": "以独特的史学视角和幽默口吻重新审视当代健康议题，提供了一个值得反思的新角度。",
+      "tags": "医学史, 健康观念, 历史对比",
+      "id": 1639,
+      "added_at": "2026-09-16 04:46:14"
+    },
+    {
+      "title": "Diamond Rio PMP300",
+      "url": "https://dfarq.homeip.net/diamond-rio-pmp300/?utm_source=rss&utm_medium=rss&utm_campaign=diamond-rio-pmp300",
+      "summary": "On September 15, 1998, Diamond Multimedia introduced an MP3 player, the Diamond Rio PMP300. It wasn&#8217;t the first MP3 player, but it made the MP3 player mainstream. I had one. It wasn&#8217;t exactly great, but I understand why the RIAA\nThe post Diamond Rio PMP300 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-09-15",
+      "summary_zh": "1998年9月15日，Diamond Multimedia推出了Rio PMP300 MP3播放器，该产品虽然不是首款MP3播放器，但成功将MP3播放设备推向主流市场。作者分享了个人使用体验，指出这款设备虽然并不完美，但在MP3播放器发展史上具有重要地位。",
+      "why_matters": "适合对MP3播放器发展史和消费电子早期历史感兴趣的读者。",
+      "tags": "MP3播放器，Diamond Rio，数码历史",
+      "id": 1637,
+      "added_at": "2026-09-16 04:46:14"
+    },
+    {
+      "title": "Shadowing the Standard Library",
+      "url": "https://nesbitt.io/2026/09/15/shadowing-the-standard-library.html",
+      "summary": "export PYTHONSAFEPATH=1",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-09-15",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1635,
+      "added_at": "2026-09-16 04:46:14"
+    },
+    {
+      "title": "What counts as a large cosine similarity?",
+      "url": "https://www.johndcook.com/blog/2026/09/15/cosine-similarity/",
+      "summary": "Machine learning represents words as vectors and measures the similarity of words by the angles between the vectors. For vectors x and y, where θ is the angle between the vectors, and so This is the cosine similarity between the words represented by x and y. Small angles have large cosines, and so words with larger cosine similarities [&#8230;]\nThe post What counts as a large cosine similarity? first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-09-15",
+      "summary_zh": "机器学习将单词表示为向量，通过向量夹角的余弦值来衡量单词间的相似性。夹角越小，余弦值越大，表示词语越相似。文章探讨了在实际应用中，什么程度的余弦相似度才能被视为“较大”，并给出了具体的参考标准。",
+      "why_matters": "简洁明了地解释了余弦相似度的直观含义，帮助读者理解如何判断向量相似程度。",
+      "tags": "机器学习, 余弦相似度, 向量表示",
+      "id": 1633,
+      "added_at": "2026-09-16 04:46:14"
+    },
+    {
+      "title": "[RSS Club] Sorry for breaking your feed readers!",
+      "url": "https://shkspr.mobi/blog/2026/09/rss-club-sorry-for-breaking-your-feed-readers/",
+      "summary": "You&#039;re part of the Groovy Gang because you&#039;re a member of RSS Club! These posts are only available on my RSS and Atom feed. This post is not available in the shops, on the web, via FTP, or anywhere else.  So, yeah, sorry! My last post apparently broke some people&#039;s RSS readers.  I had a code sample which said ＜marquee＞ - despite being properly escaped, some feed readers double-decoded it and tur…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-09-15",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1631,
+      "added_at": "2026-09-16 04:46:14"
+    },
+    {
+      "title": "Pluralistic: Everybody pees (15 Sep 2026)",
+      "url": "https://pluralistic.net/2026/09/15/bitter-lemon-energy-drink/",
+      "summary": "Today's links Everybody pees: Even Jeff Bezos. Hey look at this: Delights to delectate. Object permanence: Zune won't play Microsoft files; Papercraft 1:1 Mustang; Third gender for Aussie passports; France hacked Canada; EC v links; Welcome to Night Vale; University spends librarian's bequest on football scoreboard; Everything is always broken. Upcoming appearances: Budapest, Edmonton, Boston, South Bend, Hudson, Calgary, Winnipeg, Vancouver, Victoria, Ottawa. Recent appearances: Where I've been",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-09-15",
+      "summary_zh": "这篇文章汇集了一系列有趣的科技与文化新闻链接，主题涵盖科技产品趣闻（如Zune与微软文件兼容问题）、社会议题（澳大利亚护照的第三性别选项）、国际事件（法国黑客攻击加拿大）以及流行文化推荐（Night Vale播客）。开篇以“人人都会小便，包括杰夫·贝索斯”的幽默观点引出关于隐私与平等的讨论。",
+      "why_matters": "适合喜欢浏览简短科技文化资讯的读者，每则新闻都配有简短评论，信息密度高。",
+      "tags": "科技新闻, 文化杂谈, 链接集",
+      "id": 1629,
+      "added_at": "2026-09-16 04:46:14"
+    },
+    {
+      "title": "[Sponsor] WorkOS: How SSO Works and the Fastest Way to Add It",
+      "url": "https://workos.com/guide/the-developers-guide-to-sso?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q32026",
+      "summary": "SSO is table stakes for enterprise deals, but building it into your app yourself means writing SAML controllers, parsing XML assertions, and handling IdP-specific quirks for each provider.\n\nLearn how SAML flows work, the tradeoffs between building or buying, and best practices for security, routing, and UX. Or skip the hassle and add SSO with WorkOS.\n\nRead the guide →\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-15",
+      "summary_zh": "SSO已成为企业级产品的必备功能，但自行构建需要处理复杂的SAML控制器、XML解析和各种身份提供商的兼容问题。本文介绍了SAML认证流程的原理，并探讨了自建与购买解决方案的权衡，以及安全最佳实践。",
+      "why_matters": "适合需要了解SSO集成或考虑采用第三方SSO方案的开发者阅读。",
+      "tags": "SSO, SAML, 企业级认证, WorkOS",
+      "id": 1627,
+      "added_at": "2026-09-16 04:46:14"
+    },
+    {
+      "title": "★ Thoughts and Observations on Apple’s ‘Surprise and Shine’ Event; the Announcements of the iPhones 18 Pro, AirPods 5, Apple Watches Series 12 and Ultra 4, and the iPhone Duo; and the Dawn of the Ternus, John Ternus Era at Apple",
+      "url": "https://daringfireball.net/2026/09/thoughts_and_observations_on_apples_surprise_and_shine_event",
+      "summary": "The keynote, the products, and a new era.",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-15",
+      "summary_zh": "John Gruber 对 Apple 主题演讲进行全面分析，涵盖 iPhone 18 Pro、AirPods 5、Apple Watch Series 12 和 Ultra 4 以及 iPhone Duo 等产品发布，并深入探讨 Apple 即将进入的 Ternus-John Ternus 时代对公司的影响与意义。",
+      "why_matters": "作为最权威的 Apple 观察者之一，Gruber 对 Apple 战略和产品线的深度解读是了解 Apple 未来发展方向的重要参考。",
+      "tags": "Apple,iPhone,科技评论",
+      "id": 1625,
+      "added_at": "2026-09-16 04:46:14"
+    },
+    {
+      "title": "FT: ‘Steve Bannon and Bernie Sanders Unite in AI Safety Call’",
+      "url": "https://www.ft.com/content/bab5c4c5-5377-4dd0-8b46-d8c4ce9a36d5?syn-25a6b1a6=1",
+      "summary": "Joe Miller, reporting for the Financial Times (via Political Wire):\n\n\n  Veteran socialist Bernie Sanders and rightwing activist Steve\nBannon are joining forces to call for greater guardrails on AI,\neven as Donald Trump insists concerns about the technology are a\nhoax that will help China overtake the US.\n\nIn a sign of how the outcry over AI safety is reshaping the US\npolitical landscape, speakers from the far right and left of the\npolitical spectrum will join an event billed as the “Pro-Human\nAs",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-15",
+      "summary_zh": "政治立场对立的Bernie Sanders与Steve Bannon罕见联合，共同呼吁加强对人工智能的监管，与Trump称AI担忧是帮助中国赶超的“骗局”形成鲜明对比。这一跨党派合作表明AI安全问题可能正在超越传统政治分歧，成为两党共同关注的议题。",
+      "why_matters": "观察美国政坛罕见的两党合作如何影响AI监管政策走向。",
+      "tags": "AI监管, 跨党派合作, 科技政策",
+      "id": 1623,
+      "added_at": "2026-09-16 04:46:14"
+    },
+    {
+      "title": "Tell agents the why, not just the how",
+      "url": "https://seangoedecke.com/tell-agents-the-why/",
+      "summary": "Early AI agents were basically enthusiastic idiots. Working with them required you to tell them precisely what you wanted them to do (for instance, “method A exists on class B, please add an equivalent method to classes C through F”). Otherwise they’d go off and do entirely the wrong thing. But as AI agents have improved, this has changed.\nWhen frontier models go off and do the wrong thing today, they don’t do it because they’re confused, they do it because they make an incorrect assumption abou",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-09-15",
+      "summary_zh": "文章指出早期AI agent虽然执行能力强，但缺乏理解任务意图的能力，需要精确指令才能正确工作。随着agent技术进步，作者建议应更多告诉它们“为什么”而非“怎么做”，让agent理解任务背后的目的，从而更智能地处理模糊指令和适应新情况。",
+      "why_matters": "为AI agent开发提供了从“精确指令”转向“意图理解”的实用设计思路。",
+      "tags": "AI agent, 提示工程, 人机协作",
+      "id": 1621,
+      "added_at": "2026-09-16 04:46:14"
+    },
+    {
       "title": "Hermes Agent v0.21.3 (v2026.9.14)",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.9.14",
       "source": "hermes-agent",
@@ -20872,5 +21002,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-15 15:28:18"
+  "last_updated": "2026-09-16 04:46:14"
 }
