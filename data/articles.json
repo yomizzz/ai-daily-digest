@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.7.33",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.33",
+      "source": "openclaw",
+      "published": "2026-09-18",
+      "category": "openclaw",
+      "summary": "- 安全性加固：强化命令解析、浏览器来源检查、插件Git安装、诊断、服务凭证和webhook日志的安全防护\n- 消息完整性保护：确保重试、钩子、恢复和通道生命周期转换中消息不丢失\n- 网关可靠性提升：关闭失败流、限制昂贵读取和历史查询，优化关闭流程\n- 多通道传递修复：改进Discord、Matrix、Telegram、Slack、WhatsApp等通道的边界情况处理\n- 提供商与媒体健壮性：限制请求和诊断，拒绝格式错误负载，保留有效工具模式\n- 扩展稳定版本工具链：完善Docker通道分类、验证策略和测试体系\n\n🐛 Bug 修复：- 修复认证账务不再回滚轮换的OpenAI OAuth凭证\n- 修复插件HTTP响应在头部后失败时未完成处理的问题\n- 修复内存主机在关闭时未拒绝排队worker请求的问题\n- 修复并行工具取消时仍可能启动的问题\n- 修复拒绝继承的执行响应ID以防止凭证泄露\n- 修复Git clone参数未终止导致git:规格可注入选项\n- 修复会话使用中所有代理会话发现并发未限制\n- 修复图像数据URL解析的线性处理\n- 修复诊断配置字段schema提示脱敏\n- 修复托管目录源在非流响应时的读取未限制\n- 修复持久化工具详情中的Unicode损坏问题\n- 修复模型状态JSON输出中合成认证凭证未脱敏\n- 修复关闭和重载期间通道停止的问题\n- 修复Discord会话初始化冲突导致消息静默丢失\n- 修复出站消息在正确重试延迟后恢复\n- 修复UTF-16边界在用户可见截断路径中保持完整",
+      "features": "- 安全性加固：强化命令解析、浏览器来源检查、插件Git安装、诊断、服务凭证和webhook日志的安全防护\n- 消息完整性保护：确保重试、钩子、恢复和通道生命周期转换中消息不丢失\n- 网关可靠性提升：关闭失败流、限制昂贵读取和历史查询，优化关闭流程\n- 多通道传递修复：改进Discord、Matrix、Telegram、Slack、WhatsApp等通道的边界情况处理\n- 提供商与媒体健壮性：限制请求和诊断，拒绝格式错误负载，保留有效工具模式\n- 扩展稳定版本工具链：完善Docker通道分类、验证策略和测试体系",
+      "bug_fixes": "- 修复认证账务不再回滚轮换的OpenAI OAuth凭证\n- 修复插件HTTP响应在头部后失败时未完成处理的问题\n- 修复内存主机在关闭时未拒绝排队worker请求的问题\n- 修复并行工具取消时仍可能启动的问题\n- 修复拒绝继承的执行响应ID以防止凭证泄露\n- 修复Git clone参数未终止导致git:规格可注入选项\n- 修复会话使用中所有代理会话发现并发未限制\n- 修复图像数据URL解析的线性处理\n- 修复诊断配置字段schema提示脱敏\n- 修复托管目录源在非流响应时的读取未限制\n- 修复持久化工具详情中的Unicode损坏问题\n- 修复模型状态JSON输出中合成认证凭证未脱敏\n- 修复关闭和重载期间通道停止的问题\n- 修复Discord会话初始化冲突导致消息静默丢失\n- 修复出站消息在正确重试延迟后恢复\n- 修复UTF-16边界在用户可见截断路径中保持完整",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Computer Reset, Dallas",
       "url": "https://dfarq.homeip.net/computer-reset-dallas/?utm_source=rss&utm_medium=rss&utm_campaign=computer-reset-dallas",
       "summary": "Computer Reset was a large used computer store and warehouse in northeast Dallas whose heyday was in the 1980s and 1990s, but it remained a go-to source for vintage and retro computer parts into the 2010s. Its fame grew after\nThe post Computer Reset, Dallas appeared first on The Silicon Underground.",
@@ -21301,5 +21313,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-18 04:51:26"
+  "last_updated": "2026-09-18 15:13:53"
 }
