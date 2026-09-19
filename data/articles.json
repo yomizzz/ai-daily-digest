@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.9.5",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.5",
+      "source": "openclaw",
+      "published": "2026-09-19",
+      "category": "openclaw",
+      "summary": "让我分析提供的更新日志内容：\n\n版本：v2026.9.5\n\n更新日志内容显示：\n- 这是一个很大的版本更新（64 direct commits · 4,179 pull requests · 503 contributors）\n- 列出了大量的贡献者用户名\n- 但实际上没有提供具体的功能变更、Bug修复等信息\n- 只提供了文档链接（Release notes 和 Changelog）\n- 没有实际的变更内容\n\n根据用户的要求：\n1. 新增功能请归入「新增功能」\n2. Bug 修复请归入「Bug 修复」\n3. 只提取有意义的功能和修复\n4. 其他内容（如配置变更、文档更新、CI 改进）可忽略或归入新增功能\n\n由于更新日志中**没有提供具体的功能变更或修复内容**，只有贡献者列表和文档链接，我无法提取任何有意义的功能点或Bug修复。\n\n按照指示，如果某个分类为空，我应该写「无」。\n\n但我需要注意用户说\"请从以下 OpenClaw 版本更新日志中提取\"，而这个日志实际上没有包含具体的变更内容，只有元数据和链接。\n\n在这种情况下，我应该：\n1. 说明无法从提供的内容中提取具体的功能变更或修复\n",
+      "features": "让我分析提供的更新日志内容：\n\n版本：v2026.9.5\n\n更新日志内容显示：\n- 这是一个很大的版本更新（64 direct commits · 4,179 pull requests · 503 contributors）\n- 列出了大量的贡献者用户名\n- 但实际上没有提供具体的功能变更、Bug修复等信息\n- 只提供了文档链接（Release notes 和 Changelog）\n- 没有实际的变更内容\n\n根据用户的要求：\n1. 新增功能请归入「新增功能」\n2. Bug 修复请归入「Bug 修复」\n3. 只提取有意义的功能和修复\n4. 其他内容（如配置变更、文档更新、CI 改进）可忽略或归入新增功能\n\n由于更新日志中**没有提供具体的功能变更或修复内容**，只有贡献者列表和文档链接，我无法提取任何有意义的功能点或Bug修复。\n\n按照指示，如果某个分类为空，我应该写「无」。\n\n但我需要注意用户说\"请从以下 OpenClaw 版本更新日志中提取\"，而这个日志实际上没有包含具体的变更内容，只有元数据和链接。\n\n在这种情况下，我应该：\n1. 说明无法从提供的内容中提取具体的功能变更或修复\n",
+      "bug_fixes": "无",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Retro emojis: We had ’em in the 80s and 90s",
       "url": "https://dfarq.homeip.net/emoticons-in-the-80s-and-90s-we-had-em/?utm_source=rss&utm_medium=rss&utm_campaign=emoticons-in-the-80s-and-90s-we-had-em",
       "summary": "It might surprise you to hear we had emojis in the 1980s and 90s. We&#8217;ve had them since 1982, to be precise. The first known use was on a bulletin board by Scott Fahlman, a Carnegie Mellon computer science professor,\nThe post Retro emojis: We had &#8217;em in the 80s and 90s appeared first on The Silicon Underground.",
@@ -21560,5 +21572,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-19 04:19:46"
+  "last_updated": "2026-09-19 15:11:15"
 }
