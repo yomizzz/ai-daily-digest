@@ -1,6 +1,110 @@
 {
   "articles": [
     {
+      "title": "Notes on discrete-time Fourier series and transform",
+      "url": "https://eli.thegreenplace.net/2026/notes-on-discrete-time-fourier-series-and-transform/",
+      "summary": "The following are my notes on discrete-time Fourier series (DTFS), as\nwell as the discrete-time Fourier transform (DTFT). These topics serve\nas an important theoretical underpinning to the digital processing of\nsignals by computers using the DFT (which will be covered in a future\npost).\nFor discrete-time signals, we use …",
+      "source": "eli.thegreenplace.net",
+      "category": "blog",
+      "published": "2026-09-19",
+      "summary_zh": "本文系统介绍了离散时间傅里叶级数（DTFS）和离散时间傅里叶变换（DTFT）两个核心概念，阐述其在数字信号处理理论中的重要地位。文章旨在为后续理解离散傅里叶变换（DFT）奠定扎实的数学基础，帮助读者掌握计算机处理数字信号的核心理论工具。",
+      "why_matters": "深入浅出地梳理DTFS与DTFT的理论脉络，是学习DSP不可多得的入门级好笔记。",
+      "tags": "数字信号处理, 傅里叶变换, 信号处理, DFT",
+      "id": 1689,
+      "added_at": "2026-09-20 03:55:45"
+    },
+    {
+      "title": "Reading List 09/19/2026",
+      "url": "https://www.construction-physics.com/p/reading-list-09192026",
+      "summary": "AirBnB&#8217;s housing accelerator, rising steel prices, a resurgence of US coal power, low-head dams, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-09-19",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1687,
+      "added_at": "2026-09-20 03:55:45"
+    },
+    {
+      "title": "This Week in Package Management: 19 September 2026",
+      "url": "https://nesbitt.io/2026/09/19/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-09-19",
+      "summary_zh": "本期周报汇总了2026年9月第三周包管理领域的最新动态，涵盖主流包管理器（如npm、pip、cargo等）的重要版本更新、安全漏洞公告以及行业技术文章，为开发者提供本周值得关注的包管理信息概览。",
+      "why_matters": "适合快速了解包管理生态本周重要变化，及时跟进安全公告和版本动态。",
+      "tags": "包管理,周报,安全公告",
+      "id": 1685,
+      "added_at": "2026-09-20 03:55:45"
+    },
+    {
+      "title": "Finding Bugs",
+      "url": "https://matklad.github.io/2026/09/19/finding-bugs.html",
+      "summary": "Are generative (randomized) tests significantly more effective than example-based unit-tests at discovering bugs? There's an interesting discussion about this on lobste.rs. One argument in favor of unit tests is, paraphrasing",
+      "source": "matklad.github.io",
+      "category": "blog",
+      "published": "2026-09-19",
+      "summary_zh": "文章探讨了生成性（随机化）测试与基于示例的单元测试在发现bug方面的有效性对比，讨论了测试方法选择对软件质量的影响，并引用了社区讨论中支持单元测试的观点。",
+      "why_matters": "深入浅出地分析不同测试策略的优劣，适合想提升测试实践的开发者阅读。",
+      "tags": "软件测试，单元测试，随机化测试",
+      "id": 1683,
+      "added_at": "2026-09-20 03:55:45"
+    },
+    {
+      "title": "Why fitting a logistic is nearly impossible from early data",
+      "url": "https://www.johndcook.com/blog/2026/09/18/logistic-fit-sensitivity/",
+      "summary": "Nothing grows exponentially forever. What appears to be an exponential curve often turns out to be some sort of S curve, such as a logistic curve. Suppose you&#8217;re collecting data on the left side of the curve. If there&#8217;s even a small amount of error in your data, you won&#8217;t be able to predict the [&#8230;]\nThe post Why fitting a logistic is nearly impossible from early data first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-09-19",
+      "summary_zh": "文章指出，看似指数增长的数据实际上往往是S形曲线（如logistic曲线）。问题在于，当仅拥有曲线左侧的早期数据时，即使数据存在微小误差，也几乎不可能准确拟合出真实的增长曲线形态，因为这个阶段的不同曲线差异很小，难以区分。",
+      "why_matters": "理解这一统计学局限性有助于避免在疫情早期数据等场景下做出过于乐观或悲观的预测判断。",
+      "tags": "数据分析, 统计学, 曲线拟合",
+      "id": 1681,
+      "added_at": "2026-09-20 03:55:45"
+    },
+    {
+      "title": "Austin Mann’s iPhone 18 Pro Camera Review, From Dunton, Colorado",
+      "url": "https://www.austinmann.com/trek/iphone-18-pro-camera-review-dunton",
+      "summary": "Austin Mann:\n\n\n  I’m here at the beautiful Dunton River Camp in southwest\nColorado, where I’ve spent the last week testing the new camera\nand features on the iPhone 18 Pro.\n\nBeyond the variable aperture and Pro Controls, Apple also built in\na bunch of other new features like Photographic Styles 3 with film\ntexture and grain control, 4K Time-lapse and Focus Tracking. As\nalways, when I start a field test I’m asking one question:\n\nHow will this new tech make our pictures and videos better?\n\n\nOutsta",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-19",
+      "summary_zh": "Austin Mann前往科罗拉多州Dunton River Camp，用一周时间对iPhone 18 Pro的相机进行实地深度测试。该评测重点涵盖了可变光圈和Pro Controls等专业功能，以及Photographic Styles 3等全新特性。作为专业摄影师的评测，其内容具有较高的实用参考价值。",
+      "why_matters": "专业摄影师在真实自然场景下的iPhone 18 Pro相机深度评测，对摄影爱好者和专业人士都有参考价值。",
+      "tags": "iPhone 18 Pro, 相机评测, 手机摄影, 专业摄影",
+      "id": 1679,
+      "added_at": "2026-09-20 03:55:45"
+    },
+    {
+      "title": "Tyler Stalman’s iPhone 18 Pro Camera Review",
+      "url": "https://www.youtube.com/watch?v=m6cDErtCKAc",
+      "summary": "Splendid video. Love that Stalman shot photos side-by-side with a film SLR using Kodak Portra 400, for comparison to Apple’s new film-look Photographic Styles.\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-19",
+      "summary_zh": "Tyler Stalman发布了iPhone 18 Pro相机评测视频，采用了创新的对比方式——与胶片单反相机（使用Kodak Portra 400胶卷）并排拍摄，直观展示Apple新推出的“胶片风格”Photographic Styles功能的实际效果。",
+      "why_matters": "胶片与手机摄影的对比视角独特，能帮助了解iPhone摄影的真实进步。",
+      "tags": "iPhone 18 Pro, 相机评测, 胶片摄影, Apple",
+      "id": 1677,
+      "added_at": "2026-09-20 03:55:45"
+    },
+    {
+      "title": "California Sea Lion, Brandt's Cormorant",
+      "url": "https://simonwillison.net/2026/Sep/19/sighting-401567341/",
+      "summary": "California Sea Lion, Brandt&#x27;s Cormorant, in Pillar Point Harbor, CA, USI only noticed this after I had taken the photo: Morris the Northern Gannet is peeking out from behind the base of the sign.\n    \n    \n        Tags: wildlife",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-09-19",
+      "summary_zh": "在加州Pillar Point港拍摄加州海狮和布兰德鸬鹚时，作者意外发现一只名叫\"Morris\"的北方塘鹅正从指示牌底部探头张望，为这幅野生动物画面增添了有趣的惊喜元素。",
+      "why_matters": "简短而有趣的野生动物观察记录，展现了自然摄影中不期而遇的惊喜瞬间。",
+      "tags": "野生动物, 海洋生物, 摄影",
+      "id": 1675,
+      "added_at": "2026-09-20 03:55:45"
+    },
+    {
       "title": "openclaw 2026.9.5",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.5",
       "source": "openclaw",
@@ -21572,5 +21676,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-19 15:11:15"
+  "last_updated": "2026-09-20 03:55:45"
 }
