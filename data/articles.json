@@ -1,6 +1,58 @@
 {
   "articles": [
     {
+      "title": "Marques Brownlee’s iPhone 18 Pro Review",
+      "url": "https://www.youtube.com/watch?v=ohqxP8EEumo",
+      "summary": "He takes the same “this is pretty much exactly what Apple used to label an ‘S’ year” angle I did, so, unsurprisingly, I think his review is spot-on. Brownlee emphasizes one point that I should have, but didn’t: according to Apple’s published specs, the regular iPhone 18 Pro gets longer battery life than the iPhone 17 Pro Max. That’s just a year-over-year spec that anyone can understand, for an attribute that everyone cares about.\n\nSidenote, per that point: Brownlee wonders why Apple still refuse",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-20",
+      "summary_zh": "本文是对Marques Brownlee iPhone 18 Pro评测的评论，作者认为该评测观点精准，与自己一致，将iPhone 18视为苹果传统的\"S\"年升级。评测特别指出一个易被忽略的细节：根据苹果官方参数，标准版iPhone 18 Pro的电池续航表现优于Pro Max版本。",
+      "why_matters": "文中提炼的电池续航对比细节值得关注，对于考虑入手的用户具有实际参考价值。",
+      "tags": "iPhone 18 Pro, 评测, 电池续航",
+      "id": 1689,
+      "added_at": "2026-09-21 04:10:15"
+    },
+    {
+      "title": "GM Revives CarPlay for 2027 Trucks",
+      "url": "https://www.autoweek.com/news/a73761352/gm-revives-apple-carplay-for-2027-chevy-silverado-gmc-sierra/",
+      "summary": "Natalie Neff, Autoweek:\n\n\n  General Motors is reversing course after having begun to remove\nApple CarPlay from its vehicles, showing off instead a redesigned\ninfotainment interface for the 2027 Chevrolet Silverado and GMC\nSierra pickups that melds the smartphone apps with the truck’s\nnative vehicle controls on the same screen.\n\nThe new system, which will roll out later this year, marks a\nsignificant walk-back after the automaker faced widespread\ncriticism for removing Apple CarPlay and Android A",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-20",
+      "summary_zh": "通用汽车此前曾决定逐步从车辆中移除Apple CarPlay，但如今态度大转弯。在2027款雪佛兰Silverado和GMC Sierra皮卡上，GM将重新引入CarPlay，并采用重新设计的界面，将智能手机应用与车辆原生功能进行深度整合。",
+      "why_matters": "反映传统车企在智能座舱领域战略调整的重要信号，CarPlay用户值得关注。",
+      "tags": "通用汽车、Apple CarPlay、皮卡",
+      "id": 1687,
+      "added_at": "2026-09-21 04:10:15"
+    },
+    {
+      "title": "System One models like Jev can train their own replacements",
+      "url": "https://seangoedecke.com/system-one-models-can-train-their-own-replacements/",
+      "summary": "“System One” models like Jev are fast general classifiers. Classifiers have existed since 1958, but they have to be trained for specific tasks: if you build a classifier to identify images of dogs, it can’t be used to tell you if a streetlight is red, or if a letter is urgent. Like a LLM, Jev can be prompted for a wide variety of tasks, from sorting email to playing Doom.\nI think models like this are going to be important. There are many tasks that a LLM could do in theory but are too slow and e",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-09-20",
+      "summary_zh": "System One模型如Jev是一种快速通用分类器，与传统分类器不同，它无需针对特定任务训练即可处理多种分类问题。文章指出，虽然分类器技术自1958年就已存在，但传统分类器如图像识别模型无法跨领域应用，而Jev等新型通用分类器具有类似大语言模型的广泛适用性。",
+      "why_matters": "帮助你理解通用AI与专用AI的关键区别，启发对AI发展的思考。",
+      "tags": "AI分类器, 通用人工智能, System One",
+      "id": 1685,
+      "added_at": "2026-09-21 04:10:15"
+    },
+    {
+      "title": "Grit your teeth and ship it",
+      "url": "https://seangoedecke.com/grit-your-teeth-and-ship-it/",
+      "summary": "Being good at building and being good at shipping are two separate skills. In the short term, they’re actually countervailing: if you have a gift for building, you’re likely to be worse at shipping. Ira Glass has a classic quote about this.\n\nAll of us who do creative work, we get into it because we have good taste. But there is this gap. For the first couple years you make stuff, it’s just not that good. It’s trying to be good, it has potential, but it’s not. But your taste, the thing that got y",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-09-20",
+      "summary_zh": "文章指出“构建能力”和“发布能力”是两种截然不同的技能，擅长构建的人往往在发布方面更为挣扎。创作者常因追求完美而陷入停滞，但正如Ira Glass所言，完成作品的关键在于克服这种心理障碍，咬紧牙关将产品推出。",
+      "why_matters": "对任何有“完美主义拖延症”的创作者都是一剂清醒剂，提醒行动比完美更重要。",
+      "tags": "产品发布, 创作心态, 克服拖延",
+      "id": 1683,
+      "added_at": "2026-09-21 04:10:15"
+    },
+    {
       "title": "Notes on discrete-time Fourier series and transform",
       "url": "https://eli.thegreenplace.net/2026/notes-on-discrete-time-fourier-series-and-transform/",
       "summary": "The following are my notes on discrete-time Fourier series (DTFS), as\nwell as the discrete-time Fourier transform (DTFT). These topics serve\nas an important theoretical underpinning to the digital processing of\nsignals by computers using the DFT (which will be covered in a future\npost).\nFor discrete-time signals, we use …",
@@ -21676,5 +21728,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-20 15:36:04"
+  "last_updated": "2026-09-21 04:10:15"
 }
