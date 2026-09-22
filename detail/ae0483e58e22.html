@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>Yours Truly on CNBC’s ‘Squawk on the Street’ Friday</title>
     <style>
 
         :root {
@@ -287,56 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-09-22 15:31:40</p>
+        <h1>Yours Truly on CNBC’s ‘Squawk on the Street’ Friday</h1>
+        <p><span class="category-tag">blog</span> daringfireball.net · 2026-09-21</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 1 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="release">
-    <div class="release-header">
-        <div style="display:flex;align-items:center;flex-wrap:wrap;">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.35" target="_blank" class="release-title">openclaw 2026.7.35</a>
-            <span class="release-tag">v2026.7.35</span>
-        </div>
-        <span class="release-date">2026-09-21</span>
-    </div>
-<div class="release-section">
-    <div class="release-section-title">🆕 新增功能</div>
-    <div class="release-card"><ul class="summary-list"><li>- **安全加固：** 强化命令解析、浏览器来源检查、插件Git安装、诊断、服务凭证和Webhook日志的安全边界</li><li>- **消息和会话完整性：** 跨重试、钩子、恢复和渠道生命周期保留队列、导入、流式和工具结果消息</li><li>- **Gateway可靠性：** 关闭失败的HTTP和响应流、限制昂贵读取和历史查询、结算关闭前的工作</li><li>- **渠道投递修复：** 修复Discord、Matrix、Telegram、Slack、WhatsApp、LINE、飞书、Zalo和会议插件边缘情况</li><li>- **提供商和媒体健壮性：** 限制提供商请求和诊断、拒绝畸形负载、保留有效工具模式和响应生命周期</li><li>- **扩展稳定版本发布工具：** 完善Docker渠道分类器、提升器、验证策略和测试</li></ul></div>
-</div><div class="release-section">
-    <div class="release-section-title">🐛 Bug 修复</div>
-    <div class="release-card"><ul class="summary-list"><li>- **Doctor插件注册表：** 修复或创建时保留完整捆绑插件清单，确保重启后默认插件可用；修复2026.7.34的局部注册表恢复</li><li>- **安全边界修复：** 拒绝转义换行符命令词、精确来源不匹配、注入Git选项参数、继承的密钥响应标识符、不安全浏览器变更和畸形/过大节点负载</li><li>- **投递和脚本恢复：** 保持重试延迟准确、保留导入消息和插件阻止的工具结果、保留分离的确认、避免静默丢弃渠道操作或恢复工作</li><li>- **资源和生命周期安全：** 限制目录、历史、媒体、stderr、API和提供商等待；停止已取消的并行工具；排出渠道关闭；拒绝关闭后排队的Worker请求</li><li>- **文本和模式正确性：** 保留用户可见截断路径中的UTF-16边界、保持根工具模式属性、拒绝非有限模式值、报告精确UTF-8写入大小</li><li>- **官方插件：** 修复消息解析、代理路径、请求超时、媒体处理、隐私安全日志和跨npm发布插件清单的运行时别名</li><li>- **认证账本修复：** OpenAI OAuth凭证轮换不再回退（#102430）</li><li>- **插件HTTP响应：** 在头部后失败时完成插件HTTP响应（#102125）</li><li>- **备份权限：** 备份存档使用仅所有者0o600权限写入</li><li>- **Git克隆参数：** 终止git clone参数以防止git:规格注入选项</li><li>- **浏览器来源白名单：** 允许扩展来源在浏览器允许列表中</li></ul></div>
-</div>
-</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><p>本文是作者关于其出席CNBC财经节目&quot;Squawk on the Street&quot;的简短记录。节目中，主持人Sara Eisen在介绍作者时对他曾撰写5000字iPhone 18 Pro深度评测一事开玩笑，作者表示很享受这次互动。</p></div>
+<div class="tags">标签：科技评论，CNBC，媒体采访</div>
+        <div class="detail-why">💡 了解科技评论界与主流财经媒体的跨界互动。</div>
+        <a href="https://youtu.be/WrwY_jVaN-w" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>
