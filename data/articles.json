@@ -1,6 +1,162 @@
 {
   "articles": [
     {
+      "title": "Weekly Update 522: Live From Oslo with Scott Helme",
+      "url": "https://www.troyhunt.com/weekly-update-522/",
+      "summary": "Heads up: the first 7 mins is a bit quiet until we worked out the external mic was misbehaving - sorry! But get through that and have a listen to Scott&apos;s experiences with how Report URI is identifying malware-infected machines within orgs, all due to CSP reporting. It&",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-09-23",
+      "summary_zh": "本期节目是Troy Hunt在奥斯陆现场录制的一期特别节目，邀请了安全专家Scott Helme分享他的经验。Scott Helme在Report URI的工作中发现了通过CSP（内容安全策略）报告可以识别组织内部受恶意软件感染的机器，这是一种新颖的安全检测方法。节目开头因麦克风问题有约7分钟的静音，但随后内容干货满满。",
+      "why_matters": "了解如何利用CSP报告实现恶意软件检测的实用安全技巧。",
+      "tags": "安全播客,CSP安全,恶意软件检测,Report URI",
+      "id": 1740,
+      "added_at": "2026-09-24 04:58:30"
+    },
+    {
+      "title": "The Year AI Came For Us: Teaching Entrepreneurship Will Never Be The Same",
+      "url": "https://steveblank.com/2026/09/23/the-year-ai-came-for-us-teaching-entrepreneurship-will-never-be-the-same/",
+      "summary": "This post previously appeared in Poets and Quants. 15 years ago, my Lean LaunchPad class changed how entrepreneurship is taught. The class is now taught in hundreds of universities worldwide and helped launch thousands of startups. But this past summer, I got thinking about whether AI killed our Lean LaunchPad class, and with it the [&#8230;]",
+      "source": "steveblank.com",
+      "category": "blog",
+      "published": "2026-09-23",
+      "summary_zh": "本文回顾了作者Steve Blank于15年前创建的Lean LaunchPad课程如何革新了全球创业教育，该课程现已在数百所大学开设并帮助孵化了数千家创业公司。面对AI时代的到来，作者重新思考这一曾改变行业的教学方法是否需要再次革新，以适应人工智能对创业实践的深刻影响。",
+      "why_matters": "无论你是教育者还是创业者，都能从这篇洞见中理解AI如何重塑创业方法论。",
+      "tags": "创业教育，人工智能，商业模式创新，Steve Blank",
+      "id": 1738,
+      "added_at": "2026-09-24 04:58:30"
+    },
+    {
+      "title": "Ebay’s IPO: The rare dotcom survivor",
+      "url": "https://dfarq.homeip.net/ebays-ipo-the-rare-dotcom-survivor/?utm_source=rss&utm_medium=rss&utm_campaign=ebays-ipo-the-rare-dotcom-survivor",
+      "summary": "On September 24, 1998, Ebay held its IPO at $18 per share, reaching $53 per share in its first day and making founder Pierre Omidyar and president Jeffrey Skoll instant billionaires. Ebay&#8217;s first annual report listed the company&#8217;s dependence on\nThe post Ebay&#8217;s IPO: The rare dotcom survivor appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-09-23",
+      "summary_zh": "1998年9月24日，eBay以每股18美元的价格上市，首日股价飙升至53美元，创始人Pierre Omidyar和总裁Jeffrey Skoll随即成为亿万富翁。文章标题“罕见的网络公司幸存者”暗示eBay在互联网泡沫中展现出独特的生存能力，并指出其首份年报中披露的公司依赖性问题。",
+      "why_matters": "作为互联网泡沫时代的经典案例，eBay的IPO历程展示了电商平台的早期发展与市场反应。",
+      "tags": "eBay, IPO, 互联网泡沫, 电子商务, 科技公司",
+      "id": 1736,
+      "added_at": "2026-09-24 04:58:30"
+    },
+    {
+      "title": "Make Money to Make More Websites",
+      "url": "https://blog.jim-nielsen.com/2026/make-money-to-make-more-websites/",
+      "summary": "I was listening to the episode “Make Your Own Thing” from the Off Protocol podcast where Jim Ray interviews John Gruber. \nThey cover a variety of topics, including Gruber’s thoughts on the dilution of personal brand by publishing through “chain” platforms like Substack (I quite enjoyed the metaphor of a personal website where you publish your stuff to that of a chef/restaurant, but that’s a separate post).\nAround ~1:13:00, Gruber quotes Walt Disney who said, “We don't make movies to make money, ",
+      "source": "blog.jim-nielsen.com",
+      "category": "blog",
+      "published": "2026-09-23",
+      "summary_zh": "本文讨论了John Gruber在播客节目中对Substack等“链式”平台的看法。Gruber认为在这些平台上发布内容会稀释个人品牌，因为你的读者实际上属于平台而非你自己。文章探讨了通过这些平台赚钱与维护个人独立网站之间的张力。",
+      "why_matters": "对于关注独立创作、个人品牌建设与平台依赖关系的读者具有启发意义。",
+      "tags": "个人品牌，平台依赖，独立创作，Substack",
+      "id": 1734,
+      "added_at": "2026-09-24 04:58:30"
+    },
+    {
+      "title": "Navigation with only addition, subtraction, and tables",
+      "url": "https://www.johndcook.com/blog/2026/09/23/navigation-minimum/",
+      "summary": "In the novel Carry On, Mr. Bowditch, a sailor asked Nathaniel Bowditch to teach him how to do navigational calculations, but the man only knows how to add and subtract by counting on his fingers. He had not heard of multiplication. Bowditch is surprised, but realizes if he made tables of logs of trig functions, [&#8230;]\nThe post Navigation with only addition, subtraction, and tables first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-09-23",
+      "summary_zh": "这篇文章讲述了《航海少年》中一个只会加减法的水手学习导航计算的故事。主角纳撒尼尔·鲍迪奇通过制作对数表等工具，将乘除运算转化为加减运算，让不懂乘法的人也能完成复杂的航海导航计算。这一创意展示了数学工具如何将复杂问题简化为基本运算，体现了数学思维的巧妙应用。",
+      "why_matters": "以趣味故事展示数学工具的发明如何化繁为简，适合对数学历史和实际问题解决感兴趣的读者。",
+      "tags": "数学历史，航海导航，对数表",
+      "id": 1732,
+      "added_at": "2026-09-24 04:58:30"
+    },
+    {
+      "title": "Super Intelligence, Indeed",
+      "url": "https://bsky.app/profile/atrupar.com/post/3mw4it5l5fd23",
+      "summary": "President Donald Trump, in a prepared speech before the United Nations General Assembly yesterday (one-minute video clip from Aaron Rupar, posted on Bluesky):\n\n\n  The United States also totally rejects any attempt to construct a\nglobalist scheme to control for the artificial intelligence — being spoken of so much, now — here and after officially called\n“super intelligence”, changing the name. The use of the word\n“artificial” makes intelligence fake, it makes it sound fake, and\nit is not fake. It",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-23",
+      "summary_zh": "需要2-3句话总结核心内容",
+      "why_matters": "说明为什么值得看",
+      "tags": "1-3个标签用逗号分隔",
+      "id": 1730,
+      "added_at": "2026-09-24 04:58:30"
+    },
+    {
+      "title": "★ AppZapper 3000",
+      "url": "https://daringfireball.net/2026/09/appzapper_3000",
+      "summary": "Is it absolutely ridiculous and unnecessary to make an uninstall utility with an exquisitely detailed 3D laser gun as its UI? Fuckin’-A right it is.",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-23",
+      "summary_zh": "AppZapper 3000 是一款 Mac 卸载工具，其独特之处在于采用了精美的 3D 激光枪作为软件界面设计。作者认为为一个卸载工具配备如此华丽且不必要的视觉效果确实荒谬至极，但也承认这种设计颇具趣味性。",
+      "why_matters": "如果你对 Mac 软件的创意 UI 设计感兴趣，或想了解科技博主如何用幽默语气评价“华而不实”的软件功能，这篇短评值得一读。",
+      "tags": "Mac软件, UI设计, 幽默评论",
+      "id": 1728,
+      "added_at": "2026-09-24 04:58:30"
+    },
+    {
+      "title": "App Store Scam of the Week: ‘Update My Phone & Apps: Guide’ by Tair Olzhasev",
+      "url": "https://apps.apple.com/us/app/update-my-phone-apps-guide/id6753936837",
+      "summary": "“Update My Phone & Apps: Guide” is an iOS app from developer Tair Olzhasev. By default, the only thing it does for free is give you a “Check for Updates” button that launches the system Settings app. It doesn’t even take you to the General → Software Update screen. It just takes you to the root level of Settings.\n\nEverything else it purports to do requires a $15/week subscription. That’s $780 per year. (It does offer a three-day free trial before weekly billing starts.) These other features, gat",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-23",
+      "summary_zh": "Guide\"的iOS诈骗应用，该应用来自开发者Tair Olzhasev。其免费版唯一功能只是一个“检查更新”按钮，点击后仅跳转到系统设置首页，甚至不会自动进入软件更新页面，完全无法提供任何实质服务，却可能误导用户付费或收集数据。",
+      "why_matters": "提醒用户警惕App Store中利用信息差进行虚假宣传的诈骗应用，避免被诱导付费。",
+      "tags": "App Store诈骗，iOS安全，虚假应用",
+      "id": 1726,
+      "added_at": "2026-09-24 04:58:30"
+    },
+    {
+      "title": "‘Prepare to Ship’ Is a Clever Software Solution That Allows iPhone 18 Pro Max to Ship With a Battery That Would Otherwise Exceed International Shipping Regulations",
+      "url": "https://support.apple.com/en-us/127848",
+      "summary": "Apple Support:\n\n\n  iPhone 18 Pro Max offers a huge increase in battery life, in part\ndue to increasing the battery capacity to over 20 watt-hours (Wh).\nDevices with a single-cell battery over 20 Wh have additional\nshipping requirements in most countries and regions. To address\nthese requirements, iPhone 18 Pro Max uses an innovative\nbattery-firmware solution that limits battery capacity to below 20\nWh from the time it’s manufactured through its transport from the\nfactory. When you activate your ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-23",
+      "summary_zh": "iPhone 18 Pro Max将电池容量提升至20瓦时以上以增强续航，但根据国际航运法规，超过20Wh的单芯电池需满足额外运输要求。苹果为此开发了“Prepare to Ship”软件解决方案，通过智能化方式确保设备符合各地区法规，同时不影响用户体验。",
+      "why_matters": "展示了苹果如何通过软件创新巧妙解决硬件设计与国际法规之间的矛盾。",
+      "tags": "Apple,iPhone,法规合规,软件创新",
+      "id": 1724,
+      "added_at": "2026-09-24 04:58:30"
+    },
+    {
+      "title": "SF October 14th: A Birds of a Feather Session on Agentic Engineering",
+      "url": "https://simonwillison.net/2026/Sep/23/bof-agentic-engineering/",
+      "summary": "SF October 14th: A Birds of a Feather Session on Agentic Engineering\nI'm hosting an evening event with Jesse Vincent in San Francisco on Wednesday 14th October for people who are building weird and interesting things with and on top of coding agents.\nThink of it as an agentic show-and-tell:\n\n​Compare notes with other builders and experimenters on things you’re trying, what you're learning, and what you haven’t figured out yet. We’re especially interested in work you haven’t discussed publicly, o",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-09-23",
+      "summary_zh": "本文是一则活动公告，作者Simon Willison和Jesse Vincent将于10月14日（周三）在旧金山举办一场“Agentic Engineering”主题聚会，邀请那些在编码代理领域有奇特或有趣项目的人参与分享。活动形式类似“展示与讲述”，旨在为AI编程工具的探索者和实践者提供一个线下交流的平台。",
+      "why_matters": "这是AI编程领域实践者难得的线下交流机会，可以了解他人如何创新使用编码代理、拓展技术视野并建立行业人脉。",
+      "tags": "AI编程，Agentic Engineering，社区活动，技术聚会",
+      "id": 1722,
+      "added_at": "2026-09-24 04:58:30"
+    },
+    {
+      "title": "Shadow roots, explained with live examples",
+      "url": "https://simonwillison.net/2026/Sep/23/shadow-roots/",
+      "summary": "Tool: Shadow roots, explained with live examples\n        Prompt to Fable 5.1 Medium:\n\nBuild an artifact to explain shadow roots in CSS with interactive examples\n\n    \n    \n        Tags: css",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-09-23",
+      "summary_zh": "本文通过Simon Willison创建的交互式示例，解释CSS中Shadow DOM的核心概念——Shadow Roots，帮助读者直观理解Web Components的工作原理及其在实际开发中的应用场景。",
+      "why_matters": "提供可运行的交互式示例，比文档更直观地掌握Shadow DOM的实践经验。",
+      "tags": "CSS, Web Components, 前端开发",
+      "id": 1720,
+      "added_at": "2026-09-24 04:58:30"
+    },
+    {
+      "title": "Gemini 3.8 TTS Playground",
+      "url": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground/",
+      "summary": "Tool: Gemini 3.8 TTS Playground\n        Google released two new Gemini text-to-speech models today - gemini-3.8-flash-tts and gemini-3.8-flash-lite-tts.\nThey come with a library of over 2,000 voices, plus the ability to create a custom voice with \"just a 30-second audio sample of your voice or a voice you have the rights to use\".\nI vibe coded this bring-your-own-key playground interface with GPT-6 Astra, taking advantage of the open CORS policy of the underlying Gemini API.\n\nA notable feature of",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-09-23",
+      "summary_zh": "Google发布了两个新的Gemini文本转语音模型——gemini-3.8-flash-tts和gemini-3.8-flash-lite-tts。这两个模型提供了超过2000种语音库，并支持用户仅凭30秒音频样本即可创建自定义声音。",
+      "why_matters": "这是Google在AI语音合成领域的重要更新，为开发者和创作者提供了更便捷、更个性化的TTS解决方案。",
+      "tags": "人工智能，语音合成，Gemini",
+      "id": 1718,
+      "added_at": "2026-09-24 04:58:30"
+    },
+    {
       "title": "On reading books",
       "url": "https://herman.bearblog.dev/on-reading-books/",
       "summary": "How books have coloured my life",
@@ -22127,5 +22283,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-23 15:34:13"
+  "last_updated": "2026-09-24 04:58:30"
 }
