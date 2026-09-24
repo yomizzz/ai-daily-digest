@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.9.6",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.6",
+      "source": "openclaw",
+      "published": "2026-09-24",
+      "category": "openclaw",
+      "summary": "无\n\n🐛 Bug 修复：- macOS app 2026.9.6 版本启动时可能崩溃，已从更新源撤回，热修复版本 2026.9.7 正在准备中",
+      "features": "无",
+      "bug_fixes": "- macOS app 2026.9.6 版本启动时可能崩溃，已从更新源撤回，热修复版本 2026.9.7 正在准备中",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Weekly Update 522: Live From Oslo with Scott Helme",
       "url": "https://www.troyhunt.com/weekly-update-522/",
       "summary": "Heads up: the first 7 mins is a bit quiet until we worked out the external mic was misbehaving - sorry! But get through that and have a listen to Scott&apos;s experiences with how Report URI is identifying malware-infected machines within orgs, all due to CSP reporting. It&",
@@ -22283,5 +22295,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-24 04:58:30"
+  "last_updated": "2026-09-24 15:26:45"
 }
