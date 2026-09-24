@@ -1,6 +1,162 @@
 {
   "articles": [
     {
+      "title": "So yeah it was written using AI",
+      "url": "https://berthub.eu/articles/posts/so-yeah-it-is-written-using-ai/",
+      "summary": "As of this week, I&rsquo;m suddenly seeing people dismiss points made in otherwise readable articles because Pangram says these were (partially) AI authored. I hate the origins and consequences of GenAI more than almost anyone. I can&rsquo;t wait for the bubble to burst also. I presented in Amsterdam on how AI has killed my professional field.\nAND YET.\nIf you discover that an opinion piece was authored with or by GenAI, by all means feel free not to engage with it.",
+      "source": "berthub.eu",
+      "category": "blog",
+      "published": "2026-09-24",
+      "summary_zh": "本文探讨了当前一种令人担忧的现象——许多人仅仅因为文章使用了AI辅助写作，就全盘否定其内容和观点的价值。作者明确表示自己同样反感生成式AI及其带来的诸多问题，但同时指出这种“因作者身份而否定内容”的做法是不可取的，呼吁读者回归对内容本身质量的关注。",
+      "why_matters": "文章触及了AI时代一个普遍而重要的议题——如何理性看待AI辅助创作的内容，而非简单地进行身份歧视。",
+      "tags": "AI写作, 内容评价, 科技伦理",
+      "id": 1753,
+      "added_at": "2026-09-25 05:02:59"
+    },
+    {
+      "title": "Motorola born September 25, 1928",
+      "url": "https://dfarq.homeip.net/motorola-born-on-this-day-in-1928/?utm_source=rss&utm_medium=rss&utm_campaign=motorola-born-on-this-day-in-1928",
+      "summary": "On September 25, 1928, Motorola was founded. Retro computer enthusiasts think of Motorola as a CPU manufacturer, and to a lesser degree, perhaps as a computer manufacturer. But its primary line of business for the majority of its existence was\nThe post Motorola born September 25, 1928 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-09-24",
+      "summary_zh": "1928年9月25日，Motorola公司正式成立。尽管在复古电脑爱好者眼中，Motorola主要以CPU和计算机制造商的身份著称，但实际上在其发展历程的大部分时间里，公司的主营业务并非处理器领域。本文回顾了Motorola的创立背景及其业务重心的历史演变。",
+      "why_matters": "了解这家科技巨头如何从无线电设备公司逐步发展为半导体时代的重要参与者。",
+      "tags": "Motorola, 公司历史, 科技史",
+      "id": 1751,
+      "added_at": "2026-09-25 05:02:59"
+    },
+    {
+      "title": "Package Manager Sandboxing",
+      "url": "https://nesbitt.io/2026/09/24/package-manager-sandboxing.html",
+      "summary": "A survey of sandbox usage across package manager clients.",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-09-24",
+      "summary_zh": "本文调查了各类包管理器客户端（如npm、pip、cargo等）对沙箱技术的使用情况，探讨这些工具在执行第三方代码时的安全隔离措施。通过对比不同包管理器的沙箱实现方案，分析当前生态中的安全实践与潜在风险。",
+      "why_matters": "了解软件供应链安全的重要一环，适合关注开发安全和依赖管理的技术人员阅读。",
+      "tags": "包管理器, 沙箱安全, 软件供应链",
+      "id": 1749,
+      "added_at": "2026-09-25 05:02:59"
+    },
+    {
+      "title": "Why is the human body so crap except for the liver?",
+      "url": "https://dynomight.net/liver/",
+      "summary": "the question everyone is asking",
+      "source": "dynomight.net",
+      "category": "blog",
+      "published": "2026-09-24",
+      "summary_zh": "这篇文章以幽默而深刻的视角探讨了人体器官的“设计缺陷”，指出除了肝脏之外，人体许多器官都存在效率低下或不合理的问题。作者通过比较分析，揭示了进化过程中人体结构的种种不完美之处，并探讨了为什么肝脏能够“独善其身”，成为人体中相对可靠的器官。",
+      "why_matters": "用轻松幽默的方式深入浅出地讲解人体进化中的有趣悖论，既涨知识又令人捧腹。",
+      "tags": "人体进化, 趣味科普, 生物学",
+      "id": 1747,
+      "added_at": "2026-09-25 05:02:59"
+    },
+    {
+      "title": "Some thoughts on HTML's proposed previewsrc attribute",
+      "url": "https://shkspr.mobi/blog/2026/09/some-thoughts-on-htmls-proposed-previewsrc-attribute/",
+      "summary": "One of the great things about modern HTML is that it tries to standardise stuff that developers are already doing. If there are a myriad ways of, for example, loading video onto a page - then browsers and other interested parties should work out how to make a standard &#60;video&#62; element.  An interesting new proposal has been brought forth by Microsoft. There are a dozen ways to show a preview of an…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-09-24",
+      "summary_zh": "文章讨论了HTML标准委员会提出的previewsrc属性提案。作者认为现代HTML的一个优点是它会将开发者已经在广泛使用的实践进行标准化——就像之前为视频加载创建标准`<video>`元素一样。文章以此为切入点，探讨previewsrc属性的设计思路和潜在应用场景。",
+      "why_matters": "对于关注Web标准演进和前端技术趋势的开发者而言，能了解HTML新特性的提案背景和设计思路。",
+      "tags": "HTML5, Web标准, 前端开发, 新特性",
+      "id": 1745,
+      "added_at": "2026-09-25 05:02:59"
+    },
+    {
+      "title": "Copland D11E4, Emulated in Your Browser",
+      "url": "https://www.pagetable.com/300",
+      "summary": "Michael Steil:\n\n\n  Apple’s ill-fated Copland operating system is notoriously hard\nto run on real hardware, and has not previously been available in\nemulation. Here is the last build, D11E4 from June 1996, in an\nimproved DingusPPC.\n\n\nPlaying around with the GXSlidemaster app, I found a bug. The keyboard shortcut for File → Print One is ⌥⌘P, but the menu manager displays it as ⌘π (because Option-P is how you type a lowercase pi; add Shift to get an uppercase pi (∏)). I should file a Radar.\n\nAnyway",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-24",
+      "summary_zh": "技术爱好者Michael Steil成功在浏览器中模拟运行了苹果公司1996年发布的Copland操作系统最后版本D11E4，这是该系统首次实现模拟运行，此前在真实硬件上都难以运行。Steil通过改进的DingusPPC模拟器运行该系统，并在使用GXSlidemaster应用时发现了一个bug。",
+      "why_matters": "对于苹果操作系统历史和怀旧技术爱好者而言，这是难得的机会，可以在浏览器中亲身体验苹果那个胎死腹中的经典操作系统原型。",
+      "tags": "浏览器模拟, Apple历史, 操作系统",
+      "id": 1743,
+      "added_at": "2026-09-25 05:02:59"
+    },
+    {
+      "title": "Ed Zitron’s AI Prediction Track Record",
+      "url": "https://danluu.com/zitron/",
+      "summary": "Dan Luu serves up some copiously documented claim chowder:\n\n\n  After this point, most further predictions that I saw were either\nnon-falsifiable or resolve in the future. Note that I didn’t\nattempt to catalogue statements that are nonsensical or were\nsimply factually incorrect statements at the time, such as his\nDecember 2024 claim that “Generative AI’s products have\neffectively been trapped in amber for over a year.” January 2026\nclaim that “[models are] basically the same as they were a year\na",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-24",
+      "summary_zh": "本文由Dan Luu对科技评论人Ed Zitron的AI领域预测进行了系统性的追踪记录，分析发现其后续大多数预测要么是无法验证真伪的不可证伪命题，要么需要等待未来才能得到验证。作者指出，记录这些预测的目的并非为了挑剔，而是揭示在AI热潮中预测行为的可靠性问题，提醒读者对缺乏具体时间框架和验证标准的预言保持审慎态度。",
+      "why_matters": "对于关注AI领域发展的读者，这篇文章提供了一个审视AI预测可信度的实用案例，有助于培养对AI炒作信息的批判性思维。",
+      "tags": "AI预测, 科技评论, 信息验证",
+      "id": 1741,
+      "added_at": "2026-09-25 05:02:59"
+    },
+    {
+      "title": "‘Apple Opens Apple Music Hall, a State-of-the-Art Live Music Venue in London’",
+      "url": "https://www.apple.com/newsroom/2026/09/apple-opens-apple-music-hall-a-state-of-the-art-live-music-venue-in-london/",
+      "summary": "Apple Newsroom:\n\n\n  Apple today announced the opening of Apple Music Hall, a brand-new\nstate-of-the-art live music venue in London’s storied Battersea\nPower Station, designed to connect artists and fans through\nbespoke, intimate performances unlike anywhere else.\n\n\nApple might be the most interesting architecture company in the world this century. They have a core look and feel they apply to their own facilities built from the ground up (e.g., Apple Park, certain flagship retail stores), but the",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-24",
+      "summary_zh": "Apple在伦敦标志性的巴特西发电站开设了全新高端现场音乐场馆Apple Music Hall，致力于通过精心策划的亲密演出为艺术家与粉丝创造独特的音乐体验。作为Apple Music的线下延伸，该场馆将成为音乐爱好者的新聚集地，进一步拓展Apple在音乐领域的影响力。",
+      "why_matters": "这是Apple首次涉足实体音乐场馆运营，标志着其在音乐产业布局的重要一步。",
+      "tags": "Apple Music, 现场音乐, 伦敦音乐场馆",
+      "id": 1739,
+      "added_at": "2026-09-25 05:02:59"
+    },
+    {
+      "title": "Meta Connect Keynote 2026",
+      "url": "https://www.youtube.com/watch?v=SdKFDIAGF24",
+      "summary": "Meta’s annual keynote yesterday was a tight 55-minute live event held on their campus in Menlo Park. I watched the whole thing this morning, before recording tomorrow’s episode of Dithering. (Which you should subscribe to.)\n\nIt was a good keynote. Consumer products announced:\n\n\nThird-generation Meta Glasses with cameras.\nA new glasses product: Ray-Ban Meta Audio. These are audio-only smart glasses, with microphones and speakers, but no camera. Zuckerberg pitched them as being less expensive, hav",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-24",
+      "summary_zh": "Meta在加州Menlo Park总部举办了时长55分钟的年度Connect主题演讲，作者全程观看后认为这是一场不错的主题演讲，发布会上公布了第三代Meta系列消费级产品。",
+      "why_matters": "了解Meta最新VR/AR产品动态的简洁报道。",
+      "tags": "Meta Connect 2026, VR/AR, 消费电子",
+      "id": 1737,
+      "added_at": "2026-09-25 05:02:59"
+    },
+    {
+      "title": "Joanna Stern Interviews Mark Zuckerberg",
+      "url": "https://thenewthings.com/p/exclusive-mark-zuckerberg-interview",
+      "summary": "Great interview from Stern, as usual, seemingly conducted on the old set of Three’s Company. She opened by asking if AI is going to wipe out humanity, and I think Zuck whiffed by not simply laughing and saying no. She also directly asked his thoughts on people calling Meta Glasses “pervert glasses”.\n\nRegarding the shift from “the metaverse” to AI, Zuckerberg likened it to Apple having first worked on touchscreen tablets and then pivoting to turn the technology into the iPhone first. His point be",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-24",
+      "summary_zh": "知名科技记者Joanna Stern对Meta CEO马克·扎克伯格进行了深度专访。采访延续了其一贯的轻松风格，探讨了AI是否会对人类构成威胁等敏感话题，并直截了当地询问了扎克伯格对Meta智能眼镜被称为“偷窥者眼镜”的看法。整个采访过程气氛独特，既有严肃的科技议题，也涉及了舆论争议话题。",
+      "why_matters": "Joanna Stern以其犀利又不失幽默的采访风格著称，是了解扎克伯格及Meta最新动态的优质访谈资源。",
+      "tags": "科技访谈，马克·扎克伯格，人工智能",
+      "id": 1735,
+      "added_at": "2026-09-25 05:02:59"
+    },
+    {
+      "title": "datasette 1.0a41",
+      "url": "https://simonwillison.net/2026/Sep/24/datasette/",
+      "summary": "Release: datasette 1.0a41\n        Alec Garcia added support for OpenTelemetry to Datasette in this release.\nI've also refactored all of Datasette's modal dialogs to a single Web Component, which is now documented for other plugins to use.\n    \n    \n        Tags: javascript, datasette, web-components, alex-garcia, opentelemetry",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-09-24",
+      "summary_zh": "Datasette 发布 1.0a41 版本，新增 OpenTelemetry 支持和统一的模态对话框 Web Component。本次更新中 Alec Garcia 为 Datasette 添加了可观测性追踪能力，同时作者将所有模态对话框重构为一个可复用的 Web Component，并提供了完整文档供插件开发者使用。",
+      "why_matters": "了解 Datasette 在可观测性和组件化开发方面的最新进展。",
+      "tags": "datasette, open-telemetry, web-components",
+      "id": 1733,
+      "added_at": "2026-09-25 05:02:59"
+    },
+    {
+      "title": "commit-rewriter 0.2",
+      "url": "https://simonwillison.net/2026/Sep/24/commit-rewriter/",
+      "summary": "Release: commit-rewriter 0.2\n        \nSupport for branches other than the default branch. Use uvx commit-rewriter --branch other to run against another branch. #3\n\n    \n    \n        Tags: git",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-09-24",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1731,
+      "added_at": "2026-09-25 05:02:59"
+    },
+    {
       "title": "openclaw 2026.9.6",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.6",
       "source": "openclaw",
@@ -22295,5 +22451,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-24 15:26:45"
+  "last_updated": "2026-09-25 05:02:59"
 }
