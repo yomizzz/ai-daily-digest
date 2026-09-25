@@ -169,6 +169,16 @@
       "tags": "OpenClaw"
     },
     {
+      "title": "Hermes Agent v0.21.5 (v2026.9.24)",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.9.24",
+      "source": "hermes-agent",
+      "published": "2026-09-24",
+      "category": "hermes",
+      "summary_zh": "- 桌面端插件 SDK 大幅更新：新增 composer draft API、session-list/row-decoration slots、侧边栏导航首选项、model-pill label providers、typed settings/skills/toolsets/profiles bridges、sandboxed embed primitive、appearance-settings slot 及公共事件桥接\n- 桌面端新增 Simple/Advanced 界面模式切换\n- Connectors 页面取代 MCP tab，新安装插件的 MCP 服务器自动连接，已装插件的工具和技能在所有聊天中即时生效\n- 全新 onboarding 流程支持目录插件推荐\n- 完整支持法语、德语、西班牙语桌面端，新增 RTL/LTR 文本方向设置\n- 支持从 composer 和设置面板自定义模型\n- 新增功能键和语音听写快捷键\n- 每个 profile 支持独立的 stop/start/restart 操作，新增 gateway.standalone 选项\n- CLI/TUI 实时 dock 显示活跃的 /goal 和队列中的 prompts\n- Kanban 视图重新设计，新增双栏工单弹窗和 markdown 任务文本支持\n- Webhook 投递直接镜像到目标聊天会话\n- 托管 -desktop 镜像新增 Bot Screen 功能\n- Nous 和 OpenRouter 目录新增 GPT-6 Sol/Terra/Luna 及 Claude Opus 5.5 模型\n- 新增官方 Blender Lab 集成及 NVIDIA app/Broadcast 插件\n- 性能优化覆盖配置加载、工具注册、网关消息处理和模型选择器\n- 目录新增数十款社区插件",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Weekly Update 522: Live From Oslo with Scott Helme",
       "url": "https://www.troyhunt.com/weekly-update-522/",
       "summary": "Heads up: the first 7 mins is a bit quiet until we worked out the external mic was misbehaving - sorry! But get through that and have a listen to Scott&apos;s experiences with how Report URI is identifying malware-infected machines within orgs, all due to CSP reporting. It&",
@@ -22451,5 +22461,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-25 05:02:59"
+  "last_updated": "2026-09-25 15:24:13"
 }
