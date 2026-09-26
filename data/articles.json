@@ -1,6 +1,123 @@
 {
   "articles": [
     {
+      "title": "Rusty thoughts on \"Parse, don't validate\"",
+      "url": "https://eli.thegreenplace.net/2026/rusty-thoughts-on-parse-dont-validate/",
+      "summary": "Like many programmers, I find Alexis King's Parse, don't validate\narticle fascinating, because it gives a name to an idiom that seems familiar and\nimportant - one I've observed and used in the past without naming it explicitly.\nThis post is a review of the \"Parse, don't validate\" pattern applied to …",
+      "source": "eli.thegreenplace.net",
+      "category": "blog",
+      "published": "2026-09-26",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1777,
+      "added_at": "2026-09-27 04:31:09"
+    },
+    {
+      "title": "Reading List 2026-09-26",
+      "url": "https://www.construction-physics.com/p/reading-list-2026-09-26",
+      "summary": "ASML&#8217;s lack of European sales, a California distributed power plant, Starlink as a planetary barometer, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-09-26",
+      "summary_zh": "本期阅读清单汇集了多个前沿科技与基础设施领域的重要资讯，涵盖光刻机巨头ASML在欧洲市场的销售困境、加州分布式电力系统的创新实践，以及SpaceX Starlink卫星网络在行星大气监测方面的独特应用。这些内容反映了全球半导体、能源和航天技术交叉发展的新趋势。",
+      "why_matters": "内容涵盖半导体、新能源和航天三个热门领域，信息密度高，适合关注科技产业动态的读者快速了解行业热点。",
+      "tags": "半导体产业，清洁能源，卫星技术",
+      "id": 1775,
+      "added_at": "2026-09-27 04:31:09"
+    },
+    {
+      "title": "This Week in Package Management: 26 September 2026",
+      "url": "https://nesbitt.io/2026/09/26/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-09-26",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1773,
+      "added_at": "2026-09-27 04:31:09"
+    },
+    {
+      "title": "Reverse-engineering the vintage Intel 8087's tangent algorithm: more than CORDIC",
+      "url": "http://www.righto.com/2026/09/8087-tangent-cordic.html",
+      "summary": "I hope you're not tired of the 8087, because I have another article about\nIntel's floating-point chip.1\nIn 1980, Intel introduced the 8087, making floating-point operations much faster\nin the IBM PC and other systems.\nIn this article, I look at the algorithm behind the chip's tangent instruction.\nOne popular approach for trigonometric functions is an algorithm called CORDIC.\nAnother approach is a polynomial approximation. The 8087 combined the two\nto obtain both high accuracy and high performanc",
+      "source": "righto.com",
+      "category": "blog",
+      "published": "2026-09-26",
+      "summary_zh": "本文深入分析了Intel 8087协处理器中正切指令的实现算法，作者Ken Shirriff通过逆向工程揭示了该芯片采用了比标准CORDIC算法更加复杂精密的三角函数计算方法。文章详细展示了8087如何通过结合多种技术（包括查表法、泰勒级数展开、移位加法等）来高效计算正切值，体现了80年代芯片设计的精妙智慧。",
+      "why_matters": "对于计算机历史爱好者和算法研究者来说，这是一篇难得的深度技术文章，既能了解早期浮点运算的硬件实现，又能学习到精妙的数值计算技巧。",
+      "tags": "Intel 8087, CORDIC算法, 逆向工程, 浮点运算, 计算机历史",
+      "id": 1771,
+      "added_at": "2026-09-27 04:31:09"
+    },
+    {
+      "title": "The Talk Show: ‘I’m Thinking X, Not X’",
+      "url": "https://daringfireball.net/thetalkshow/2026/09/25/ep-455",
+      "summary": "Andru Edwards returns to the show to discuss Apple’s big September event and their new products: the iPhones 18 Pro and Duo, AirPods 5, and Apple Watch Series 12/Ultra 4.\n\n\n\nSponsored by:\n\n\nFactor: Healthy eating, made easy. Get 50% off and one free breakfast item per box for one year, while supplies last, with code talkshow50off.\nNotion: The collaborative AI workspace where teams and\nagents work side by side, with a developer platform teams can build on.\n\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-26",
+      "summary_zh": "本期Talk Show邀请了常驻嘉宾Andru Edwards回归，共同探讨苹果9月秋季发布会的重磅新品。节目详细点评了iPhone 18 Pro和Duo、AirPods 5以及Apple Watch Series 12/Ultra 4等产品，并深入分析了这些新品的创新亮点与市场定位。作为一档科技热点对谈节目，为听众提供了专业、客观的苹果产品解读视角。",
+      "why_matters": "适合想快速了解苹果新品发布亮点及专业科技评论的听众。",
+      "tags": "苹果发布会, iPhone, 科技播客",
+      "id": 1769,
+      "added_at": "2026-09-27 04:31:09"
+    },
+    {
+      "title": "Microsoft Took the ‘Copilot+ PC’ Brand Out Behind the Shed",
+      "url": "https://www.windowscentral.com/microsoft/windows-11/the-copilot-pc-brand-is-dead-microsoft-and-pc-makers-quietly-pull-back-on-tarnished-windows-11-ai-pc-branding",
+      "summary": "Zac Bowden, Windows Central:\n\n\n  In 2024, Microsoft and Qualcomm kicked off a new category\nof Windows hardware it called “Copilot+ PCs” that set the\nbaseline for a new wave of AI-first computers, and launched with\nexclusive features that would not be made available on PCs that\ndidn’t meet a new set of system requirements.\n\nThe launch didn’t go smoothly. [...]\n\nI’ve noticed that none of the Surface PCs launched in 2026\ninclude the Copilot+ PC moniker in their product names, unlike\nthe Surface PCs",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-26",
+      "summary_zh": "2024年微软与高通合作推出“Copilot+ PCs”全新Windows硬件类别，旨在树立AI优先电脑的行业基准，并附带仅满足特定硬件要求的设备可用的独占功能。文章分析了微软在AI PC领域的品牌策略及其对行业的影响。",
+      "why_matters": "深入了解微软AI PC品牌布局及其对市场竞争格局的影响。",
+      "tags": "微软, Copilot+ PC, AI PC, Windows, 高通",
+      "id": 1767,
+      "added_at": "2026-09-27 04:31:09"
+    },
+    {
+      "title": "International Standard Paper Sizes",
+      "url": "https://www.cl.cam.ac.uk/~mgk25/iso-paper.html",
+      "summary": "Markus Kuhn:\n\n\n  In the ISO paper size system, the height-to-width ratio of all\npages is the square root of two (1.4142 : 1). In other words, the\nwidth and the height of a page relate to each other like the side\nand the diagonal of a square. This aspect ratio is especially\nconvenient for a paper size. If you put two such pages next to\neach other, or equivalently cut one parallel to its shorter side\ninto two equal pieces, then the resulting page will have again the\nsame width/height ratio.\n\n\nSame",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-26",
+      "summary_zh": "需要2-3句话总结核心内容",
+      "why_matters": "1句话说明为什么值得看",
+      "tags": "1-3个标签，用逗号分隔",
+      "id": 1765,
+      "added_at": "2026-09-27 04:31:09"
+    },
+    {
+      "title": "Apple’s Other Recent ‘Duo’",
+      "url": "https://support.apple.com/en-us/111812",
+      "summary": "I keep mentioning Apple’s 1992 groundbreaking PowerBook Duo series as a precedent of the iPhone Duo’s name. But of course in 2020, Apple released the MagSafe Duo Charger, a wonderful Lightning peripheral for charging an iPhone and Apple Watch at the same time. It even folded.\n\nA brief note on the PowerBook Duo, while I’m at it. I got an email this month from a now-retired former Apple employee who helped spearhead that project, and he emphasized that the internal motto was always “Best of Both W",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-26",
+      "summary_zh": "文章追溯了Apple产品中\"Duo\"命名的历史渊源，指出iPhone Duo的名称并非凭空出现，而是有先例可循——1992年推出的PowerBook Duo系列；同时提到2020年发布的MagSafe Duo Charger这款可折叠的双设备充电配件，展示了Apple对\"Duo\"概念的持续沿用。",
+      "why_matters": "适合对Apple产品命名历史和设计传承感兴趣的读者了解品牌命名背后的故事。",
+      "tags": "Apple品牌历史, 产品命名, Duo系列",
+      "id": 1763,
+      "added_at": "2026-09-27 04:31:09"
+    },
+    {
+      "title": "Advice to a beginning software engineer",
+      "url": "https://seangoedecke.com/advice-to-a-beginning-software-engineer/",
+      "summary": "In general, you should be suspicious of engineers who are trying to give you advice. Even during ordinary times, this industry is so wide and changes so quickly that nobody really knows anything for sure. And we are not in ordinary times. The advent of LLMs and AI agents is the largest change to software engineering in my professional lifetime, and possibly the largest change ever. That said, here’s my advice:\n\nDon’t trust senior engineers who are telling you to pick political fights\nDon’t play ",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-09-26",
+      "summary_zh": "本文作者对软件工程领域的常见建议持谨慎态度，认为行业变化迅速且充满不确定性，尤其在LLM和AI代理技术兴起的当下，技术格局正在经历巨大变革。作者建议初级工程师应保持独立思考，不要盲目听从所谓的“成功法则”，而是根据自身情况做出判断。",
+      "why_matters": "面对AI时代的技术变革，这篇文章帮助年轻工程师保持清醒的头脑和批判性思维，避免被过时的经验法则误导。",
+      "tags": "职业发展，AI时代，软件工程，建议",
+      "id": 1761,
+      "added_at": "2026-09-27 04:31:09"
+    },
+    {
       "title": "AI Killed the MVP – Long Live the IUP",
       "url": "https://steveblank.com/2026/09/25/ai-killed-the-mvp-long-live-the-iup/",
       "summary": "This post previously appeared in Poets and Quants This is the second of four posts on how AI has impacted our Lean LaunchPad class and what we did about it. Part 1: The Year AI Came For Us Part 2: This Post Next Week Part 3: The World Outside the Classroom Changed, The Class Didn’t [&#8230;]",
@@ -22682,5 +22799,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-26 15:19:45"
+  "last_updated": "2026-09-27 04:31:09"
 }
