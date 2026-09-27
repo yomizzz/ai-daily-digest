@@ -1,6 +1,45 @@
 {
   "articles": [
     {
+      "title": "Gig Review: Public Service Broadcasting's Race For Space at Alexandra Palace ★★★★⯪",
+      "url": "https://shkspr.mobi/blog/2026/09/gig-review-public-service-broadcastings-race-for-space-at-alexandra-palace/",
+      "summary": "Ahhh! PSB&#039;s RFS! A delightfully indulgent soundscape of melodic wonder, performed here on its 10th (ish) anniversary. Is it really nostalgia if an album is only a decade old? It feels like it has been in the air forever.    For something which is seemingly made up of samples, it would have been easy for them to half-arse it and basically just play the CD. Instead we got a full band, guest…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-09-27",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1774,
+      "added_at": "2026-09-28 04:42:50"
+    },
+    {
+      "title": "Katie Notopoulos on Alexandr Wang’s ‘Faux-Hallmark Pap’",
+      "url": "https://x.com/katienotopoulos/status/2103993429659386026",
+      "summary": "Katie Notopoulos, in a short tweet thread regarding Alexandr Wang’s “Why We’re Building Muse” essay:\n\n\n  This makes me feel insane! This is faux-hallmark pap and if you\nbelieve for 1 sec that he cares about helping people “spending\nmore time with family” or “opening a bakery” you don’t need to\nwait for AI to kill us; you’re stupid enough to drown from looking\nup at the rain.\n\n\nMy take is much closer to Notopoulos’s than to Manton Reece’s. I think it’s fascinating that Wang’s essay doesn’t sound ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-27",
+      "summary_zh": "科技博主Katie Notopoulos批评Scale AI创始人Alexandr Wang发布的\"Why We're Building Muse\"文章，称其充满\"伪贺曼卡片式的心灵鸡汤\"内容。她讽刺地质疑Wang声称要帮助人们\"花更多时间陪伴家人\"或\"开面包店\"等愿景的真诚度，认为这类企业宣传文章缺乏实质价值。",
+      "why_matters": "这篇文章简短有力，揭示了科技创始人常用的高尚愿景包装手法，适合对科技行业宣传策略感兴趣的读者。",
+      "tags": "科技批评，企业宣传，创始人营销",
+      "id": 1772,
+      "added_at": "2026-09-28 04:42:50"
+    },
+    {
+      "title": "Human-AI partnerships are for alignment, not capability",
+      "url": "https://seangoedecke.com/human-ai-partnerships-are-for-alignment-not-capability/",
+      "summary": "It’s common to compare the current AI takeover of software engineering to the rise of AI in chess. Chess AIs went from much weaker than serious players to much stronger than even the strongest humans. Between those points, there was a middle period dominated by “centaurs”: human-AI partnerships that were stronger than unassisted AIs or humans. Lots of people think that we’re currently in a world of software engineering centaurs. According to them, coding AIs are not yet capable enough to replace",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-09-27",
+      "summary_zh": "本文将当前AI在软件工程中的应用与象棋AI的发展历程进行类比，指出人机合作的意义在于“对齐”而非单纯提升AI的“能力”。正如象棋AI发展中曾出现“人机半人马”(centaur)阶段，人类与AI协作能发挥双方优势，未来软件开发中的AI应用也应以增强人类能力为目标，而非追求AI完全取代人类。",
+      "why_matters": "用象棋发展史的类比帮助理解AI时代的软件开发方向，观点清晰深刻。",
+      "tags": "人工智能，人机协作，软件开发",
+      "id": 1770,
+      "added_at": "2026-09-28 04:42:50"
+    },
+    {
       "title": "Rusty thoughts on \"Parse, don't validate\"",
       "url": "https://eli.thegreenplace.net/2026/rusty-thoughts-on-parse-dont-validate/",
       "summary": "Like many programmers, I find Alexis King's Parse, don't validate\narticle fascinating, because it gives a name to an idiom that seems familiar and\nimportant - one I've observed and used in the past without naming it explicitly.\nThis post is a review of the \"Parse, don't validate\" pattern applied to …",
@@ -22799,5 +22838,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-27 15:51:19"
+  "last_updated": "2026-09-28 04:42:50"
 }
