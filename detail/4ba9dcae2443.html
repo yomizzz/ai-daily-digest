@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>Reverse-engineering the vintage Intel 8087's tangent algorithm: more than CORDIC</title>
     <style>
 
         :root {
@@ -287,41 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-09-27 15:51:24</p>
+        <h1>Reverse-engineering the vintage Intel 8087's tangent algorithm: more than CORDIC</h1>
+        <p><span class="category-tag">blog</span> righto.com · 2026-09-26</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 0 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="no-updates">暂无更新记录</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><p>本文深入分析了Intel 8087协处理器中正切指令的实现算法，作者Ken Shirriff通过逆向工程揭示了该芯片采用了比标准CORDIC算法更加复杂精密的三角函数计算方法。文章详细展示了8087如何通过结合多种技术（包括查表法、泰勒级数展开、移位加法等）来高效计算正切值，体现了80年代芯片设计的精妙智慧。</p></div>
+<div class="tags">标签：Intel 8087, CORDIC算法, 逆向工程, 浮点运算, 计算机历史</div>
+        <div class="detail-why">💡 对于计算机历史爱好者和算法研究者来说，这是一篇难得的深度技术文章，既能了解早期浮点运算的硬件实现，又能学习到精妙的数值计算技巧。</div>
+        <a href="http://www.righto.com/2026/09/8087-tangent-cordic.html" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>
