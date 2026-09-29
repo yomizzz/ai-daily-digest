@@ -1,4 +1,61 @@
 {
-  "releases": [],
-  "last_updated": "2026-09-28 16:27:48"
+  "releases": [
+    {
+      "url": "https://api.github.com/repos/openclaw/openclaw/releases/398673323",
+      "assets_url": "https://api.github.com/repos/openclaw/openclaw/releases/398673323/assets",
+      "upload_url": "https://uploads.github.com/repos/openclaw/openclaw/releases/398673323/assets{?name,label}",
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.33",
+      "id": 398673323,
+      "author": {
+        "login": "github-actions[bot]",
+        "id": 41898282,
+        "node_id": "MDM6Qm90NDE4OTgyODI=",
+        "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+        "html_url": "https://github.com/apps/github-actions",
+        "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+        "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+        "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+        "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+        "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+        "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+        "type": "Bot",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "node_id": "RE_kwDOQb6kR84Xw0Wr",
+      "tag_name": "v2026.8.33",
+      "target_commitish": "main",
+      "name": "openclaw 2026.8.33",
+      "draft": false,
+      "immutable": false,
+      "prerelease": false,
+      "created_at": "2026-09-26T18:50:27Z",
+      "updated_at": "2026-09-29T03:12:00Z",
+      "published_at": "2026-09-29T03:12:00Z",
+      "assets": [],
+      "tarball_url": "https://api.github.com/repos/openclaw/openclaw/tarball/v2026.8.33",
+      "zipball_url": "https://api.github.com/repos/openclaw/openclaw/zipball/v2026.8.33",
+      "body": "This is a gateway-only `extended-stable` release, which is our current equivalent to LTS. This release is OpenClaw from the end of August 2026, plus critical security updates, reliability and performance fixes, and features like new model support. The current latest version of OpenClaw is [2026.9.6](https://github.com/openclaw/openclaw/releases#release-v2026.9.6)\n\n## 2026.8.33\n\n### Highlights\n\n- **Current flagship models:** add Meta Muse Spark 1.3, Anthropic Fable 5.1, OpenAI GPT-6 Astra, and OpenAI/fal GPT Image 2.5 support to the extended-stable line. (#135638, #136553, #137550, #143068, #143069)\n- **Complete GPT-5.6 family support:** preserve Sol, Terra, and Luna catalog, routing, migration, image, vision, and thinking behavior, including Ultra reasoning across model-runtime boundaries and Bedrock tool-result images. (#135397, #149336)\n- **Extended-stable security rollup:** reconcile all repository advisories that affect 2026.8.2, harden Prometheus metrics authorization and Discord asset/voice ownership, and clear the production Nodemailer advisory gate. (#136700, #137433, #140334, #140903)\n\n### Changes\n\n- **Extended-stable release preparation:** normalize OpenClaw, all publishable plugins, and native version metadata to 2026.8.33 while retaining the release-line-compatible publication workflows from 2026.8.2.\n\n### Fixes\n\n- **Anthropic reasoning continuity:** preserve Fable 5.1 reasoning through model switches and runtime events. (#136782)\n- **OpenAI discovery:** require successful model discovery before offering GPT-6 Astra through OAuth. (#137561)\n- **Doctor skill state:** preserve explicitly enabled skills during automatic updates. (#138730)\n- **Generated media:** retain generated images when a later tool call fails. (#131226)\n- **Matrix verification:** refresh verification state before reporting device trust. (#136226)\n- **Prometheus authorization:** reject metric scrapes that lack the configured operator-read scope. (#140903)\n- **Discord media policy:** enforce sender media policy for guild asset uploads. (#140334)\n- **Discord realtime ownership:** preserve speaker and playback ownership across voice lifecycle transitions. (#137433)\n- **Discord consult cancellation:** record host-cancelled realtime consults as cancellation, suppress the generic error fallback, and keep the voice session ready for the next request. (#134924, #135380)\n- **Dependency security:** override the IMAP dependency graph to Nodemailer 9.1.1, clearing the address-parser denial-of-service and related domain/content-access advisories. (#136700)\n- **iOS release validation:** update the WebRTC binary dependency to 152.0.0 after the 151.0.0 artifact was withdrawn. (#134942)",
+      "reactions": {
+        "url": "https://api.github.com/repos/openclaw/openclaw/releases/398673323/reactions",
+        "total_count": 10,
+        "+1": 4,
+        "-1": 0,
+        "laugh": 1,
+        "hooray": 1,
+        "confused": 0,
+        "heart": 1,
+        "rocket": 2,
+        "eyes": 1
+      },
+      "features": "- 新增支持 Meta Muse Spark 1.3、Anthropic Fable 5.1、OpenAI GPT-6 Astra 和 GPT Image 2.5 模型\n- 新增完整 GPT-5.6 系列支持，涵盖 Sol/Terra/Luna 全部功能及 Ultra 推理能力\n- 安全汇总：强化 Prometheus 指标授权及 Discord 资产/语音所有权验证",
+      "bug_fixes": "- 修复 Anthropic Fable 5.1 推理在模型切换和运行时事件中的连续性问题\n- 修复 Doctor 技能在自动更新后状态丢失的问题\n- 修复后续工具调用失败时已生成图像被清除的问题\n- 修复 Matrix 设备信任状态未及时刷新的问题\n- 修复 Prometheus 指标抓取缺少权限验证的问题\n- 修复 Discord 语音实时所有权在会话切换时丢失的问题\n- 修复主持人取消实时咨询后语音会话未正确释放的问题\n- 修复 iOS WebRTC 二进制依赖版本问题（151.0.0 已撤回，更新至 152.0.0）"
+    }
+  ],
+  "last_updated": "2026-09-29 16:09:18"
 }
