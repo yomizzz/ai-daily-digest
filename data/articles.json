@@ -1,6 +1,123 @@
 {
   "articles": [
     {
+      "title": "Lean LaunchPad – The Next Generation",
+      "url": "https://steveblank.com/2026/09/30/lean-launchpad-the-next-generation/",
+      "summary": "You&#8217;re reading a four-part series on how AI has impacted our Lean LaunchPad class and what we did about it. Part 1: The Year AI Came For Us Part 2: AI Killed the MVP – Long Live the IUP Part 3: The World Outside the Classroom Changed, The Class Didn’t This post: Lean LaunchPad – The [&#8230;]",
+      "source": "steveblank.com",
+      "category": "blog",
+      "published": "2026-09-30",
+      "summary_zh": "Steve Blank的Lean LaunchPad课程系列第四篇，探讨了在AI时代如何对传统精益创业教学方法进行迭代升级。文章总结了前三篇中发现的痛点——AI改变了外部商业环境但课堂内容未能及时跟进，并提出新一代Lean LaunchPad课程的设计思路，包括将AI工具融入客户发现流程、重新定义最小可行产品的概念等关键变革。",
+      "why_matters": "为创业教育者和产品经理提供AI时代下如何调整精益方法论的实战参考。",
+      "tags": "精益创业，AI应用，创业教育",
+      "id": 1821,
+      "added_at": "2026-10-01 05:46:56"
+    },
+    {
+      "title": "Gratis digitale autonomie, zonder digitale dienst: doe er wat aan!",
+      "url": "https://berthub.eu/articles/posts/gratis-digitale-wendbaarheid-en-autonomie/",
+      "summary": "De afgelopen weken heeft de regering ons minstens viermaal, op schrift, uitgelegd dat er echt geen geld is voor digitale autonomie, of voor de nieuw op te richten Nederlandse Digitale Dienst die aan die autonomie zou kunnen gaan werken.\nVolgens het coalitieakkoord en meer documenten wil men Nederland digitaal autonomer krijgen. Daar zijn warme woorden over gesproken, maar bij de uitkomst van het nieuwe Overheidsbrede Cloudbeleid bleek al dat het moeilijk ging worden.",
+      "source": "berthub.eu",
+      "category": "blog",
+      "published": "2026-09-30",
+      "summary_zh": "荷兰政府在过去数周内至少四次书面回应称没有预算支持数字主权建设或创建荷兰数字服务部门。尽管联合执政协议及其他文件中明确表达了相关意愿，但实际拨款却迟迟未能落实，文章作者对此提出批评并呼吁采取实际行动。",
+      "why_matters": "文章揭示了欧洲国家在数字主权建设上面临的\"政策与资金脱节\"问题，对关注数字治理和科技政策的读者具有参考价值。",
+      "tags": "数字主权, 政府预算, 荷兰科技政策",
+      "id": 1819,
+      "added_at": "2026-10-01 05:46:56"
+    },
+    {
+      "title": "IBM PS/2 series",
+      "url": "https://dfarq.homeip.net/ibm-ps2-series/?utm_source=rss&utm_medium=rss&utm_campaign=ibm-ps2-series",
+      "summary": "The IBM PS/2 line, released April 2, 1987, was IBM&#8217;s attempt to reinvigorate its aging personal computer line and fight off cloning. The line sold better than we remember. On September 30, 1988, IBM announced it had sold its 3\nThe post IBM PS/2 series appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-09-30",
+      "summary_zh": "IBM PS/2系列于1987年4月发布，是IBM为振兴其老化的个人电脑产品线、对抗日益壮大的兼容机克隆厂商而推出的重要产品线。文章指出，PS/2的实际市场表现比人们记忆中的印象要好得多，IBM在1988年9月已售出数百万台产品，打破了人们对该系列“商业失败”的固有认知。",
+      "why_matters": "透过这篇历史回顾，重新认识IBM PS/2在个人电脑发展史上的真实地位与贡献。",
+      "tags": "IBM PS/2, 个人电脑历史, 科技史, 1980年代",
+      "id": 1817,
+      "added_at": "2026-10-01 05:46:56"
+    },
+    {
+      "title": "Dear Software Makers",
+      "url": "https://blog.jim-nielsen.com/2026/dear-software-makers/",
+      "summary": "Marques Brownlee just released a video essay titled “Dear YouTube”. \nI loved it.\nHe talks about how YouTube is going to start shipping this new feature where makers can essentially publish different “variants” of their videos and see which performs best (an A/B test).\nWhich immediately begs a lot of questions. Brownlee voices his:\n\nIf I’m watching a video, do I know if it’s part of one of these A/B tests?\nIf I’m reading the comments of a video, how do I saw the same thing as another commentor?\nH",
+      "source": "blog.jim-nielsen.com",
+      "category": "blog",
+      "published": "2026-09-30",
+      "summary_zh": "Marques Brownlee通过“Dear YouTube”视频探讨了一个观点：软件开发者应该给用户更多实验和控制的能力。他以YouTube即将推出的视频A/B测试功能为例，说明好的软件应该赋能用户，让用户能测试不同方案的效果。Brownlee以此向软件制作者发出呼吁：多给用户一些“控制面板”式的功能。",
+      "why_matters": "文章从创作者视角出发，思考软件工具应该如何更好地服务于用户，观点独特且有启发性。",
+      "tags": "软件设计, 用户体验, 创作者经济",
+      "id": 1815,
+      "added_at": "2026-10-01 05:46:56"
+    },
+    {
+      "title": "What TLA+ can and can't check",
+      "url": "https://buttondown.com/hillelwayne/archive/what-tla-can-and-cant-check/",
+      "summary": "Last week Boris Cherny, the inventor of Claude Code, mentioned that Opus was able to use TLA+1 to find race conditions in code.\n\n\n    \n\n\n\nAnd now everybody on the internet is talking about formal verification. \nAs a long-time educator (1 2) and advocate of TLA+, this is really exciting! TLA+ is great at designing complex concurrent systems and making sure they're bug-free.2 As a long-time advocate of level-headedness, this new euphoria worries me. I read a lot of people saying that formal method",
+      "source": "buttondown.com/hillelwayne",
+      "category": "blog",
+      "published": "2026-09-30",
+      "summary_zh": "文章讨论了TLA+形式验证工具的能力边界，介绍了它在发现代码竞态条件等并发问题上的应用，同时也阐明了它无法检查的领域，帮助读者理解形式化验证的实际作用和局限性，避免对其过度期待。",
+      "why_matters": "适合想了解形式化验证工具TLA+实际价值和边界的开发者。",
+      "tags": "TLA+, 形式化验证, 并发测试",
+      "id": 1813,
+      "added_at": "2026-10-01 05:46:56"
+    },
+    {
+      "title": "Notes from September 2026",
+      "url": "https://evanhahn.com/notes-from-september-2026/",
+      "summary": "If you follow my monthly roundups, (1) who are you?? please say hi (2) you&rsquo;ll notice a smaller post this time. September was a busy month for me.\nLots of feedback on a small post\nI published &ldquo;Anecdotally, programmers dislike &lsquo;reduce&rsquo;&rdquo;. I finally wrote up a phenomenon I&rsquo;ve observed for years. It&rsquo;s a short post that didn&rsquo;t take long to write.\nI got a tremendous volume of feedback—more than anything I&rsquo;ve ever written. Dozens of messages, hundred",
+      "source": "evanhahn.com",
+      "category": "blog",
+      "published": "2026-09-30",
+      "summary_zh": "这是作者Evan Hahn的2026年9月月度笔记，作者提到由于本月非常忙碌，本文篇幅较短。他提到关于程序员对reduce函数态度的文章收到了很多反馈。",
+      "why_matters": "适合关注该技术博主动态的读者，了解技术圈的真实声音和反馈。",
+      "tags": "技术博客, 月度回顾, 个人日志",
+      "id": 1811,
+      "added_at": "2026-10-01 05:46:56"
+    },
+    {
+      "title": "Are you a smartwatch \"power user\"?",
+      "url": "https://shkspr.mobi/blog/2026/09/are-you-a-smartwatch-power-user/",
+      "summary": "What do you use your smartwatch for?  A few weeks ago, I overheard a conversation between someone on the Pixel Watch team and a woman I know. He was quizzing her at a party about her Pixel watch and what features she used. He&#039;d ignored me when I said I had a non-Google watch.  She thought for a moment and said, other than telling the time, all she used were pretty much the step counter and…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-09-30",
+      "summary_zh": "本文通过作者在聚会上听到的一场关于智能手表使用功能的对话，探讨了什么是智能手表的“高级用户”。作者指出，智能手表厂商通常关注用户是否使用了各种高级功能，但普通用户可能只用到最基础的功能。文章暗示，智能手表的使用程度因人而异，“高级用户”的定义可能比厂商想象的更加主观。",
+      "why_matters": "文章以轻松幽默的视角观察智能手表用户的使用习惯，引发对技术产品功能的思考。",
+      "tags": "智能手表，用户体验，技术观察，可穿戴设备",
+      "id": 1809,
+      "added_at": "2026-10-01 05:46:56"
+    },
+    {
+      "title": "Anthropic’s IPO Prospectus Is a Fucking Doozy",
+      "url": "https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28/",
+      "summary": "Echo Wang, reporting for Reuters yesterday:\n\n\n  Anthropic is making a massive bet that AI will transform the\nglobal economy more profoundly than ​industrialization,\nelectricity and the internet, according to its IPO prospectus seen\nby Reuters.\n\n\nThis is a strong clear lede, but even so it falls short of expressing the true magnitude of what Anthropic represents. To wit, not that “AI” as a field will prove more profoundly transformational than industrialization, electricity, and the Internet, but",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-30",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1807,
+      "added_at": "2026-10-01 05:46:56"
+    },
+    {
+      "title": "Gurman Reports Apple Is Launching New ‘Smart Home’ Products on October 13",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-30/apple-is-finally-ready-to-enter-its-next-big-category-the-smart-home?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MDc3MDk0MywiZXhwIjoxNzkxMzc1NzQzLCJhcnRpY2xlSWQiOiJUTTM0SDRUOTZPU0cwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.11wEtJfuMwCkznTkepXugZ2wuZTmxO9CdsNJLAcBd1M",
+      "summary": "Mark Gurman, reporting for Bloomberg (gif link):\n\n\n  Apple Inc. plans to make its long-delayed push into the smart-home\nmarket on Oct. 13, marking a critical product expansion for the\ncompany under new Chief Executive Officer John Ternus. At the\ncenter of the strategy is a smart-home hub code-named J490,\naccording to people familiar with the matter. Apple also plans to\nannounce the first update to the HomePod mini since that device’s\n2020 debut and its first new TV set-top box since 2022. [...]\n",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-09-30",
+      "summary_zh": "据彭博社Mark Gurman报道，苹果公司计划于10月13日推出长期延期的智能家居产品线，标志着新任CEO John Ternus领导下的一次重要产品扩张。报道称此次战略核心是一款代号为[待披露]的智能家居中枢设备。",
+      "why_matters": "苹果终于正式进军智能家居领域，对智能家居市场格局和用户体验可能产生重要影响。",
+      "tags": "Apple, 智能家居, 新品发布",
+      "id": 1805,
+      "added_at": "2026-10-01 05:46:56"
+    },
+    {
       "title": "openclaw 2026.9.7",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.7",
       "source": "openclaw",
@@ -23252,5 +23369,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-30 16:13:25"
+  "last_updated": "2026-10-01 05:46:56"
 }
