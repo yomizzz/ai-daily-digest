@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.9.7",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.7",
+      "source": "openclaw",
+      "published": "2026-09-30",
+      "category": "openclaw",
+      "summary": "- **更新安全机制**：备份每个状态和代理数据库再迁移，失败时回滚，快照清理失败时停止架构变更\n- **OpenAI Agents API**：新增插件支持在OpenAI托管或自托管环境运行Agent，含流式回复、导向、实时搜索、OpenClaw工具\n- **Sign in with ChatGPT**：新增ChatGPT登录方式（Beta版），支持API密钥和Codex登录并提供清晰的能力说明\n- **Gateway响应优化**：忙时聊天不再阻塞其他请求，移至后台线程处理历史、文件、数据库维护等操作\n- **聊天性能提升**：长对话滚动流畅，作曲家打字响应迅速，流式回复不再卡顿，会话切换加载更快\n- **原生Apple聊天**：macOS/iOS显示消息时间、模型名称、Agent身份，支持文件和音频附件，macOS新增命令面板\n- **重启连续性**：重启后进行中的工作turn和编辑保留，ACP运行不再因重启取消，配置重载时保持运行\n- **工作树会话隔离**：从web/iOS/Android启动隔离的托管工作树对话，避免并行会话冲突\n- **语音统一上下文**：Talk、Discord、FaceTime、Twilio语音共享Agent上下文，语音答案支持委托至Agent\n- **角色模型限制**：管理员可为操作员角色设置模型策略，Agent、访客、模型选择器均强制执行\n\n🐛 Bug 修复：- 修复从2026.9.5升级时的堆栈溢出回滚问题\n- 修复Windows更新在状态迁移后卡住的问题\n- 修复macOS应用handoff无法激活的问题\n- 修复npm更新后HTTP客户端未加载的问题\n- 修复npm包更新中断后无法恢复的问题\n- 修复长对话滚动卡顿问题（#145777）\n- 修复长时间运行会话中页面无响应问题\n- 修复流式回复时页面卡顿问题\n- 修复会话切换或重载时历史未刷新问题",
+      "features": "- **更新安全机制**：备份每个状态和代理数据库再迁移，失败时回滚，快照清理失败时停止架构变更\n- **OpenAI Agents API**：新增插件支持在OpenAI托管或自托管环境运行Agent，含流式回复、导向、实时搜索、OpenClaw工具\n- **Sign in with ChatGPT**：新增ChatGPT登录方式（Beta版），支持API密钥和Codex登录并提供清晰的能力说明\n- **Gateway响应优化**：忙时聊天不再阻塞其他请求，移至后台线程处理历史、文件、数据库维护等操作\n- **聊天性能提升**：长对话滚动流畅，作曲家打字响应迅速，流式回复不再卡顿，会话切换加载更快\n- **原生Apple聊天**：macOS/iOS显示消息时间、模型名称、Agent身份，支持文件和音频附件，macOS新增命令面板\n- **重启连续性**：重启后进行中的工作turn和编辑保留，ACP运行不再因重启取消，配置重载时保持运行\n- **工作树会话隔离**：从web/iOS/Android启动隔离的托管工作树对话，避免并行会话冲突\n- **语音统一上下文**：Talk、Discord、FaceTime、Twilio语音共享Agent上下文，语音答案支持委托至Agent\n- **角色模型限制**：管理员可为操作员角色设置模型策略，Agent、访客、模型选择器均强制执行",
+      "bug_fixes": "- 修复从2026.9.5升级时的堆栈溢出回滚问题\n- 修复Windows更新在状态迁移后卡住的问题\n- 修复macOS应用handoff无法激活的问题\n- 修复npm更新后HTTP客户端未加载的问题\n- 修复npm包更新中断后无法恢复的问题\n- 修复长对话滚动卡顿问题（#145777）\n- 修复长时间运行会话中页面无响应问题\n- 修复流式回复时页面卡顿问题\n- 修复会话切换或重载时历史未刷新问题",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "The Strangest Idea in the World",
       "url": "https://www.experimental-history.com/p/the-strangest-idea-in-the-world",
       "summary": "coming soon to a bookshelf near you",
@@ -23240,5 +23252,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-09-30 05:46:56"
+  "last_updated": "2026-09-30 16:13:25"
 }
