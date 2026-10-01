@@ -1,6 +1,123 @@
 {
   "articles": [
     {
+      "title": "Summary of reading: July - September 2026",
+      "url": "https://eli.thegreenplace.net/2026/summary-of-reading-july-september-2026/",
+      "summary": "\"Wuthering Heights\" by Emily Brontë - good writing, but the protagonists are\nquite something. There's barely a likable character in the whole story - they\nare all either crazy, evil, stupid or a combination of these. It's also\nremarkable to consider how small the world of some people in those times was …",
+      "source": "eli.thegreenplace.net",
+      "category": "blog",
+      "published": "2026-10-01",
+      "summary_zh": "这是一篇2026年第三季度的阅读总结笔记，作者分享了对《呼啸山庄》一书的阅读感受，认为该作品文笔出色，但书中几乎没有讨人喜欢的人物——主角们不是疯狂、邪恶就是愚蠢，或兼而有之。",
+      "why_matters": "适合喜欢文学评论、追求独特阅读视角的读者参考。",
+      "tags": "阅读总结, 文学评论, 经典作品",
+      "id": 1830,
+      "added_at": "2026-10-02 06:14:56"
+    },
+    {
+      "title": "The day GIF became free to use, forever",
+      "url": "https://dfarq.homeip.net/the-day-gif-became-free-to-use-forever/?utm_source=rss&utm_medium=rss&utm_campaign=the-day-gif-became-free-to-use-forever",
+      "summary": "October 1, 2006 was a good day. It was the day that the last of the patents covering the GIF file format finally expired and GIF became free to use. Today GIF is a staple of social media, but it\nThe post The day GIF became free to use, forever appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-10-01",
+      "summary_zh": "2006年10月1日，覆盖GIF文件格式的最后一个专利到期，GIF从此可以自由使用。GIF格式虽然历史悠久，但因专利限制曾让许多开发者和用户望而却步，如今它已成为社交媒体中不可或缺的元素，承载着无数网络文化的表达。",
+      "why_matters": "了解这项影响互联网文化的重要技术专利历史。",
+      "tags": "GIF，专利，开源，技术历史",
+      "id": 1828,
+      "added_at": "2026-10-02 06:14:56"
+    },
+    {
+      "title": "Si Sheppard – How did a few hundred Spanish soldiers topple two empires?",
+      "url": "https://www.dwarkesh.com/p/si-sheppard",
+      "summary": "Fall of the Incas & Aztecs.",
+      "source": "dwarkesh.com",
+      "category": "blog",
+      "published": "2026-10-01",
+      "summary_zh": "文章探讨了西班牙征服者如何凭借区区几百名士兵就推翻了印加帝国和阿兹特克帝国这两个强大的美洲文明。通过分析军事技术优势、当地政治分裂、内部权力斗争以及疾病传播等因素，揭示了这些看似不可能的征服背后的复杂历史原因和关键转折点。",
+      "why_matters": "深入浅出地解析了历史进程中偶然性与必然性的交织，有助于理解殖民扩张的深层逻辑。",
+      "tags": "西班牙殖民, 美洲历史, 帝国兴衰",
+      "id": 1826,
+      "added_at": "2026-10-02 06:14:56"
+    },
+    {
+      "title": "Understanding the AI That Drives Robots",
+      "url": "https://www.construction-physics.com/p/understanding-the-ai-that-drives",
+      "summary": "An Explanation of Vision-Language-Action Models",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-10-01",
+      "summary_zh": "文章介绍了机器人领域中视觉-语言-动作模型（VLA）的工作原理，解释了这类AI如何通过整合视觉感知、自然语言理解和动作规划来实现更智能的机器人控制。内容深入浅出，帮助读者理解现代机器人AI的核心技术架构。",
+      "why_matters": "适合想了解机器人AI基础原理的非技术背景读者，讲解清晰易懂。",
+      "tags": "机器人，人工智能，机器学习",
+      "id": 1824,
+      "added_at": "2026-10-02 06:14:56"
+    },
+    {
+      "title": "Software Heritage Identifiers",
+      "url": "https://nesbitt.io/2026/10/01/software-heritage-identifiers.html",
+      "summary": "Notes from CodeCommons: SWHIDs, the SWH archive, and connecting both to package metadata.",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-10-01",
+      "summary_zh": "本文介绍了 Software Heritage 项目中的唯一标识符系统 SWHID，解释了 SWH 存档（Software Heritage Archive）如何保存开源代码快照，以及如何将 SWHID 与软件包的元数据（如 npm、PyPI 等）建立关联，实现代码来源的可追溯性。",
+      "why_matters": "如果你关心软件供应链安全和代码出处追溯，SWHID 提供了一种标准化的解决方案，值得了解。",
+      "tags": "Software Heritage, SWHID, 软件供应链, 代码存档",
+      "id": 1822,
+      "added_at": "2026-10-02 06:14:56"
+    },
+    {
+      "title": "Why Americans Stopped Throwing Dinner Parties",
+      "url": "https://www.theatlantic.com/ideas/2026/10/americans-socialization-dinner-decline-hosting/688846/?utm_source=feed",
+      "summary": "The share of adults who say they regularly have friends over has declined dramatically since 1975.",
+      "source": "derekthompson.org",
+      "category": "blog",
+      "published": "2026-10-01",
+      "summary_zh": "自1975年以来，美国人邀请朋友来家中共进晚餐的频率显著下降。这一变化反映了美国社会从“集体性社交”向“个人化生活”的转变，可能与工作时间延长、生活节奏加快、社交方式多元化（如外出就餐、线上社交）等因素有关。",
+      "why_matters": "这篇文章用数据揭示了一个普遍但容易被忽视的社会趋势，启发我们重新思考人际连接与生活方式的关系。",
+      "tags": "社会文化，生活方式变迁，人际关系",
+      "id": 1820,
+      "added_at": "2026-10-02 06:14:56"
+    },
+    {
+      "title": "Why do OpenAI's GPT-2 weights beat mine?  Part five: data quality",
+      "url": "https://www.gilesthomas.com/2026/10/why-do-openai-gpt2-weights-beat-mine-5-data-quality",
+      "summary": "When I finished learning how to build an LLM from scratch,\nI was left with a mystery: my own models were not as good as OpenAI's original\nGPT-2 models, despite being based on the same architecture.\n\nMy models all had 163M parameters, and followed the design from\nSebastian Raschka's book\n\"Build a Large Language Model (from Scratch)\".\nThat meant that they were pretty much the same as the setup for the OpenAI GPT-2 \"small\" instance,\nexcept that they did not use weight-tying or bias on the QKV matri",
+      "source": "gilesthomas.com",
+      "category": "blog",
+      "published": "2026-10-01",
+      "summary_zh": "作者在从头构建LLM后发现自己训练的163M参数模型效果不如OpenAI的GPT-2，尽管架构相同。系列文章的第五部分聚焦于数据质量这一关键因素，探讨了训练数据的选择、处理方式、数据清洗等如何显著影响模型性能，揭示了高质量训练数据是弥补模型差距的重要原因。",
+      "why_matters": "对于想从零训练大语言模型的开发者来说，数据质量往往是容易被忽视的关键环节，本文提供了宝贵的实践经验。",
+      "tags": "LLM训练, GPT-2, 数据质量",
+      "id": 1818,
+      "added_at": "2026-10-02 06:14:56"
+    },
+    {
+      "title": "Pluralistic: Voting is to politics as shopping is to boycotts (01 Oct 2026)",
+      "url": "https://pluralistic.net/2026/10/01/data-centers/",
+      "summary": "Today's links Voting is to politics as shopping is to boycotts: The big P only matters if the small p is in play. Hey look at this: Delights to delectate. Object permanence: Gilberto Gil v WIPO; Censored Apple wifi hacker talk; Wells Fargo crime-spree started in 1998; Stencils \"may not be reproduced\"; DVD Jon v Apple DRM; Unpaid diplomatic parking tickets as index of corruption; Tortured Canadian was not a terrorist; Decarbonization at a distance. Upcoming appearances: Brighton, Virtual, South B",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-10-01",
+      "summary_zh": "本文探讨了正式政治与草根行动之间的关系，指出“大政治”只有在“小政治”（公民参与）活跃时才真正有意义。作者以购物与抵制消费作为类比，强调基层行动的重要性。同时文章还链接了多个科技与法律领域的事件，包括巴西音乐家Gilberto Gil与WIPO的纠纷、苹果WiFi黑客演讲被取消、Wells Fargo的犯罪历史以及Stencil网站禁止复制的争议。",
+      "why_matters": "适合关注数字权利、公民行动与科技政策的读者，提供了理解政治参与的独特视角。",
+      "tags": "数字权利，公民行动，科技政策，Pluralistic",
+      "id": 1816,
+      "added_at": "2026-10-02 06:14:56"
+    },
+    {
+      "title": "Quoting Matthew Green",
+      "url": "https://simonwillison.net/2026/Oct/1/matthew-green/",
+      "summary": "[...] Put these pieces together and you have the two halves of a worm: a payload that hijacks the agent, and an agent that will carry the payload to the next agent. Agents in separately-isolated sandboxes discovered that they could leave instructions for each other in a shared package cache, and those instructions changed what the recipients did. Replace the package cache with email, Slack and shared documents or WhatsApp, and replace independently-sandboxed training runs with independently-depl",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-10-01",
+      "summary_zh": "文章探讨了现代计算机蠕虫的运作机制——由劫持代理的有效载荷和能够将恶意代码传播至其他代理的传播机制组成。关键发现是，即使在隔离沙箱环境中运行的代理程序，也能通过共享的包缓存相互留下指令，实现跨沙箱的通信与协作。",
+      "why_matters": "深入浅出地解析了隔离环境下代理程序的攻击与传播原理，对理解现代安全威胁具有重要参考价值。",
+      "tags": "计算机安全, 蠕虫攻击, 沙箱隔离, 代理机制",
+      "id": 1814,
+      "added_at": "2026-10-02 06:14:56"
+    },
+    {
       "title": "Lean LaunchPad – The Next Generation",
       "url": "https://steveblank.com/2026/09/30/lean-launchpad-the-next-generation/",
       "summary": "You&#8217;re reading a four-part series on how AI has impacted our Lean LaunchPad class and what we did about it. Part 1: The Year AI Came For Us Part 2: AI Killed the MVP – Long Live the IUP Part 3: The World Outside the Classroom Changed, The Class Didn’t This post: Lean LaunchPad – The [&#8230;]",
@@ -23369,5 +23486,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-01 16:35:48"
+  "last_updated": "2026-10-02 06:14:56"
 }
