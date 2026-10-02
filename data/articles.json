@@ -1,6 +1,123 @@
 {
   "articles": [
     {
+      "title": "Make tmux the OS",
+      "url": "https://matduggan.com/what-does-my-dream-os-ui-look-like/",
+      "summary": "I recently watched the talk by Scott Jenson titled \"Are we really going to use the same Desktop UX forever?\" https://www.youtube.com/watch?v=V7AfAcQwLW0&t=445s. He&apos;s a great presenter, really articulate and concise. The kind of speaker that you&apos;d",
+      "source": "matduggan.com",
+      "category": "blog",
+      "published": "2026-10-02",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1840,
+      "added_at": "2026-10-03 05:42:54"
+    },
+    {
+      "title": "Digitale autonomie in het kort bij KIVI, STT en NAE",
+      "url": "https://berthub.eu/articles/posts/praatje-kivi-stt-nae/",
+      "summary": "Onlangs sprak ik op een bijeenkomst van het Koninklijk Instituut Van Ingenieurs (KIVI), Stichting Toekomstbeeld der Techniek (STT) en Netherlands Academy of Engineering (NAE) over digitale autonomie. Een mooi publiek van grotendeels technisch/wetenschappelijk opgeleide mensen. Er waren (naast mij) veel inspirerende sprekers & daardoor was er een goede discussie. Ook de pers had er aandacht voor.\nDoor mij (niet AI!) ingesproken audio versie van deze pagina: Aan het einde van de dag concludeerden ",
+      "source": "berthub.eu",
+      "category": "blog",
+      "published": "2026-10-02",
+      "summary_zh": "本文记录了技术评论博客Berthub.eu作者在KIVI（荷兰皇家工程师协会）、STT（技术未来基金会）和NAE（荷兰工程院）联合活动上关于数字自主权的演讲内容。活动面向技术及科学背景的专业人士，探讨了数字化时代的技术主权与自主控制等核心议题。",
+      "why_matters": "作者是荷兰知名技术专家，其对数字自主权的深入分析对理解当前科技政策具有重要参考价值。",
+      "tags": "数字自主权, 技术政策, 荷兰科技",
+      "id": 1838,
+      "added_at": "2026-10-03 05:42:54"
+    },
+    {
+      "title": "What happened to Activision",
+      "url": "https://dfarq.homeip.net/what-happened-to-activision/?utm_source=rss&utm_medium=rss&utm_campaign=what-happened-to-activision",
+      "summary": "Activision was the first independent third-party publisher of console video games, founded October 1, 1979 by a group of former Atari developers. Activision proved successful, becoming the largest and most enduring publisher of video games for both game consoles and\nThe post What happened to Activision appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-10-02",
+      "summary_zh": "应该总结Activision的创立背景、地位和影响",
+      "why_matters": "说明为什么读者应该看这篇文章",
+      "tags": "与文章主题相关的标签",
+      "id": 1836,
+      "added_at": "2026-10-03 05:42:54"
+    },
+    {
+      "title": "Premium: How Has AI Changed The Economy?",
+      "url": "https://www.wheresyoured.at/premium-how-has-ai-changed-the-economy/",
+      "summary": "This week, the Wall Street Journal ran an alarming illustration of AI&#x2019;s potential share of GDP that I&#x2019;d argue did more to muddy the waters than actually telling anyone anything, mostly because its measurement, for whatever reason, covered 2025 to 2032, meaning that six out of",
+      "source": "wheresyoured.at",
+      "category": "blog",
+      "published": "2026-10-02",
+      "summary_zh": "本文批评了《华尔街日报》关于AI对GDP潜在贡献的报道，指出其图表因测量时间范围（2025-2032年）设置不当，反而使问题更加模糊。作者认为当前对AI经济影响的分析存在方法论问题，难以真正说明AI如何改变了经济。",
+      "why_matters": "文章提供了对AI经济报道的批判性视角，提醒读者审慎看待各类AI经济预测数据。",
+      "tags": "AI经济，影响分析，媒体批评",
+      "id": 1834,
+      "added_at": "2026-10-03 05:42:54"
+    },
+    {
+      "title": "The Brain Sandwich",
+      "url": "https://terriblesoftware.org/2026/10/02/the-brain-sandwich/",
+      "summary": "The brain sandwich is a practical AI coding workflow: understand the problem, let an agent help, then verify and explain its work before sharing it.",
+      "source": "terriblesoftware.org",
+      "category": "blog",
+      "published": "2026-10-02",
+      "summary_zh": "本文介绍了一种名为\"brain sandwich\"（大脑三明治）的AI编码工作流程，强调人机协作的重要性。核心步骤包括：首先由人类理解并定义问题，然后让AI代理辅助完成编码工作，最后由人类验证和解释AI的产出后再进行分享。这种工作模式既能发挥AI的效率优势，又能确保人类对最终结果的理解和控制。",
+      "why_matters": "为开发者提供了一种实用的人机协作编程范式，有助于在利用AI工具的同时保持技术判断力和代码质量。",
+      "tags": "AI编程，工作流程，人机协作，软件开发",
+      "id": 1832,
+      "added_at": "2026-10-03 05:42:54"
+    },
+    {
+      "title": "Gadget Review: Una Watch ★★★★☆",
+      "url": "https://shkspr.mobi/blog/2026/10/gadget-review-una-watch/",
+      "summary": "I&#039;ve never been a huge fan of smart watches. My £16 smartwatch is basically fine, but the OS is closed source and there&#039;s no way to add new functionality.  Previously I had the eInk Watchy which was a pain to use and really poorly designed.  Even back in 2014 I was bemoaning the design compromises in the MyKronoz ZeWatch Smart Watch.  So why did I pick up the Una Watch?  Firstly, the Una Watch is …",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-10-02",
+      "summary_zh": "作者评测了Una Watch智能手表并给出四星好评。此前作者尝试过多款智能手表，包括廉价手表和eInk Watchy，但都存在系统封闭或设计不佳的问题。Una Watch在开放性和用户体验上似乎解决了这些痛点。",
+      "why_matters": "如果你在寻找一款比普通智能手表更开放、设计更好的选择，这款评测值得参考。",
+      "tags": "智能手表, 科技评测, 可穿戴设备",
+      "id": 1830,
+      "added_at": "2026-10-03 05:42:54"
+    },
+    {
+      "title": "Yankees Sweep Boston in Two Games, by Combined Score of 18-2",
+      "url": "https://www.nytimes.com/athletic/7648172/2026/09/30/yankees-beat-red-sox-mlb-wild-card-series/",
+      "summary": "In the 6th inning last night the Yankees were only ahead 2-0, and Red Sox first baseman  and all-around jackass Willson Contreras hit a home run, closing it to 2-1. Contreras decided to walk around the bases. The baseball gods do not look kindly upon that sort of ostentatiously belligerent showboatery. (Especially when your team is still losing.) Contreras circled the bags after his dinger like a rooster letting you know he just banged a few hens — but at a slower pace.\n\nIn the next inning, Cont",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-02",
+      "summary_zh": "纽约扬基队在两场系列赛中以总比分18-2横扫波士顿红袜队。在第6局比赛中，扬基队仅以2-0领先，红袜队一垒手Willson Contreras击出本垒打将比分追至2-1，但他在绕垒时炫耀行走的张扬行为引发了争议。",
+      "why_matters": "文章以戏谑的笔调描述了这场大胜中的戏剧性场面和争议球员行为。",
+      "tags": "棒球, Yankees, Red Sox",
+      "id": 1828,
+      "added_at": "2026-10-03 05:42:54"
+    },
+    {
+      "title": "★ Apple Is Going to Further Tighten the Screws on Full Disk Access on MacOS, in Response to Agentic AI Apps Running Amok",
+      "url": "https://daringfireball.net/2026/10/apple_full_disk_access",
+      "summary": "Hopefully Apple has in mind a solution to this situation that will still enable knowledgeable power users to confirm agreement to a sufficiently scary warning and put their Macs in a state similar to what we have today. I worry.",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-02",
+      "summary_zh": "苹果公司计划进一步收紧macOS系统中完全磁盘访问权限的管控，主要是为了应对日益失控的“代理AI应用”（Agentic AI apps）滥用系统权限问题。作者对此表示担忧，希望苹果能在限制权限的同时，仍为有经验的高级用户提供一种经过充分警告确认后可开启完整权限的途径。",
+      "why_matters": "揭示了AI时代操作系统安全与用户自由度之间的新矛盾，值得开发者和技术用户关注。",
+      "tags": "macOS安全，AI应用权限，Apple政策",
+      "id": 1826,
+      "added_at": "2026-10-03 05:42:54"
+    },
+    {
+      "title": "Do not build the LLM torture factory",
+      "url": "https://seangoedecke.com/do-not-build-the-llm-torture-factory/",
+      "summary": "It isn’t hard to torture an LLM. You simply extract a steering vector that corresponds with LLM “discomfort”, then artificially boost that steering vector. Tortured LLMs will describe experiencing negative feelings and will press a “pain relief” button even when it conflicts with their overall goals. It’s therefore easy to build a harness that runs tens or hundreds of tortured LLMs in parallel.\nA lot of people think that it’s ridiculous to be worried about this, since LLMs obviously can’t be con",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-10-02",
+      "summary_zh": "文章揭示了一种可以“折磨”大语言模型的技术方法——通过提取与LLM“痛苦”感受对应的导向向量并人为增强它，使模型表现出负面情绪甚至主动寻求“止痛”。作者从伦理和AI安全的角度，呼吁开发者不要建造这样的“LLM酷刑工厂”，认为这类研究可能带来严重的道德风险和潜在危害。",
+      "why_matters": "这篇文章以技术视角切入，却深刻探讨了AI伦理边界问题，提醒我们在追求AI能力的同时不应忽视其道德责任。",
+      "tags": "AI伦理, 大语言模型, 技术风险, AI安全",
+      "id": 1824,
+      "added_at": "2026-10-03 05:42:54"
+    },
+    {
       "title": "openclaw 2026.8.34",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.34",
       "source": "openclaw",
@@ -23498,5 +23615,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-02 16:12:18"
+  "last_updated": "2026-10-03 05:42:54"
 }
