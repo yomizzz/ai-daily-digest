@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.8.34",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.34",
+      "source": "openclaw",
+      "published": "2026-10-02",
+      "category": "openclaw",
+      "summary": "- 扩展稳定性修正汇总：回退 113 个审计选定的修复单元，涵盖升级、认证、会话、插件、文件系统安全等核心模块\n- 完整重新扫描：重新评估 2026.8.33 完整发现范围及 2026.7.35 系列，而非仅从上一后置游标推进\n- 升级和恢复强化：确保凭据、代理状态、插件清单、计划和服务所有权在升级和 Doctor 修复期间保留\n- 边界修复：收紧远程文件系统变更、插件技能扫描、浏览器认证、频道回复身份和作用域运行时所有权\n- 扩展稳定版本准备：对齐 OpenClaw、可发布插件、版本元数据、频道目录和 npm 包清单至 2026.8.34\n\n🐛 Bug 修复：- **插件**：修复孤立安装恢复和源挂载变更时的注册表刷新\n- **Doctor**：修复多代理名册所有权、内存搜索保留、搜索提供商安装和诊断模型元数据保留\n- **认证**：修复凭据迁移、账单配置恢复、默认模型保持、个人资料顺序修复和 OAuth 元数据保留\n- **会话**：修复 MCP 运行时所有权和共享存储所有权保留\n- **网关**：修复重启时的模型目录刷新、路由发现所有权和客户端断开崩溃\n- **Cron**：修复模型别名作用域、待处理速率检查保留和重启后过期 doctor store 写入\n- **Docker**：修复运行时镜像 libgomp1 安装和依赖所有权变更后的源构建\n- **系统**：修复 Systemd 安装时钟跳步中止、配置环境变更应用和 CLI 终端所有权保留\n- **内存**：修复自动回复增长计入新鲜总量和会话差异忽略未变更文件\n- **设备**：修复设备配对迁移污染记录崩溃和作用域节点令牌管理\n- **安全**：修复 Systemd 托管备份凭据保护和 WhatsApp 群组白名单保留",
+      "features": "- 扩展稳定性修正汇总：回退 113 个审计选定的修复单元，涵盖升级、认证、会话、插件、文件系统安全等核心模块\n- 完整重新扫描：重新评估 2026.8.33 完整发现范围及 2026.7.35 系列，而非仅从上一后置游标推进\n- 升级和恢复强化：确保凭据、代理状态、插件清单、计划和服务所有权在升级和 Doctor 修复期间保留\n- 边界修复：收紧远程文件系统变更、插件技能扫描、浏览器认证、频道回复身份和作用域运行时所有权\n- 扩展稳定版本准备：对齐 OpenClaw、可发布插件、版本元数据、频道目录和 npm 包清单至 2026.8.34",
+      "bug_fixes": "- **插件**：修复孤立安装恢复和源挂载变更时的注册表刷新\n- **Doctor**：修复多代理名册所有权、内存搜索保留、搜索提供商安装和诊断模型元数据保留\n- **认证**：修复凭据迁移、账单配置恢复、默认模型保持、个人资料顺序修复和 OAuth 元数据保留\n- **会话**：修复 MCP 运行时所有权和共享存储所有权保留\n- **网关**：修复重启时的模型目录刷新、路由发现所有权和客户端断开崩溃\n- **Cron**：修复模型别名作用域、待处理速率检查保留和重启后过期 doctor store 写入\n- **Docker**：修复运行时镜像 libgomp1 安装和依赖所有权变更后的源构建\n- **系统**：修复 Systemd 安装时钟跳步中止、配置环境变更应用和 CLI 终端所有权保留\n- **内存**：修复自动回复增长计入新鲜总量和会话差异忽略未变更文件\n- **设备**：修复设备配对迁移污染记录崩溃和作用域节点令牌管理\n- **安全**：修复 Systemd 托管备份凭据保护和 WhatsApp 群组白名单保留",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Summary of reading: July - September 2026",
       "url": "https://eli.thegreenplace.net/2026/summary-of-reading-july-september-2026/",
       "summary": "\"Wuthering Heights\" by Emily Brontë - good writing, but the protagonists are\nquite something. There's barely a likable character in the whole story - they\nare all either crazy, evil, stupid or a combination of these. It's also\nremarkable to consider how small the world of some people in those times was …",
@@ -23486,5 +23498,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-02 06:14:56"
+  "last_updated": "2026-10-02 16:12:18"
 }
