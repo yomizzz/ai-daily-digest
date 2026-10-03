@@ -1,6 +1,123 @@
 {
   "articles": [
     {
+      "title": "Altera Quartus Linux jtagd bug fixes",
+      "url": "https://www.downtowndougbrown.com/2026/10/altera-quartus-linux-jtagd-bug-fixes/",
+      "summary": "I went kind of overboard looking into issues with Altera USB Blaster clones a couple of years ago. While writing that post, I ran into some really frustrating intermittent problems in Linux with jtagd that I was never able to figure out: I also experienced a really weird unrelated problem in Quartus Programmer 18.1 in [&#8230;]",
+      "source": "downtowndougbrown.com",
+      "category": "blog",
+      "published": "2026-10-03",
+      "summary_zh": "作者回顾了在使用Altera USB Blaster克隆版时遇到的Linux环境下jtagd间歇性故障问题，分享了对此问题的深入调查过程和解决方案，同时提及了在Quartus中发现的另一个不相关的奇怪问题及其排查经历。",
+      "why_matters": "对于在Linux环境下使用Quartus和USB Blaster进行FPGA开发的工程师具有实际参考价值。",
+      "tags": "FPGA开发, Linux环境, Quartus, USB Blaster, JTAG调试",
+      "id": 1851,
+      "added_at": "2026-10-04 04:32:55"
+    },
+    {
+      "title": "Cull lumber at Menards",
+      "url": "https://dfarq.homeip.net/cull-lumber-at-menards/?utm_source=rss&utm_medium=rss&utm_campaign=cull-lumber-at-menards",
+      "summary": "The Home Depot near me stopped doing cull lumber. I don&#8217;t know if that&#8217;s just a local thing or if the whole chain stopped doing it. That sent me looking for alternatives, and I found one at Menards. Menards does\nThe post Cull lumber at Menards appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-10-03",
+      "summary_zh": "作者原本常去的Home Depot停止提供cull lumber（残次木材）服务，于是开始寻找其他替代方案，最终在Menards发现了仍然提供该项服务的门店。",
+      "why_matters": "对于需要购买建材且想节省成本的读者，了解哪些商店仍提供残次木材是个实用的购物信息。",
+      "tags": "Menards, Cull lumber, 建材购物",
+      "id": 1849,
+      "added_at": "2026-10-04 04:32:55"
+    },
+    {
+      "title": "Connect Sony WH-1000XM3 on Arch Linux and a buggy UGREEN Bluetooth adapter",
+      "url": "https://jayd.ml/2026/10/03/sony-headphones-action-bluetooth-adapter.html",
+      "summary": "Tried to connect to my Sony WH-1000XM3 headphones on Arch Linux KDE, it would try and connect but fail with The setup of WH-1000XM3 failed.",
+      "source": "jayd.ml",
+      "category": "blog",
+      "published": "2026-10-03",
+      "summary_zh": "作者在Arch Linux KDE环境下尝试连接Sony WH-1000XM3耳机时遇到连接失败的问题，经排查发现是使用了有bug的UGREEN蓝牙适配器导致的。文中记录了问题排查过程和最终解决方案。",
+      "why_matters": "提供了在Linux下连接特定蓝牙音频设备的实用故障排除经验。",
+      "tags": "Arch Linux, 蓝牙, 故障排除",
+      "id": 1847,
+      "added_at": "2026-10-04 04:32:55"
+    },
+    {
+      "title": "Reading List 2026-10-03",
+      "url": "https://www.construction-physics.com/p/reading-list-2026-10-03",
+      "summary": "A Senate permitting reform bill, the potential of Tesla&#8217;s Cybercab, the Navy&#8217;s $200 billion worth of shipyard renovations, returning a SR-71 to service, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-10-03",
+      "summary_zh": "本期阅读清单汇集了美国参议院许可改革法案、特斯拉Cybercab无人驾驶出租车的商业潜力、美国海军2000亿美元船厂升级计划以及SR-71黑鸟侦察机重返服役等多个领域的最新资讯，涵盖基础设施、交通、能源和国防等关键行业的技术与政策动态。",
+      "why_matters": "适合希望快速了解美国基础设施、新能源汽车和国防领域最新发展趋势的读者。",
+      "tags": "基础设施, 新能源汽车, 国防科技",
+      "id": 1845,
+      "added_at": "2026-10-04 04:32:55"
+    },
+    {
+      "title": "This Week in Package Management: 3 October 2026",
+      "url": "https://nesbitt.io/2026/10/03/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-10-03",
+      "summary_zh": "本期周报汇总了包管理生态圈的最新动态，涵盖主流包管理器（如npm、pip、cargo等）的新版本发布、安全漏洞公告以及行业重要文章，是包管理领域从业者了解近期技术变化的重要参考。",
+      "why_matters": "帮助包管理开发者快速掌握本周行业动态，节省信息筛选时间。",
+      "tags": "包管理,技术周报,开源生态",
+      "id": 1843,
+      "added_at": "2026-10-04 04:32:55"
+    },
+    {
+      "title": "Pluralistic: Economic probabilities for our grandchildren (03 Oct 2026)",
+      "url": "https://pluralistic.net/2026/10/03/full-employment/",
+      "summary": "Today's links Economic probabilities for our grandchildren: If only data centers would stop hogging all the copper. Hey look at this: Delights to delectate. Object permanence: RIAA v P2P; Infoseek's anti-terror brain-scanner; Copyrighting every phone number; Carving pumpkins with cookie-cutters; Polish women go on strike; Latent labor in material world; Hitler's meth; \"Flying Saucers Are Real!\"; Hope, not optimism; Broadcast Flag talk; David Suzuki's free research; \"Inquisitor's Apprentice\"; Cal",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-10-03",
+      "summary_zh": "本文探讨了代际经济预测话题，特别关注了数据中心快速发展导致的铜资源短缺问题，并收录了多个科技与数字权利相关的短文，包括RIAA对P2P网络的法律行动、版权争议等热点话题。",
+      "why_matters": "Pluralistic是知名科技作家Cory Doctorow的博客，内容兼具深度与广度，适合关注数字权利、科技政策及社会议题的读者。",
+      "tags": "数字权利，科技政策，代际经济，数据中心，版权争议",
+      "id": 1841,
+      "added_at": "2026-10-04 04:32:55"
+    },
+    {
+      "title": "Apple Confirms iPhone 18 Pro Max AT&T Cellular Issues, Affected Devices Require Hardware Replacement",
+      "url": "https://9to5mac.com/2026/10/02/apple-confirms-iphone-18-pro-max-att-cellular-issues-affected-devices-require-hardware-replacement/",
+      "summary": "In a statement to 9to5Mac, Apple said:\n\n\n  We have identified an issue affecting a small number of iPhone 18\nPro Max users on the AT&T network that may cause a device to lose\nservice and be unable to make calls. We released iOS 27.0.1\nearlier this week and strongly encourage all iPhone 18 Pro Max\nusers to update now, and are also issuing a carrier settings\nupdate today. These updates together are meant to help prevent\nthis issue from occurring.\n\n\nThe carrier settings update for the iPhone 18 Pro",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-03",
+      "summary_zh": "Apple确认部分iPhone 18 Pro Max用户在AT&T网络上出现蜂窝服务丢失和通话功能异常的问题。公司已在本周发布iOS 27.0.1更新进行修复，并强烈建议所有受影响用户尽快更新系统。",
+      "why_matters": "如果你使用的是iPhone 18 Pro Max且在AT&T网络下遇到信号问题，这篇文章提供了官方的解决方案。",
+      "tags": "Apple,iPhone 18 Pro Max,AT&T,蜂窝网络,系统更新",
+      "id": 1839,
+      "added_at": "2026-10-04 04:32:55"
+    },
+    {
+      "title": "Shipping is the foundation",
+      "url": "https://seangoedecke.com/shipping-is-the-foundation/",
+      "summary": "There are lots of skills involved in being a successful engineer at a big tech company. Running effective meetings, writing good design docs, fleshing out tickets and epics, improving team processes, tech leading small groups of engineers, and so on. But all of these rest on the foundation of being able to ship.\nIn Dota 2, the early game involves “laning”: competing with an enemy player to collect resources from a small area. There are many, many strategies and considerations involved in laning.",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-10-03",
+      "summary_zh": "文章指出，在大型科技公司成为成功工程师需要多种技能，如主持有效会议、撰写设计文档、完善工单和项目、改进团队流程、技术领导小团队等。然而，所有这些技能都建立在一个基础之上——交付（shipping）。文章标题表明，“能交付”才是工程师最核心的基础能力。",
+      "why_matters": "简洁点出工程师成长的关键——无论技能多么全面，能交付成果才是根本。",
+      "tags": "职业成长, 工程师技能, 团队协作",
+      "id": 1837,
+      "added_at": "2026-10-04 04:32:55"
+    },
+    {
+      "title": "Superpersuasion will look like bribery",
+      "url": "https://seangoedecke.com/superpersuasion-will-look-like-bribery/",
+      "summary": "The idea of “superpersuasion” has been floating around the AI safety community for decades. Now that powerful and difficult-to-control LLMs have appeared, people are again talking about the idea that a sufficiently intelligent AI might be able to persuade people to do whatever it wants.\n\n      \n    \n  \n  \n    \nThe classic1 version of this idea is an AI persuading some engineer to “let it out of the box”: to grant it access to the internet. The modern version of this idea is the “killswitch”, whe",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-10-03",
+      "summary_zh": "文章探讨了“超级说服力”（Superpersuasion）这一概念，即未来超级AI可能拥有超越人类理解的劝说能力，能够说服人们做任何事。作者认为，这种能力本质上将与贿赂无异——通过操控他人的认知和决策来实现自身目的。这一概念在AI安全社区已讨论数十年，而随着强大LLM的出现，其现实威胁正变得愈发紧迫。",
+      "why_matters": "深入思考AI说服力与操控的本质区别，帮助理解AI安全的关键风险。",
+      "tags": "AI安全，人工智能风险，AI伦理",
+      "id": 1835,
+      "added_at": "2026-10-04 04:32:55"
+    },
+    {
       "title": "openclaw 2026.9.8",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.8",
       "source": "openclaw",
@@ -23639,5 +23756,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-03 15:49:45"
+  "last_updated": "2026-10-04 04:32:55"
 }
