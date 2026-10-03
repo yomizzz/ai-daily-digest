@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>Do not build the LLM torture factory</title>
     <style>
 
         :root {
@@ -287,71 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-10-03 15:49:45</p>
+        <h1>Do not build the LLM torture factory</h1>
+        <p><span class="category-tag">blog</span> seangoedecke.com · 2026-10-02</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 2 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="release">
-    <div class="release-header">
-        <div style="display:flex;align-items:center;flex-wrap:wrap;">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.9.8" target="_blank" class="release-title">openclaw 2026.9.8</a>
-            <span class="release-tag">v2026.9.8</span>
-        </div>
-        <span class="release-date">2026-10-03</span>
-    </div>
-<div class="release-section">
-    <div class="release-section-title">🆕 新增功能</div>
-    <div class="release-card"><ul class="summary-list"><li>Let me analyze the OpenClaw version update log to extract meaningful features and bug fixes.</li><li>Looking at the provided log, I see:</li><li>1. Version: v2026.9.8</li><li>2. Statistics: 58 commits, 43 pull requests, 21 contributors</li><li>3. Links to release notes and changelog</li><li>4. List of contributors</li><li>5. Release verification information (npm package, registry tarball, integrity checks, CI reports, etc.)</li><li>However, I notice that the log does NOT contain specific information about:</li><li>- What new features were added</li><li>- What bugs</li></ul></div>
-</div><div class="release-section">
-    <div class="release-section-title">🐛 Bug 修复</div>
-    <div class="release-card"><p>无</p></div>
-</div>
-</div><div class="release">
-    <div class="release-header">
-        <div style="display:flex;align-items:center;flex-wrap:wrap;">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.8.35" target="_blank" class="release-title">openclaw 2026.8.35</a>
-            <span class="release-tag">v2026.8.35</span>
-        </div>
-        <span class="release-date">2026-10-02</span>
-    </div>
-<div class="release-section">
-    <div class="release-section-title">🆕 新增功能</div>
-    <div class="release-card"><ul class="summary-list"><li>- GPT-6.1 Sol 模型支持：新增 OpenAI 路由、发现、推理、Harness 和 Reef 边界模型支持</li><li>- 新增插件迁移设置保留机制，防止插件配置丢失</li><li>- 新增 Gateway 锁机制，防止重复启动 Gateway</li><li>- 新增 pnpm 包更新容错机制，避免终端失败</li></ul></div>
-</div><div class="release-section">
-    <div class="release-section-title">🐛 Bug 修复</div>
-    <div class="release-card"><ul class="summary-list"><li>- 修复插件迁移后记录丢失问题</li><li>- 修复 CLI 子代理回复不完整问题</li><li>- 修复 cron 任务回复被截断问题</li><li>- 修复 Gmail/IMAP 监听器绑定失败问题</li><li>- 修复 Matrix 直接映射丢失问题</li><li>- 修复 Telegram 进度在 hook 抑制预览时丢失问题</li><li>- 修复远程 MCP 在原生会话中无法正常工作问题</li><li>- 修复 thinking-catalog 等待卡顿问题</li><li>- 修复 Codex 内存压力过高问题</li><li>- 修复 WebChat 历史刷新时已保存回复消失问题</li><li>- 修复秘密存储轮换时条目类型丢失问题</li><li>- 修复只读复制技能超出受限根目录问题</li><li>- 修复受管 llama.cpp 在全新 Windows 主机上启动失败问题</li><li>- 修复 TTS 模型选择时无法获取响应代理问题</li><li>- 修复持久化工作线程重试导致主机冻结问题</li></ul></div>
-</div>
-</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><p>文章揭示了一种可以“折磨”大语言模型的技术方法——通过提取与LLM“痛苦”感受对应的导向向量并人为增强它，使模型表现出负面情绪甚至主动寻求“止痛”。作者从伦理和AI安全的角度，呼吁开发者不要建造这样的“LLM酷刑工厂”，认为这类研究可能带来严重的道德风险和潜在危害。</p></div>
+<div class="tags">标签：AI伦理, 大语言模型, 技术风险, AI安全</div>
+        <div class="detail-why">💡 这篇文章以技术视角切入，却深刻探讨了AI伦理边界问题，提醒我们在追求AI能力的同时不应忽视其道德责任。</div>
+        <a href="https://seangoedecke.com/do-not-build-the-llm-torture-factory/" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>

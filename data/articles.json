@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.9.8",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.8",
+      "source": "openclaw",
+      "published": "2026-10-03",
+      "category": "openclaw",
+      "summary": "Let me analyze the OpenClaw version update log to extract meaningful features and bug fixes.\n\nLooking at the provided log, I see:\n1. Version: v2026.9.8\n2. Statistics: 58 commits, 43 pull requests, 21 contributors\n3. Links to release notes and changelog\n4. List of contributors\n5. Release verification information (npm package, registry tarball, integrity checks, CI reports, etc.)\n\nHowever, I notice that the log does NOT contain specific information about:\n- What new features were added\n- What bugs",
+      "features": "Let me analyze the OpenClaw version update log to extract meaningful features and bug fixes.\n\nLooking at the provided log, I see:\n1. Version: v2026.9.8\n2. Statistics: 58 commits, 43 pull requests, 21 contributors\n3. Links to release notes and changelog\n4. List of contributors\n5. Release verification information (npm package, registry tarball, integrity checks, CI reports, etc.)\n\nHowever, I notice that the log does NOT contain specific information about:\n- What new features were added\n- What bugs",
+      "bug_fixes": "无",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Make tmux the OS",
       "url": "https://matduggan.com/what-does-my-dream-os-ui-look-like/",
       "summary": "I recently watched the talk by Scott Jenson titled \"Are we really going to use the same Desktop UX forever?\" https://www.youtube.com/watch?v=V7AfAcQwLW0&t=445s. He&apos;s a great presenter, really articulate and concise. The kind of speaker that you&apos;d",
@@ -126,6 +138,18 @@
       "summary": "- 扩展稳定性修正汇总：回退 113 个审计选定的修复单元，涵盖升级、认证、会话、插件、文件系统安全等核心模块\n- 完整重新扫描：重新评估 2026.8.33 完整发现范围及 2026.7.35 系列，而非仅从上一后置游标推进\n- 升级和恢复强化：确保凭据、代理状态、插件清单、计划和服务所有权在升级和 Doctor 修复期间保留\n- 边界修复：收紧远程文件系统变更、插件技能扫描、浏览器认证、频道回复身份和作用域运行时所有权\n- 扩展稳定版本准备：对齐 OpenClaw、可发布插件、版本元数据、频道目录和 npm 包清单至 2026.8.34\n\n🐛 Bug 修复：- **插件**：修复孤立安装恢复和源挂载变更时的注册表刷新\n- **Doctor**：修复多代理名册所有权、内存搜索保留、搜索提供商安装和诊断模型元数据保留\n- **认证**：修复凭据迁移、账单配置恢复、默认模型保持、个人资料顺序修复和 OAuth 元数据保留\n- **会话**：修复 MCP 运行时所有权和共享存储所有权保留\n- **网关**：修复重启时的模型目录刷新、路由发现所有权和客户端断开崩溃\n- **Cron**：修复模型别名作用域、待处理速率检查保留和重启后过期 doctor store 写入\n- **Docker**：修复运行时镜像 libgomp1 安装和依赖所有权变更后的源构建\n- **系统**：修复 Systemd 安装时钟跳步中止、配置环境变更应用和 CLI 终端所有权保留\n- **内存**：修复自动回复增长计入新鲜总量和会话差异忽略未变更文件\n- **设备**：修复设备配对迁移污染记录崩溃和作用域节点令牌管理\n- **安全**：修复 Systemd 托管备份凭据保护和 WhatsApp 群组白名单保留",
       "features": "- 扩展稳定性修正汇总：回退 113 个审计选定的修复单元，涵盖升级、认证、会话、插件、文件系统安全等核心模块\n- 完整重新扫描：重新评估 2026.8.33 完整发现范围及 2026.7.35 系列，而非仅从上一后置游标推进\n- 升级和恢复强化：确保凭据、代理状态、插件清单、计划和服务所有权在升级和 Doctor 修复期间保留\n- 边界修复：收紧远程文件系统变更、插件技能扫描、浏览器认证、频道回复身份和作用域运行时所有权\n- 扩展稳定版本准备：对齐 OpenClaw、可发布插件、版本元数据、频道目录和 npm 包清单至 2026.8.34",
       "bug_fixes": "- **插件**：修复孤立安装恢复和源挂载变更时的注册表刷新\n- **Doctor**：修复多代理名册所有权、内存搜索保留、搜索提供商安装和诊断模型元数据保留\n- **认证**：修复凭据迁移、账单配置恢复、默认模型保持、个人资料顺序修复和 OAuth 元数据保留\n- **会话**：修复 MCP 运行时所有权和共享存储所有权保留\n- **网关**：修复重启时的模型目录刷新、路由发现所有权和客户端断开崩溃\n- **Cron**：修复模型别名作用域、待处理速率检查保留和重启后过期 doctor store 写入\n- **Docker**：修复运行时镜像 libgomp1 安装和依赖所有权变更后的源构建\n- **系统**：修复 Systemd 安装时钟跳步中止、配置环境变更应用和 CLI 终端所有权保留\n- **内存**：修复自动回复增长计入新鲜总量和会话差异忽略未变更文件\n- **设备**：修复设备配对迁移污染记录崩溃和作用域节点令牌管理\n- **安全**：修复 Systemd 托管备份凭据保护和 WhatsApp 群组白名单保留",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
+      "title": "openclaw 2026.8.35",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.35",
+      "source": "openclaw",
+      "published": "2026-10-02",
+      "category": "openclaw",
+      "summary": "- GPT-6.1 Sol 模型支持：新增 OpenAI 路由、发现、推理、Harness 和 Reef 边界模型支持\n- 新增插件迁移设置保留机制，防止插件配置丢失\n- 新增 Gateway 锁机制，防止重复启动 Gateway\n- 新增 pnpm 包更新容错机制，避免终端失败\n\n🐛 Bug 修复：- 修复插件迁移后记录丢失问题\n- 修复 CLI 子代理回复不完整问题\n- 修复 cron 任务回复被截断问题\n- 修复 Gmail/IMAP 监听器绑定失败问题\n- 修复 Matrix 直接映射丢失问题\n- 修复 Telegram 进度在 hook 抑制预览时丢失问题\n- 修复远程 MCP 在原生会话中无法正常工作问题\n- 修复 thinking-catalog 等待卡顿问题\n- 修复 Codex 内存压力过高问题\n- 修复 WebChat 历史刷新时已保存回复消失问题\n- 修复秘密存储轮换时条目类型丢失问题\n- 修复只读复制技能超出受限根目录问题\n- 修复受管 llama.cpp 在全新 Windows 主机上启动失败问题\n- 修复 TTS 模型选择时无法获取响应代理问题\n- 修复持久化工作线程重试导致主机冻结问题",
+      "features": "- GPT-6.1 Sol 模型支持：新增 OpenAI 路由、发现、推理、Harness 和 Reef 边界模型支持\n- 新增插件迁移设置保留机制，防止插件配置丢失\n- 新增 Gateway 锁机制，防止重复启动 Gateway\n- 新增 pnpm 包更新容错机制，避免终端失败",
+      "bug_fixes": "- 修复插件迁移后记录丢失问题\n- 修复 CLI 子代理回复不完整问题\n- 修复 cron 任务回复被截断问题\n- 修复 Gmail/IMAP 监听器绑定失败问题\n- 修复 Matrix 直接映射丢失问题\n- 修复 Telegram 进度在 hook 抑制预览时丢失问题\n- 修复远程 MCP 在原生会话中无法正常工作问题\n- 修复 thinking-catalog 等待卡顿问题\n- 修复 Codex 内存压力过高问题\n- 修复 WebChat 历史刷新时已保存回复消失问题\n- 修复秘密存储轮换时条目类型丢失问题\n- 修复只读复制技能超出受限根目录问题\n- 修复受管 llama.cpp 在全新 Windows 主机上启动失败问题\n- 修复 TTS 模型选择时无法获取响应代理问题\n- 修复持久化工作线程重试导致主机冻结问题",
       "why_matters": "查看新增功能与 Bug 修复详情",
       "tags": "OpenClaw"
     },
@@ -23615,5 +23639,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-03 05:42:54"
+  "last_updated": "2026-10-03 15:49:45"
 }
