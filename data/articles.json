@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "title": "Weekly Update 524: Live From Copenhagen",
+      "url": "https://www.troyhunt.com/weekly-update-524/",
+      "summary": "I&apos;m in Denmark! Well, just, I&apos;m now at Copenhagen airport ready to begin the long trek home, with the final event at GOTO now done and going just perfectly. This week, there are two ShinyHunters arrests in the news: Pepijn in the Netherlands and then Saif",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-10-04",
+      "summary_zh": "本文是Troy Hunt在哥本哈根机场写下的周更，他刚结束了在GOTO大会的活动并表示非常成功。同时，文章提到ShinyHunters黑客组织的两名成员（荷兰的Pepijn和Saif）已被逮捕的消息。",
+      "why_matters": "了解网络安全领域最新动态及ShinyHunters黑客组织打击进展。",
+      "tags": "网络安全, Troy Hunt, GOTO大会",
+      "id": 1856,
+      "added_at": "2026-10-05 04:46:46"
+    },
+    {
+      "title": "Weekend content through the end of 2026",
+      "url": "https://dfarq.homeip.net/weekend-content-through-the-end-of-2026/?utm_source=rss&utm_medium=rss&utm_campaign=weekend-content-through-the-end-of-2026",
+      "summary": "About three and a half years ago, I had to make some changes to my format and workflow. It wasn&#8217;t the first time I&#8217;d done things like that and probably won&#8217;t be the last. And usually when I make changes,\nThe post Weekend content through the end of 2026 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-10-04",
+      "summary_zh": "作者回顾了约三年半前对内容格式和工作流程所做的调整，分享了持续优化的经验与心得，并宣布了将周末内容更新计划延续至2026年底的安排，强调这类改变往往需要不断迭代。",
+      "why_matters": "适合关注博客运营和个人内容创作流程优化的读者，提供长期内容规划的参考思路。",
+      "tags": "内容创作, 工作流程, 博客运营, 个人规划",
+      "id": 1854,
+      "added_at": "2026-10-05 04:46:46"
+    },
+    {
+      "title": "Modal logic and topology",
+      "url": "https://www.johndcook.com/blog/2026/10/04/modal-topology/",
+      "summary": "You can&#8217;t say much about modal logic in general. You have to be more specific to get anywhere. You have to choose some axioms. Ideally the axioms you need for your application correspond to a named set of axioms that has been studied before. The situation is similar in point-set topology. You can&#8217;t say very [&#8230;]\nThe post Modal logic and topology first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-10-04",
+      "summary_zh": "本文探讨了模态逻辑研究的必要条件，指出泛泛讨论模态逻辑难以取得进展，必须选择具体的公理系统才能深入研究。作者将模态逻辑与点集拓扑进行类比，认为选择公理时应优先考虑与已有研究对应的命名公理集，以便利用前人积累的成果。",
+      "why_matters": "适合对逻辑学和拓扑学交叉领域感兴趣的读者，帮助理解如何系统地学习和应用模态逻辑。",
+      "tags": "模态逻辑，拓扑学，公理系统",
+      "id": 1852,
+      "added_at": "2026-10-05 04:46:46"
+    },
+    {
+      "title": "Topological models of modal logic",
+      "url": "https://www.johndcook.com/blog/2026/10/04/topological-models-of-modal-logic/",
+      "summary": "The previous post discussed a superficial connection between modal logic and topology, that both use the terms regular and normal to indicate added sets of axioms. McKinsey and Tarski developed a deeper connection between modal logic and topology that we&#8217;ll discuss here. Starting with a topological space X and a proposition p, define [[p]] as the set [&#8230;]\nThe post Topological models of modal logic first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-10-04",
+      "summary_zh": "文章介绍了McKinsey和Tarski建立的模态逻辑与拓扑学之间的深层数学联系。文章指出，虽然两者在术语（如regular、normal）上存在表面相似性，但这篇后续文章深入探讨了比之前讨论更为本质的数学关联，揭示了模态逻辑系统与拓扑空间结构之间深层的对应关系。",
+      "why_matters": "适合对数理逻辑和拓扑学交叉领域感兴趣的读者，能帮助理解数学不同分支之间的深刻联系。",
+      "tags": "模态逻辑，拓扑学，数理逻辑，McKinsey-Tarski",
+      "id": 1850,
+      "added_at": "2026-10-05 04:46:46"
+    },
+    {
+      "title": "Miquel’s pentagon theorem",
+      "url": "https://www.johndcook.com/blog/2026/10/04/miquels-pentagon-theorem/",
+      "summary": "An earlier post presented an elegant plane geometry theorem discovered by the 19th century school teacher Auguste Miquel. This post presents his pentagon theorem. Start with a pentagon. It may be irregular, but it needs to be convex. Extend each of the sides of the pentagon to form a star, then draw give circles, one [&#8230;]\nThe post Miquel’s pentagon theorem first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-10-04",
+      "summary_zh": "本文介绍了19世纪学校教师Auguste Miquel发现的五边形定理。该定理从任意凸五边形出发，将其各边延长形成星形，然后连接特定交点，能够得到一个优美的几何结论——这些交点将共圆于某个圆上，展现了平面几何中简洁而深刻的关联。",
+      "why_matters": "虽然摘要被截断，但仅凭开头就能感受到Miquel定理的优雅之处，是几何爱好者不可错过的经典定理。",
+      "tags": "平面几何，五边形定理，几何证明",
+      "id": 1848,
+      "added_at": "2026-10-05 04:46:46"
+    },
+    {
+      "title": "My Pitch for the New Season of Doctor Who",
+      "url": "https://shkspr.mobi/blog/2026/10/my-pitch-for-the-new-season-of-doctor-who/",
+      "summary": "With the news that the BBC are tendering for a new series of Doctor Who, I thought I&#039;d write down what I want from the show. This is, to be fair, pure fan-service wankery with zero chance of being made. I&#039;ve based it on the oft-made observation that Hollywood is obsessed with remaking successful films rather than trying to remake unsuccessful ones.  Do we really need another Spider-Man origin…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-10-04",
+      "summary_zh": "作者在BBC公布新一季《神秘博士》招标消息后，分享了他对新版的期待和建议。这是一篇充满粉丝热情的文章，作者自嘲这些想法“纯属粉丝自嗨”，几乎不可能被采纳，但表达了对节目未来发展的个人愿景。",
+      "why_matters": "适合《神秘博士》粉丝阅读，能引发对剧集未来走向的思考和讨论。",
+      "tags": "神秘博士,英剧,粉丝观点",
+      "id": 1846,
+      "added_at": "2026-10-05 04:46:46"
+    },
+    {
+      "title": "Why My Asus Laptop Kept Rebooting After Sleep and How to Fix it",
+      "url": "https://idiallo.com/blog/asus-laptop-keeps-rebooting-after-sleep",
+      "summary": "Three years ago, I bought an Asus laptop, specifically the Zenbook Pro 17. It's a powerful machine and works just fine for my needs, but it had one problem that made me want to either return it or throw it out the window.\t\t\tI would work on projects for hours on end and close the lid when I was done. I haven't manually shut down a computer in more than 10 years. I only do so after a forced update or during a debugging session. So I would close the lid, and a couple of hours later I would open it ",
+      "source": "idiallo.com",
+      "category": "blog",
+      "published": "2026-10-04",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1844,
+      "added_at": "2026-10-05 04:46:46"
+    },
+    {
       "title": "Altera Quartus Linux jtagd bug fixes",
       "url": "https://www.downtowndougbrown.com/2026/10/altera-quartus-linux-jtagd-bug-fixes/",
       "summary": "I went kind of overboard looking into issues with Altera USB Blaster clones a couple of years ago. While writing that post, I ran into some really frustrating intermittent problems in Linux with jtagd that I was never able to figure out: I also experienced a really weird unrelated problem in Quartus Programmer 18.1 in [&#8230;]",
@@ -23756,5 +23847,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-04 15:57:38"
+  "last_updated": "2026-10-05 04:46:46"
 }
