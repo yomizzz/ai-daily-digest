@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "title": "How fast is Python 3.15?",
+      "url": "https://blog.miguelgrinberg.com/post/how-fast-is-python-3-15",
+      "summary": "It's October once again, and that means it is time to take the new release of Python for a spin (technically, it is the 3.15.0rc3 release that I'm using, the official 3.15 release is still a few days out). As I did with my Python 3.14 performance article of a year ago, today I'm sharing a new run of my informal Python benchmark, comparing Python 3.15 against previous interpreters all the way back to 3.10.\nIf you are not interested in the charts and the tables and just want to read my analysis, f",
+      "source": "miguelgrinberg.com",
+      "category": "blog",
+      "published": "2026-10-05",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1863,
+      "added_at": "2026-10-06 07:34:47"
+    },
+    {
+      "title": "The IBM Thinkpad’s 1992 debut",
+      "url": "https://dfarq.homeip.net/the-ibm-thinkpads-1992-debut/?utm_source=rss&utm_medium=rss&utm_campaign=the-ibm-thinkpads-1992-debut",
+      "summary": "On October 5, 1992, IBM released its first three Thinkpad models. IBM had portable computers before, starting with its luggable Portable PC from 1984 and PC Convertible from 1986. But none of them had the lasting success of the Thinkpad,\nThe post The IBM Thinkpad&#8217;s 1992 debut appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-10-05",
+      "summary_zh": "1992年10月5日，IBM正式发布了首批三款Thinkpad机型。在此之前，IBM已有多款便携电脑产品，包括1984年的Portable PC和1986年的PC Convertible，但这些早期产品都未能取得Thinkpad那样的持久成功，Thinkpad自此成为笔记本电脑领域的经典品牌。",
+      "why_matters": "了解Thinkpad这款传奇笔记本品牌的诞生历程及其背后的历史背景。",
+      "tags": "IBM, Thinkpad, 笔记本电脑历史, 科技产品",
+      "id": 1861,
+      "added_at": "2026-10-06 07:34:47"
+    },
+    {
+      "title": "Benchmark In Milliseconds",
+      "url": "https://matklad.github.io/2026/10/05/benchmark-milliseconds.html",
+      "summary": "How long should a micro benchmark run? My rule of thumb is to tweak the input size until the benchmark takes about 300ms, for the following reasons:",
+      "source": "matklad.github.io",
+      "category": "blog",
+      "published": "2026-10-05",
+      "summary_zh": "本文讨论了微基准测试（micro benchmark）的运行时长问题。作者建议将基准测试的运行时间调整到大约300毫秒，这作为一条实用的经验法则。300毫秒的时长能够在测量精度和等待时间之间取得良好平衡，既能获得足够稳定可靠的测量结果，又不会让测试过程过于耗时。",
+      "why_matters": "这是一篇简洁实用的性能测试指南，为开发者提供了明确可操作的基准测试时长建议。",
+      "tags": "性能测试, 基准测试, 最佳实践",
+      "id": 1859,
+      "added_at": "2026-10-06 07:34:47"
+    },
+    {
+      "title": "[RSS Club] Changes to the RSS and Atom feeds",
+      "url": "https://shkspr.mobi/blog/2026/10/rss-club-changes-to-the-rss-and-atom-feeds/",
+      "summary": "This content is exclusive to RSS and Atom subscribers. It is not on the web. Shhhhh!  A few weeks ago I accidentally broke some of your feed readers. I was using &#60;![CDATA[ … ]]&#62; blocks in the feed. That allows me to put in raw HTML without the need for escaping. Unfortunately, some feed readers unescaped text which should have remained escaped. Confusing, innit?  Anyway, if you&#039;ve a mind to, I&#039;d b…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-10-05",
+      "summary_zh": "这是RSS Club的独家内容，不对普通网页访问者开放。作者在几周前因在RSS feeds中使用了<![CDATA[...]]>块格式（允许直接嵌入原始HTML而无需转义），意外导致部分feed readers无法正常读取内容，引发了技术兼容性问题。",
+      "why_matters": "适合对RSS/Atom技术细节和订阅服务运营感兴趣的用户了解feed格式的潜在兼容性问题。",
+      "tags": "RSS技术, Atom feeds, Web开发",
+      "id": 1857,
+      "added_at": "2026-10-06 07:34:47"
+    },
+    {
+      "title": "Pluralistic: Scrutinized (05 Oct 2026)",
+      "url": "https://pluralistic.net/2026/10/05/pervert-glasses/",
+      "summary": "Today's links Scrutinized: Pervert glasses vs the authentic self. Hey look at this: Delights to delectate. Object permanence: DRM-free in the UK; Maple-leaf roses; Italian Wikipedia shuts down; Vancouver's property speculator tax works; Ex-Soviet leftists launch \"September\"; \"The Every\"; Nielsen x Chinese internet; Get-a-cluevog; Cat EULA; Heart carafe; Millennials screwed; Apple's unlawful evil. Upcoming appearances: Virtual, South Bend, Hudson, Calgary, Winnipeg, Paris, OVancouver, Victoria, O",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-10-05",
+      "summary_zh": "本期Pluralistic汇集了多个值得关注的科技与社会话题，包括关于\"Pervert glasses\"与真实身份的讨论、英国DRM-free的最新进展、意大利语维基百科暂停运营的消息，以及温哥华房产投机税政策效果评估等。Cory Doctorow一如既往地以链接加简短评论的方式，呈现数字权利、城市政策与文化现象等多元议题。",
+      "why_matters": "适合关注数字权益、科技伦理和全球社会动态的读者，Cory Doctorow的选材视角独特，能帮助你快速了解当天值得深思的科技文化热点。",
+      "tags": "数字权益, 科技评论, 多元链接",
+      "id": 1855,
+      "added_at": "2026-10-06 07:34:47"
+    },
+    {
+      "title": "Ternus and Cook Tweet Brief Remembrances on the 15th Anniversary of Steve Jobs’s Death",
+      "url": "https://x.com/johnternus/status/2107093462118199562",
+      "summary": "John Ternus, posting on X:\n\n\n  The way Steve taught us to care about every detail, every\nexperience, every person, still guides our work today. Forever\ngrateful.\n\n\nTim Cook, also on X (with a photo I don’t recall seeing before):\n\n\n  There are people who leave a mark on the world, and then there are\npeople who change it entirely. Steve changed the world and so many\nlives in the process. He certainly changed my life forever. His\nspirit lives on in everything he created and everyone he inspired.\n\n\n",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-05",
+      "summary_zh": "在史蒂夫·乔布斯逝世15周年之际，苹果高级副总裁John Ternus和CEO Tim Cook分别在社交媒体X上发文缅怀。Ternus强调乔布斯对细节、体验和人的关怀精神至今指导着苹果的工作；Cook则发文并配以一张罕见的旧照片纪念这位已故创始人。",
+      "why_matters": "简短而真挚的纪念文字，展现了乔布斯留给苹果的深远精神遗产。",
+      "tags": "乔布斯, 苹果公司, 科技人物, 缅怀",
+      "id": 1853,
+      "added_at": "2026-10-06 07:34:47"
+    },
+    {
+      "title": "OpenAI Announces Their Text Watermarking Plans",
+      "url": "https://openai.com/index/eu-text-provenance/",
+      "summary": "OpenAI, today:\n\n\n  The EU AI Act requires generative AI providers to make generated\ntext identifiable in a machine-readable way. Text watermarking and\ndetection remain early technologies with significant limitations,\nand views about their benefits and responsible uses are still\ndeveloping. Our phased approach reflects both the EU AI Act\nrequirements as well as the technology’s limitations, with an\nemphasis on transparency about what a text watermark can and\ncannot tell people:\n\n\nStarting today, ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-05",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1851,
+      "added_at": "2026-10-06 07:34:47"
+    },
+    {
       "title": "Weekly Update 524: Live From Copenhagen",
       "url": "https://www.troyhunt.com/weekly-update-524/",
       "summary": "I&apos;m in Denmark! Well, just, I&apos;m now at Copenhagen airport ready to begin the long trek home, with the final event at GOTO now done and going just perfectly. This week, there are two ShinyHunters arrests in the news: Pepijn in the Netherlands and then Saif",
@@ -23847,5 +23938,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-05 16:41:46"
+  "last_updated": "2026-10-06 07:34:47"
 }
