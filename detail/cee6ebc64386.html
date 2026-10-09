@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 更新记录</title>
+    <title>Hermes Agent v0.21.6</title>
     <style>
 
         :root {
@@ -287,56 +287,24 @@
             .release-date { margin-left: 0; }
         }
 
-        .release-list { display: flex; flex-direction: column; }
-        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
-        .release:first-child { border-top: 1px solid var(--border-soft); }
-        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-        .release-title { font-family: Charter, Georgia, serif; font-size: 15px; font-weight: 500; color: var(--brand); text-decoration: none; }
-        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
-        .release-tag { display: inline-block; padding: 2px 8px; background: var(--brand-tint); color: var(--brand); border-radius: 3px; font-size: 11px; font-weight: 500; }
-        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
-        .release-card { background: var(--ivory); border: 1px solid var(--border-soft); border-radius: 6px; padding: 18px 22px; margin-top: 10px; }
-        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
-        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
-        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
-        .release-section { margin-bottom: 16px; }
-        .release-section:last-child { margin-bottom: 0; }
-        .release-section-title { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 8px; }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>🦄 OpenClaw 更新记录</h1>
-        <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-10-09 16:43:29</p>
+        <h1>Hermes Agent v0.21.6</h1>
+        <p><span class="category-tag">hermes</span> hermes-agent · 2026-10-08</p>
     </header>
 
     <main>
-        <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 1 个正式版本</div>
-        <div class="release-list" id="releases">
-<div class="release">
-    <div class="release-header">
-        <div style="display:flex;align-items:center;flex-wrap:wrap;">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.9.9" target="_blank" class="release-title">openclaw 2026.9.9</a>
-            <span class="release-tag">v2026.9.9</span>
-        </div>
-        <span class="release-date">2026-10-08</span>
-    </div>
-<div class="release-section">
-    <div class="release-section-title">🆕 新增功能</div>
-    <div class="release-card"><ul class="summary-list"><li>Looking at the provided text, I see:</li><li>1. Version: v2026.9.9</li><li>2. Statistics: 185 commits, 112 pull requests, 92 contributors</li><li>3. A long list of contributors</li><li>4. Links to release notes and changelog</li><li>5. The content is cut off</li><li>The problem is that the actual changelog content (the specific changes, features, and bug fixes) is NOT included in the provided text. The text only shows:</li><li>- Metadata (version, commit counts, contributor list)</li><li>- Links to external resources (which I cannot access)</li><li>- The content is</li></ul></div>
-</div><div class="release-section">
-    <div class="release-section-title">🐛 Bug 修复</div>
-    <div class="release-card"><p>无</p></div>
-</div>
-</div>
-        </div>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><ul class="summary-list"><li>首个基于稳定版发布管道构建的版本，包含经过测试的 Docker 镜像和发布标签</li><li>自 v0.21.5 以来的更新窗口：8,867 个非合并提交、8,342 个变更文件、2,106 个合并 PR、3,027 个关闭的 issue</li><li>CLI、TUI 和桌面端新增实时语音转录功能（`stt.streaming`）</li><li>语音对话路由至独立辅助模型（`auxiliary.voice_chat`），推理默认关闭</li><li>第三方插件在独立插件主机中隔离运行（`plugins.isolation: host`），并在设置页面新增插件管理入口</li><li>桌面端模型选择器支持收藏和固定模型置顶显示</li><li>订阅使用量在达到限制前显示提醒芯片，受速率限制的提供商显示原因和恢复时间</li><li>本地模型支持新增 `hermes model` 命令及 Linux x64/arm64 的 llama.cpp CUDA 加速</li><li>支持可插拔、分层的语言包，覆盖核心程序、桌面端和 TUI</li><li>新增摘要优先的 `hermes status` 命令（`--short`、`--full`）</li><li>审查面板新增 diff 范围选择器（未提交/分支/上一轮），并支持跟随对话保持常亮</li><li>cron、doctor 和 home-channel 在 cron 存储不可写时发出警告</li><li>凭证上传增加审批标志，终端命令支持不可见 Unicode 检测</li><li>Discord 集成新增机器人令牌验证和邀请链接输出</li><li>模型目录新增 GPT-6.1 Sol、Claude Sonnet 5.5 和 Haiku 5.5</li><li>数十个新社区插件</li><li>Docker 和 Hermes Cloud 更新至 stable/latest 标签，桌面端和 Termux 本次不更新</li><li>安全修复：修复仪表盘认证中 X-Forwarded-For 伪造、无限写审计日志、请求体无大小限制等漏洞</li></ul></div>
+<div class="tags">标签：Hermes Agent</div>
+        <div class="detail-why">💡 查看中文摘要与详情</div>
+        <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v0.21.6" target="_blank" class="original-link">📖 阅读英文原文 →</a>
     </main>
 
     <footer>
-        <p>由 GitHub Actions 自动更新 · 数据来源：<a href="https://github.com/openclaw/openclaw/releases" target="_blank">openclaw/openclaw</a></p>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
     </footer>
 </body>
 </html>

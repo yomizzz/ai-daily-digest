@@ -118,6 +118,28 @@
       "added_at": "2026-10-09 06:45:23"
     },
     {
+      "title": "Hermes Agent v0.21.6",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.21.6",
+      "source": "hermes-agent",
+      "published": "2026-10-08",
+      "category": "hermes",
+      "summary_zh": "- 首个基于稳定版发布管道构建的版本，包含经过测试的 Docker 镜像和发布标签\n- 自 v0.21.5 以来的更新窗口：8,867 个非合并提交、8,342 个变更文件、2,106 个合并 PR、3,027 个关闭的 issue\n- CLI、TUI 和桌面端新增实时语音转录功能（`stt.streaming`）\n- 语音对话路由至独立辅助模型（`auxiliary.voice_chat`），推理默认关闭\n- 第三方插件在独立插件主机中隔离运行（`plugins.isolation: host`），并在设置页面新增插件管理入口\n- 桌面端模型选择器支持收藏和固定模型置顶显示\n- 订阅使用量在达到限制前显示提醒芯片，受速率限制的提供商显示原因和恢复时间\n- 本地模型支持新增 `hermes model` 命令及 Linux x64/arm64 的 llama.cpp CUDA 加速\n- 支持可插拔、分层的语言包，覆盖核心程序、桌面端和 TUI\n- 新增摘要优先的 `hermes status` 命令（`--short`、`--full`）\n- 审查面板新增 diff 范围选择器（未提交/分支/上一轮），并支持跟随对话保持常亮\n- cron、doctor 和 home-channel 在 cron 存储不可写时发出警告\n- 凭证上传增加审批标志，终端命令支持不可见 Unicode 检测\n- Discord 集成新增机器人令牌验证和邀请链接输出\n- 模型目录新增 GPT-6.1 Sol、Claude Sonnet 5.5 和 Haiku 5.5\n- 数十个新社区插件\n- Docker 和 Hermes Cloud 更新至 stable/latest 标签，桌面端和 Termux 本次不更新\n- 安全修复：修复仪表盘认证中 X-Forwarded-For 伪造、无限写审计日志、请求体无大小限制等漏洞",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "openclaw 2026.9.9",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.9",
+      "source": "openclaw",
+      "published": "2026-10-08",
+      "category": "openclaw",
+      "summary": "Looking at the provided text, I see:\n1. Version: v2026.9.9\n2. Statistics: 185 commits, 112 pull requests, 92 contributors\n3. A long list of contributors\n4. Links to release notes and changelog\n5. The content is cut off\n\nThe problem is that the actual changelog content (the specific changes, features, and bug fixes) is NOT included in the provided text. The text only shows:\n- Metadata (version, commit counts, contributor list)\n- Links to external resources (which I cannot access)\n- The content is",
+      "features": "Looking at the provided text, I see:\n1. Version: v2026.9.9\n2. Statistics: 185 commits, 112 pull requests, 92 contributors\n3. A long list of contributors\n4. Links to release notes and changelog\n5. The content is cut off\n\nThe problem is that the actual changelog content (the specific changes, features, and bug fixes) is NOT included in the provided text. The text only shows:\n- Metadata (version, commit counts, contributor list)\n- Links to external resources (which I cannot access)\n- The content is",
+      "bug_fixes": "无",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Anti-Patterns in Software Blogging",
       "url": "https://refactoringenglish.com/blog/anti-patterns-software-blogging/",
       "summary": "In software development, we collect anti-patterns to recognize common traits that lead to poor outcomes in our software. I thought it would be helpful to do the same for software blogging, so I&rsquo;ve catalogued the most frequent mistakes I see from beginner bloggers.\n\nThe meandering intro\n\nPreamble still counts as meandering\n\n\n&ldquo;The reader knows everything I know except this one thing&rdquo;\nOverreliance on links\nThe sequel injection bug\nExcessive formality\nFumbling on the basics of rend",
@@ -24484,5 +24506,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-09 06:45:23"
+  "last_updated": "2026-10-09 16:43:29"
 }
