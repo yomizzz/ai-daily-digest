@@ -1,6 +1,149 @@
 {
   "articles": [
     {
+      "title": "Commodore’s knockoff Atari joystick from 1982",
+      "url": "https://dfarq.homeip.net/commodores-knockoff-atari-joystick-from-1982/?utm_source=rss&utm_medium=rss&utm_campaign=commodores-knockoff-atari-joystick-from-1982",
+      "summary": "When Commodore released its VIC-20 computer in 1981, it also released was a matching joystick and paddles. Cast in white plastic like the VIC-20, the Commodore VIC-1311 looked like a two-tone Atari joystick from the same time period. And the\nThe post Commodore&#8217;s knockoff Atari joystick from 1982 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-10-09",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1922,
+      "added_at": "2026-10-10 06:07:58"
+    },
+    {
+      "title": "An Ion Storm!, Part 1: The Ascent to Gamer Paradise",
+      "url": "https://www.filfre.net/2026/10/an-ion-storm-part-1-the-gamers-penthouse/",
+      "summary": "This article tells part of the story of John Romero. At id, the company was rolling in millions of dollars and we just had walls. It was the whole Carmack idea of, &#8220;I don&#8217;t need anything on my walls, all I need is a table and a computer and a chair,&#8221; instead of, &#8220;Okay, we&#8217;ve [&#8230;]",
+      "source": "filfre.net",
+      "category": "blog",
+      "published": "2026-10-09",
+      "summary_zh": "暂无摘要",
+      "why_matters": "通过 Romero 的亲身经历，见证 id Software 如何在简陋环境中创造《DOOM》等划时代游戏巨作。",
+      "tags": "John Romero, id Software, 游戏史, 游戏开发, 90年代游戏",
+      "id": 1920,
+      "added_at": "2026-10-10 06:07:58"
+    },
+    {
+      "title": "Premium: The Hater's Guide To Junk",
+      "url": "https://www.wheresyoured.at/premium-the-haters-guide-to-junk/",
+      "summary": "Ladies and gentlemen, we are in a glorious, splendiferous, outrageous era of crap!&#xa0;Some call it &#x201c;high-yield,&#x201d; some call it &#x201c;speculative-grade,&#x201d; but to those of us living in the real world, we know them as junk bonds, the formerly-sleepy world of below-",
+      "source": "wheresyoured.at",
+      "category": "blog",
+      "published": "2026-10-09",
+      "summary_zh": "文章以犀利幽默的笔调评论了垃圾债券（高收益债券/投机级债券）这一金融领域，作者称我们正处于一个“辉煌而离谱的垃圾时代”，讽刺性地将“高收益”和“投机级”等美化术语背后的本质揭露出来，评价这个“曾经沉睡的垃圾世界”的现状。",
+      "why_matters": "文章用独特的讽刺视角和幽默语言解构金融术语，适合想以轻松方式了解债券市场的读者。",
+      "tags": "垃圾债券, 金融讽刺, 投资评论",
+      "id": 1918,
+      "added_at": "2026-10-10 06:07:58"
+    },
+    {
+      "title": "Fun with low-rank vocab matrices (and a bonus test loss reduction?)",
+      "url": "https://www.gilesthomas.com/2026/10/low-rank-vocab-matrices",
+      "summary": "I was nerdsniped!  On the HF discussion page for one of the\nmodels I created for my previous post,\nAndrewThompson1233\nasked if I'd considered trying out factorised embeddings\n-- something he's using for his model, Maba, and which was previously used in some other models, like\nALBERT.\n\nIt's a really nifty idea; you use a similar trick to LoRA as a way of reducing the\nnumber of parameters used for your embeddings and your output head.  And for small\nmodels, those can be  a disproportionate number ",
+      "source": "gilesthomas.com",
+      "category": "blog",
+      "published": "2026-10-09",
+      "summary_zh": "本文探讨了在词嵌入矩阵上应用低秩分解（因子化嵌入）的技术，这是一种在ALBERT等模型中已验证的方法。作者受社区讨论启发，对比了自己之前模型的实现与ALBERT的方案，并分享了实验结果。",
+      "why_matters": "对于关注模型压缩和参数效率优化的NLP实践者，文章提供了关于因子化嵌入的实践经验分享。",
+      "tags": "词嵌入,模型压缩,低秩分解,ALBERT",
+      "id": 1916,
+      "added_at": "2026-10-10 06:07:58"
+    },
+    {
+      "title": "Concert Review: London Voices - Video Games Go Choral ★★★★☆",
+      "url": "https://shkspr.mobi/blog/2026/10/concert-review-london-voices-video-games-go-choral/",
+      "summary": "London&#039;s musical entertainment scene has something for everyone - from long-running blockbuster shows to no-name bands in dingy basements. Somewhere in the middle is monophonic plainchant versions of the Halo theme sung in a church.  The acoustics at St Martin in the Field are echoey. That makes it rather hard to hear the amplified announcement to turn off our phones, but makes an a cappella…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-10-09",
+      "summary_zh": "London Voices合唱团在St Martin in the Field教堂举办了一场以电子游戏音乐为主题的合唱演出，将《光环》（Halo）等经典游戏配乐改编为单声部圣咏风格呈现。教堂的声学环境营造出空灵回响的效果，虽然部分观众认为回音略显过重，但整体演出获得了四星好评，证明这种将现代游戏音乐与古典合唱形式相结合的大胆尝试取得了成功。",
+      "why_matters": "对于喜欢电子游戏音乐和古典合唱的观众来说，这场跨界演出提供了独特的音乐体验。",
+      "tags": "电子游戏音乐，合唱演出，伦敦演出现场",
+      "id": 1914,
+      "added_at": "2026-10-10 06:07:58"
+    },
+    {
+      "title": "Pluralistic: Thwarted (09 Oct 2026)",
+      "url": "https://pluralistic.net/2026/10/09/impunitism/",
+      "summary": "Today's links Thwarted: Behold the awesome destructive power of a fully operational billionaire. Hey look at this: Delights to delectate. Object permanence: Anthrax v National Inquirer; Grey goo v Second Life; Predictive policing v actual crime; Spooky cookies; California v algorithmic price-fixing; Tivo self-destructs; Disney exec endorses piracy; TSA v geologists; Handheld printer; Mandatory DRM for all Canadian music sales; Iceweasel; \"Snuff\"; \"Shade the Changing Girl\"; Latam surveillance; Sc",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-10-09",
+      "summary_zh": "本文探讨了科技亿万富翁在社会中的巨大影响力及其行动边界。文章通过多个案例——从生物安全议题到预测性警务，从隐私保护到算法定价——揭示了当权者试图干预和控制的企图，以及社会对其权力扩张的抵制与限制。主题涵盖科技巨头监管、隐私权保护和反垄断等当代重要议题。",
+      "why_matters": "对于关注科技权力、隐私保护和数字治理的读者，这篇文章提供了深入的思考视角。",
+      "tags": "科技权力, 隐私保护, 反垄断",
+      "id": 1912,
+      "added_at": "2026-10-10 06:07:58"
+    },
+    {
+      "title": "20 Minutes of Political Debate, Brought to You by Commercial Breaks",
+      "url": "https://idiallo.com/byte-size/20-minutes-of-political-debate",
+      "summary": "\"I'm sorry, you're out of time, we have to move on. Senator, what's your response? You have three minutes.\"\n\nWatching a political debate these days feels useless. Candidates get two minutes to make their case, and their opponents get even less time to reply. I'm reminded of Amusing Ourselves to Death by Neil Postman, where he argues that what passes for debate on TV is nothing more than an audition or a performance review. It is only an opportunity to come up with catchy sound bites or to appear",
+      "source": "idiallo.com",
+      "category": "blog",
+      "published": "2026-10-09",
+      "summary_zh": "文章批评了现代政治辩论中时间被严重压缩的现象，候选人往往只有两分钟甚至更短的时间发表观点，导致深度讨论变得不可能。作者以《娱乐至死》为参照，揭示了商业化媒体如何将政治辩论娱乐化、碎片化，最终削弱了公共话语的质量和民主讨论的深度。",
+      "why_matters": "文章以犀利视角揭示了政治传播被商业逻辑绑架的困境，引人深思公共领域话语权的流失问题。",
+      "tags": "政治传播，媒体批判，公共话语",
+      "id": 1910,
+      "added_at": "2026-10-10 06:07:58"
+    },
+    {
+      "title": "Radxa's Q8B has 2x the performance and expansion of the Pi 5",
+      "url": "https://www.jeffgeerling.com/blog/2026/radxa-q8b-double-pi-5/",
+      "summary": "There was a time I'd look at a board like the Radxa Dragon Q8B (at left, above) and be like, \"there's no way I'd spend $209 on an SBC with 8 gigs of RAM\". But we're in 2026, and seeing the 8 gig Raspberry Pi 5 going for almost the same amount, I figured I'd give it a shot.\nOn paper, the Q8B beats the Pi 5 in pretty much every way. A lot of that is thanks to this Snapdragon 8cx Gen 3 chip, which is the same chip I tested on Microsoft's Windows Dev Kit 2023.",
+      "source": "jeffgeerling.com",
+      "category": "blog",
+      "published": "2026-10-09",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1908,
+      "added_at": "2026-10-10 06:07:58"
+    },
+    {
+      "title": "ttok 1.0",
+      "url": "https://simonwillison.net/2026/Oct/9/ttok/",
+      "summary": "Release: ttok 1.0\n        I released ttok 0.4, ran uv tool upgrade ttok, piped a file into the new version... and realized that it was defaulting to the GPT-4 tokenizer when it should very clearly default to GPT-5/GPT-6 instead!\nI figured switching the default was a reasonable excuse to finally ship a 1.0.\nOpenAI haven't actually confirmed that GPT-6 uses the same tokenizer as the GPT-5 family yet - there's an angry issue about it - but I found this commit by William Liu which reports on an expe",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-10-09",
+      "summary_zh": "Simon Willison发布了ttok 1.0版本，这是一个与AI tokenizer相关的命令行工具。作者在升级0.4版本后发现默认tokenizer设置有误（应为GPT-5/GPT-6而非GPT-4），借此机会正式发布1.0版本。该工具可帮助开发者通过命令行快速测试和比较不同AI模型的tokenizer行为。",
+      "why_matters": "简洁实用的开发者工具发布说明，适合关注AI开发工具和tokenizer相关的技术人员阅读。",
+      "tags": "开发者工具，AI tokenizer，命令行工具",
+      "id": 1906,
+      "added_at": "2026-10-10 06:07:58"
+    },
+    {
+      "title": "A new feature for my blog, built using my voice",
+      "url": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
+      "summary": "I shipped a new feature for my blog today: the Newsletters page, which offers an index of all of the newsletters I've sent out, both my free weekly Substack and my monthly sponsors-only updates. I built the feature almost entirely using my voice, chatting away to my laptop while I cooked dinner.\nCodex voice mode\nI used the ChatGPT desktop app for this, in the Codex tab, using the voice conversation mode, running against a local development environment. Here's what that looks like:\n\nI started the",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-10-09",
+      "summary_zh": "Simon Willison为他的博客新增了Newsletters页面，用于索引他所有发送过的通讯简报，包括免费的每周Substack和每月赞助商专属更新。该功能的亮点在于他几乎完全使用语音完成开发，通过对着笔记本电脑“聊天”实现了快速构建。这展示了AI辅助编程在日常开发中的实用价值。",
+      "why_matters": "生动展示了如何利用语音和AI工具高效完成博客功能开发，启发开发者探索更灵活的工作方式。",
+      "tags": "AI辅助编程,语音开发,博客功能",
+      "id": 1904,
+      "added_at": "2026-10-10 06:07:58"
+    },
+    {
+      "title": "Quoting Matthew Green",
+      "url": "https://simonwillison.net/2026/Oct/9/matthew-green/",
+      "summary": "Everyone is very concerned about being respectable, so I’m going to be the goofball who raises worst-case possibilities. I think there is a 1% chance we live in Minicrypt, and a 15% chance we functionally lose confidence in our existing public-key encryption algorithms. [...]\nThe problem here is that the speed of AI producing surprises, and the speed of human beings replacing standards (even with the very best AI assistance) are just orders of magnitude different. You only recover from a surpris",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-10-09",
+      "summary_zh": "文章引用安全研究员Matthew Green的观点，讨论密码学领域的未来风险与不确定性。Green提出了两个具体的概率估计：人类生活在只有对称加密的Minicrypt世界的可能性约为1%，而我们对现有公钥加密算法失去信心的可能性约为15%。文章强调了密码学界对潜在最坏情况的严肃讨论。",
+      "why_matters": "如果你关心网络安全和密码学的未来走向，这篇文章提供了一个专家对技术不确定性的深思熟虑的量化分析。",
+      "tags": "密码学, 网络安全, 技术风险",
+      "id": 1902,
+      "added_at": "2026-10-10 06:07:58"
+    },
+    {
       "title": "Monte-Carlo simulations",
       "url": "https://eli.thegreenplace.net/2026/monte-carlo-simulations/",
       "summary": "Monte Carlo simulations (or methods) is the technique of applying\nrandomness and the Law of large numbers\nto the solution of various scientific and engineering problems. One of its\nfirst documented uses was by Stanislaw Ulam and John von Neumann for nuclear\nweapon simulations after WWII [1].\nIn this post …",
@@ -24506,5 +24649,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-09 16:43:29"
+  "last_updated": "2026-10-10 06:07:58"
 }
