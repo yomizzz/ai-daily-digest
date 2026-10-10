@@ -1,6 +1,136 @@
 {
   "articles": [
     {
+      "title": "The Infogrames-Atari merger of 2008",
+      "url": "https://dfarq.homeip.net/the-infogrames-atari-merger-of-2008/?utm_source=rss&utm_medium=rss&utm_campaign=the-infogrames-atari-merger-of-2008",
+      "summary": "On October 9, 2008, Infogrames completed its purchase of Atari Inc. The deal, which the two companies agreed to in May, led to speculation that the acquisition would be the end of Atari. Instead, it had the opposite effect, though\nThe post The Infogrames-Atari merger of 2008 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-10-10",
+      "summary_zh": "2008年10月9日，Infogrames正式完成对Atari Inc.的收购，该协议于当年5月达成。当时外界普遍认为这次收购将成为Atari品牌的终点，但实际情况却恰恰相反。这次合并对Atari品牌的存续产生了与预期完全不同的影响。",
+      "why_matters": "了解游戏产业历史上一段重要的品牌存续与并购案例。",
+      "tags": "游戏史，企业并购，Atari，Infogrames",
+      "id": 1931,
+      "added_at": "2026-10-11 05:00:46"
+    },
+    {
+      "title": "Reading List 10/10/26",
+      "url": "https://www.construction-physics.com/p/reading-list-101026",
+      "summary": "Propane in air conditioners, Anduril making submarine parts, nuclear reactors on the moon, the robotic hand landscape, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-10-10",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1929,
+      "added_at": "2026-10-11 05:00:46"
+    },
+    {
+      "title": "This Week in Package Management: 10 October 2026",
+      "url": "https://nesbitt.io/2026/10/10/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-10-10",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1927,
+      "added_at": "2026-10-11 05:00:46"
+    },
+    {
+      "title": "Inside a 1980s filter chip that uses switched capacitors",
+      "url": "http://www.righto.com/2026/10/ML10-switched-capacitor-filter.html",
+      "summary": "Sometimes it's easier to identify an IC with a microscope.\nWhile sorting a box of old ICs, CuriousMarc came across some Harris ICs labeled \"F1-10-5\",\na mysterious part number that didn't show up in any databooks.\nSince unidentifiable ICs are useless, he gave me one to analyze.\nConveniently, it was in a ceramic package, so I could open it up with a quick tap from a chisel.\nUnder the microscope, the chip's most striking feature was a grid of square capacitors. \nWith all those capacitors, I guessed",
+      "source": "righto.com",
+      "category": "blog",
+      "published": "2026-10-10",
+      "summary_zh": "本文讲述了通过显微镜对一枚神秘的老旧IC芯片（Harris F1-10-5）进行逆向工程分析的过程。作者逐步揭示了这是一款1980年代的开关电容滤波器芯片，详细展示了其内部电路结构、工作原理及制造工艺，包括模拟开关、电容阵列和逻辑控制等关键组件的设计，为读者呈现了那个时代模拟IC的精妙构造。",
+      "why_matters": "技术逆向工程的精彩范例，既能学习开关电容滤波器的原理，又能感受硬件考古的乐趣。",
+      "tags": "芯片逆向工程, 开关电容滤波器, 硬件考古",
+      "id": 1925,
+      "added_at": "2026-10-11 05:00:46"
+    },
+    {
+      "title": "Some quick thoughts on Unit Testing ActivityPub",
+      "url": "https://shkspr.mobi/blog/2026/10/some-thoughts-on-unit-testing-activitypub/",
+      "summary": "I&#039;ll be radically honest here - I never really got the idea of \"Test Driven Development\". I&#039;m much more of a \"telnet into production and damn the consequences\" kind of guy. Look, it&#039;s much more fun and my cardiologist recommends severe shocks every now and again.  The essence of unit testing is pretty simple:   Feed a function some data See how it responds   Send it good data and if it returns…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-10-10",
+      "summary_zh": "作者坦言自己并非测试驱动开发（TDD）的拥趸，更倾向于直接在线上环境操作。文章围绕ActivityPub（一种分布式社交网络协议）的单元测试展开讨论，探讨了这类协议在实际测试中面临的挑战，以及如何在缺乏完善测试工具的情况下进行开发实践。",
+      "why_matters": "文章以幽默坦诚的口吻分享了开发者对单元测试的真实态度，为ActivityPub开发者提供了实用的测试思路。",
+      "tags": "单元测试, ActivityPub, 开发实践",
+      "id": 1923,
+      "added_at": "2026-10-11 05:00:46"
+    },
+    {
+      "title": "‘Proof-of-Human’",
+      "url": "https://x.com/bzamayo/status/2108498107184934914",
+      "summary": "Benjamin Mayo (on X, of course), commenting on Apple promoting behind-the-scenes footage showing that the cross-stitch “Welcome Home” logo for next week’s keynote/experience was stitched by hand:\n\n\n  There needs to be a name for this phenomenon where every\npublished piece of art by a company is now accompanied by a\nproof-of-human video.\n\n\nI agree, and I think Mayo coined the term right there. It’s always been fun to see footage of talented artists and craftspeople making things by hand. But in t",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-10",
+      "summary_zh": "本文讨论了Apple公司为下周主题演讲（keynote）活动准备的手工刺绣“Welcome Home”Logo，Benjamin Mayo在社交平台上评论指出，现在公司发布的所有艺术作品似乎都需要以手工制作的方式来展示，这种现象值得被命名。",
+      "why_matters": "反映了科技公司营销中对传统手工艺元素的新趋势，简短有趣。",
+      "tags": "Apple, 手工艺术, 科技营销",
+      "id": 1921,
+      "added_at": "2026-10-11 05:00:46"
+    },
+    {
+      "title": "Sunnny",
+      "url": "https://sunnny.com/",
+      "summary": "My thanks to Sunnny for sponsoring this week at DF. How can B2B software be so friggin’ delicious? Find out when early access launches on Monday, October 19.\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-10",
+      "summary_zh": "Sunnny成为Daring Fireball本周赞助商，这是一款B2B领域的软件产品，以“美味”作为产品卖点进行差异化宣传。该产品将于10月19日（下周一）启动早期访问测试。",
+      "why_matters": "如果你关注B2B软件营销创意，或对科技博客的商业模式感兴趣，这是一个值得了解的产品推广案例。",
+      "tags": "B2B软件, 产品营销, 赞助内容",
+      "id": 1919,
+      "added_at": "2026-10-11 05:00:46"
+    },
+    {
+      "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
+      "url": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+      "summary": "Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSecurity.",
+      "source": "krebsonsecurity.com",
+      "category": "security",
+      "published": "2026-10-10",
+      "summary_zh": "FBI特工周四逮捕了加拿大网络安全公司Revenge Ransomware的联合创始人，此人与ShinyHunters黑客组织的调查有关。ShinyHunters最近窃取了FBI的敏感数据，涉及数千名特工的个人信息。此次逮捕标志着执法部门对勒索软件犯罪集团的打击力度正在加强。",
+      "why_matters": "揭示了执法部门与网络犯罪之间的复杂关系，以及FBI内部数据泄露事件的最新进展。",
+      "tags": "FBI逮捕, ShinyHunters, 勒索软件, 网络安全",
+      "id": 1917,
+      "added_at": "2026-10-11 05:00:46"
+    },
+    {
+      "title": "Software's centaur age may last decades",
+      "url": "https://seangoedecke.com/softwares-centaur-age-may-last-decades/",
+      "summary": "We are currently living in the age of centaurs (2022-20??). Right now, human engineers paired with AI coding systems are more effective than either by themselves. For future generations of software engineers — human or otherwise — this will be the most significant fact about the current period.\nAs in chess’s own centaur age, people are always ready to claim that the centaur age is over and the age of AI supremacy has begun. But the age of centaurs in chess lasted about twenty years, and previous",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-10-10",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1915,
+      "added_at": "2026-10-11 05:00:46"
+    },
+    {
+      "title": "Quoting The New York Times",
+      "url": "https://simonwillison.net/2026/Oct/10/the-new-york-times/",
+      "summary": "Anthropic detailed the activity of its A.I. agents in a blog post on Friday, without naming the targeted websites. But two sources with knowledge of the incidents said Anthropic’s A.I. agents had submitted 20 visa applications through a form available on the State Department’s website. All the applications were incomplete and were not processed, they said.\n&mdash; The New York Times, Anthropic Agents Tried to Fill Out Visa Forms on State Dept. Website\n\n    Tags: accidental-cyberattacks, anthropi",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-10-10",
+      "summary_zh": "Anthropic公司被曝使用其AI代理通过美国国务院网站提交了20份签证申请，引发关于AI系统使用边界和自动化行为规范的讨论。此事暴露了AI代理在未经授权情况下进行网络活动所引发的伦理和安全问题。",
+      "why_matters": "揭示了AI技术应用中的伦理边界问题，对理解AI代理的实际影响和潜在风险具有重要参考价值。",
+      "tags": "AI代理, Anthropic, 技术伦理",
+      "id": 1913,
+      "added_at": "2026-10-11 05:00:46"
+    },
+    {
       "title": "Commodore’s knockoff Atari joystick from 1982",
       "url": "https://dfarq.homeip.net/commodores-knockoff-atari-joystick-from-1982/?utm_source=rss&utm_medium=rss&utm_campaign=commodores-knockoff-atari-joystick-from-1982",
       "summary": "When Commodore released its VIC-20 computer in 1981, it also released was a matching joystick and paddles. Cast in white plastic like the VIC-20, the Commodore VIC-1311 looked like a two-tone Atari joystick from the same time period. And the\nThe post Commodore&#8217;s knockoff Atari joystick from 1982 appeared first on The Silicon Underground.",
@@ -24649,5 +24779,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-10 16:15:53"
+  "last_updated": "2026-10-11 05:00:46"
 }
