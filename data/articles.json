@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "title": "Ward Christensen, telecommunications pioneer",
+      "url": "https://dfarq.homeip.net/ward-christensen-telecommunications-pioneer/?utm_source=rss&utm_medium=rss&utm_campaign=ward-christensen-telecommunications-pioneer",
+      "summary": "Telecommunications pioneer Ward Christensen was born October 23, 1945 in West Bend, Wis. He died aged 78 October 11, 2024 in Rolling Meadows, Ill., a suburb of Chicago. Christensen invented the Xmodem file transfer protocol and co-invented the bulletin board\nThe post Ward Christensen, telecommunications pioneer appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-10-11",
+      "summary_zh": "Ward Christensen（1945-2024）是互联网和电信领域的重要先驱，于1978年发明了Xmodem文件传输协议，该协议成为早期网络文件传输的标准规范。他还与 Randy Suess 共同发明了电子公告牌系统（BBS），这一创举为后来的互联网论坛和社交平台奠定了基础，对个人电脑时代的远程通信发展产生了深远影响。",
+      "why_matters": "了解互联网早期发展史的必读人物，他是现代网络通信的奠基者之一。",
+      "tags": "计算机历史，互联网先驱，电信技术",
+      "id": 1936,
+      "added_at": "2026-10-12 05:25:10"
+    },
+    {
+      "title": "I paid people to try and follow my README",
+      "url": "https://shkspr.mobi/blog/2026/10/i-paid-people-to-try-and-follow-my-readme/",
+      "summary": "Developers suck at writing documentation. We like to say RTFM but often there ain&#039;t no FM to R. At best we have a half-arsed collection of notes, some obsolete tips, and a link to a desolate forum full of people asking the same questions again and again. That&#039;s no way to treat our users.  I naïvely believe there&#039;s a better way. As I&#039;ve written before, you should sit down and actually test your …",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-10-11",
+      "summary_zh": "作者通过付费邀请真实用户测试自己项目的README文档，发现开发者往往不重视文档写作——嘴上说着“读手册”，实际上却没有像样的手册可读。文章通过这个有趣的实验揭示了技术文档的普遍问题：多为半成品笔记、过时内容或无人问津的论坛链接。",
+      "why_matters": "一个简单但有效的实验，揭示了技术文档质量问题的根源，值得所有开发者反思自己对待文档的态度。",
+      "tags": "技术文档, 开发经验, 用户体验",
+      "id": 1934,
+      "added_at": "2026-10-12 05:25:10"
+    },
+    {
+      "title": "Why I Get Bored",
+      "url": "https://idiallo.com/byte-size/why-i-get-bored",
+      "summary": "For me, boredom is just a signal. It means I've hit a roadblock and my brain is trying to convince me not to go any further. \"Give up. This sucks anyway. Why are you still wasting your time on this silly thing?\"\nThat's how I feel when I do things I'm really bad at. I think I'm not good at making YouTube videos. Whenever I think of a subject I find really exciting, I start writing, record a first pass, and then load DaVinci Resolve.\nWith my current schedule, job, family, and responsibilities, I'v",
+      "source": "idiallo.com",
+      "category": "blog",
+      "published": "2026-10-11",
+      "summary_zh": "作者认为无聊并非终点，而是一个信号，暗示你可能正面对挑战或正在做不擅长的事情。大脑在遇到障碍时会试图说服你放弃，但这恰恰是需要调整方向或方法的时机。理解无聊感的真正含义，能帮助你更好地面对困境并坚持目标。",
+      "why_matters": "帮助读者把“无聊”从负面情绪转化为自我调整的契机，值得一读。",
+      "tags": "自我成长, 心态调整, 心理认知",
+      "id": 1932,
+      "added_at": "2026-10-12 05:25:10"
+    },
+    {
+      "title": "Apple Only Started Suggesting iOS 26 Users Upgrade to 27 Three Days Ago",
+      "url": "https://www.macrumors.com/2026/10/08/apple-now-pushing-ios-27/",
+      "summary": "Joe Rossignol, on Thursday:\n\n\n  Starting today, iPhone users still running iOS 26 will see iOS\n27.0.1 as the prominent software update in the Settings app under\nGeneral → Software Update, with iOS 26.7.1 now relegated to a\nsmaller “Also Available” section at the bottom.\n\n\nJust the other day I posted about how most users only get OS updates when Apple pushes them through automatic updates. But even for users who update manually, until Thursday, the default suggested update for users on iOS 26.x w",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-11",
+      "summary_zh": "苹果于三天前开始向仍使用iOS 26系统的iPhone用户推送iOS 27.0.1升级提示。现在用户在设置→通用→软件更新中将看到iOS 27.0.1作为主要推荐更新，而此前的iOS 26.7.1版本已降级至“其他可用更新”区域。",
+      "why_matters": "快速了解苹果系统更新推送策略的最新变化。",
+      "tags": "iOS更新, Apple, 系统升级",
+      "id": 1930,
+      "added_at": "2026-10-12 05:25:10"
+    },
+    {
+      "title": "★ X Once Again Marks the Spot",
+      "url": "https://daringfireball.net/2026/10/x_once_again_marks_the_spot",
+      "summary": "If you returned from exile on a desert island and took a look at X today for first time in a year, you might reasonably guess that Elon Musk got bored and sold it while you were away.",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-11",
+      "summary_zh": "文章以讽刺的口吻指出，如果你离开一年后回来看X（前Twitter），看到它现在的样子，你可能会合理地猜测Elon Musk已经把它卖掉了。作者Gruber用简洁幽默的方式暗示X平台的变化之大，以至于让人认不出来。",
+      "why_matters": "Gruber以其标志性的讽刺文风，用一句话精准概括了X平台的混乱现状。",
+      "tags": "科技评论,社交媒体,Elon Musk",
+      "id": 1928,
+      "added_at": "2026-10-12 05:25:10"
+    },
+    {
+      "title": "Don't diagnose your opponents",
+      "url": "https://seangoedecke.com/dont-diagnose-your-opponents/",
+      "summary": "When you disagree with someone, there are two paths forward. The first is to try to engage with what they’re saying: what their reasons are, whether their position is true, what evidence could be brought to bear, and so on. The second is to diagnose them: to engage with the second-order question of why they’re saying it. For instance, if you’re arguing with somebody about microservices1, you could say “well, you only like microservices because you want to polish your resume”, or “you only like m",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-10-11",
+      "summary_zh": "文章讨论了与他人产生分歧时的两种应对方式——一种是通过理性辩论来理解对方的观点和论据，另一种是“诊断”对方，即从动机、性格等层面质疑对方。作者认为，理性的做法应该是关注论点本身而非人身攻击。",
+      "why_matters": "文章提醒我们在争论中保持理性，专注于观点和证据而非人身攻击，这对提升沟通质量很有帮助。",
+      "tags": "辩论技巧, 沟通方法, 批判性思维",
+      "id": 1926,
+      "added_at": "2026-10-12 05:25:10"
+    },
+    {
+      "title": "Dwarf Fortress uses version control now",
+      "url": "https://simonwillison.net/2026/Oct/11/dwarf-fortress/",
+      "summary": "I remember hearing a while ago that Dwarf Fortress didn't use version control. That fact has been lodged in my head, because given its inherent complexity I have trouble imagining a codebase that would benefit from version control more. That's art.\nI went looking and I'm sad to report that the days without version control appear to have ended. Quoting Tarn Adams over time:\n\nMarch 2013: \"I don't use version control -- I didn't like the feeling of having the code get committed into a black box thi",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-10-11",
+      "summary_zh": "Dwarf Fortress曾是一款没有使用版本控制的知名独立游戏，这一事实令开发者印象深刻——因为该游戏代码库极其复杂。本站作者发现Dwarf Fortress现已开始采用版本控制，这是一个值得关注的转变。",
+      "why_matters": "对独立游戏开发实践和技术决策感兴趣的读者可从此文一窥复杂项目管理的重要性。",
+      "tags": "游戏开发，版本控制，Dwarf Fortress",
+      "id": 1924,
+      "added_at": "2026-10-12 05:25:10"
+    },
+    {
       "title": "openclaw 2026.10.1",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1",
       "source": "openclaw",
@@ -24791,5 +24882,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-11 16:32:10"
+  "last_updated": "2026-10-12 05:25:10"
 }
