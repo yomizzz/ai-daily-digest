@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.10.1",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1",
+      "source": "openclaw",
+      "published": "2026-10-11",
+      "category": "openclaw",
+      "summary": "- 无法提取（更新日志内容被截断，仅显示贡献者列表，无实际功能变更描述）\n\n🐛 Bug 修复：- 无法提取（更新日志内容被截断，仅显示贡献者列表，无实际修复描述）",
+      "features": "- 无法提取（更新日志内容被截断，仅显示贡献者列表，无实际功能变更描述）",
+      "bug_fixes": "- 无法提取（更新日志内容被截断，仅显示贡献者列表，无实际修复描述）",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "The Infogrames-Atari merger of 2008",
       "url": "https://dfarq.homeip.net/the-infogrames-atari-merger-of-2008/?utm_source=rss&utm_medium=rss&utm_campaign=the-infogrames-atari-merger-of-2008",
       "summary": "On October 9, 2008, Infogrames completed its purchase of Atari Inc. The deal, which the two companies agreed to in May, led to speculation that the acquisition would be the end of Atari. Instead, it had the opposite effect, though\nThe post The Infogrames-Atari merger of 2008 appeared first on The Silicon Underground.",
@@ -24779,5 +24791,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-11 05:00:46"
+  "last_updated": "2026-10-11 16:32:10"
 }
