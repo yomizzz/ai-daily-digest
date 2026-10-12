@@ -1,6 +1,28 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.21.7",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.21.7",
+      "source": "hermes-agent",
+      "published": "2026-10-12",
+      "category": "hermes",
+      "summary_zh": "- **源代码安装更新策略调整**：现在默认只更新到最新发布的 `vX.Y.Z` tag 版本，不再追踪 main 分支的每次提交；若需保持跟踪 main 分支，可使用 `hermes update --set-channel main`\n- **桌面应用新增更新频道开关**：设置 ▸ 关于 ▸ 更新中可选择\"稳定版本\"或\"每次提交\"，更新对话框也会显示当前频道\n- **推理过程支持恢复**：签名思考（signed thinking）现在可以在 `hermes chat --resume` 后重放，Bedrock Converse 推理模型在恢复会话中不再被拒绝\n- **防火墙兼容性改进**：解决了某些地区防火墙导致 403 错误、更新失败的问题；GitHub token 可用于稳定版检查以避免速率限制\n- **Krea 2 Medium Turbo 设为新付费用户默认图像通道**，Krea 拒绝时自动回退到 FAL\n- **桌面应用更新速度优化**：React Compiler 按内容缓存、编译后的渲染器在安装戳记变化时复用、未更改的原生输入保持原位\n- **新增多项社区插件**：包括 memory-shield、command-ledger、Memoria、Model Router、wyoming-voice-bridge、codex-account-switch 和 redline 等\n- **插件 SDK 扩展**：支持 `ctx.runAction` 运行内置桌面操作和 `ctx.pet.say` 功能",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "openclaw 2026.10.2",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.2",
+      "source": "openclaw",
+      "published": "2026-10-12",
+      "category": "openclaw",
+      "summary": "- 升级路径改进：从稳定版升级现可干净完成，Windows、克隆文件系统和私有节点更新不再卡顿回滚\n- Doctor 和更新恢复改进：不再因旧导入残留、过期的 Gateway 锁、状态检查缓慢或内存重索引锁而停止\n- 提供商原生压缩：OpenAI 和 Anthropic API 密钥路由默认使用提供商原生压缩\n- 凭证编辑改进：跨块边界的凭证被屏蔽，大文本编辑性能提升数倍且不再卡顿或栈溢出\n- 提示缓存稳定性：Anthropic 对话检查点、工具结果在后续对话、重放和重启时保持字节一致\n- Gateway 响应性：控制 UI 重连、大型插件模型变更和目录加载不再冻结 Gateway\n- 更新成功报告改为警告：最终确认的更新成功和被压制渠道不再显示为失败\n\n🐛 Bug 修复：- 修复凭证在编辑块边界处泄漏及大工具输出编辑卡顿问题\n- 修复坐席完成启动过程中回复丢失、流式 Telegram 回复消失问题\n- 修复 Claude CLI 会话将运行时提示显示为用户消息、路由 CLI 提示出现在历史所有者侧问题\n- 修复子代理和 ACP 回答被截断、子答案因延迟回执被覆盖问题\n- 修复异步工具完成后或等待插件批准时被中止、上下文引擎推进丢失问题\n- 修复 OpenAI 请求因正则表达式环视工具架构失败、ChatGPT WebSocket 过期和 SSE 限制问题\n- 修复 Codex 会话在线程卸载后停止、提供商失败静默停止问题\n- 修复截断图像后每个回合失败、智能体放弃早期图像回答问题\n- 修复计划任务丢失 Gateway 插件注册、手动任务丢失工具访问问题",
+      "features": "- 升级路径改进：从稳定版升级现可干净完成，Windows、克隆文件系统和私有节点更新不再卡顿回滚\n- Doctor 和更新恢复改进：不再因旧导入残留、过期的 Gateway 锁、状态检查缓慢或内存重索引锁而停止\n- 提供商原生压缩：OpenAI 和 Anthropic API 密钥路由默认使用提供商原生压缩\n- 凭证编辑改进：跨块边界的凭证被屏蔽，大文本编辑性能提升数倍且不再卡顿或栈溢出\n- 提示缓存稳定性：Anthropic 对话检查点、工具结果在后续对话、重放和重启时保持字节一致\n- Gateway 响应性：控制 UI 重连、大型插件模型变更和目录加载不再冻结 Gateway\n- 更新成功报告改为警告：最终确认的更新成功和被压制渠道不再显示为失败",
+      "bug_fixes": "- 修复凭证在编辑块边界处泄漏及大工具输出编辑卡顿问题\n- 修复坐席完成启动过程中回复丢失、流式 Telegram 回复消失问题\n- 修复 Claude CLI 会话将运行时提示显示为用户消息、路由 CLI 提示出现在历史所有者侧问题\n- 修复子代理和 ACP 回答被截断、子答案因延迟回执被覆盖问题\n- 修复异步工具完成后或等待插件批准时被中止、上下文引擎推进丢失问题\n- 修复 OpenAI 请求因正则表达式环视工具架构失败、ChatGPT WebSocket 过期和 SSE 限制问题\n- 修复 Codex 会话在线程卸载后停止、提供商失败静默停止问题\n- 修复截断图像后每个回合失败、智能体放弃早期图像回答问题\n- 修复计划任务丢失 Gateway 插件注册、手动任务丢失工具访问问题",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Ward Christensen, telecommunications pioneer",
       "url": "https://dfarq.homeip.net/ward-christensen-telecommunications-pioneer/?utm_source=rss&utm_medium=rss&utm_campaign=ward-christensen-telecommunications-pioneer",
       "summary": "Telecommunications pioneer Ward Christensen was born October 23, 1945 in West Bend, Wis. He died aged 78 October 11, 2024 in Rolling Meadows, Ill., a suburb of Chicago. Christensen invented the Xmodem file transfer protocol and co-invented the bulletin board\nThe post Ward Christensen, telecommunications pioneer appeared first on The Silicon Underground.",
@@ -24882,5 +24904,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-12 05:25:10"
+  "last_updated": "2026-10-12 16:53:21"
 }
