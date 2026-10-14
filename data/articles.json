@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.22.0 — The Threshold Release",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.0",
+      "source": "hermes-agent",
+      "published": "2026-10-14",
+      "category": "hermes",
+      "summary_zh": "- 全新桌面安装体验：引导式设置聊天采用免费试用模式，用户可在购买 API key 前直接与 Hermes 对话\n- 连接器功能升级：无需账户即可开始使用，将 agent 集成到用户已有的应用中\n- 本地模型支持：一键安装 llama.cpp 运行时，支持在本地硬件运行模型\n- 安装稳定性提升：默认跟随 SemVer 稳定版本，提供签名桌面包（含 Microsoft Store 版本），统一包管理器\n- 插件生态扩展：插件目录已包含 600 个插件\n- 模型支持更新：新增 Claude 5.5 和 GPT-6 支持\n- 浏览器集成增强：支持密码管理器直接登录\n- 屏幕接管功能：新增 bot 屏幕可接管功能\n- 架构优化：每个 profile 配置独立的后端和网关\n- 代码库精简：整体体积缩小约三分之一\n- 规模最大的一次更新：工作量约为 v0.21.0 周期的 2.5 倍，并整合了 v0.21.1 至 v0.21.7 的所有补丁",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Claude, don’t touch my lump",
       "url": "https://www.experimental-history.com/p/claude-dont-touch-my-lump",
       "summary": "OR: the secret key to permanent happiness",
@@ -155,6 +165,18 @@
       "tags": "AI Agent, DevOps, 工程实践",
       "id": 1944,
       "added_at": "2026-10-14 06:14:18"
+    },
+    {
+      "title": "openclaw 2026.10.3",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.3",
+      "source": "openclaw",
+      "published": "2026-10-13",
+      "category": "openclaw",
+      "summary": "The user wants me to extract meaningful features and bug fixes from this OpenClaw v2026.10.3 release log and generate a Chinese structured summary.\n\nLooking at the content provided, I see:\n1. It's a version release announcement (v2026.10.3)\n2. It mentions 90 commits, 79 pull requests, 99 contributors\n3. It provides links to release notes and changelog\n4. It has a long list of contributors\n5. It mentions npm package and registry tarball\n\nHowever, the actual detailed changes (the changelog content",
+      "features": "The user wants me to extract meaningful features and bug fixes from this OpenClaw v2026.10.3 release log and generate a Chinese structured summary.\n\nLooking at the content provided, I see:\n1. It's a version release announcement (v2026.10.3)\n2. It mentions 90 commits, 79 pull requests, 99 contributors\n3. It provides links to release notes and changelog\n4. It has a long list of contributors\n5. It mentions npm package and registry tarball\n\nHowever, the actual detailed changes (the changelog content",
+      "bug_fixes": "无",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
     },
     {
       "title": "from plesiochronous to synchronous",
@@ -25203,5 +25225,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-14 06:14:18"
+  "last_updated": "2026-10-14 15:19:13"
 }
