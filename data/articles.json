@@ -1,6 +1,162 @@
 {
   "articles": [
     {
+      "title": "The still unregulated solar power clouds: notes from 9th E.DSO – EE-ISAC - ENCS – ENISA Cybersecurity Forum",
+      "url": "https://berthub.eu/articles/posts/solar-nightmare-at-the-conference/",
+      "summary": "Last week I attended the 9th E.DSO – EE-ISAC - ENCS – ENISA Cybersecurity Forum in Brussels. And as I had nothing to present, I tried to make myself useful by writing up an apparently well read live-blog (better version below!).\nAt this conference, hashtag #CyberGrids26, all relevant people were present. Regulators, European Commission, electricity generators, the organizations that transmit and distribute the power, vendors, researchers, standardization bodies: basically everyone.",
+      "source": "berthub.eu",
+      "category": "blog",
+      "published": "2026-10-14",
+      "summary_zh": "文章报道了第九届E.DSO-EE-ISAC-ENCS-ENISA网络安全论坛（#CyberGrids26）在布鲁塞尔召开的情况，作者以参会者身份记录了会议要点。核心议题聚焦于太阳能发电系统日益增长的网络安全威胁，特别是光伏逆变器等关键设备的监管缺失问题，以及如何应对能源转型过程中的网络安全挑战。",
+      "why_matters": "为关注能源基础设施网络安全的读者提供欧洲最新行业动态和监管趋势的参考。",
+      "tags": "太阳能网络安全，智能电网，能源基础设施",
+      "id": 1980,
+      "added_at": "2026-10-15 05:13:14"
+    },
+    {
+      "title": "When SCO fired Darl McBride",
+      "url": "https://dfarq.homeip.net/when-sco-fired-darl-mcbride/?utm_source=rss&utm_medium=rss&utm_campaign=when-sco-fired-darl-mcbride",
+      "summary": "On October 14, 2009, SCO fired its CEO, Darl McBride. Very nearly 15 years later, McBride died at the age of 64 of complications from ALS. His termination from SCO ended his time as the most hated man in technology.\nThe post When SCO fired Darl McBride appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-10-14",
+      "summary_zh": "2009年10月14日，SCO集团解雇了其CEO Darl McBride。约15年后，McBride于64岁时因ALS（肌萎缩侧索硬化症）并发症去世。作为SCO的掌门人，McBride在任期间因挑起与IBM等公司的Linux代码版权诉讼，成为科技界争议最大的人物。",
+      "why_matters": "回顾这位曾搅动科技界的争议人物的人生终点，以及他与SCO诉讼案的始末。",
+      "tags": "SCO集团，Darl McBride，Linux诉讼，科技史",
+      "id": 1978,
+      "added_at": "2026-10-15 05:13:14"
+    },
+    {
+      "title": "Poe, Bessel, and Drones",
+      "url": "https://www.johndcook.com/blog/2026/10/14/poe-bessel-and-drones/",
+      "summary": "What&#8217;s a connection between Edgar Allan Poe and Friedrich Wilhelm Bessel? Poe&#8217;s story The Pit and the Pendulum describes a pendulum with a semicircular blade being lowered on a cable. This is an interesting variation on the usual harmonic oscillator because the length L of the pendulum is not constant but rather an increasing function [&#8230;]\nThe post Poe, Bessel, and Drones first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-10-14",
+      "summary_zh": "这篇文章探讨了美国作家埃德加·爱伦·坡与德国天文学家贝塞尔之间的有趣联系。作者通过坡的短篇小说《陷阱与钟摆》中描述的半圆形刀片钟摆装置，分析了这一描述与谐振子物理模型的关联，展示了文学作品中对物理原理的独特运用。",
+      "why_matters": "从经典文学作品中挖掘科学元素，视角新颖，兼具科普性和趣味性。",
+      "tags": "文学与科学，物理学，钟摆运动，谐振子",
+      "id": 1976,
+      "added_at": "2026-10-15 05:13:14"
+    },
+    {
+      "title": "A generalization of the Pythagorean theorem",
+      "url": "https://www.johndcook.com/blog/2026/10/14/pythagorean-variation/",
+      "summary": "G. D. Chakerian [1] discovered the following generalization of the Pythagorean theorem. Take any triangle and attach squares to each side. From each triangle vertex, extend a line perpendicular to the opposite side and extend the line through the square, as shown in the figure below. Then the areas of the rectangles with the same [&#8230;]\nThe post A generalization of the Pythagorean theorem first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-10-14",
+      "summary_zh": "本文介绍了G. D. Chakerian发现的一个令人惊喜的毕达哥拉斯定理推广。对于任意三角形（无需直角），在每条边上附着正方形，并从各顶点向对边作垂线延伸穿过正方形，这些正方形面积之间存在与原定理类似的美妙关系。这一推广打破了毕达哥拉斯定理仅适用于直角三角形的传统认知，揭示了更普遍的面积与垂直关系的几何规律。",
+      "why_matters": "能将经典定理优雅推广至更一般情形，展现数学的深层美感与逻辑力量，适合对几何感兴趣的读者。",
+      "tags": "几何定理, 数学推广, 毕达哥拉斯定理",
+      "id": 1974,
+      "added_at": "2026-10-15 05:13:14"
+    },
+    {
+      "title": "LaTeX package for Pascal-like triangles",
+      "url": "https://www.johndcook.com/blog/2026/10/14/latex-package-for-pascal-like-triangles/",
+      "summary": "When I wrote about the harmonic triangle yesterday, I displayed the triangle left-aligned using fixed-width text because that was easier than producing the format you usually see for Pascal&#8217;s triangle and related triangles. 1 1/2 1/2 1/3 1/6 1/3 1/4 1/12 1/12 1/4 1/5 1/20 1/30 1/20 1/5 … I asked Claude to write a [&#8230;]\nThe post LaTeX package for Pascal-like triangles first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-10-14",
+      "summary_zh": "本文讨论了如何使用LaTeX排版类似帕斯卡三角形的数学图形，特别是调和三角形（harmonic triangle）。作者指出之前为了简便采用左对齐等宽文本的方式显示，但这种方式不如常见的帕斯卡三角形格式美观。文章似乎介绍了专门的LaTeX包来解决这类数学三角形的排版问题。",
+      "why_matters": "对于需要用LaTeX排版数学三角形（如帕斯卡三角、调和三角等）的读者，了解相关排版工具很有帮助。",
+      "tags": "LaTeX, 数学排版, 帕斯卡三角",
+      "id": 1972,
+      "added_at": "2026-10-15 05:13:14"
+    },
+    {
+      "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+      "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-92392/",
+      "summary": "In the hours following the release of CVE-2026-92392 for the project curl, site reliability workers\n        and systems administrators scrambled to desperately rebuild and patch all their systems to fix a use-after-free in HTTP/2 upload retries where cleanup turns leftover upload data into a new request and leaves a pointer to a freed Curl_easy handle (apparently freeing it was only a suggestion), allowing a malicious server to achieve remote code execution under specific conditions. This is due",
+      "source": "xeiaso.net",
+      "category": "blog",
+      "published": "2026-10-14",
+      "summary_zh": "这篇文章以讽刺的口吻评论了curl项目最新披露的CVE-2026-92392漏洞，该漏洞涉及HTTP/2上传重试中的use-after-free安全问题。作者通过标题的措辞，讽刺了软件开发领域一种令人无奈的现象：某些类型的安全漏洞（如内存安全问题）反复出现，尽管业界早已知晓这些风险。作者借此反思安全开发的困境。",
+      "why_matters": "讽刺背后是对软件安全问题的深刻反思，值得一读。",
+      "tags": "软件安全,讽刺评论,信息安全",
+      "id": 1970,
+      "added_at": "2026-10-15 05:13:14"
+    },
+    {
+      "title": "The Internet of Very Cheap Things",
+      "url": "https://shkspr.mobi/blog/2026/10/the-internet-of-very-cheap-things/",
+      "summary": "Twelve years ago, I was complaining that IoT devices were too expensive.  Last week I bought a colour changing Zigbee lighbulb for £4. Not a typo - less than a fiver.  While the aipocalypse is devouring RAM with its insatiable appetite, Moore&#039;s Law appears to be keeping up its end of the bargain when it comes to domestic gadgetry.  This blog posts compares today&#039;s prices with those from a little …",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-10-14",
+      "summary_zh": "作者回顾十二年来物联网设备价格的惊人变化，曾几何时IoT设备价格高昂，如今只需4英镑就能购得Zigbee智能彩光灯泡，印证了摩尔定律在智能家居领域的持续生效，物联网设备正走向真正的平价化时代。",
+      "why_matters": "一篇见证技术民主化进程的亲身记录，展现了智能设备从“高不可攀”到“白菜价”的变迁。",
+      "tags": "",
+      "id": 1968,
+      "added_at": "2026-10-15 05:13:14"
+    },
+    {
+      "title": "The FBI Arrested a Saudi National OpenAI Employee for Planting a Recording Device in the Company’s Executive Conference Room",
+      "url": "https://www.justice.gov/opa/pr/saudi-national-arrested-installing-surreptitious-audio-recording-device-openai",
+      "summary": "The Department of Justice, yesterday:\n\n\n  An employee of OpenAI has been arrested for and charged with using\nor endeavoring to use an electronic, mechanical, or other device\nto intercept oral communications. Abdulrahman Alfozan, 35, a\nnational of the Kingdom of Saudi Arabia, was arrested on Oct. 9,\nand made his initial appearance in federal court today.\n\n“This serious situation underscores why winning the global super\nintelligence race is a national security prerogative — and why\nPresident Trump",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-14",
+      "summary_zh": "OpenAI一名35岁的沙特籍员工阿卜杜勒拉曼·阿尔福赞（Abdulrahman Alfozan）于10月9日被FBI逮捕，他被指控在公司的执行会议室安装电子窃听设备，用于拦截口头交流。此案由美国司法部公布，凸显了科技公司内部安全风险。",
+      "why_matters": "此案揭示了AI领域日益严峻的企业间谍和安全威胁问题，值得关注。",
+      "tags": "AI安全, 企业间谍, 网络安全",
+      "id": 1966,
+      "added_at": "2026-10-15 05:13:14"
+    },
+    {
+      "title": "[Sponsor] WorkOS AuthKit: Auth for Your App, Free Up to 1M Monthly Active Users",
+      "url": "https://workos.com/?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q42026",
+      "summary": "Login looks simple until you’re building password resets, email verification, MFA, social providers, session management, and the enterprise SSO your first big customer asked for last week.\n\nAuthKit lets you:\n\n\nOffer SSO, MFA, passkeys, passwords, email codes, and social sign-in\nAdd and remove users automatically with SCIM provisioning\nTrack who did what with audit logs\n\n\nTry AuthKit →\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-14",
+      "summary_zh": "文章介绍了 WorkOS AuthKit 这一身份认证解决方案，指出开发者自行实现登录功能涉及密码重置、邮箱验证、MFA、社交登录、企业SSO等多个复杂环节。AuthKit 提供一站式服务，支持SSO、MFA、Passkeys、密码、邮箱验证码、社交登录等多种认证方式，并提供用户管理功能。其免费额度高达每月100万活跃用户，对开发者极具吸引力。",
+      "why_matters": "需要快速实现安全认证功能的开发者值得关注，尤其适合初创公司和成长型产品。",
+      "tags": "身份认证, 开发者工具, SaaS",
+      "id": 1964,
+      "added_at": "2026-10-15 05:13:14"
+    },
+    {
+      "title": "U.K. Sanctions Cryptomus for RU Money Laundering",
+      "url": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+      "summary": "The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial restrictions.",
+      "source": "krebsonsecurity.com",
+      "category": "security",
+      "published": "2026-10-14",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 1962,
+      "added_at": "2026-10-15 05:13:14"
+    },
+    {
+      "title": "Formlabs dropped the Raspberry Pi on the way to a $699 SLA printer",
+      "url": "https://www.jeffgeerling.com/blog/2026/formlabs-form-studio-1-resin-printer/",
+      "summary": "Formlabs sent me a Form Studio 1 resin 3D printer to test after years of back-and-forth about their Form 4 printer.\nLike the Form 4, it's an SLA (stereolithography) printer, but unlike the Form 4 (which starts at $2,600), it's affordable for a hobbyist. It's not cheap, coming in at $699 (or $749 with a flex build platform, which I highly recommend), but it is affordable.\nI can't say as much about this printer as people who are well-versed in resin printing and use other SLA printers (all my expe",
+      "source": "jeffgeerling.com",
+      "category": "blog",
+      "published": "2026-10-14",
+      "summary_zh": "Formlabs推出了一款售价699美元的SLA树脂3D打印机Form Studio 1，相比之前2000美元以上的Form 4大幅降低了入门门槛。虽然对爱好者来说仍不便宜，但这是目前最实惠的Formlabs桌面级光固化打印机。",
+      "why_matters": "如果你想体验专业级SLA打印效果但预算有限，这款打印机值得关注。",
+      "tags": "3D打印, SLA打印机, Formlabs, 评测",
+      "id": 1960,
+      "added_at": "2026-10-15 05:13:14"
+    },
+    {
+      "title": "AI is mass decompiling games. That's both awesome and scary.",
+      "url": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
+      "summary": "AI is mass decompiling games. That&#x27;s both awesome and scary.\nIndie game developer Popcar talks about the recent wave of AI-powered decompilation of existing games, enabling weird mashups between existing games, and producing a boom in game preservation projects to get old games working on new hardware (often in a browser using WebAssembly).\nI like how this piece captures both the positives and the negatives of this new development:\n\nMost people already realized the scary part by now. If AI ",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-10-14",
+      "summary_zh": "独立游戏开发者Popcar探讨了AI驱动的大规模游戏反编译现象，这项技术使得开发者能够将现有游戏进行混搭创作，同时也推动了游戏保存项目的发展，让老游戏得以在新平台上运行。文章指出这一趋势既令人兴奋又令人担忧，反映了AI技术在版权与创新之间引发的复杂争议。",
+      "why_matters": "文章以实际案例深入浅出地分析了AI反编译技术的双刃剑特性，是了解AI在游戏领域应用现状与伦理问题的佳作。",
+      "tags": "AI技术, 游戏开发, 科技伦理, 游戏保存",
+      "id": 1958,
+      "added_at": "2026-10-15 05:13:14"
+    },
+    {
       "title": "Hermes Agent v0.22.0 — The Threshold Release",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.0",
       "source": "hermes-agent",
@@ -25225,5 +25381,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-14 15:19:13"
+  "last_updated": "2026-10-15 05:13:14"
 }
