@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.22.1",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.1",
+      "source": "hermes-agent",
+      "published": "2026-10-15",
+      "category": "hermes",
+      "summary_zh": "- Agent：新增 nemotron super 3.5 的默认参数配置\n- CLI：在模型选择列表顶部新增精选模型列表\n- 新增规范组（canonical）附件控制功能\n- 支持通过规范准入机制消费事件绑定的托管文件\n- 插件目录更新：新增韩语（hermes-lang-ko）和巴西葡萄牙语（hermes-lang-pt-br）语言包\n- 插件目录更新：新增 TeamoRouter 模型提供商、author-feed 和 openinvest 插件\n- 插件目录更新：新增 wait-ledger 目录卡片及插件，aux-ledger 升级至 1.4.0\n- 社区插件：新增 lightningai 及 lightningai-rate-limit\n- 目录新增 hermes-agent-mixer (v0.2.0) 和 Hermes AAC 0.1.0（经审查的精确源固定版本）\n- Kumiho Memory 插件已移至 memory 目录分类架",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "The still unregulated solar power clouds: notes from 9th E.DSO – EE-ISAC - ENCS – ENISA Cybersecurity Forum",
       "url": "https://berthub.eu/articles/posts/solar-nightmare-at-the-conference/",
       "summary": "Last week I attended the 9th E.DSO – EE-ISAC - ENCS – ENISA Cybersecurity Forum in Brussels. And as I had nothing to present, I tried to make myself useful by writing up an apparently well read live-blog (better version below!).\nAt this conference, hashtag #CyberGrids26, all relevant people were present. Regulators, European Commission, electricity generators, the organizations that transmit and distribute the power, vendors, researchers, standardization bodies: basically everyone.",
@@ -25381,5 +25391,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-15 05:13:14"
+  "last_updated": "2026-10-15 15:10:19"
 }
