@@ -309,14 +309,44 @@
     <header>
         <h1>🦄 OpenClaw 更新记录</h1>
         <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-10-15 15:10:24</p>
+        <p class="last-updated">最后更新：2026-10-16 14:53:45</p>
     </header>
 
     <main>
         <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 0 个正式版本</div>
+        <div class="release-count">共 2 个正式版本</div>
         <div class="release-list" id="releases">
-<div class="no-updates">暂无更新记录</div>
+<div class="release">
+    <div class="release-header">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;">
+            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.10.4" target="_blank" class="release-title">openclaw 2026.10.4</a>
+            <span class="release-tag">v2026.10.4</span>
+        </div>
+        <span class="release-date">2026-10-16</span>
+    </div>
+<div class="release-section">
+    <div class="release-section-title">🆕 新增功能</div>
+    <div class="release-card"><ul class="summary-list"><li>- Gateway 在电脑睡眠或系统时钟跳转后保持运行，不再因心跳过期而重启</li><li>- Gateway 关闭和重启不再因卡住的转录工作线程而挂起</li><li>- Tlon 群组私信关闭了所有者冒充漏洞</li><li>- 无头浏览器在网站等待 passkey 时继续响应点击</li><li>- 手动 /compact 在压缩前先结算活动运行，而不是中止</li></ul></div>
+</div><div class="release-section">
+    <div class="release-section-title">🐛 Bug 修复</div>
+    <div class="release-card"><ul class="summary-list"><li>- Gateway 在长时间回复流期间保持响应，引用 XML 的长回复不再重复解析 Markdown</li><li>- 阻止的上下文引擎轮次只记录一次，不再每次运行都记录</li><li>- 延迟的应用心跳不再强制 Control UI 重连</li><li>- 睡眠和时钟变化后 Gateway 状态所有权恢复正常</li><li>- Gateway 启动时自动启动已启用的独立插件文件</li><li>- 托管服务设置堆标志时仍强制执行工作堆限制</li><li>- 启动的插件轮次不再因写者声明错误而失败</li><li>- Claude CLI 会话历史不再跨消息路由分叉</li><li>- OpenAI 推理模型 Completions 路由不再返回 400 错误</li><li>- 快照捕获时代理数据库不再被误标为已更改</li><li>- 缓慢的主机准入不再持有数据库写入器</li><li>- 候选验证不再放大私有 SQLite 快照</li><li>- openclaw update repair 在慢速主机上不再超时</li><li>- Doctor 允许更新处理已停用的 OAuth 附属进程</li><li>- 离线状态修复支持 app-owned Gateway</li><li>- Tailscale 中断启动时停止其服务进程</li><li>- macOS 修复接受已进行的 LaunchAgent 引导</li><li>- POSIX 路径别名如 /tmp 和 /private/tmp 不再重启通道</li><li>- MCP OAuth 登录支持无端口的 loopback 重定向 URI</li><li>- 聊天恢复通过 serving document 正常工作</li><li>- Telegram 轮询工作线程在源码和包构建中正确解析</li></ul></div>
+</div>
+</div><div class="release">
+    <div class="release-header">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;">
+            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.9.33" target="_blank" class="release-title">openclaw 2026.9.33</a>
+            <span class="release-tag">v2026.9.33</span>
+        </div>
+        <span class="release-date">2026-10-15</span>
+    </div>
+<div class="release-section">
+    <div class="release-section-title">🆕 新增功能</div>
+    <div class="release-card"><ul class="summary-list"><li>- 支持 Meta Muse Wonder 模型（带最大思考支持），保留 Spark 为默认模型</li><li>- 新增 MiniMax M3.1 Flash Preview 模型及思考努力级别路由</li><li>- LM Studio 刷新清单现在可发现新加载的模型</li><li>- 支持 pnpm 12 Gateway 服务和启动器在原生更新后存活</li><li>- npm 恢复不再被保留的更新器运行时阻塞</li><li>- Windows 更新不再在 Doctor 重新检查驱动后回滚</li><li>- 代理运行现在支持实时思考级别调整</li><li>- 本地提供者获得响应头截止日期支持</li><li>- ChatGPT WebSocket 正常关闭可恢复</li><li>- 自动化运行、会话、云工作器请求在 Gateway 重启后可恢复</li></ul></div>
+</div><div class="release-section">
+    <div class="release-section-title">🐛 Bug 修复</div>
+    <div class="release-card"><ul class="summary-list"><li>- 修复 Doctor 在不可读监督器和子绑定错误下无法运行的问题</li><li>- 修复干净服务安装拒绝被错误纳入本地权限恢复的问题</li><li>- 修复更新历史写入阻塞 cron 和清理任务的问题</li><li>- 修复因旧版认证存储不可读导致 OAuth 配置文件被错误删除的问题</li><li>- 修复仅记账用途的修复被错误拒绝的问题</li><li>- 修复实时发送在队列恢复后失败的问题</li><li>- 修复节点请求因无关配对活动而失败的问题</li></ul></div>
+</div>
+</div>
         </div>
     </main>
 
