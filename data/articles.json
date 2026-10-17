@@ -1,6 +1,149 @@
 {
   "articles": [
     {
+      "title": "Intel 386 released October 17, 1985",
+      "url": "https://dfarq.homeip.net/intel-386-released-october-17-1985/?utm_source=rss&utm_medium=rss&utm_campaign=intel-386-released-october-17-1985",
+      "summary": "On October 17, 1985, Intel released its 386 CPU, also known as the 80386, and later, as the 386DX. The 386 changed the direction of the computer industry like no chip before it, and maybe since. The phrase &#8220;disruptive product&#8221;\nThe post Intel 386 released October 17, 1985 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-10-17",
+      "summary_zh": "1985年10月17日，Intel发布了具有划时代意义的386处理器（80386），这是业界首款32位CPU。386的诞生被视为计算机行业的重大转折点，为现代操作系统和应用程序的发展奠定了基础，甚至被冠以“颠覆性产品”的称号。",
+      "why_matters": "了解个人电脑发展史上最具影响力的处理器之一",
+      "tags": "Intel 386, CPU历史, 32位处理器, 硬件里程碑",
+      "id": 2016,
+      "added_at": "2026-10-18 04:00:59"
+    },
+    {
+      "title": "Reading List 10/17/26",
+      "url": "https://www.construction-physics.com/p/reading-list-101726",
+      "summary": "Icon&#8217;s fundraising, employment in China&#8217;s solar industry, grid-scale battery reliability, Tesla&#8217;s flying roadster, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-10-17",
+      "summary_zh": "本期阅读列表汇集了建筑3D打印公司Icon的最新融资动态、中国太阳能行业就业趋势分析、电网级储能电池的可靠性研究进展，以及特斯拉飞行跑sters的相关资讯。内容覆盖建筑科技、新能源、储能技术和汽车创新等多个前沿领域，为读者提供跨行业的科技动态视野。",
+      "why_matters": "适合对建筑科技、新能源和前沿技术感兴趣的人群，一文尽览多个领域的热点资讯。",
+      "tags": "建筑科技，太阳能，新能源储能，技术动态",
+      "id": 2014,
+      "added_at": "2026-10-18 04:00:59"
+    },
+    {
+      "title": "This Week in Package Management: 17 October 2026",
+      "url": "https://nesbitt.io/2026/10/17/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-10-17",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 2012,
+      "added_at": "2026-10-18 04:00:59"
+    },
+    {
+      "title": "Cloud of suspicion lifted from NIST curves",
+      "url": "https://www.johndcook.com/blog/2026/10/17/nist-curves-exonorated/",
+      "summary": "NIST published a set of elliptic curves for cryptography in 2000. The seeds for the curves were supplied by the NSA, and cryptographers suspected the agency may have installed backdoors in the curves. And not without reason: the NSA did insert a backdoor in the Dual_EC_DRBG random number generator. Two days ago researchers at Anthropic [&#8230;]\nThe post Cloud of suspicion lifted from NIST curves first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-10-17",
+      "summary_zh": "美国国家标准与技术研究院（NIST）于2000年发布了一套密码学椭圆曲线，其种子由NSA提供，密码学家长期怀疑NSA可能在其中植入后门。这种怀疑并非空穴来风，因为NSA确实曾在Dual_EC_DRBG随机数生成器中插入过后门。",
+      "why_matters": "文章揭示了NSA在密码学标准中埋下后门的历史，为理解密码学安全性与信任问题提供了重要视角。",
+      "tags": "密码学，后门，NIST，NSA，椭圆曲线",
+      "id": 2010,
+      "added_at": "2026-10-18 04:00:59"
+    },
+    {
+      "title": "Book Review: Are You *Really* The Doctor? by Matthew Hutchinson ★★★⯪☆",
+      "url": "https://shkspr.mobi/blog/2026/10/book-review-are-you-really-the-doctor-by-matthew-hutchinson/",
+      "summary": "A few months ago, I went to see Dr Hutchinson record his stand-up comedy special for the BBC - it&#039;s about his experiences working in the NHS as a Black doctor. As the title of the book implies, some of the public can be a mite suspicious that anyone with even a hint of melanin can rise beyond being a porter or, at a push, a nurse.  Much like Adam Kay&#039;s \"This Is Going To Hurt\", this is part…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-10-17",
+      "summary_zh": "本书是BBC委托录制的独角喜剧特辑，作者Matthew Hutchinson是一位在NHS工作的黑人医生，结合自身经历以幽默方式探讨医疗系统中的种族歧视问题。书中揭示了非裔和亚裔医生常常面临患者对其专业资格的质疑，甚至要求他们证明自己确实是“真正的医生”。",
+      "why_matters": "用喜剧的形式直面医疗职场中的种族歧视，笑中带思，令人深思。",
+      "tags": "种族歧视，医疗系统，英国NHS，黑色幽默",
+      "id": 2008,
+      "added_at": "2026-10-18 04:00:59"
+    },
+    {
+      "title": "Pluralistic: Israeli ad-tech company was a delivery system for \"mercenary spyware\" (17 Oct 2026)",
+      "url": "https://pluralistic.net/2026/10/17/mercenary-spyware/",
+      "summary": "Today's links Israeli ad-tech company was a delivery system for \"mercenary spyware\": And they used Google, Facebook and every other major ad platform to do it. Hey look at this: Delights to delectate. Object permanence: Big Mouth Billy Bass x Linux; No-Fly lists v common sense; Lemony Snicket advises the 1%; \"Aloha From Hell\"; KSR v Elon Musk; \"Everything Belongs to the Future\"; Trump's mail-servers run Win2003; Copyfraud v covid. Upcoming appearances: Vancouver, Victoria, Ottawa, Vienna, Kilken",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-10-17",
+      "summary_zh": "以色列一家广告技术公司被发现长期充当“雇佣兵间谍软件”的传播渠道，通过Google、Facebook等主流广告平台向用户设备分发间谍软件。这类间谍软件通常由私营公司开发并出售给政府或机构，用于监控目标人物，严重威胁用户隐私和数字安全。",
+      "why_matters": "揭示了主流广告平台如何被滥用为 surveillance capitalism 的工具，对理解当代网络安全威胁具有重要警示意义。",
+      "tags": "网络安全, 隐私保护, 间谍软件",
+      "id": 2006,
+      "added_at": "2026-10-18 04:00:59"
+    },
+    {
+      "title": "Apple TV Started at $69 in 2015",
+      "url": "https://www.macrumors.com/2015/03/09/tim-cook-apple-tv-now-costs-69/",
+      "summary": "Joe Rossignol, reporting for MacRumors back on 9 March 2015:\n\n\n  Apple CEO Tim Cook on Monday at the “Spring Forward” media event\nin San Francisco announced that Apple TV will now cost $69,\ndiscounted from its regular price of $99. The new price for the\nset-top box arrives on the heels of the announcement of HBO Now\nfor Apple TV. The new price appears to apply to the\nthird-generation Apple TV, as the company did not announce a new\nset-top box on stage at the Yerba Buena Center this afternoon.\n\n\n",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-17",
+      "summary_zh": "2015年3月9日，苹果CEO蒂姆·库克在旧金山“Spring Forward”发布会上宣布Apple TV从原价99美元降至69美元。这标志着苹果首次下调Apple TV的官方售价，旨在扩大其流媒体机顶盒的市场份额。",
+      "why_matters": "了解苹果产品早期定价策略和市场竞争动态的参考案例。",
+      "tags": "Apple TV，苹果公司，定价策略",
+      "id": 2004,
+      "added_at": "2026-10-18 04:00:59"
+    },
+    {
+      "title": "Apple: ‘Strengthening App Review Guidelines Against Nonconsensual Intimate Imagery and Bait-And-Switch Apps’",
+      "url": "https://developer.apple.com/news/?id=vvzx6cul",
+      "summary": "Apple Developer News:\n\n\n  As outlined in our App Review Guidelines, pornographic material\nhas long been prohibited on the App Store — this includes apps\nthat generate nudity or sexually explicit imagery, such as\n“nudification” apps that create sexually explicit images of real\nindividuals without their consent. Apps that host user-generated\ncontent are required to filter objectionable material, give users\na way to report offensive content, and let users block abusive\naccounts. Apps containing hid",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-17",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 2002,
+      "added_at": "2026-10-18 04:00:59"
+    },
+    {
+      "title": "The Late Charlie Munger on Elon Musk and Tesla",
+      "url": "https://www.cnbc.com/make-it/2020/02/14/charlie-munger-shares-opinion-of-tesla-ceo-elon-musk.html",
+      "summary": "Re: my post today on the still-vaporware Tesla Roadster and Benedict Evans’s maxim that “Elon Musk is a bullshitter who delivers”, a reader sent me this YouTube short of Charlie Munger’s answer to a question at Berkshire Hathaway’s 2020 shareholder meeting regarding Tesla’s volatility and Musk’s self-promotion. Munger said:\n\n\n  My thoughts are two. I would never buy it, and I would never sell\nit short.\n\n[Audience laughs.]\n\nI have a third comment. There was a man out in Los Angeles for\nyears name",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-17",
+      "summary_zh": "本文引用了已故投资大师查理·芒格在2020年伯克希尔·哈撒韦股东大会上对特斯拉和马斯克的评价。芒格以直率著称，对特斯拉股价波动性和马斯克的行事风格发表了自己的看法。文章还引用了本·埃文斯的观点，称马斯克是“会说大话但能兑现的人”。",
+      "why_matters": "了解传奇投资人芒格对马斯克的犀利评价，以及他对特斯拉投资价值的独到见解。",
+      "tags": "查理·芒格，特斯拉，马斯克，投资理念",
+      "id": 2000,
+      "added_at": "2026-10-18 04:00:59"
+    },
+    {
+      "title": "Apple TV Price History, Charted",
+      "url": "https://glog.glennf.com/blog/2026/10/17/apple-tv-price-history/",
+      "summary": "Glenn Fleishman:\n\n\n  I wondered what the entry-level, initial price of each Apple TV\nbox at introduction was, from the March 2007 original to the Apple\nTV 4K (4th generation) announced October 13, 2026, adjusted for\ninflation. So I charted it.\n\n\nI suppose this doesn’t mean Apple has given up on making Apple TV content accessible, but the price-accessible path is just using the Apple TV on the crapware OS your “smart” TV runs.\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-17",
+      "summary_zh": "这篇文章梳理了Apple TV自2007年3月首款产品发布至2026年10月推出4K（第四代）期间的入门价格变化，并运用通胀调整后的数据进行对比分析。文中配有价格趋势图表，直观展示了这款苹果流媒体设备十多年来的定价策略演变。透过价格曲线，可以洞察苹果在硬件产品定价上的策略调整与市场考量。",
+      "why_matters": "对于关注苹果产品定价历史及科技产品消费趋势的读者来说，这篇图表化的数据分析提供了清晰且有价值的参考视角。",
+      "tags": "Apple TV, 价格历史, 通胀调整",
+      "id": 1998,
+      "added_at": "2026-10-18 04:00:59"
+    },
+    {
+      "title": "★ HomeView Thoughts and Observations",
+      "url": "https://daringfireball.net/2026/10/homeview_thoughts_and_observations",
+      "summary": "There’s a real “*Why do we need this?*” question here and I don’t think Apple’s video answers it, at all. You need to think you want it if you’re going to buy it. And even if you already had a HomeView set up, I’m not sure how often you’d use it instead of your phone, or instead of just talking to it like a screenless HomePod.",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-17",
+      "summary_zh": "John Gruber 对苹果的 HomeView 功能提出质疑，认为苹果的宣传视频并未有效回答“用户为何需要这个产品”这一核心问题。他指出，即使已拥有 HomeView 设备，用户可能仍更倾向于使用手机或直接语音控制，对该产品的实际使用场景和必要性表示怀疑。",
+      "why_matters": "了解科技博主对苹果新品冷静、批判性分析的视角。",
+      "tags": "HomeView, Apple, 智能家居",
+      "id": 1996,
+      "added_at": "2026-10-18 04:00:59"
+    },
+    {
       "title": "Spyware invented October 16, 1995",
       "url": "https://dfarq.homeip.net/spyware-invented-october-16-1995/?utm_source=rss&utm_medium=rss&utm_campaign=spyware-invented-october-16-1995",
       "summary": "On October 16, 1995, Roland Vossen accidentally invented spyware in a Usenet post. Well, not exactly. He didn&#8217;t invent spyware so much as he invented the term. His Usenet post contained the first recorded use of the word &#8220;spyware.&#8221; For\nThe post Spyware invented October 16, 1995 appeared first on The Silicon Underground.",
@@ -25711,5 +25854,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-17 14:45:28"
+  "last_updated": "2026-10-18 04:00:59"
 }
