@@ -1,6 +1,123 @@
 {
   "articles": [
     {
+      "title": "How the AI boom might really end: 5 scenarios",
+      "url": "https://martinalderson.com/posts/how-the-ai-boom-might-really-end/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
+      "summary": "With chip stocks on their longest losing streak since 2008 and Anthropic heading for IPO, five ways the AI boom could end - and why I think the value is real but may not flow to the people putting the money in.",
+      "source": "martinalderson.com",
+      "category": "blog",
+      "published": "2026-10-18",
+      "summary_zh": "文章分析了当前AI热潮可能终结的五大场景，涵盖芯片股连跌、估值泡沫、应用落地不及预期等风险。作者指出，尽管AI技术可能创造真实价值，但这些价值未必会流向当前投入巨额资金的投资者，提醒人们警惕市场过热带来的风险。",
+      "why_matters": "这是一篇关于AI投资风险的深度分析，对理解当前AI市场泡沫和投资机会很有价值。",
+      "tags": "AI投资, 市场分析, 科技股, 风险预警",
+      "id": 2023,
+      "added_at": "2026-10-19 04:02:40"
+    },
+    {
+      "title": "Notes on the complex roots of unity",
+      "url": "https://eli.thegreenplace.net/2026/notes-on-the-complex-roots-of-unity/",
+      "summary": "One of the most wonderful aspects of math is how deep we can get by\nstudying seemingly trivial questions. Consider the roots of unity, where\n\"unity\" simply means the number 1.\n\nBasics: roots of unity for real numbers\nStudying the roots of unity usually begins in middle school: what is …",
+      "source": "eli.thegreenplace.net",
+      "category": "blog",
+      "published": "2026-10-18",
+      "summary_zh": "本文探讨了单位根这一看似简单却内涵深刻的数学概念，从中学阶段学习的实数单位根出发，逐步深入到复数域中的单位根性质。文章可能涵盖了单位根的几何意义、代数性质以及它们在数学中的重要应用，展现了这一基础概念背后丰富的数学结构。",
+      "why_matters": "文章将抽象的数学概念讲解得深入浅出，适合对代数和复数有一定基础的学习者进一步探索数学之美。",
+      "tags": "复数，单位根，代数",
+      "id": 2021,
+      "added_at": "2026-10-19 04:02:40"
+    },
+    {
+      "title": "How many VICmodems Commodore sold",
+      "url": "https://dfarq.homeip.net/how-many-vicmodems-commodore-sold/?utm_source=rss&utm_medium=rss&utm_campaign=how-many-vicmodems-commodore-sold",
+      "summary": "When researching the 1600 VICmodem, I found an assertion that the 1600 was the first modem to sell a million units. And I&#8217;ve repeated that claim myself at least once. But I never felt quite right about that. I am\nThe post How many VICmodems Commodore sold appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-10-18",
+      "summary_zh": "文章作者针对业界流传的“1600 VICmodem是首个销量突破百万台的调制解调器”这一说法展开考证。作者承认自己曾引用过这一数据，但一直对该说法心存疑虑。通过深入调查 Commodore 公司 VICmodem 的实际销售数据，作者试图还原历史真相，纠正广泛流传但可能不准确的销量记录。",
+      "why_matters": "以严谨的考证精神纠正科技史上的以讹传讹，展现了资料核查的重要性。",
+      "tags": "怀旧科技, Commodore, 硬件考古",
+      "id": 2019,
+      "added_at": "2026-10-19 04:02:40"
+    },
+    {
+      "title": "Inside the Intel 8087 chip: floating-point addition and subtraction",
+      "url": "http://www.righto.com/2026/10/8087-addition-subtraction-microcode.html",
+      "summary": "In 1980, Intel introduced the 8087, a chip that made floating-point operations much faster\nin the IBM PC and other systems.\nAlthough the 8087 supports advanced operations such as tangents, square roots, and logarithms,\nthis article focuses on basic arithmetic operations: addition and subtraction.\nThe 8087 provided a spectacular speed improvement over the 8086 processor, speeding up\naddition by a factor of almost 100, and complicated operations by even more.1\nIn this article, I examine the 8087's",
+      "source": "righto.com",
+      "category": "blog",
+      "published": "2026-10-18",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 2017,
+      "added_at": "2026-10-19 04:02:40"
+    },
+    {
+      "title": "Una Watch TOTP - MFA on your wrist!",
+      "url": "https://shkspr.mobi/blog/2026/10/una-watch-totp-mfa-on-your-wrist/",
+      "summary": "Let&#039;s get this out of the way first - this is a terrible idea!  I want my two-factor authentication codes to be easily accessible to me, so I&#039;ve built a watch app which will display them. That&#039;s really convenient for me - but makes for a terrible security posture. Anyone who steals my watch will be able to see my one-time code. If they&#039;re clever, they can decompile the app and find the secret…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-10-18",
+      "summary_zh": "作者在智能手表上开发了一款TOTP两步验证码显示应用，虽然承认这是“一个糟糕的主意”，会降低安全性（因为手表容易被盗取），但他认为方便自己使用更重要。这篇文章展示了一个实用但存在安全风险的DIY项目。",
+      "why_matters": "对于喜欢动手折腾和关注IoT安全的用户，这篇文章提供了一个关于便利性与安全性权衡的有趣案例。",
+      "tags": "智能手表, TOTP, 安全隐私",
+      "id": 2015,
+      "added_at": "2026-10-19 04:02:40"
+    },
+    {
+      "title": "Whatever You Say Bounces Off Me and Sticks to You",
+      "url": "https://www.reuters.com/business/retail-consumer/openai-employee-who-left-apple-took-files-about-unreleased-device-openai-alleges-2026-10-14/",
+      "summary": "Stephen Nellis and Deepa Seetharaman, reporting Wednesday for Reuters:\n\n\n  An OpenAI employee who left the ChatGPT maker for Apple ​sent\nmore than 100 files about an unreleased product to a personal\naccount and later made a presentation about the unreleased product\nto senior Apple leadership, a new filing in the lawsuit between\nOpenAI and Apple alleges.\n\nIn the filing in US federal court ​in San Jose, California, OpenAI\nalleged that the presentation happened months ago and ​that Apple\nis now mak",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-18",
+      "summary_zh": "据路透社报道，一名从OpenAI跳槽至苹果的员工在离职前将超过100份关于OpenAI未发布产品的机密文件发送至个人账户，随后向苹果高管层做了相关产品演示。此事件引发了关于科技人才流动中商业机密保护的讨论，涉及AI行业激烈的人才竞争和知识产权保护问题。",
+      "why_matters": "反映了当前AI行业人才争夺战中的职业道德和信息安全挑战。",
+      "tags": "AI行业, 商业机密, 人才竞争, 苹果, OpenAI",
+      "id": 2013,
+      "added_at": "2026-10-19 04:02:40"
+    },
+    {
+      "title": "Michigan Democratic Senate Candidate Abdul El-Sayed on His Allegiances",
+      "url": "https://x.com/AbdulElSayed/status/2111627277578731885",
+      "summary": "I do see some political content in my feed on X. For example, this extraordinary video posted by Abdul El-Sayed, who seems poised to become the next junior senator from Michigan. You should watch it. It’s so good you might suspect the questioner was a plant, but in fact, he was not. This actually happened. El-Sayed actually handled this heckler this well, on the fly. And he posted it on X, where it’s garnered 9 million views. He posted it on Bluesky too, if you’d prefer that. El-Sayed hands this",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-18",
+      "summary_zh": "文章介绍了密歇根州民主党参议员候选人Abdul El-Sayed发布的一段引人关注的视频。文章作者对这段视频质量给予高度评价，称其“非常出色”，并指出虽然视频内容让人怀疑提问者可能是预先安排的，但实际上并非如此。",
+      "why_matters": "可以了解这位有望成为下一任密歇根州联邦参议员的候选人的政治观点和表达能力。",
+      "tags": "政治人物，美国参议院选举，密歇根州，民主党，Abdul El-Sayed",
+      "id": 2011,
+      "added_at": "2026-10-19 04:02:40"
+    },
+    {
+      "title": "Manton Reece’s Spitball Theory on Why the Wall-Mounted HomeView Costs the Same as the Version With the Subwoofer Base",
+      "url": "https://www.manton.org/2026/10/17/in-john-grubers-initial-thoughts.html",
+      "summary": "Manton Reece:\n\n\n  All I can come up with is that Apple doesn’t want you to buy the\nwall-mounted version unless you’re really sure that’s what you\nneed. If the wall-mounted version was cheaper, some people might\nbuy it based on price, then be unhappy because it’s too much\ntrouble to install.\n\n\nOh, that clicks for me.\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-18",
+      "summary_zh": "Manton Reece解释了Apple HomePod墙挂版与带低音炮底座版价格相同的原因。他认为这是Apple的定价策略——通过不让墙挂版更便宜，来确保只有真正需要墙挂安装的用户才会选择它，避免消费者因价格诱惑而购买后因安装麻烦感到后悔。",
+      "why_matters": "提供了一个有趣的视角来理解Apple的产品定价逻辑，揭示了价格策略背后的用户心理考量。",
+      "tags": "Apple产品,定价策略,用户体验,HomePod",
+      "id": 2009,
+      "added_at": "2026-10-19 04:02:40"
+    },
+    {
+      "title": "Writing is no longer proof of work",
+      "url": "https://seangoedecke.com/writing-is-no-longer-proof-of-work/",
+      "summary": "Tech companies structurally depend on writing to serve as evidence, in the same way that Bitcoin depends on proof-of-work hashing. However, in the last few years, LLMs have started to undermine this practice.\nHow can writing be like proof-of-work? When I’m writing something at work, it’s not always to communicate an idea. Sometimes it’s because having a piece of writing is useful as evidence: of compliance with some process, of the fact that I put in effort, or of the fact that I know about some",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-10-18",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 2007,
+      "added_at": "2026-10-19 04:02:40"
+    },
+    {
       "title": "Intel 386 released October 17, 1985",
       "url": "https://dfarq.homeip.net/intel-386-released-october-17-1985/?utm_source=rss&utm_medium=rss&utm_campaign=intel-386-released-october-17-1985",
       "summary": "On October 17, 1985, Intel released its 386 CPU, also known as the 80386, and later, as the 386DX. The 386 changed the direction of the computer industry like no chip before it, and maybe since. The phrase &#8220;disruptive product&#8221;\nThe post Intel 386 released October 17, 1985 appeared first on The Silicon Underground.",
@@ -25854,5 +25971,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-18 15:05:33"
+  "last_updated": "2026-10-19 04:02:40"
 }
