@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.10.5",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5",
+      "source": "openclaw",
+      "published": "2026-10-19",
+      "category": "openclaw",
+      "summary": "- **自动更新与恢复**：`openclaw update` 可跨设备、文件系统、pnpm 12、Windows 提权、macOS 登录 shell 自动完成，自动清理过期的交接租约和包激活日志\n- **重启安全的对话**：中断的轮次、子代理工作和延迟任务在 Gateway 重启后自动恢复，用户输入和会话数据在重启、并发写入后不丢失\n- **更快、更轻量的 Gateway**：会话、对话记录、历史读取移至工作线程，启动维护延后执行，内存使用降至 2026.10.4 水平\n- **可靠的轮次和子代理**：轮次从停滞流、过期的 ChatGPT websocket、格式错误的 AI 流恢复，不完整轮次显示可见通知，子代理结果重启后持续返回\n- **X (Twitter) 频道**：新增 X 提及频道插件，支持流式接收、仓库问题访客模式、GitHub 验证作家和 API 成本限制\n- **语音通话增强**：新增每次通话简报、通话报告、实时引导、回调和语音邮件检测功能\n- **智能模型选择器**：优先展示提供商推荐模型，自动显示新上线的 Claude、ChatGPT、Ollama 模型，新增 Gemini 4 Argon 和 Gemini 3.8 Flash\n- **Gateway 内置 ClawHub**：可直接浏览和搜索 ClawHub 插件与技能，插件自动选择兼容的最新官方版本\n- **本地推理工作线程**：新增原生推理运行时，支持 Gateway 调度和完整的策略检查\n- **设备会话托管**：设备加入命令可安装后台节点服务托管代理会话（`--service --session-host`）\n- **自动化自修复**：自动化失败时所有者对话优先修复，错误变化时给予二次修复机会，修复超时时发出明确警告",
+      "features": "- **自动更新与恢复**：`openclaw update` 可跨设备、文件系统、pnpm 12、Windows 提权、macOS 登录 shell 自动完成，自动清理过期的交接租约和包激活日志\n- **重启安全的对话**：中断的轮次、子代理工作和延迟任务在 Gateway 重启后自动恢复，用户输入和会话数据在重启、并发写入后不丢失\n- **更快、更轻量的 Gateway**：会话、对话记录、历史读取移至工作线程，启动维护延后执行，内存使用降至 2026.10.4 水平\n- **可靠的轮次和子代理**：轮次从停滞流、过期的 ChatGPT websocket、格式错误的 AI 流恢复，不完整轮次显示可见通知，子代理结果重启后持续返回\n- **X (Twitter) 频道**：新增 X 提及频道插件，支持流式接收、仓库问题访客模式、GitHub 验证作家和 API 成本限制\n- **语音通话增强**：新增每次通话简报、通话报告、实时引导、回调和语音邮件检测功能\n- **智能模型选择器**：优先展示提供商推荐模型，自动显示新上线的 Claude、ChatGPT、Ollama 模型，新增 Gemini 4 Argon 和 Gemini 3.8 Flash\n- **Gateway 内置 ClawHub**：可直接浏览和搜索 ClawHub 插件与技能，插件自动选择兼容的最新官方版本\n- **本地推理工作线程**：新增原生推理运行时，支持 Gateway 调度和完整的策略检查\n- **设备会话托管**：设备加入命令可安装后台节点服务托管代理会话（`--service --session-host`）\n- **自动化自修复**：自动化失败时所有者对话优先修复，错误变化时给予二次修复机会，修复超时时发出明确警告",
+      "bug_fixes": "无",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "How the AI boom might really end: 5 scenarios",
       "url": "https://martinalderson.com/posts/how-the-ai-boom-might-really-end/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
       "summary": "With chip stocks on their longest losing streak since 2008 and Anthropic heading for IPO, five ways the AI boom could end - and why I think the value is real but may not flow to the people putting the money in.",
@@ -25971,5 +25983,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-19 04:02:40"
+  "last_updated": "2026-10-19 15:31:17"
 }
