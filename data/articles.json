@@ -1,6 +1,162 @@
 {
   "articles": [
     {
+      "title": "Weekly Update 526: Building HIBP AI/SI First",
+      "url": "https://www.troyhunt.com/weekly-update-526/",
+      "summary": "I have this sense that we&apos;ve passed the point where \"vibe coding\" is a derogatory term. I have no empirical evidence for this; it&apos;s more a feeling that those weaponising the term have now accepted the inevitability and are just getting with the program.",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-10-19",
+      "summary_zh": "本文是Troy Hunt的第526期周报更新，讨论了AI辅助编程（vibe coding）从贬义术语逐渐被安全社区接受的过程，以及他在HIBP项目中优先构建AI/搜索智能功能的进展。反映了AI工具在网络安全领域日益普及的趋势。",
+      "why_matters": "了解安全专家如何将AI融入数据泄露检测服务的实战思路。",
+      "tags": "AI编程, HIBP, 网络安全",
+      "id": 2039,
+      "added_at": "2026-10-20 05:57:46"
+    },
+    {
+      "title": "The Lean Educator Conference",
+      "url": "https://steveblank.com/2026/10/19/the-lean-educator-conference/",
+      "summary": "Announcing a Lean Educators Conference. Teaching Lean in the Age of AI. November 18-19th at K&#38;S Ranch, California. When AI hit our spring Lean Launchpad for Deep Tech class, our teaching team was unprepared for the impact it made on the class. What I didn&#8217;t realize was that other Lean educators (Hacking for Defense, NSF [&#8230;]",
+      "source": "steveblank.com",
+      "category": "blog",
+      "published": "2026-10-19",
+      "summary_zh": "本文宣布将于11月18-19日在加州举办Lean Educators Conference（精益教育者会议），主题为\"在AI时代教授精益创业\"。作者分享了在深度科技课程中遭遇AI带来的冲击，发现教学团队对此准备不足，并意识到其他Lean教育者也面临类似挑战。",
+      "why_matters": "对于从事创新创业教育的教师和从业者，了解AI如何影响精益教学方法具有重要参考价值。",
+      "tags": "精益创业，AI教育，创新教学，教育会议",
+      "id": 2037,
+      "added_at": "2026-10-20 05:57:46"
+    },
+    {
+      "title": "Who bought Gateway computers?",
+      "url": "https://dfarq.homeip.net/bought-gateway-computers/?utm_source=rss&utm_medium=rss&utm_campaign=bought-gateway-computers",
+      "summary": "There are two ways to look at the question of who bought Gateway computers. Who bought the company, and who bought the computers. Gateway&#8217;s computers didn&#8217;t have the best reputation, but people loved the company until they didn&#8217;t. Gateway fell\nThe post Who bought Gateway computers? appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-10-19",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 2035,
+      "added_at": "2026-10-20 05:57:46"
+    },
+    {
+      "title": "A frivolous problem with a deeper lesson",
+      "url": "https://www.johndcook.com/blog/2026/10/19/regex-backtracking/",
+      "summary": "About 14% of English words can be spelled by stringing together chemical symbols. For example, sarcasm can be written S Ar Ca Sm using the symbols for sulfur, argon, calcium, and samarium. How would you write a program to determine whether a word can be written by stringing together chemical element abbreviations ignoring case? Obviously [&#8230;]\nThe post A frivolous problem with a deeper lesson first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-10-19",
+      "summary_zh": "文章探讨了一个有趣的问题：约14%的英语单词可以用化学元素符号拼写而成，如\"sarcasm\"可写成\"S Ar Ca Sm\"。作者接着讨论了如何编写程序来判断一个单词是否可以用元素符号串接，这涉及字符串匹配和穷举搜索算法的设计。",
+      "why_matters": "这个看似无厘头的问题实际蕴含了算法设计、穷举搜索和语言模式的深层思考，兼具趣味性和技术深度。",
+      "tags": "趣味数学, 编程算法, 文字游戏",
+      "id": 2033,
+      "added_at": "2026-10-20 05:57:46"
+    },
+    {
+      "title": "Refactoring factorials",
+      "url": "https://www.johndcook.com/blog/2026/10/19/refactoring-factorials/",
+      "summary": "Splitting N! into N factors is trivial. It&#8217;s defined as the product of N integers, the integers 1 through N. Can you still split N! into N factors if you put a minimum size requirement on the factors? You can&#8217;t split 3! into three factors unless one of the factors is 1, but you can split 4! into factors ≥ 2: 4! [&#8230;]\nThe post Refactoring factorials first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-10-19",
+      "summary_zh": "文章探讨了一个有趣的数学问题：能否将N!（阶乘）分解成恰好N个因子，并对每个因子设置最小值限制。作者通过具体例子说明，如3!=6在要求每个因子大于1时就无法分解成3个因子，并进一步讨论了在何种条件下这种分解是可能的。这是一个结合数论与组合优化的趣味数学问题。",
+      "why_matters": "适合喜欢数学谜题和逻辑推理的读者，文章将抽象的数学问题用直观的例子讲解，富有启发性。",
+      "tags": "阶乘, 因子分解, 数学谜题",
+      "id": 2031,
+      "added_at": "2026-10-20 05:57:46"
+    },
+    {
+      "title": "Pluralistic: The technopolitics of ad-tech (19 Oct 2026)",
+      "url": "https://pluralistic.net/2026/10/19/spying-v-context/",
+      "summary": "Today's links The technopolitics of ad-tech: Spying is good for tech, context is good for publishers. Hey look at this: Delights to delectate. Object permanence: PNH x Mike Ford; Singapore v Far East Economic Review; Publishing v bestsellers; Architecture v security; Vista v everyone; Free Bieber; Belarus sells the sugar bowls; OCCUPY GEORGE; Grey type sucks; Spinal Tap v studio math; Terry Pratchett x $10t coin; Boy Scouts x copyright maximialism; Canadian Tories x DRM; Herman Cain's 9-9-9 plan",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-10-19",
+      "summary_zh": "这篇来自Cory Doctorow的Pluralistic专栏文章探讨了广告技术背后的政治经济关系，指出科技公司通过用户监控和数据收集获益，而出版商则依赖内容上下文来维持生存。文章揭示了数字广告生态系统中各方利益的不对称性。",
+      "why_matters": "揭示了数字时代隐私与商业利益之间深层的权力博弈，适合关注科技政策的读者。",
+      "tags": "广告技术, 隐私监控, 科技政策, 数字经济, Cory Doctorow",
+      "id": 2029,
+      "added_at": "2026-10-20 05:57:46"
+    },
+    {
+      "title": "Time Magazine Profiles John Ternus",
+      "url": "https://time.com/collection/best-inventions/2026/apple-iphone-duo/",
+      "summary": "Andrew Chow, writing for Time:\n\n\n  Just below the broad smile he’s been wearing all morning, John\nTernus’ hands are shaking.\n\nOn this September day in Silicon Valley, Apple’s new CEO is\nsurrounded by celebrities, tech enthusiasts, and reporters who\nhave flocked to Apple Park from around the world to catch a\nglimpse of the company’s new and long-awaited foldable phone, the\nDuo. After Ternus takes a few photos with the device, an Apple PR\nrep pulls the influencer known as IShowSpeed out of the\ncro",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-19",
+      "summary_zh": "Time杂志发表文章介绍苹果新任CEO John Ternus，描绘了他在硅谷苹果园区面对来自世界各地的名人、科技爱好者和记者时的场景，文章捕捉到了他脸上带着微笑但双手颤抖的紧张状态。",
+      "why_matters": "了解苹果新任领导者形象与风格的窗口。",
+      "tags": "Apple, John Ternus, CEO, 科技新闻",
+      "id": 2027,
+      "added_at": "2026-10-20 05:57:46"
+    },
+    {
+      "title": "Netflix Lays Off 6 Percent of Staff",
+      "url": "https://www.wsj.com/business/media/netflix-eliminates-about-6-of-staff-in-biggest-cuts-since-2022-0a2d8ec3?st=NtEg5v&reflink=desktopwebshare_permalink",
+      "summary": "Joe Flint and Jessica Toonkel, reporting for The Wall Street Journal last week:\n\n\n  Netflix is cutting 6% of its staff, or roughly 1,000 positions\nglobally, its biggest round of layoffs since 2022, as it struggles\nwith slowing growth and customer engagement. Co-Chief Executives\nGreg Peters and Ted Sarandos said in an email to employees\nWednesday morning that the bulk of the cuts would be in the\nstreaming giant’s product, tech, legal and human-resources teams.\n\n\nThe layoffs may have hit those tea",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-19",
+      "summary_zh": "Netflix宣布裁减6%的全球员工，约为1000人，这是该公司自2022年以来规模最大的一轮裁员。此次裁员反映了Netflix正面临增长放缓和用户参与度下降的挑战，公司正在通过缩减人力成本来应对业绩压力。",
+      "why_matters": "了解流媒体行业巨头如何应对增长瓶颈的典型案例。",
+      "tags": "Netflix, 裁员, 流媒体, 科技行业",
+      "id": 2025,
+      "added_at": "2026-10-20 05:57:46"
+    },
+    {
+      "title": "Ex-Apple Employee Fred Potter on HomeView",
+      "url": "https://www.linkedin.com/posts/frpotter_tonight-im-looking-back-through-the-photo-share-7515791565718454272-ue-R/",
+      "summary": "Fred Potter, on LinkedIn:\n\n\n  So if you ever meet someone who tells you, “At Apple, I’m the one\nwho did this,” take it with a grain of salt. They were probably\npart of the team that made it happen, and that’s already something\nto be proud of.\n\nSometimes, when the final product finally comes out, you can\nrecognize a few of the personal touches you contributed along the\nway. And that, in itself, is immensely rewarding.\n\nWishing HomeView every success!\n\n\nPotter’s LinkedIn bio lists his time at Appl",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-19",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 2023,
+      "added_at": "2026-10-20 05:57:46"
+    },
+    {
+      "title": "Netflix Shitcanned Film Chief Dan Lin Too",
+      "url": "https://deadline.com/2026/10/netflix-dan-lin-out-1237167562/",
+      "summary": "Anthony D’Alessandro, reporting for Deadline:\n\n\n  Dan Lin is out as film boss at Netflix in a move that has been\nlargely speculated for weeks. Insiders at the streamer have denied\nthat Lin and even Bela Bajaria were on the chopping block, but\nhere we are.\n\nLin is meeting with his feature staff Monday morning for a\npost-mortem after the news. Per sources close to the situation, a\nsuccessor to Lin won’t be named until the arrival of Peter Rice,\nwho is taking over Netflix’s Chief Content Officer ro",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-19",
+      "summary_zh": "Netflix电影部门负责人Dan Lin突然离职，这一消息此前已被业界猜测数周，尽管公司内部曾否认相关传言。Lin目前正在与特征部门员工开会进行交接，此次人事变动标志着Netflix在内容策略上可能迎来新调整。",
+      "why_matters": "了解流媒体行业重要人事变动及Netflix未来内容方向",
+      "tags": "Netflix, Dan Lin, 人事变动, 流媒体",
+      "id": 2021,
+      "added_at": "2026-10-20 05:57:46"
+    },
+    {
+      "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+      "url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+      "summary": "U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources close to the investigation say one of the executives in the United States even helped ShinyHunters operate a website that pressured victims into paying a ransom.",
+      "source": "krebsonsecurity.com",
+      "category": "security",
+      "published": "2026-10-19",
+      "summary_zh": "美国联邦调查人员追查ShinyHunters黑客组织时发现，两家不同勒索软件谈判公司的管理人员与该黑客组织保持着异常密切的关系。ShinyHunters近期从FBI窃取了高度敏感数据，而负责与黑客谈判的中间人反而可能与攻击者存在关联，暴露了勒索软件生态系统中可能存在的利益输送问题。",
+      "why_matters": "揭示了勒索软件产业链中谈判方与攻击者可能存在勾结的黑幕，对理解网络犯罪生态有重要参考价值。",
+      "tags": "网络安全, 勒索软件, ShinyHunters",
+      "id": 2019,
+      "added_at": "2026-10-20 05:57:46"
+    },
+    {
+      "title": "What requirements don't you have?",
+      "url": "https://seangoedecke.com/what-requirements-dont-you-have/",
+      "summary": "When designing software, the requirements you don’t have are as important as the requirements you do. Identifying what you can compromise on — what can be slow, or stale, or inflexible — is usually the key to an elegant design.\nElegant systems drop some requirements\nFor instance, take preforking web servers like Unicorn. Because they lack the feature of shared mutable state between server instances, they can run each server in its own process, which provides isolation for free. Because Unicorn s",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-10-19",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 2017,
+      "added_at": "2026-10-20 05:57:46"
+    },
+    {
       "title": "openclaw 2026.10.5",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5",
       "source": "openclaw",
@@ -25983,5 +26139,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-19 15:31:17"
+  "last_updated": "2026-10-20 05:57:46"
 }
