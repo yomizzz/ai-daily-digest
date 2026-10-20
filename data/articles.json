@@ -1,6 +1,110 @@
 {
   "articles": [
     {
+      "title": "ClickHouse Will Let You Be Wrong at Scale",
+      "url": "https://matduggan.com/clickhouse-will-let-you-be-wrong-at-scale/",
+      "summary": "So I&apos;ve posted before how I think ClickHouse is great. Its columnar storage is fast, it has amazing compression. I won&apos;t bore you with those details, you can see them all here: https://matduggan.com/clickhouse-is-winning-the-observability-wars/However all technology is great",
+      "source": "matduggan.com",
+      "category": "blog",
+      "published": "2026-10-20",
+      "summary_zh": "文章探讨了ClickHouse在处理大规模数据时的一个关键特点——其架构允许在规模上有一定的容错空间。作者认为ClickHouse虽然有出色的列式存储和压缩性能，但在实际应用中需要理解其设计权衡，尤其是在可观测性场景下可能面临的挑战。",
+      "why_matters": "如果你正在考虑使用ClickHouse处理大规模数据，这篇文章能帮助你理解其实际应用中的权衡点。",
+      "tags": "ClickHouse, 数据库, 可观测性",
+      "id": 2043,
+      "added_at": "2026-10-21 05:11:31"
+    },
+    {
+      "title": "What happened to Epyx",
+      "url": "https://dfarq.homeip.net/what-happened-to-epyx/?utm_source=rss&utm_medium=rss&utm_campaign=what-happened-to-epyx",
+      "summary": "Epyx was one of the most celebrated and prolific software publishers for 8-bit home computers, especially Atari and Commodore, and, to a lesser degree, Apple. But they struggled to transition to newer platforms and that ultimately led to bankruptcy, on\nThe post What happened to Epyx appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-10-20",
+      "summary_zh": "Epyx曾是8位家用电脑时代最具影响力的软件发行商之一，在Atari和Commodore平台推出了大量经典游戏。然而，随着游戏产业向新平台转型，Epyx未能及时适应市场变化，最终走向破产。这段历史成为科技行业“创新者困境”的典型案例。",
+      "why_matters": "通过了解Epyx的兴衰历程，可以窥见游戏产业变迁的缩影，从中汲取关于企业转型与创新的深刻教训。",
+      "tags": "游戏公司历史, 怀旧游戏, 商业案例",
+      "id": 2041,
+      "added_at": "2026-10-21 05:11:31"
+    },
+    {
+      "title": "AI Had Better Work Out",
+      "url": "https://www.wheresyoured.at/ai-had-better-work-out/",
+      "summary": "If you liked this piece, you should subscribe to my premium newsletter, and you can subscribe on the following links: &#x24;70 a year, &#x24;18 a quarter, or &#x24;7 a month.In return, you get a weekly premium newsletter that dives deep into the finances of the AI",
+      "source": "wheresyoured.at",
+      "category": "blog",
+      "published": "2026-10-20",
+      "summary_zh": "文章探讨了AI行业当前面临的财务压力与挑战，指出AI领域的大量投资需要通过实际盈利来证明其价值。作者认为AI技术必须尽快展现出可量化的商业回报，否则将面临投资者信心动摇的风险。文中可能分析了多家AI公司的财务数据与商业模式。",
+      "why_matters": "对于关注AI行业投资价值和长期发展的读者，这篇文章提供了难得的财务视角深度分析。",
+      "tags": "AI投资, 人工智能, 金融分析, 科技股",
+      "id": 2039,
+      "added_at": "2026-10-21 05:11:31"
+    },
+    {
+      "title": "Book Review: Quackery - A Brief History of the Worst Ways to Cure Everything by Lydia Kang ★★★⯪☆",
+      "url": "https://shkspr.mobi/blog/2026/10/book-review-quackery-a-brief-history-of-the-worst-ways-to-cure-everything-by-lydia-kang/",
+      "summary": "This is a charming and funny book all about the various ways humans have promoted fake medical cures in exchange for money.  Despite the grim (and occasionally distressing) subject matter, the tone remains light and poppy throughout. There are lots of snarky asides (especially about the fake medical practitioners) and a real appreciation for the bizarre. It&#039;s fun the whole way through, although …",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-10-20",
+      "summary_zh": "本书由Lydia Kang撰写，以轻松幽默的笔调回顾了人类历史上各种伪医学和虚假疗法。作者揭露了为牟利而推广的荒谬治疗手段，涵盖从放血疗法到各种奇怪药方的多个案例。尽管涉及沉重甚至令人不安的历史，但全书保持俏皮生动的叙述风格。",
+      "why_matters": "适合想以轻松有趣的方式了解医学黑历史的读者。",
+      "tags": "书评,医学史,科普",
+      "id": 2037,
+      "added_at": "2026-10-21 05:11:31"
+    },
+    {
+      "title": "Pluralistic: The death of history's most successful publisher (20 Oct 2026)",
+      "url": "https://pluralistic.net/2026/10/20/main-character-syndrome/",
+      "summary": "Today's links The death of history's most successful publisher: Google has a scorching case of \"main character syndrome.\" Hey look at this: Delights to delectate. Object permanence: Civil War x 4,400 ceramic cats; Okaysellers; Frankenstein hat; Clockwork Fagin; Tracking trackers; \"Fever Beach.\" Upcoming appearances: Victoria, Vancouver, Ottawa, Vienna, Kilkenny, Couretnay, Vancouver, Oxford, Sheffield, Virtual, Oxford, Montreal. Recent appearances: Where I've been. Latest books: You keep readin'",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-10-20",
+      "summary_zh": "本文探讨了Google作为“历史上最成功出版商”所面临的危机，指出其陷入严重的“主角综合症”，忽视了用户和生态系统的真实需求。文章还收录了多个科技、设计和文化领域的趣闻，包括陶瓷猫艺术、追踪器追踪技术及文学改编等话题。",
+      "why_matters": "对于关注科技行业变革和数字平台生态的读者具有启发意义。",
+      "tags": "科技评论, Google, 数字出版, 互联网观察",
+      "id": 2035,
+      "added_at": "2026-10-21 05:11:31"
+    },
+    {
+      "title": "Barack Obama on the Trump Administration’s Intimidation Campaign Against Congresswoman Ilhan Omar",
+      "url": "https://x.com/BarackObama/status/2111819687524774170",
+      "summary": "Barack Obama, in a 430-word essay:\n\n\n  It is a basic principle of American democracy that the government\ncan’t selectively target individuals simply because of their\npolitical beliefs or what they say. But that’s exactly what the\nTrump Administration is doing to Congresswoman Ilhan Omar of\nMinnesota. [...]\n\nThe fact that any president, or any administration, is willing to\nengage in such transparent efforts to intimidate someone should\noutrage all Americans, regardless of how they feel about\nCong",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-20",
+      "summary_zh": "奥巴马在一篇430字的短文中批评Trump政府针对明尼苏达州国会议员Ilhan Omar的做法，指出美国民主的基本原则是政府不能因政治观点或言论而选择性针对个人。Obama强调这种做法违背了美国的核心价值，是对民主制度的威胁。",
+      "why_matters": "文章从一个美国前总统的视角，阐明了民主制度的底线和言论自由的重要性。",
+      "tags": "美国政治，民主制度，言论自由",
+      "id": 2033,
+      "added_at": "2026-10-21 05:11:31"
+    },
+    {
+      "title": "Laypeople support technical fields for technology, not art",
+      "url": "https://seangoedecke.com/laypeople-support-technical-fields-for-technology-not-art/",
+      "summary": "Some people think that LLMs should not be used in technical fields like programming or mathematics, because those fields are actually art. True or not, this kind of argument is not going to be persuasive to the general population. The argument goes something1 like this:\n\nIt doesn’t matter how effective LLMs are at technical fields like programming or mathematics, because one of the essential values of those fields is that they’re art. While it looks to laypeople like these fields exist to solve ",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-10-20",
+      "summary_zh": "文章指出，当前有人主张大语言模型（LLM）不应应用于编程、数学等技术领域，因为这些领域本质上是“艺术”。然而，作者认为无论这一观点是否成立，这种论证方式对普通大众缺乏说服力。普通人支持技术在各领域的应用，主要是因为其带来的实用价值和技术效能，而非基于对这些领域艺术性的认同。",
+      "why_matters": "帮助读者理解为何AI技术争议中“艺术论”难以说服普通受众，提供了有价值的论证策略视角。",
+      "tags": "AI技术争议, 技术与艺术, 论点策略",
+      "id": 2031,
+      "added_at": "2026-10-21 05:11:31"
+    },
+    {
+      "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
+      "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+      "summary": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones (play it here). Unlike my previous experiments, this one is actually fun to play. I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way.\n\n\n  Battle Drones\n  How I built t",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-10-20",
+      "summary_zh": "作者Simon Willison分享了他使用AI辅助编程开发的即时战略游戏Battle Drones，该游戏采用类似Command & Conquer的玩法，并加入了音频多人模式。作者透露游戏的突破性改进来自于将提示词从\"make it fun\"改为\"make it A LOT more fun\"，这次调整让游戏真正变得有趣好玩。",
+      "why_matters": "展示了如何通过AI辅助编程（vibe coding）快速迭代并创建出真正有趣的游戏产品，对AI编程实践有启发意义。",
+      "tags": "AI编程,游戏开发,RTS游戏",
+      "id": 2029,
+      "added_at": "2026-10-21 05:11:31"
+    },
+    {
       "title": "Weekly Update 526: Building HIBP AI/SI First",
       "url": "https://www.troyhunt.com/weekly-update-526/",
       "summary": "I have this sense that we&apos;ve passed the point where \"vibe coding\" is a derogatory term. I have no empirical evidence for this; it&apos;s more a feeling that those weaponising the term have now accepted the inevitability and are just getting with the program.",
@@ -26139,5 +26243,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-20 15:19:34"
+  "last_updated": "2026-10-21 05:11:31"
 }
