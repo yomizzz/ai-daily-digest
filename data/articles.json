@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.22.4",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.4",
+      "source": "hermes-agent",
+      "published": "2026-10-22",
+      "category": "hermes",
+      "summary_zh": "- 桌面版移除输入框上方无明确用途的“建议胶囊”，并删除仅供该功能使用的辅助代码。\n- 插件未声明依赖或 `pyproject.toml` 未安装任何依赖时，可跳过无意义的依赖授权提示，直接启用。\n- 仪表盘支持退出登录后安全地重新配对 WhatsApp。\n- 桌面插件审查调整 lint 规则，不再将原型写入操作标记为问题，相关内容改由人工复核。\n- 桌面版的审批模式标签会跟随当前激活配置文件的审批模式切换。\n- 发布构建优化：在存储较慢时延长桌面安装包预构建检查超时时间，以确保归档构建输入完成验证。\n- 插件目录新增 bubblewrap（Linux 上的 `bwrap` 终端后端）、Singularity/Apptainer、`mcp-serve`（将 Hermes 作为 MCP 服务）、`agent-importers`（支持通过 `hermes import-agent` 导入 Cursor 配置），以及 Hermes Labs 的 inbox 和 workflow-record 插件。\n- Telegram Business 转移至 Hermes Labs 社区版层级。\n- 本次为 v0.22.3 之后的补丁版本，包含 14 个非合并提交和 13 个合并 PR。\n- 平台更新方式保持不变：Microsoft Store 用户通过商店更新；桌面 `.exe`/`.dmg` 安装版将在下一次捆绑发布时更新；CLI 可运行 `hermes update` 或重新执行安装命令；Docker 与 Hermes Cloud 可使用 `nousresearch/hermes-agent:stable` 或 `:latest` 镜像。",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Going Somewhere",
       "url": "https://simone.org/somewhere/",
       "summary": "Vicky, driving me home from O'Hare, got sixteen dollars for the best conversation I had in months. The last line is hers.",
@@ -207,6 +217,16 @@
       "tags": "PHP安全,远程代码执行,漏洞修复",
       "id": 2037,
       "added_at": "2026-10-22 05:11:05"
+    },
+    {
+      "title": "Hermes Agent v0.22.3",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.3",
+      "source": "hermes-agent",
+      "published": "2026-10-21",
+      "category": "hermes",
+      "summary_zh": "- v0.22.3 是补丁版本，集中合并自 v0.22.2 以来的约 620 个 PR，涵盖 CLI、安装器、Microsoft Store 应用、Docker 与 Hermes Cloud。\n- 本次更新包含 2,911 个非合并提交，共修改 4,206 个文件；约 620 个 PR 合并，并关闭 326 个 Issue。\n- MCP 进度通知得到增强，可将工具执行进度以实时流式形式展示。\n- 经典 CLI 界面完成刷新，新增字形记录区、输入框下方状态栏及双行标题栏。\n- 插件支持声明 OAuth 客户端，由 Hermes 统一完成登录、令牌刷新与生命周期管理。\n- 新增 `hermes plugins update`，可批量获取可用插件更新；Desktop 端也为 Git 安装的插件提供“更新”按钮。\n- Desktop 新增队列提示词编辑与引导式操作，支持在任务执行前调整待处理指令。\n- Desktop 提供引导式子代理模型与提供商选择器，便于按任务配置执行环境。\n- CLI 与 TUI 的 `/loop` 命令新增实时倒计时行。\n- Telegram 私信支持可选的话题转移功能。\n- 新增 `post_compaction` 插件钩子，可在上下文压缩后执行自定义逻辑。\n- 新增能力目录，用于集中展示和查询系统支持的功能。\n- Microsoft Store 版本现可在新 Release 发布时自动上线。\n- 磁盘空间不足时将一次性提示用户，并默认保持会话自动清理为选择性启用。\n- 本地运行时新增 Nemotron 3.5 Bolt 与单槽位 DFlash 草稿支持。\n- 插件目录新增数十个条目，进一步扩充可用插件生态。\n- Microsoft Store 应用通过商店更新；已通过 `.exe` 或 `.dmg` 安装的 Desktop 应用将在下一次捆绑发布时更新。\n- CLI 可通过 `hermes update` 或重新运行安装器命令更新；Docker 与 Hermes Cloud 可使用 `nousresearch/hermes-agent:stable` 或 `:latest` 镜像。\n- 本版本的完整整理版发布说明及完整贡献者名单将在 v0.23.0 中统一提供。",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
     },
     {
       "title": "ClickHouse Will Let You Be Wrong at Scale",
@@ -26451,5 +26471,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-22 05:11:05"
+  "last_updated": "2026-10-22 15:20:10"
 }
