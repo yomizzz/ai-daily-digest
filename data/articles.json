@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.22.5",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.5",
+      "source": "hermes-agent",
+      "published": "2026-10-23",
+      "category": "hermes",
+      "summary_zh": "- v0.22.5 为补丁版本，汇总自 v0.22.4 以来的约 81 个 PR，包含 231 个非合并提交，改动 804 个文件，并关闭 30 个问题。\n- 重构 Nous 登录流程：统一采用设备登录，支持免费访客账号交接、登录身份展示及连接器直接登录。\n- 改进 `hermes update`：稳定版本不可用时不再错误提供升级，并可修复损坏的 `.git` 仓库、恢复暂停的网关进程。\n- 新增按时间窗口计费的套餐支持，包括套餐用量指示、限额卡片及模型切换后的额度恢复。\n- 支持可插拔的子代理委派后端，可按模型映射或配置档案路由子代理，并允许按会话切换。\n- 插件新增斜杠命令交互选项，并支持一键安装插件及展示套餐等级徽章。\n- 新增 `hermes import-agent`，可检测并导入其他代理生态的数据；同时提供 OpenClaw 迁移能力。\n- 新增 `hermes mcp serve`，并提供实验性的 Webhook 模式 MCP 事件客户端。\n- 将 Singularity 后端从核心移至插件，核心模块更易维护和扩展。\n- 桌面端支持从侧边栏拖拽固定应用，群聊界面重新显示当前正在工作的机器人。\n- Windows 执行 Python 版本重定向更新后，不再卡在旧启动器；Windows 更新流程也得到改进。\n- 修复聊天工作目录丢失时提示不清晰的问题。\n- 修复 Claude DirectSDK 长回答可能因停滞计时器而被提前截断的问题。\n- Electron 升级至 44，Pillow 升级至 13，并批量更新依赖以修复安全问题。\n- 完整、分类整理的发布说明将在 v0.23.0 提供；本版本没有跳过任何变更，仅暂不逐项记录。\n- Microsoft Store 应用通过商店更新；Docker 与 Hermes Cloud 使用 `nousresearch/hermes-agent:stable` 或 `:latest` 镜像。\n- 通过安装器安装的 CLI 和桌面版可使用 `hermes update` 更新；桌面安装版（`.exe`/`.dmg`）本次无改动，将随下个捆绑版本升级。",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "If people would just",
       "url": "https://herman.bearblog.dev/if-people-would-just/",
       "summary": "Building systems that incentivise good behaviour",
@@ -204,6 +214,18 @@
       "summary_zh": "- 桌面版移除输入框上方无明确用途的“建议胶囊”，并删除仅供该功能使用的辅助代码。\n- 插件未声明依赖或 `pyproject.toml` 未安装任何依赖时，可跳过无意义的依赖授权提示，直接启用。\n- 仪表盘支持退出登录后安全地重新配对 WhatsApp。\n- 桌面插件审查调整 lint 规则，不再将原型写入操作标记为问题，相关内容改由人工复核。\n- 桌面版的审批模式标签会跟随当前激活配置文件的审批模式切换。\n- 发布构建优化：在存储较慢时延长桌面安装包预构建检查超时时间，以确保归档构建输入完成验证。\n- 插件目录新增 bubblewrap（Linux 上的 `bwrap` 终端后端）、Singularity/Apptainer、`mcp-serve`（将 Hermes 作为 MCP 服务）、`agent-importers`（支持通过 `hermes import-agent` 导入 Cursor 配置），以及 Hermes Labs 的 inbox 和 workflow-record 插件。\n- Telegram Business 转移至 Hermes Labs 社区版层级。\n- 本次为 v0.22.3 之后的补丁版本，包含 14 个非合并提交和 13 个合并 PR。\n- 平台更新方式保持不变：Microsoft Store 用户通过商店更新；桌面 `.exe`/`.dmg` 安装版将在下一次捆绑发布时更新；CLI 可运行 `hermes update` 或重新执行安装命令；Docker 与 Hermes Cloud 可使用 `nousresearch/hermes-agent:stable` 或 `:latest` 镜像。",
       "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
+    },
+    {
+      "title": "openclaw 2026.10.6",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.6",
+      "source": "openclaw",
+      "published": "2026-10-22",
+      "category": "openclaw",
+      "summary": "- 无\n\n🐛 Bug 修复：- 修复升级后系统代理数据库无法访问问题\n- 修复更新过程中 Windows 状态与权限处理异常\n- 修复 macOS 伴侣执行超时及命令重复执行问题\n- 修复迁移与备份过程的数据损坏或丢失问题\n- 修复重启后队列、回复及投递结果丢失问题\n- 修复 GPT-5.6 等模型工具调用与重试异常\n- 修复代理工具调用超时、溢出及崩溃问题\n- 修复 Windows 代理环境和移动端连接故障\n- 修复 WhatsApp、Telegram、Slack 等消息投递异常\n- 修复重启后工作树损坏及子任务结果丢失问题\n- 修复包更新失败后的恢复与安全替换问题\n- 修复插件元数据、迁移警告及版本同步问题",
+      "features": "- 无",
+      "bug_fixes": "- 修复升级后系统代理数据库无法访问问题\n- 修复更新过程中 Windows 状态与权限处理异常\n- 修复 macOS 伴侣执行超时及命令重复执行问题\n- 修复迁移与备份过程的数据损坏或丢失问题\n- 修复重启后队列、回复及投递结果丢失问题\n- 修复 GPT-5.6 等模型工具调用与重试异常\n- 修复代理工具调用超时、溢出及崩溃问题\n- 修复 Windows 代理环境和移动端连接故障\n- 修复 WhatsApp、Telegram、Slack 等消息投递异常\n- 修复重启后工作树损坏及子任务结果丢失问题\n- 修复包更新失败后的恢复与安全替换问题\n- 修复插件元数据、迁移警告及版本同步问题",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
     },
     {
       "title": "Going Somewhere",
@@ -26666,5 +26688,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-23 05:05:37"
+  "last_updated": "2026-10-23 15:13:29"
 }
