@@ -1,6 +1,149 @@
 {
   "articles": [
     {
+      "title": "Interesting systemd features you may not know about",
+      "url": "https://martinalderson.com/posts/interesting-systemd-features/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
+      "summary": "Memory caps, run time limits, sleep inhibitors, better cron and path units - systemd features that turn out to be handy for running throwaway agent-written code.",
+      "source": "martinalderson.com",
+      "category": "blog",
+      "published": "2026-10-24",
+      "summary_zh": "文章介绍了 systemd 中一些容易被忽略但非常实用的功能，包括内存上限、运行时限、休眠抑制器，以及增强版的定时器和路径单元。这些特性可用于隔离和控制临时运行的、由智能体生成的代码，减少资源占用及对系统运行的影响。",
+      "why_matters": "适合希望利用 systemd 更安全、高效地运行和监管自动化或一次性代码的开发者。",
+      "tags": "systemd，资源管理，自动化运维",
+      "id": 2106,
+      "added_at": "2026-10-25 04:04:49"
+    },
+    {
+      "title": "Elon Musk Just Gave Europe a Reason to Replace American Technology",
+      "url": "https://steveblank.com/2026/10/24/europe-gets-a-wake-up-call/",
+      "summary": "I’ve been in London for the last month and have heard policymakers react to the wake up call Elon Musk just delivered.  The decision of the U.S. to shut off intelligence and throttle the military version of Starlink called Starshield to Ukraine may have been a blip in the news in the US, but it [&#8230;]",
+      "source": "steveblank.com",
+      "category": "blog",
+      "published": "2026-10-24",
+      "summary_zh": "文章认为，美国切断乌克兰情报并限制军用版星链（Starshield）的做法，给欧洲敲响了警钟：当关键通信与安全基础设施依赖美国技术平台时，盟友也可能受到政治要挟。欧洲政策界因此开始讨论降低对美国技术、芯片和云服务的依赖，并加快建设自主可控的替代方案。",
+      "why_matters": "文章揭示了美国科技基础设施背后的地缘政治风险，以及欧洲推动技术自主化的现实动因。",
+      "tags": "欧洲科技自主,星链,地缘政治",
+      "id": 2104,
+      "added_at": "2026-10-25 04:04:49"
+    },
+    {
+      "title": "Commodore 1600 VICmodem",
+      "url": "https://dfarq.homeip.net/commodore-1600-vicmodem/?utm_source=rss&utm_medium=rss&utm_campaign=commodore-1600-vicmodem",
+      "summary": "In 1982, computers seemed like a thing in the future for the majority of people. But Commodore was doing what they could to make them affordable. After creating the first color computer that would sell for less than $300, the\nThe post Commodore 1600 VICmodem appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-10-24",
+      "summary_zh": "文章回顾了 Commodore 在 1982 年如何通过推出价格亲民的个人电脑，让当时仍显遥远的计算机技术走进更多家庭。内容聚焦于 Commodore 1600 VICmodem，并可能涉及早期 VIC 系列电脑的发展及其价格策略。",
+      "why_matters": "适合对 Commodore 复古硬件和个人电脑发展史感兴趣的读者。",
+      "tags": "Commodore,复古电脑,科技史",
+      "id": 2102,
+      "added_at": "2026-10-25 04:04:49"
+    },
+    {
+      "title": "Reading List 10/24/26",
+      "url": "https://www.construction-physics.com/p/reading-list-102426",
+      "summary": "Minimum lot sizes, Boeing&#8217;s next 737 MAX, Fervo short sellers, Figure AI&#8217;s training data, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-10-24",
+      "summary_zh": "这期阅读清单聚焦建筑物理与前沿科技产业，涵盖最小地块规模、波音下一代737 MAX、Fervo资本做空动态，以及Figure AI的训练数据等问题。文章以简短导读形式串联网通产业、技术与商业资讯。",
+      "why_matters": "适合希望快速了解跨领域行业动态、捕捉技术与投资趋势的读者。",
+      "tags": "建筑物理,航空制造,人工智能,产业动态",
+      "id": 2100,
+      "added_at": "2026-10-25 04:04:49"
+    },
+    {
+      "title": "This Week in Package Management: 24 October 2026",
+      "url": "https://nesbitt.io/2026/10/24/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-10-24",
+      "summary_zh": "本文汇总了 2026 年 10 月 24 日当周软件包管理领域的最新动态，涵盖重要版本发布、安全公告及相关行业文章。文章适合希望快速了解包管理工具更新、生态变化与安全风险的读者。",
+      "why_matters": "可通过一篇文章集中掌握包管理社区本周的关键发布、漏洞信息与趋势。",
+      "tags": "软件包管理,版本发布,安全公告",
+      "id": 2098,
+      "added_at": "2026-10-25 04:04:49"
+    },
+    {
+      "title": "List of Vim forks",
+      "url": "https://evanhahn.com/list-of-vim-forks/",
+      "summary": "Here are the Vim forks I know about:\n\n\nNeovim: &ldquo;a Vim-based text editor engineered for extensibility and usability, to encourage new applications and contributions.&rdquo;\n\n\nVim Classic: &ldquo;a stable, long-term support fork of the ubiquitous text editor, maintained without the assistance of generative AI tools.&rdquo;\n\n\nEVi: &ldquo;a hard-fork of Vim v9.1.0 (Jan 2024) before AI was used in the project.&rdquo;\n\n\nMacVim: &ldquo;a macOS version of the Vim text editor, providing a graphical",
+      "source": "evanhahn.com",
+      "category": "blog",
+      "published": "2026-10-24",
+      "summary_zh": "文章整理了目前已知的 Vim 分支，介绍了 Neovim 和 Vim Classic 等版本及其定位。Neovim 强调可扩展性与易用性，Vim Classic 则主打稳定性和长期支持。",
+      "why_matters": "想了解 Vim 生态、比较不同分支特点与适用场景的读者值得参考。",
+      "tags": "Vim,编辑器,版本分支",
+      "id": 2096,
+      "added_at": "2026-10-25 04:04:49"
+    },
+    {
+      "title": "Book Review: Get Ahead of Being Dead by Evie King ★★★★☆",
+      "url": "https://shkspr.mobi/blog/2026/10/book-review-get-ahead-of-being-dead-by-evie-king/",
+      "summary": "After reading Evie King&#039;s previous book Ashes To Admin - Tales from the Caseload of a Council Funeral Officer I was eager to read her not-quite-a-sequel.  We know what happens after death; paperwork. Gas bills need to be cancelled, funeral wishes need to be carried out, money needs to be apportioned between warring family members. When you die, you won&#039;t be there to experience the annoyance and …",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-10-24",
+      "summary_zh": "文章评介了埃维·金的《Get Ahead of Being Dead》，作者曾读过其前作《Ashes To Admin》，并期待这部带有“准续作”性质的新书。作品聚焦死亡后的行政手续，包括取消煤气账单、落实葬礼遗愿及分配遗产等事务，以幽默视角描绘生者与亡者面对繁琐手续时的荒诞处境。",
+      "why_matters": "这是一本将死亡、生前意愿与日常行政流程巧妙结合、兼具黑色幽默特色的作品。",
+      "tags": "书评,黑色幽默,死亡与行政",
+      "id": 2094,
+      "added_at": "2026-10-25 04:04:49"
+    },
+    {
+      "title": "Chan Karunamuni on the Duo’s Open/Close Translucent Transition",
+      "url": "https://x.com/chan_k/status/2113622379050246243",
+      "summary": "Chan Karunamuni, human interface designer at Apple, on X:\n\n\n  iPhone Duo is here! Excited to have worked on the design of our\nopen/close transition. It’s designed to make the two displays feel\nlike one seamless experience by perceptually bending the focal\nplane, not the content, so that it feels like opening a window\nonto a singular view.\n\n\nKarunamuni thanks a few engineers by name, which is always good (and for Apple employees, far too rare) to see.\n\nJohnnie Manzari, HI designer formerly of App",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-24",
+      "summary_zh": "苹果人机界面设计师 Chan Karunamuni 分享了 iPhone Duo 屏幕开合时的半透明过渡设计。该动画通过在视觉上弯曲焦平面而非移动内容，让两块显示屏呈现连贯的一体化体验。",
+      "why_matters": "揭示了双屏设备开合动画背后的交互设计思路与技术取舍。",
+      "tags": "苹果,iPhone Duo,界面设计",
+      "id": 2092,
+      "added_at": "2026-10-25 04:04:49"
+    },
+    {
+      "title": "Apple Built a Photo-Realistic Functional Original iPod for Apple Music’s 404 Page",
+      "url": "https://music.apple.com/404",
+      "summary": "It seems like this amazing Easter egg only launched yesterday, to celebrate the original iPod’s 25th anniversary. Exquisitely well done. More like this, please.\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-24",
+      "summary_zh": "为庆祝初代 iPod 上市 25 周年，Apple Music 的 404 错误页上线了一个照片级逼真的互动 iPod 彩蛋，细节精致且可实际使用。",
+      "why_matters": "这是兼具怀旧情怀与创意交互的细节设计，也展示了 Apple 优秀的视觉还原能力。",
+      "tags": "苹果,iPod,彩蛋,产品设计",
+      "id": 2090,
+      "added_at": "2026-10-25 04:04:49"
+    },
+    {
+      "title": "Tim Pan’s iPhone Duo Review",
+      "url": "https://www.youtube.com/watch?v=8pCccpKjjos",
+      "summary": "I hadn’t heard of Tim Pan or Mediastorm until running across his 24-minute video review of the Duo. It’s a good and fair review, but what struck me are the rather astonishing production values. Amongst other things, they stress-tested the hinge with an industrial robot by opening/closing it 10,000 times. (That’s less than one-third the folds tested by Joanna Stern’s Hingey, but still.) but It’s an incredible piece of work, especially given the one-week time constraint. English is Pan’s second la",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-24",
+      "summary_zh": "文章介绍 Tim Pan 与 Mediastorm 制作的 iPhone Duo 24 分钟评测视频，认为其观点客观公正，亮点之一是制作水准极高。团队还使用工业机器人对设备铰链进行开合 1 万次等压力测试，以直观展示耐用性。",
+      "why_matters": "视频不仅提供均衡的产品评价，还通过专业工业测试呈现了 iPhone Duo 的质量与耐用表现。",
+      "tags": "iPhone Duo, 产品评测, 压力测试",
+      "id": 2088,
+      "added_at": "2026-10-25 04:04:49"
+    },
+    {
+      "title": "battledrones v14: Compass Rose, a four player map",
+      "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
+      "summary": "Release: battledrones v14: Compass Rose, a four player map\n        I added four player online mode to Battledrones - previous maps were limited to two.\nHere's the initial prompt I used: \n\nAdd a new map for a four player battle - four way rotational symmetry, up to four AI players, works with the WebSocket non-audio based multiplayer mode so up to four human players can join (any spare slots use AI)\n\nClaude Opus 5.5 added a new map called \"Compass Rose\" and modified the WebSockets multiplayer net",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-10-24",
+      "summary_zh": "Battledrones 发布 v14 版本，新增以“四向旋转对称”为设计特色的“Compass Rose”四人战斗地图，并支持最多四名 AI 玩家。该版本还加入了四人在线模式，突破了此前地图仅支持两人对战的限制，并可运行于 Web 端。",
+      "why_matters": "文章介绍了一个可直接体验、扩展了多人对战玩法的 Battledrones 新版本。",
+      "tags": "Battledrones,多人游戏,Web游戏",
+      "id": 2086,
+      "added_at": "2026-10-25 04:04:49"
+    },
+    {
       "title": "Windows XP released October 25, 2001",
       "url": "https://dfarq.homeip.net/windows-xp-released-october-25-2001/?utm_source=rss&utm_medium=rss&utm_campaign=windows-xp-released-october-25-2001",
       "summary": "It was 25 years ago this week, on October 25, 2001, that Microsoft released Windows XP. I find it interesting that Microsoft released two of the most beloved Windows versions in the same week, 8 years apart, and another one\nThe post Windows XP released October 25, 2001 appeared first on The Silicon Underground.",
@@ -26870,5 +27013,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-24 15:01:57"
+  "last_updated": "2026-10-25 04:04:49"
 }
