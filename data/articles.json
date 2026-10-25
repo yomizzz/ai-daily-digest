@@ -144,6 +144,30 @@
       "added_at": "2026-10-25 04:04:49"
     },
     {
+      "title": "openclaw 2026.10.7",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.7",
+      "source": "openclaw",
+      "published": "2026-10-24",
+      "category": "openclaw",
+      "summary": "- 支持 Gemini 4 Argon 模型\n- 支持跨平台应用托管升级与状态修复\n- 支持 GitHub 操作员延迟接入并发布 PR\n- 支持 Linux Gateway 仪表盘重启后保持配对\n- 支持 OpenRouter 接入与增量插件加载\n\n🐛 Bug 修复：- 中断会话可安全恢复并保留未完成工具结果\n- 被拒绝的 Claude CLI 草稿不会进入最终回复\n- 大批量子任务完成结果不再超出请求上下文\n- 更新激活后可安全恢复，维护错误不影响已验证安装\n- 中断的包更新、备份验证与恢复可安全续传\n- 多文件补丁失败时保留此前已写入文件\n- 维护拒绝时保留其他会话的数据库读取与借用\n- 不兼容的代理数据库将被隔离，避免相互影响\n- Windows 深层路径与 8.3 路径不再阻断迁移\n- macOS 新配置可正常启动 Gateway 并完成自动设置\n- Gateway 临时日志目录失效时不再持续占满 CPU\n- 已消费的排队命令会清除控制界面状态标记\n- 原生计算机控制在会话过期后可正常恢复\n- macOS Talk 慢速运行时会保留回复结果\n- Copilot 设置可正确验证基于 SDK 的代理\n- Passkey 提示不再阻塞无头浏览器点击\n- 配置写入被截断时保留最近一次有效快照",
+      "features": "- 支持 Gemini 4 Argon 模型\n- 支持跨平台应用托管升级与状态修复\n- 支持 GitHub 操作员延迟接入并发布 PR\n- 支持 Linux Gateway 仪表盘重启后保持配对\n- 支持 OpenRouter 接入与增量插件加载",
+      "bug_fixes": "- 中断会话可安全恢复并保留未完成工具结果\n- 被拒绝的 Claude CLI 草稿不会进入最终回复\n- 大批量子任务完成结果不再超出请求上下文\n- 更新激活后可安全恢复，维护错误不影响已验证安装\n- 中断的包更新、备份验证与恢复可安全续传\n- 多文件补丁失败时保留此前已写入文件\n- 维护拒绝时保留其他会话的数据库读取与借用\n- 不兼容的代理数据库将被隔离，避免相互影响\n- Windows 深层路径与 8.3 路径不再阻断迁移\n- macOS 新配置可正常启动 Gateway 并完成自动设置\n- Gateway 临时日志目录失效时不再持续占满 CPU\n- 已消费的排队命令会清除控制界面状态标记\n- 原生计算机控制在会话过期后可正常恢复\n- macOS Talk 慢速运行时会保留回复结果\n- Copilot 设置可正确验证基于 SDK 的代理\n- Passkey 提示不再阻塞无头浏览器点击\n- 配置写入被截断时保留最近一次有效快照",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
+      "title": "openclaw 2026.9.34",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.34",
+      "source": "openclaw",
+      "published": "2026-10-24",
+      "category": "openclaw",
+      "summary": "- 托管升级同步官方插件，并保留修复诊断信息\n- 升级时校验最低 Node.js 版本，阻止使用存在漏洞的运行时\n- 跨版本升级保留更新器运行接口与发布观测能力\n\n🐛 Bug 修复：- 预先校验补丁包，避免无效补丁误删已修改文件\n- Memory Wiki 重新导入概念时保留人工撰写笔记\n- 网关可在模型刷新替换过程中正常启动\n- 模型目录就绪时遵循主模型配置的账号锁定\n- 避免日志轮转占用 CPU，并防止 Buzz 认证中断网关\n- OpenRouter 路由验证可正确接受有效 API 密钥\n- 恢复命令行代理执行中的工具调用前置钩子\n- Claude CLI 子代理完成后不再丢失既有会话上下文\n- 会话归档时跳过空记录，并防止首次创建竞争\n- 安全恢复中断的升级流程并保留中断原因\n- 修复备份、Linux 服务及旧版 macOS 网关状态问题",
+      "features": "- 托管升级同步官方插件，并保留修复诊断信息\n- 升级时校验最低 Node.js 版本，阻止使用存在漏洞的运行时\n- 跨版本升级保留更新器运行接口与发布观测能力",
+      "bug_fixes": "- 预先校验补丁包，避免无效补丁误删已修改文件\n- Memory Wiki 重新导入概念时保留人工撰写笔记\n- 网关可在模型刷新替换过程中正常启动\n- 模型目录就绪时遵循主模型配置的账号锁定\n- 避免日志轮转占用 CPU，并防止 Buzz 认证中断网关\n- OpenRouter 路由验证可正确接受有效 API 密钥\n- 恢复命令行代理执行中的工具调用前置钩子\n- Claude CLI 子代理完成后不再丢失既有会话上下文\n- 会话归档时跳过空记录，并防止首次创建竞争\n- 安全恢复中断的升级流程并保留中断原因\n- 修复备份、Linux 服务及旧版 macOS 网关状态问题",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Windows XP released October 25, 2001",
       "url": "https://dfarq.homeip.net/windows-xp-released-october-25-2001/?utm_source=rss&utm_medium=rss&utm_campaign=windows-xp-released-october-25-2001",
       "summary": "It was 25 years ago this week, on October 25, 2001, that Microsoft released Windows XP. I find it interesting that Microsoft released two of the most beloved Windows versions in the same week, 8 years apart, and another one\nThe post Windows XP released October 25, 2001 appeared first on The Silicon Underground.",
@@ -27013,5 +27037,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-25 04:04:49"
+  "last_updated": "2026-10-25 15:26:38"
 }
