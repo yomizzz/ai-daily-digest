@@ -1,6 +1,136 @@
 {
   "articles": [
     {
+      "title": "MacOS Extensions pack for the Apple Network Server v1.0",
+      "url": "https://oldvcr.blogspot.com/2026/10/macos-extensions-pack-for-apple-network.html",
+      "summary": "By now regular readers of this blog are quite familiar with my affection for the 1996 Apple Network Server, Apple's Unix-through-and-through $10,000+ server that only shipped with, and only officially ran, Harpoon, its unique superset of IBM AIX. An ANS 500, the lower tier of this dorm fridge-sized computer, was the first server I ever personally owned, a nearly-new hand-me-down after Steve Jobs convinced Gil Amelio to cancel the machine and the bookstore's vendor at the University I worked for ",
+      "source": "oldvcr.blogspot.com",
+      "category": "blog",
+      "published": "2026-10-25",
+      "summary_zh": "文章围绕体积如冰箱、价格超过一万美元的 1996 年 Apple Network Server 展开，重点介绍为该服务器打造的 macOS Extensions 软件包 v1.0。内容还回顾了 ANS 所采用的 Harpoon 系统——基于 IBM AIX 扩展而来的专用 Unix 环境，以及 ANS 500 等硬件配置。",
+      "why_matters": "适合对早期 Unix、复古 Macintosh 与 Apple 软硬件生态感兴趣的读者，可了解 ANS 系统背后的技术背景。",
+      "tags": "Apple Network Server,复古计算,Unix,macOS Extensions",
+      "id": 2117,
+      "added_at": "2026-10-26 04:15:43"
+    },
+    {
+      "title": "A rising tide raises all rents",
+      "url": "https://jyn.dev/rising-tide-raises-rents/",
+      "summary": "If AI restructures the economy, who benefits?",
+      "source": "jyn.dev",
+      "category": "blog",
+      "published": "2026-10-25",
+      "summary_zh": "文章探讨人工智能重塑经济结构后，新增收益与资源将如何分配，并追问究竟谁能在这一变化中受益。标题以“水涨船高”暗示技术进步可能推高各环节的收益，但这种普遍利好是否会惠及更广泛群体仍值得审视。",
+      "why_matters": "文章以简洁有力的提问切入AI经济红利分配这一重要议题，帮助读者思考技术进步的受益者与潜在代价。",
+      "tags": "人工智能,经济结构,收益分配",
+      "id": 2115,
+      "added_at": "2026-10-26 04:15:43"
+    },
+    {
+      "title": "How much you can make in an entry level cyber security job",
+      "url": "https://dfarq.homeip.net/how-much-you-can-make-in-an-entry-level-cyber-security-job/?utm_source=rss&utm_medium=rss&utm_campaign=how-much-you-can-make-in-an-entry-level-cyber-security-job",
+      "summary": "How much you can make in an entry level cyber security job is a good question. We&#8217;ve all heard there is a shortage of people in cyber security, and while the money is good, there are certain limits. In this\nThe post How much you can make in an entry level cyber security job appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-10-25",
+      "summary_zh": "文章探讨网络安全入门级岗位的薪资水平与收入上限。我们都已听说网络安全人才存在短缺、薪酬待遇不错，但入门岗位的薪资仍有一定局限。",
+      "why_matters": "有助于求职者了解网络安全初级岗位的薪酬潜力，并建立更现实的职业预期。",
+      "tags": "网络安全,入门级岗位,薪资待遇",
+      "id": 2113,
+      "added_at": "2026-10-26 04:15:43"
+    },
+    {
+      "title": "Duality in spherical trigonometry",
+      "url": "https://www.johndcook.com/blog/2026/10/24/polar-triangle/",
+      "summary": "I&#8217;ve written before about the law of cosines on a sphere: cos(c) = cos(a) cos(b) + sin(a) sin(b) cos(C). But that&#8217;s just one of two laws of cosines on a sphere. The equation above is the law of cosines for sides. The law of cosines for angles is typographically very similar, just inverting the case of [&#8230;]\nThe post Duality in spherical trigonometry first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-10-25",
+      "summary_zh": "文章探讨球面三角学中的“对偶性”，重点对比球面余弦定理的边角两种形式。边角版本形式相似但互有转换关系，揭示了球面几何中边与角之间对等的数学结构。",
+      "why_matters": "适合了解球面余弦定理的完整体系，并直观感受球面三角学中的对偶现象。",
+      "tags": "球面三角学，余弦定理，数学 duality",
+      "id": 2111,
+      "added_at": "2026-10-26 04:15:43"
+    },
+    {
+      "title": "Computing polar triangles with linear algebra",
+      "url": "https://www.johndcook.com/blog/2026/10/24/computing-polar-triangles/",
+      "summary": "The previous post defined the polar triangle of a spherical triangle in terms of its sides and angles, but it doesn&#8217;t construct the triangle. It only specifies one of a family of triangles located anywhere on the sphere. How do we know that polar triangles exist? There is a geometric construction that starts with a [&#8230;]\nThe post Computing polar triangles with linear algebra first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-10-25",
+      "summary_zh": "文章针对球面三角形的极三角形展开讨论，指出仅用边长和角度定义极三角形，无法确认这类三角形确实存在及其具体位置。作者借助线性代数方法进行几何构造，将球面上的极三角形表示出来，从而验证其存在性并确定相应位置。",
+      "why_matters": "文章把球面几何与线性代数结合，为极三角形的存在性证明和具体构造提供了清晰而实用的思路。",
+      "tags": "球面几何,线性代数,极三角形",
+      "id": 2109,
+      "added_at": "2026-10-26 04:15:43"
+    },
+    {
+      "title": "Poles and polars",
+      "url": "https://www.johndcook.com/blog/2026/10/25/poles-and-polars/",
+      "summary": "The previous two posts have been about polar triangles. The first used a polar triangle to derive a theorem, and the second showed how to compute polars using linear algebra. But what exactly is a polar triangle and why is it called that? Poles and polars on a sphere Let&#8217;s start with a sphere S and a [&#8230;]\nThe post Poles and polars first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-10-25",
+      "summary_zh": "文章从球面几何中的“极点与极线”概念出发，解释极三角形（polar triangle）究竟是什么，以及这一名称的由来。文章还联系此前关于利用极三角形推导定理、运用线性代数计算极线的讨论，梳理相关概念及其数学意义。",
+      "why_matters": "适合希望深入理解球面几何中极点、极线和极三角形之间关系的读者。",
+      "tags": "球面几何,极三角形,极点与极线",
+      "id": 2107,
+      "added_at": "2026-10-26 04:15:43"
+    },
+    {
+      "title": "Gadget Review: LiberNovo Omni - the USB-C powered office chair ★★★★⯪",
+      "url": "https://shkspr.mobi/blog/2026/10/gadget-review-libernovo-omni-chair/",
+      "summary": "Whenever a company asks me to review their gadgets, I always ask if it is USB-C powered. If not, I&#039;m not interested. So, welcome to the future where your chair is USC-C rechargeable!  WHAT?!    The LiberNovo Omni looks like a standard office chair - but has two secret features.  First, is that it is exceedingly comfortable. Full foam cushions, lovely headrest, and a recline which almost gets you…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-10-25",
+      "summary_zh": "文章评测了 LiberNovo Omni，这是一款外观看似普通、却支持 USB-C 充电的办公椅，重点展示了其隐藏在常规设计中的特色功能。文章以实际体验为主，带有鲜明的前瞻科技与产品评测风格。",
+      "why_matters": "如果你对 USB-C 供电设备和“未来感”办公配件感兴趣，这篇评测提供了直观且有趣的体验参考。",
+      "tags": "USB-C充电，办公椅，数码评测",
+      "id": 2105,
+      "added_at": "2026-10-26 04:15:43"
+    },
+    {
+      "title": "iPhone Portrait Mode, 10 Years In",
+      "url": "https://x.com/johnnie/status/2114007844605612167",
+      "summary": "Speaking of Johnnie Manzari, he wrote a post yesterday marking the 10 year anniversary of Portrait Mode:\n\n\n  Initially, Portrait mode was seen as a giant math problem. You’d\ndo disparity calculations on the two sensors and output a depth\nmap. The problem was this approach feels and looks digital; it\nfeels fake. In areas without texture, it’s impossible to do this\ncalculation. In areas with ultra fine detail, a lower resolution\ndepth map leads to terrible transitions and a full resolution\ndepth m",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-25",
+      "summary_zh": "文章回顾 iPhone 人像模式发布十周年，探讨其从早期“双传感器视差计算＋深度图”方案到实际体验的演进。初代方案虽然被视作复杂的数学问题，却容易产生数字感强、效果不自然的照片。",
+      "why_matters": "适合了解人像模式的 技术起点、十年发展及其对手机摄影的影响。",
+      "tags": "iPhone,人像模式,计算摄影",
+      "id": 2103,
+      "added_at": "2026-10-26 04:15:43"
+    },
+    {
+      "title": "The Talk Show: ‘Lubricate the Inside of the Hinge’",
+      "url": "https://daringfireball.net/thetalkshow/2026/10/25/ep-456",
+      "summary": "Special guest: Joanna Stern. \nSpecial topic: The iPhone Duo.\n\n\n\nSponsored by:\n\n\nFactor: Healthy eating, made easy. Get 50% off and one free breakfast item per box for one year, while supplies last, with code talkshow50off.\nNotion: The collaborative AI workspace where teams and agents work side by side, with a developer platform teams can build on.\n\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-25",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 2101,
+      "added_at": "2026-10-26 04:15:43"
+    },
+    {
+      "title": "Don't anthropomorphize big tech companies",
+      "url": "https://seangoedecke.com/dont-anthropomorphize-big-tech-companies/",
+      "summary": "Bryan Cantrill has a great line from a talk where he cautions against anthropomorphizing1 Oracle CEO Larry Ellison. I think it’s also a mistake to treat any tech company like a person. Here’s the full quote:\n\nYou need to think of Larry Ellison the way you think of a lawnmower. You don’t anthropomorphize your lawnmower, the lawnmower just mows the lawn, you stick your hand in there and it’ll chop it off, the end. You don’t think ‘oh, the lawnmower hates me’ — lawnmower doesn’t give a shit about y",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-10-25",
+      "summary_zh": "文章借用甲骨文 CEO 拉里·埃里森的一则比喻，主张不要把大型科技公司拟人化，而应像看待割草机一样，依据其商业目标、制度激励和实际影响来分析其行为。对科技企业进行“人格化”判断，容易忽视资本、权力与市场结构等真正驱动决策的因素。",
+      "why_matters": "文章提供了一个审视大型科技公司及其社会影响的简洁而有力的思维框架。",
+      "tags": "科技公司,企业分析,拟人化批判",
+      "id": 2099,
+      "added_at": "2026-10-26 04:15:43"
+    },
+    {
       "title": "Interesting systemd features you may not know about",
       "url": "https://martinalderson.com/posts/interesting-systemd-features/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
       "summary": "Memory caps, run time limits, sleep inhibitors, better cron and path units - systemd features that turn out to be handy for running throwaway agent-written code.",
@@ -27037,5 +27167,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-25 15:26:38"
+  "last_updated": "2026-10-26 04:15:43"
 }
