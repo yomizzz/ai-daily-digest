@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.9.35",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.35",
+      "source": "openclaw",
+      "published": "2026-10-27",
+      "category": "openclaw",
+      "summary": "- 支持 Kimi K3.1 Pro 及高速变体，新增思考强度与视频控制\n- 新增 SQLite 3.54 全文索引修复，避免代理数据库被隔离\n- 更新时 Doctor 自动清理迁移遗留的未知配置项\n- 兼容缺失旧版 OAuth 目录及缺少 meta 的有效配置\n\n🐛 Bug 修复：- 限制内存并回收闲置客户端与归档线程，避免长期运行累积\n- 修复更新流程在超大会话历史、配置迁移等场景下失败\n- 修复 Teams HTML、超长标记及工具调用样式回复阻塞网关\n- 修复消息工具被隐藏、模型回退及压缩后回退失效\n- 修复 MCP 超时影响下一轮对话及 Claude CLI 输出超限卡死\n- 修复 Codex 原生子代理完成后父代理仍阻塞或重复回放\n- 修复浏览器代理命令绕过限制及生成视频下载的 SSRF 风险\n- 脱敏 MCP 输出与 Google OAuth 客户端密钥等凭据信息\n- 修复 SQLite 分词器变更后全文索引失效导致数据被隔离\n- 修复未执行工具调用后无法回退及用量耗尽时未及时回退\n- 修复 Claude CLI 孤立工具调用、会话过期及恢复检查点误判\n- 修复禁用回复时仍发送评论或静默轮次泄露私密媒体",
+      "features": "- 支持 Kimi K3.1 Pro 及高速变体，新增思考强度与视频控制\n- 新增 SQLite 3.54 全文索引修复，避免代理数据库被隔离\n- 更新时 Doctor 自动清理迁移遗留的未知配置项\n- 兼容缺失旧版 OAuth 目录及缺少 meta 的有效配置",
+      "bug_fixes": "- 限制内存并回收闲置客户端与归档线程，避免长期运行累积\n- 修复更新流程在超大会话历史、配置迁移等场景下失败\n- 修复 Teams HTML、超长标记及工具调用样式回复阻塞网关\n- 修复消息工具被隐藏、模型回退及压缩后回退失效\n- 修复 MCP 超时影响下一轮对话及 Claude CLI 输出超限卡死\n- 修复 Codex 原生子代理完成后父代理仍阻塞或重复回放\n- 修复浏览器代理命令绕过限制及生成视频下载的 SSRF 风险\n- 脱敏 MCP 输出与 Google OAuth 客户端密钥等凭据信息\n- 修复 SQLite 分词器变更后全文索引失效导致数据被隔离\n- 修复未执行工具调用后无法回退及用量耗尽时未及时回退\n- 修复 Claude CLI 孤立工具调用、会话过期及恢复检查点误判\n- 修复禁用回复时仍发送评论或静默轮次泄露私密媒体",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "De IT-onmacht van de Nederlandse overheid",
       "url": "https://berthub.eu/articles/posts/de-it-onmacht-van-de-nederlands-overheid/",
       "summary": "Ik schreef eerder een hopelijk vermakelijke parabel over hoe de Nederlandse overheid &ldquo;niet zo van de IT is&rdquo;. Ook is er een follow-up met suggesties hoe je dit zou kunnen verbeteren.\nDoor mij (niet AI!) ingesproken audio versie van deze pagina: In dit stuk wil ik twee specifieke voorbeelden uitlichten hoe onmachtig onze overheid is met IT, en ook hoe men dat niet erkent. En dat is erg, want dan los je ook nooit iets op.",
@@ -27349,5 +27361,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-27 06:11:34"
+  "last_updated": "2026-10-27 15:33:17"
 }
