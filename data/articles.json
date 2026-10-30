@@ -1,6 +1,123 @@
 {
   "articles": [
     {
+      "title": "When Federico Faggin left Intel",
+      "url": "https://dfarq.homeip.net/when-federico-faggin-left-intel/?utm_source=rss&utm_medium=rss&utm_campaign=when-federico-faggin-left-intel",
+      "summary": "It was 52 years ago today, on October 31, 1974, that Federico Faggin (pronounced FAHH-jeen), the mastermind behind the early Intel CPUs, left Intel to try something else. His next big thing was the legendary Zilog Z-80 CPU. Yet another\nThe post When Federico Faggin left Intel appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-10-30",
+      "summary_zh": "1974年10月31日，主导早期英特尔CPU设计的 Federico Faggin 离开英特尔，随后创办 Zilog 并推出传奇性的 Z80 处理器。文章回顾了他离开英特尔后的创业经历与技术贡献。",
+      "why_matters": "这段历史展现了计算机芯片先驱从英特尔走向 Zilog 的重要转折，也折射出早期处理器产业的创新与发展。",
+      "tags": "英特尔,CPU,人物历史",
+      "id": 2187,
+      "added_at": "2026-10-31 05:53:16"
+    },
+    {
+      "title": "Robert Caro – The master biographer reflects at 91",
+      "url": "https://www.dwarkesh.com/p/robert-caro",
+      "summary": "\"A lot of the stuff that I cut out, it's tragic that no one knows it.\"",
+      "source": "dwarkesh.com",
+      "category": "blog",
+      "published": "2026-10-30",
+      "summary_zh": "传记作家罗伯特·卡罗在91岁时回顾了自己的写作生涯与历史研究方法。他谈及被舍弃的大量材料，以及这些鲜为人知的细节为何令人惋惜，也分享了作为传记作者对记录历史、塑造人物形象的思考。",
+      "why_matters": "一位大师级传记作家在晚年亲述创作经验与历史档案的取舍，既有独特的文学价值，也提供了理解传记写作的珍贵视角。",
+      "tags": "罗伯特·卡罗，传记写作，历史访谈",
+      "id": 2185,
+      "added_at": "2026-10-31 05:53:16"
+    },
+    {
+      "title": "Signing and Attestations Across Package Registries",
+      "url": "https://nesbitt.io/2026/10/30/signing-and-attestations-across-package-registries.html",
+      "summary": "A survey of signing, provenance attestations and trusted publishing across package registries.",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-10-30",
+      "summary_zh": "文章系统考察了各大软件包仓库中的代码签名、来源证明（provenance attestations）与可信发布机制，比较不同平台的实现方式与安全实践。文章重点梳理如何验证软件包的发布者身份及构建来源，从而提升软件供应链的整体可信度。",
+      "why_matters": "适合了解包管理生态中的签名验证、供应链安全及可信发布方案的横向对比。",
+      "tags": "软件供应链安全,包签名,可信发布",
+      "id": 2183,
+      "added_at": "2026-10-31 05:53:16"
+    },
+    {
+      "title": "Book Review: The God of Small Things by Arundhati Roy ★★☆☆☆",
+      "url": "https://shkspr.mobi/blog/2026/10/book-review-the-god-of-small-things-by-arundhati-roy/",
+      "summary": "I did not care for this one bit. I found it cloying, infantilising, and far too circuitous.  It starts off as a bit of an overwritten melodrama, where every phrase is a delicious flower waiting to bloom, but ends up being a over-sugared mess with a rotten heart. Parts are just exhausting to read, with no time to catch your breath between scenes. That can work in some books when spaced out -…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-10-30",
+      "summary_zh": "书评作者对阿兰达蒂·洛伊的《微小之神》评价很低，认为其文字黏腻、刻意煽情且过于迂回。小说开头虽像被过度雕琢的通俗 melodrama，后来却变成“过于甜腻、核心腐坏”的混乱之作，部分段落甚至令人疲惫不堪。",
+      "why_matters": "虽然适合对争议性文学作品的读者了解，但整体阅读体验和文学完成度并不理想。",
+      "tags": "书评,《微小之神》,阿兰达蒂·洛伊",
+      "id": 2181,
+      "added_at": "2026-10-31 05:53:16"
+    },
+    {
+      "title": "Patrick Stewart Dies at 86",
+      "url": "https://www.hollywoodreporter.com/movies/movie-news/patrick-stewart-dead-star-trek-x-men-1236742932/",
+      "summary": "Aaron Couch, The Hollywood Reporter:\n\n\n  Patrick Stewart, the sophisticated actor who brought a\nShakespearean touch to Star Trek and X-Men as he made an\notherworldly transformation from British stage veteran to sci-fi\nicon, has died. He was 86.\n\nStewart died Wednesday at his home in Los Angeles following “a\nbrief and poignant journey with Alzheimer’s disease and Lewy body\ndementia,” longtime spokesperson Kelly Bush Novak announced.\n\n\nThere’s an old adage that everyone’s favorite SNL cast is the ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-30",
+      "summary_zh": "文章称，资深演员帕特里克·斯图尔特于周三在洛杉矶家中去世，享年86岁。他以莎士比亚式表演赋予《星际迷航》和《X战警》角色独特的科幻气质，从英国舞台演员转型成为具有标志性影响力的银幕明星。",
+      "why_matters": "简短回顾了帕特里克·斯图尔特跨越舞台与银幕的传奇演艺生涯。",
+      "tags": "帕特里克·斯图尔特,讣闻,影视演员",
+      "id": 2179,
+      "added_at": "2026-10-31 05:53:16"
+    },
+    {
+      "title": "GM to Pay $220 Million After Betraying Their Own Drivers’ Privacy",
+      "url": "https://www.reuters.com/business/autos-transportation/gm-pay-220-million-settle-allegations-it-violated-consumers-privacy-2026-10-29/",
+      "summary": "Jonathan Stempel, reporting for Reuters:\n\n\n  General Motors will pay $220 million to settle ​allegations that\nit illegally sold drivers’ private behavior and location data to\nbrokers, who then sold the information to insurers that used it to\nset and sometimes increase rates.\n\nThe settlement, announced on Thursday, resolves claims by the\nattorneys general of 35 US states and the District ​of Columbia\nover the automaker’s Smart Driver program, which enrolled millions\nof drivers ​between 2016 and i",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-30",
+      "summary_zh": "通用汽车将支付2.2亿美元，解决其涉嫌非法出售驾驶员私人行为和位置数据的诉讼。相关数据被转售给保险公司，后者据此制定、甚至提高部分车主的保险费率，引发对数据滥用和隐私保护的担忧。",
+      "why_matters": "案件揭示了车企与保险公司之间非法交易驾驶数据、可能变相惩罚特定驾驶行为的问题，具有重要的隐私与监管警示意义。",
+      "tags": "数据隐私,通用汽车,保险费率",
+      "id": 2177,
+      "added_at": "2026-10-31 05:53:16"
+    },
+    {
+      "title": "The Only Good Easter Eggs Are Whole-Assed Easter Eggs",
+      "url": "https://unsung.aresluna.org/apples-ipod-recreation/",
+      "summary": "Marcin Wichary on the original iPod easter egg on Apple Music’s website 404 page:\n\n\n  I am usually not a fan of easter eggs — most of them are poorly\nmade — but this might be the best iPod recreation I’ve seen, and\nit’s an interesting thing to study:\n\n\nI think it generally covers all the modes etc.\n(with small exceptions) the typography looks accurate,\nit has the little “haptic” beeps,\nit has proper acceleration and the scrollbar,\nit has a little music library with various playlists,\nI have only",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-10-30",
+      "summary_zh": "文章介绍 Marcin Wichary 复刻的苹果 iPod 网页彩蛋，该彩蛋出现在 Apple Music 的 404 页面中，可交互体验并涵盖原版 iPod 的多种模式。作者认为，尽管多数彩蛋制作粗糙，但这一高质量复刻兼具趣味性与研究价值。",
+      "why_matters": "这是一个兼具怀旧情怀与互动技术的苹果经典彩蛋复刻案例，值得体验并研究。",
+      "tags": "苹果,iPod,彩蛋,网页复刻",
+      "id": 2175,
+      "added_at": "2026-10-31 05:53:16"
+    },
+    {
+      "title": "Elegance and intelligence are anticorrelated",
+      "url": "https://seangoedecke.com/elegance-and-intelligence-are-anticorrelated/",
+      "summary": "Elegance and intelligence can have a surprisingly negative correlation. Intelligent people sometimes produce inelegant solutions because they’re capable of rapidly brute-forcing problems. If I had to remember a hundred names, I would spend time coming up with clever mnemonics. John von Neumann would probably just remember them.\nThere’s a famous von Neumann story where he was asked how far a fly must travel if it kept flying between two cyclists who were approaching each other at some fixed speed",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-10-30",
+      "summary_zh": "文章探讨“优雅”与“智力”之间可能存在出人意料的负相关关系：高智力者有时会因能迅速用蛮力解决问题，而缺乏更精巧、优雅的思考方式。文章借助记忆一百个名字及冯·诺依曼等例子，说明创造力、效率与形式上的简洁并不总是同步。",
+      "why_matters": "文章以反直觉视角启发读者重新思考聪明、效率与优雅之间的取舍。",
+      "tags": "认知科学,创造力,思维方式",
+      "id": 2173,
+      "added_at": "2026-10-31 05:53:16"
+    },
+    {
+      "title": "Rejoice, leap seconds are dead!",
+      "url": "https://www.jeffgeerling.com/blog/2026/rejoice-the-utc-leap-second-is-dead/",
+      "summary": "There will never be a leap second again. At least not for UTC.\n\n\n\nAt the CGPM, they decided the last leap second we'll ever see for UTC, or Coordinated Universal Time, happened back at the end of 2016.\nOf course they made that decision while I was out on vacation, so I'm just getting this video up now:\n\n \n\nBut what's the CGPM, why does this matter, and why am I excited about it?",
+      "source": "jeffgeerling.com",
+      "category": "blog",
+      "published": "2026-10-30",
+      "summary_zh": "国际计量大会（CGPM）决定，2016年底将是协调世界时（UTC）最后一次加入闰秒，此后不再使用闰秒调整时间。作者因度假错过消息，现补充发布相关视频说明这一决定。",
+      "why_matters": "文章以简洁有趣的视角解读闰秒制度的重要变化，帮助读者了解UTC时间调整为何即将告别闰秒。",
+      "tags": "闰秒, UTC, 时间制度",
+      "id": 2171,
+      "added_at": "2026-10-31 05:53:16"
+    },
+    {
       "title": "openclaw 2026.9.36",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.36",
       "source": "openclaw",
@@ -27969,5 +28086,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-30 16:21:14"
+  "last_updated": "2026-10-31 05:53:16"
 }
