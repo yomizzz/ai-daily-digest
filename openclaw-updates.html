@@ -309,14 +309,44 @@
     <header>
         <h1>🦄 OpenClaw 更新记录</h1>
         <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-10-29 16:14:22</p>
+        <p class="last-updated">最后更新：2026-10-30 16:21:14</p>
     </header>
 
     <main>
         <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 0 个正式版本</div>
+        <div class="release-count">共 2 个正式版本</div>
         <div class="release-list" id="releases">
-<div class="no-updates">暂无更新记录</div>
+<div class="release">
+    <div class="release-header">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;">
+            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.10.9" target="_blank" class="release-title">openclaw 2026.10.9</a>
+            <span class="release-tag">v2026.10.9</span>
+        </div>
+        <span class="release-date">2026-10-29</span>
+    </div>
+<div class="release-section">
+    <div class="release-section-title">🆕 新增功能</div>
+    <div class="release-card"><ul class="summary-list"><li>- Gateway 构建工具现强制限制在工作区内</li><li>- MCP 检查隐藏凭证，日志遮蔽 OAuth 客户端密钥</li><li>- 支持迁移超出 Node 字符串限制的大型会话归档</li><li>- 视频生成命令现展示提供商忽略的参数</li></ul></div>
+</div><div class="release-section">
+    <div class="release-section-title">🐛 Bug 修复</div>
+    <div class="release-card"><ul class="summary-list"><li>- 加固 URI、集合及邮件发件人校验，阻止恶意输入</li><li>- 修复更新回滚失败并避免运维修改被覆盖</li><li>- 修复分词器变更后代理数据库和索引无法恢复</li><li>- 修复重挂载后更新发布及启动器恢复异常</li><li>- 磁盘空间恢复后代理无需重启即可继续运行</li><li>- 修复 Codex 转向消息的本地媒体定位错误</li><li>- 修复重新授权的节点连接无法保持存活</li><li>- 修复服务激活验证失败时 Gateway 无法恢复</li><li>- 修复 macOS 被动停止会误卸载 Gateway 服务</li><li>- 修复从文件系统根目录启动 CLI 运行时失败</li><li>- 修复 ACP 新会话未在指定工作目录启动</li><li>- 修复并发模型刷新导致请求失败</li><li>- SSH 探针现尊重显式指定的 22 端口</li><li>- 修复尾随注释导致技能图标等元数据丢失</li></ul></div>
+</div>
+</div><div class="release">
+    <div class="release-header">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;">
+            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.9.36" target="_blank" class="release-title">openclaw 2026.9.36</a>
+            <span class="release-tag">v2026.9.36</span>
+        </div>
+        <span class="release-date">2026-10-29</span>
+    </div>
+<div class="release-section">
+    <div class="release-section-title">🆕 新增功能</div>
+    <div class="release-card"><ul class="summary-list"><li>- xAI 旧模型支持关闭可配置推理强度</li><li>- Docker 镜像新增源码与版本绑定证据</li><li>- Gateway 构建工具遵循工作区访问限制</li></ul></div>
+</div><div class="release-section">
+    <div class="release-section-title">🐛 Bug 修复</div>
+    <div class="release-card"><ul class="summary-list"><li>- 修复更新回滚失败导致安装包缺失</li><li>- 修复 Teams 未解析白名单意外放行</li><li>- 修复不可信输入解析及认证路由失控</li><li>- 修复表情符号后回复文本被截断</li><li>- 修复 Node 上传取消后误报 AbortError</li></ul></div>
+</div>
+</div>
         </div>
     </main>
 

@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.9.36",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.36",
+      "source": "openclaw",
+      "published": "2026-10-30",
+      "category": "openclaw",
+      "summary": "- xAI 旧模型支持关闭可配置推理强度\n- Docker 镜像新增源码与版本绑定证据\n- Gateway 构建工具遵循工作区访问限制\n\n🐛 Bug 修复：- 修复更新回滚失败导致安装包缺失\n- 修复 Teams 未解析白名单意外放行\n- 修复不可信输入解析及认证路由失控\n- 修复表情符号后回复文本被截断\n- 修复 Node 上传取消后误报 AbortError",
+      "features": "- xAI 旧模型支持关闭可配置推理强度\n- Docker 镜像新增源码与版本绑定证据\n- Gateway 构建工具遵循工作区访问限制",
+      "bug_fixes": "- 修复更新回滚失败导致安装包缺失\n- 修复 Teams 未解析白名单意外放行\n- 修复不可信输入解析及认证路由失控\n- 修复表情符号后回复文本被截断\n- 修复 Node 上传取消后误报 AbortError",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Making agents fast - what I've learnt over the last 12 months",
       "url": "https://martinalderson.com/posts/making-agents-fast/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
       "summary": "Practical lessons on speeding up AI agents: inference speed (TTFT vs tok/s), tool call traces, building the tooling agents want, and hardware and sandboxing.",
@@ -194,6 +206,18 @@
       "tags": "AI智能体, 游戏开发, 前沿模型",
       "id": 2154,
       "added_at": "2026-10-30 06:17:38"
+    },
+    {
+      "title": "openclaw 2026.10.9",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.9",
+      "source": "openclaw",
+      "published": "2026-10-29",
+      "category": "openclaw",
+      "summary": "- Gateway 构建工具现强制限制在工作区内\n- MCP 检查隐藏凭证，日志遮蔽 OAuth 客户端密钥\n- 支持迁移超出 Node 字符串限制的大型会话归档\n- 视频生成命令现展示提供商忽略的参数\n\n🐛 Bug 修复：- 加固 URI、集合及邮件发件人校验，阻止恶意输入\n- 修复更新回滚失败并避免运维修改被覆盖\n- 修复分词器变更后代理数据库和索引无法恢复\n- 修复重挂载后更新发布及启动器恢复异常\n- 磁盘空间恢复后代理无需重启即可继续运行\n- 修复 Codex 转向消息的本地媒体定位错误\n- 修复重新授权的节点连接无法保持存活\n- 修复服务激活验证失败时 Gateway 无法恢复\n- 修复 macOS 被动停止会误卸载 Gateway 服务\n- 修复从文件系统根目录启动 CLI 运行时失败\n- 修复 ACP 新会话未在指定工作目录启动\n- 修复并发模型刷新导致请求失败\n- SSH 探针现尊重显式指定的 22 端口\n- 修复尾随注释导致技能图标等元数据丢失",
+      "features": "- Gateway 构建工具现强制限制在工作区内\n- MCP 检查隐藏凭证，日志遮蔽 OAuth 客户端密钥\n- 支持迁移超出 Node 字符串限制的大型会话归档\n- 视频生成命令现展示提供商忽略的参数",
+      "bug_fixes": "- 加固 URI、集合及邮件发件人校验，阻止恶意输入\n- 修复更新回滚失败并避免运维修改被覆盖\n- 修复分词器变更后代理数据库和索引无法恢复\n- 修复重挂载后更新发布及启动器恢复异常\n- 磁盘空间恢复后代理无需重启即可继续运行\n- 修复 Codex 转向消息的本地媒体定位错误\n- 修复重新授权的节点连接无法保持存活\n- 修复服务激活验证失败时 Gateway 无法恢复\n- 修复 macOS 被动停止会误卸载 Gateway 服务\n- 修复从文件系统根目录启动 CLI 运行时失败\n- 修复 ACP 新会话未在指定工作目录启动\n- 修复并发模型刷新导致请求失败\n- SSH 探针现尊重显式指定的 22 端口\n- 修复尾随注释导致技能图标等元数据丢失",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
     },
     {
       "title": "Fake it ‘til you make it (and then keep faking it)",
@@ -27945,5 +27969,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-10-30 06:17:38"
+  "last_updated": "2026-10-30 16:21:14"
 }
