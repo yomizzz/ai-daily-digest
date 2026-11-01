@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "title": "Weekly Update 528: Reading AI-generated Code & the Economics of Solar",
+      "url": "https://www.troyhunt.com/weekly-update-528/",
+      "summary": "By pure timing coincidence, the Proton CEO&apos;s AI @ Proton, Engineering Manifesto made headlines around the same time as this week&apos;s video. The guy&apos;s management style and choice of language have really rubbed a lot of people up the wrong way, and deservedly so, IMHO.",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-11-01",
+      "summary_zh": "本期周报主要讨论 AI 生成代码的阅读体验，以及太阳能行业的经济性。文中还提到，Proton CEO 的 AI 工程宣言恰逢视频发布同期引发热议，其管理风格和表达方式受到不少批评。",
+      "why_matters": "文章将 AI 编程、太阳能经济与科技行业管理争议结合在一起，适合关注技术与商业趋势的读者。",
+      "tags": "AI编程，太阳能，行业观察",
+      "id": 2198,
+      "added_at": "2026-11-02 05:34:44"
+    },
+    {
+      "title": "IBM PC/XT drives stuck in the bay? How to free them",
+      "url": "https://dfarq.homeip.net/ibm-pc-xt-drives-stuck-in-the-bay-how-to-free-them/?utm_source=rss&utm_medium=rss&utm_campaign=ibm-pc-xt-drives-stuck-in-the-bay-how-to-free-them",
+      "summary": "If you are working on an IBM PC/XT model 5160 and need to remove a floppy drive, you may find it difficult to remove after removing the two visible screws that hold them in. If your IBM disk drive is\nThe post IBM PC/XT drives stuck in the bay? How to free them appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-11-01",
+      "summary_zh": "文章针对 IBM PC/XT 5160 机型拆取软盘驱动器时遇到的卡住问题，指出仅拧下可见螺丝后，驱动器仍可能难以从机箱中取出。文章进一步介绍如何松开固定机构或释放卡扣，从而顺利拆下软驱。",
+      "why_matters": "提供了老式 IBM PC/XT 拆装软驱的实用技巧，适合维修或改装复古电脑时参考。",
+      "tags": "IBM PC/XT，软盘驱动器拆装，硬件维修",
+      "id": 2196,
+      "added_at": "2026-11-02 05:34:44"
+    },
+    {
+      "title": "A Mastodon bot powered by iOS Shortcuts",
+      "url": "https://evanhahn.com/mastodon-bot-with-ios-shortcuts/",
+      "summary": "In short: I use iOS Shortcuts to run a Mastodon bot.\nI run a Mastodon bot that posts random quotes from The Legend of Zelda: Link&rsquo;s Awakening. (The writing in that game is so charming!) I used to run it off a server, but for the past few days, it&rsquo;s used an iOS Shortcut on my phone.\nHow it works\nThe bot is called Ulrira, named after a beloved Link&rsquo;s Awakening character. Ulrira (the bot, not the character) samples a line from the text dump, then makes an HTTP request to post it. ",
+      "source": "evanhahn.com",
+      "category": "blog",
+      "published": "2026-11-01",
+      "summary_zh": "作者使用 iOS 快捷指令在手机上运行一个 Mastodon 机器人，自动发布《塞尔达传说：织梦岛》中的随机台词。此前该机器人运行在服务器上，最近改为通过 iOS Shortcuts 执行，文章将介绍其实现方式。",
+      "why_matters": "展示了如何利用手机快捷指令打造并运行自动化社交机器人，兼具趣味性与实践参考价值。",
+      "tags": "iOS Shortcuts，Mastodon，自动化机器人",
+      "id": 2194,
+      "added_at": "2026-11-02 05:34:44"
+    },
+    {
+      "title": "A unified view of poles and polars",
+      "url": "https://www.johndcook.com/blog/2026/11/01/projective-poles-and-polars/",
+      "summary": "I wrote several posts on poles and polars a few days ago. First, I wrote about the dual of a spherical triangle, called the polar triangle. Then I wrote about poles and polars in plane geometry and briefly mentioned the extension to projective geometry. Poles and polars are a little awkward in the plane because [&#8230;]\nThe post A unified view of poles and polars first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-11-01",
+      "summary_zh": "文章从球面三角形的极三角形出发，梳理平面几何与射影几何中“极点”和“极线”的概念，并尝试给出统一理解这些对象的视角。作者通过串联相关几何理论，展示不同背景下极点与极线之间的对应关系及其直观含义。",
+      "why_matters": "文章结构清晰，适合帮助读者把球面、平面与射影几何中的极点极线联系起来。",
+      "tags": "射影几何,极点与极线,球面几何",
+      "id": 2192,
+      "added_at": "2026-11-02 05:34:44"
+    },
+    {
+      "title": "10 Years on Mastodon",
+      "url": "https://shkspr.mobi/blog/2026/11/10-years-on-mastodon/",
+      "summary": "As of today, I&#039;ve been on the Mastodon social network for 10 years. I think that deserves a little reflection and celebration.     Post by @Edent@mastodon.social View on Mastodon      Social networks often launch in a blaze of glory but limp out of existence within a year or so. How many services have you signed up to, only to gradually drift away from? If you&#039;re anything like me, your password…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-11-01",
+      "summary_zh": "作者回顾自己使用 Mastodon 社交网络十周年，并借这一节点反思社交平台的发展与演变。文章从“许多平台高调起步，却在一年内逐渐衰落”的现象切入，探讨 Mastodon 能在多年后继续存在所折射出的价值与意义。",
+      "why_matters": "适合了解 Mastodon 的发展历程，以及作者眼中社交网络长期运营和社区价值的独特之处。",
+      "tags": "Mastodon,社交网络,数字社区",
+      "id": 2190,
+      "added_at": "2026-11-02 05:34:44"
+    },
+    {
+      "title": "Fast and slow ways to improve your reputation",
+      "url": "https://seangoedecke.com/how-to-get-assigned-interesting-work/",
+      "summary": "To get a good reputation in tech companies, you need to work on important projects. However, you need a good reputation first in order to get assigned important projects. Doesn’t that make it impossible to get started? I get a lot of emails from engineers who are struggling with this problem. They go like this:\n\nI work with a strong senior engineer. I feel like my manager structures work so that strong engineer always gets the visible work, and the more they do, the more opportunities they get, ",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-11-01",
+      "summary_zh": "文章探讨科技公司中如何建立职业声誉，破解“获得重要项目需要声誉，而做出成果又需要重要项目”的起步困境。作者从快速建立信誉和长期积累影响力两个角度，给出改善职业声誉的实用方法。",
+      "why_matters": "适合正在寻找机会、拓展影响力或陷入职业瓶颈的技术从业者参考。",
+      "tags": "职业声誉,科技行业,职业发展",
+      "id": 2188,
+      "added_at": "2026-11-02 05:34:44"
+    },
+    {
+      "title": "Quoting Kyle Kingsbury",
+      "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
+      "summary": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...]\nIn the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having done that work, how can they demonstrate its quality to users?\n&mdash; Kyle Kingsbury, Jepsen resul",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-11-01",
+      "summary_zh": "文章引用开发者 Kyle Kingsbury 的观点，指出大语言模型（LLM）的广泛使用正在侵蚀人们对软件文档、软件本身以及产出这些成果的组织的信任。由于 AI 让\"成熟项目\"过去依赖的质量信号变得更容易伪造，工程师未来可能会以怀疑的眼光审视任何新出现的软件项目。",
+      "why_matters": "提供了看待 AI 生成代码与文档背后信任危机的有力视角，对关注 AI 辅助开发质量的从业者很有启发。",
+      "tags": "AI 与软件开发,LLM,信任危机",
+      "id": 2186,
+      "added_at": "2026-11-02 05:34:44"
+    },
+    {
       "title": "Johnston’s Electric Trains, St. Louis",
       "url": "https://dfarq.homeip.net/johnstons-electric-trains-st-louis/?utm_source=rss&utm_medium=rss&utm_campaign=johnstons-electric-trains-st-louis",
       "summary": "Johnston&#8217;s Electric Train Shop was a family-owned business in St Louis for about 50 years. As its name suggests, it was a storefront in St Louis&#8217;s Dutchtown neighborhood, and advertised itself as St Louis&#8217; first hobby shop that specialized in\nThe post Johnston&#8217;s Electric Trains, St. Louis appeared first on The Silicon Underground.",
@@ -28164,5 +28255,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-01 16:55:48"
+  "last_updated": "2026-11-02 05:34:44"
 }
