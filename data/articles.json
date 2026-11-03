@@ -1,6 +1,28 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.22.6",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.6",
+      "source": "hermes-agent",
+      "published": "2026-11-03",
+      "category": "hermes",
+      "summary_zh": "- v0.22.6 为补丁版本，自 v0.22.5 起合入约 776 个 PR，包含 3,448 个非合并提交，涉及 4,316 个文件；完整精选说明将在 v0.23.0 发布。\n- 新增 Webapp 访问能力：可通过网关监听器使用 `hermes webapp`，支持在桌面端打开，并可在浏览器标签页中加载桌面插件。\n- 新增 `/model reset`，可清除会话固定的模型，同时保留历史记录；`/delegation` 的选择也会保存并延续至下一会话。\n- 支持为技能配置锁，防止代理自主写入；桌面端可通过 Capabilities 面板启用。\n- 新增可选的预压缩机制（`compression.prepare_ahead`），并提供 `pre_llm_call` 钩子，可在模型推理前拦截当前操作。\n- 定时任务功能增强：新增 `hermes cron cancel`、错过任务执行策略，以及桌面端定时任务编辑器中的停止按钮。\n- 插件系统改进：安装和更新时强制校验 `requires_hermes`，并支持代理在 `text_to_speech` 中自主选择 ElevenLabs 语音。\n- 安全与迁移增强：支持将 Vault 密钥可选存储于操作系统钥匙串；新增 `hermes migrate` 和设置流程，可将 Grok Bot、OpenBot 用户迁移至 Hermes。\n- 桌面端新增群聊重命名、解散、提及和附件粘贴功能，并在侧边栏按用户配置文件划分区块。\n- 即时通信平台扩展：Telegram 支持视频消息，Slack 线程上下文支持表情回应。\n- 包管理器支持可恢复下载，降低网络中断导致的安装失败风险。\n- 更新渠道保持不变：Microsoft Store 用户通过商店更新；CLI 可执行 `hermes update` 或重新运行安装命令；Docker 和 Hermes Cloud 使用 `nousresearch/hermes-agent:stable` 或 `:latest` 镜像。\n- 通过 `.exe` / `.dmg` 安装的桌面端本次无需更新，将随下一次的捆绑版本统一升级。",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "openclaw 2026.10.10",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10",
+      "source": "openclaw",
+      "published": "2026-11-03",
+      "category": "openclaw",
+      "summary": "- Git备份支持脱敏并覆盖PostgreSQL导出\n- Codex托管原生CLI升级至0.164.0\n- 云端与本地会话支持一键迁移\n- 控制界面采用新架构并支持紧凑导航\n- Android新增系统、照片、通讯录等能力\n- iOS新增认证后台在线信标\n- MCP应用可跨会话及工作区文件运行\n- 数据库引擎新增共享状态与迁移能力\n- 本地模型支持OCR、视觉及嵌入配置\n- 插件可后台分叉上下文并干预运行\n- MCP事件可触发自动化任务\n- 会话可绑定设备上的现有目录\n- 诊断信息支持导出提示词与最终答案\n\n🐛 Bug 修复：- 修复指定Node版本下安装更新失败\n- 修复工具调用XML或残缺HTML导致卡顿\n- 提升子代理续跑及恢复结果可靠性\n- 修复定时任务错过陈旧执行时段\n- 修复备份泄露凭据及令牌问题\n- 强化团队白名单与嵌入式认证边界\n- 修复搜索端点及凭据输入安全问题\n- 修复终端控制字符未正确转义问题",
+      "features": "- Git备份支持脱敏并覆盖PostgreSQL导出\n- Codex托管原生CLI升级至0.164.0\n- 云端与本地会话支持一键迁移\n- 控制界面采用新架构并支持紧凑导航\n- Android新增系统、照片、通讯录等能力\n- iOS新增认证后台在线信标\n- MCP应用可跨会话及工作区文件运行\n- 数据库引擎新增共享状态与迁移能力\n- 本地模型支持OCR、视觉及嵌入配置\n- 插件可后台分叉上下文并干预运行\n- MCP事件可触发自动化任务\n- 会话可绑定设备上的现有目录\n- 诊断信息支持导出提示词与最终答案",
+      "bug_fixes": "- 修复指定Node版本下安装更新失败\n- 修复工具调用XML或残缺HTML导致卡顿\n- 提升子代理续跑及恢复结果可靠性\n- 修复定时任务错过陈旧执行时段\n- 修复备份泄露凭据及令牌问题\n- 强化团队白名单与嵌入式认证边界\n- 修复搜索端点及凭据输入安全问题\n- 修复终端控制字符未正确转义问题",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Etoys.com and its rapid rise and fall",
       "url": "https://dfarq.homeip.net/etoys-com-and-its-rapid-rise-and-fall/?utm_source=rss&utm_medium=rss&utm_campaign=etoys-com-and-its-rapid-rise-and-fall",
       "summary": "So it&#8217;s November 1997. The Internet is catching on and you want to start an online business. You just need a big idea. How about selling toys on the Internet? That could be big, right? Hence etoys.com, a short-lived Internet\nThe post Etoys.com and its rapid rise and fall appeared first on The Silicon Underground.",
@@ -28359,5 +28381,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-03 08:17:43"
+  "last_updated": "2026-11-03 17:14:06"
 }
