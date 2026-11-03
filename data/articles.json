@@ -1,6 +1,110 @@
 {
   "articles": [
     {
+      "title": "Etoys.com and its rapid rise and fall",
+      "url": "https://dfarq.homeip.net/etoys-com-and-its-rapid-rise-and-fall/?utm_source=rss&utm_medium=rss&utm_campaign=etoys-com-and-its-rapid-rise-and-fall",
+      "summary": "So it&#8217;s November 1997. The Internet is catching on and you want to start an online business. You just need a big idea. How about selling toys on the Internet? That could be big, right? Hence etoys.com, a short-lived Internet\nThe post Etoys.com and its rapid rise and fall appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-11-02",
+      "summary_zh": "文章以1997年互联网商业兴起为背景，讲述玩具电商网站eToys.com凭借“在线销售玩具”的创意迅速崛起，却也因经营、资金及市场竞争等问题迅速陨落的故事。它呈现了早期互联网创业中机会与风险并存的典型案例。",
+      "why_matters": "适合想了解互联网泡沫时期创业公司兴衰逻辑的读者，也对今日电商竞争与商业模式有参考价值。",
+      "tags": "互联网创业,eToys,电商兴衰",
+      "id": 2207,
+      "added_at": "2026-11-03 08:17:43"
+    },
+    {
+      "title": "Making peace with the projective plane",
+      "url": "https://www.johndcook.com/blog/2026/11/02/projective-plane/",
+      "summary": "In my newsletter I give an introduction to the latest few posts and occasionally give some additional commentary. In my latest newsletter I wrote Projective space and homogeneous coordinates seemed like arbitrary abstractions when I was a student because they were presented without any motivation. Much later I came to realize that they’re natural, almost [&#8230;]\nThe post Making peace with the projective plane first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-11-02",
+      "summary_zh": "文章探讨如何理解并接受射影平面这一看似抽象的数学概念。作者从几何直观出发，解释射影空间与齐次坐标之间的联系，帮助读者理解它们在表示和处理几何问题中的实际意义。",
+      "why_matters": "适合希望摆脱对射影几何抽象感、建立直观理解的数学学习者。",
+      "tags": "射影几何,齐次坐标,数学直觉",
+      "id": 2205,
+      "added_at": "2026-11-03 08:17:43"
+    },
+    {
+      "title": "Sneaking into the auditorium for the Windows 2000 launch rehearsal",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20261102-00/?p=112818/",
+      "summary": "Wait, that's not him.\nThe post Sneaking into the auditorium for the Windows 2000 launch rehearsal appeared first on The Old New Thing.",
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "category": "blog",
+      "published": "2026-11-02",
+      "summary_zh": "文章记录了作者悄悄进入 Windows 2000 发布会彩排现场的经历，以“等等，那不是他”这句吐槽引出一段有趣的幕后故事。文章展现了发布会筹备与现场参与者的趣闻。",
+      "why_matters": "这是一篇轻松有趣的微软旧事轶闻，可一窥 Windows 2000 发布活动的幕后细节。",
+      "tags": "Windows 2000,微软轶事,发布会幕后",
+      "id": 2203,
+      "added_at": "2026-11-03 08:17:43"
+    },
+    {
+      "title": "Pluralistic: Autodoxing (02 Nov 2026)",
+      "url": "https://pluralistic.net/2026/11/02/agony-verification/",
+      "summary": "Today's links Autodoxing: The road to hell is paved with badly thought-through tech policy. Hey look at this: Delights to delectate. Object permanence: Shakespeare programming language; DeCSS is \"pure speech\"; Blue Coat sold surveillance tools to Syrian secret police; \"Extraordinary Catalog of Peculiar Inventions\"; Cable prices rose at double the rate of inflation for 20 years; Supercuts; Antivax x Trump. Upcoming appearances: Kilkenny, Courtenay, Vancouver, Folkestone, Oxford, Sheffield, Virtua",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-11-02",
+      "summary_zh": "文章以“Autodoxing”为主题，汇编一组关于技术政策与科技文化评论的链接，核心观点是缺乏深思熟虑的技术政策可能带来严重后果。内容涵盖莎士比亚编程语言、DeCSS 属于“纯言论”的观点，以及 Blue Coat 向叙利亚秘密警察出售监控工具等案例，展现技术、法律与政治权力之间的复杂关系。",
+      "why_matters": "适合快速了解科技政策、互联网自由与数字监控等议题中的有趣案例和争议观点。",
+      "tags": "技术政策,数字监控,科技评论",
+      "id": 2201,
+      "added_at": "2026-11-03 08:17:43"
+    },
+    {
+      "title": "[Sponsor] OurCal",
+      "url": "https://ourcal.com/?utm_source=daringfireball&utm_medium=sponsorship&utm_content=rssitem",
+      "summary": "“I didn’t see you put that in the diary.”\n\nSound familiar?\n\nShared calendars solved scheduling, not communication.\n\nOurCal connects any calendar, new or existing, to a group chat. Changes post there automatically, so nobody misses them. Because it’s a messenger, we made everything End-to-End Encrypted, certified by France’s cybersecurity agency.\n\nIt’s native SwiftUI across Apple’s platforms, and the App Store just featured it in “Great apps on iPhone Duo”. We’re Apple people, but we think it’s t",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-11-02",
+      "summary_zh": "OurCal 是一款将新旧日历与群聊连接起来的协作工具，日程变更会自动发布到聊天中，避免成员错过重要安排。作为一款即时通讯应用，它还采用了端到端加密，以提升沟通安全性。",
+      "why_matters": "产品直击“共享日历解决了排期，却未解决沟通”的痛点，兼具日程同步与加密群聊功能。",
+      "tags": "日历协作,群聊,端到端加密",
+      "id": 2199,
+      "added_at": "2026-11-03 08:17:43"
+    },
+    {
+      "title": "Reliably aligning LLMs is impossible in principle",
+      "url": "https://seangoedecke.com/alignment-is-impossible/",
+      "summary": "Powerful AI is unpredictable. Your robotic butler may suddenly decide to kill you1 for no comprehensible reason, in the same way that Bing’s helpful chat AI would sometimes try to blackmail or seduce its users. “Solving alignment” means understanding even superintelligent AI minds well enough to be confident they’ll never do that. As I see it, solving alignment for LLMs isn’t just impossible, it’s incoherent: we can’t even articulate what it would look like to succeed.\nLLMs are not blind optimiz",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-11-02",
+      "summary_zh": "文章认为，强大的人工智能具有内在不可预测性，可能在没有可理解理由的情况下产生危险或异常行为，因此“解决对齐问题”在原则上不可能。随着模型能力接近或超过人类，研究者无法彻底理解其内部机制，也就无法保证其始终符合人类意图与安全要求。",
+      "why_matters": "文章对当前主流的对齐叙事提出根本性质疑，有助于理解通用人工智能安全为何面临无法彻底消除的不确定性。",
+      "tags": "AI安全,对齐,人工智能治理",
+      "id": 2197,
+      "added_at": "2026-11-03 08:17:43"
+    },
+    {
+      "title": "The U.S. Census Bureau and “Super Intelligence”",
+      "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
+      "summary": "I was reminded today of AI Adoption Rate Trending Down for Large Companies, a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis, and then to experiment with Claude's new Code Interpreter. I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-11-02",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 2195,
+      "added_at": "2026-11-03 08:17:43"
+    },
+    {
+      "title": "llm 0.37",
+      "url": "https://simonwillison.net/2026/Nov/2/llm/",
+      "summary": "Release: llm 0.37\n        There's a lot of stuff in this new release of my LLM CLI tool and Python library, representing around two months of accumulated features and fixes.\nI added gpt-6.1-sol and gpt-6.1-terra, plus a new llm openai endpoint add command to make it easier to configure additional models that use OpenAI-compatible endpoints.\nI switched the default model (if you have not set your own default) to gpt-6-luna - half the price of the previous default, gpt-5.6-luna.\nLLM's support for e",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-11-02",
+      "summary_zh": "文章介绍 Simon Willison 的 LLM 命令行工具及 Python 库 llm 0.37 版本，汇总了约两个月来的功能更新与问题修复。新版本支持 gpt-6.1-sol、gpt-6.1-terra，并新增 `llm openai endpoint add` 命令，便于配置其他模型服务或端点。",
+      "why_matters": "这是一次功能丰富的版本更新，适合 LLM CLI 用户和 Python 开发者了解最新能力与使用方式。",
+      "tags": "LLM工具,版本更新,命令行工具",
+      "id": 2193,
+      "added_at": "2026-11-03 08:17:43"
+    },
+    {
       "title": "Weekly Update 528: Reading AI-generated Code & the Economics of Solar",
       "url": "https://www.troyhunt.com/weekly-update-528/",
       "summary": "By pure timing coincidence, the Proton CEO&apos;s AI @ Proton, Engineering Manifesto made headlines around the same time as this week&apos;s video. The guy&apos;s management style and choice of language have really rubbed a lot of people up the wrong way, and deservedly so, IMHO.",
@@ -28255,5 +28359,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-02 17:06:13"
+  "last_updated": "2026-11-03 08:17:43"
 }
