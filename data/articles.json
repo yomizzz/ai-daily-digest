@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.22.7",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.7",
+      "source": "hermes-agent",
+      "published": "2026-11-04",
+      "category": "hermes",
+      "summary_zh": "- v0.22.7 为补丁版本，汇总了自 v0.22.6 以来的约 174 个 PR，包含 581 个非合并提交，改动 554 个文件。\n- 桌面端群聊新增可选的 Lead 路由机制，并在房间标题栏显示 Lead 标识。\n- 支持定时任务向 Group Chats 发布消息，并新增群聊用途说明与共享笔记。\n- 群聊支持以单列布局展示，并实时显示各成员的状态。\n- 已置顶的 Kanban 看板可作为快捷切换标签页使用。\n- 支持通过 Pele 渲染 `$$TeX$$` 图表标签和 Mermaid 图表。\n- 桌面端更新失败时新增错误提示框，可查看失败输出并通过报告链接反馈问题。\n- Web Access 现在会在名为“Start”的步骤旁显示运行计时器。\n- Telegram 集成 Team Gateway 后，可通过将账号关联至共享机器人完成配置。\n- Slack 新增可选的 `thread_followup_silence` 设置，用于静默未被处理的线程回复。\n- Daybreak 支持切换目录中列出的 ChatGPT 订阅模型。\n- 插件目录新增一批插件条目。\n- Microsoft Store 应用继续通过商店自动更新。\n- 通过 `.exe` 或 `.dmg` 安装器安装的桌面应用本次无需更新，将在下一个捆绑发布版本中升级。\n- CLI 可通过 `hermes update` 或重新运行安装器命令更新。\n- Docker 与 Hermes Cloud 可继续使用 `nousresearch/hermes-agent:stable` 镜像，或更新至 `:latest` 标签。\n- 本窗口的完整整理版发行说明计划在 v0.23.0 中发布，将覆盖自 v0.22.0 以来的全部功能与贡献者信息。",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Charles Tandy, the mastermind behind Radio Shack",
       "url": "https://dfarq.homeip.net/charles-tandy-the-mastermind-behind-radio-shack/?utm_source=rss&utm_medium=rss&utm_campaign=charles-tandy-the-mastermind-behind-radio-shack",
       "summary": "Charles David Tandy was the chairman of the board, president, and chief executive officer of the Tandy Corporation. He was born May 15, 1918 and died November 4, 1978. Tandy was involved in the creation or expansion of three retail\nThe post Charles Tandy, the mastermind behind Radio Shack appeared first on The Silicon Underground.",
@@ -28693,5 +28703,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-04 06:48:43"
+  "last_updated": "2026-11-04 16:49:35"
 }
