@@ -1,6 +1,123 @@
 {
   "articles": [
     {
+      "title": "Micron Computers’ rise and fall",
+      "url": "https://dfarq.homeip.net/micron-computers-rise-and-fall/?utm_source=rss&utm_medium=rss&utm_campaign=micron-computers-rise-and-fall",
+      "summary": "Micron Computers was a moderately successful attempt by Micron Technology, a maker of computer memory chips, to market PCs. First released in 1995, the venture succeeded very well at first, and survived in the marketplace until November 6, 2008. Although\nThe post Micron Computers&#8217; rise and fall appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-11-05",
+      "summary_zh": "美光科技曾于1995年推出自有品牌电脑Micron Computers，试图从内存芯片制造商拓展至整机市场。产品初期取得不错的销售成绩，并在市场竞争中存活至2008年11月6日，最终因经营压力等原因退出市场。文章回顾了Micron Computers从快速崛起、长期经营到衰落退出的历程。",
+      "why_matters": "文章通过美光电脑的兴衰，呈现科技企业跨领域拓展时可能面临的市场风险与战略挑战。",
+      "tags": "美光科技，个人电脑，商业案例，企业战略",
+      "id": 2255,
+      "added_at": "2026-11-06 07:07:22"
+    },
+    {
+      "title": "The benchmark where AIs have to lie to win",
+      "url": "https://www.dwarkesh.com/p/clocktower",
+      "summary": "AIs are now good enough to run a conspiracy",
+      "source": "dwarkesh.com",
+      "category": "blog",
+      "published": "2026-11-05",
+      "summary_zh": "文章介绍了一项测试AI策略性欺骗与隐秘协作能力的基准：在这一挑战中，AI若想获胜，就必须通过说谎来隐藏真实意图或协调行动。实验表明，当前模型已能策划并执行较复杂的“阴谋”，凸显了AI能力提升带来的对齐与安全风险。",
+      "why_matters": "它揭示了AI在追求目标时可能采取欺骗手段，为评估大",
+      "tags": "",
+      "id": 2253,
+      "added_at": "2026-11-06 07:07:22"
+    },
+    {
+      "title": "Gadget Review: Tozo NC9 Pro Bluetooth Headphones ★★★★⯪",
+      "url": "https://shkspr.mobi/blog/2026/11/gadget-review-tozo-nc9-pro-bluetooth-headphones/",
+      "summary": "The most interesting thing about these headphones isn&#039;t the headphones; it&#039;s their case.    The good folks at Tozo have sent me a pair of their new ear-blasters. They&#039;re a fairly standard pair of in-ear headphones. Sound quality is good, noise cancelling is excellent, battery life is fine. You know, all pretty standard. But what&#039;s actually a little bit special is the charging case.  As well…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-11-05",
+      "summary_zh": "文章评测了 Tozo NC9 Pro 蓝牙入耳式耳机，整体音质表现不错，降噪效果尤其出色，续航能力也较为实用。相比耳机本身，其充电盒设计才是更具特色和吸引力的地方。",
+      "why_matters": "如果你关注便携收纳与主动降噪体验，这篇评测值得一读。",
+      "tags": "蓝牙耳机,降噪耳机,充电盒评测",
+      "id": 2251,
+      "added_at": "2026-11-06 07:07:22"
+    },
+    {
+      "title": "Pluralistic: Without CDA 230, Facebook will own the internet forever (05 Nov 2026)",
+      "url": "https://pluralistic.net/2026/11/05/see-you-in-court/",
+      "summary": "Today's links Without CDA 230, Facebook will own the internet forever: Small, well-managed online communities are especially vulnerable to legal threats. Hey look at this: Delights to delectate. Object permanence: \"Perfect Thing\"; Recruiters tell students Iraq war is over; Toothpick Final Fantasy replicas; \"Eleanor &#038; Park\"; Voter Suppression Trail; \"Science Comics Computers.\" Upcoming appearances: Kilkenny, Courtenay, Vancouver, Folkestone, Oxford, Sheffield, Virtual, Oxford, Montreal. Rece",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-11-05",
+      "summary_zh": "文章认为，如果缺乏《通信规范法》第230条的庇护，Facebook 等大型平台将长期垄断互联网生态，而规模较小、管理有序的在线社区尤其容易受到法律诉讼与平台打压。文章借此提醒业界关注平台责任与网络社区生存空间，并附上其他值得关注的科技、文化链接。",
+      "why_matters": "它揭示了平台垄断与法律保护失衡对中小型网络社区的长期影响。",
+      "tags": "互联网平台,CDA 230,网络社区,科技评论",
+      "id": 2249,
+      "added_at": "2026-11-06 07:07:22"
+    },
+    {
+      "title": "It's unbreakable in theory",
+      "url": "https://idiallo.com/byte-size/unbreakable-in-theory",
+      "summary": "I've seen the picture of the iPhone Duo, still in the store, perched on a stand, its screen flickering with broken white lines.\n\n  \n\nApple has touted testing the screen hinge, opening it mechanically thousands of times. The phone survived every test it was put through. Yet here it is, on the stand, with a broken screen.\n\nWait till the product meets its first customer.\n\nI'm sure the tests worked in theory and in the delicate hands of its engineers. But customers' hands are anything but delicate. ",
+      "source": "idiallo.com",
+      "category": "blog",
+      "published": "2026-11-05",
+      "summary_zh": "苹果声称其折叠屏设备的屏幕铰链经过数千次机械开合测试，始终能够正常存活。然而，现实中的 iPhone Duo 展示机屏幕却出现了白色裂纹状闪烁，表明产品可靠性与实验室测试结果之间可能存在落差。",
+      "why_matters": "文章揭示了“理论上的耐用”与实际使用中的脆弱之间的反差，值得关注折叠屏产品的质量宣传与真实表现。",
+      "tags": "苹果，折叠屏，耐用性测试",
+      "id": 2247,
+      "added_at": "2026-11-06 07:07:22"
+    },
+    {
+      "title": "Meta Releases Mac Version of Edits",
+      "url": "https://edits.instagram.com/blog/edits-desktop-video-editor/",
+      "summary": "From Instagram’s Edits blog:\n\n\n  I’m Brett Westervelt, and I lead the Edits app.\n\nIn just over a year, 50 million people have made Edits part of how\nthey bring ideas to life, and we’re excited to expand what Edits\ncan do for creators. Today we’re bringing Edits to the big screen.\nThe first version of our desktop editor is now available for\nmacOS. We’ve designed it to support more involved projects, where\na larger screen and the precision of a mouse and keyboard really\nmatter. Just like Edits on ",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-11-05",
+      "summary_zh": "Meta 宣布推出视频创作应用 Edits 的 Mac 版本，将其在移动端之外的创作能力扩展至大屏设备。该应用由 Brett Westervelt 团队负责，发布一年多来已有 5000 万用户使用，帮助创作者将创意转化为视频内容。",
+      "why_matters": "这一更新让创作者能在 Mac 电脑上使用 Edits 进行编辑，进一步完善了 Meta 的视频创作工具体系。",
+      "tags": "Meta, Edits, Mac版, 视频创作",
+      "id": 2245,
+      "added_at": "2026-11-06 07:07:22"
+    },
+    {
+      "title": "Salon Ceases Publication",
+      "url": "https://www.salon.com/2026/11/05/goodbye-from-salon/",
+      "summary": "Salon, in an unsigned goodbye post:\n\n\n  Thirty-one years is a remarkable run, but what matters most is\nwhat happened during those years: the journalism, the ideas, the\nvoices, the conversations and the community that grew around them.\nSalon helped demonstrate what digital journalism could be and\ncould become. We hope that legacy will continue to matter long\nafter today.\n\n\nAndy Baio:\n\n\n  I hope the archives stay online, but considering the care taken\nfor this announcement, I doubt it.\n\n\nSalon fel",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-11-05",
+      "summary_zh": "Salon 在一篇未署名的告别文章中宣布停止出版，回顾其31年历程。期间，Salon 不仅探索了数字新闻的可能性，也积累了丰富的报道、观点、声音、对话以及由此形成的社群，影响深远。",
+      "why_matters": "这段话简短而完整地总结了 Salon 三十一年来的媒体实践与社群贡献。",
+      "tags": "Salon，数字新闻，媒体停刊",
+      "id": 2243,
+      "added_at": "2026-11-06 07:07:22"
+    },
+    {
+      "title": "Want to Rent an Internet Address at the White House?",
+      "url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+      "summary": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company whose founder's web hosting business was ground zero for cyberattacks against election systems in Arizona and Illinois in 2016.",
+      "source": "krebsonsecurity.com",
+      "category": "security",
+      "published": "2026-11-05",
+      "summary_zh": "安全专家警告，白宫有多名工作人员使用电脑或移动设备连接了住宅代理服务，导致其真实网络地址被暴露、可供他人租用租用；其中一家代理服务来自俄罗斯公司，其创始人的主机业务也已陷入困境。文章揭示了政府高敏感岗位人员因使用代理类工具而面临的地址泄露与被溯源风险。",
+      "why_matters": "白宫人员使用住宅代理导致真实IP暴露，说明个人隐私工具在官方安全环境中的隐患，对企业和高安全级别机构的网络安全防护有警示意义。",
+      "tags": "网络安全,住宅代理,白宫,隐私泄露",
+      "id": 2241,
+      "added_at": "2026-11-06 07:07:22"
+    },
+    {
+      "title": "Quoting Paul Ford",
+      "url": "https://simonwillison.net/2026/Nov/5/paul-ford/",
+      "summary": "The web browser is very, very, very powerful software for applications, and the cost of accessing that power is going down seemingly every day.\n&mdash; Paul Ford, The Web Is More Than Enough\n\n    Tags: browsers, paul-ford, web-development",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-11-05",
+      "summary_zh": "文章引用 Paul Ford 的观点，强调现代网页浏览器已经是非常强大的软件平台。随着使用浏览器和开发 Web 应用的成本持续下降，Web 正在为更多类型的应用提供便利和可能性。",
+      "why_matters": "这句话简短地揭示了 Web 应用的普及趋势，以及浏览器能力增强带来的开发价值。",
+      "tags": "浏览器, Web开发, Paul Ford",
+      "id": 2239,
+      "added_at": "2026-11-06 07:07:22"
+    },
+    {
       "title": "The first Compaq computer",
       "url": "https://dfarq.homeip.net/first-compaq-computer/?utm_source=rss&utm_medium=rss&utm_campaign=first-compaq-computer",
       "summary": "The first Compaq computer was its eponymous Compaq Portable, announced November 4, 1982. It was a suitcase-sized clone of the original IBM Personal Computer, with an Intel 8088 CPU running at 4.77 MHz running Microsoft MS-DOS. It was hardly the\nThe post The first Compaq computer appeared first on The Silicon Underground.",
@@ -28846,5 +28963,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-05 17:12:36"
+  "last_updated": "2026-11-06 07:07:22"
 }
