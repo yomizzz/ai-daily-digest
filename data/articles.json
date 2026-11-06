@@ -1,6 +1,175 @@
 {
   "articles": [
     {
+      "title": "What happened to Transmeta, the last big dotcom IPO",
+      "url": "https://dfarq.homeip.net/what-happened-to-transmeta-the-last-big-dotcom-ipo/?utm_source=rss&utm_medium=rss&utm_campaign=what-happened-to-transmeta-the-last-big-dotcom-ipo",
+      "summary": "Transmeta was the last big IPO of the dotcom era, launching Nov 7, 2000. Some analysts call its $273 million IPO the last successful tech IPO until the Google IPO in 2004. Transmeta didn&#8217;t completely fit in to the dotcom\nThe post What happened to Transmeta, the last big dotcom IPO appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-11-06",
+      "summary_zh": "Transmeta 于2000年11月7日上市，募资2.73亿美元，被许多分析师视为互联网泡沫时代最后一场大型科技IPO，也是谷歌2004年上市前最后一宗成功的大型科技IPO。文章回顾这家并不完全符合典型“.com”公司特征的企业的上市经历及其后续发展。",
+      "why_matters": "通过Transmeta的兴衰，窥见互联网泡沫破裂前后科技企业的转型与生存策略。",
+      "tags": "Transmeta,互联网泡沫,科技IPO",
+      "id": 2274,
+      "added_at": "2026-11-07 06:38:56"
+    },
+    {
+      "title": "Deus Ex",
+      "url": "https://www.filfre.net/2026/11/deus-ex/",
+      "summary": "This article tells part of the story of Warren Spector. A slight shift of focus, and the future could still turn out like Deus Ex after all&#8230; &#8212; Deus Ex lead writer Sheldon Pacotti, speaking in 2014 The reviews that greeted Ion Storm&#8217;s Deus Ex upon its release in June of 2000 ranged along a continuum [&#8230;]",
+      "source": "filfre.net",
+      "category": "blog",
+      "published": "2026-11-06",
+      "summary_zh": "文章回顾了《Deus Ex》从开发到正式发行的历程，并围绕联合创始人兼制作人沃伦·斯佩克特，讲述游戏背后的制作理念与行业故事。自2000年6月上市以来，这款作品融合了科幻、阴谋与角色扮演元素，其影响力和历史地位仍在延续。",
+      "why_matters": "文章不仅梳理了《Deus Ex》的发展与口碑，也呈现了经典游戏背后的创意历程与制作轶事。",
+      "tags": "《Deus Ex》，游戏开发，Warren Spector",
+      "id": 2272,
+      "added_at": "2026-11-07 06:38:56"
+    },
+    {
+      "title": "Premium: Fault Lines",
+      "url": "https://www.wheresyoured.at/premium-fault-lines/",
+      "summary": "I&#x2019;ve generally avoided politics here and the few times that I have done so I&#x2019;ve received a few pissy emails, but Tuesday night was a wonderful, abundant font of hope in what has been an unspeakably grim two years.&#xa0;We have felt land-locked in",
+      "source": "wheresyoured.at",
+      "category": "blog",
+      "published": "2026-11-06",
+      "summary_zh": "作者罕见地谈论政治，把“周二之夜”视为两年来少有的希望时刻，认为长期令人压抑的局势并非完全固化。文章以此为切口，审视社会与政治中积累的",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 2270,
+      "added_at": "2026-11-07 06:38:56"
+    },
+    {
+      "title": "How Do Building Codes Affect the Price of Housing?",
+      "url": "https://www.construction-physics.com/p/how-do-building-codes-affect-the",
+      "summary": "A great deal of effort has gone into understanding the regulatory burden on housing construction, and the extent to which it contributes to high housing prices.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-11-06",
+      "summary_zh": "[文章探讨建筑法规如何通过增加设计、施工与合规成本，进而影响住房价格。内容重点评估住房建设所承受的监管负担，以及监管强度与高房价之间的关系。]",
+      "why_matters": "[有助于理解建筑规范的成本传导机制及其对住房供给和价格的影响。]",
+      "tags": "[建筑法规,住房价格,监管成本]",
+      "id": 2268,
+      "added_at": "2026-11-07 06:38:56"
+    },
+    {
+      "title": "Weekend at Bernie’s II",
+      "url": "https://nesbitt.io/2026/11/06/weekend-at-bernies-ii.html",
+      "summary": "Six months on, which of your dependencies are still wearing sunglasses?",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-11-06",
+      "summary_zh": "文章借电影《假期再见，伯尼》的黑色幽默做比喻，回顾六个月前引入的依赖项如今还有哪些\"戴着墨镜装活着\"——即仍躺在配置文件里、看似正常实则早已停止维护、无人更新的\"僵尸依赖\"。作者主张定期复查依赖清单，清理那些早已死去却仍在项目中苟延残喘的包，以免它们成为安全与维护隐患。",
+      "why_matters": "用一个巧妙的电影梗切入依赖治理话题，形象地提醒开发者定期审视自己的依赖\"还剩几具是活的\"，兼具趣味性与实操价值。",
+      "tags": "依赖管理，开源维护，技术债务",
+      "id": 2266,
+      "added_at": "2026-11-07 06:38:56"
+    },
+    {
+      "title": "Static site generators are weird",
+      "url": "https://evanhahn.com/static-site-generators-are-weird/",
+      "summary": "I love static sites. Pre-rendered files are usually faster, lower maintenance, easier to secure, and more. Static site generators let you create these sites much more easily, which is fabulous.\nBut I believe most static site generators are weird.\nSSGs like Jekyll, Gatsby, and Hugo require you to learn their special way of doing things. You have to answer questions like:\n\nHow do you write HTML templates?\nHow do you manage CSS and JavaScript?\nHow do you deal with images and videos?\nHow do you mana",
+      "source": "evanhahn.com",
+      "category": "blog",
+      "published": "2026-11-06",
+      "summary_zh": "作者很推崇静态网站，其预渲染文件通常速度更快、维护成本更低，也更安全；但他认为 Jekyll、Gatsby、Hugo 等多数静态站点生成器都显得颇为古怪。它们虽然简化了静态站的创建，却要求用户学习额外的模板、配置和构建流程，反而增加了复杂度。",
+      "why_matters": "文章在肯定静态网站优势的同时，理性反思了主流生成器是否真的“简单”，适合正在选型或使用 SSG 的开发者阅读。",
+      "tags": "静态网站,静态站点生成器,Web开发",
+      "id": 2264,
+      "added_at": "2026-11-07 06:38:56"
+    },
+    {
+      "title": "A video game which caused real world violence",
+      "url": "https://shkspr.mobi/blog/2026/11/a-video-game-which-caused-real-world-violence/",
+      "summary": "There has been a dramatic fall in the amount of interpersonal violence in most countries.  I don&#039;t want to go too Freakanomics and, obviously, correlation is not causation but perhaps video games have a role to play in this? A teenager being cooped up in their room means less exposure to situations where hormonal impertinence is likely to cause a violent reaction. Shouting and screaming at people …",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-11-06",
+      "summary_zh": "文章探讨电子游戏与现实世界人际暴力减少之间的关系，指出虽然不能简单将相关性视为因果关系，但青少年减少外出、缩居房中可能降低了他们接触冲突和暴力的机会。文章可能进一步分析电子游戏在减少现实暴力方面发挥的潜在作用。",
+      "why_matters": "文章从反直觉角度审视游戏与暴力的联系，提供了理解科技影响社会行为的新视角。",
+      "tags": "电子游戏,社会暴力,行为研究",
+      "id": 2262,
+      "added_at": "2026-11-07 06:38:56"
+    },
+    {
+      "title": "Writing English is Solved",
+      "url": "https://idiallo.com/byte-size/english-is-solved",
+      "summary": "Maybe you still struggle to write in Pulaar, or in your rinky-dink language. But here in the AI-connected, English-speaking world, we don't need to write anymore. In fact, I don't remember the last time I wrote English. I have one master agent that I talk to and tell what I need to get done. It breaks down the tasks and serves them to spawned agents that get the work done.\nI spend $3,000 a month on tokens. I use them mostly for:\n\nResearch and search\nSummarization and transcription\nWriting (the b",
+      "source": "idiallo.com",
+      "category": "blog",
+      "published": "2026-11-06",
+      "summary_zh": "文章认为，在 AI 普及的英语时代，写作本身已不再是难题。作者借助一个能够理解需求、拆解任务并执行指令的“主智能体”，将复杂的表达与沟通工作交给 AI 完成，展示了智能代理如何重塑日常写作与生产力。",
+      "why_matters": "文章以轻松视角呈现 AI 智能体对写作和英语沟通方式的改变，适合关注 AI 应用与未来工作方式的人阅读。",
+      "tags": "人工智能，AI智能体，写作工具，生产力",
+      "id": 2260,
+      "added_at": "2026-11-07 06:38:56"
+    },
+    {
+      "title": "The President is Coping Well",
+      "url": "https://www.wsj.com/politics/policy/trump-signs-proclamation-he-says-will-protect-oval-office-from-major-changes-93f3285b",
+      "summary": "The WSJ, “Trump Signs Proclamation He Says Will Protect Oval Office From Major Changes”:\n\n\n  President Trump signed a proclamation Thursday that he said would\ndesignate the White House’s Oval Office and Cabinet Room as\nlandmarks to prevent future presidents from making major changes\nto them.\n\n“They won’t be able to be taken down, destroyed, touched or\nanything else,” Trump told reporters. “It’s called, actually, a\nnational monument. It’s a federal landmark, and when completed\nand when we get the",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-11-06",
+      "summary_zh": "特朗普签署公告，将白宫椭圆办公室和内阁会议室指定为“地标”，以防止未来总统对这些区域进行重大改造。此举旨在维护总统办公室及内阁空间的历史面貌与象征意义。",
+      "why_matters": "这条消息以简短报道呈现了特朗普对白宫核心空间实施长期保护的政策动态。",
+      "tags": "特朗普,白宫,总统办公室",
+      "id": 2258,
+      "added_at": "2026-11-07 06:38:56"
+    },
+    {
+      "title": "Apple Support: ‘About the Illuminated Apple Logo on MacBook Pro With PROLED XDR Display’",
+      "url": "https://support.apple.com/en-us/149248",
+      "summary": "Apple Support:\n\n\n  To make the Apple logo dark in all lighting conditions, you can turn off its illumination using Terminal, which is in the Utilities folder of your Applications folder. You can also use Spotlight to find and open it.\n\nType or paste this command in Terminal, then press Return:\n\nsudo defaults write com.apple.CoreBrightness LEBacklightMode -int 0\n\n[...]\n\nTo turn logo illumination on again, enter this command in Terminal:\n\nsudo defaults delete com.apple.CoreBrightness LEBacklightMo",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-11-06",
+      "summary_zh": "Apple Support介绍了如何关闭配备PROLED XDR显示屏的MacBook Pro上苹果标志的背光，使标志在各种光照条件下保持熄灭。用户可通过“应用程序”文件夹中的“实用工具”或 Spotlight 打开 Terminal，并输入指定命令完成设置。",
+      "why_matters": "这是一份实用的官方操作指南，帮助用户按需关闭新款MacBook Pro的苹果标志背光。",
+      "tags": "MacBook Pro, Terminal, 苹果标志背光",
+      "id": 2256,
+      "added_at": "2026-11-07 06:38:56"
+    },
+    {
+      "title": "★ Touch and Glow",
+      "url": "https://daringfireball.net/2026/11/touch_and_glow",
+      "summary": "Apple’s “Pro and Tell” event in Los Angeles, the new MacBook Pros with PROLED XDR displays, and the state of the Macintosh platform.",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-11-06",
+      "summary_zh": "文章聚焦苹果在洛杉矶举办的“Pro and Tell”发布会，介绍新款 MacBook Pro 以及采用“PROLED XDR”显示屏的产品亮点。文章同时回顾并分析当前 Macintosh 平台的发展状态。",
+      "why_matters": "适合快速了解苹果专业硬件新品及 Mac 平台现状的科技读者。",
+      "tags": "苹果,MacBook Pro,Macintosh平台",
+      "id": 2254,
+      "added_at": "2026-11-07 06:38:56"
+    },
+    {
+      "title": "A database is a store for global variables",
+      "url": "https://seangoedecke.com/a-database-is-a-store-for-global-variables/",
+      "summary": "Databases are for storing global variables. We usually call them “rows” or “records” instead, but they’re definitionally global variables: any part of your program can read or write them. Isn’t this kind of weird? It’s common programming advice that global variables are bad, and yet many elegant programs rely on databases. Either the common advice is wrong, or there’s something special about databases that makes them the exception to the rule.\nWhat’s so bad about global variables? Here’s the two",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-11-06",
+      "summary_zh": "文章将数据库中的“行”或“记录”重新理解为全局变量，因为程序的任何部分都可以读写它们，这似乎与“应避免使用全局变量”的常见建议相矛盾。作者借此探讨全局状态、数据库设计以及程序架构之间值得重新审视的关系。",
+      "why_matters": "文章提供了一个理解数据库与全局状态的有趣视角，有助于思考数据建模和程序设计中的权衡。",
+      "tags": "数据库,全局变量,程序设计",
+      "id": 2252,
+      "added_at": "2026-11-07 06:38:56"
+    },
+    {
+      "title": "Quoting Nilay Patel",
+      "url": "https://simonwillison.net/2026/Nov/6/nilay-patel/",
+      "summary": "The products aren't good enough to sell people on the costs.\nYou cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history.\nIt's not worth it. It just isn't worth it to anyone. And agents aren't real and they might not be being used the way that anyone wants them to yet. All these companies are spending more than they're making on these products. Refrigerators holding blood storage in Europ",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-11-06",
+      "summary_zh": "文章引用 Nilay Patel 的观点，认为当前 AI 产品的体验与质量尚不足以说服用户接受其成本，例如忍受数据中心噪声、生成低质量深伪内容。文章强调，这些产品带来的收益与代价不成比例，连智能体等应用也难以证明其实际价值。",
+      "why_matters": "这段评论犀利指出了 AI 商业化中常被忽视的用户体验与负面成本，值得关注。",
+      "tags": "人工智能，产品体验，AI伦理",
+      "id": 2250,
+      "added_at": "2026-11-07 06:38:56"
+    },
+    {
       "title": "Hermes Agent v0.23.0 — The Hearth Release",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.0",
       "source": "hermes-agent",
@@ -28985,5 +29154,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-06 17:04:48"
+  "last_updated": "2026-11-07 06:38:56"
 }
