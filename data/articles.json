@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.23.0 — The Hearth Release",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.0",
+      "source": "hermes-agent",
+      "published": "2026-11-06",
+      "category": "hermes",
+      "summary_zh": "- Hermes Desktop 整体工作区现可在浏览器标签页中打开，并由用户自己的 Gateway 提供服务。\n- 引入统一会话架构：每个会话由单一 Gateway 统一管理，CLI、TUI、Desktop、编辑器、机器人及定时任务均可接入同一套 Agent 能力。\n- Desktop 支持同时连接多台运行 Hermes 的机器，便于跨设备统一查看和管理会话。\n- Group Chats 支持按群组路由并管理独立对话。\n- 终端新增图片内联显示，并支持回退和重放对话历史。\n- 插件现已支持自动更新。\n- 为付费 MCP 工具增加价格标签与消费上限控制。\n- 委派机制改为可插拔，便于扩展和定制 Agent 任务委派流程。\n- 插件目录从约 600 个条目扩充至超过 1,050 个。\n- 精简内置技能集，减少冗余能力并优化运行效率。\n- 针对长期运行的 Gateway 开展内存与延迟优化，提升稳定性和响应速度。\n- 完整整合并记录 v0.22.1 至 v0.22.7 的补丁版本内容；自 v0.22.0 起累计关闭约 850 个问题。\n- v0.23.0 规模显著扩大：包含约 10,080 次提交、1,950 个合并 PR、8,720 个文件变更及 666 名贡献者。",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Micron Computers’ rise and fall",
       "url": "https://dfarq.homeip.net/micron-computers-rise-and-fall/?utm_source=rss&utm_medium=rss&utm_campaign=micron-computers-rise-and-fall",
       "summary": "Micron Computers was a moderately successful attempt by Micron Technology, a maker of computer memory chips, to market PCs. First released in 1995, the venture succeeded very well at first, and survived in the marketplace until November 6, 2008. Although\nThe post Micron Computers&#8217; rise and fall appeared first on The Silicon Underground.",
@@ -116,6 +126,18 @@
       "tags": "浏览器, Web开发, Paul Ford",
       "id": 2239,
       "added_at": "2026-11-06 07:07:22"
+    },
+    {
+      "title": "openclaw 2026.11.1",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.1",
+      "source": "openclaw",
+      "published": "2026-11-05",
+      "category": "openclaw",
+      "summary": "- Telegram、Discord及Webhook对话处理完成后仍可继续触达代理\n- 超大对话保留有效历史，中断后可继续当前任务\n- 子代理在模型或会话变更后保留后续跟进\n- Android End Talk停止监听后仍可接收已接受任务结果\n- Claude CLI订阅账户可直接提供已配置模型\n- Anthropic支持记录可选工作区ID\n- Bedrock Mantle自动为编号GPT模型选择Responses路由\n- 控制界面显示当前配置的上下文预算\n- Google Chat远程附件以可见链接形式投递\n\n🐛 Bug 修复：- Mac配置保存失败不再覆盖密钥，关闭Tailscale仍保留认证\n- Telegram、Discord及Webhook对话处理后可能无法继续触达代理\n- 更新器崩溃或取消后恢复流程可正常解除卡死\n- 子代理在模型或会话切换后丢失后续任务\n- 子代理审批在自定义会话存储下无法送达父会话\n- Provider限流恢复时间遵从服务端设置\n- ClickClack与ClawHub拒绝跳转到无关私有服务\n- Discord CDN下载不再继承浏览器私有网络权限\n- FIFO原生钩子凭据异常不再导致代理卡死\n- 非交互检查未获授权时不再下载插件\n- 空群组允许列表不再被自动恢复\n- 格式错误的旧版导入不再覆盖原始内容\n- 技能恢复失败回滚时保留原始副本\n- 工作区检查失败时不再执行破坏性清理\n- 格式错误的自定义日志项不再导致密钥脱敏失效",
+      "features": "- Telegram、Discord及Webhook对话处理完成后仍可继续触达代理\n- 超大对话保留有效历史，中断后可继续当前任务\n- 子代理在模型或会话变更后保留后续跟进\n- Android End Talk停止监听后仍可接收已接受任务结果\n- Claude CLI订阅账户可直接提供已配置模型\n- Anthropic支持记录可选工作区ID\n- Bedrock Mantle自动为编号GPT模型选择Responses路由\n- 控制界面显示当前配置的上下文预算\n- Google Chat远程附件以可见链接形式投递",
+      "bug_fixes": "- Mac配置保存失败不再覆盖密钥，关闭Tailscale仍保留认证\n- Telegram、Discord及Webhook对话处理后可能无法继续触达代理\n- 更新器崩溃或取消后恢复流程可正常解除卡死\n- 子代理在模型或会话切换后丢失后续任务\n- 子代理审批在自定义会话存储下无法送达父会话\n- Provider限流恢复时间遵从服务端设置\n- ClickClack与ClawHub拒绝跳转到无关私有服务\n- Discord CDN下载不再继承浏览器私有网络权限\n- FIFO原生钩子凭据异常不再导致代理卡死\n- 非交互检查未获授权时不再下载插件\n- 空群组允许列表不再被自动恢复\n- 格式错误的旧版导入不再覆盖原始内容\n- 技能恢复失败回滚时保留原始副本\n- 工作区检查失败时不再执行破坏性清理\n- 格式错误的自定义日志项不再导致密钥脱敏失效",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
     },
     {
       "title": "The first Compaq computer",
@@ -28963,5 +28985,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-06 07:07:22"
+  "last_updated": "2026-11-06 17:04:48"
 }

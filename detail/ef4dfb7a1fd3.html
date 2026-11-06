@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes Agent v0.23.0 — The Hearth Release</title>
+    <style>
+
+        :root {
+            --brand:     #1B365D;
+            --brand-light: #2D5A8A;
+            --brand-tint: #EEF2F7;
+            --brand-tint-strong: #E4ECF5;
+            --parchment:  #f5f4ed;
+            --ivory:      #faf9f5;
+            --sand:       #e8e6dc;
+            --border:     #e8e6dc;
+            --border-soft:#e5e3d8;
+            --near-black: #141413;
+            --dark-warm:  #3d3d3a;
+            --charcoal:   #4d4c48;
+            --olive:      #504e49;
+            --stone:      #6b6a64;
+        }
+        /* ── Reset & Base ── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: var(--parchment);
+            color: var(--near-black);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                         'Helvetica Neue', Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        ::selection { background: var(--brand-tint-strong); color: var(--brand); }
+
+        /* ── Typography ── */
+        h1 { font-family: Charter, Georgia, 'Times New Roman', serif;
+             font-size: 28px; font-weight: 500; line-height: 1.2;
+             color: var(--near-black); letter-spacing: -0.3px; }
+        h2 { font-size: 18px; font-weight: 500; line-height: 1.3; color: var(--dark-warm); }
+        p  { color: var(--olive); line-height: 1.65; }
+
+        /* ── Layout ── */
+        header {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 3rem 2rem 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+        header h1 { font-size: 26px; margin-bottom: 6px; }
+        .subtitle { color: var(--stone); font-size: 14px; margin-bottom: 4px; }
+        .last-updated { color: var(--stone); font-size: 12px; }
+
+        main {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 2rem 2rem 4rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--stone);
+            font-size: 12px;
+        }
+        footer a { color: var(--brand); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        /* ── Filter Bar ── */
+        .filter-bar {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 28px;
+            padding: 14px 16px;
+            background: var(--ivory);
+            border: 1px solid var(--border-soft);
+            border-radius: 6px;
+            align-items: center;
+        }
+        .filter-btn {
+            padding: 5px 14px;
+            border: 1px solid var(--border);
+            background: var(--parchment);
+            color: var(--olive);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+            font-family: inherit;
+            transition: all 0.15s ease;
+        }
+        .filter-btn:hover {
+            border-color: var(--brand);
+            color: var(--brand);
+        }
+        .filter-btn.active {
+            background: var(--brand);
+            border-color: var(--brand);
+            color: #fff;
+            font-weight: 500;
+        }
+        .article-count { margin-left: auto; color: var(--stone); font-size: 12px; }
+
+        /* ── Article Cards ── */
+        .articles { display: flex; flex-direction: column; gap: 0; }
+        .article {
+            padding: 22px 0;
+            border-bottom: 1px solid var(--border-soft);
+        }
+        .article:first-child { border-top: 1px solid var(--border-soft); }
+
+        .article-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+        .article-title {
+            font-family: Charter, Georgia, 'Times New Roman', serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--brand);
+            text-decoration: none;
+            line-height: 1.35;
+            flex: 1;
+        }
+        .article-title:hover { color: var(--brand-light); text-decoration: underline; }
+
+        .category-tag {
+            padding: 3px 10px;
+            background: var(--brand-tint);
+            color: var(--brand);
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: 500;
+            white-space: nowrap;
+            letter-spacing: 0.2px;
+            flex-shrink: 0;
+        }
+
+        .article-meta {
+            font-size: 12px;
+            color: var(--stone);
+            margin-bottom: 10px;
+            font-family: -apple-system, sans-serif;
+        }
+
+        /* ── Summary ── */
+        .article-summary {
+            color: var(--olive);
+            margin-bottom: 12px;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+        .article-summary ul, .detail-card ul { margin: 6px 0; padding-left: 18px; }
+        .article-summary li, .detail-card li { margin: 3px 0; color: var(--olive); }
+        .summary-list { list-style: none; padding-left: 0; }
+        .summary-list li {
+            padding: 2px 0 2px 18px;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.65;
+        }
+        .summary-list li::before {
+            content: '·';
+            position: absolute;
+            left: 4px;
+            color: var(--brand);
+            font-weight: 700;
+        }
+
+        .article-why {
+            font-size: 12px;
+            color: var(--stone);
+            margin-bottom: 8px;
+        }
+        .article-why a { color: var(--brand); text-decoration: none; font-weight: 500; }
+        .article-why a:hover { text-decoration: underline; }
+
+        .tags {
+            margin-top: 8px;
+            font-size: 11px;
+            color: var(--stone);
+        }
+
+        /* ── Detail Page ── */
+        .detail-card {
+            background: var(--ivory);
+            border: 1px solid var(--border-soft);
+            border-radius: 6px;
+            padding: 28px 32px;
+            margin: 20px 0;
+        }
+        .detail-card p { font-size: 15px; line-height: 1.8; color: var(--dark-warm); }
+        .detail-card ul { margin: 8px 0; padding-left: 20px; }
+        .detail-card li { font-size: 15px; line-height: 1.75; color: var(--dark-warm); margin: 5px 0; }
+
+        .detail-tags { margin-top: 16px; font-size: 12px; color: var(--stone); }
+
+        .detail-why {
+            margin-top: 16px;
+            font-size: 13px;
+            color: var(--dark-warm);
+        }
+
+        .original-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 22px;
+            background: var(--brand);
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+        }
+        .original-link:hover { background: var(--brand-light); }
+
+        /* ── Detail Section (openclaw features/bug_fixes) ── */
+        .detail-section { margin-bottom: 28px; }
+        .detail-section-title {
+            font-family: Charter, Georgia, serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--brand);
+            margin-bottom: 10px;
+            letter-spacing: 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 16px;
+            color: var(--brand);
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .back-link:hover { text-decoration: underline; }
+
+        /* ── Release Cards (hermes page) ── */
+        .release-list { display: flex; flex-direction: column; }
+        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
+        .release:first-child { border-top: 1px solid var(--border-soft); }
+        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+        .release-title {
+            font-family: Charter, Georgia, serif;
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--brand);
+            text-decoration: none;
+        }
+        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
+        .release-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            background: var(--brand-tint);
+            color: var(--brand);
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
+        .release-card {
+            background: var(--ivory);
+            border: 1px solid var(--border-soft);
+            border-radius: 6px;
+            padding: 18px 22px;
+            margin-top: 10px;
+        }
+        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
+        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
+        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
+
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            header { padding: 2rem 1.25rem 1.5rem; }
+            main { padding: 1.5rem 1.25rem 3rem; }
+            .article-header { flex-direction: column; gap: 6px; }
+            .category-tag { margin-left: 0; }
+            .filter-bar { flex-direction: column; align-items: flex-start; }
+            .article-count { margin-left: 0; }
+            .release-header { flex-direction: column; }
+            .release-date { margin-left: 0; }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hermes Agent v0.23.0 — The Hearth Release</h1>
+        <p><span class="category-tag">hermes</span> hermes-agent · 2026-11-06</p>
+    </header>
+
+    <main>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><ul class="summary-list"><li>Hermes Desktop 整体工作区现可在浏览器标签页中打开，并由用户自己的 Gateway 提供服务。</li><li>引入统一会话架构：每个会话由单一 Gateway 统一管理，CLI、TUI、Desktop、编辑器、机器人及定时任务均可接入同一套 Agent 能力。</li><li>Desktop 支持同时连接多台运行 Hermes 的机器，便于跨设备统一查看和管理会话。</li><li>Group Chats 支持按群组路由并管理独立对话。</li><li>终端新增图片内联显示，并支持回退和重放对话历史。</li><li>插件现已支持自动更新。</li><li>为付费 MCP 工具增加价格标签与消费上限控制。</li><li>委派机制改为可插拔，便于扩展和定制 Agent 任务委派流程。</li><li>插件目录从约 600 个条目扩充至超过 1,050 个。</li><li>精简内置技能集，减少冗余能力并优化运行效率。</li><li>针对长期运行的 Gateway 开展内存与延迟优化，提升稳定性和响应速度。</li><li>完整整合并记录 v0.22.1 至 v0.22.7 的补丁版本内容；自 v0.22.0 起累计关闭约 850 个问题。</li><li>v0.23.0 规模显著扩大：包含约 10,080 次提交、1,950 个合并 PR、8,720 个文件变更及 666 名贡献者。</li></ul></div>
+<div class="tags">标签：Hermes Agent</div>
+        <div class="detail-why">💡 查看中文摘要与详情</div>
+        <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.0" target="_blank" class="original-link">📖 阅读英文原文 →</a>
+    </main>
+
+    <footer>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
+    </footer>
+</body>
+</html>
