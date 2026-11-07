@@ -1,6 +1,110 @@
 {
   "articles": [
     {
+      "title": "Upgrade diary: HP Elitedesk 800 G4",
+      "url": "https://dfarq.homeip.net/upgrade-diary-hp-elitedesk-800-g4/?utm_source=rss&utm_medium=rss&utm_campaign=upgrade-diary-hp-elitedesk-800-g4",
+      "summary": "It seems like Dell Optiplex computers get a lot of attention, but I&#8217;ve had better luck recently finding HP Elitedesk PCs. These compete with the Dell Optiplex, and they have a lot of the same advantages and disadvantages. In this\nThe post Upgrade diary: HP Elitedesk 800 G4 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-11-07",
+      "summary_zh": "文章是一篇关于升级 HP EliteDesk 800 G4 台式机的实践记录，重点分享其使用、升级及维护体验。作者指出，虽然 Dell Optiplex 更受关注，但近期寻找 HP EliteDesk 备件和升级方案反而更加顺利；两款机型在优势与不足上也有不少相似之处。",
+      "why_matters": "适合关注商用台式机升级、硬件维护以及 HP 与 Dell Optiplex 对比体验的读者。",
+      "tags": "HP EliteDesk，硬件升级，PC评测",
+      "id": 2277,
+      "added_at": "2026-11-08 05:19:40"
+    },
+    {
+      "title": "Marx diesel freight train set 9613",
+      "url": "https://dfarq.homeip.net/marx-diesel-freight-train-set-9613/?utm_source=rss&utm_medium=rss&utm_campaign=marx-diesel-freight-train-set-9613",
+      "summary": "The Marx diesel freight train set number 9613 was an early 1950s electric train set featuring twin diesel locomotives pulling 7-inch freight cars, sold through Montgomery Ward. It&#8217;s an attractive set and a very good example of post-war tin lithography,\nThe post Marx diesel freight train set 9613 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-11-07",
+      "summary_zh": "文章介绍了马克思（Marx）于20世纪50年代初推出的9613号柴油电力货运列车组，该套装包含两辆柴油机车和七英寸货车，并通过Montgomery Ward渠道销售。其采用战后兴起的马口铁彩印工艺，兼具收藏价值与历史代表性。",
+      "why_matters": "这款早期柴油货运列车兼具复古玩具特色与马口铁彩印工艺，适合火车模型爱好者了解战后玩具铁路的发展。",
+      "tags": "Marx玩具，柴油火车模型，铁路收藏",
+      "id": 2275,
+      "added_at": "2026-11-08 05:19:40"
+    },
+    {
+      "title": "Reading List 11/7/2026",
+      "url": "https://www.construction-physics.com/p/reading-list-1172026",
+      "summary": "Florida&#8217;s property tax rollback, projected PCB shortages, the end of Tesla&#8217;s Cybertruck, the lack of progress in carbon storage, and more.",
+      "source": "construction-physics.com",
+      "category": "blog",
+      "published": "2026-11-07",
+      "summary_zh": "这期阅读清单汇总了佛罗里达州房产税回退、预计出现的PCB短缺、特斯拉Cybertruck停产，以及碳储存进展不足等行业动态。文章以简短导读形式呈现多起值得关注的技术与政策事件。",
+      "why_matters": "可快速了解科技、能源与经济领域的最新趋势和关键议题。",
+      "tags": "科技动态,能源转型,政策经济",
+      "id": 2273,
+      "added_at": "2026-11-08 05:19:40"
+    },
+    {
+      "title": "This Week in Package Management: 7 November 2026",
+      "url": "https://nesbitt.io/2026/11/07/this-week-in-package-management.html",
+      "summary": "Releases, advisories, and articles from across the package management world",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-11-07",
+      "summary_zh": "文章汇总了 2026 年 11 月 7 日当周软件包管理领域的版本发布、安全公告与相关文章。文章旨在提供一份快速掌握行业动态的综合周报。",
+      "why_matters": "适合开发者与包管理工具维护者在一处了解本周重要更新及安全资讯。",
+      "tags": "包管理,软件供应链,安全公告",
+      "id": 2271,
+      "added_at": "2026-11-08 05:19:40"
+    },
+    {
+      "title": "Book Review: When the Dust Settles - Stories of Love, Loss and Hope from an Expert in Disaster by Lucy Easthope ★★★★★",
+      "url": "https://shkspr.mobi/blog/2026/11/book-review-when-the-dust-settles-stories-of-love-loss-and-hope-from-an-expert-in-disaster-by-lucy-easthope/",
+      "summary": "This is a difficult but essential book. I was initially put off by how graphically autobiographical it is. The disaster planning I came for was frequently interrupted with the author&#039;s loves, disasters, health issues, pains, and domestic issues. As the book wore on, I realised how vital that is. Disasters - whether natural or caused by human actions - cannot be tackled in a dispassionate way.…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-11-07",
+      "summary_zh": "文章评介露西·伊斯索普的《当尘埃落定》，认为这是一本困难却不可或缺的著作。书中大量穿插作者的情爱经历、灾难、健康与家庭困境，一度让读者难以聚焦于灾害规划，但随着阅读深入，这些切身经历显出其在灾难应对中的重要性，展现了爱、失去与希望交织的力量。",
+      "why_matters": "这是一部将专业灾害经验与真实人生创伤相结合、既具启发性又情感深刻的作品。",
+      "tags": "灾难管理,个人回忆,书评",
+      "id": 2269,
+      "added_at": "2026-11-08 05:19:40"
+    },
+    {
+      "title": "Pluralistic: JS Tan and Clarissa Redwine's \"Against Tech Oligarchy\" (07 Nov 2026)",
+      "url": "https://pluralistic.net/2026/11/07/aeiou-but-sometimes-why/",
+      "summary": "Today's links JS Tan and Clarissa Redwine's \"Against Tech Oligarchy\": Inventing a new labor playbook for a unique and powerful industry. Hey look at this: Delights to delectate. Object permanence: EMI x Gnutella; ETCON photos; Piracy loss claims are \"self-serving hyperbole\"; Shareholder supremacy let Google conquer and enshittify the world; Cat causes kernel panic; HK erupts; National Guard x 1 weed plant; Enshittification of labor. Upcoming appearances: Kilkenny, Courtenay, Vancouver, Folkeston",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-11-07",
+      "summary_zh": "文章推荐 JS Tan 与 Clarissa Redwine 的《反对科技寡头》，探讨科技行业如何针对高度集中、强大的企业权力，探索新的劳工行动与组织策略。文中还涉及 EMI 与 Gnutella 的历史关联、ETCON 影像，以及对盗版损失主张和股东至上主义的质疑。",
+      "why_matters": "这篇文章为理解科技垄断、企业权力与行业劳工运动之间的关系提供了具有批判性的思考框架。",
+      "tags": "科技寡头, 劳工运动, 企业权力",
+      "id": 2267,
+      "added_at": "2026-11-08 05:19:40"
+    },
+    {
+      "title": "Yours Truly on Full Stack Creator, Talking About the New MacBook Pros With PROLED XDR Displays",
+      "url": "https://www.youtube.com/watch?v=f2GZtWuUPl0",
+      "summary": "Tyler Stalman and David Altizer were kind enough to have me on their show this week. These new MacBook Pros are very fun computers that are very fun to talk about.\n\n(We even sneak in some love for Ricoh’s legendary GR line of compact cameras. I used my original GR-D from 20 years ago to shoot this 2010 photo of Steve Jobs and Walt Mossberg that I linked to in my long “Touch and Glow” yesterday.)\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-11-07",
+      "summary_zh": "文章介绍作者参与 Full Stack Creator 播客节目，与 Tyler Stalman 和 David Altizer 讨论新款配备 ProLED XDR 显示屏的 MacBook Pro。节目中还穿插了对理光经典 GR 系列便携相机的怀念，作者分享了自己使用初代 GR-D 二十年来的拍摄经历。",
+      "why_matters": "节目兼具新品笔记本电脑体验、显示技术讨论与摄影器物情怀，内容轻松且富有个人色彩。",
+      "tags": "MacBook Pro，ProLED XDR，摄影播客",
+      "id": 2265,
+      "added_at": "2026-11-08 05:19:40"
+    },
+    {
+      "title": "Working with designers",
+      "url": "https://seangoedecke.com/working-with-designers/",
+      "summary": "I love working with designers, in part because (unlike managers and product managers) they’re culturally different from engineers. However, having more than one designer on a team is asking for trouble, and I have complicated negative thoughts about design systems.\nDesign is a strange role\nDesigners demonstrate their value immediately. While working on some feature, I’ll typically put together some placeholder UI that I’m reasonably happy with. I then show it to a designer, who strokes their chi",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-11-07",
+      "summary_zh": "文章探讨工程师与设计师协作时的文化差异，并指出团队中拥有多名设计师可能引发沟通与协作问题。作者也对设计系统持复杂态度，讨论其实际价值及潜在弊端。",
+      "why_matters": "适合产品经理、设计师和工程师反思跨职能协作方式及设计系统。",
+      "tags": "设计师协作,设计系统,团队管理",
+      "id": 2263,
+      "added_at": "2026-11-08 05:19:40"
+    },
+    {
       "title": "What happened to Transmeta, the last big dotcom IPO",
       "url": "https://dfarq.homeip.net/what-happened-to-transmeta-the-last-big-dotcom-ipo/?utm_source=rss&utm_medium=rss&utm_campaign=what-happened-to-transmeta-the-last-big-dotcom-ipo",
       "summary": "Transmeta was the last big IPO of the dotcom era, launching Nov 7, 2000. Some analysts call its $273 million IPO the last successful tech IPO until the Google IPO in 2004. Transmeta didn&#8217;t completely fit in to the dotcom\nThe post What happened to Transmeta, the last big dotcom IPO appeared first on The Silicon Underground.",
@@ -29154,5 +29258,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-07 16:32:26"
+  "last_updated": "2026-11-08 05:19:40"
 }
