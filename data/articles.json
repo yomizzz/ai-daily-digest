@@ -1,6 +1,71 @@
 {
   "articles": [
     {
+      "title": "Is AI crashing?",
+      "url": "https://dfarq.homeip.net/is-ai-crashing/?utm_source=rss&utm_medium=rss&utm_campaign=is-ai-crashing",
+      "summary": "It&#8217;s November 8, 2027. I don&#8217;t know if AI is crashing. I don&#8217;t know if the AI bubble has burst. Not yet. Some people say it is. I remember the dotcom crash but didn&#8217;t blog about it, regrettably. Writing down\nThe post Is AI crashing? appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-11-08",
+      "summary_zh": "作者在2027年11月8日发问\"AI 是否正在崩盘\"，坦言自己既不能确定AI泡沫已经破裂，也不敢断言\"还没到\"。他以亲历互联网泡沫（dotcom crash）的经验作参照，承认当年没有就此写文记录，如今决定把这个悬而未决的问题写下来。文章呈现出对AI热潮走向的谨慎与自省：在泡沫论与仍未崩塌之间保持摇摆，试图通过记录当下的观察来把握时代情绪。",
+      "why_matters": "一个身处AI热潮中心的人对\"AI泡沫是否破裂\"给出的诚实、犹疑的判断，比任何笃定结论都更值得咀嚼。",
+      "tags": "AI泡沫,科技趋势,随笔思考",
+      "id": 2279,
+      "added_at": "2026-11-09 05:35:18"
+    },
+    {
+      "title": "The problem with Micron MT 4264 RAM",
+      "url": "https://dfarq.homeip.net/the-problem-with-micron-mt-4264-ram/?utm_source=rss&utm_medium=rss&utm_campaign=the-problem-with-micron-mt-4264-ram",
+      "summary": "Watch a Youtube video about repairing a 1980s 8-bit computer, and you can flip a coin about whether the problem will be the presence of MT (Micron) 4264 RAM chips inside. MT RAM chips of mid 1980s vintage are notoriously\nThe post The problem with Micron MT 4264 RAM appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-11-08",
+      "summary_zh": "文章聚焦上世纪80年代八位计算机中常见的 Micron MT 4264 DRAM，探讨这类芯片为何容易引发故障，以及其维修和故障诊断上的特殊问题。作者指出，许多复古电脑维修视频中都会出现 MT 4264 内存，而这类芯片也因可靠性与兼容性表现而令人头疼。",
+      "why_matters": "文章为修复复古八位计算机、研究老式内存故障及芯片兼容性提供了实用背景。",
+      "tags": "Micron MT4264，复古计算机，内存维修",
+      "id": 2277,
+      "added_at": "2026-11-09 05:35:18"
+    },
+    {
+      "title": "Reverse engineering a vintage diode-transistor logic chip",
+      "url": "http://www.righto.com/2026/11/signetics-st680a-dtl-nand.html",
+      "summary": "Going through a collection of old parts, CuriousMarc encountered some ICs that he couldn't\nidentify.\nHe opened up one of these ICs, and I studied it under the microscope.\nAfter some reverse engineering, I determined that it was a logic chip that implemented four NAND gates\nusing old-fashioned diode-transistor logic (DTL).1\nThe chip turned out to be the ST680A, a member of the Signetics 600 series of chips from 1965.\nIn this article, I discuss the circuitry in this chip and how diode-transistor l",
+      "source": "righto.com",
+      "category": "blog",
+      "published": "2026-11-08",
+      "summary_zh": "文章记录了对一颗老式二极管-晶体管逻辑（DTL）芯片的逆向工程过程。作者通过拆开芯片并在显微镜下观察电路，最终确认它集成了四个 NAND 门，并梳理了其结构与工作原理。",
+      "why_matters": "这篇文章展示了如何从外观不明的古董芯片入手，借助显微镜和电路分析还原其功能，兼具技术性与探索趣味。",
+      "tags": "芯片逆向工程，二极管-晶体管逻辑，数字电路",
+      "id": 2275,
+      "added_at": "2026-11-09 05:35:18"
+    },
+    {
+      "title": "Some thoughts on restaurant menu QR codes",
+      "url": "https://shkspr.mobi/blog/2026/11/some-thoughts-on-restaurant-menu-qr-codes/",
+      "summary": "Is anyone else SICK AND TIRED of the way hotels now foist plastic \"keycards\" on guests?  No! I don&#039;t want tap to open my door!  No! I don&#039;t want to keep the card in my wallet!  No! I don&#039;t want electronics in control of my life!  What if I need to stab an attacker? Keys are great for that by flimsy plastic cards are useless  Gives us PROPER keys with big keyrings that we have to hand in to…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-11-08",
+      "summary_zh": "[文章围绕餐厅菜单二维码展开，并以酒店 increasingly 推行塑料房卡为切入点，质疑扫码点餐、无钥匙入住等电子化服务给用户带来的不便与控制感。作者对酒店要求宾客使用感应卡开门、保管电子设备持抵触态度，强调传统钥匙等简单、可靠方式仍有价值。",
+      "why_matters": "[从用户体验与科技依赖的角度反思二维码和无钥匙服务，值得关注其对便利性、隐私及线下选择权的讨论。",
+      "tags": "[二维码菜单,无钥匙入住,用户体验]",
+      "id": 2273,
+      "added_at": "2026-11-09 05:35:18"
+    },
+    {
+      "title": "LLMs are terrible at designing AI systems",
+      "url": "https://seangoedecke.com/llms-are-terrible-at-designing-ai-systems/",
+      "summary": "LLMs don’t know how to design software that uses LLMs. They’re comfortable writing normal programs, but if you throw an AI-shaped problem at them, they will usually screw it up. Why is that?\nGoing down the symbolic rabbit hole\nFor example, this post describes an attempt to vibe-code a memory tool that would flag when one memory contradicted another1. This is a great instance of a task that was virtually impossible five years ago but is now relatively trivial due to LLMs. You can simply task a LL",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-11-08",
+      "summary_zh": "文章认为，LLM 虽然擅长编写常规软件，却不善于设计以 LLM 为核心的 AI 系统。面对记忆、推理等“AI 形状”的复杂问题，它们往往会把设计带进符号主义的兔子洞，导致方案失效。",
+      "why_matters": "文章揭示了当前“氛围编程”在 AI 系统设计中的关键误区与能力边界。",
+      "tags": "大语言模型，AI系统设计，氛围编程",
+      "id": 2271,
+      "added_at": "2026-11-09 05:35:18"
+    },
+    {
       "title": "Upgrade diary: HP Elitedesk 800 G4",
       "url": "https://dfarq.homeip.net/upgrade-diary-hp-elitedesk-800-g4/?utm_source=rss&utm_medium=rss&utm_campaign=upgrade-diary-hp-elitedesk-800-g4",
       "summary": "It seems like Dell Optiplex computers get a lot of attention, but I&#8217;ve had better luck recently finding HP Elitedesk PCs. These compete with the Dell Optiplex, and they have a lot of the same advantages and disadvantages. In this\nThe post Upgrade diary: HP Elitedesk 800 G4 appeared first on The Silicon Underground.",
@@ -29258,5 +29323,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-08 16:45:48"
+  "last_updated": "2026-11-09 05:35:18"
 }
