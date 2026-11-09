@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.11.2",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.2",
+      "source": "openclaw",
+      "published": "2026-11-09",
+      "category": "openclaw",
+      "summary": "- 无\n\n🐛 Bug 修复：- 无",
+      "features": "- 无",
+      "bug_fixes": "- 无",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Is AI crashing?",
       "url": "https://dfarq.homeip.net/is-ai-crashing/?utm_source=rss&utm_medium=rss&utm_campaign=is-ai-crashing",
       "summary": "It&#8217;s November 8, 2027. I don&#8217;t know if AI is crashing. I don&#8217;t know if the AI bubble has burst. Not yet. Some people say it is. I remember the dotcom crash but didn&#8217;t blog about it, regrettably. Writing down\nThe post Is AI crashing? appeared first on The Silicon Underground.",
@@ -29323,5 +29335,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-09 05:35:18"
+  "last_updated": "2026-11-09 17:25:45"
 }
