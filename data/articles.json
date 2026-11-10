@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.23.1",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.1",
+      "source": "hermes-agent",
+      "published": "2026-11-10",
+      "category": "hermes",
+      "summary_zh": "- v0.23.1 是补丁版本，汇总了自 v0.23.0 以来合并的约 618 个 PR，修复与改进覆盖 CLI、安装器、Microsoft Store、Docker 和 Hermes Cloud。\n- 修复插件目录超过 2 MiB 上限导致客户端静默回退到内置目录的问题，将上限提升至 16 MiB，确保安装命令能获取最新插件版本及新增的 `removed` 条目；v0.23.0 及更早版本需升级后才能生效。\n- 插件 API 新增会话级环境变量、JSON-RPC 方法与事件、`llm.oneshot` 辅助任务、压缩后保持稳定的 `conversation_id`，以及网关的 `on_session_open` 和 `post_curator_run` 钩子。\n- TUI 和经典 CLI 支持使用 Esc 键回退并替代 rewind 列表选择器。\n- 新增可在网关运行的群聊功能，支持在无 Desktop 环境的群聊中引入来自其他计算机的机器人。\n- Desktop 与 Webapp 现在可以共享已保存的网关连接。\n- 应用内浏览器支持使用真实浏览器配置文件登录，并可从地址栏自动填充已保存的登录信息。\n- 新增 `hermes gateway attach` 命令，允许本地客户端连接到网关。\n- 新增 `hermes clipboard image --json`，支持以 JSON 格式获取剪贴板图片。\n- 优化转录内容和 handoff 读取性能，并扩充插件目录中的大量条目。\n- CLI 可通过 `hermes update` 或重新运行安装器命令更新；Docker 和 Hermes Cloud 可使用 `nousresearch/hermes-agent:stable` 或 `:latest` 镜像。\n- Microsoft Store 应用继续通过商店更新；通过 `.exe` 或 `.dmg` 安装器安装的 Desktop 应用本次无需更新，将在下一个捆绑版本中升级。\n- 本次窗口的完整、精选发行说明及贡献者名单将在 v0.24.0 中统一发布。",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Silicon Graphics founded November 9, 1981",
       "url": "https://dfarq.homeip.net/silicon-graphics-founded-november-9-1981/?utm_source=rss&utm_medium=rss&utm_campaign=silicon-graphics-founded-november-9-1981",
       "summary": "Silicon Graphics was a legendary maker of Unix workstations, founded November 9, 1981. Its Indy and O2 workstations, powered by MIPS RISC microprocessors and SGI&#8217;s fabled IRIX operating system, are among the most stylish computers ever made. SGI specialized in\nThe post Silicon Graphics founded November 9, 1981 appeared first on The Silicon Underground.",
@@ -29582,5 +29592,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-10 09:04:42"
+  "last_updated": "2026-11-10 17:29:28"
 }
