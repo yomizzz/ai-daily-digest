@@ -1,6 +1,30 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.11.3",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.3",
+      "source": "openclaw",
+      "published": "2026-11-11",
+      "category": "openclaw",
+      "summary": "- 私有子代理任务结果不再出现在流式聊天回复中\n- 支持取消子任务后交接给替代任务\n- 工具调用失败时明确报告失败状态\n- 身份验证任务支持运行截止与取消机制\n- 沙箱模式下限制图片预览仅访问允许目录\n- 工作区传输前验证证书并保护证书指纹\n- Gateway 启动更快，终止命令检测不易卡顿\n\n🐛 Bug 修复：- 插件缓存结果与传输钩子按连接凭据隔离\n- 搜索、嵌入凭据与对应服务端点保持绑定\n- 隐藏配置及错误中的明文身份凭据\n- 子进程不再继承无关的 Gateway 密钥\n- 正确报告凭据读取失败并校验认证配置兼容性\n- 防止 Twitch 内容进入解析错误日志\n- 多项 Tlon 审批并存时要求显式请求 ID\n- 定时任务存储失败不再导致 Gateway 退出\n- 周期任务变更后正确清理一次性任务状态\n- 维护更新可识别自身锁并保留取消状态\n- 更新恢复时保留原包回滚能力\n- 正确识别 Anthropic 多用量上限耗尽错误\n- 终端 /reset 命令改由 Gateway 软重置\n- Git 修复失败时不再误报操作成功\n- 记忆提供商支持 none 和 auto 的大小写变体",
+      "features": "- 私有子代理任务结果不再出现在流式聊天回复中\n- 支持取消子任务后交接给替代任务\n- 工具调用失败时明确报告失败状态\n- 身份验证任务支持运行截止与取消机制\n- 沙箱模式下限制图片预览仅访问允许目录\n- 工作区传输前验证证书并保护证书指纹\n- Gateway 启动更快，终止命令检测不易卡顿",
+      "bug_fixes": "- 插件缓存结果与传输钩子按连接凭据隔离\n- 搜索、嵌入凭据与对应服务端点保持绑定\n- 隐藏配置及错误中的明文身份凭据\n- 子进程不再继承无关的 Gateway 密钥\n- 正确报告凭据读取失败并校验认证配置兼容性\n- 防止 Twitch 内容进入解析错误日志\n- 多项 Tlon 审批并存时要求显式请求 ID\n- 定时任务存储失败不再导致 Gateway 退出\n- 周期任务变更后正确清理一次性任务状态\n- 维护更新可识别自身锁并保留取消状态\n- 更新恢复时保留原包回滚能力\n- 正确识别 Anthropic 多用量上限耗尽错误\n- 终端 /reset 命令改由 Gateway 软重置\n- Git 修复失败时不再误报操作成功\n- 记忆提供商支持 none 和 auto 的大小写变体",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
+      "title": "openclaw 2026.9.37",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.37",
+      "source": "openclaw",
+      "published": "2026-11-11",
+      "category": "openclaw",
+      "summary": "- 配对节点照片与截图默认保持私密\n- 会话重置及自动滚动后保留关联模型账户\n- 插件校验复用原生引用以加快加载\n\n🐛 Bug 修复：- Telegram异常表格与SVG不再阻塞网关\n- 更新中断时保留原有回滚点\n- 频道账户可在停止超时后恢复连接\n- ClickClack可在网络静默断开后重连\n- Windows等价路径不再误报离线维护\n- Doctor保留空群组白名单及禁用策略\n- SQLite写入已提交时避免不安全重放\n- MCP回环监听意外关闭后可自动恢复\n- 修复网关发现字段中的终端控制字符\n- 明确拒绝媒体读取时不再附加回复附件\n- 详细诊断不再泄露回复文本及命令内容",
+      "features": "- 配对节点照片与截图默认保持私密\n- 会话重置及自动滚动后保留关联模型账户\n- 插件校验复用原生引用以加快加载",
+      "bug_fixes": "- Telegram异常表格与SVG不再阻塞网关\n- 更新中断时保留原有回滚点\n- 频道账户可在停止超时后恢复连接\n- ClickClack可在网络静默断开后重连\n- Windows等价路径不再误报离线维护\n- Doctor保留空群组白名单及禁用策略\n- SQLite写入已提交时避免不安全重放\n- MCP回环监听意外关闭后可自动恢复\n- 修复网关发现字段中的终端控制字符\n- 明确拒绝媒体读取时不再附加回复附件\n- 详细诊断不再泄露回复文本及命令内容",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "We need more goat sacrifices",
       "url": "https://www.experimental-history.com/p/we-need-more-goat-sacrifices",
       "summary": "OR: OJ A-OK",
@@ -29956,5 +29980,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-11 06:46:47"
+  "last_updated": "2026-11-11 17:01:42"
 }
