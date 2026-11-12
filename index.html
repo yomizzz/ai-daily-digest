@@ -293,18 +293,180 @@
     <header>
         <h1>🤖 每日 AI 资讯精选</h1>
         <p class="subtitle">自动聚合优质内容，AI 生成中文摘要</p>
-        <p class="last-updated">最后更新：2026-11-12 17:31:13</p>
+        <p class="last-updated">最后更新：2026-11-13 07:04:54</p>
     </header>
 
     <main>
         <div class="filter-bar">
             <button class="filter-btn active" data-filter="all">全部</button>
 <button class="filter-btn" data-filter="blog">blog</button><button class="filter-btn" data-filter="hermes">hermes</button><button class="filter-btn" data-filter="openclaw">openclaw</button><button class="filter-btn" data-filter="security">security</button>
-            <span class="article-count">共 2343 篇</span>
+            <span class="article-count">共 2361 篇</span>
         </div>
 
         <div class="articles" id="articles">
 <div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/99ccc60f4ade.html" class="article-title">SSA from bytecode: imperative pearl</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">bernsteinbear.com · 2026-11-12</div>
+    <p class="article-summary">文章围绕如何从 Ruby 字节码生成 SSA 形式展开，分享将 CRuby 指令序列转换为 ZJIT 中间表示（HIR）的实现思路。作者借 ZJIT 内部机制直播的契机，介绍其中约 1900 行的 `add_iseq_to_hir` 函数，并探讨这种偏命令式、复杂的转换代码为何值得理解和学习。</p>
+    <div class="article-why">💡 <a href="detail/99ccc60f4ade.html" style="color:var(--color-link);text-decoration:none;">文章以真实编译器实现为案例，展示了从字节码到 SSA/HIR 的复杂转换过程，适合对 Ruby JIT 和编译器内部机制感兴趣的读者。 →</a></div>
+<div class="tags">标签：SSA，Ruby字节码，ZJIT</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/addb15cc142d.html" class="article-title">What happened to 3Com?</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">dfarq.homeip.net · 2026-11-12</div>
+    <p class="article-summary">本文回顾网络设备制造商 3Com 的兴衰历程：在互联网泡沫时期，3Com 凭借网卡等网络产品迅速崛起，成为业内明星公司。然而随着网络设备市场竞争加剧、主营业务持续萎缩，3Com 最终在 2009 年 11 月 11 日走向终点，其业务被惠普接手并整合进 HP Networking，昔日巨头就此悄然谢幕。</p>
+    <div class="article-why">💡 <a href="detail/addb15cc142d.html" style="color:var(--color-link);text-decoration:none;">一篇梳理 3Com 从高峰到退场的完整兴衰史，既是科技行业变迁的典型样本，也提醒人们警惕单一产品优势在激烈竞争中的脆弱性。 →</a></div>
+<div class="tags">标签：3Com, 网络设备, 科技公司兴衰, 互联网泡沫</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/ffe046f12c15.html" class="article-title">Technology as a Search Problem</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">construction-physics.com · 2026-11-12</div>
+    <p class="article-summary">文章将技术进步视为一个“搜索问题”，试图解释新技术如何产生、发现与发展。作者关注技术演化背后的基本规律，以及新技术在进入社会后如何持续改进。</p>
+    <div class="article-why">💡 <a href="detail/ffe046f12c15.html" style="color:var(--color-link);text-decoration:none;">为理解技术创新的起源与演进机制提供了一个兼具物理学与复杂系统视角的研究框架。 →</a></div>
+<div class="tags">标签：技术进步，创新演化，搜索问题</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/f7e1c3d15011.html" class="article-title">How can I pass more than one parameter to co_await?</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">devblogs.microsoft.com/oldnewthing · 2026-11-12</div>
+    <p class="article-summary">`co_await` 运算符在语法上只接受一个参数，但如果需要传递多个值，可以先将它们封装到一个较大的参数对象中。文章介绍了通过结构体、类或元组等方式携带多项信息，从而突破单参数形式的使用限制。</p>
+    <div class="article-why">💡 <a href="detail/f7e1c3d15011.html" style="color:var(--color-link);text-decoration:none;">简短说明了实现多参数 `co_await` 的实用思路，适合了解 C++ 协程语法的开发者。 →</a></div>
+<div class="tags">标签：C++协程, co_await, 参数传递</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/eaff6461e241.html" class="article-title">Book Review: This Is for Everyone - Tim Berners-Lee ★★★☆☆</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">shkspr.mobi · 2026-11-12</div>
+    <p class="article-summary">文章评介蒂姆·伯纳斯-李的《This Is for Everyone》，从个人经历、万维网的诞生及其社会使命等角度，审视这本兼具回忆录与公共论述色彩的作品。评论者认为，书虽讲述了网络如何改变世界，但对幕后细节和现实影响的呈现略显不足，整体上稍欠满足感。</p>
+    <div class="article-why">💡 <a href="detail/eaff6461e241.html" style="color:var(--color-link);text-decoration:none;">这是一篇对伯纳斯-李及其“万维网”理念感兴趣的读者值得参考的短评。 →</a></div>
+<div class="tags">标签：人物传记,互联网历史,书评</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/b39e06443916.html" class="article-title">Pluralistic: Uber's labor crash (12 Nov 2026)</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">pluralistic.net · 2026-11-12</div>
+    <p class="article-summary">这期简报以 Uber 近期裁减司机、转向机器人配送却成本不划算的&quot;劳工崩溃&quot;为主线，兼收评论文章与杂谈链接。内容还涉及美国《爱国者法案》促使加拿大客户弃用美国服务器所引发的数据主权与基础设施失效问题，以及 EFF 起诉特朗普等争议事件。整体呈现科技资本、监管与网络基础设施相互牵连的乱象。</p>
+    <div class="article-why">💡 <a href="detail/b39e06443916.html" style="color:var(--color-link);text-decoration:none;">把自动化替人的商业逻辑、数据主权与网络基础设施脆弱性串成一期，视角刁钻、信息密度高。 →</a></div>
+<div class="tags">标签：Uber，自动化与就业，数据主权，网络基础设施</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/e27ee35349b4.html" class="article-title">Jensen Huang Was Banging an Nvidia Vice President Too</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">daringfireball.net · 2026-11-12</div>
+    <p class="article-summary">美国《纽约时报》记者报道称，英伟达创始人兼CEO黄仁勋除涉嫌与一名被美国情报机构认定为中国间谍的女性有婚外情外，还曾与一名直接向其汇报的高管发生婚外关系。相关指控目前涉及英伟达内部关系及潜在的信息安全风险。</p>
+    <div class="article-why">💡 <a href="detail/e27ee35349b4.html" style="color:var(--color-link);text-decoration:none;">文章披露了科技行业领军人物在职场与个人关系方面的争议，以及其可能引发的公司治理和情报安全关注。 →</a></div>
+<div class="tags">标签：英伟达,黄仁勋,职场伦理,信息安全</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/0f2a0a444a91.html" class="article-title">WSJ: ‘Nvidia Is Preparing to Oust CEO Jensen Huang’</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">daringfireball.net · 2026-11-12</div>
+    <p class="article-summary">《华尔街日报》援引 Robbie Whelan、Josh Dawsey 和 Amrith Ramkumar 的报道称，在《纽约时报》披露黄仁勋与英伟达副总裁存在婚外情后，英伟达董事会正考虑罢免这位创始人兼CEO。报道还提到，黄仁勋被发现有两段婚外关系。</p>
+    <div class="article-why">💡 <a href="detail/0f2a0a444a91.html" style="color:var(--color-link);text-decoration:none;">此事可能影响英伟达的治理结构、领导层稳定及公司未来发展，是备受关注的重要商业新闻。 →</a></div>
+<div class="tags">标签：英伟达,黄仁勋,公司治理</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/d8a744a12ae6.html" class="article-title">Nvidia Working With Outside Firm to Identify CEO Candidates</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">daringfireball.net · 2026-11-12</div>
+    <p class="article-summary">据报道，英伟达董事会正与一家外部机构合作，寻找可能接替首席执行官黄仁勋的候选人。此举发生在黄仁勋被曝存在多段婚外情之后，报道还提到其中一段涉及一名据称正在追求他的女性。</p>
+    <div class="article-why">💡 <a href="detail/d8a744a12ae6.html" style="color:var(--color-link);text-decoration:none;">文章披露了英伟达最高层可能面临人事调整的敏感动向，具有较高的公司治理和行业关注价值。 →</a></div>
+<div class="tags">标签：英伟达,黄仁勋,高管继任</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/3f21feddcfc6.html" class="article-title">Semafor: ‘Nvidia Board Preparing to Oust CEO Jensen Huang, Name Interim CEO’</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">daringfireball.net · 2026-11-12</div>
+    <p class="article-summary">据 Semafor 报道，英伟达部分董事会成员正考虑罢免创始人兼 CEO 黄仁勋，并在必要时任命首席财务官 Colette Kress 为临时 CEO。目前相关消息仍处于报道阶段，具体安排尚未得到董事会正式确认。</p>
+    <div class="article-why">💡 <a href="detail/3f21feddcfc6.html" style="color:var(--color-link);text-decoration:none;">这场潜在的高管更迭可能显著影响英伟达的战略方向与市场预期，值得关注后续进展。 →</a></div>
+<div class="tags">标签：英伟达,高管变动,黄仁勋</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/6bbb1228938a.html" class="article-title">Jensen Huang Resigns From Nvidia</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">daringfireball.net · 2026-11-12</div>
+    <p class="article-summary">英伟达董事会宣布，黄仁勋即刻辞去公司总裁、首席执行官及董事职务。现任执行副总裁兼首席财务官Colette Kress已同意担任临时负责人，推动公司领导层过渡。</p>
+    <div class="article-why">💡 <a href="detail/6bbb1228938a.html" style="color:var(--color-link);text-decoration:none;">这是影响英伟达管理层和未来战略方向的重大人事变动，值得密切关注。 →</a></div>
+<div class="tags">标签：英伟达,高管变动,黄仁勋</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/b151d4cf633d.html" class="article-title">Jensen Huang’s Advice to His Successor: ‘They’ll Just Have to Reshape the Company’</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">daringfireball.net · 2026-11-12</div>
+    <p class="article-summary">黄仁勋在 Y Combinator“创业学校”的 onstage 访谈中谈及英伟达的组织方式与继任者应具备的能力。他将领导团队比作打造一辆 F1 赛车：赛车必须适应驾驶者，而不是让驾驶者迁就既定体系，因此未来领导者可能需要对公司和组织结构进行重塑。</p>
+    <div class="article-why">💡 <a href="detail/b151d4cf633d.html" style="color:var(--color-link);text-decoration:none;">这段访谈揭示了黄仁勋对英伟达组织能力、领导者角色及未来交接的深刻思考。 →</a></div>
+<div class="tags">标签：黄仁勋，英伟达，创业领导力</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/c6a97173cf63.html" class="article-title">Trump Weighs in on Huang’s Successor</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">daringfireball.net · 2026-11-12</div>
+    <p class="article-summary">美国总统唐纳德·特朗普在博客中称，英伟达CEO黄仁勋“功成身退”后，应由苹果CEO蒂姆·库克接任，并以“传奇取代传奇”形容这一安排。作者用一句“Nope”予以否定，讽刺特朗普对科技行业人事变动的无知和武断判断。</p>
+    <div class="article-why">💡 <a href="detail/c6a97173cf63.html" style="color:var(--color-link);text-decoration:none;">文章以极简的反讽形式，呈现政治人物评论科技公司CEO继任问题时的荒诞感。 →</a></div>
+<div class="tags">标签：特朗普,黄仁勋,蒂姆·库克,科技评论</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/590b03a43d3e.html" class="article-title">Reuters Raises the Jensen Huang Affair Tally to Three</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">daringfireball.net · 2026-11-12</div>
+    <p class="article-summary">路透社报道，英伟达（NVIDIA）已卸任首席执行官黄仁勋与公司第二名员工存在亲密关系，这是继两桩导致他周四辞职的婚外情之后曝光的第三起情感风波。据路透社援引两位知情人士说法，其中一名女性为Alice Huang。</p>
+    <div class="article-why">💡 <a href="detail/590b03a43d3e.html" style="color:var(--color-link);text-decoration:none;">这则报道揭示了科技界最具影响力人物之一的桃色丑闻与人事动荡，对关注英伟达公司治理与行业口碑的读者具有新闻价值。 →</a></div>
+<div class="tags">标签：英伟达,黄仁勋,路透社,婚外情,公司治理</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/8549e7c4d003.html" class="article-title">And Every New Boy That You Meet / He Doesn’t Know the Real Surprise</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">daringfireball.net · 2026-11-12</div>
+    <p class="article-summary">据《华尔街日报》报道，英伟达 CEO 黄仁勋与商业伙伴康伟相识多年，后来由康伟牵线认识了未来的恋人 Alice Huang。文章由此追溯黄仁勋与 Alice Huang 的关系起点，以及这段恋情一度对其CEO职位造成的影响。</p>
+    <div class="article-why">💡 <a href="detail/8549e7c4d003.html" style="color:var(--color-link);text-decoration:none;">文章从私人关系切入，揭示英伟达 CEO 黄仁勋婚外情事件背后的人际脉络与职场风险。 →</a></div>
+<div class="tags">标签：英伟达，黄仁勋，商业人物，婚外情</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/aee04d8e14b0.html" class="article-title">The Dream of Quibi Lives On</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">daringfireball.net · 2026-11-12</div>
+    <p class="article-summary">文章借新闻稿中“延展垂直视频领导地位”的夸张表述，讽刺流媒体平台对竖屏短视频的追捧，以及 Quibi 曾经开创的移动端沉浸式视频模式正在借力延续。“重塑移动体验”等营销话术令人想起 Quibi，仿佛那个短暂失败的产品从未真正谢幕。</p>
+    <div class="article-why">💡 <a href="detail/aee04d8e14b0.html" style="color:var(--color-link);text-decoration:none;">作者以毒舌吐槽揭示科技营销话术的虚浮，以及热门产品模式“换壳复活”的荒诞感。 →</a></div>
+<div class="tags">标签：Quibi，垂直视频，流媒体，讽刺评论</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/03b37026c0f4.html" class="article-title">Scott Colom Flips Mississippi</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">daringfireball.net · 2026-11-12</div>
+    <p class="article-summary">密西西比州检察官斯科特·科洛姆击败现任联邦参议员辛迪·海德-史密斯，当选为该州联邦参议员。他将成为密西西比州自1982年以来的首位民主党参议员，也是该州近150年来首位非裔美国参议员。</p>
+    <div class="article-why">💡 <a href="detail/03b37026c0f4.html" style="color:var(--color-link);text-decoration:none;">这起选举结果不仅反映密西西比州政治版图变化，也体现了美国国会多元化与南方政治格局的重要转变。 →</a></div>
+<div class="tags">标签：美国参议院,密西西比州,选举政治</div>
+</div><div class="article" data-category="blog">
+    <div class="article-header">
+        <a href="detail/3bf81757c295.html" class="article-title">Jensen Huang Agrees to Testify Before Congress, But Not Publicly (Yet)</a>
+        <span class="category-tag">blog</span>
+    </div>
+    <div class="article-meta">daringfireball.net · 2026-11-12</div>
+    <p class="article-summary">英伟达前CEO黄仁勋已同意前往国会作证，消息由众议院外交事务委员会主席布赖恩·马斯特披露。不过，他目前仅同意私下或非公开作证，尚未承诺公开出席听证会。</p>
+    <div class="article-why">💡 <a href="detail/3bf81757c295.html" style="color:var(--color-link);text-decoration:none;">这场潜在听证可能进一步牵动黄仁勋卸任、相关争议及美国科技政策议题，值得关注后续安排。 →</a></div>
+<div class="tags">标签：黄仁勋,美国国会,科技政策</div>
+</div><div class="article" data-category="blog">
     <div class="article-header">
         <a href="detail/ae60c2eebf98.html" class="article-title">Monads in Lean</a>
         <span class="category-tag">blog</span>
