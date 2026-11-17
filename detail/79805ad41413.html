@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes Agent v0.23.2</title>
+    <style>
+
+        :root {
+            --brand:     #1B365D;
+            --brand-light: #2D5A8A;
+            --brand-tint: #EEF2F7;
+            --brand-tint-strong: #E4ECF5;
+            --parchment:  #f5f4ed;
+            --ivory:      #faf9f5;
+            --sand:       #e8e6dc;
+            --border:     #e8e6dc;
+            --border-soft:#e5e3d8;
+            --near-black: #141413;
+            --dark-warm:  #3d3d3a;
+            --charcoal:   #4d4c48;
+            --olive:      #504e49;
+            --stone:      #6b6a64;
+        }
+        /* ── Reset & Base ── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: var(--parchment);
+            color: var(--near-black);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                         'Helvetica Neue', Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        ::selection { background: var(--brand-tint-strong); color: var(--brand); }
+
+        /* ── Typography ── */
+        h1 { font-family: Charter, Georgia, 'Times New Roman', serif;
+             font-size: 28px; font-weight: 500; line-height: 1.2;
+             color: var(--near-black); letter-spacing: -0.3px; }
+        h2 { font-size: 18px; font-weight: 500; line-height: 1.3; color: var(--dark-warm); }
+        p  { color: var(--olive); line-height: 1.65; }
+
+        /* ── Layout ── */
+        header {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 3rem 2rem 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+        header h1 { font-size: 26px; margin-bottom: 6px; }
+        .subtitle { color: var(--stone); font-size: 14px; margin-bottom: 4px; }
+        .last-updated { color: var(--stone); font-size: 12px; }
+
+        main {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 2rem 2rem 4rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--stone);
+            font-size: 12px;
+        }
+        footer a { color: var(--brand); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        /* ── Filter Bar ── */
+        .filter-bar {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 28px;
+            padding: 14px 16px;
+            background: var(--ivory);
+            border: 1px solid var(--border-soft);
+            border-radius: 6px;
+            align-items: center;
+        }
+        .filter-btn {
+            padding: 5px 14px;
+            border: 1px solid var(--border);
+            background: var(--parchment);
+            color: var(--olive);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+            font-family: inherit;
+            transition: all 0.15s ease;
+        }
+        .filter-btn:hover {
+            border-color: var(--brand);
+            color: var(--brand);
+        }
+        .filter-btn.active {
+            background: var(--brand);
+            border-color: var(--brand);
+            color: #fff;
+            font-weight: 500;
+        }
+        .article-count { margin-left: auto; color: var(--stone); font-size: 12px; }
+
+        /* ── Article Cards ── */
+        .articles { display: flex; flex-direction: column; gap: 0; }
+        .article {
+            padding: 22px 0;
+            border-bottom: 1px solid var(--border-soft);
+        }
+        .article:first-child { border-top: 1px solid var(--border-soft); }
+
+        .article-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+        .article-title {
+            font-family: Charter, Georgia, 'Times New Roman', serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--brand);
+            text-decoration: none;
+            line-height: 1.35;
+            flex: 1;
+        }
+        .article-title:hover { color: var(--brand-light); text-decoration: underline; }
+
+        .category-tag {
+            padding: 3px 10px;
+            background: var(--brand-tint);
+            color: var(--brand);
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: 500;
+            white-space: nowrap;
+            letter-spacing: 0.2px;
+            flex-shrink: 0;
+        }
+
+        .article-meta {
+            font-size: 12px;
+            color: var(--stone);
+            margin-bottom: 10px;
+            font-family: -apple-system, sans-serif;
+        }
+
+        /* ── Summary ── */
+        .article-summary {
+            color: var(--olive);
+            margin-bottom: 12px;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+        .article-summary ul, .detail-card ul { margin: 6px 0; padding-left: 18px; }
+        .article-summary li, .detail-card li { margin: 3px 0; color: var(--olive); }
+        .summary-list { list-style: none; padding-left: 0; }
+        .summary-list li {
+            padding: 2px 0 2px 18px;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.65;
+        }
+        .summary-list li::before {
+            content: '·';
+            position: absolute;
+            left: 4px;
+            color: var(--brand);
+            font-weight: 700;
+        }
+
+        .article-why {
+            font-size: 12px;
+            color: var(--stone);
+            margin-bottom: 8px;
+        }
+        .article-why a { color: var(--brand); text-decoration: none; font-weight: 500; }
+        .article-why a:hover { text-decoration: underline; }
+
+        .tags {
+            margin-top: 8px;
+            font-size: 11px;
+            color: var(--stone);
+        }
+
+        /* ── Detail Page ── */
+        .detail-card {
+            background: var(--ivory);
+            border: 1px solid var(--border-soft);
+            border-radius: 6px;
+            padding: 28px 32px;
+            margin: 20px 0;
+        }
+        .detail-card p { font-size: 15px; line-height: 1.8; color: var(--dark-warm); }
+        .detail-card ul { margin: 8px 0; padding-left: 20px; }
+        .detail-card li { font-size: 15px; line-height: 1.75; color: var(--dark-warm); margin: 5px 0; }
+
+        .detail-tags { margin-top: 16px; font-size: 12px; color: var(--stone); }
+
+        .detail-why {
+            margin-top: 16px;
+            font-size: 13px;
+            color: var(--dark-warm);
+        }
+
+        .original-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 22px;
+            background: var(--brand);
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+        }
+        .original-link:hover { background: var(--brand-light); }
+
+        /* ── Detail Section (openclaw features/bug_fixes) ── */
+        .detail-section { margin-bottom: 28px; }
+        .detail-section-title {
+            font-family: Charter, Georgia, serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--brand);
+            margin-bottom: 10px;
+            letter-spacing: 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 16px;
+            color: var(--brand);
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .back-link:hover { text-decoration: underline; }
+
+        /* ── Release Cards (hermes page) ── */
+        .release-list { display: flex; flex-direction: column; }
+        .release { padding: 24px 0; border-bottom: 1px solid var(--border-soft); }
+        .release:first-child { border-top: 1px solid var(--border-soft); }
+        .release-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+        .release-title {
+            font-family: Charter, Georgia, serif;
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--brand);
+            text-decoration: none;
+        }
+        .release-title:hover { color: var(--brand-light); text-decoration: underline; }
+        .release-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            background: var(--brand-tint);
+            color: var(--brand);
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        .release-date { font-size: 12px; color: var(--stone); white-space: nowrap; flex-shrink: 0; }
+        .release-card {
+            background: var(--ivory);
+            border: 1px solid var(--border-soft);
+            border-radius: 6px;
+            padding: 18px 22px;
+            margin-top: 10px;
+        }
+        .release-card p { font-size: 14px; line-height: 1.7; color: var(--olive); }
+        .no-updates { text-align: center; padding: 60px 20px; color: var(--stone); }
+        .release-count { color: var(--stone); font-size: 12px; margin-bottom: 16px; }
+
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            header { padding: 2rem 1.25rem 1.5rem; }
+            main { padding: 1.5rem 1.25rem 3rem; }
+            .article-header { flex-direction: column; gap: 6px; }
+            .category-tag { margin-left: 0; }
+            .filter-bar { flex-direction: column; align-items: flex-start; }
+            .article-count { margin-left: 0; }
+            .release-header { flex-direction: column; }
+            .release-date { margin-left: 0; }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hermes Agent v0.23.2</h1>
+        <p><span class="category-tag">hermes</span> hermes-agent · 2026-11-17</p>
+    </header>
+
+    <main>
+        <a href="javascript:history.back()" class="back-link">← 返回日报</a>
+<div class="detail-card"><ul class="summary-list"><li>v0.23.2 是补丁版本，汇总了自 v0.23.1 以来的约 1,989 个合并 PR；统计窗口包含 7,918 个非合并提交、5,211 个变更文件及 940 个已关闭问题。</li><li>新增可跨网关重启或崩溃持久化、并能继续原对话的持久化子代理。</li><li>每个会话支持独立的提示词缓存时钟，并新增 `hermes fallback check` 命令，用于检查回退链是否就绪。</li><li>`hermes update --force` 现在支持立即停止所有网关，无需等待现有任务自然排空。</li><li>Telegram 与 Discord 支持输入一次性 browser_vault 验证码；Telegram 私密对话还新增可选的共享线程模式。</li><li>Gemini 3 及更新模型默认改用 Gemini Interactions API，并支持 Gemini 4 Carbon；Claude Mythos 5.2 新增快速模式。</li><li>Cron 任务新增 `wrap_response` 和每次运行创建独立线程等按任务配置选项；插件 API 增加 `ctx.fork_session()`、`ctx.redact_text()` 和 `ctx.register_idle_task()`。</li><li>加强升级兼容性：提供跨模块迁移的兼容层，以减少版本更新后旧配置或模块路径失效的问题。</li><li>macOS 安装包体积进一步缩减，并改为首次使用时安装 Chromium；同时扩充了插件目录中的大量插件条目。</li><li>修复 Desktop 聊天在恢复和重连过程中可能出现的内容丢失、错乱、重复回复或附件缺失问题，以及 todo/记忆调用旁流式回复无法结束的问题。</li><li>修复 Telegram 等可编辑流式聊天在崩溃后重复显示“Recovered reply”、以及 `program_id` 等单词被提前显示的问题。</li><li>修复 Webapp 在未登录 Nous Portal 时打开 Hermes Cloud 代理时错误跳转的问题；CLI 等待 GitHub 更新检查时退出也会正确终止残留的 `git` 进程。</li><li>继续支持 GitHub Release（CLI 与安装器）、Microsoft Store、Docker 和 Hermes Cloud；Docker/Hermes Cloud 可使用 `nousresearch/hermes-agent:stable` 或 `:latest` 镜像。</li><li>Microsoft Store 应用通过商店更新；通过 `.exe` 或 `.dmg` 安装的 Desktop 版本本次无需操作，将在下一次捆绑发布时更新。</li></ul></div>
+<div class="tags">标签：Hermes Agent</div>
+        <div class="detail-why">💡 查看中文摘要与详情</div>
+        <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.2" target="_blank" class="original-link">📖 阅读英文原文 →</a>
+    </main>
+
+    <footer>
+        <p>由 GitHub Actions + MiniMax AI 自动生成</p>
+    </footer>
+</body>
+</html>

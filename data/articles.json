@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.23.2",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.2",
+      "source": "hermes-agent",
+      "published": "2026-11-17",
+      "category": "hermes",
+      "summary_zh": "- v0.23.2 是补丁版本，汇总了自 v0.23.1 以来的约 1,989 个合并 PR；统计窗口包含 7,918 个非合并提交、5,211 个变更文件及 940 个已关闭问题。\n- 新增可跨网关重启或崩溃持久化、并能继续原对话的持久化子代理。\n- 每个会话支持独立的提示词缓存时钟，并新增 `hermes fallback check` 命令，用于检查回退链是否就绪。\n- `hermes update --force` 现在支持立即停止所有网关，无需等待现有任务自然排空。\n- Telegram 与 Discord 支持输入一次性 browser_vault 验证码；Telegram 私密对话还新增可选的共享线程模式。\n- Gemini 3 及更新模型默认改用 Gemini Interactions API，并支持 Gemini 4 Carbon；Claude Mythos 5.2 新增快速模式。\n- Cron 任务新增 `wrap_response` 和每次运行创建独立线程等按任务配置选项；插件 API 增加 `ctx.fork_session()`、`ctx.redact_text()` 和 `ctx.register_idle_task()`。\n- 加强升级兼容性：提供跨模块迁移的兼容层，以减少版本更新后旧配置或模块路径失效的问题。\n- macOS 安装包体积进一步缩减，并改为首次使用时安装 Chromium；同时扩充了插件目录中的大量插件条目。\n- 修复 Desktop 聊天在恢复和重连过程中可能出现的内容丢失、错乱、重复回复或附件缺失问题，以及 todo/记忆调用旁流式回复无法结束的问题。\n- 修复 Telegram 等可编辑流式聊天在崩溃后重复显示“Recovered reply”、以及 `program_id` 等单词被提前显示的问题。\n- 修复 Webapp 在未登录 Nous Portal 时打开 Hermes Cloud 代理时错误跳转的问题；CLI 等待 GitHub 更新检查时退出也会正确终止残留的 `git` 进程。\n- 继续支持 GitHub Release（CLI 与安装器）、Microsoft Store、Docker 和 Hermes Cloud；Docker/Hermes Cloud 可使用 `nousresearch/hermes-agent:stable` 或 `:latest` 镜像。\n- Microsoft Store 应用通过商店更新；通过 `.exe` 或 `.dmg` 安装的 Desktop 版本本次无需操作，将在下一次捆绑发布时更新。",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Weekly Update 530: Email Dependencies & Apps",
       "url": "https://www.troyhunt.com/weekly-update-530/",
       "summary": "Email is just one of those utilities like power or water where you always expect it to just, well, to just be there. You sign up with a provider and use as much of it as you need, when you need it, and the idea of it being unavailable for",
@@ -31175,5 +31185,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-17 09:25:00"
+  "last_updated": "2026-11-17 18:24:51"
 }
