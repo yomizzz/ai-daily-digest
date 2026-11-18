@@ -1,6 +1,162 @@
 {
   "articles": [
     {
+      "title": "Push button telephones introduced November 18, 1963",
+      "url": "https://dfarq.homeip.net/push-button-telephones-introduced-november-18-1963/?utm_source=rss&utm_medium=rss&utm_campaign=push-button-telephones-introduced-november-18-1963",
+      "summary": "It was 62 years ago, on November 18, 1963, that the push button telephone, or touch tone phone, was first introduced. Before push button phones Before touch tone phones, all we had was rotary dialing. The way a rotary phone\nThe post Push button telephones introduced November 18, 1963 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-11-18",
+      "summary_zh": "1963年11月18日，按键式电话（触摸音电话）首次推出，取代了此前广泛使用的旋转拨号电话。文章回顾了按键电话诞生前后的通信方式变化。",
+      "why_matters": "简短了解按键式电话这一重要通信工具的诞生背景。",
+      "tags": "电话史，按键电话，通信技术",
+      "id": 2458,
+      "added_at": "2026-11-19 07:45:56"
+    },
+    {
+      "title": "This Week in Source Control: 18 November 2026",
+      "url": "https://nesbitt.io/2026/11/18/this-week-in-source-control.html",
+      "summary": "Releases, advisories, and articles from across version control and forges",
+      "source": "nesbitt.io",
+      "category": "blog",
+      "published": "2026-11-18",
+      "summary_zh": "文章汇总了版本控制系统及相关开发平台近期发布的版本更新、安全公告和行业文章，涵盖源代码管理领域的重要动态。文章适合用于快速掌握工具变化与潜在安全风险。",
+      "why_matters": "可在一篇文章中集中了解版本控制生态的最新发布与安全资讯。",
+      "tags": "版本控制,安全公告,开发工具",
+      "id": 2456,
+      "added_at": "2026-11-19 07:45:56"
+    },
+    {
+      "title": "Are vibe-coded games making me a substance dualist?",
+      "url": "https://rakhim.exotext.com/are-vibe-coded-games-making-me-a-substance-dualist",
+      "summary": "Seeing vibe-coded videogames lately makes me feel weird. The uncanny valley effect isn't \"almost real but not quite\" which is the case with AI-generated photos and videos. It's \"almost human but not quite\". And this is what makes me feel weird. What makes a video game more human?\nI'm not religious nor really spiritual, but seeing those AI-generated games in action feels soulless in the most explicit way. As if there is literally an absence of soul?\nYou feel it when a piece of art, regardless of ",
+      "source": "rakhim.exotext.com",
+      "category": "blog",
+      "published": "2026-11-18",
+      "summary_zh": "作者发现，AI“凭感觉编程”（vibe coding）制作的游戏会带来一种不同于AI图像和视频的“恐怖谷”体验：它们仿佛接近人类创作，却又不完全是。作者由此反思电子游戏中究竟哪些要素使其具有“人性”，并延伸到物质二元论等哲学问题。",
+      "why_matters": "文章从游戏体验切入，探讨AI创作与“人性”边界，既有直觉性的观察，也引发对创作主体性的思考。",
+      "tags": "AI游戏，恐怖谷，物质二元论",
+      "id": 2454,
+      "added_at": "2026-11-19 07:45:56"
+    },
+    {
+      "title": "Is Anthropic’s IPO a bad bet, both for investors and society?",
+      "url": "https://garymarcus.substack.com/p/is-anthropics-ipo-a-bad-bet-both",
+      "summary": "What the bull case leaves out",
+      "source": "garymarcus.substack.com",
+      "category": "blog",
+      "published": "2026-11-18",
+      "summary_zh": "文章质疑 Anthropic 上市是否为投资者和社会带来的“好投资”，指出看多逻辑忽略了一系列潜在风险与代价。文章从投资回报和社会影响两个角度，审视这家 AI 公司的商业前景及其 IPO 叙事。",
+      "why_matters": "适合关注 AI 投资热潮、Anthropic 商业化与上市风险的人，借此识别主流看多叙事中的盲点。",
+      "tags": "Anthropic,AI投资,IPO风险",
+      "id": 2452,
+      "added_at": "2026-11-19 07:45:56"
+    },
+    {
+      "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+      "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-123633/",
+      "summary": "In the hours following the release of CVE-2026-123633 and CVE-2026-123007 for the project NGINX, site reliability workers\n        and systems administrators scrambled to desperately rebuild and patch all their systems to fix an HTTP/2 connection use-after-free during reverse-proxy processing when connection slots run low, alongside an HTTP/2 flow-control integer underflow that leads to an out-of-bounds memory copy over TLS, both of which can allow unauthenticated remote code execution on affecte",
+      "source": "xeiaso.net",
+      "category": "blog",
+      "published": "2026-11-18",
+      "summary_zh": "NGINX 发布 CVE-2026-123633 和 CVE-2026-123007，披露了反向代理处理 HTTP/2 连接时可能触发的释放后使用漏洞。发布后，站点可靠性工程师和系统管理员紧急重建、修补系统，而受影响项目所使用的语言缺乏有效预防此类问题的机制，进一步引发用户担忧。",
+      "why_matters": "文章揭示了 NGINX 高危漏洞的应急处置过程，以及底层语言在内存安全防护上的局限。",
+      "tags": "NGINX，HTTP/2漏洞，内存安全",
+      "id": 2450,
+      "added_at": "2026-11-19 07:45:56"
+    },
+    {
+      "title": "Once More Unto The Breach - Another Year In Review",
+      "url": "https://shkspr.mobi/blog/2026/11/once-more-unto-the-breach-another-year-in-review/",
+      "summary": "Since 2010, I've written an annual \"year-in-review\" blog post. It has been nearly two years since I quit my job and went into the FIRE, so what has life been like and have I achieved everything I dreamt of?      Life has been pretty chill! I've been reasonably relaxed, seen loads of shows and gigs, travelled around the world a bit, hung out with cool people, and had no major issues with… well, a…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-11-18",
+      "summary_zh": "作者延续自2010年以来的年度回顾传统，分享自己离职并进入“财务独立、提前退休”（FIRE）状态近两年来的生活体验。近两年的时间里，他过得相当轻松，看了不少演出，也开始反思自己是否实现了当初的梦想。",
+      "why_matters": "这是一篇关于FIRE生活实践与个人梦想复盘的年终总结，适合想了解真实退休生活状态的人阅读。",
+      "tags": "FIRE, 年度回顾, 生活感悟",
+      "id": 2448,
+      "added_at": "2026-11-19 07:45:56"
+    },
+    {
+      "title": "Pluralistic: Enshittifiers groom us for scammers (18 Nov 2026)",
+      "url": "https://pluralistic.net/2026/11/18/malice-v-incompetence/",
+      "summary": "Today's links Enshittifiers groom us for scammers: The harder it is to tell a scam from a shitty business practice, the easier life gets for scammers. Hey look at this: Delights to delectate. Object permanence: Fannish accent; Photoshopping culture; Sixth HHGTTG novel discovers; Dragon sausages must contain dragon; Tumblr users melt Congress's phones; Pizza is a vegetable; Fake news author is a \"satirist\"; Trump wants a seawall around his golf resort (even though climate change is a \"hoax\"); \"Ni",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-11-18",
+      "summary_zh": "文章指出，许多平台和企业不断“劣化”产品与服务，使正常但糟糕的商业行为越来越难以与诈骗区分，从而为骗子提供掩护和便利。文章同时整理了关于科技公司文化、插画风、Photoshop文化及网络小说等话题的延伸内容。",
+      "why_matters": "这篇文章提醒我们，辨别诈骗不能只靠识别恶意话术，也要警惕那些以便利为代价、逐渐降低服务标准的平台。",
+      "tags": "网络诈骗，平台治理，科技文化",
+      "id": 2446,
+      "added_at": "2026-11-19 07:45:56"
+    },
+    {
+      "title": "Jensen Huang Tweets",
+      "url": "https://x.com/JensenHuang/status/2122726005219737649",
+      "summary": "Jensen Huang, on X yesterday, hours before Nvidia’s quarterly earnings report:\n\n\n  Since my departure, I’ve seen an outpouring of calls from\nNVIDIA’s employees, investors, business partners, and customers\nfor me to return as CEO. Many continue to reach out to me\ndirectly as the company navigates complex technology, market,\ncompetitive, and geopolitical dynamics. NVIDIA is a\nonce-in-a-generation company. If the Board of Directors decides\nthat my return is in the best interest of our shareholders,",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-11-18",
+      "summary_zh": "英伟达CEO黄仁勋在公司发布季度财报前一天于X发文称，离任后持续收到员工、投资人、合作伙伴和客户的直接联系，敦促他回归。该表态引发了外界对黄仁勋是否可能重返英伟达、以及公司战略走向的讨论。",
+      "why_matters": "这条动态释放了黄仁勋可能回归英伟达的重要信号，值得关注其对财报和公司发展的影响。",
+      "tags": "黄仁勋,英伟达,CEO回归",
+      "id": 2444,
+      "added_at": "2026-11-19 07:45:56"
+    },
+    {
+      "title": "★ The 50-Yard Line",
+      "url": "https://daringfireball.net/2026/11/the_50-yard_line",
+      "summary": "CEOs typically stay as close as they can to the 50-yard line in the middle of the political playing field. That way, when an election puts the other party in power, they don’t have to move — they just need to turn around.",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-11-18",
+      "summary_zh": "文章以“50码线”比喻企业CEO在政治光谱中的中立立场：尽量靠近中间地带，以便执政党更替时无需大幅调整，只需顺势转向。文章强调这种政治上的可变性有助于企业降低政策风险、保持经营稳定。",
+      "why_matters": "用一个直观比喻揭示CEO如何通过保持政治中立来规避选举带来的经营风险。",
+      "tags": "企业管理, 政治风险, 商业策略",
+      "id": 2442,
+      "added_at": "2026-11-19 07:45:56"
+    },
+    {
+      "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+      "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
+      "summary": "At least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks to a security vulnerability involving Optimizely, a company that helps websites customize user experiences and test out new features. Experts say the incident, which saw data-stealing malicious software silently injected into sites like the BBC, CNN, Equifax, Ledger and Zoom, was exacerbated by the reality that few popular websites enforce strict rules on the sources ",
+      "source": "krebsonsecurity.com",
+      "category": "security",
+      "published": "2026-11-18",
+      "summary_zh": "攻击者利用网站个性化和 A/B 测试服务 Optimizely 的安全漏洞，在过去24小时内向至少178个知名网站的访客投放了多种恶意软件 exploits。受影响网站并非直接被攻破，而是因嵌入的第三方代码被滥用，导致访问者可能遭到感染。",
+      "why_matters": "事件揭示了 A/B 测试和第三方脚本供应链中的安全风险，值得网站运营者及网络安全团队关注。",
+      "tags": "Optimizely,供应链攻击,网站安全",
+      "id": 2440,
+      "added_at": "2026-11-19 07:45:56"
+    },
+    {
+      "title": "The PSF end-of-year fundraiser",
+      "url": "https://simonwillison.net/2026/Nov/18/psf-end-of-year-fundraiser/",
+      "summary": "The PSF end-of-year fundraiser\nWith my Python Software Foundation board director hat on: we've launched our end-of-year fundraiser for the non-profit that supports Python development and the Python community.\nIf your company or your work benefits from Python, please consider donating this year!\nThe PSF looks after the IP behind Python, operates PyPI, sponsors core developer sprints, supports community events (including running PyCon US every year), and employs a small and excellent staff team to",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-11-18",
+      "summary_zh": "Python 软件基金会（PSF）已启动年度筹款活动，旨在支持 Python 的持续开发及社区生态建设。作者呼吁从中受益于 Python 的企业或个人积极捐款，共同支持这一非营利项目。",
+      "why_matters": "了解 PSF 年度募款倡议及其对 Python 开源生态持续发展的意义。",
+      "tags": "Python, PSF, 开源募款",
+      "id": 2438,
+      "added_at": "2026-11-19 07:45:56"
+    },
+    {
+      "title": "Quoting Daniel Stenberg",
+      "url": "https://simonwillison.net/2026/Nov/18/daniel-stenberg/",
+      "summary": "During the time these agents converted 185,000 lines of C code into 340,000 lines of Rust code (I counted), we merged over 300 commits in the actual curl project. We actually improved curl during these a little more than three weeks. A little over 200 bugfixes actually. 200 bugfixes that none of those rust rewrites have. We also fixed a few vulnerabilities. In another month we have done another 200 and maybe fixed a few more vulnerabilities. Will these clones keep up?\n&mdash; Daniel Stenberg, Ac",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-11-18",
+      "summary_zh": "Daniel Stenberg 表示，AI 智能体在约三周内将 curl 项目中的 18.5 万行 C 代码转换为 34 万行 Rust 代码，期间项目合并了 300 多个提交，并完成了 200 多项此前未被处理的缺陷修复。文章强调，自动化智能体不仅能进行大规模代码迁移，也能实际提升开源项目的质量与维护效率。",
+      "why_matters": "展示了 AI 智能体在大型开源项目代码重构和持续维护中的真实成效，引发对自动化开发实际价值的关注。",
+      "tags": "AI 编程，Rust，开源项目",
+      "id": 2436,
+      "added_at": "2026-11-19 07:45:56"
+    },
+    {
       "title": "openclaw 2026.10.33",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.33",
       "source": "openclaw",
@@ -31391,5 +31547,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-18 17:55:25"
+  "last_updated": "2026-11-19 07:45:56"
 }
