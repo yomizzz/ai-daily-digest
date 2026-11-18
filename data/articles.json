@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.10.33",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.33",
+      "source": "openclaw",
+      "published": "2026-11-18",
+      "category": "openclaw",
+      "summary": "- 支持自动化响应轮询条件、MCP事件及重复脚本\n- 已安装技能可按需搜索和读取\n- 支持导入Claude Code与Codex会话记录\n- 会话可在本地与云端环境之间迁移\n- 支持会话稍后唤醒、自定义唤醒时间及归档\n- 共享会话支持表情回应及消息收发权限配置\n- 创建会话时可选择现有目录或托管工作区\n- 首次运行可自动选择推理模型并配置记忆嵌入\n- 引入提供商中立的记忆运行时\n- 支持新增模型\n\n🐛 Bug 修复：- 限制长会话及大型存储的导出恢复工作，避免内存溢出\n- 更新执行器中断后可自动恢复，避免网关持续离线\n- 提升重启和重连后的回复保留与消息恢复能力\n- 防止侧聊、内部提示及摘要中的凭据泄露\n- 凭据或模型变更后保留服务端压缩检查点\n- 修复macOS安装时终端丢失导致插件安装中断\n- 修复现有设备目录中的隐式运行时被错误覆盖\n- 修复旧版插件签名基线与当前版本兼容性问题",
+      "features": "- 支持自动化响应轮询条件、MCP事件及重复脚本\n- 已安装技能可按需搜索和读取\n- 支持导入Claude Code与Codex会话记录\n- 会话可在本地与云端环境之间迁移\n- 支持会话稍后唤醒、自定义唤醒时间及归档\n- 共享会话支持表情回应及消息收发权限配置\n- 创建会话时可选择现有目录或托管工作区\n- 首次运行可自动选择推理模型并配置记忆嵌入\n- 引入提供商中立的记忆运行时\n- 支持新增模型",
+      "bug_fixes": "- 限制长会话及大型存储的导出恢复工作，避免内存溢出\n- 更新执行器中断后可自动恢复，避免网关持续离线\n- 提升重启和重连后的回复保留与消息恢复能力\n- 防止侧聊、内部提示及摘要中的凭据泄露\n- 凭据或模型变更后保留服务端压缩检查点\n- 修复macOS安装时终端丢失导致插件安装中断\n- 修复现有设备目录中的隐式运行时被错误覆盖\n- 修复旧版插件签名基线与当前版本兼容性问题",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Beyond Linux: A Journey Through the Open Source Ecosystem",
       "url": "https://it-notes.dragas.net/2026/11/17/beyond-linux-a-journey-through-the-open-source-ecosystem/",
       "summary": "What follows is the text of the talk I gave at Linux Day 2026 in Modena, lightly adapted for the blog. The talk was in Italian, in front of a Linux audience - which explains a few of the jokes.\nLinux is one of the best-known players in the open source world, but it's not the only possible path. A journey through the BSDs, illumos and other alternative operating systems, to reflect on Open Source as an idea, a philosophy and a practice of sharing knowledge.\nMy name is Stefano Marinelli. I'm a sys",
@@ -191,6 +203,18 @@
       "summary_zh": "- v0.23.2 是补丁版本，汇总了自 v0.23.1 以来的约 1,989 个合并 PR；统计窗口包含 7,918 个非合并提交、5,211 个变更文件及 940 个已关闭问题。\n- 新增可跨网关重启或崩溃持久化、并能继续原对话的持久化子代理。\n- 每个会话支持独立的提示词缓存时钟，并新增 `hermes fallback check` 命令，用于检查回退链是否就绪。\n- `hermes update --force` 现在支持立即停止所有网关，无需等待现有任务自然排空。\n- Telegram 与 Discord 支持输入一次性 browser_vault 验证码；Telegram 私密对话还新增可选的共享线程模式。\n- Gemini 3 及更新模型默认改用 Gemini Interactions API，并支持 Gemini 4 Carbon；Claude Mythos 5.2 新增快速模式。\n- Cron 任务新增 `wrap_response` 和每次运行创建独立线程等按任务配置选项；插件 API 增加 `ctx.fork_session()`、`ctx.redact_text()` 和 `ctx.register_idle_task()`。\n- 加强升级兼容性：提供跨模块迁移的兼容层，以减少版本更新后旧配置或模块路径失效的问题。\n- macOS 安装包体积进一步缩减，并改为首次使用时安装 Chromium；同时扩充了插件目录中的大量插件条目。\n- 修复 Desktop 聊天在恢复和重连过程中可能出现的内容丢失、错乱、重复回复或附件缺失问题，以及 todo/记忆调用旁流式回复无法结束的问题。\n- 修复 Telegram 等可编辑流式聊天在崩溃后重复显示“Recovered reply”、以及 `program_id` 等单词被提前显示的问题。\n- 修复 Webapp 在未登录 Nous Portal 时打开 Hermes Cloud 代理时错误跳转的问题；CLI 等待 GitHub 更新检查时退出也会正确终止残留的 `git` 进程。\n- 继续支持 GitHub Release（CLI 与安装器）、Microsoft Store、Docker 和 Hermes Cloud；Docker/Hermes Cloud 可使用 `nousresearch/hermes-agent:stable` 或 `:latest` 镜像。\n- Microsoft Store 应用通过商店更新；通过 `.exe` 或 `.dmg` 安装的 Desktop 版本本次无需操作，将在下一次捆绑发布时更新。",
       "why_matters": "查看中文摘要与详情",
       "tags": "Hermes Agent"
+    },
+    {
+      "title": "openclaw 2026.11.5",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.5",
+      "source": "openclaw",
+      "published": "2026-11-17",
+      "category": "openclaw",
+      "summary": "- 网关重启后保留队列消息、发送权限与最终会话写入\n- 更新启动失败时自动回滚，非 root 服务可读取安装包\n- Telegram 消息支持交互式小组件及私聊话题\n- 设备文件夹菜单改为清晰紧凑的单行展示\n- 新增 maxSummaryChars 配置控制摘要字符上限\n- 知识页面按读取预算分段提取，避免加载超大页面\n- 个人与企业模式提供连贯的安全预设\n- 第三方框架支持会话级任务注册与授权网关调度\n\n🐛 Bug 修复：- 大型记忆索引重建更可靠，批处理截断后可恢复\n- 主账户异常时不再阻塞 Claude CLI 回退\n- 修复 OpenAI 会话因压缩条目冲突而无法恢复\n- 修复二进制附件乱码及 CDP 地址泄露到工具结果\n- 队列自动化启动前重新校验私有记忆访问权限\n- 父轮结束后仍可投递失败的子任务结果\n- 修复会话历史丢失注释及并发读取失败\n- 修复网关恢复、重载和关闭竞争导致的任务中断\n- 修复定时任务账户选择、重试期限及延迟唤醒丢失\n- 修复配置热加载中止运行中任务及工作进程未释放\n- 修复静默自动化误入聊天及私信调用失败\n- 修复 Telegram 回复和审批未保留原所属话题",
+      "features": "- 网关重启后保留队列消息、发送权限与最终会话写入\n- 更新启动失败时自动回滚，非 root 服务可读取安装包\n- Telegram 消息支持交互式小组件及私聊话题\n- 设备文件夹菜单改为清晰紧凑的单行展示\n- 新增 maxSummaryChars 配置控制摘要字符上限\n- 知识页面按读取预算分段提取，避免加载超大页面\n- 个人与企业模式提供连贯的安全预设\n- 第三方框架支持会话级任务注册与授权网关调度",
+      "bug_fixes": "- 大型记忆索引重建更可靠，批处理截断后可恢复\n- 主账户异常时不再阻塞 Claude CLI 回退\n- 修复 OpenAI 会话因压缩条目冲突而无法恢复\n- 修复二进制附件乱码及 CDP 地址泄露到工具结果\n- 队列自动化启动前重新校验私有记忆访问权限\n- 父轮结束后仍可投递失败的子任务结果\n- 修复会话历史丢失注释及并发读取失败\n- 修复网关恢复、重载和关闭竞争导致的任务中断\n- 修复定时任务账户选择、重试期限及延迟唤醒丢失\n- 修复配置热加载中止运行中任务及工作进程未释放\n- 修复静默自动化误入聊天及私信调用失败\n- 修复 Telegram 回复和审批未保留原所属话题",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
     },
     {
       "title": "Weekly Update 530: Email Dependencies & Apps",
@@ -31367,5 +31391,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-18 08:19:12"
+  "last_updated": "2026-11-18 17:55:25"
 }

@@ -309,14 +309,44 @@
     <header>
         <h1>🦄 OpenClaw 更新记录</h1>
         <p class="subtitle">自动追踪 openclaw/openclaw 正式版本发布</p>
-        <p class="last-updated">最后更新：2026-11-17 18:24:57</p>
+        <p class="last-updated">最后更新：2026-11-18 17:55:25</p>
     </header>
 
     <main>
         <a href="index.html" class="back-link">← 返回日报</a>
-        <div class="release-count">共 0 个正式版本</div>
+        <div class="release-count">共 2 个正式版本</div>
         <div class="release-list" id="releases">
-<div class="no-updates">暂无更新记录</div>
+<div class="release">
+    <div class="release-header">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;">
+            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.10.33" target="_blank" class="release-title">openclaw 2026.10.33</a>
+            <span class="release-tag">v2026.10.33</span>
+        </div>
+        <span class="release-date">2026-11-18</span>
+    </div>
+<div class="release-section">
+    <div class="release-section-title">🆕 新增功能</div>
+    <div class="release-card"><ul class="summary-list"><li>- 支持自动化响应轮询条件、MCP事件及重复脚本</li><li>- 已安装技能可按需搜索和读取</li><li>- 支持导入Claude Code与Codex会话记录</li><li>- 会话可在本地与云端环境之间迁移</li><li>- 支持会话稍后唤醒、自定义唤醒时间及归档</li><li>- 共享会话支持表情回应及消息收发权限配置</li><li>- 创建会话时可选择现有目录或托管工作区</li><li>- 首次运行可自动选择推理模型并配置记忆嵌入</li><li>- 引入提供商中立的记忆运行时</li><li>- 支持新增模型</li></ul></div>
+</div><div class="release-section">
+    <div class="release-section-title">🐛 Bug 修复</div>
+    <div class="release-card"><ul class="summary-list"><li>- 限制长会话及大型存储的导出恢复工作，避免内存溢出</li><li>- 更新执行器中断后可自动恢复，避免网关持续离线</li><li>- 提升重启和重连后的回复保留与消息恢复能力</li><li>- 防止侧聊、内部提示及摘要中的凭据泄露</li><li>- 凭据或模型变更后保留服务端压缩检查点</li><li>- 修复macOS安装时终端丢失导致插件安装中断</li><li>- 修复现有设备目录中的隐式运行时被错误覆盖</li><li>- 修复旧版插件签名基线与当前版本兼容性问题</li></ul></div>
+</div>
+</div><div class="release">
+    <div class="release-header">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;">
+            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.11.5" target="_blank" class="release-title">openclaw 2026.11.5</a>
+            <span class="release-tag">v2026.11.5</span>
+        </div>
+        <span class="release-date">2026-11-17</span>
+    </div>
+<div class="release-section">
+    <div class="release-section-title">🆕 新增功能</div>
+    <div class="release-card"><ul class="summary-list"><li>- 网关重启后保留队列消息、发送权限与最终会话写入</li><li>- 更新启动失败时自动回滚，非 root 服务可读取安装包</li><li>- Telegram 消息支持交互式小组件及私聊话题</li><li>- 设备文件夹菜单改为清晰紧凑的单行展示</li><li>- 新增 maxSummaryChars 配置控制摘要字符上限</li><li>- 知识页面按读取预算分段提取，避免加载超大页面</li><li>- 个人与企业模式提供连贯的安全预设</li><li>- 第三方框架支持会话级任务注册与授权网关调度</li></ul></div>
+</div><div class="release-section">
+    <div class="release-section-title">🐛 Bug 修复</div>
+    <div class="release-card"><ul class="summary-list"><li>- 大型记忆索引重建更可靠，批处理截断后可恢复</li><li>- 主账户异常时不再阻塞 Claude CLI 回退</li><li>- 修复 OpenAI 会话因压缩条目冲突而无法恢复</li><li>- 修复二进制附件乱码及 CDP 地址泄露到工具结果</li><li>- 队列自动化启动前重新校验私有记忆访问权限</li><li>- 父轮结束后仍可投递失败的子任务结果</li><li>- 修复会话历史丢失注释及并发读取失败</li><li>- 修复网关恢复、重载和关闭竞争导致的任务中断</li><li>- 修复定时任务账户选择、重试期限及延迟唤醒丢失</li><li>- 修复配置热加载中止运行中任务及工作进程未释放</li><li>- 修复静默自动化误入聊天及私信调用失败</li><li>- 修复 Telegram 回复和审批未保留原所属话题</li></ul></div>
+</div>
+</div>
         </div>
     </main>
 
