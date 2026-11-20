@@ -1,6 +1,28 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.23.3",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.3",
+      "source": "hermes-agent",
+      "published": "2026-11-20",
+      "category": "hermes",
+      "summary_zh": "- v0.23.3 是补丁版本，汇总了自 v0.23.2 以来的约 370 个合并 PR，涉及 1,657 个非合并提交、3,948 个文件变更，并关闭 60 个问题。\n- 新增并完善提示词缓存生命周期管理：长工具任务期间自动预热缓存，空闲会话在 1 小时缓存过期前自动压缩，并支持 Nous Portal 的完整缓存周期。\n- `prompt_caching.cache_ttl` 默认设为 `auto`；会话压缩时归档被丢弃的工具结果，并默认启用主动工具结果清理。\n- CLI 首次运行改为一步式引导，并提供包含免费额度在内的初始配置。\n- OpenRouter 与 Nous Portal 新增 GPT-6.2 Astra、Sol 及 Sol Pro 模型支持。\n- Bot Chat 输入框上方新增“Waiting on teammates”状态栏，用于提示正在等待其他智能体或协作者。\n- Linux AppImage 引入智能体负载，并从按构建版本隔离的稳定副本运行，以提升更新可靠性。\n- 存储层重构为持久化接口，并提供 SQLite 后端，便于替换或扩展底层存储实现。\n- 升级 oauthlib、OpenTelemetry 和 Tornado 等依赖，以修复安全问题并增强稳定性。\n- 扩充插件目录，新增大量插件条目。\n- 本次发布覆盖 GitHub Release（CLI 与安装器）、Microsoft Store 应用、Docker 镜像及 Hermes Cloud；桌面端通过 `.exe`/`.dmg` 安装时暂不更新，将随下个捆绑版本升级。\n- CLI 可通过 `hermes update` 或重新运行安装命令更新；Docker 与 Hermes Cloud 可使用 `nousresearch/hermes-agent:stable` 或 `:latest` 镜像。\n- 本次仅提供汇总说明，完整且经过整理的详细发布说明及贡献者名单将在 v0.24.0 中发布。",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
+      "title": "openclaw 2026.11.6",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.6",
+      "source": "openclaw",
+      "published": "2026-11-20",
+      "category": "openclaw",
+      "summary": "- 无\n\n🐛 Bug 修复：- 无",
+      "features": "- 无",
+      "bug_fixes": "- 无",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Inside PyPy: first contact with RPython",
       "url": "https://bernsteinbear.com/blog/inside-pypy-first-contact-with-rpython/?utm_source=rss",
       "summary": "I get restless now and then and I want to implement a programming language.\nThen after mustering the resolve, I stew, for there is no good implementation\nlanguage.1 What am I to do, build my own programming language so\nthat I can then use it to implement the first language? So I go back to\nmodifying an existing implementation instead.\n\nThere do exist established general-purpose tools for building fast programming\nlanguage implementations:\n\n\n  RPython, which has PyPy (Python) as its primary succe",
@@ -31716,5 +31738,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-20 08:10:32"
+  "last_updated": "2026-11-20 17:51:14"
 }
