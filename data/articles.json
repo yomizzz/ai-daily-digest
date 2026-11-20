@@ -1,6 +1,149 @@
 {
   "articles": [
     {
+      "title": "Max Headroom incident of Nov 22, 1987",
+      "url": "https://dfarq.homeip.net/max-headroom-incident-of-nov-22-1987-3/?utm_source=rss&utm_medium=rss&utm_campaign=max-headroom-incident-of-nov-22-1987-3",
+      "summary": "It was November 22, 1987, that the most notorious unsolved pirate television broadcast of all time happened in Chicago. It was the Max Headroom incident. The incident It started during the regular newscast on WGN TV, an unaffiliated television station\nThe post Max Headroom incident of Nov 22, 1987 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-11-20",
+      "summary_zh": "1987年11月22日，美国芝加哥WGN电视台在晚间新闻播出期间遭遇信号入侵，观众突然看到虚构电视主持人“Max Headroom”的非法广播。这一事件成为电视史上最臭名昭著且至今未解的盗版播出事件之一，引发了广泛调查与都市传说。",
+      "why_matters": "文章记录了电视史上著名的“Max Headroom”事件，兼具媒体史、信号入侵与未解谜案的阅读价值。",
+      "tags": "Max Headroom,电视史,信号入侵,芝加哥,未解事件",
+      "id": 2483,
+      "added_at": "2026-11-21 07:37:09"
+    },
+    {
+      "title": "Why Johnny Can’t Patch",
+      "url": "https://dfarq.homeip.net/why-johnny-cant-patch-2/?utm_source=rss&utm_medium=rss&utm_campaign=why-johnny-cant-patch-2",
+      "summary": "I&#8217;m going to break my normal cadence to write a little bit about computer security. It&#8217;s been a rough month, and this has been a rough week. In late October we had a high publicity vulnerability in PHP. In November\nThe post Why Johnny Can&#8217;t Patch appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-11-20",
+      "summary_zh": "文章从近期 PHP 高曝光度漏洞切入，讨论计算机安全问题为何不能仅靠发布补丁来解决，以及用户在部署更新、识别风险和承担安全责任方面面临的现实困难。文章强调，安全维护需要开发者在漏洞披露后及时修复并推动用户完成升级。",
+      "why_matters": "文章揭示了“补丁已发布却未真正修复风险”的普遍问题，有助于理解软件安全中的责任与执行落差。",
+      "tags": "软件安全,漏洞修复,PHP",
+      "id": 2481,
+      "added_at": "2026-11-21 07:37:09"
+    },
+    {
+      "title": "Premium: Bursting Bubbles",
+      "url": "https://www.wheresyoured.at/premium-bursting-bubbles/",
+      "summary": "The boom-and-bust cycle of bubbles is dangerous, destructive, and only really benefits the wealthiest and most-disconnected people alive. While there might be ways to get rich by virtue of piling your money in at the earliest point and exiting before everything explodes, that&#x2019;s something only",
+      "source": "wheresyoured.at",
+      "category": "blog",
+      "published": "2026-11-20",
+      "summary_zh": "文章聚焦经济泡沫“暴起暴落”的风险，指出泡沫繁荣往往充满破坏性，收益也主要集中于最有财富和最少受现实约束的人。虽然少数人可以通过提前入场、泡沫破裂前退出获利，但这种策略并非普遍可行。文章提醒读者警惕资产泡沫及其对财富分化和经济稳定的冲击。",
+      "why_matters": "这篇文章有助于理解经济泡沫为何危险，以及“提前入局、提前退出”背后隐藏的不平等与高风险。",
+      "tags": "经济泡沫,财富不平等,风险管理",
+      "id": 2479,
+      "added_at": "2026-11-21 07:37:09"
+    },
+    {
+      "title": "Re: Riemann",
+      "url": "https://borretti.me/article/re-riemann",
+      "summary": "Man is a bridge.",
+      "source": "borretti.me",
+      "category": "blog",
+      "published": "2026-11-20",
+      "summary_zh": "文章以“人是桥梁”为核心隐喻，重新审视黎曼（Riemann）的数学思想及其对人类理解世界的意义。内容将数学理论与哲学、人的中介角色相连接，探讨人如何借助概念跨越未知与现实之间的鸿沟。",
+      "why_matters": "简短而富有哲理地呈现了数学思想与人类认知之间的联系，适合喜欢数学及人文跨领域思考的读者。",
+      "tags": "数学思想，黎曼，哲学随笔",
+      "id": 2477,
+      "added_at": "2026-11-21 07:37:09"
+    },
+    {
+      "title": "Breaking: Anthropic stock is crashing, and AI stocks have lost over 50% in 5 months.",
+      "url": "https://garymarcus.substack.com/p/breaking-anthropic-stock-is-crashing",
+      "summary": "Anthropic, which dropped steadily after its opening yesterday, is set to drop nearly 10% more at the opening bell.",
+      "source": "garymarcus.substack.com",
+      "category": "blog",
+      "published": "2026-11-20",
+      "summary_zh": "文章称，Anthropic 股价在上市首日开盘后持续下跌，预计今日开盘还将再跌近10%。同时，近五个月整体 AI 股票已累计下跌超过50%，反映出人工智能板块显著的市场回调与投资风险。",
+      "why_matters": "文章聚焦 Anthropic 及 AI 板块的剧烈跌势，有助于投资者快速了解行业估值降温与市场风险变化。",
+      "tags": "Anthropic，AI股票，市场回调，投资风险",
+      "id": 2475,
+      "added_at": "2026-11-21 07:37:09"
+    },
+    {
+      "title": "Connect a USB Zigbee Device to HAOS",
+      "url": "https://shkspr.mobi/blog/2026/11/connect-a-usb-zigbee-device-to-haos/",
+      "summary": "I plugged a Zigbee dongle into my HomeAssistant box, but I couldn't find it in the UI. Here's how to get it working.   Buy a USB Zigbee dongle Shove it in the computer running HomeAssistant OS (HAOS) On the command line of your computer, run lsusb Get the two IDs of your Zigbee device - for example 10c4:ea60 Silicon Labs CP210x UART Bridge In the same directory as your HAOS image, create a new…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-11-20",
+      "summary_zh": "文章介绍如何将 USB Zigbee 设备连接到运行 Home Assistant OS（HAOS）的电脑。针对设备未出现在界面中的问题，作者建议先运行 `lsusb` 命令查找设备的两个 ID（VID 和 PID），再据此完成识别与配置。",
+      "why_matters": "提供了排查 HAOS 无法识别 USB Zigbee 设备的实用步骤，适合搭建或维护 Zigbee 智能家居系统时参考。",
+      "tags": "Home Assistant,Zigbee,USB设备配置",
+      "id": 2473,
+      "added_at": "2026-11-21 07:37:09"
+    },
+    {
+      "title": "Pluralistic: Lisa Hanawalt's \"I Can't Stop Thinking About Horses and Sex\" (20 Nov 2026)",
+      "url": "https://pluralistic.net/2026/11/20/intrusive-horse-thoughts/",
+      "summary": "Today's links Lisa Hanawalt's \"I Can't Stop Thinking About Horses and Sex\": A memoir of heartbreak, horses, horniness and IBS. Hey look at this: Delights to delectate. Object permanence: They Fight Crime; Cantenna wifi TV for Mali; Kakistocracy; Inflation or price-gouging; The long game. Upcoming appearances: Oxford, Sheffield, Virtual, Oxford, Santa Barbara, Montreal. Recent appearances: Where I've been. Latest books: You keep readin' em, I'll keep writin' 'em. Upcoming books: Like I said, I'll",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-11-20",
+      "summary_zh": "本期重点推荐莉萨·哈纳沃尔特的《我无法停止 Thinking about 马与性》，以回忆录形式讲述失恋、马匹、性欲与肠易激综合征（IBS）等交织的个人体验。此外，文章还汇集了反对派、坎蒂纳为马里配置电视网络、卡里斯托ocracy、物价通胀及长期主义等话题的链接。",
+      "why_matters": "文章兼具个人叙事与拓展阅读，在轻松的幽默中呈现情绪、身体与生活困境。",
+      "tags": "书评,回忆录,Pluralistic精选",
+      "id": 2471,
+      "added_at": "2026-11-21 07:37:09"
+    },
+    {
+      "title": "The Talk Show: ‘A Whoopsie Treason’",
+      "url": "https://daringfireball.net/thetalkshow/2026/11/20/ep-457",
+      "summary": "Christina Warren returns for a jam-packed show: Jensen Huang-gate at Nvidia, the HomeView, the new iPad Mini, more on the iPhone Duo, and Robert “R-Patz” Pattinson taking the role of James Bond.\n\n\n\nSponsored by:\n\n\nUncommon Goods: Out of the ordinary gifts, great for the holidays. Save 15% off your next purchase after following that link.\nWorkOS: Let agents sign up for your app without a browser.\n\n\n\n ★",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-11-20",
+      "summary_zh": "本期《The Talk Show》由 Christina Warren 主持，聚焦英伟达 CEO 黄仁勋相关话题、HomeView、新款 iPad mini，以及 iPhone Duo 的更多消息。节目还讨论了演员罗伯特·帕丁森出演詹姆斯·邦德的消息。",
+      "why_matters": "一期节目集中串联手游、苹果新品、英伟达动态与影视热点，信息量丰富且适合快速了解科技圈热门话题。",
+      "tags": "科技资讯,苹果新品,英伟达,播客,影视热点",
+      "id": 2469,
+      "added_at": "2026-11-21 07:37:09"
+    },
+    {
+      "title": "Token fraud is here and it’s BAD (YouTube)",
+      "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
+      "summary": "Token fraud is here and it’s BAD (YouTube)\nClaire Vo runs ChatPRD, an AI platform that helps product managers \"turn an idea into a spec\". The product has been live since the GPT-4 era, and Claire has been building it in public for much of that time.\nIn this YouTube video (see also the accompanying Twitter post) Claire describes the flood of token fraud she has seen from groups abusing the product's free trial, sometimes just to get free AI usage but often to resell tokens or run other commercial",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-11-20",
+      "summary_zh": "Claire Vo 在视频中揭示 AI 产品领域正出现的“Token 欺诈”：通过虚报、操纵或隐瞒模型调用与 token 用量，误导用户或掩盖实际使用的模型与成本。结合她从 GPT-4 时代起运营 ChatPRD 的经验，节目分析了这种做法对计费透明度和用户信任的影响。",
+      "why_matters": "了解 AI 产品如何利用 token 计量做手脚，有助于开发者和用户识别隐性成本与潜在风险。",
+      "tags": "Token欺诈，AI产品，LLM成本",
+      "id": 2467,
+      "added_at": "2026-11-21 07:37:09"
+    },
+    {
+      "title": "Quoting Levent Alpöge",
+      "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+      "summary": "I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too. Claude and I have also formalized the arguments without assumptions. It is natural to feel that this is an end, in my case a loss of a principal guiding light, but what I saw during the course of progress so amazed me that I believe it is one ",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-11-20",
+      "summary_zh": "文章转述 Levent Alpöge 的观点：他认为借助 Claude 发现了一种可证明黎曼猜想的方法，并将该思路推广到广义黎曼猜想，甚至可能延伸至扩展黎曼猜想。作者还提到已与 Claude 合作对论证进行形式化，但相关突破仍需独立验证与同行评审。",
+      "why_matters": "展示了人工智能参与高级数学证明探索的潜力，也提醒读者对未经同行评审的重大数学主张保持审慎。",
+      "tags": "黎曼猜想,人工智能,数学证明",
+      "id": 2465,
+      "added_at": "2026-11-21 07:37:09"
+    },
+    {
+      "title": "Quoting Ravi Vakil",
+      "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
+      "summary": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hope was to bring Alessandro to Stanford for a year to polish the writing and then announce it after running it by enough people. Now it seems best to put out the current draft.\n&mdash; Ravi Vakil, Hurried Announcement: Alessandro Masullo GRH\n",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-11-20",
+      "summary_zh": "本文引用数学家 Ravi Vakil 的观点，介绍 Alessandro Masullo 提出的广义黎曼猜想（GRH）证明草案。该证明由 Brian Conrad 多月审阅并提供大量反馈，目前进展顺利，且整个研究过程完全由人类完成、未使用 AI。相关希望是促成 Masullo 到斯坦福继续推进这一工作。",
+      "why_matters": "这是一则少见的、纯人数学证明重大猜想进展的记录，展示了同行评审如何实质性推动 GRH 证明的完善。",
+      "tags": "数学,广义黎曼猜想,学术动态",
+      "id": 2463,
+      "added_at": "2026-11-21 07:37:09"
+    },
+    {
       "title": "Hermes Agent v0.23.3",
       "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.3",
       "source": "hermes-agent",
@@ -31738,5 +31881,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-20 17:51:14"
+  "last_updated": "2026-11-21 07:37:09"
 }
