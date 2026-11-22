@@ -1,6 +1,71 @@
 {
   "articles": [
     {
+      "title": "mass destruction of weapons",
+      "url": "https://computer.rip/2026-11-22-mass-destruction-of-weapons.html",
+      "summary": "There is a long history to chemical and biological warfare—one that, we at least\nhope, ended in 1993. The paucity of chemical and biological warfare today is a\nresult of long-standing objections that culminated in the 1993 Chemical Weapons\nConvention. It is striking that this formal end to most chemical weapons\nprograms came within a year of the last US test of a nuclear weapon: similar\nsentiments, and a similar 1990s \"end of history\" context, motivated both. The\nsimilarity makes the differences",
+      "source": "computer.rip",
+      "category": "blog",
+      "published": "2026-11-22",
+      "summary_zh": "文章回顾化学与生物战的发展历史，并指出国际社会对这类武器的长期抵制最终促成了1993年《化学武器公约》。文章强调，化学武器的大规模使用如今已相对罕见，但相关争议与安全威胁并未完全消失。",
+      "why_matters": "文章以历史与公约背景揭示化学和生物武器为何受到国际社会持续反对。",
+      "tags": "化学武器，生物战，国际公约，武器安全",
+      "id": 2494,
+      "added_at": "2026-11-23 07:03:20"
+    },
+    {
+      "title": "Weekly Update 531: Optimizely. Script Dependencies & Third Parties",
+      "url": "https://www.troyhunt.com/weekly-update-531/",
+      "summary": "\"You can&apos;t outsource accountability\". But it feels like that&apos;s what&apos;s happening when a disclosure notice refers to \"an incident being at a third party\", as though somehow that makes it better. It feels like the intent is to deflect responsibility",
+      "source": "troyhunt.com",
+      "category": "blog",
+      "published": "2026-11-22",
+      "summary_zh": "文章围绕 Optimizely 涉及的脚本依赖与第三方安全问题展开，指出企业不能以“事件发生在第三方”为由转移责任。即便攻击源自供应链或服务商，相关组织仍需对自身选用的技术依赖、风险评估及事件响应负责。",
+      "why_matters": "揭示第三方脚本与供应链事件中常见的责任推诿逻辑，提醒技术团队审视依赖管理并承担最终安全责任。",
+      "tags": "供应链安全,第三方风险,技术依赖",
+      "id": 2492,
+      "added_at": "2026-11-23 07:03:20"
+    },
+    {
+      "title": "Mouse for Tandy 1000",
+      "url": "https://dfarq.homeip.net/mouse-for-tandy-1000/?utm_source=rss&utm_medium=rss&utm_campaign=mouse-for-tandy-1000",
+      "summary": "Strictly speaking, the proper mouse for the Tandy 1000, at least the early models, was the TRS-80 color mouse. But it&#8217;s not your only option and arguably isn&#8217;t your best option. In this blog post, I&#8217;ll explain some alternatives, including\nThe post Mouse for Tandy 1000 appeared first on The Silicon Underground.",
+      "source": "dfarq.homeip.net",
+      "category": "blog",
+      "published": "2026-11-22",
+      "summary_zh": "文章讨论 Tandy 1000（尤其是早期型号）可使用的鼠标选择。虽然原配设备是 TRS-80 Color Mouse，但作者认为它并非唯一或最佳选择，并重点介绍了几种替代方案。",
+      "why_matters": "适合了解 Tandy 1000 的外设兼容性及替代鼠标方案。",
+      "tags": "Tandy 1000，鼠标，复古电脑",
+      "id": 2490,
+      "added_at": "2026-11-23 07:03:20"
+    },
+    {
+      "title": "I don't enjoy being pampered",
+      "url": "https://shkspr.mobi/blog/2026/11/i-dont-enjoy-being-pampered/",
+      "summary": "While on holiday in Vilnius, I realised my beard was getting too long for the impending heatwave. I popped into literally the first barber I found and asked them to shave my mane back down to summer length.  As the chair reclined leaving me supine, the barber placed a moist towelette over my eyes and proceeded to start steaming my beard while gently brushing it. As his firm hands vigourously…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-11-22",
+      "summary_zh": "作者在维尔纽斯度假时，因即将迎来热浪，决定把留得太长的胡须修短。他随便找了一家理发店，却不太享受躺下、热毛巾敷眼等被“宠着”的服务过程，标题也流露出对这种周到招待的微妙抵触。",
+      "why_matters": "文章以轻松幽默的日常经历表达作者对过度服务与“被宠”体验的真实感受，视角独特且很有共鸣。",
+      "tags": "旅行见闻, 理发经历, 生活随笔",
+      "id": 2488,
+      "added_at": "2026-11-23 07:03:20"
+    },
+    {
+      "title": "To code well, avoid blunders",
+      "url": "https://seangoedecke.com/to-code-well-avoid-blunders/",
+      "summary": "The secret to writing good code1 is to avoid catastrophic mistakes. Many engineers think about programming as if the goal is to have brilliant insights, but they’re wrong. If you don’t blunder, you will win.\nMany other domains are like this. If you can play chess without ever hanging pieces, you will win against almost any2 opponent. If you are very good at returning tennis balls, you will beat most players even if you never hit a winner. People are really bad at internalizing this. They think t",
+      "source": "seangoedecke.com",
+      "category": "blog",
+      "published": "2026-11-22",
+      "summary_zh": "文章认为，写出高质量代码的关键并不是频繁展现天才般的创意，而是避免可能造成灾难性后果的错误。程序员应像下棋时不吃死子一样，通过减少失误、守住基本底线来提升软件的可靠性与成功率。",
+      "why_matters": "这篇文章提供了一个务实而清醒的编程视角，提醒开发者把注意力放在规避重大错误上，而非单纯追求高难度技术。",
+      "tags": "软件工程,编程实践,风险管理",
+      "id": 2486,
+      "added_at": "2026-11-23 07:03:20"
+    },
+    {
       "title": "Linear scan register allocation in Datalog",
       "url": "https://bernsteinbear.com/blog/lsra-datalog/?utm_source=rss",
       "summary": "Note: This was supposed to be published basically immediately after PLDI 2026\nbut I got hung up on posting it because I am not a Datalog native like Yannis\nis and I like understanding everything I post. But I guess that’s what expert\nco-authors are for, right? It’s a little rough but it’s been so long that the\nediting is holding up the posting. Happy reading.\n\nLast year I wrote my first register allocator: a small\nlinear scan implementation in Ruby on SSA. Immediately after publishing the\npost, ",
@@ -32037,5 +32102,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-22 17:31:29"
+  "last_updated": "2026-11-23 07:03:20"
 }
