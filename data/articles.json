@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.11.7",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.7",
+      "source": "openclaw",
+      "published": "2026-11-23",
+      "category": "openclaw",
+      "summary": "- 网关重启后可恢复中断回复及子任务结果\n- 自动化所有者会话可修复运行失败\n- 支持通过主机批准短码配对浏览器\n- 无需等待发布即可发现新增订阅模型\n- 知识搜索支持旧措辞与等价 Unicode 字符\n- 可用已保存密钥进行实时语音转写\n- Git 与软件包更新可跨版本完成\n- 网关支持跨 SDK 版本迁移会话控制\n\n🐛 Bug 修复：- 避免普通文本中的斜杠命令被误执行\n- 工具回复丢失时重试前会主动提示\n- 修复停止后消息、长任务及命令执行中的引导失效\n- 确保子代理结果归属于请求轮次且互不丢失\n- 保留自动化归属并维持全局任务原有会话\n- 修复 Claude CLI 最终答案、长结果及工具历史丢失\n- 修复 Codex 恢复会话、配额判断及换行丢失\n- 修复共享 OAuth、Bedrock 凭证及模型拒绝原因识别\n- 慢文件操作时保持聊天与就绪检查响应\n- 区分自动化恢复、主动跳过与真实失败状态",
+      "features": "- 网关重启后可恢复中断回复及子任务结果\n- 自动化所有者会话可修复运行失败\n- 支持通过主机批准短码配对浏览器\n- 无需等待发布即可发现新增订阅模型\n- 知识搜索支持旧措辞与等价 Unicode 字符\n- 可用已保存密钥进行实时语音转写\n- Git 与软件包更新可跨版本完成\n- 网关支持跨 SDK 版本迁移会话控制",
+      "bug_fixes": "- 避免普通文本中的斜杠命令被误执行\n- 工具回复丢失时重试前会主动提示\n- 修复停止后消息、长任务及命令执行中的引导失效\n- 确保子代理结果归属于请求轮次且互不丢失\n- 保留自动化归属并维持全局任务原有会话\n- 修复 Claude CLI 最终答案、长结果及工具历史丢失\n- 修复 Codex 恢复会话、配额判断及换行丢失\n- 修复共享 OAuth、Bedrock 凭证及模型拒绝原因识别\n- 慢文件操作时保持聊天与就绪检查响应\n- 区分自动化恢复、主动跳过与真实失败状态",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "mass destruction of weapons",
       "url": "https://computer.rip/2026-11-22-mass-destruction-of-weapons.html",
       "summary": "There is a long history to chemical and biological warfare—one that, we at least\nhope, ended in 1993. The paucity of chemical and biological warfare today is a\nresult of long-standing objections that culminated in the 1993 Chemical Weapons\nConvention. It is striking that this formal end to most chemical weapons\nprograms came within a year of the last US test of a nuclear weapon: similar\nsentiments, and a similar 1990s \"end of history\" context, motivated both. The\nsimilarity makes the differences",
@@ -32102,5 +32114,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-23 07:03:20"
+  "last_updated": "2026-11-23 18:30:06"
 }
