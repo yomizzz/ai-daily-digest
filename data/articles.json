@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.11.8",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.8",
+      "source": "openclaw",
+      "published": "2026-11-24",
+      "category": "openclaw",
+      "summary": "- 支持列出节点托管技能与受众权限记忆工具\n- 支持读取和搜索已配置的 ACP 会话记录\n- 定时任务可使用独立的暂存区与投递历史\n- 恢复刷新型 OAuth 模型与 ChatGPT 版本协商\n- 支持工作区继承指令在下一轮自动刷新\n\n🐛 Bug 修复：- 防止 Signal 阅后即焚附件进入智能体输入\n- 拦截工作区 Azure 重定向及反射的 ClawHub 凭据\n- 拒绝 Windows 命令中的换行符注入\n- 保留重置及 ACP 重启后的 Claude CLI 对话历史\n- 避免推理、工具调用或转向中断最终答复\n- 修复静默任务和空清单任务无法正确结束\n- 避免重复复制数据库并回收旧运行时与快照\n- 保留先前消息发送后的已完成答复\n- 修复队列任务启动事件晚于会话关联投递\n- 修复子会话消息投递状态与唤醒通知不准确\n- 修复共享会话列表更新后无法继续访问\n- 修复 ACP 启动中断时无法干净退出\n- 排除 Claude CLI 回复中的合成生命周期记录\n- 修复原生轮转导致后续对话响应缓慢\n- 修复 Codex 目标因缺少操作员角色无法继续\n- 恢复 Code Mode 初始化失败并限制重复失败\n- 修复 Telegram 缓存上下文及定时通知错投话题\n- 修复 Telegram 模糊投递失败后未自动重试",
+      "features": "- 支持列出节点托管技能与受众权限记忆工具\n- 支持读取和搜索已配置的 ACP 会话记录\n- 定时任务可使用独立的暂存区与投递历史\n- 恢复刷新型 OAuth 模型与 ChatGPT 版本协商\n- 支持工作区继承指令在下一轮自动刷新",
+      "bug_fixes": "- 防止 Signal 阅后即焚附件进入智能体输入\n- 拦截工作区 Azure 重定向及反射的 ClawHub 凭据\n- 拒绝 Windows 命令中的换行符注入\n- 保留重置及 ACP 重启后的 Claude CLI 对话历史\n- 避免推理、工具调用或转向中断最终答复\n- 修复静默任务和空清单任务无法正确结束\n- 避免重复复制数据库并回收旧运行时与快照\n- 保留先前消息发送后的已完成答复\n- 修复队列任务启动事件晚于会话关联投递\n- 修复子会话消息投递状态与唤醒通知不准确\n- 修复共享会话列表更新后无法继续访问\n- 修复 ACP 启动中断时无法干净退出\n- 排除 Claude CLI 回复中的合成生命周期记录\n- 修复原生轮转导致后续对话响应缓慢\n- 修复 Codex 目标因缺少操作员角色无法继续\n- 恢复 Code Mode 初始化失败并限制重复失败\n- 修复 Telegram 缓存上下文及定时通知错投话题\n- 修复 Telegram 模糊投递失败后未自动重试",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Two graphs",
       "url": "https://martinalderson.com/posts/two-graphs/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
       "summary": "Two graphs - the Remote Labor Index and an extrapolation of METR's time horizons - that made me sit down and think about what 2027 looks like.",
@@ -32374,5 +32386,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-24 11:41:55"
+  "last_updated": "2026-11-24 20:13:28"
 }
