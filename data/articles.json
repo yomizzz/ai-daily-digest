@@ -1,6 +1,30 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.11.10",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.10",
+      "source": "openclaw",
+      "published": "2026-11-25",
+      "category": "openclaw",
+      "summary": "- 无\n\n🐛 Bug 修复：- 无",
+      "features": "- 无",
+      "bug_fixes": "- 无",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
+      "title": "openclaw 2026.11.9",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.9",
+      "source": "openclaw",
+      "published": "2026-11-25",
+      "category": "openclaw",
+      "summary": "## 新增功能\n无\n\n## Bug 修复\n无",
+      "features": "## 新增功能\n无\n\n## Bug 修复\n无",
+      "bug_fixes": "无",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Everything I know about writing",
       "url": "https://www.experimental-history.com/p/everything-i-know-about-writing",
       "summary": "(slightly abridged)",
@@ -32724,5 +32748,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-25 09:54:24"
+  "last_updated": "2026-11-25 19:00:16"
 }
