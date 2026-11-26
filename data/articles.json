@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "openclaw 2026.10.34",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.34",
+      "source": "openclaw",
+      "published": "2026-11-26",
+      "category": "openclaw",
+      "summary": "- 支持选择 GPT-6.2 Astra 和 Sol，并启用系统提示词缓存\n- 支持 Tlon 群组私信独立审批策略及跨重启授权\n- 新增 MiniMax-M3 用于 PDF 文本提取\n- 支持无头或有头 Chrome 捕获后台标签页\n- 更新期间可提前返回已完成的子任务结果\n- 支持在上一轮运行结束后继续接收聊天消息\n\n🐛 Bug 修复：- 修复更新过程中 Gateway 可能离线及失败回滚问题\n- 修复 Telegram 更新 ID 重置导致轮询中断\n- 修复网络恢复后 Discord 账号未重新连接\n- 修复 Signal 仅查看一次附件进入助手上下文\n- 修复会话权限模式未统一应用于 Gateway 工具调用\n- 修复 Discord 独立请求被活动任务覆盖的问题\n- 修复 ACP 回复不完整及 Claude CLI 最终答案丢失\n- 修复上下文溢出时错误裁剪已缓存工具结果\n- 修复 PostgreSQL 维护失败及连接丢失后无法恢复\n- 修复 Ubuntu 26.04 安装可能卡在 NodeSource\n- 修复无法下载附件阻塞回复及按钮权限异常\n- 修复提供商登录后用户自定义模型配置丢失",
+      "features": "- 支持选择 GPT-6.2 Astra 和 Sol，并启用系统提示词缓存\n- 支持 Tlon 群组私信独立审批策略及跨重启授权\n- 新增 MiniMax-M3 用于 PDF 文本提取\n- 支持无头或有头 Chrome 捕获后台标签页\n- 更新期间可提前返回已完成的子任务结果\n- 支持在上一轮运行结束后继续接收聊天消息",
+      "bug_fixes": "- 修复更新过程中 Gateway 可能离线及失败回滚问题\n- 修复 Telegram 更新 ID 重置导致轮询中断\n- 修复网络恢复后 Discord 账号未重新连接\n- 修复 Signal 仅查看一次附件进入助手上下文\n- 修复会话权限模式未统一应用于 Gateway 工具调用\n- 修复 Discord 独立请求被活动任务覆盖的问题\n- 修复 ACP 回复不完整及 Claude CLI 最终答案丢失\n- 修复上下文溢出时错误裁剪已缓存工具结果\n- 修复 PostgreSQL 维护失败及连接丢失后无法恢复\n- 修复 Ubuntu 26.04 安装可能卡在 NodeSource\n- 修复无法下载附件阻塞回复及按钮权限异常\n- 修复提供商登录后用户自定义模型配置丢失",
+      "why_matters": "查看新增功能与 Bug 修复详情",
+      "tags": "OpenClaw"
+    },
+    {
       "title": "Has Jevons paradox broken down?",
       "url": "https://martinalderson.com/posts/has-jevons-paradox-broken-down/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
       "summary": "Ramp's data shows growth in token spend stalling. Some thoughts on why my own token consumption has plateaued, and whether organisational change can outpace falling token prices.",
@@ -32943,5 +32955,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-26 09:23:53"
+  "last_updated": "2026-11-26 18:37:59"
 }
