@@ -1,6 +1,136 @@
 {
   "articles": [
     {
+      "title": "Las Vegas, Monte Carlo, and Integer Factorization",
+      "url": "https://www.johndcook.com/blog/2026/11/26/las-vegas-monte-carlo/",
+      "summary": "Monte Carlo algorithms typically have a fixed runtime but a variable error rate. Las Vegas algorithms have a variable runtime but a fixed (i.e. zero) error rate. Stanisław Ulam came up with the idea of Monte Carlo methods in 1946 and Nicholas Metropolis coined the term &#8220;Monte Carlo&#8221; the next year. László Babai coined the [&#8230;]\nThe post Las Vegas, Monte Carlo, and Integer Factorization first appeared on John D. Cook.",
+      "source": "johndcook.com",
+      "category": "blog",
+      "published": "2026-11-26",
+      "summary_zh": "文章介绍蒙特卡洛算法与拉斯维加斯算法的核心区别：前者运行时间通常固定但错误率可变，后者运行时间可变却能保证结果正确。内容进一步将这一概念联系到整数因数分解，探讨随机化算法在计算与可靠性之间的权衡。",
+      "why_matters": "这篇文章以直观的算法分类和整数因数分解案例，帮助读者理解随机化算法为何能在效率与准确性之间做出不同取舍。",
+      "tags": "随机化算法,整数因数分解,蒙特卡洛方法",
+      "id": 2575,
+      "added_at": "2026-11-27 09:24:05"
+    },
+    {
+      "title": "What happens when you put a non-agile object in the CoreApplication Properties?",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20261126-00/?p=112899/",
+      "summary": "The reference expires, but the entry remains.\nThe post What happens when you put a non-agile object in the CoreApplication Properties? appeared first on The Old New Thing.",
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "category": "blog",
+      "published": "2026-11-26",
+      "summary_zh": "文章探讨将非敏捷（non-agile）对象放入 CoreApplication 属性后会发生什么。关键现象是：对象的引用最终会过期，但相关条目仍会保留在属性集合中，从而留下无效或失效的记录。",
+      "why_matters": "这篇文章揭示了对象生命周期与 CoreApplication 属性管理中的一个反直觉细节，有助于理解潜在的引用残留问题。",
+      "tags": "CoreApplication, COM对象生命周期, 引用管理",
+      "id": 2573,
+      "added_at": "2026-11-27 09:24:05"
+    },
+    {
+      "title": "Underrated reasons to be thankful VI",
+      "url": "https://dynomight.net/thanks-6/",
+      "summary": "even more",
+      "source": "dynomight.net",
+      "category": "blog",
+      "published": "2026-11-26",
+      "summary_zh": "本文是“值得感恩但常被低估的原因”系列第六篇，延续前作，进一步分享生活中容易被忽视、却值得珍惜的事物。文章可能通过更多日常细节，提醒读者珍惜平凡体验中的积极一面。",
+      "why_matters": "适合想在忙碌生活中重新发现细小幸福、调整心态的人阅读。",
+      "tags": "感恩, 日常生活, 心态随笔",
+      "id": 2571,
+      "added_at": "2026-11-27 09:24:05"
+    },
+    {
+      "title": "OGP Image Format Support on Major Sites and Apps",
+      "url": "https://shkspr.mobi/blog/2026/11/ogp-image-format-support-on-major-sites-and-apps/",
+      "summary": "I've built a quick tool to see which image formats are supported on sites that allow Open Graph Protocol link previews.  As I've whinged about before, Facebook have all-but abandoned their efforts to standardise OGP. Which leads to a situation where a bunch of sites all have conflicting requirements on what they'll show. There's no easy way to find out which sites support which image formats, so…",
+      "source": "shkspr.mobi",
+      "category": "blog",
+      "published": "2026-11-26",
+      "summary_zh": "作者开发了一款快速检测工具，可查看各大支持 Open Graph Protocol（OGP）链接预览的网站和应用兼容哪些图片格式。文章指出，Facebook 已基本放弃推动 OGP 标准化，导致各平台要求不一，给开发者带来兼容性问题。",
+      "why_matters": "了解主流平台的 OGP 图片格式支持现状，有助于开发者避免链接预览图片失效。",
+      "tags": "OGP,网页开发,图片兼容性",
+      "id": 2569,
+      "added_at": "2026-11-27 09:24:05"
+    },
+    {
+      "title": "Pluralistic: Charles Koch is a cult leader (26 Nov 2026)",
+      "url": "https://pluralistic.net/2026/11/26/science-of-liberty/",
+      "summary": "Today's links Charles Koch is a cult leader: The \"science of liberty\" is no more scientific that Scientology. Hey look at this: Delights to delectate. Object permanence: Zune sucks; \"Paintwork\"; Wells Fargo claims forged signatures mean real binding arbitration; Corporate tax-breaks go to investors, not consumers; Anti-Lula conspirators eat each other; McKinsey created Big Pharma's price-gouging; Unions v two-tier contracts. Upcoming appearances: Virtual, Oxford, Santa Barbara, Montreal. Recent ",
+      "source": "pluralistic.net",
+      "category": "blog",
+      "published": "2026-11-26",
+      "summary_zh": "文章汇编 Charles Koch 及其“科学自由”理念的相关评论，认为这种将政治主张包装成科学共识的做法，与 Scientology 一样缺乏真正的科学基础。内容还涉及 Zune、绘画艺术、伪造签名与仲裁，以及企业税收优惠流向投资者等话题。",
+      "why_matters": "适合快速了解本期关于自由主义、企业权力与文化评论的多样观点。",
+      "tags": "Charles Koch,自由主义,评论精选",
+      "id": 2567,
+      "added_at": "2026-11-27 09:24:05"
+    },
+    {
+      "title": "Electrek Speculates on Trump’s Claim He ‘Protected’ Elon Musk After a ‘Very Tough Incident’ During His First Term",
+      "url": "https://electrek.co/2026/11/24/trump-protected-elon-musk-first-term-tough-incident/",
+      "summary": "Fred Lambert, writing for Electrek:\n\n\n  On August 7, 2018, Musk tweeted that he was “considering taking\nTesla private at $420. Funding secured.” It wasn’t. Saudi\nArabia’s Public Investment Fund had shown interest, but no deal\nor price had been agreed, and the take-private plan was dead\nwithin three weeks.\n\nThe SEC sued Musk for securities fraud on September 27, 2018. The\nagency didn’t only ask for a fine. It asked the court to bar Musk\nfrom serving as an officer or director of any public company",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-11-26",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 2565,
+      "added_at": "2026-11-27 09:24:05"
+    },
+    {
+      "title": "★ Obvious Affordances Are Due for a Comeback",
+      "url": "https://daringfireball.net/2026/11/obvious_affordances_are_due_for_a_comeback",
+      "summary": "There’s a wonderful rule of thumb oft attributed to Albert Einstein: *Everything should be made as simple as possible, but not simpler.* When clickable UI elements do not look clickable, they’ve been made too simple.",
+      "source": "daringfireball.net",
+      "category": "blog",
+      "published": "2026-11-26",
+      "summary_zh": "文章主张“显而易见的可供性”设计应重新受到重视：交互元素必须让用户一眼看出可以点击，否则界面就做得过于简单、反而造成认知障碍。其核心观点是，简洁并非单纯减少视觉元素，还应清楚传达控件的功能与可操作性。",
+      "why_matters": "简短提醒设计者和产品团队，不要为了极简而牺牲界面的可理解性与交互效率。",
+      "tags": "交互设计,用户体验,极简主义",
+      "id": 2563,
+      "added_at": "2026-11-27 09:24:05"
+    },
+    {
+      "title": "The New York Times warns photographers not to update Photoshop over AI features",
+      "url": "https://simonwillison.net/2026/Nov/26/hn-50651685/",
+      "summary": "My comment on The New York Times warns photographers not to update Photoshop over AI features &mdash; Hacker News.I had a NYT photographer take my picture at my home earlier this year (for a story about Moltbook, oddly enough). At one point I asked if they could fix things up if I had a stain on my shirt and they said absolutely not - they present photographs as they were taken, with cropping and balancing applied but no edits beyond that.\nHe did spend a bunch of time trying to find the best pos",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-11-26",
+      "summary_zh": "《纽约时报》警告摄影师暂缓更新 Photoshop，原因是新版本引入的 AI 功能可能带来隐私、数据使用及创作控制方面的风险。Simon Willison 分享了自己与《纽约时报》摄影师交流时遇到的修图场景，并评论了这一更新争议。",
+      "why_matters": "了解专业摄影师对 AI 修图工具及其隐私影响的担忧。",
+      "tags": "Photoshop, AI, 摄影隐私",
+      "id": 2561,
+      "added_at": "2026-11-27 09:24:05"
+    },
+    {
+      "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+      "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/",
+      "summary": "sqlite3_rsync: Database Remote-Copy Tool For SQLite\nThis additional SQLite tool has been around for a while now - it was added as \"experimental\" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025. It was only today that I understood one of its most attractive characteristics.\nNormally, if you want to grab a snapshot copy of a SQLite database, you need to use either the backup API or VACUUM INTO. In both cases you need enough disk space to create a duplicate copy of your d",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-11-26",
+      "summary_zh": "暂无摘要",
+      "why_matters": "值得一读",
+      "tags": "",
+      "id": 2559,
+      "added_at": "2026-11-27 09:24:05"
+    },
+    {
+      "title": "Quoting Jack Despain Zhou",
+      "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
+      "summary": "Among the many already existing effects of AI has been a great de-individualization. I open a YouTube video, and I hear Claude. I sit in a conference presentation, and I hear Claude. I open my email inbox, and I find pitches and articles from ostensibly serious people with ostensibly serious credentials attached to ostensibly serious institutions who want to publish things attached to their reputations and mine, and I see Claude.\n&mdash; Jack Despain Zhou, Spitting in the Face of Glaude\n\n    Tag",
+      "source": "simonwillison.net",
+      "category": "blog",
+      "published": "2026-11-26",
+      "summary_zh": "文章指出，AI 的普及带来了显著的“非个体化”趋势：无论是 YouTube 视频、会议演讲，还是邮件收件箱，都越来越频繁地出现由 Claude 等 AI 工具生成的内容。作者借此反思，当严肃身份、资历背书与 AI 批量生产结合时，人类表达是否会趋于同质化，甚至削弱个人的真实性与辨识度。",
+      "why_matters": "文章以身边观察切入，揭示 AI 内容泛滥造成的表达同质化与信任隐忧，值得引发对“什么是真实个体表达”的讨论。",
+      "tags": "人工智能,内容同质化,Claude",
+      "id": 2557,
+      "added_at": "2026-11-27 09:24:05"
+    },
+    {
       "title": "openclaw 2026.10.34",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.34",
       "source": "openclaw",
@@ -32955,5 +33085,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-26 18:37:59"
+  "last_updated": "2026-11-27 09:24:05"
 }
