@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "title": "Hermes Agent v0.23.5",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.5",
+      "source": "hermes-agent",
+      "published": "2026-11-28",
+      "category": "hermes",
+      "summary_zh": "- v0.23.5 为补丁版本，自 v0.23.4 起累计合并 338 个 PR，包含 1,262 个非合并提交，修改 1,146 个文件，并关闭 92 个问题。\n- 本次版本面向 GitHub CLI 与安装器、Microsoft Store 应用、Docker 镜像及 Hermes Cloud 同步发布稳定更新。\n- CLI 和 TUI 新增对 OSC 7577 程序恢复协议的支持，可用于恢复外部程序或会话。\n- 网关在所有路由中后台压缩空闲聊天记录，降低长期空闲会话对上下文的占用。\n- `read_file` 支持从负偏移位置跟踪文件末尾输出，并支持列出目录内容；`search_files` 可明确提示内容搜索是否已找到全部结果。\n- Desktop、Docker 和 CLI 启动本地网关前，会以受限方式预检默认插件，提前发现配置或加载问题。\n- 插件 OAuth 配置支持固定重定向 URI，提升不同运行环境下的授权稳定性。\n- Solstice 提供商迁移至无状态的 Interactions API，简化请求处理并减少服务端状态依赖。\n- 插件 API 新增会话来源、会话创建方式、Cron 调度及网关静默辅助等能力，方便扩展自动化与生命周期管理。\n- 仪表板新增“your dashboard is moving”迁移提示；会话和插件选择器现可正常识别原始方向键输入。\n- 修复插件工作配置在用户配置重命名、移动或删除后绑定错误的问题，确保插件始终关联正确的用户配置。\n- CLI 可通过 `hermes update` 或重新运行安装器命令升级；Docker 和 Hermes Cloud 可使用 `nousresearch/hermes-agent:stable` 或 `:latest` 镜像。\n- Microsoft Store 应用通过商店自动更新；桌面安装版（`.exe` / `.dmg`）本次无需操作，将随下个捆绑版本升级。\n- 本窗口的完整精选说明与全部贡献者名单将在 v0.24.0 发布，本次变更没有被省略。",
+      "why_matters": "查看中文摘要与详情",
+      "tags": "Hermes Agent"
+    },
+    {
       "title": "Protect Your Web Forms Against Spam Bots",
       "url": "https://blog.miguelgrinberg.com/post/protect-your-web-forms-against-spam-bots",
       "summary": "The comments form that appears at the bottom of every article in this blog is under constant abuse by spam bots. I added a CAPTCHA to it a few years ago and at the time it seemed to help some, but spammers have now figured out how to bypass them. As a result, my comments inbox has been getting out of control lately.\nIn this article I'm going to share a solution that I built to help me reduce spam on this blog from 30-40 messages per day to just about 2-3 per month. It is based on the \"proof of w",
@@ -33280,5 +33290,5 @@
       "tags": "OpenClaw"
     }
   ],
-  "last_updated": "2026-11-28 08:57:58"
+  "last_updated": "2026-11-28 17:59:21"
 }
